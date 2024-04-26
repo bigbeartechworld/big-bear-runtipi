@@ -7,7 +7,7 @@
   "id": "mailpit",
   "tipi_version": 17,
   "version": "v1.17",
-  "force_expose": true,
+  "force_expose": false,
   "categories": ["email"],
   "description": "Mailpit is a small, fast, low memory, zero-dependency, multi-platform email testing tool & API for developers.",
   "short_desc": "Mailpit is a email testing tool",
