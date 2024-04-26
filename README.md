@@ -8,6 +8,7 @@ This is a 3rd party app store maintained by BigBearTechWorld and the BigBearComm
 - [Activepieces](https://github.com/activepieces/activepieces) - True zapier alternative.
 - [Actual Budget](https://github.com/actualbudget/actual-server) - Local-first OpenSource Budget tool
 - [Adguard](https://github.com/AdguardTeam) - World's most advanced adblocker!
+- [AFFiNE](https://github.com/toeverything/affine) - AFFiNE is a workspace with fully merged docs, whiteboards and databases.
 - [Anse](https://github.com/anse-app/anse) - Fully optimized UI for AI Chats.
 - [ArchiveBox](https://github.com/ArchiveBox/ArchiveBox) - Open source self-hosted web archiving.
 - [Atuin Server](https://github.com/atuinsh/atuin) - Magical Shell History
@@ -27,6 +28,7 @@ This is a 3rd party app store maintained by BigBearTechWorld and the BigBearComm
 - [ChangeDetection](https://github.com/dgtlmoon/changedetection.io) - Website change detection.
 - [ChatGPT UI](https://github.com/WongSaang/chatgpt-ui) - A ChatGPT web client that supports multiple users, multiple languages, and multiple database connections for persistent data storage
 - [Chatpad AI](https://github.com/deiucanta/chatpad) - Not just another ChatGPT user-interface!
+- [Cheshire Cat AI](https://github.com/cheshire-cat-ai/core) - A production-ready AI framework to develop AI agents.
 - [Cloudflare DDNS](https://github.com/joshuaavalon/docker-cloudflare) - Update DNS records on Cloudflare.
 - [Cloudflared](https://github.com/WisdomSky/Cloudflared-web) - Cloudflare Tunnels in a Web UI
 - [Code-Server - Web VS Code](https://github.com/linuxserver/docker-code-server) - Code-server is VS Code running on a remote server, accessible through the browser.
@@ -41,7 +43,7 @@ This is a 3rd party app store maintained by BigBearTechWorld and the BigBearComm
 - [Deemix](https://gitlab.com/Bockiii/deemix-docker) - deemix is a barebone deezer downloader library built from the ashes of Deezloader Remix.
 - [Deluge](https://github.com/linuxserver/docker-deluge) - Deluge is a lightweight, Free Software, cross-platform BitTorrent client.
 - [Dockge](https://github.com/louislam/dockge) - Docker compose.yaml stack-oriented manager.
-- [DokuWiki](https://github.com/dokuwiki/dokuwiki) - DokuWiki is a simple to use and highly versatile Open Source wiki software
+- [DokuWiki](https://github.com/dokuwiki/dokuwiki) - DokuWiki is a simple to use and highly versatile Open Source wiki software 
 - [Dozzle](https://github.com/amir20/dozzle) - Dozzle is a small web based app to monitor Docker logs
 - [Draw.io](https://github.com/jgraph/drawio) - Diagramming and whiteboarding app.
 - [Duck DNS](https://github.com/linuxserver/docker-duckdns) - Duck DNS is a free Dynamic DNS service
@@ -53,14 +55,14 @@ This is a 3rd party app store maintained by BigBearTechWorld and the BigBearComm
 - [File Browser](https://github.com/filebrowser/filebrowser) - Access your homeserver files from your browser
 - [Filestash](https://github.com/mickael-kerjean/filestash) - A modern web client for SFTP, S3, FTP, WebDAV, Git, Minio, LDAP, CalDAV, CardDAV, Mysql, Backblaze
 - [Firefly III Data Importer](https://github.com/firefly-iii/data-importer) - The Firefly III Data Importer can import data into Firefly III
-- [Firefly III](https://github.com/firefly-iii/firefly-iii) - Firefly III: a personal finances manager
+- [Firefly III](https://github.com/firefly-iii/firefly-iii) - Firefly III: a personal finances manager 
 - [Fireshare](https://github.com/ShaneIsrael/fireshare) - Self host your media and share with unique links
 - [Flaresolverr](https://github.com/FlareSolverr/FlareSolverr) - Bypass Cloudflare and DDoS-GuARD.
 - [flatnotes](https://github.com/Dullage/flatnotes) - A self-hosted, database-less note taking web app
 - [Flightlog](https://github.com/perdian/flightlog/) - Flightlog, a web application that keeps track of your personal flight history
 - [Flowise AI](https://github.com/FlowiseAI/Flowise) - Build LLM Apps Easily
 - [Forgejo](https://codeberg.org/forgejo/forgejo/) - Beyond coding. We forge. · Lightweight and performant · Guaranteed 100% Free Software
-- [FreshRSS](https://github.com/FreshRSS/FreshRSS) - A free, self-hostable aggregator…
+- [FreshRSS](https://github.com/FreshRSS/FreshRSS) - A free, self-hostable aggregator… 
 - [gandi-livedns](https://github.com/jbbodart/gandi-livedns) - Update your Gandi DNS zone records with your WAN IP
 - [Get A Shell](https://github.com/steveiliop56/getashell) - SSH shells from a Web UI
 - [Ghost](https://github.com/TryGhost/Ghost) - Ghost - Turn your audience into a business.
@@ -71,7 +73,7 @@ This is a 3rd party app store maintained by BigBearTechWorld and the BigBearComm
 - [Gotify](https://github.com/gotify/server) - Gotify, a simple server for sending and receiving notification messages.
 - [GoToSocial](https://github.com/superseriousbusiness/gotosocial) - Fast, fun, ActivityPub server, powered by Go.
 - [Grafana](https://github.com/grafana/grafana) - The open and composable observability and data visualization platform
-- [Grav](https://github.com/getgrav/grav) - Grav is a Fast, Simple, and Flexible, file-based Web-platform.
+- [Grav](https://github.com/getgrav/grav) - Grav is a Fast, Simple, and Flexible, file-based Web-platform. 
 - [Grist](https://github.com/gristlabs/grist-core) - Grist is the evolution of spreadsheets.
 - [Grocy](https://github.com/grocy/grocy) - ERP beyond your fridge
 - [Halo](https://github.com/halo-dev/halo) - Halo - Open source website building tool.
@@ -83,13 +85,13 @@ This is a 3rd party app store maintained by BigBearTechWorld and the BigBearComm
 - [Homarr](https://github.com/ajnart/homarr) - Homarr is a simple and lightweight homepage for your server, that helps you easily access all of your services in one place.
 - [Home Assistant](https://github.com/home-assistant/core) - Open source home automation that puts local control and privacy first
 - [HomeBox](https://github.com/hay-kot/homebox) - Homebox is the inventory and organization system built for the Home User
-- [Home Bridge](https://github.com/homebridge/homebridge) - HomeKit support for the impatient.
+- [Home Bridge](https://github.com/homebridge/homebridge) - HomeKit support for the impatient.  
 - [Homepage](https://github.com/gethomepage/homepage) - A highly customizable homepage
 - [Immich](https://github.com/immich-app/immich) - Photo and video backup solution directly from your mobile phone.
 - [Invidious](https://github.com/iv-org/invidious) - An alternative front-end to YouTube
 - [Invoice Ninja](https://github.com/invoiceninja/invoiceninja) - Invoices, Expenses and Tasks built with Laravel, Flutter and React.
 - [IT-Tools](https://github.com/CorentinTh/it-tools) - Collection of handy online tools for developers, with great UX.
-- [Jackett](https://github.com/Jackett/Jackett) - API Support for your favorite torrent trackers
+- [Jackett](https://github.com/Jackett/Jackett) - API Support for your favorite torrent trackers 
 - [Jellyfin Vue (Beta)](https://github.com/jellyfin/jellyfin-vue) - A modern web client for Jellyfin based on Vue
 - [Jellyfin](https://github.com/jellyfin/jellyfin) - A media server for your home collection
 - [Jellyseerr](https://github.com/Fallenbagel/jellyseerr) - Fork of overseerr for Jellyfin support
@@ -101,6 +103,7 @@ This is a 3rd party app store maintained by BigBearTechWorld and the BigBearComm
 - [Kimai](https://github.com/kimai/kimai) - Open source time-tracker
 - [Kiwix Server](https://github.com/kiwix/kiwix-tools/) - Kiwix Server is a web server for hosting .zim files
 - [Koillection](https://github.com/benjaminjonard/koillection) - Koillection allow you to manage any kind of collections.
+- [Komga](https://github.com/gotson/komga) - A media server for your comics, mangas, BDs, magazines and eBooks.
 - [LibReddit](https://github.com/spikecodes/libreddit) - Browse reddit without problems!
 - [LibrePhotos](https://github.com/LibrePhotos/librephotos) - Complete photo management service
 - [LibreTranslate](https://github.com/LibreTranslate/LibreTranslate) - Free and Open Source Machine Translation API. 100% self-hosted, offline capable and easy to setup.
@@ -110,7 +113,8 @@ This is a 3rd party app store maintained by BigBearTechWorld and the BigBearComm
 - [Linkwarden](https://github.com/linkwarden/linkwarden) - A self-hosted, open-source collaborative bookmark manager
 - [Lobe Chat](https://github.com/lobehub/lobe-chat) - LLM chatbot framework
 - [Lodestone Core](https://github.com/Lodestone-Team/lodestone_core) - Server hosting tool for Minecraft and other multiplayers
-- [Logto](https://github.com/logto-io/logto) - Logto is a cost-effective open-source alternative to Auth0.
+- [Logto](https://github.com/logto-io/logto) - Logto is a cost-effective open-source alternative to Auth0. 
+- [Mailpit](https://github.com/axllent/mailpit) - Mailpit is a email testing tool
 - [Maintainerr](https://github.com/jorenn92/Maintainerr) - Maintainerr will manage the storage space on your plex server, launching automated actions to delete your files.
 - [Mastodon](https://github.com/mastodon/mastodon) - Your self-hosted, globally interconnected microblogging community
 - [Conduit](https://gitlab.com/famedly/conduit) - Conduit is a simple, fast and reliable chat server written in Rust
@@ -120,15 +124,15 @@ This is a 3rd party app store maintained by BigBearTechWorld and the BigBearComm
 - [Mind](https://github.com/Casvt/MIND) - A simple self hosted reminder platform that uses push to send notifications to your device.
 - [Minecraft Server](https://github.com/itzg/docker-minecraft-server) - Run a minecraft server
 - [Minio](https://github.com/minio/minio) - High Performance Object Storage
-- [Mixpost Pro](https://github.com/inovector/mixpost) - Self-hosted social media management. Schedule and organize your social content.
-- [Mixpost](https://github.com/inovector/mixpost) - Self-hosted social media management. Schedule and organize your social content.
+- [Mixpost Pro](https://github.com/inovector/mixpost) - Self-hosted social media management. Schedule and organize your social content. 
+- [Mixpost](https://github.com/inovector/mixpost) - Self-hosted social media management. Schedule and organize your social content. 
 - [Moneroblock](https://github.com/duggavo/MoneroBlock) - Decentralized and trustless Monero block explorer
 - [Monero Daemon](https://github.com/sethforprivacy/simple-monerod-docker) - Monero is a private, decentralized cryptocurrency that keeps your finances confidential and secure.
 - [Mongo Express](https://github.com/mongo-express/mongo-express) - Web-based MongoDB admin interface, written with Node.js and Express
 - [MongoDB](https://github.com/mongodb/mongo) - MongoDB is an open-source NoSQL database
 - [Monica](https://github.com/monicahq/monica) - A Personal Relationship Management tool to help you document your social life.
 - [Moodist](https://github.com/remvze/moodist) - Ambient sounds for focus and calm.
-- [Movary](https://github.com/leepeuker/movary) - Movary is a self-hosted web application to track and rate your watched movies.
+- [Movary](https://github.com/leepeuker/movary) - Movary is a self-hosted web application to track and rate your watched movies. 
 - [mStream Music](https://github.com/IrosTheBeggar/mStream) - The easiest music streaming server available
 - [Mylar3](https://github.com/mylar3/mylar3) - Mylar3 is an automated Comic Book downloader (cbr/cbz) for use with NZB and torrents written in python.
 - [n8n](https://github.com/n8n-io/n8n) - Workflow Automation Tool. Alternative to Zapier
@@ -150,8 +154,8 @@ This is a 3rd party app store maintained by BigBearTechWorld and the BigBearComm
 - [openbooks](https://github.com/evan-buss/openbooks) - Search and Download eBooks
 - [Outline](https://github.com/outline/outline) - A home for all your docs
 - [Overseerr](https://github.com/sct/overseerr) - Request management and media discovery tool for the Plex ecosystem
-- [Owncast](https://github.com/owncast/owncast) -  Take control over your live stream video by running it yourself. Streaming + chat out of the box.
-- [Owncloud](https://github.com/owncloud/core) - A personal cloud which runs on your own server.
+- [Owncast](https://github.com/owncast/owncast) -  Take control over your live stream video by running it yourself. Streaming + chat out of the box. 
+- [Owncloud](https://github.com/owncloud/core) - A personal cloud which runs on your own server. 
 - [PairDrop](https://github.com/schlagmichdoch/PairDrop) - Local file sharing in your browser. Inspired by Apple's AirDrop
 - [Paperless-ngx](https://github.com/paperless-ngx/paperless-ngx) - Document Management System (DMS)
 - [Penpot](https://github.com/penpot/penpot) - Open-Source design & prototyping platform.
@@ -167,7 +171,7 @@ This is a 3rd party app store maintained by BigBearTechWorld and the BigBearComm
 - [Postfix Mail Relay](https://github.com/shamil/docker-postfix-relay) - Simple SMTP relay for environments where you may have private servers with no Internet connection.
 - [PrivateBin](https://github.com/PrivateBin/PrivateBin) - A minimalist, open source online pastebin where the server has zero knowledge of pasted data. Data is encrypted/decrypted in the browser using 256 bits AES.
 - [Prowlarr](https://github.com/Prowlarr/Prowlarr/) - A torrent/usenet indexer manager/proxy
-- [ProxiTok](https://github.com/pablouser1/ProxiTok) - Open source alternative frontend for TikTok made using PHP
+- [ProxiTok](https://github.com/pablouser1/ProxiTok) - Open source alternative frontend for TikTok made using PHP 
 - [qBittorrent](https://github.com/qbittorrent/qBittorrent) - Fast, easy, and free BitTorrent client
 - [qDirStat](https://github.com/linuxserver/docker-qdirstat) - A graphical disk usage analyzer
 - [Radarr](https://github.com/Radarr/Radarr) - Movie collection manager for Usenet and BitTorrent users.
@@ -194,6 +198,7 @@ This is a 3rd party app store maintained by BigBearTechWorld and the BigBearComm
 - [Speedtest Tracker](https://github.com/alexjustesen/speedtest-tracker) - Internet performance tracking application.
 - [Spoolman](https://github.com/Donkie/Spoolman) - Keep track of your inventory of 3D-printer filament spools
 - [Sshwifty](https://github.com/nirui/sshwifty) - Web SSH & Telnet (WebSSH & WebTelnet client)
+- [Stalwart Mail](https://github.com/stalwartlabs) - Open-source mail server solution with JMAP, IMAP4, and SMTP support
 - [Stirling-PDF](https://github.com/Frooodle/Stirling-PDF/) - Powerful locally hosted web based PDF manipulation tool.
 - [Syncthing](https://github.com/syncthing) - Peer-to-peer file synchronization between your devices
 - [Tailscale](https://github.com/tailscale/tailscale) - The easiest, most secure way to use WireGuard and 2FA.
@@ -224,6 +229,10 @@ This is a 3rd party app store maintained by BigBearTechWorld and the BigBearComm
 - [Your Spotify](https://github.com/Yooooomi/your_spotify) - Self hosted Spotify tracking dashboard.
 - [ZeroTier](https://github.com/zerotier/ZeroTierOne) - Easy to use zero configuration VPN.
 - [Zigbee2MQTT](https://github.com/Koenkk/zigbee2mqtt) - Zigbee to MQTT bridge
-- [Zipline](https://github.com/diced/zipline) - A ShareX/file upload server that is easy to use, packed with features, and with an easy setup!
+- [Zipline](https://github.com/diced/zipline) - A ShareX/file upload server that is easy to use, packed with features, and with an easy setup!  
 
-# big-bear-runtipi
+## How to sumbit an app
+
+If you want to see new apps on Tipi you can either:
+
+- [Create a discussion](https://community.bigbeartechworld.com) on the BigBearCommunity and members of the community will add it
