@@ -1,0 +1,23 @@
+{
+  "$schema": "../schema.json",
+  "name": "Portainer",
+  "port": 9443,
+  "available": true,
+  "exposable": true,
+  "https": true,
+  "id": "portainer",
+  "tipi_version": 20,
+  "version": "2.20.1-alpine",
+  "categories": [
+    "utilities"
+  ],
+  "description": "",
+  "short_desc": "Making Docker and Kubernetes management easy.",
+  "author": "portainer.io",
+  "source": "https://github.com/portainer/portainer",
+  "form_fields": [],
+  "supported_architectures": [
+    "arm64",
+    "amd64"
+  ]
+}

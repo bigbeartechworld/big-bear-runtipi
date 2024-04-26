@@ -1,0 +1,18 @@
+{
+  "$schema": "../schema.json",
+  "name": "Mailpit",
+  "port": 8025,
+  "available": true,
+  "exposable": true,
+  "id": "mailpit",
+  "tipi_version": 17,
+  "version": "v1.17",
+  "force_expose": true,
+  "categories": ["email"],
+  "description": "Mailpit is a small, fast, low memory, zero-dependency, multi-platform email testing tool & API for developers.",
+  "short_desc": "Mailpit is a email testing tool",
+  "author": "Axllent",
+  "source": "https://github.com/axllent/mailpit",
+  "form_fields": [],
+  "supported_architectures": ["arm64", "amd64"]
+}
