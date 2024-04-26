@@ -1,6 +1,47 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:recommended"
-  ]
+  "extends": ["config:base"],
+  "stabilityDays": 3,
+  "automerge": true,
+  "packageRules": [
+    {
+      "matchDatasources": "docker",
+      "matchPackagePatterns": ["^guacamole/"],
+      "groupName": "guacamole docker images"
+    },
+    {
+      "matchDatasources": "docker",
+      "matchPackagePatterns": ["^vikunja/"],
+      "groupName": "vikunja docker images"
+    },
+    {
+      "matchDatasources": "docker",
+      "matchPackagePatterns": ["^ghcr\\.io/immich-app/"],
+      "groupName": "immich docker images"
+    },
+    {
+      "matchDatasources": "docker",
+      "matchPackagePatterns": [
+        "^([^\\/]+\\/)?(mysql|mariadb|mongodb|mongo|postgres|redis)(:|$)"
+      ],
+      "enabled": false
+    },
+    {
+      "matchPackageNames": [
+        "rocket.chat",
+        "ghcr.io/immich-app/immich-machine-learning",
+        "ghcr.io/immich-app/immich-server"
+      ],
+      "automerge": false
+    },
+    {
+      "matchUpdateTypes": ["minor", "patch"],
+      "automerge": true
+    },
+    {
+      "matchUpdateTypes": ["major"],
+      "automerge": false
+    }
+  ],
+  "regexManagers": []
 }
