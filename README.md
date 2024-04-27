@@ -2,6 +2,22 @@
 
 This is a 3rd party app store maintained by BigBearTechWorld and the BigBearCommunity.
 
+## Add the app store to your Runtipi instance
+
+1. Go to settings in the topbar
+2. Click on settings tab
+3. Scroll down to "Apps repo URL"
+4. Replace contents with:
+
+```
+https://github.com/bigbeartechworld/big-bear-runtipi
+```
+
+5. Take note of the "Storage path".
+6. SSH into your Tipi Server
+7. cd into the storage path
+8. Run `./runtipi-cli restart`
+
 ## Apps available
 
 - [2FAuth](https://github.com/Bubka/2FAuth) - Manage your Two-Factor Authentication codes.
