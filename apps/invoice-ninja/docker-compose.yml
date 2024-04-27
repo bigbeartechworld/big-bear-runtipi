@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   invoice-ninja:
-    image: nginx:1.25
+    image: nginx:1.26
     container_name: invoice-ninja
     restart: unless-stopped
     volumes:
