@@ -18,7 +18,6 @@
       "type": "text",
       "label": "Planka Base URL",
       "hint": "The base URL for the Planka service",
-      "required": true,
       "env_variable": "PLANKA_BASE_URL"
     },
     {
