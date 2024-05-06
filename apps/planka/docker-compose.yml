@@ -7,14 +7,14 @@ services:
     # The command overrides the default CMD of the Docker image.
     # It runs a bash script that attempts to start the service with ./start.sh
     # up to 30 times, retrying every 5 seconds if the start-up fails.
-    command: >
-      bash -c
-        "for i in `seq 1 30`; do
-          ./start.sh &&
-          s=$$? && break || s=$$?;
-          echo \"Tried $$i times. Waiting 5 seconds...\";
-          sleep 5;
-        done; (exit $$s)"
+    # command: >
+    #   bash -c
+    #     "for i in `seq 1 30`; do
+    #       ./start.sh &&
+    #       s=$$? && break || s=$$?;
+    #       echo \"Tried $$i times. Waiting 5 seconds...\";
+    #       sleep 5;
+    #     done; (exit $$s)"
     restart: unless-stopped # The service will restart unless it is explicitly stopped
     volumes:
       # Mounts host directories to container directories for persistence
@@ -61,7 +61,7 @@ services:
 
   postgres:
     image: postgres:14-alpine # Uses the PostgreSQL 14 image based on Alpine Linux
-    container_name: planka-db # Sets a custom container name
+    container_name: postgres # Sets a custom container name
     restart: unless-stopped # Restarts the service unless it is manually stopped
     volumes:
       # Persists PostgreSQL data to a host directory
