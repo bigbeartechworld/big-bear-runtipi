@@ -25,7 +25,7 @@ services:
       - ${APP_PORT}:1337 # Maps a host port to a container port (1337 is the default Planka port)
     environment:
       # Environment variables passed to the container
-      - BASE_URL=${APP_PROTOCOL:-http}://${APP_DOMAIN}
+      - BASE_URL="${PLANKA_BASE_URL}" # Specifies the base URL for the service
       - TRUST_PROXY=1
       - DATABASE_URL="postgresql://postgres@postgres/planka"
       - SECRET_KEY="${PLANKA_SECRET_KEY}"
