@@ -20,7 +20,7 @@ services:
     ports:
       - ${APP_PORT}:1337
     environment:
-      - BASE_URL=http://${INTERNAL_IP}:${APP_PORT}
+      - BASE_URL=${APP_PROTOCOL:-http}://${APP_DOMAIN}
       - TRUST_PROXY=1
       - DATABASE_URL="postgresql://postgres@postgres/planka"
       - SECRET_KEY="${PLANKA_SECRET_KEY}"
