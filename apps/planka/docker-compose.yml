@@ -1,9 +1,12 @@
-version: '3'
+version: "3" # Specifies the version of the Docker Compose file format
 
 services:
   planka:
-    image: ghcr.io/plankanban/planka:1.17.1
-    container_name: planka
+    image: ghcr.io/plankanban/planka:1.17.1 # Defines which Docker image to use for the Planka service
+    container_name: planka # Specifies a custom name for the running container
+    # The command overrides the default CMD of the Docker image.
+    # It runs a bash script that attempts to start the service with ./start.sh
+    # up to 30 times, retrying every 5 seconds if the start-up fails.
     command: >
       bash -c
         "for i in `seq 1 30`; do
@@ -12,20 +15,22 @@ services:
           echo \"Tried $$i times. Waiting 5 seconds...\";
           sleep 5;
         done; (exit $$s)"
-    restart: unless-stopped
+    restart: unless-stopped # The service will restart unless it is explicitly stopped
     volumes:
+      # Mounts host directories to container directories for persistence
       - ${APP_DATA_DIR}/data/user-avatars:/app/public/user-avatars
       - ${APP_DATA_DIR}/data/project-background-images:/app/public/project-background-images
       - ${APP_DATA_DIR}/data/attachments:/app/private/attachments
     ports:
-      - ${APP_PORT}:1337
+      - ${APP_PORT}:1337 # Maps a host port to a container port (1337 is the default Planka port)
     environment:
+      # Environment variables passed to the container
       - BASE_URL=${APP_PROTOCOL:-http}://${APP_DOMAIN}
       - TRUST_PROXY=1
       - DATABASE_URL="postgresql://postgres@postgres/planka"
       - SECRET_KEY="${PLANKA_SECRET_KEY}"
     networks:
-      - tipi_main_network
+      - tipi_main_network # Specifies which network the service belongs to
     labels:
       # Main
       traefik.enable: true
@@ -52,16 +57,18 @@ services:
       traefik.http.routers.planka-local.service: planka
       traefik.http.routers.planka-local.tls: true
     depends_on:
-      - postgres
+      - postgres # Depends on the PostgreSQL service
 
   postgres:
-    image: postgres:14-alpine
-    container_name: planka-db
-    restart: unless-stopped
+    image: postgres:14-alpine # Uses the PostgreSQL 14 image based on Alpine Linux
+    container_name: planka-db # Sets a custom container name
+    restart: unless-stopped # Restarts the service unless it is manually stopped
     volumes:
+      # Persists PostgreSQL data to a host directory
       - ${APP_DATA_DIR}/data/postgres:/var/lib/postgresql/data
     environment:
-      POSTGRES_DB: "planka"
-      POSTGRES_HOST_AUTH_METHOD: "trust"
+      # Environment variables for PostgreSQL
+      POSTGRES_DB: "planka" # Specifies the name of the database to use
+      POSTGRES_HOST_AUTH_METHOD: "trust" # Allows the service to connect to the database without a password
     networks:
-      - tipi_main_network
+      - tipi_main_network # Connects to the same network as the Planka service
