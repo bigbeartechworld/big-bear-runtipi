@@ -1,36 +1,31 @@
-version: "3" # Specifies the version of the Docker Compose file format
+version: "3"
 
 services:
   planka:
-    image: ghcr.io/plankanban/planka:1.17.1 # Defines which Docker image to use for the Planka service
-    container_name: planka # Specifies a custom name for the running container
-    # The command overrides the default CMD of the Docker image.
-    # It runs a bash script that attempts to start the service with ./start.sh
-    # up to 30 times, retrying every 5 seconds if the start-up fails.
-    # command: >
-    #   bash -c
-    #     "for i in `seq 1 30`; do
-    #       ./start.sh &&
-    #       s=$$? && break || s=$$?;
-    #       echo \"Tried $$i times. Waiting 5 seconds...\";
-    #       sleep 5;
-    #     done; (exit $$s)"
-    restart: unless-stopped # The service will restart unless it is explicitly stopped
+    image: ghcr.io/plankanban/planka:1.17.2
+    container_name: planka
+    command: >
+      bash -c
+        "for i in `seq 1 30`; do
+          ./start.sh &&
+          s=$$? && break || s=$$?;
+          echo \"Tried $$i times. Waiting 5 seconds...\";
+          sleep 5;
+        done; (exit $$s)"
+    restart: unless-stopped
     volumes:
-      # Mounts host directories to container directories for persistence
       - ${APP_DATA_DIR}/data/user-avatars:/app/public/user-avatars
       - ${APP_DATA_DIR}/data/project-background-images:/app/public/project-background-images
       - ${APP_DATA_DIR}/data/attachments:/app/private/attachments
     ports:
-      - ${APP_PORT}:1337 # Maps a host port to a container port (1337 is the default Planka port)
+      - ${APP_PORT}:1337
     environment:
-      # Environment variables passed to the container
-      - BASE_URL="http://${INTERNAL_IP}:${APP_PORT}" # Specifies the base URL for the Planka service
+      - BASE_URL=${APP_PROTOCOL:-http}://${APP_DOMAIN}
       - TRUST_PROXY=1
       - DATABASE_URL="postgresql://postgres@postgres/planka"
       - SECRET_KEY="${PLANKA_SECRET_KEY}"
     networks:
-      - tipi_main_network # Specifies which network the service belongs to
+      - tipi_main_network
     labels:
       # Main
       traefik.enable: true
@@ -56,19 +51,33 @@ services:
       traefik.http.routers.planka-local.entrypoints: websecure
       traefik.http.routers.planka-local.service: planka
       traefik.http.routers.planka-local.tls: true
+    # Dependency on another service, ensuring it is healthy before starting
     depends_on:
-      - postgres # Depends on the PostgreSQL service
+      postgres:
+        condition: service_healthy
 
   postgres:
-    image: postgres:14-alpine # Uses the PostgreSQL 14 image based on Alpine Linux
-    container_name: postgres # Sets a custom container name
-    restart: unless-stopped # Restarts the service unless it is manually stopped
+    image: postgres:14-alpine
+    container_name: planka-db
+    restart: unless-stopped
     volumes:
-      # Persists PostgreSQL data to a host directory
       - ${APP_DATA_DIR}/data/postgres:/var/lib/postgresql/data
     environment:
-      # Environment variables for PostgreSQL
-      POSTGRES_DB: "planka" # Specifies the name of the database to use
-      POSTGRES_HOST_AUTH_METHOD: "trust" # Allows the service to connect to the database without a password
+      POSTGRES_DB: "planka"
+      POSTGRES_HOST_AUTH_METHOD: "trust"
     networks:
-      - tipi_main_network # Connects to the same network as the Planka service
+      - tipi_main_network
+    # Healthcheck configuration to ensure the database service is running properly
+    # Runs a command inside the container at specified intervals to check the health of the service
+    healthcheck:
+      # Command to check if PostgreSQL is ready to accept connections
+      # Uses `pg_isready` tool with the default 'postgres' user and the 'planka' database
+      test: ["CMD-SHELL", "pg_isready -U postgres -d planka"]
+      # The interval between running the healthcheck command
+      # Here, it's set to run every 10 seconds
+      interval: 10s
+      # The timeout duration for the healthcheck command
+      # If the command does not complete within 5 seconds, the healthcheck is considered failed
+      timeout: 5s
+      # Number of consecutive failures needed to consider the service as unhealthy
+      retries: 5

@@ -6,7 +6,7 @@
   "exposable": true,
   "id": "planka",
   "tipi_version": 20,
-  "version": "1.17.1",
+  "version": "1.17.2",
   "categories": ["development"],
   "description": "The realtime kanban board for workgroups built with React and Redux.",
   "short_desc": "Free open source kanban board for workgroups.",
@@ -14,12 +14,6 @@
   "source": "https://github.com/plankanban/planka",
   "website": "https://docs.planka.cloud/",
   "form_fields": [
-    {
-      "type": "text",
-      "label": "Planka Base URL",
-      "hint": "The base URL for the Planka service",
-      "env_variable": "PLANKA_BASE_URL"
-    },
     {
       "type": "random",
       "label": "Planka Secret Key",
