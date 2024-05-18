@@ -1,0 +1,54 @@
+# This specifies the version of the Docker Compose file format
+version: "3.8"
+
+# Define the services that make up your application so they can be run together in an isolated environment
+services:
+  # 'big-bear-genmon' is the name of the service
+  big-bear-genmon:
+    # This is so docker doesn't have to generate a random name
+    container_name: big-bear-genmon
+    # Specifies the Docker image to use for the big-bear-genmon service
+    image: bigbeartechworld/big-bear-genmon:0.0.6
+    # Environment variables to set inside the container
+    environment:
+      - TZ=America/Chicago # Set the timezone to 'America/Chicago'
+    # Ports to expose, mapping the host port to the container port
+    ports:
+      - "38443:443" # Map TCP port 443 in the container to port 38443 on the host
+      - "${APP_PORT}:8000" # Map TCP port 8000 in the container to port 8144 on the host
+    # Define the restart policy for the service container
+    restart: unless-stopped # Restart the container unless it is explicitly stopped
+    # Mount host paths or named volumes into the container
+    volumes:
+      - ${APP_DATA_DIR}/data:/git/genmon # Mount a named volume 'big_bear_genmon_data' to store data persistently at /git/genmon in the container
+      - ${APP_DATA_DIR}/config:/etc/genmon # Mount a named volume 'big_bear_genmon_config' to store configuration files persistently at /etc/genmon in the container
+      - ${APP_DATA_DIR}/logs:/var/log # Mount a named volume 'big_bear_genmon_logs' to store logs persistently at /var/log in the container
+
+    networks:
+      - tipi_main_network
+
+    labels:
+      # Main
+      traefik.enable: true
+      traefik.http.middlewares.big-bear-genmon-web-redirect.redirectscheme.scheme: https
+      traefik.http.services.big-bear-genmon.loadbalancer.server.port: 8080
+      # Web
+      traefik.http.routers.big-bear-genmon-insecure.rule: Host(`${APP_DOMAIN}`)
+      traefik.http.routers.big-bear-genmon-insecure.entrypoints: web
+      traefik.http.routers.big-bear-genmon-insecure.service: big-bear-genmon
+      traefik.http.routers.big-bear-genmon-insecure.middlewares: big-bear-genmon-web-redirect
+      # Websecure
+      traefik.http.routers.big-bear-genmon.rule: Host(`${APP_DOMAIN}`)
+      traefik.http.routers.big-bear-genmon.entrypoints: websecure
+      traefik.http.routers.big-bear-genmon.service: big-bear-genmon
+      traefik.http.routers.big-bear-genmon.tls.certresolver: myresolver
+      # Local domain
+      traefik.http.routers.big-bear-genmon-local-insecure.rule: Host(`big-bear-genmon.${LOCAL_DOMAIN}`)
+      traefik.http.routers.big-bear-genmon-local-insecure.entrypoints: web
+      traefik.http.routers.big-bear-genmon-local-insecure.service: big-bear-genmon
+      traefik.http.routers.big-bear-genmon-local-insecure.middlewares: big-bear-genmon-web-redirect
+      # Local domain secure
+      traefik.http.routers.big-bear-genmon-local.rule: Host(`big-bear-genmon.${LOCAL_DOMAIN}`)
+      traefik.http.routers.big-bear-genmon-local.entrypoints: websecure
+      traefik.http.routers.big-bear-genmon-local.service: big-bear-genmon
+      traefik.http.routers.big-bear-genmon-local.tls: true

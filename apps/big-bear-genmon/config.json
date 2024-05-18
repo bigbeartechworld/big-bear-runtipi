@@ -1,0 +1,18 @@
+{
+  "$schema": "../schema.json",
+  "name": "Genmon",
+  "available": true,
+  "exposable": true,
+  "port": 8144,
+  "id": "big-bear-genmon",
+  "tipi_version": 18,
+  "version": "0.0.6",
+  "description": "Generac (and other models) Generator Monitoring using a Raspberry Pi and WiFi. Genmon made by jgyates",
+  "short_desc": "Generac (and other models) Generator Monitoring using a Raspberry Pi and WiFi",
+  "author": "bigbeartechworld",
+  "categories": ["data"],
+  "website": "https://github.com/bigbeartechworld/big-bear-docker-images/tree/main/genmon",
+  "source": "https://github.com/jgyates/genmon",
+  "form_fields": [],
+  "supported_architectures": ["arm64", "amd64"]
+}
