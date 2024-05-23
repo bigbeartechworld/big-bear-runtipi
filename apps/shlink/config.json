@@ -6,8 +6,8 @@
   "force_expose": true,
   "port": 8207,
   "id": "shlink",
-  "tipi_version": 5,
-  "version": "3.7.4",
+  "tipi_version": 6,
+  "version": "4.1.1",
   "categories": [
     "utilities"
   ],
