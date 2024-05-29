@@ -23,6 +23,7 @@ interface AppConfig {
   available: boolean;
   form_fields?: FormField[];
   supported_architectures: string[];
+  dynamic_config: boolean;
 }
 
 const networkExceptions = [

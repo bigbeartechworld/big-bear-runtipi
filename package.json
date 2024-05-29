@@ -7,7 +7,8 @@
     "commit": "git-cz",
     "lint": "eslint ./apps --ext .json",
     "test": "jest",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "ports": "node find-ports.js"
   },
   "repository": {
     "type": "git",

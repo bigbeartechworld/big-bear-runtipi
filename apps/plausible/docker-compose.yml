@@ -2,7 +2,7 @@ version: "3.7"
 services:
   plausible:
     container_name: plausible
-    image: plausible/analytics:v2.0.0
+    image: plausible/analytics:v1.5.1
     restart: always
     command: sh -c "sleep 10 && /entrypoint.sh db createdb && /entrypoint.sh db migrate && /entrypoint.sh db init-admin && /entrypoint.sh run"
     depends_on:
@@ -60,7 +60,7 @@ services:
 
   plausible-events-db:
     container_name: plausible-events-db
-    image: clickhouse/clickhouse-server:24.4-alpine
+    image: clickhouse/clickhouse-server:22.6-alpine
     restart: always
     networks:
       - tipi_main_network 

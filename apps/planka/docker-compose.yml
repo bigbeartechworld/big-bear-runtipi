@@ -1,8 +1,8 @@
-version: "3"
+version: '3'
 
 services:
   planka:
-    image: ghcr.io/plankanban/planka:1.17.2
+    image: ghcr.io/plankanban/planka:1.17.4
     container_name: planka
     command: >
       bash -c
@@ -22,7 +22,7 @@ services:
     environment:
       - BASE_URL=${APP_PROTOCOL:-http}://${APP_DOMAIN}
       - TRUST_PROXY=1
-      - DATABASE_URL=postgresql://postgres@big-bear-planka-postgres/planka
+      - DATABASE_URL="postgresql://postgres@postgres/planka"
       - SECRET_KEY="${PLANKA_SECRET_KEY}"
     networks:
       - tipi_main_network
@@ -51,37 +51,17 @@ services:
       traefik.http.routers.planka-local.entrypoints: websecure
       traefik.http.routers.planka-local.service: planka
       traefik.http.routers.planka-local.tls: true
-    # Dependency on another service, ensuring it is healthy before starting
     depends_on:
-      big-bear-planka-postgres:
-        condition: service_healthy
+      - postgres
 
-  big-bear-planka-postgres:
+  postgres:
     image: postgres:14-alpine
-    container_name: big-bear-planka-postgres
+    container_name: planka-db
     restart: unless-stopped
     volumes:
       - ${APP_DATA_DIR}/data/postgres:/var/lib/postgresql/data
     environment:
-      # Sets the default database that is created when the container starts
-      - POSTGRES_DB=planka
-      # Configures the authentication method for connections from the host
-      # Setting to 'trust' allows connections without a password
-      # Note: This setting is not recommended for production environments due to security concerns
-      - POSTGRES_HOST_AUTH_METHOD=trust
+      POSTGRES_DB: "planka"
+      POSTGRES_HOST_AUTH_METHOD: "trust"
     networks:
       - tipi_main_network
-    # Healthcheck configuration to ensure the database service is running properly
-    # Runs a command inside the container at specified intervals to check the health of the service
-    healthcheck:
-      # Command to check if PostgreSQL is ready to accept connections
-      # Uses `pg_isready` tool with the default 'postgres' user and the 'planka' database
-      test: ["CMD-SHELL", "pg_isready -U postgres -d planka"]
-      # The interval between running the healthcheck command
-      # Here, it's set to run every 10 seconds
-      interval: 10s
-      # The timeout duration for the healthcheck command
-      # If the command does not complete within 5 seconds, the healthcheck is considered failed
-      timeout: 5s
-      # Number of consecutive failures needed to consider the service as unhealthy
-      retries: 5

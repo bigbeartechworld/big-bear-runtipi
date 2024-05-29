@@ -3,7 +3,7 @@
   "name": "Genmon",
   "available": true,
   "exposable": true,
-  "port": 8144,
+  "port": 8300,
   "id": "big-bear-genmon",
   "tipi_version": 18,
   "version": "0.0.6",

@@ -1,8 +1,10 @@
 services:
   flaresolverr:
     container_name: flaresolverr
-    image: ghcr.io/flaresolverr/flaresolverr:v3.3.17
+    image: ghcr.io/flaresolverr/flaresolverr:v3.3.19
     restart: unless-stopped
+    ports:
+      - ${APP_PORT}:8191
     environment:
       - LOG_LEVEL=${FLARESOLVERR_LOG_LEVEL-info}
       - TZ=${TZ}
