@@ -56,9 +56,9 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Volume for uploads
-      - "/DATA/AppData/$AppID/upload-dir:/upload-dir"
+      - "${APP_DATA_DIR}/upload-dir:/upload-dir"
       # Volume for SSL certificates
-      - "/DATA/AppData/$AppID/certificates:/certificates"
+      - "${APP_DATA_DIR}/certificates:/certificates"
 
     # Ports mapping between host and container
     ports:
@@ -118,7 +118,7 @@ services:
       - "3306:3306"
     volumes:
       # Volume for MySQL data
-      - "/DATA/AppData/$AppID/mysql:/var/lib/mysql"
+      - "${APP_DATA_DIR}/mysql:/var/lib/mysql"
     networks:
       - tipi_main_network # Connects the container to the specified network
 
