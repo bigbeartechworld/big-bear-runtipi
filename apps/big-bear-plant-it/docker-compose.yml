@@ -1,0 +1,134 @@
+version: "3.7"
+# Service definitions for the big-bear-plant-it application
+services:
+  # Service name: big-bear-plant-it
+  # The `big-bear-plant-it` service definition
+  big-bear-plant-it:
+    # Name of the container
+    container_name: big-bear-plant-it
+
+    # Image to be used for the container
+    image: msdeluise/plant-it-server:0.7.1
+
+    # Container restart policy
+    restart: unless-stopped
+
+    environment:
+      # MySQL database host
+      - MYSQL_HOST=big-bear-plant-it-db
+      # MySQL database port
+      - MYSQL_PORT=3306
+      # MySQL database username
+      - MYSQL_USERNAME=root
+      # MySQL database password
+      - MYSQL_PSW=${MYSQL_PASSWORD}
+      # MySQL database name
+      - MYSQL_DATABASE=plantit
+      # MySQL root password
+      - MYSQL_ROOT_PASSWORD=${MYSQL_PASSWORD}
+      # JWT secret for authentication
+      - JWT_SECRET=${JWT_SECRET}
+      # JWT expiration time
+      - JWT_EXP=1
+      # Users limit (-1 means no limit)
+      - USERS_LIMIT=-1
+      # Directory for file uploads
+      - UPLOAD_DIR=/upload-dir
+      # API port
+      - API_PORT=8080
+      # Trefle API key (currently empty)
+      - TREFLE_KEY=
+      # Log level
+      - LOG_LEVEL=DEBUG
+      # Allowed origins for CORS
+      - ALLOWED_ORIGINS=*
+      # Cache time-to-live (TTL) in seconds
+      - CACHE_TTL=86400
+      # Cache host
+      - CACHE_HOST=big-bear-plant-it-cache
+      # Cache port
+      - CACHE_PORT=6379
+      # SSL enabled flag
+      - SSL_ENABLED=false
+      # Path to SSL certificates
+      - CERTIFICATE_PATH=/certificates/
+
+    # Volumes to be mounted to the container
+    volumes:
+      # Volume for uploads
+      - "/DATA/AppData/$AppID/upload-dir:/upload-dir"
+      # Volume for SSL certificates
+      - "/DATA/AppData/$AppID/certificates:/certificates"
+
+    # Ports mapping between host and container
+    ports:
+      # Mapping port 8080 of the host to port 8080 of the container
+      - "8080:8080"
+      # Mapping port 3000 of the host to port 3000 of the container
+      - "3000:3000"
+
+    networks:
+      - tipi_main_network # Connects the container to the specified network
+
+    labels:
+      # Main Traefik settings for enabling the service and defining the load balancer port
+      traefik.enable: true
+      traefik.http.middlewares.plant-it-web-redirect.redirectscheme.scheme: https
+      traefik.http.services.plant-it.loadbalancer.server.port: 3000
+
+      # Web router configuration for HTTP, redirects to HTTPS
+      traefik.http.routers.plant-it-insecure.rule: Host(`${APP_DOMAIN}`)
+      traefik.http.routers.plant-it-insecure.entrypoints: web
+      traefik.http.routers.plant-it-insecure.service: plant-it
+      traefik.http.routers.plant-it-insecure.middlewares: plant-it-web-redirect
+
+      # Websecure router configuration for HTTPS
+      traefik.http.routers.plant-it.rule: Host(`${APP_DOMAIN}`)
+      traefik.http.routers.plant-it.entrypoints: websecure
+      traefik.http.routers.plant-it.service: plant-it
+      traefik.http.routers.plant-it.tls.certresolver: myresolver
+
+      # Local domain router for HTTP, useful for internal access without HTTPS
+      traefik.http.routers.plant-it-local-insecure.rule: Host(`plant-it.${LOCAL_DOMAIN}`)
+      traefik.http.routers.plant-it-local-insecure.entrypoints: web
+      traefik.http.routers.plant-it-local-insecure.service: plant-it
+      traefik.http.routers.plant-it-local-insecure.middlewares: plant-it-web-redirect
+
+      # Local domain secure router for HTTPS
+      traefik.http.routers.plant-it-local.rule: Host(`plant-it.${LOCAL_DOMAIN}`)
+      traefik.http.routers.plant-it-local.entrypoints: websecure
+      traefik.http.routers.plant-it-local.service: plant-it
+      traefik.http.routers.plant-it-local.tls: true # Enables TLS for the local domain
+
+  # Service definition for the database
+  big-bear-plant-it-db:
+    # Name of the database container
+    container_name: big-bear-plant-it-db
+    # Image for the database
+    image: mysql:8.0
+    # Restart policy for the database container
+    restart: always
+    environment:
+      # MySQL database name
+      - MYSQL_DATABASE=plantit
+      # MySQL root password
+      - MYSQL_ROOT_PASSWORD=${MYSQL_PASSWORD}
+    ports:
+      # Mapping port 3306 of the host to port 3306 of the container
+      - "3306:3306"
+    volumes:
+      # Volume for MySQL data
+      - "/DATA/AppData/$AppID/mysql:/var/lib/mysql"
+    networks:
+      - tipi_main_network # Connects the container to the specified network
+
+  # Service definition for the cache
+  big-bear-plant-it-cache:
+    # Name of the cache container
+    container_name: big-bear-plant-it-cache
+    # Image for the cache
+    image: redis:7.2.1
+    # Restart policy for the cache container
+    restart: always
+    networks:
+      - tipi_main_network # Connects the container to the specified network

@@ -1,0 +1,31 @@
+{
+  "$schema": "../schema.json",
+  "name": "Plant-it",
+  "port": 8299,
+  "available": true,
+  "exposable": true,
+  "id": "big-bear-plant-it",
+  "tipi_version": 16,
+  "version": "0.7.1",
+  "categories": ["utilities"],
+  "description": "Plant-it is a self-hosted gardening companion app.",
+  "short_desc": "Plant-it is a self-hosted gardening companion app.",
+  "author": "MDeLuise",
+  "source": "https://github.com/MDeLuise/plant-it",
+  "website": "https://github.com/MDeLuise/plant-it",
+  "form_fields": [
+    {
+      "type": "random",
+      "label": "MySQL password.",
+      "min": 32,
+      "env_variable": "MYSQL_PASSWORD"
+    },
+    {
+      "type": "random",
+      "label": "Activepieces jwt secret.",
+      "min": 32,
+      "env_variable": "JWT_SECRET"
+    }
+  ],
+  "supported_architectures": ["arm64", "amd64"]
+}
