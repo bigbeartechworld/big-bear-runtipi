@@ -1,6 +1,6 @@
 services:
   2fauth:
-    image: 2fauth/2fauth:5.1.1 # Specifies the Docker image and version to use for 2FAuth
+    image: 2fauth/2fauth:5.2.0 # Specifies the Docker image and version to use for 2FAuth
     container_name: 2fauth # Sets the name of the container
     volumes:
       - ${APP_DATA_DIR}/data:/2fauth # Mounts the volume for persistent data storage
