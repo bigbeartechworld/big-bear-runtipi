@@ -29,7 +29,7 @@ services:
       - tipi_main_network
 
   invoice-ninja-web:
-    image: nginx:1.25
+    image: nginx:1.27
     container_name: invoice-ninja-web
     restart: unless-stopped
     volumes:
