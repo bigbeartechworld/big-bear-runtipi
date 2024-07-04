@@ -36,7 +36,7 @@ services:
       MONGO_CONNECTION: mongodb://big-bear-nightscout-mongo:27017/nightscout
 
       # API_SECRET - A secret passphrase that must be at least 12 characters long.
-      API_SECRET: 48f875fa-0e03-416f-b9d6-19c9afc4e194 # change_me
+      API_SECRET: ${API_SECRET} # change_me
 
       ### Features
       # ENABLE - Used to enable optional features, expects a space delimited list, such as: careportal rawbg iob

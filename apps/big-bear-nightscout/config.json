@@ -13,6 +13,13 @@
   "author": "nightscout",
   "source": "https://github.com/nightscout/cgm-remote-monitor",
   "website": "https://github.com/nightscout/cgm-remote-monitor",
-  "form_fields": [],
+  "form_fields": [
+    {
+      "type": "random",
+      "label": "Nightscout API secret.",
+      "min": 12,
+      "env_variable": "API_SECRET"
+    }
+  ],
   "supported_architectures": ["arm64", "amd64"]
 }
