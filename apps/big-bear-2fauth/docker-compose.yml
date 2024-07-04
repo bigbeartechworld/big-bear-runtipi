@@ -1,7 +1,7 @@
 services:
-  2fauth:
+  big-bear-2fauth:
     image: 2fauth/2fauth:5.2.0 # Specifies the Docker image and version to use for 2FAuth
-    container_name: 2fauth # Sets the name of the container
+    container_name: big-bear-2fauth # Sets the name of the container
     volumes:
       - ${APP_DATA_DIR}/data:/2fauth # Mounts the volume for persistent data storage
     ports:
@@ -40,3 +40,5 @@ services:
       traefik.http.routers.2fauth-local.entrypoints: websecure
       traefik.http.routers.2fauth-local.service: 2fauth
       traefik.http.routers.2fauth-local.tls: true # Enables TLS for the local domain
+
+      runtipi.managed: true

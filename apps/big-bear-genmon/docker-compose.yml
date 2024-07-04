@@ -52,3 +52,5 @@ services:
       traefik.http.routers.big-bear-genmon-local.entrypoints: websecure
       traefik.http.routers.big-bear-genmon-local.service: big-bear-genmon
       traefik.http.routers.big-bear-genmon-local.tls: true
+
+      runtipi.managed: true

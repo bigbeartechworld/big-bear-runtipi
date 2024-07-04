@@ -1,7 +1,7 @@
 version: "3.9"
 services:
-  mailpit:
-    container_name: mailpit
+  big-bear-mailpit:
+    container_name: big-bear-mailpit
     image: axllent/mailpit:v1.17
     restart: unless-stopped
     ports: # Ports to expose for the app service
@@ -38,3 +38,5 @@ services:
       traefik.http.routers.mailpit-local.entrypoints: websecure
       traefik.http.routers.mailpit-local.service: mailpit
       traefik.http.routers.mailpit-local.tls: true
+
+      runtipi.managed: true

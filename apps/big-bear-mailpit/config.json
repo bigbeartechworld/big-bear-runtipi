@@ -4,7 +4,7 @@
   "port": 8025,
   "available": true,
   "exposable": true,
-  "id": "mailpit",
+  "id": "big-bear-mailpit",
   "tipi_version": 17,
   "version": "v1.17",
   "force_expose": false,

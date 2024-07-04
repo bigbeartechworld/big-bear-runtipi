@@ -1,7 +1,7 @@
 {
   "services": [
     {
-      "name": "2fauth",
+      "name": "big-bear-2fauth",
       "image": "2fauth/2fauth:5.2.0",
       "internalPort": 8000,
       "isMain": true,

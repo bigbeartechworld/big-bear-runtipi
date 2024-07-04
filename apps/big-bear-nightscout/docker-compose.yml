@@ -55,13 +55,6 @@ services:
     depends_on:
       - big-bear-nightscout-mongo
 
-    # Volumes to be mounted to the container
-    volumes:
-      # Volume for uploads
-      - "${APP_DATA_DIR}/upload-dir:/upload-dir"
-      # Volume for SSL certificates
-      - "${APP_DATA_DIR}/certificates:/certificates"
-
     # Ports mapping between host and container
     ports:
       # Mapping port 1337 of the host to port 1337 of the container
@@ -100,6 +93,8 @@ services:
       traefik.http.routers.nightscout-local.service: nightscout
       traefik.http.routers.nightscout-local.tls: true # Enables TLS for the local domain
 
+      runtipi.managed: true
+
   big-bear-nightscout-mongo:
     # Name of the MongoDB container
     container_name: big-bear-nightscout-mongo
@@ -109,8 +104,11 @@ services:
 
     # Networks for the MongoDB container
     networks:
-      - big-bear-nightscout-network
+      - tipi_main_network
 
     # Volume mappings for the MongoDB container
     volumes:
       - ${APP_DATA_DIR}/data/mongo:/data/db:cached
+
+    labels:
+      runtipi.managed: true
