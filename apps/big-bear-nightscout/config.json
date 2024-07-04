@@ -15,9 +15,11 @@
   "website": "https://github.com/nightscout/cgm-remote-monitor",
   "form_fields": [
     {
-      "type": "random",
-      "label": "Nightscout API secret.",
+      "type": "password",
+      "label": "Nightscout API secret",
+      "max": 50,
       "min": 12,
+      "required": true,
       "env_variable": "API_SECRET"
     }
   ],
