@@ -26,7 +26,7 @@ services:
 
     # Ports mapping between host and container
     ports:
-      # Mapping port 3000 of the host to port 3000 of the container
+      # Mapping port 8302 of the host to port 7681 of the container
       - "${APP_PORT}:7681"
 
     networks:
