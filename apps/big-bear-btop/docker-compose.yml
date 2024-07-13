@@ -1,0 +1,65 @@
+version: "3.7"
+# Service definitions for the big-bear-btop application
+services:
+  # Service name: big-bear-btop
+  # The `big-bear-btop` service definition
+  big-bear-btop:
+    # Name of the container
+    container_name: big-bear-btop
+
+    # Image to be used for the container
+    image: bigbeartechworld/big-bear-btop:0.0.3
+
+    # Container restart policy
+    restart: unless-stopped
+
+    # Mount necessary volumes for accessing system information
+    volumes:
+      # Mount the host's /proc directory to the container's /proc directory
+      - /proc:/proc
+      # Mount the host's /sys directory to the container's /sys directory
+      - /sys:/sys
+      # Mount the host's /dev directory to the container's /dev directory
+      - /dev:/dev
+      # Mount the host's /etc/localtime file to the container's /etc/localtime file (read-only)
+      - /etc/localtime:/etc/localtime:ro
+
+    # Ports mapping between host and container
+    ports:
+      # Mapping port 3000 of the host to port 3000 of the container
+      - "${APP_PORT}:7681"
+
+    networks:
+      - tipi_main_network # Connects the container to the specified network
+
+    labels:
+      # Main Traefik settings for enabling the service and defining the load balancer port
+      traefik.enable: true
+      traefik.http.middlewares.btop-web-redirect.redirectscheme.scheme: https
+      traefik.http.services.btop.loadbalancer.server.port: 3000
+
+      # Web router configuration for HTTP, redirects to HTTPS
+      traefik.http.routers.btop-insecure.rule: Host(`${APP_DOMAIN}`)
+      traefik.http.routers.btop-insecure.entrypoints: web
+      traefik.http.routers.btop-insecure.service: btop
+      traefik.http.routers.btop-insecure.middlewares: btop-web-redirect
+
+      # Websecure router configuration for HTTPS
+      traefik.http.routers.btop.rule: Host(`${APP_DOMAIN}`)
+      traefik.http.routers.btop.entrypoints: websecure
+      traefik.http.routers.btop.service: btop
+      traefik.http.routers.btop.tls.certresolver: myresolver
+
+      # Local domain router for HTTP, useful for internal access without HTTPS
+      traefik.http.routers.btop-local-insecure.rule: Host(`btop.${LOCAL_DOMAIN}`)
+      traefik.http.routers.btop-local-insecure.entrypoints: web
+      traefik.http.routers.btop-local-insecure.service: btop
+      traefik.http.routers.btop-local-insecure.middlewares: btop-web-redirect
+
+      # Local domain secure router for HTTPS
+      traefik.http.routers.btop-local.rule: Host(`btop.${LOCAL_DOMAIN}`)
+      traefik.http.routers.btop-local.entrypoints: websecure
+      traefik.http.routers.btop-local.service: btop
+      traefik.http.routers.btop-local.tls: true # Enables TLS for the local domain
+
+      runtipi.managed: true

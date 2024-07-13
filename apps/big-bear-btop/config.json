@@ -1,0 +1,18 @@
+{
+  "$schema": "../schema.json",
+  "name": "BTOP",
+  "port": 8302,
+  "available": true,
+  "exposable": true,
+  "id": "big-bear-btop",
+  "tipi_version": 16,
+  "version": "0.0.3",
+  "categories": ["utilities"],
+  "description": "A monitor of resources. Software made by Aristocratos at https://github.com/aristocratos/btop",
+  "short_desc": "A monitor of resources",
+  "author": "MDeLuise",
+  "source": "https://github.com/bigbeartechworld/big-bear-docker-images/tree/main/btop",
+  "website": "https://github.com/bigbeartechworld/big-bear-docker-images/tree/main/btop",
+  "form_fields": [],
+  "supported_architectures": ["arm64", "amd64"]
+}
