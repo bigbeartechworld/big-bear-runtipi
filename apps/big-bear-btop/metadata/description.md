@@ -1,5 +1,7 @@
 # BTOP
 
+https://youtu.be/bE58ywZ6Iow
+
 Resource monitor that shows usage and stats for processor, memory, disks, network and processes.
 
 C++ version and continuation of bashtop 2 and bpytop 1.
