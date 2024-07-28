@@ -1,9 +1,11 @@
-version: "3.9"
+version: '3.9'
 services:
   semaphore:
     container_name: semaphore
     image: semaphoreui/semaphore:v2.19.10
     restart: unless-stopped
+    volumes:
+      - ${APP_DATA_DIR}/data/repositories:/repositories
     environment:
       - SEMAPHORE_DB_USER=semaphore
       - SEMAPHORE_DB_PASS=${SEMAPHORE_DB_PASSWORD}
@@ -56,7 +58,7 @@ services:
     image: postgres:14
     restart: unless-stopped
     volumes:
-      - ${APP_DATA_DIR}/data:/var/lib/postgresql/data
+      - ${APP_DATA_DIR}/data/db:/var/lib/postgresql/data
     environment:
       - POSTGRES_USER=semaphore
       - POSTGRES_PASSWORD=${SEMAPHORE_DB_PASSWORD}
@@ -66,4 +68,3 @@ services:
     labels:
       # Runtipi managed
       runtipi.managed: true
-  

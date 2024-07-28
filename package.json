@@ -8,7 +8,8 @@
     "lint": "eslint ./apps --ext .json",
     "test": "jest",
     "prepare": "husky install",
-    "ports": "node find-ports.js"
+    "ports": "node find-ports.js",
+    "sync": "sh sync.sh"
   },
   "repository": {
     "type": "git",
