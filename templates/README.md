@@ -1,26 +1,29 @@
-# Tipi App Store ⛺️
+# Big Bear Runtipi
 
-This is the official repository for the Tipi App Store. It contains all the apps that are available for download on [Tipi](https://github.com/runtipi/runtipi).
+This is a 3rd party app store maintained by BigBearTechWorld and the BigBearCommunity.
 
-## How to get started
+## Add the app store to your Runtipi instance
 
-1. Install **[Node.js](https://nodejs.org/en)** on your machine
-2. Install **[pnpm](https://pnpm.io/installation)** package manager
-3. Install dependencies (from the root of the project)
-```bash
-pnpm install
+1. Go to settings in the topbar
+2. Click on settings tab
+3. Scroll down to "Apps repo URL"
+4. Replace contents with:
+
 ```
+https://github.com/bigbeartechworld/big-bear-runtipi
+```
+
+5. Take note of the "Storage path".
+6. SSH into your Tipi Server
+7. cd into the storage path
+8. Run `./runtipi-cli restart`
+
+## Apps available
+
+<!appsList>
 
 ## How to sumbit an app
 
 If you want to see new apps on Tipi you can either:
 
-- [Create a discussion](https://github.com/runtipi/runtipi-appstore/discussions) on this repository and members of the community will add it
-- [Join the Discord](https://discord.gg/Bu9qEPnHsc) members of the community will add it.
-- Fork this repo and create the necessary files for a Tipi app. Follow this [guide](https://www.runtipi.io/docs/contributing/adding-a-new-app)`
-
-## Apps available (<!appsCount>)
-
-| Name | Description | Port |
-| ---- | ----------- | ---- |
-<!appsList>
+- [Create a discussion](https://community.bigbeartechworld.com) on the BigBearCommunity and members of the community will add it
