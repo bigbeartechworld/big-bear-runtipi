@@ -1,0 +1,20 @@
+{
+  "$schema": "../schema.json",
+  "name": "Omni Tools",
+  "port": 8306,
+  "available": true,
+  "exposable": true,
+  "id": "big-bear-omni-tools",
+  "tipi_version": 16,
+  "version": "0.4.0",
+  "categories": ["utilities"],
+  "description": "Self-hosted collection of powerful web-based tools for everyday tasks. No ads, no tracking, just fast, accessible utilities right from your browser!",
+  "short_desc": "Self-hosted collection of powerful web-based tools for everyday tasks. No ads, no tracking, just fast, accessible utilities right from your browser!",
+  "author": "iib0011",
+  "source": "https://github.com/iib0011/omni-tools",
+  "website": "https://github.com/iib0011/omni-tools",
+  "form_fields": [],
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1691943801422,
+  "updated_at": 1733760000000
+}
