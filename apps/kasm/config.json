@@ -1,0 +1,21 @@
+{
+  "name": "Kasm",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "kasm",
+  "description": "The Container Streaming Platform - Streaming containerized apps and desktops to end-users. The Workspaces platform provides enterprise-class orchestration, data loss prevention, and web streaming technology to enable the delivery of containerized workloads to your browser.",
+  "tipi_version": 1,
+  "version": "1.120.20221218",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "Kasm",
+  "author": "Kasm",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761456651000,
+  "updated_at": 1761456651000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

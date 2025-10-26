@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "big-bear-audiobookshelf",
+      "image": "ghcr.io/advplyr/audiobookshelf:2.30.0",
+      "internalPort": 80,
+      "isMain": true
+    }
+  ]
+}

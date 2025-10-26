@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "big-bear-openvpn-as",
+      "image": "openvpn/openvpn-as:2.13.1-d8cdeb9c-Ubuntu22",
+      "internalPort": 943/tcp,
+      "isMain": true
+    }
+  ]
+}

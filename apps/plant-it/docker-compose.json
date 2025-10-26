@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "big-bear-plant-it",
+      "image": "msdeluise/plant-it-server:0.10.0",
+      "internalPort": 8080,
+      "isMain": true
+    }
+  ]
+}

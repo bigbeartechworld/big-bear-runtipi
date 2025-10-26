@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "app",
+      "image": "b4bz/homer:v25.10.1",
+      "internalPort": 8080,
+      "isMain": true
+    }
+  ]
+}

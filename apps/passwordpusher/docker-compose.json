@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "big-bear-pwpush",
+      "image": "pglombardo/pwpush:1.62.1",
+      "internalPort": 5100,
+      "isMain": true
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Rocket.Chat",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "rocket-chat",
+  "description": "Rocket.Chat is an open-source fully customizable communications platform [...]",
+  "tipi_version": 1,
+  "version": "6.13.1",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "The communications platform that puts data protection first.",
+  "author": "rocket.chat",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761456704000,
+  "updated_at": 1761456704000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

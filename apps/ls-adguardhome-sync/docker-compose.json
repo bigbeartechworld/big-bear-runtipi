@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "big-bear-ls-adguard-home-sync",
+      "image": "linuxserver/adguardhome-sync:0.8.1",
+      "internalPort": 8080,
+      "isMain": true
+    }
+  ]
+}

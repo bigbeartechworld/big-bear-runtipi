@@ -1,41 +1,31 @@
-version: "3.9"
+# Configuration for komga setup
+
+# Name of the big-bear-komga application
+name: big-bear-komga
+# Service definitions for the big-bear-komga application
 services:
   komga:
-    image: ghcr.io/gotson/komga:1.14.0
+    # Name of the container
     container_name: komga
-    volumes:
-      - ${APP_DATA_DIR}/data/config:/config
-      - ${APP_DATA_DIR}/data/data:/data
+    # Image to be used for the container
+    image: ghcr.io/gotson/komga:1.23.5
+    # Container restart policy
+    restart: unless-stopped
+    # Environment variables for the container
     environment:
-      - TZ=${TZ}
+      - TZ=UTC
+    # Volumes to be mounted to the container
+    volumes:
+      - ./data/config:/config
+      - ./data/data:/data
+    # Ports mapping between host and container
     ports:
-      - ${APP_PORT}:25600
+      # Mapping port 25600 of the host to port 25600 of the container
+      - "25600:25600"
+    labels:
+      runtipi.managed: "true"
     networks:
       - tipi_main_network
-    restart: unless-stopped
-    labels:
-      # Main
-      traefik.enable: true
-      traefik.http.middlewares.komga-web-redirect.redirectscheme.scheme: https
-      traefik.http.services.komga.loadbalancer.server.port: 25600
-      # Web
-      traefik.http.routers.komga-insecure.rule: Host(`${APP_DOMAIN}`)
-      traefik.http.routers.komga-insecure.entrypoints: web
-      traefik.http.routers.komga-insecure.service: komga
-      traefik.http.routers.komga-insecure.middlewares: komga-web-redirect
-      # Websecure
-      traefik.http.routers.komga.rule: Host(`${APP_DOMAIN}`)
-      traefik.http.routers.komga.entrypoints: websecure
-      traefik.http.routers.komga.service: komga
-      traefik.http.routers.komga.tls.certresolver: myresolver
-      # Local domain
-      traefik.http.routers.komga-local-insecure.rule: Host(`komga.${LOCAL_DOMAIN}`)
-      traefik.http.routers.komga-local-insecure.entrypoints: web
-      traefik.http.routers.komga-local-insecure.service: komga
-      traefik.http.routers.komga-local-insecure.middlewares: komga-web-redirect
-      # Local domain secure
-      traefik.http.routers.komga-local.rule: Host(`komga.${LOCAL_DOMAIN}`)
-      traefik.http.routers.komga-local.entrypoints: websecure
-      traefik.http.routers.komga-local.service: komga
-      traefik.http.routers.komga-local.tls: true
-      runtipi.managed: true
+networks:
+  tipi_main_network:
+    external: true

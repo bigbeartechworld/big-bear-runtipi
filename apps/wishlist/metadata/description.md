@@ -1,0 +1,1 @@
+Wishlist is a self-hosted wishlist application that you can share with your friends and family. You no longer have to wonder what to get your family for the holidays, simply check their wishlist and claim any available item!

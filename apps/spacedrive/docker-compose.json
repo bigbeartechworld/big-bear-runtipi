@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "big-bear-spacedrive",
+      "image": "ghcr.io/spacedriveapp/spacedrive/server:0.4.2",
+      "internalPort": 8080,
+      "isMain": true
+    }
+  ]
+}

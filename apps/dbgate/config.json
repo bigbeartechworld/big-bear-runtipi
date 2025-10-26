@@ -1,0 +1,21 @@
+{
+  "name": "DBGate",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "dbgate",
+  "description": "Web based UI for managing and exploring SQL database data",
+  "tipi_version": 1,
+  "version": "6.6.5-alpine",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "DBGate",
+  "author": "dbgate",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761456635000,
+  "updated_at": 1761456635000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

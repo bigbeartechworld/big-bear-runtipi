@@ -1,0 +1,21 @@
+{
+  "name": "Gluetun",
+  "available": true,
+  "port": 8080,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "gluetun",
+  "description": "Lightweight swiss-knife-like VPN client to multiple VPN service providers",
+  "tipi_version": 1,
+  "version": "3.40.0",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "Gluetun",
+  "author": "portainer",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761456641000,
+  "updated_at": 1761456641000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Pterodactyl Panel",
+  "available": true,
+  "port": 1180,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "pterodactyl-panel",
+  "description": "Pterodactyl® is a free, open-source game server management panel built with PHP, React, and Go. Designed with security in mind, Pterodactyl runs all game servers in isolated Docker containers while exposing a beautiful and intuitive UI to end users.",
+  "tipi_version": 1,
+  "version": "1.11.11",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "Pterodactyl Panel",
+  "author": "pterodactyl",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761456692000,
+  "updated_at": 1761456692000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

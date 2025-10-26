@@ -1,0 +1,21 @@
+{
+  "name": "OpenVPN",
+  "available": true,
+  "port": 943,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "openvpn-as",
+  "description": "OpenVPN is an open-source commercial software that implements virtual private network (VPN) techniques to create secure point-to-point or site-to-site connections in routed or bridged configurations and remote access facilities.",
+  "tipi_version": 1,
+  "version": "2.13.1-d8cdeb9c-Ubuntu22",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "OpenVPN is an open-source commercial software that implements virtual private network (VPN).",
+  "author": "openvpn",
+  "source": "",
+  "website": "/admin",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761456673000,
+  "updated_at": 1761456673000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

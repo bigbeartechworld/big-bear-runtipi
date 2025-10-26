@@ -1,40 +1,28 @@
-version: "3.9"
+name: big-bear-pingvin-share
 services:
   pingvin-share:
-    container_name: pingvin-share
-    image: stonith404/pingvin-share:v0.29.0
+    # Name of the service
+    image: stonith404/pingvin-share:v1.13.0
+    # Image to be used for this service
+
     restart: unless-stopped
+    # Service will always restart unless it's manually stopped
+
     ports:
-      - ${APP_PORT}:3000
+      # Port mapping between host and container
+      - 3000:3000
+      # Maps port 3000 on the host to port 3000 in the container
     volumes:
-      - ${APP_DATA_DIR}/data:/opt/app/backend/data
-      - ${APP_DATA_DIR}/data/images:/opt/app/frontend/public/img
+      # Defines volume mounts for the service
+      - "/DATA/AppData/pingvin-share/data:/opt/app/backend/data"
+      # Maps data directory from host to container's backend data directory
+      - "/DATA/AppData/pingvin-share/images:/opt/app/frontend/public/img"
+      # Maps images directory from host to container's frontend public img directory
+    labels:
+      runtipi.managed: "true"
+    container_name: pingvin-share
     networks:
       - tipi_main_network
-    labels:
-      # Main
-      traefik.enable: true
-      traefik.http.middlewares.pingvin-share-web-redirect.redirectscheme.scheme: https
-      traefik.http.services.pingvin-share.loadbalancer.server.port: 3000
-      # Web
-      traefik.http.routers.pingvin-share-insecure.rule: Host(`${APP_DOMAIN}`)
-      traefik.http.routers.pingvin-share-insecure.entrypoints: web
-      traefik.http.routers.pingvin-share-insecure.service: pingvin-share
-      traefik.http.routers.pingvin-share-insecure.middlewares: pingvin-share-web-redirect
-      # Websecure
-      traefik.http.routers.pingvin-share.rule: Host(`${APP_DOMAIN}`)
-      traefik.http.routers.pingvin-share.entrypoints: websecure
-      traefik.http.routers.pingvin-share.service: pingvin-share
-      traefik.http.routers.pingvin-share.tls.certresolver: myresolver
-      # Local domain
-      traefik.http.routers.pingvin-share-local-insecure.rule: Host(`pingvin-share.${LOCAL_DOMAIN}`)
-      traefik.http.routers.pingvin-share-local-insecure.entrypoints: web
-      traefik.http.routers.pingvin-share-local-insecure.service: pingvin-share
-      traefik.http.routers.pingvin-share-local-insecure.middlewares: pingvin-share-web-redirect
-      # Local domain secure
-      traefik.http.routers.pingvin-share-local.rule: Host(`pingvin-share.${LOCAL_DOMAIN}`)
-      traefik.http.routers.pingvin-share-local.entrypoints: websecure
-      traefik.http.routers.pingvin-share-local.service: pingvin-share
-      traefik.http.routers.pingvin-share-local.tls: true
-      # Runtipi managed
-      runtipi.managed: true
+networks:
+  tipi_main_network:
+    external: true

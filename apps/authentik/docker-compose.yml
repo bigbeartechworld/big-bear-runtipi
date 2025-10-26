@@ -1,66 +1,21 @@
-version: "3.7"
+# Configuration for authentik setup
 
+# Name of the big-bear-authentik application
+name: big-bear-authentik
+# Service definitions for the big-bear-authentik application
 services:
-  authentik:
-    image: ghcr.io/goauthentik/server:2024.8.3
-    restart: unless-stopped
-    command: server
-    container_name: authentik
-    environment:
-      AUTHENTIK_REDIS__HOST: authentik-redis
-      AUTHENTIK_POSTGRESQL__HOST: authentik-db
-      AUTHENTIK_POSTGRESQL__USER: authentik
-      AUTHENTIK_POSTGRESQL__NAME: authentik
-      AUTHENTIK_POSTGRESQL__PASSWORD: ${AUTHENTIK_DB_PASSWORD}
-      AUTHENTIK_SECRET_KEY: ${AUTHENTIK_SECRET_KEY}
-    volumes:
-      - ${APP_DATA_DIR}/data/authentik-media:/media
-      - ${APP_DATA_DIR}/data/authentik-custom-templates:/templates
-    ports:
-      - "${APP_PORT}:9443"
-    depends_on:
-      - authentik-db
-      - authentik-redis
-    networks:
-      - tipi_main_network
-    labels:
-      # Main
-      traefik.enable: true
-      traefik.http.middlewares.authentik-web-redirect.redirectscheme.scheme: https
-      traefik.http.services.authentik.loadbalancer.server.port: 9000
-      # Web
-      traefik.http.routers.authentik-insecure.rule: Host(`${APP_DOMAIN}`)
-      traefik.http.routers.authentik-insecure.entrypoints: web
-      traefik.http.routers.authentik-insecure.service: authentik
-      traefik.http.routers.authentik-insecure.middlewares: authentik-web-redirect
-      # Websecure
-      traefik.http.routers.authentik.rule: Host(`${APP_DOMAIN}`)
-      traefik.http.routers.authentik.entrypoints: websecure
-      traefik.http.routers.authentik.service: authentik
-      traefik.http.routers.authentik.tls.certresolver: myresolver
-      # Local domain
-      traefik.http.routers.authentik-local-insecure.rule: Host(`authentik.${LOCAL_DOMAIN}`)
-      traefik.http.routers.authentik-local-insecure.entrypoints: web
-      traefik.http.routers.authentik-local-insecure.service: authentik
-      traefik.http.routers.authentik-local-insecure.middlewares: authentik-web-redirect
-      # Local domain secure
-      traefik.http.routers.authentik-local.rule: Host(`authentik.${LOCAL_DOMAIN}`)
-      traefik.http.routers.authentik-local.entrypoints: websecure
-      traefik.http.routers.authentik-local.service: authentik
-      traefik.http.routers.authentik-local.tls: true
-      runtipi.managed: true
-  authentik-worker:
-    image: ghcr.io/goauthentik/server:2024.8.3
+  big-bear-authentik-worker:
+    image: ghcr.io/goauthentik/server:2025.8.4
     restart: unless-stopped
     command: worker
-    container_name: authentik-worker
+    container_name: big-bear-authentik-worker
     environment:
-      AUTHENTIK_REDIS__HOST: authentik-redis
-      AUTHENTIK_POSTGRESQL__HOST: authentik-db
+      AUTHENTIK_REDIS__HOST: big-bear-authentik-redis
+      AUTHENTIK_POSTGRESQL__HOST: big-bear-authentik-db
       AUTHENTIK_POSTGRESQL__USER: authentik
       AUTHENTIK_POSTGRESQL__NAME: authentik
-      AUTHENTIK_POSTGRESQL__PASSWORD: ${AUTHENTIK_DB_PASSWORD}
-      AUTHENTIK_SECRET_KEY: ${AUTHENTIK_SECRET_KEY}
+      AUTHENTIK_POSTGRESQL__PASSWORD: authentik-password
+      AUTHENTIK_SECRET_KEY: changeme
     # `user: root` and the docker socket volume are optional.
     # See more for the docker socket integration here:
     # https://goauthentik.io/docs/outposts/integrations/docker
@@ -70,19 +25,23 @@ services:
     user: root
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - ${APP_DATA_DIR}/data/authentik-media:/media
-      - ${APP_DATA_DIR}/data/authentik-certs:/certs
-      - ${APP_DATA_DIR}/data/authentik-custom-templates:/templates
+      - ./data/data/authentik-media:/media
+      - ./data/data/authentik-certs:/certs
+      - ./data/data/authentik-custom-templates:/templates
     depends_on:
-      - authentik-db
-      - authentik-redis
+      - big-bear-authentik-db
+      - big-bear-authentik-redis
     networks:
+      - big_bear_authentik_network
       - tipi_main_network
     labels:
-      runtipi.managed: true
-  authentik-db:
-    container_name: authentik-db
-    image: postgres:12-alpine
+      runtipi.managed: "true"
+  big-bear-authentik-db:
+    container_name: big-bear-authentik-db
+    # PostgreSQL 14+ required by Authentik (since version 2024.6)
+    # BREAKING CHANGE: Existing users with PostgreSQL 12 data need to migrate
+    # See: https://www.postgresql.org/docs/current/upgrading.html
+    image: postgres:14-alpine
     restart: unless-stopped
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -d $${POSTGRES_DB} -U $${POSTGRES_USER}"]
@@ -91,19 +50,20 @@ services:
       retries: 5
       timeout: 5s
     volumes:
-      - ${APP_DATA_DIR}/data/postgres:/var/lib/postgresql/data
+      - ./data/data/postgres:/var/lib/postgresql/data
     environment:
-      POSTGRES_PASSWORD: ${AUTHENTIK_DB_PASSWORD}
+      POSTGRES_PASSWORD: authentik-password
       POSTGRES_USER: authentik
       POSTGRES_DB: authentik
     networks:
+      - big_bear_authentik_network
       - tipi_main_network
     labels:
-      runtipi.managed: true
-  authentik-redis:
-    image: redis:alpine
-    command: --save 60 1 --loglevel warning
-    container_name: authentik-redis
+      runtipi.managed: "true"
+  big-bear-authentik-redis:
+    image: redis:8.2.2-alpine@sha256:1c78f5e7512cc8b22b0edc95c20e7abd9e1fd832e5dfd5c3c6b59ce82fb238d0
+    command: ["--save", "60", "1", "--loglevel", "warning"]
+    container_name: big-bear-authentik-redis
     restart: unless-stopped
     healthcheck:
       test: ["CMD-SHELL", "redis-cli ping | grep PONG"]
@@ -112,8 +72,40 @@ services:
       retries: 5
       timeout: 3s
     volumes:
-      - ${APP_DATA_DIR}/data/redis:/data
+      - ./data/data/redis:/data
     networks:
+      - big_bear_authentik_network
       - tipi_main_network
     labels:
-      runtipi.managed: true
+      runtipi.managed: "true"
+  authentik:
+    # Name of the container
+    container_name: authentik
+    # Image to be used for the container
+    image: ghcr.io/goauthentik/server:2025.8.4
+    command: server
+    environment:
+      AUTHENTIK_REDIS__HOST: big-bear-authentik-redis
+      AUTHENTIK_POSTGRESQL__HOST: big-bear-authentik-db
+      AUTHENTIK_POSTGRESQL__USER: authentik
+      AUTHENTIK_POSTGRESQL__NAME: authentik
+      AUTHENTIK_POSTGRESQL__PASSWORD: authentik-password
+      AUTHENTIK_SECRET_KEY: changeme
+    volumes:
+      - ./data/data/authentik-media:/media
+      - ./data/data/authentik-custom-templates:/templates
+    ports:
+      - "9443:9443"
+    depends_on:
+      - big-bear-authentik-db
+      - big-bear-authentik-redis
+    networks:
+      - big_bear_authentik_network
+      - tipi_main_network
+    labels:
+      runtipi.managed: "true"
+networks:
+  big_bear_authentik_network:
+    driver: bridge
+  tipi_main_network:
+    external: true

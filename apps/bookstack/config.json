@@ -1,29 +1,21 @@
 {
-  "$schema": "../schema.json",
-  "name": "Bookstack",
+  "name": "bookstack",
   "available": true,
+  "port": 8080,
   "exposable": true,
-  "port": 8119,
+  "dynamic_config": true,
   "id": "bookstack",
-  "tipi_version": 21,
-  "version": "24.05.20240520",
-  "description": "BookStack is a simple, self-hosted, easy-to-use platform for organising and storing information. Default login: admin@admin.com password: password",
-  "short_desc": "BookStack is a self-hosted platform for organising and storing information.",
+  "description": "BookStack is a simple, self-hosted, easy-to-use platform for organising and storing information. Default login admin@admin.com password password",
+  "tipi_version": 1,
+  "version": "25.07.20250804",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "BookStack",
   "author": "Dan Brown",
-  "categories": ["data"],
-  "website": "https://www.bookstackapp.com/",
-  "source": "https://github.com/BookStackApp/BookStack",
-  "form_fields": [
-    {
-      "type": "random",
-      "label": "Database password",
-      "required": false,
-      "min": 30,
-      "max": 30,
-      "env_variable": "BOOKSTACK_DB_PASS"
-    }
-  ],
+  "source": "",
+  "website": "",
   "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1691943801422,
-  "updated_at": 1723566284000
+  "created_at": 1761456631000,
+  "updated_at": 1761456631000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
 }

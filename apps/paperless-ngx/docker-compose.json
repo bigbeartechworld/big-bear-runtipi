@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "big-bear-paperless-ngx",
+      "image": "ghcr.io/paperless-ngx/paperless-ngx:2.19.2",
+      "internalPort": 8000,
+      "isMain": true
+    }
+  ]
+}

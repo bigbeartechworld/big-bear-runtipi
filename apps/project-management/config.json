@@ -1,0 +1,21 @@
+{
+  "name": "Project Management",
+  "available": true,
+  "port": 8000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "project-management",
+  "description": "An open source Project management tool based on Laravel and Filament",
+  "tipi_version": 1,
+  "version": "1.2.3",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "Project Management",
+  "author": "eloufirhatim",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761456691000,
+  "updated_at": 1761456691000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

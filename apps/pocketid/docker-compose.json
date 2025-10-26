@@ -1,0 +1,12 @@
+{
+  "services": [
+    {
+      "name": "big-bear-pocketid",
+      "image": "ghcr.io/pocket-id/pocket-id:v1.14",
+      "internalPort":  1411
+ "1411"
+ tcp # Port mapping between host and container,
+      "isMain": true
+    }
+  ]
+}

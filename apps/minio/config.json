@@ -1,42 +1,21 @@
 {
   "name": "Minio",
   "available": true,
+  "port": 9011,
   "exposable": true,
-  "port": 8001,
+  "dynamic_config": true,
   "id": "minio",
-  "description": "MinIO is a high-performance, S3 compatible object store. It is built for large scale AI/ML, data lake and database workloads.",
-  "tipi_version": 2,
-  "version": "RELEASE.2024-02-24T17-11-14Z",
-  "categories": ["development"],
-  "short_desc": "High Performance Object Storage",
-  "author": "MinIO, Inc",
-  "source": "https://github.com/minio/minio",
-  "website": "https://min.io",
-  "form_fields": [
-    {
-      "type": "text",
-      "label": "Minio ROOT Username",
-      "max": 50,
-      "min": 1,
-      "required": true,
-      "env_variable": "MINIO_ROOT_USER"
-    },
-    {
-      "type": "password",
-      "label": "Minio ROOT Password",
-      "max": 50,
-      "min": 8,
-      "required": true,
-      "env_variable": "MINIO_ROOT_PASSWORD"
-    },
-    {
-      "type": "text",
-      "label": "Minio S3 API URL (when exposed)",
-      "required": false,
-      "env_variable": "MINIO_API_URL"
-    }
-  ],
+  "description": "A distributed object storage server built for cloud applications and devops. Default credentials 'minioadmin:minioadmin', we recommend that you change these values with 'MINIO_ROOT_USER' and 'MINIO_ROOT_PASSWORD' environment variables.",
+  "tipi_version": 1,
+  "version": "RELEASE.2025-10-15T17-29-55Z",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "An open-source S3 alternative",
+  "author": "minio",
+  "source": "",
+  "website": "",
   "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1691943801422,
-  "updated_at": 1723566284000
+  "created_at": 1761456661000,
+  "updated_at": 1761456661000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
 }
