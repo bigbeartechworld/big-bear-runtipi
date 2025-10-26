@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "big-bear-romm",
+      "image": "rommapp/romm:4.3.2",
+      "internalPort": 8080,
+      "isMain": true
+    }
+  ]
+}

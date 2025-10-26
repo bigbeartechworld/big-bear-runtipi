@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "chromium",
+      "image": "kasmweb/chromium:1.15.0-rolling",
+      "internalPort": 6901,
+      "isMain": true
+    }
+  ]
+}

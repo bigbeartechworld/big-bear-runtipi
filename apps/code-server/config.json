@@ -1,0 +1,21 @@
+{
+  "name": "Code Server",
+  "available": true,
+  "port": 8088,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "code-server",
+  "description": "Run VS Code on any machine anywhere and access it in the browser.",
+  "tipi_version": 1,
+  "version": "4.105.1",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "Code Server",
+  "author": "",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761504182000,
+  "updated_at": 1761504182000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Kiwix Server",
+  "available": true,
+  "port": 8103,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "kiwix-serve",
+  "description": "Kiwix Server is a web server for hosting .zim files",
+  "tipi_version": 1,
+  "version": "3.7.0-2",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "Kiwix Server",
+  "author": "kiwix",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761504226000,
+  "updated_at": 1761504226000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

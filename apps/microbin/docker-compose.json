@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "big-bear-microbin",
+      "image": "danielszabo99/microbin:2.0.4",
+      "internalPort": 8080,
+      "isMain": true
+    }
+  ]
+}

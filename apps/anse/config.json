@@ -1,0 +1,21 @@
+{
+  "name": "Anse",
+  "available": true,
+  "port": 8014,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "anse",
+  "description": "Anse is a fully optimized UI for AI Chats. Supercharged experience for multiple models such as ChatGPT, DALL-E and Stable Diffusion.",
+  "tipi_version": 1,
+  "version": "v1.1.11",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "Fully optimized UI for AI Chats.",
+  "author": "ddiu8081",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761504165000,
+  "updated_at": 1761504165000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Note Mark AIO",
+  "available": true,
+  "port": 8007,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "note-mark-aio",
+  "description": "Note Mark Aio is a self-hosted note taking app that allows you to create, organize, and share notes. It's a fork of the popular note-mark app with a focus on simplicity and ease of use.",
+  "tipi_version": 1,
+  "version": "0.17.1",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "Note Mark Aio",
+  "author": "enchant97",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761504251000,
+  "updated_at": 1761504251000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

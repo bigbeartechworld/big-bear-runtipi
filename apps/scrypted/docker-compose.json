@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "scrypted",
+      "image": "koush/scrypted:v0.123.58-jammy-full",
+      "internalPort": 10445,
+      "isMain": true
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "app",
+      "image": "photoprism/photoprism:240915",
+      "internalPort": 2342,
+      "isMain": true
+    }
+  ]
+}

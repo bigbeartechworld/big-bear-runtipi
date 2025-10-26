@@ -1,0 +1,21 @@
+{
+  "name": "2FAuth",
+  "available": true,
+  "port": 8000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "2fauth",
+  "description": "A Web app to manage your Two-Factor Authentication (2FA) accounts and generate their security codes",
+  "tipi_version": 1,
+  "version": "5.6.0",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "A Web app to manage your Two-Factor Authentication (2FA) accounts and generate their security codes",
+  "author": "bubka",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761504159000,
+  "updated_at": 1761504159000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "app",
+      "image": "germannewsmaker/myspeed:1.0.9",
+      "internalPort": 5216,
+      "isMain": true
+    }
+  ]
+}

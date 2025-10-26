@@ -1,0 +1,31 @@
+# Configuration for obsidian-livesync setup
+
+# Name of the big-bear-obsidian-livesync application
+name: big-bear-obsidian-livesync
+# Service definitions for the big-bear-obsidian-livesync application
+services:
+  obsidian-livesync:
+    # Name of the container
+    container_name: obsidian-livesync
+    # Image to be used for the container
+    image: couchdb:3.5.0
+    # Container restart policy
+    restart: unless-stopped
+    # Volumes to be mounted to the container
+    volumes:
+      - ./data/data/couchdb:/opt/couchdb/data
+      - ./data/data/local.ini:/opt/couchdb/etc/local.ini
+    environment:
+      - COUCHDB_USER=casaos
+      - COUCHDB_PASSWORD=casaos
+    # Ports mapping between host and container
+    ports:
+      # Mapping port 5984 of the host to port 5984 of the container
+      - "5984:5984"
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

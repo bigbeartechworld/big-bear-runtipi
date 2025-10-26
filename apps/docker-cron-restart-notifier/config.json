@@ -1,0 +1,21 @@
+{
+  "name": "Docker Cron Restart Notifier",
+  "available": true,
+  "port": 8092,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "docker-cron-restart-notifier",
+  "description": "This Docker image is designed to automatically restart specified Docker containers and send notifications to a Discord channel upon each restart. It's particularly useful for maintaining long-running services, ensuring they're periodically refreshed and stakeholders are informed of these actions.",
+  "tipi_version": 1,
+  "version": "restart-notifier-latest",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "Automatically restart specified Docker containers and send notifications to a Discord channel",
+  "author": "activecs",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761504191000,
+  "updated_at": 1761504191000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

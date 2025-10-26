@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "app",
+      "image": "louislam/uptime-kuma:1",
+      "internalPort": 3001,
+      "isMain": true
+    }
+  ]
+}

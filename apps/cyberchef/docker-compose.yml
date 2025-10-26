@@ -1,0 +1,24 @@
+# Configuration for cyberchef setup
+
+# Name of the big-bear-cyberchef application
+name: big-bear-cyberchef
+# Service definitions for the big-bear-cyberchef application
+services:
+  cyberchef:
+    # Name of the container
+    container_name: cyberchef
+    # Image to be used for the container
+    image: ghcr.io/gchq/cyberchef:10.19.4
+    # Container restart policy
+    restart: unless-stopped
+    # Ports mapping between host and container
+    ports:
+      # Mapping port 8080 of the host to port 80 of the container
+      - "8080:80"
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "app",
+      "image": "nodered/node-red:4.1.1",
+      "internalPort": 1880,
+      "isMain": true
+    }
+  ]
+}

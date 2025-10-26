@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "app",
+      "image": "corentinth/it-tools:2023.11.2-7d94e11",
+      "internalPort": 80,
+      "isMain": true
+    }
+  ]
+}

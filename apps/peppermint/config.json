@@ -1,0 +1,21 @@
+{
+  "name": "Peppermint",
+  "available": true,
+  "port": 3015,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "peppermint",
+  "description": "Peppermint is a central hub for your help desk. A powerfully easy system for tracking, prioritising, and solving customer support tickets.",
+  "tipi_version": 1,
+  "version": "latest",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "peppermint",
+  "author": "Pepperlabs",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761504267000,
+  "updated_at": 1761504267000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

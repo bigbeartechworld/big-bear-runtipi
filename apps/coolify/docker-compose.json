@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "big-bear-coolify",
+      "image": "ghcr.io/coollabsio/coolify:4.0.0-beta.434",
+      "internalPort": 8080,
+      "isMain": true
+    }
+  ]
+}

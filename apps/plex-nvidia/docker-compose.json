@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "big-bear-plex-nvidia",
+      "image": "linuxserver/plex:1.42.2",
+      "internalPort": 32401,
+      "isMain": true
+    }
+  ]
+}

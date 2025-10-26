@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "app",
+      "image": "mumblevoip/mumble-server:v1.4.230-6",
+      "internalPort": 64738,
+      "isMain": true
+    }
+  ]
+}

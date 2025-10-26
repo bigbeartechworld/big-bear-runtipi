@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "big-bear-immich-aio-alpine",
+      "image": "ghcr.io/imagegenius/immich:2.0.0-alpine",
+      "internalPort": 8080,
+      "isMain": true
+    }
+  ]
+}

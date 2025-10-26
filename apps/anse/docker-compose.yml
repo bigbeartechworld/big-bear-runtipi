@@ -1,0 +1,27 @@
+# Configuration for anse setup
+
+# Name of the big-bear-anse application
+name: big-bear-anse
+# Service definitions for the big-bear-anse application
+services:
+  anse:
+    # Name of the container
+    container_name: anse
+    # Image to be used for the container
+    image: ddiu8081/anse:v1.1.11
+    # Container restart policy
+    restart: unless-stopped
+    # Environment variables
+    environment:
+      - PORT=8014
+    # Ports mapping between host and container
+    ports:
+      # Mapping port 8014 of the host to port 8014 of the container
+      - "8014:8014"
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

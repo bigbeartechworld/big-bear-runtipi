@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "app",
+      "image": "octoprint/octoprint:1.11.3",
+      "internalPort": 80,
+      "isMain": true
+    }
+  ]
+}

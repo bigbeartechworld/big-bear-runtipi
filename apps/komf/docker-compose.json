@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "big-bear-komf",
+      "image": "sndxr/komf:1.6.1",
+      "internalPort": 8085,
+      "isMain": true
+    }
+  ]
+}

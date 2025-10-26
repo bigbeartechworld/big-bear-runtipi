@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "app",
+      "image": "mattermost/focalboard:7.11.4",
+      "internalPort": 8000,
+      "isMain": true
+    }
+  ]
+}

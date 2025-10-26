@@ -1,0 +1,21 @@
+{
+  "name": "Stirling-PDF",
+  "available": true,
+  "port": 8132,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "stirling-pdf",
+  "description": "Stirling PDF - Local hosted web based PDF editor",
+  "tipi_version": 1,
+  "version": "1.5.0",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "Stirling PDF - Local hosted web based PDF editor",
+  "author": "stirlingtools",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761504297000,
+  "updated_at": 1761504297000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

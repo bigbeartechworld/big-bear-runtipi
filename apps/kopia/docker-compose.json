@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "big-bear-kopia",
+      "image": "ghcr.io/thespad/kopia-server:v0.17.0-spad3",
+      "internalPort": 51515,
+      "isMain": true
+    }
+  ]
+}

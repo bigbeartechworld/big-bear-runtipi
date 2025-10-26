@@ -1,0 +1,21 @@
+{
+  "name": "Minio",
+  "available": true,
+  "port": 9011,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "minio",
+  "description": "A distributed object storage server built for cloud applications and devops. Default credentials 'minioadmin:minioadmin', we recommend that you change these values with 'MINIO_ROOT_USER' and 'MINIO_ROOT_PASSWORD' environment variables.",
+  "tipi_version": 1,
+  "version": "RELEASE.2025-10-15T17-29-55Z",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "An open-source S3 alternative",
+  "author": "minio",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761504239000,
+  "updated_at": 1761504239000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

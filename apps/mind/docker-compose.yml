@@ -1,0 +1,20 @@
+# Configuration for big-bear-mind setup
+name: big-bear-mind
+# Service definitions for the big-bear-mind application
+services:
+  mind:
+    image: "mrcas/mind:v1.4.1"
+    container_name: mind
+    environment:
+      - TZ=UTC
+    volumes:
+      - "./data/db:/app/db"
+    ports:
+      - "8080:8080"
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

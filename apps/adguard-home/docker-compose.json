@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "app",
+      "image": "adguard/adguardhome:v0.107.68",
+      "internalPort": 53,
+      "isMain": true
+    }
+  ]
+}
