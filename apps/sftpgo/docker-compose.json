@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "big-bear-sftpgo",
-      "image": "drakkan/sftpgo:v2.6",
+      "image": "drakkan/sftpgo:v2.7",
       "internalPort": 8080,
       "isMain": true
     }
