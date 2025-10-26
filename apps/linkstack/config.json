@@ -1,28 +1,21 @@
 {
-  "$schema": "../schema.json",
   "name": "LinkStack",
-  "port": 8154,
   "available": true,
+  "port": 10443,
   "exposable": true,
+  "dynamic_config": true,
   "id": "linkstack",
-  "tipi_version": 2,
-  "version": "latest",
-  "categories": ["media"],
-  "description": "LinkStack is a highly customizable link sharing platform with an intuitive, easy to use user interface",
-  "short_desc": "LinkStack is a highly customizable link sharing platform with an intuitive, easy to use user interface",
+  "description": "LinkStack is a link-in-bio tool that allows you to create a personalized and easily customizable page that houses all the important links you want to share with your audience.",
+  "tipi_version": 1,
+  "version": "V4",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "Your all-in-one link sharing solution",
   "author": "LinkStackOrg",
-  "source": "https://github.com/LinkStackOrg/linkstack-docker",
-  "form_fields": [
-    {
-      "type": "email",
-      "label": "Admin email",
-      "max": 50,
-      "min": 3,
-      "required": true,
-      "env_variable": "LINKSTACK_CUSTOM_EMAIL"
-    }
-  ],
+  "source": "",
+  "website": "",
   "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1691943801422,
-  "updated_at": 1723566285000
+  "created_at": 1761450176000,
+  "updated_at": 1761450176000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
 }

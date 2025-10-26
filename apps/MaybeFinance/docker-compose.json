@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "big-bear-maybe-finance",
+      "image": "ghcr.io/maybe-finance/maybe:sha-347c0a790693031fdd3b32792b5b6792693d1805",
+      "internalPort": 3000,
+      "isMain": true
+    }
+  ]
+}

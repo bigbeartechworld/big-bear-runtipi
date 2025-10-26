@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "zipline",
+      "image": "ghcr.io/diced/zipline:3.7.13",
+      "internalPort": 3000,
+      "isMain": true
+    }
+  ]
+}

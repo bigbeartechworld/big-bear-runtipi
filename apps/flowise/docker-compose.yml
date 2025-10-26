@@ -1,48 +1,39 @@
-version: '3.7'
+# Configuration for flowise setup
+
+# Name of the big-bear-flowise application
+name: big-bear-flowise
+# Service definitions for the big-bear-flowise application
 services:
-  flowise:
-    image: flowiseai/flowise:2.1.1
+  # Service name: big-bear-flowise
+  # The `big-bear-flowise` service definition
+  big-bear-flowise:
+    # Name of the container
+    container_name: big-bear-flowise
+    # Image to be used for the container specifies the flowise version and source
+    image: flowiseai/flowise:3.0.8
+    # Container restart policy - restarts the container unless manually stopped
     restart: unless-stopped
+    # Entrypoint to be used for the container
     entrypoint: /bin/sh -c "sleep 3; flowise start"
-    container_name: flowise
+    # Environment variables to be set in the container for application configuration
     environment:
       - PORT=8009
-      - FLOWISE_USERNAME=${FLOWISE_USERNAME}
-      - FLOWISE_PASSWORD=${FLOWISE_PASSWORD}
-      - FLOWISE_SECRETKEY_OVERWRITE=${FLOWISE_SECRETKEY_OVERWRITE}
-      - LANGCHAIN_ENDPOINT=${LANGCHAIN_ENDPOINT}
-      - LANGCHAIN_API_KEY=${LANGCHAIN_API_KEY}
-      - LANGCHAIN_PROJECT=${LANGCHAIN_PROJECT}
-      - LANGCHAIN_TRACING_V2=${LANGCHAIN_TRACING_V2}
-      - DISABLE_FLOWISE_TELEMETRY=${DISABLE_FLOWISE_TELEMETRY}
+      - FLOWISE_USERNAME=bigbear
+      - FLOWISE_PASSWORD=b0f91e4c-9d4b-4375-bc9b-9b57667ce7ab
+      - FLOWISE_SECRETKEY_OVERWRITE="true"
+      - LANGCHAIN_ENDPOINT=""
+      - LANGCHAIN_API_KEY=""
+      - LANGCHAIN_PROJECT=""
+      - LANGCHAIN_TRACING_V2=""
+      - DISABLE_FLOWISE_TELEMETRY="true"
       - DATABASE_PATH=/root/.flowise
       - APIKEY_PATH=/root/.flowise
       - SECRETKEY_PATH=/root/.flowise/logs
       - LOG_PATH=/root/.flowise
+    # Ports mapping between host and container
     ports:
-      - ${APP_PORT}:8009
+      # Mapping port 8009 of the host to port 8009 of the container
+      - "8009:8009"
+    # Volumes to be mounted to the container
     volumes:
-      - ${APP_DATA_DIR}/data/flowise:/root/.flowise
-    networks:
-      - tipi_main_network
-    labels:
-      traefik.enable: true
-      traefik.http.middlewares.flowise-web-redirect.redirectscheme.scheme: https
-      traefik.http.services.flowise.loadbalancer.server.port: 8009
-      traefik.http.routers.flowise-insecure.rule: Host(`${APP_DOMAIN}`)
-      traefik.http.routers.flowise-insecure.entrypoints: web
-      traefik.http.routers.flowise-insecure.service: flowise
-      traefik.http.routers.flowise-insecure.middlewares: flowise-web-redirect
-      traefik.http.routers.flowise.rule: Host(`${APP_DOMAIN}`)
-      traefik.http.routers.flowise.entrypoints: websecure
-      traefik.http.routers.flowise.service: flowise
-      traefik.http.routers.flowise.tls.certresolver: myresolver
-      traefik.http.routers.flowise-local-insecure.rule: Host(`flowise.${LOCAL_DOMAIN}`)
-      traefik.http.routers.flowise-local-insecure.entrypoints: web
-      traefik.http.routers.flowise-local-insecure.service: flowise
-      traefik.http.routers.flowise-local-insecure.middlewares: flowise-web-redirect
-      traefik.http.routers.flowise-local.rule: Host(`flowise.${LOCAL_DOMAIN}`)
-      traefik.http.routers.flowise-local.entrypoints: websecure
-      traefik.http.routers.flowise-local.service: flowise
-      traefik.http.routers.flowise-local.tls: true
-      runtipi.managed: true
+      - ./data/data:/root/.flowise

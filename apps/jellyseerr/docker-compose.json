@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "app",
+      "image": "fallenbagel/jellyseerr:2.7.3",
+      "internalPort": 5055,
+      "isMain": true
+    }
+  ]
+}

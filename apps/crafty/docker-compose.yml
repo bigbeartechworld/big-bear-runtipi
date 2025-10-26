@@ -1,47 +1,31 @@
-version: "3.7"
+# Configuration for crafty setup
+
+# Name of the big-bear-crafty application
+name: big-bear-crafty
+# Service definitions for the big-bear-crafty application
 services:
-  crafty:
-    container_name: crafty
-    image: registry.gitlab.com/crafty-controller/crafty-4:4.4.4
+  # Service name: big-bear-crafty
+  # The `big-bear-crafty` service definition
+  big-bear-crafty:
+    # Name of the container
+    container_name: big-bear-crafty
+    # Image to be used for the container
+    image: registry.gitlab.com/crafty-controller/crafty-4:4.5.5
+    # Container restart policy
     restart: unless-stopped
+    # Environment variables
     environment:
-        - TZ=${TZ}
+      - TZ=UTC
+    # Ports mapping between host and container HOST:CONTAINER
     ports:
-        - ${APP_PORT}:8443
-        - 8123:8123
-        - 19132:19132/udp
-        - 25500-25600:25500-25600
-    networks:
-      - tipi_main_network
+      - 8443:8443 # Web UI
+      - 8123:8123
+      - 19132:19132/udp
+      - 25500-25600:25500-25600
+    # Volumes mapping between host and container
     volumes:
-        - ${APP_DATA_DIR}/data/backups:/crafty/backups
-        - ${APP_DATA_DIR}/data/logs:/crafty/logs
-        - ${APP_DATA_DIR}/data/servers:/crafty/servers
-        - ${APP_DATA_DIR}/data/config:/crafty/app/config
-        - ${APP_DATA_DIR}/data/import:/crafty/import
-    labels:
-      # Main
-      traefik.enable: true
-      traefik.http.middlewares.crafty-docs-web-redirect.redirectscheme.scheme: https
-      traefik.http.services.crafty-docs.loadbalancer.server.port: 8443
-      # Web
-      traefik.http.routers.crafty-docs-insecure.rule: Host(`${APP_DOMAIN}`)
-      traefik.http.routers.crafty-docs-insecure.entrypoints: web
-      traefik.http.routers.crafty-docs-insecure.service: crafty-docs
-      traefik.http.routers.crafty-docs-insecure.middlewares: crafty-docs-web-redirect
-      # Websecure
-      traefik.http.routers.crafty-docs.rule: Host(`${APP_DOMAIN}`)
-      traefik.http.routers.crafty-docs.entrypoints: websecure
-      traefik.http.routers.crafty-docs.service: crafty-docs
-      traefik.http.routers.crafty-docs.tls.certresolver: myresolver
-      # Local domain
-      traefik.http.routers.crafty-docs-local-insecure.rule: Host(`crafty-docs.${LOCAL_DOMAIN}`)
-      traefik.http.routers.crafty-docs-local-insecure.entrypoints: web
-      traefik.http.routers.crafty-docs-local-insecure.service: crafty-docs
-      traefik.http.routers.crafty-docs-local-insecure.middlewares: crafty-docs-web-redirect
-      # Local domain secure
-      traefik.http.routers.crafty-docs-local.rule: Host(`crafty-docs.${LOCAL_DOMAIN}`)
-      traefik.http.routers.crafty-docs-local.entrypoints: websecure
-      traefik.http.routers.crafty-docs-local.service: crafty-docs
-      traefik.http.routers.crafty-docs-local.tls: true
-      runtipi.managed: true
+      - ./data/data/backups:/crafty/backups
+      - ./data/data/logs:/crafty/logs
+      - ./data/data/servers:/crafty/servers
+      - ./data/data/config:/crafty/app/config
+      - ./data/data/import:/crafty/import

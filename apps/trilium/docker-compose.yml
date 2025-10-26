@@ -1,38 +1,26 @@
+# Configuration for trilium setup
+
+# Name of the big-bear-trilium application
+name: big-bear-trilium
+# Service definitions for the big-bear-trilium application
 services:
-  trilium:
-    image: ghcr.io/zadam/trilium:0.63.7
-    container_name: trilium
-    ports:
-      - ${APP_PORT}:8080
+  # Service name: app
+  # The `app` service definition
+  app:
+    # Name of the container
+    container_name: big-bear-trilium
+    # Image to be used for the container
+    image: triliumnext/trilium:v0.99.3
+    # Container restart policy
+    restart: unless-stopped
+    # Environment variables
     environment:
       - TRILIUM_DATA_DIR=/home/node/trilium-data
+    # Volumes to be mounted to the container
     volumes:
-      - ${APP_DATA_DIR}/data:/home/node/trilium-data
-    networks:
-      - tipi_main_network
-    labels:
-      # Main
-      traefik.enable: true
-      traefik.http.middlewares.trilium-web-redirect.redirectscheme.scheme: https
-      traefik.http.services.trilium.loadbalancer.server.port: 8080
-      # Web
-      traefik.http.routers.trilium-insecure.rule: Host(`${APP_DOMAIN}`)
-      traefik.http.routers.trilium-insecure.entrypoints: web
-      traefik.http.routers.trilium-insecure.service: trilium
-      traefik.http.routers.trilium-insecure.middlewares: trilium-web-redirect
-      # Websecure
-      traefik.http.routers.trilium.rule: Host(`${APP_DOMAIN}`)
-      traefik.http.routers.trilium.entrypoints: websecure
-      traefik.http.routers.trilium.service: trilium
-      traefik.http.routers.trilium.tls.certresolver: myresolver
-      # Local domain
-      traefik.http.routers.trilium-local-insecure.rule: Host(`trilium.${LOCAL_DOMAIN}`)
-      traefik.http.routers.trilium-local-insecure.entrypoints: web
-      traefik.http.routers.trilium-local-insecure.service: trilium
-      traefik.http.routers.trilium-local-insecure.middlewares: trilium-web-redirect
-      # Local domain secure
-      traefik.http.routers.trilium-local.rule: Host(`trilium.${LOCAL_DOMAIN}`)
-      traefik.http.routers.trilium-local.entrypoints: websecure
-      traefik.http.routers.trilium-local.service: trilium
-      traefik.http.routers.trilium-local.tls: true
-      runtipi.managed: true
+      # Mounting the local ./data/data directory to /home/node/trilium-data inside the container
+      - ./data/data:/home/node/trilium-data
+    # Ports mapping between host and container
+    ports:
+      # Mapping port 8080 of the host to port 8080 of the container
+      - "8080:8080"

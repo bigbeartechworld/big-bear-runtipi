@@ -1,32 +1,21 @@
 {
   "name": "WordPress",
   "available": true,
-  "port": 8213,
+  "port": 8080,
   "exposable": true,
+  "dynamic_config": true,
   "id": "wordpress",
-  "description": "WordPress is a popular content management system for creating websites and blogs.",
-  "tipi_version": 11,
-  "version": "6.6.2",
-  "categories": ["social"],
-  "short_desc": "Popular CMS for websites and blogs",
-  "author": "WordPress.org",
-  "source": "https://github.com/WordPress/WordPress",
-  "website": "https://wordpress.org",
-  "form_fields": [
-    {
-      "type": "random",
-      "label": "Database Password",
-      "min": 32,
-      "env_variable": "DB_PASSWORD"
-    },
-    {
-      "type": "random",
-      "label": "Database Root Password",
-      "min": 32,
-      "env_variable": "DB_ROOT_PASSWORD"
-    }
-  ],
-  "supported_architectures": ["amd64", "arm64"],
-  "created_at": 1691943801422,
-  "updated_at": 1726026707000
+  "description": "Initially started as a blogging tool in 2003, it has evolved into a highly flexible CMS that powers over 40% of the web (as of my last training data in 2022).",
+  "tipi_version": 1,
+  "version": "6.8.3",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "WordPress",
+  "author": "Automattic",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761450188000,
+  "updated_at": 1761450188000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
 }

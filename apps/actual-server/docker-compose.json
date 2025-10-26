@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "app",
+      "image": "actualbudget/actual-server:25.10.0",
+      "internalPort": 5006,
+      "isMain": true
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "app",
+      "image": "gladysassistant/gladys:v4.64.0",
+      "internalPort": null,
+      "isMain": true
+    }
+  ]
+}

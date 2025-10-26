@@ -1,41 +1,21 @@
-version: "3.7"
+# Configuration for uptime-kuma setup
+
+# Name of the big-bear-uptime-kuma application
+name: big-bear-uptime-kuma
+# Service definitions for the big-bear-uptime-kuma application
 services:
-  uptime-kuma:
+  # Service name: app
+  # The `app` service definition includes the docker image, container name, volume mappings, port configurations, restart policy, and CasaOS specific settings.
+  app:
+    # Docker image to use for the app service
     image: louislam/uptime-kuma:1
+    # Custom container name for identification
     container_name: uptime-kuma
+    # Volume mappings: Maps host directory to container directory for persistent storage
     volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
-      - ${APP_DATA_DIR}/data:/app/data
-    dns:
-      - ${DNS_IP}
+      - ./data/data:/app/data
+    # Port mapping: Maps a port on the host to a port on the container
     ports:
-      - ${APP_PORT}:3001
-    restart: unless-stopped
-    networks:
-      - tipi_main_network
-    labels:
-      # Main
-      traefik.enable: true
-      traefik.http.middlewares.uptime-kuma-web-redirect.redirectscheme.scheme: https
-      traefik.http.services.uptime-kuma.loadbalancer.server.port: 3001
-      # Web
-      traefik.http.routers.uptime-kuma-insecure.rule: Host(`${APP_DOMAIN}`)
-      traefik.http.routers.uptime-kuma-insecure.entrypoints: web
-      traefik.http.routers.uptime-kuma-insecure.service: uptime-kuma
-      traefik.http.routers.uptime-kuma-insecure.middlewares: uptime-kuma-web-redirect
-      # Websecure
-      traefik.http.routers.uptime-kuma.rule: Host(`${APP_DOMAIN}`)
-      traefik.http.routers.uptime-kuma.entrypoints: websecure
-      traefik.http.routers.uptime-kuma.service: uptime-kuma
-      traefik.http.routers.uptime-kuma.tls.certresolver: myresolver
-      # Local domain
-      traefik.http.routers.uptime-kuma-local-insecure.rule: Host(`uptime-kuma.${LOCAL_DOMAIN}`)
-      traefik.http.routers.uptime-kuma-local-insecure.entrypoints: web
-      traefik.http.routers.uptime-kuma-local-insecure.service: uptime-kuma
-      traefik.http.routers.uptime-kuma-local-insecure.middlewares: uptime-kuma-web-redirect
-      # Local domain secure
-      traefik.http.routers.uptime-kuma-local.rule: Host(`uptime-kuma.${LOCAL_DOMAIN}`)
-      traefik.http.routers.uptime-kuma-local.entrypoints: websecure
-      traefik.http.routers.uptime-kuma-local.service: uptime-kuma
-      traefik.http.routers.uptime-kuma-local.tls: true
-      runtipi.managed: true
+      - "3001:3001" # <Host Port>:<Container Port>
+    # Restart policy: Always restart the container if it stops
+    restart: always

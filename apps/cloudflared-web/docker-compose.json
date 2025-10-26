@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "big-bear-cloudflared-web",
+      "image": "wisdomsky/cloudflared-web:2025.10.0",
+      "internalPort": null,
+      "isMain": true
+    }
+  ]
+}

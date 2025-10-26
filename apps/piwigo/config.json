@@ -1,0 +1,21 @@
+{
+  "name": "Piwigo",
+  "available": true,
+  "port": 8080,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "piwigo",
+  "description": "Piwigo is a photo gallery software for the web that comes with powerful features to publish and manage your collection of pictures.",
+  "tipi_version": 1,
+  "version": "15.7.0",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "Piwigo",
+  "author": "piwigo",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761450181000,
+  "updated_at": 1761450181000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

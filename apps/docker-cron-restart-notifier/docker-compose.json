@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "app",
+      "image": "deduard/tools:restart-notifier-latest",
+      "internalPort": null,
+      "isMain": true
+    }
+  ]
+}

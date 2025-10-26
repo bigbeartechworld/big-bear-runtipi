@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "big-bear-wishlist",
+      "image": "ghcr.io/cmintey/wishlist:v0.51.1",
+      "internalPort": 3280,
+      "isMain": true
+    }
+  ]
+}

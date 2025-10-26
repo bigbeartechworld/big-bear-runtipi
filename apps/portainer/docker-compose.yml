@@ -1,40 +1,16 @@
-version: "3.7"
-
+# Configuration for big-bear-portainer setup
+name: big-bear-portainer
+# Service definitions for the big-bear-portainer application
 services:
-  portainer:
-    image: portainer/portainer-ce:2.22.0-alpine
-    container_name: portainer
-    restart: unless-stopped
-    ports:
-      - ${APP_PORT}:9443
+  # Main Portainer service configuration
+  app:
+    container_name: big-bear-portainer # Name of the running container
+    image: portainer/portainer-ce:2.35.0-alpine # Image to be used
+    network_mode: bridge # Network mode to be used
+    ports: # Port mapping between host and container
+      - 8000:8000
+      - 9000:9000
+      - 9443:9443
     volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
-      - "${APP_DATA_DIR}/data:/data"
-    networks:
-      - tipi_main_network
-    labels:
-      # Main
-      traefik.enable: true
-      traefik.http.middlewares.portainer-web-redirect.redirectscheme.scheme: https
-      traefik.http.services.portainer.loadbalancer.server.port: 9000
-      # Web
-      traefik.http.routers.portainer-insecure.rule: Host(`${APP_DOMAIN}`)
-      traefik.http.routers.portainer-insecure.entrypoints: web
-      traefik.http.routers.portainer-insecure.service: portainer
-      traefik.http.routers.portainer-insecure.middlewares: portainer-web-redirect
-      # Websecure
-      traefik.http.routers.portainer.rule: Host(`${APP_DOMAIN}`)
-      traefik.http.routers.portainer.entrypoints: websecure
-      traefik.http.routers.portainer.service: portainer
-      traefik.http.routers.portainer.tls.certresolver: myresolver
-      # Local domain
-      traefik.http.routers.portainer-local-insecure.rule: Host(`portainer.${LOCAL_DOMAIN}`)
-      traefik.http.routers.portainer-local-insecure.entrypoints: web
-      traefik.http.routers.portainer-local-insecure.service: portainer
-      traefik.http.routers.portainer-local-insecure.middlewares: portainer-web-redirect
-      # Local domain secure
-      traefik.http.routers.portainer-local.rule: Host(`portainer.${LOCAL_DOMAIN}`)
-      traefik.http.routers.portainer-local.entrypoints: websecure
-      traefik.http.routers.portainer-local.service: portainer
-      traefik.http.routers.portainer-local.tls: true
-      runtipi.managed: true
+      - ./data/data:/data # Bind mount for Docker volumes
+      - /var/run/docker.sock:/var/run/docker.sock # Bind mount for Docker socket

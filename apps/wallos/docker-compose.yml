@@ -1,43 +1,28 @@
-version: '3'
+# Configuration for wallos setup
 
+# Name of the big-bear-wallos application
+name: big-bear-wallos
+# Service definitions for the big-bear-wallos application
 services:
-  wallos:
-    image: bellamy/wallos:2.27.3
-    container_name: wallos
-    environment:
-      - TZ=${TZ}
+  # Service name: big-bear-wallos
+  # The `big-bear-wallos` service definition
+  big-bear-wallos:
+    # Name of the container
+    container_name: big-bear-wallos
+    # Image to be used for the container
+    image: bellamy/wallos:4.5.0
+    # Container restart policy
     restart: unless-stopped
-    ports:
-      - ${APP_PORT}:80
+    # Environment variables for the container
+    environment:
+      TZ: "UTC" # Sets the time zone inside the container to Coordinated Universal Time (UTC).
+    # Volumes to be mounted to the container
     volumes:
-      - /etc/localtime:/etc/localtime:ro
-      - ${APP_DATA_DIR}/data/db:/var/www/html/db
-      - ${APP_DATA_DIR}/data/logos:/var/www/html/images/uploads/logos
-    networks:
-      - tipi_main_network
-    labels:
-      # Main
-      traefik.enable: true
-      traefik.http.middlewares.wallos-web-redirect.redirectscheme.scheme: https
-      traefik.http.services.wallos.loadbalancer.server.port: 80
-      # Web
-      traefik.http.routers.wallos-insecure.rule: Host(`${APP_DOMAIN}`)
-      traefik.http.routers.wallos-insecure.entrypoints: web
-      traefik.http.routers.wallos-insecure.service: wallos
-      traefik.http.routers.wallos-insecure.middlewares: wallos-web-redirect
-      # Websecure
-      traefik.http.routers.wallos.rule: Host(`${APP_DOMAIN}`)
-      traefik.http.routers.wallos.entrypoints: websecure
-      traefik.http.routers.wallos.service: wallos
-      traefik.http.routers.wallos.tls.certresolver: myresolver
-      # Local domain
-      traefik.http.routers.wallos-local-insecure.rule: Host(`wallos.${LOCAL_DOMAIN}`)
-      traefik.http.routers.wallos-local-insecure.entrypoints: web
-      traefik.http.routers.wallos-local-insecure.service: wallos
-      traefik.http.routers.wallos-local-insecure.middlewares: wallos-web-redirect
-      # Local domain secure
-      traefik.http.routers.wallos-local.rule: Host(`wallos.${LOCAL_DOMAIN}`)
-      traefik.http.routers.wallos-local.entrypoints: websecure
-      traefik.http.routers.wallos-local.service: wallos
-      traefik.http.routers.wallos-local.tls: true
-      runtipi.managed: true
+      # Mounting the local /DATA/AppData/big-bear-wallos/db directory to /var/www/html/db inside the container
+      - ./data/db:/var/www/html/db
+      # Mounting the local /DATA/AppData/big-bear-wallos/logos directory to /var/www/html/images/uploads/logos inside the container
+      - ./data/logos:/var/www/html/images/uploads/logos
+    # Ports mapping between host and container
+    ports:
+      # Mapping port 8282 of the host to port 80 of the container
+      - "8282:80"

@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "big-bear-komga",
+      "image": "ghcr.io/gotson/komga:1.23.5",
+      "internalPort": 25600,
+      "isMain": true
+    }
+  ]
+}

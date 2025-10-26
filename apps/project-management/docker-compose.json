@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "big-bear-project-management",
+      "image": "eloufirhatim/helper:1.2.3",
+      "internalPort": 8000,
+      "isMain": true
+    }
+  ]
+}

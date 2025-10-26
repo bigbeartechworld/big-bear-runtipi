@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "app",
+      "image": "portainer/agent:2.35.0",
+      "internalPort": 9001,
+      "isMain": true
+    }
+  ]
+}

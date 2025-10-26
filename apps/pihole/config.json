@@ -1,38 +1,21 @@
 {
-  "$schema": "../schema.json",
   "name": "Pi-hole",
   "available": true,
+  "port": 8080,
   "exposable": true,
-  "port": 8081,
-  "requirements": {
-    "ports": [53]
-  },
+  "dynamic_config": true,
   "id": "pihole",
-  "tipi_version": 19,
-  "version": "2024.07.0",
-  "url_suffix": "/admin",
-  "categories": ["network", "security"],
   "description": "The Pi-hole® is a DNS sinkhole that protects your devices from unwanted content without installing any client-side software.",
+  "tipi_version": 1,
+  "version": "2025.08.0",
+  "categories": ["bigbearcasaos"],
   "short_desc": "A black hole for Internet advertisements",
   "author": "pi-hole.net",
-  "source": "https://github.com/pi-hole/pi-hole",
-  "form_fields": [
-    {
-      "type": "password",
-      "label": "Password",
-      "max": 50,
-      "min": 3,
-      "required": true,
-      "env_variable": "APP_PASSWORD"
-    },
-    {
-      "type": "ip",
-      "label": "Network Interface (default: 0.0.0.0)",
-      "required": false,
-      "env_variable": "NETWORK_INTERFACE"
-    }
-  ],
+  "source": "",
+  "website": "/admin",
   "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1691943801422,
-  "updated_at": 1723566285000
+  "created_at": 1761450181000,
+  "updated_at": 1761450181000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
 }
