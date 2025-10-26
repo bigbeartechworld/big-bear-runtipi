@@ -1,0 +1,13 @@
+{
+  "name": "NPMPlus",
+  "id": "npmplus",
+  "available": true,
+  "short_desc": "NPMPlus",
+  "author": "zoeyvid",
+  "port": 81,
+  "categories": ["BigBearCasaOS"],
+  "description": "Docker container for managing Nginx proxy hosts with a simple, powerful interface",
+  "tipi_version": 1,
+  "version": "449",
+  "supported_architectures": ["arm64", "amd64"]
+}

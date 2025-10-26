@@ -1,0 +1,13 @@
+{
+  "name": "Homer",
+  "id": "homer",
+  "available": true,
+  "short_desc": "Homer",
+  "author": "bastienwirtz",
+  "port": 8080,
+  "categories": ["BigBearCasaOS"],
+  "description": "A dead simple static HOMepage for your servER to keep your services on hand, from a simple yaml configuration file.",
+  "tipi_version": 1,
+  "version": "25.10.1",
+  "supported_architectures": ["arm64", "amd64"]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Cloudflared Web",
+  "id": "cloudflared-web",
+  "available": true,
+  "short_desc": "Cloudflared Web",
+  "author": "wisdomsky",
+  "port": 14333,
+  "categories": ["BigBearCasaOS"],
+  "description": "Cloudflared-web is a docker image that packages both cloudflared cli and a simple Web UI to easily start or stop remotely-managed Cloudflare tunnel.",
+  "tipi_version": 1,
+  "version": "2025.10.0",
+  "supported_architectures": ["arm64", "amd64"]
+}

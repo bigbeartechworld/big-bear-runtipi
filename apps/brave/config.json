@@ -1,0 +1,13 @@
+{
+  "name": "Brave",
+  "id": "brave",
+  "available": true,
+  "short_desc": "Brave",
+  "author": "kasmweb",
+  "port": 6901,
+  "categories": ["BigBearCasaOS"],
+  "description": "This Image contains a browser-accessible version of Brave.",
+  "tipi_version": 1,
+  "version": "1.15.0-rolling",
+  "supported_architectures": ["arm64", "amd64"]
+}

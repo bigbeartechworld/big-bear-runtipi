@@ -2,16 +2,12 @@
   "name": "CyberChef",
   "id": "cyberchef",
   "available": true,
-  "exposable": true,
   "short_desc": "The Cyber Swiss Army Knife",
-  "author": "GCHQ",
-  "port": 9080,
-  "categories": ["utilities", "security"],
-  "description": "CyberChef is a web app for encryption, encoding, compression, and data analysis.",
-  "tipi_version": 4,
-  "version": "10.19.2",
-  "source": "https://github.com/gchq/CyberChef",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1691943801422,
-  "updated_at": 1724410930192
+  "author": "gchq",
+  "port": 8080,
+  "categories": ["BigBearCasaOS"],
+  "description": "CyberChef is a simple, intuitive web app for carrying out all manner of "cyber" operations within a web browser. These operations include simple encoding like XOR and Base64, more complex encryption like AES, DES and Blowfish, creating binary and hexdumps, compression and decompression of data, calculating hashes and checksums, IPv6 and X.509 parsing, changing character encodings, and much more.",
+  "tipi_version": 1,
+  "version": "10.19.4",
+  "supported_architectures": ["arm64", "amd64"]
 }

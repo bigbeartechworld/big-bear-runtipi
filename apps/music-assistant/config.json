@@ -1,0 +1,13 @@
+{
+  "name": "Music Assistant",
+  "id": "music-assistant",
+  "available": true,
+  "short_desc": "Home Automation",
+  "author": "music-assistant",
+  "port": 8095,
+  "categories": ["BigBearCasaOS"],
+  "description": "Music Assistant is a music library manager for your offline and online music sources which can easily stream your favourite music to a wide range of supported players and be combined with the power of Home Assistant!",
+  "tipi_version": 1,
+  "version": "2.6.0",
+  "supported_architectures": ["arm64", "amd64"]
+}

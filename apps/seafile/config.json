@@ -1,0 +1,13 @@
+{
+  "name": "seafile",
+  "id": "seafile",
+  "available": true,
+  "short_desc": "Seafile is an open source file sync and share platform, focusing on reliability and performance.",
+  "author": "seafile",
+  "port": 8080,
+  "categories": ["BigBearCasaOS"],
+  "description": "Seafile is an open source file sync and share platform, focusing on reliability and performance. Seafile's built-in collaborative document SeaDoc, make it easy for collaborative writing and publishing documents.",
+  "tipi_version": 1,
+  "version": "11.0.13",
+  "supported_architectures": ["arm64", "amd64"]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Umbrel OS",
+  "id": "umbrel-os",
+  "available": true,
+  "short_desc": "Umbrel OS",
+  "author": "dockurr",
+  "port": 8080,
+  "categories": ["BigBearCasaOS"],
+  "description": "Umbrel is a personal server OS that makes self-hosting accessible to everyone.",
+  "tipi_version": 1,
+  "version": "1.4.0",
+  "supported_architectures": ["arm64", "amd64"]
+}

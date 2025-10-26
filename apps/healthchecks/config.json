@@ -1,0 +1,13 @@
+{
+  "name": "Healthchecks",
+  "id": "healthchecks",
+  "available": true,
+  "short_desc": "Healthchecks",
+  "author": "linuxserver",
+  "port": 8000,
+  "categories": ["BigBearCasaOS"],
+  "description": "Healthchecks is a watchdog for your cron jobs. It's a web server that listens for pings from your cron jobs, plus a web interface.",
+  "tipi_version": 1,
+  "version": "3.11.20250828",
+  "supported_architectures": ["arm64", "amd64"]
+}

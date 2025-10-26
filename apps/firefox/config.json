@@ -1,0 +1,13 @@
+{
+  "name": "Firefox",
+  "id": "firefox",
+  "available": true,
+  "short_desc": "Firefox",
+  "author": "kasmweb",
+  "port": 6902,
+  "categories": ["BigBearCasaOS"],
+  "description": "This Image contains a browser-accessible version of Firefox.",
+  "tipi_version": 1,
+  "version": "1.15.0-rolling",
+  "supported_architectures": ["arm64", "amd64"]
+}

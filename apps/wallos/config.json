@@ -1,19 +1,13 @@
 {
-  "$schema": "../schema.json",
   "name": "Wallos",
-  "port": 8222,
-  "available": true,
-  "exposable": true,
   "id": "wallos",
-  "tipi_version": 77,
-  "version": "2.27.3",
-  "categories": ["finance"],
-  "description": "Open-Source Personal Subscription Tracker",
-  "short_desc": "Open-Source Personal Subscription Tracker",
-  "author": "Miguel Ribeiro",
-  "source": "https://github.com/ellite/Wallos",
-  "form_fields": [],
-  "supported_architectures": ["amd64"],
-  "created_at": 1691943801422,
-  "updated_at": 1728166360000
+  "available": true,
+  "short_desc": "Wallos",
+  "author": "bellamy",
+  "port": 8282,
+  "categories": ["BigBearCasaOS"],
+  "description": "Wallos: Open-Source Personal Subscription Tracker",
+  "tipi_version": 1,
+  "version": "4.5.0",
+  "supported_architectures": ["arm64", "amd64"]
 }

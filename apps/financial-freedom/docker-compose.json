@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "app",
+      "image": "serversideup/financial-freedom:v0.2.0-alpha1",
+      "internalPort": 80,
+      "isMain": true
+    }
+  ]
+}

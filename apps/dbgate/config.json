@@ -1,0 +1,13 @@
+{
+  "name": "DBGate",
+  "id": "dbgate",
+  "available": true,
+  "short_desc": "DBGate",
+  "author": "dbgate",
+  "port": 3000,
+  "categories": ["BigBearCasaOS"],
+  "description": "Web based UI for managing and exploring SQL database data",
+  "tipi_version": 1,
+  "version": "6.6.5-alpine",
+  "supported_architectures": ["arm64", "amd64"]
+}

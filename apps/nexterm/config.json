@@ -1,0 +1,13 @@
+{
+  "name": "Nexterm",
+  "id": "nexterm",
+  "available": true,
+  "short_desc": "Nexterm",
+  "author": "germannewsmaker",
+  "port": 6989,
+  "categories": ["BigBearCasaOS"],
+  "description": "The open source server management software for SSH, VNC & RDP. This is in Preview Release.",
+  "tipi_version": 1,
+  "version": "1.0.5-OPEN-PREVIEW",
+  "supported_architectures": ["arm64", "amd64"]
+}

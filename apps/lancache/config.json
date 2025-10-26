@@ -1,0 +1,13 @@
+{
+  "name": "LAN Cache",
+  "id": "lancache",
+  "available": true,
+  "short_desc": "LAN Party game caching made easy",
+  "author": "lancachenet",
+  "port": 8080,
+  "categories": ["BigBearCasaOS"],
+  "description": "Make the most of your network. Get more play for your gamers. Download your games once and serve them out to many people at your LAN.",
+  "tipi_version": 1,
+  "version": "latest",
+  "supported_architectures": ["arm64", "amd64"]
+}

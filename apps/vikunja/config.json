@@ -1,31 +1,13 @@
 {
-  "$schema": "../schema.json",
   "name": "Vikunja",
-  "available": true,
-  "exposable": true,
-  "port": 8135,
   "id": "vikunja",
-  "categories": ["utilities"],
-  "tipi_version": 13,
-  "version": "0.24.4",
-  "description": "The Todo-app to organize your life.",
-  "short_desc": "The Todo-app to organize your life.",
+  "available": true,
+  "short_desc": "Vikunja",
   "author": "kolaente",
-  "source": "https://kolaente.dev/vikunja",
-  "website": "https://vikunja.io",
-  "form_fields": [
-    {
-      "type": "random",
-      "label": "Vikunja database password",
-      "env_variable": "VIKUNJA_DB_PASSWORD"
-    },
-    {
-      "type": "random",
-      "label": "Vikunja secret",
-      "env_variable": "VIKUNJA_SERVICE_SECRET"
-    }
-  ],
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1691943801422,
-  "updated_at": 1727628450000
+  "port": 8081,
+  "categories": ["BigBearCasaOS"],
+  "description": "The open-source, self-hostable to-do app. Organize everything, on all platforms.",
+  "tipi_version": 1,
+  "version": "0.24.6",
+  "supported_architectures": ["arm64", "amd64"]
 }

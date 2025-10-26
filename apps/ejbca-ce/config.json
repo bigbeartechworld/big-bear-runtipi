@@ -1,0 +1,13 @@
+{
+  "name": "EJBCA Community",
+  "id": "ejbca-ce",
+  "available": true,
+  "short_desc": "The open-source public key infrastructure (PKI) and certificate authority (CA)",
+  "author": "Keyfactor",
+  "port": 8443,
+  "categories": ["BigBearCasaOS"],
+  "description": "The open-source public key infrastructure (PKI) and certificate authority (CA) software EJBCA is one of the longest running CA software projects. EJBCA covers all your needs - from certificate enrollment, via certificate management, to certificate validation.",
+  "tipi_version": 1,
+  "version": "9.1.1",
+  "supported_architectures": ["arm64", "amd64"]
+}

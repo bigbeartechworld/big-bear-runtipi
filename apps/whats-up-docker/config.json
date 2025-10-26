@@ -1,0 +1,13 @@
+{
+  "name": "What's Up Docker",
+  "id": "whats-up-docker",
+  "available": true,
+  "short_desc": "What's Up Docker",
+  "author": "fmartinou",
+  "port": 3000,
+  "categories": ["BigBearCasaOS"],
+  "description": "Gets you notified when new versions of your Docker containers are available and lets you react the way you want.",
+  "tipi_version": 1,
+  "version": "6.6.1",
+  "supported_architectures": ["arm64", "amd64"]
+}

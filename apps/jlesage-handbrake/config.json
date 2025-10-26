@@ -1,0 +1,13 @@
+{
+  "name": "Jlesage Handbrake",
+  "id": "jlesage-handbrake",
+  "available": true,
+  "short_desc": "This project implements a Docker container for Handbrake.",
+  "author": "jlesage",
+  "port": 5800,
+  "categories": ["BigBearCasaOS"],
+  "description": "The GUI of the application is accessed through a modern web browser (no installation or configuration needed on the client side) or via any VNC client.",
+  "tipi_version": 1,
+  "version": "25.10.1",
+  "supported_architectures": ["arm64", "amd64"]
+}

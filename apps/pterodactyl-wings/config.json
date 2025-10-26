@@ -1,0 +1,13 @@
+{
+  "name": "Pterodactyl Wings",
+  "id": "pterodactyl-wings",
+  "available": true,
+  "short_desc": "Pterodactyl Wings",
+  "author": "pterodactyl",
+  "port": 2022,
+  "categories": ["BigBearCasaOS"],
+  "description": "Wings is Pterodactyl's server control plane, built for the rapidly changing gaming industry and designed to be highly performant and secure. Wings provides an HTTP API allowing you to interface directly with running server instances, fetch server logs, generate backups, and control all aspects of the server lifecycle.",
+  "tipi_version": 1,
+  "version": "1.11.13",
+  "supported_architectures": ["arm64", "amd64"]
+}

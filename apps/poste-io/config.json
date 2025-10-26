@@ -1,0 +1,13 @@
+{
+  "name": "Poste.io",
+  "id": "poste-io",
+  "available": true,
+  "short_desc": "Free version of full mail server solution. POP3, SMTP, IMAP, Spamassassin, WebMail, WebAdmin",
+  "author": "analogic",
+  "port": 80,
+  "categories": ["BigBearCasaOS"],
+  "description": "Full stack mail server solution with SSL TLS support. POP3s, SMTP(s), IMAPs, RSPAMD, Clamav, Roundcube(HTTPS), SPF, DKIM with easy installation and web administration.",
+  "tipi_version": 1,
+  "version": "2.5.7",
+  "supported_architectures": ["arm64", "amd64"]
+}

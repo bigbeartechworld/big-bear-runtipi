@@ -1,0 +1,13 @@
+{
+  "name": "Traccar",
+  "id": "traccar",
+  "available": true,
+  "short_desc": "Traccar",
+  "author": "traccar",
+  "port": 8080,
+  "categories": ["BigBearCasaOS"],
+  "description": "Traccar GPS Tracking System in Docker image.",
+  "tipi_version": 1,
+  "version": "6.10-ubuntu",
+  "supported_architectures": ["arm64", "amd64"]
+}

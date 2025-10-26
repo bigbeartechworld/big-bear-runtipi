@@ -1,0 +1,13 @@
+{
+  "name": "Immich Kiosk",
+  "id": "immich-kiosk",
+  "available": true,
+  "short_desc": "Immich Kiosk",
+  "author": "damongolding",
+  "port": 3000,
+  "categories": ["BigBearCasaOS"],
+  "description": "Immich Kiosk is a lightweight slideshow for running on kiosk devices and browsers that uses Immich as a data source.",
+  "tipi_version": 1,
+  "version": "0.26.1",
+  "supported_architectures": ["arm64", "amd64"]
+}

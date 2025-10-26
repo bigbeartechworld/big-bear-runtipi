@@ -1,0 +1,13 @@
+{
+  "name": "Unifi Network Application",
+  "id": "unifi-network-application-mongo-4",
+  "available": true,
+  "short_desc": "The Unifi-network-application MongoDB 4",
+  "author": "Ubiquiti",
+  "port": 8443,
+  "categories": ["BigBearCasaOS"],
+  "description": "Supports Zimaboards and PI's. The Unifi-network-application software is a powerful, enterprise wireless software engine ideal for high-density client deployments requiring low latency and high uptime performance.",
+  "tipi_version": 1,
+  "version": "4.4.28",
+  "supported_architectures": ["arm64", "amd64"]
+}

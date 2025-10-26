@@ -1,0 +1,13 @@
+{
+  "name": "Pi-hole and Unbound",
+  "id": "pihole-unbound",
+  "available": true,
+  "short_desc": "Pi-hole and Unbound",
+  "author": "bigbeartechworld",
+  "port": 8080,
+  "categories": ["BigBearCasaOS"],
+  "description": "This is a custom pihole and unbound setup.",
+  "tipi_version": 1,
+  "version": "2025.08.0",
+  "supported_architectures": ["arm64", "amd64"]
+}

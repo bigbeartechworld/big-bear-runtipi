@@ -1,0 +1,13 @@
+{
+  "name": "Mumble Server",
+  "id": "mumble-server",
+  "available": true,
+  "short_desc": "Mumble Server",
+  "author": "",
+  "port": 64738,
+  "categories": ["BigBearCasaOS"],
+  "description": "Mumble is a free, open source, low latency, high quality voice chat application.",
+  "tipi_version": 1,
+  "version": "v1.4.230-6",
+  "supported_architectures": ["arm64", "amd64"]
+}

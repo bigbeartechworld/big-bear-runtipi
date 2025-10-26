@@ -1,0 +1,13 @@
+{
+  "name": "Wallabag",
+  "id": "wallabag",
+  "available": true,
+  "short_desc": "Save and classify articles. Read them later. Freely.",
+  "author": "wallabag",
+  "port": 8080,
+  "categories": ["BigBearCasaOS"],
+  "description": "Wallabag is a self-hosted application for saving web pages. Unlike other services, Wallabag is free and open source.",
+  "tipi_version": 1,
+  "version": "2.6.14",
+  "supported_architectures": ["arm64", "amd64"]
+}

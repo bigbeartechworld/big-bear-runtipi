@@ -1,0 +1,13 @@
+{
+  "name": "Mailpit",
+  "id": "mailpit",
+  "available": true,
+  "short_desc": "Mailpit",
+  "author": "axllent",
+  "port": 8025,
+  "categories": ["BigBearCasaOS"],
+  "description": "Mailpit is a multi-platform email testing tool & API for developers.",
+  "tipi_version": 1,
+  "version": "1.27",
+  "supported_architectures": ["arm64", "amd64"]
+}

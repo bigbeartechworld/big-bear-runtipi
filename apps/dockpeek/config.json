@@ -1,0 +1,13 @@
+{
+  "name": "Dockpeek",
+  "id": "dockpeek",
+  "available": true,
+  "short_desc": "Docker Dashboard",
+  "author": "dockpeek",
+  "port": 3420,
+  "categories": ["BigBearCasaOS"],
+  "description": "A lightweight, self-hosted Docker dashboard that provides quick access to all running containers and their exposed ports with one-click access to web apps.",
+  "tipi_version": 1,
+  "version": "1.7.0",
+  "supported_architectures": ["arm64", "amd64"]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Microbin",
+  "id": "microbin",
+  "available": true,
+  "short_desc": "Pastebin alternative with encryption",
+  "author": "danielszabo99",
+  "port": 8888,
+  "categories": ["BigBearCasaOS"],
+  "description": "Self-hosted, encrypted pastebin alternative with configurable features.",
+  "tipi_version": 1,
+  "version": "2.0.4",
+  "supported_architectures": ["arm64", "amd64"]
+}

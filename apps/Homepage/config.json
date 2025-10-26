@@ -1,0 +1,13 @@
+{
+  "name": "Homepage",
+  "id": "Homepage",
+  "available": true,
+  "short_desc": "Homepage",
+  "author": "gethomepage",
+  "port": 3000,
+  "categories": ["BigBearCasaOS"],
+  "description": "A modern, fully static, fast, secure fully proxied, highly customizable application dashboard with integrations for over 100 services and translations into multiple languages. Easily configured via YAML files or through docker label discovery.",
+  "tipi_version": 1,
+  "version": "1.5.0",
+  "supported_architectures": ["arm64", "amd64"]
+}

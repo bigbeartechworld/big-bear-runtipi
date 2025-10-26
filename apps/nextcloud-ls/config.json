@@ -1,0 +1,13 @@
+{
+  "name": "Nextcloud LS",
+  "id": "nextcloud-ls",
+  "available": true,
+  "short_desc": "LinuxServer - The productivity platform that keeps you in control",
+  "author": "nextcloud",
+  "port": 10443,
+  "categories": ["BigBearCasaOS"],
+  "description": "Nextcloud puts your data at your fingertips, under your control. Store your documents, calendar, contacts and photos on a server at home, at one of our providers or in a data center you trust.",
+  "tipi_version": 1,
+  "version": "32.0.0",
+  "supported_architectures": ["arm64", "amd64"]
+}

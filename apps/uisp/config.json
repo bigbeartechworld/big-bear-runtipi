@@ -1,0 +1,13 @@
+{
+  "name": "UISP",
+  "id": "uisp",
+  "available": true,
+  "short_desc": "UISP",
+  "author": "nico640",
+  "port": 10443,
+  "categories": ["BigBearCasaOS"],
+  "description": "All-in-one docker image for Ubiquiti UISP (formerly UNMS). Supports x86_64 and ARM (Raspberry Pi).",
+  "tipi_version": 1,
+  "version": "2.4.155.1",
+  "supported_architectures": ["arm64", "amd64"]
+}

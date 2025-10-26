@@ -1,41 +1,22 @@
-version: "3.7"
+# Configuration for changedetection setup
+
+# Name of the big-bear-changedetection application
+name: big-bear-changedetection
+# Service definitions for the big-bear-changedetection application
 services:
-  changedetection:
-    image: ghcr.io/dgtlmoon/changedetection.io:0.46.04
-    container_name: changedetection
-    hostname: changedetection
-    volumes:
-      - ${APP_DATA_DIR}/data:/datastore
-    ports:
-      - ${APP_PORT}:5000
+  # Service name: big-bear-changedetection
+  # The `big-bear-changedetection` service definition
+  big-bear-changedetection:
+    # Name of the container
+    container_name: big-bear-changedetection
+    # Image to be used for the container
+    image: ghcr.io/dgtlmoon/changedetection.io:0.50.32
+    # Container restart policy
     restart: unless-stopped
-    networks:
-      - tipi_main_network
-    # environment:
-    #   - PLAYWRIGHT_DRIVER_URL=ws://playwright-chrome:3000/
-    labels:
-      # Main
-      traefik.enable: true
-      traefik.http.middlewares.changedetection-web-redirect.redirectscheme.scheme: https
-      traefik.http.services.changedetection.loadbalancer.server.port: 5000
-      # Web
-      traefik.http.routers.changedetection-insecure.rule: Host(`${APP_DOMAIN}`)
-      traefik.http.routers.changedetection-insecure.entrypoints: web
-      traefik.http.routers.changedetection-insecure.service: changedetection
-      traefik.http.routers.changedetection-insecure.middlewares: changedetection-web-redirect
-      # Websecure
-      traefik.http.routers.changedetection.rule: Host(`${APP_DOMAIN}`)
-      traefik.http.routers.changedetection.entrypoints: websecure
-      traefik.http.routers.changedetection.service: changedetection
-      traefik.http.routers.changedetection.tls.certresolver: myresolver
-      # Local domain
-      traefik.http.routers.changedetection-local-insecure.rule: Host(`changedetection.${LOCAL_DOMAIN}`)
-      traefik.http.routers.changedetection-local-insecure.entrypoints: web
-      traefik.http.routers.changedetection-local-insecure.service: changedetection
-      traefik.http.routers.changedetection-local-insecure.middlewares: changedetection-web-redirect
-      # Local domain secure
-      traefik.http.routers.changedetection-local.rule: Host(`changedetection.${LOCAL_DOMAIN}`)
-      traefik.http.routers.changedetection-local.entrypoints: websecure
-      traefik.http.routers.changedetection-local.service: changedetection
-      traefik.http.routers.changedetection-local.tls: true
-      runtipi.managed: true
+    # Ports mapping between host and container
+    ports:
+      # Mapping port 5000 of the host to port 5000 of the container
+      - "5000:5000"
+    # Volumes to be mounted to the container
+    volumes:
+      - ./data/datastore:/datastore

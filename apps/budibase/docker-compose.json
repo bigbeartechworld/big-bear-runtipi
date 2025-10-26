@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "big-bear-budibase",
+      "image": "budibase/budibase:3.21.3",
+      "internalPort": 80,
+      "isMain": true
+    }
+  ]
+}

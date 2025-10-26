@@ -1,0 +1,13 @@
+{
+  "name": "Send Visee",
+  "id": "send-visee",
+  "available": true,
+  "short_desc": "A fork of Mozilla's Firefox Send.",
+  "author": "timvisee",
+  "port": 1443,
+  "categories": ["BigBearCasaOS"],
+  "description": "A fork of Mozilla's Firefox Send. Mozilla discontinued Send, this fork is a community effort to keep the project up-to-date and alive.",
+  "tipi_version": 1,
+  "version": "3.4.27",
+  "supported_architectures": ["arm64", "amd64"]
+}

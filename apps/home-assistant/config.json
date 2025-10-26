@@ -1,0 +1,13 @@
+{
+  "name": "Home Assistant",
+  "id": "home-assistant",
+  "available": true,
+  "short_desc": "Home Automation",
+  "author": "home-assistant",
+  "port": 8123,
+  "categories": ["BigBearCasaOS"],
+  "description": "Open source home automation that puts local control and privacy first. Powered by a worldwide community of tinkerers and DIY enthusiasts. Perfect to run on a Raspberry Pi or a local server.",
+  "tipi_version": 1,
+  "version": "2025.10.4",
+  "supported_architectures": ["arm64", "amd64"]
+}

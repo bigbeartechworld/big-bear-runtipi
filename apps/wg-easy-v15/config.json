@@ -1,0 +1,13 @@
+{
+  "name": "WireGuard Easy v15",
+  "id": "wg-easy-v15",
+  "available": true,
+  "short_desc": "WireGuard VPN server v15 (New Version)",
+  "author": "WeeJeWel",
+  "port": 51821,
+  "categories": ["BigBearCasaOS"],
+  "description": "WireGuard Easy v15 - Complete rewrite with new features and improved UI. Access your homeserver from anywhere with this modern VPN solution. NOTE: This is v15 which has breaking changes from v14. If you're currently using v14, please backup your configuration before migrating.",
+  "tipi_version": 1,
+  "version": "15",
+  "supported_architectures": ["arm64", "amd64"]
+}

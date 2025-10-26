@@ -1,0 +1,13 @@
+{
+  "name": "Flame",
+  "id": "flame",
+  "available": true,
+  "short_desc": "Flame is a self-hosted startpage for your server. Manage your apps and bookmarks effortlessly with built-in editors.",
+  "author": "",
+  "port": 5005,
+  "categories": ["BigBearCasaOS"],
+  "description": "Flame is a self-hosted startpage for your server. Its design is heavily inspired by SUI. Flame is user-friendly and easy to set up. With its built-in editors, users can quickly establish their own application hub without any file editing.",
+  "tipi_version": 1,
+  "version": "multiarch2.3.1",
+  "supported_architectures": ["arm64", "amd64"]
+}

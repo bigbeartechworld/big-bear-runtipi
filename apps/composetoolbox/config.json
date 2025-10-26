@@ -1,0 +1,13 @@
+{
+  "name": "Compose Toolbox",
+  "id": "composetoolbox",
+  "available": true,
+  "short_desc": "Compose file editor & validator",
+  "author": "bluegoosemedia",
+  "port": 3002,
+  "categories": ["BigBearCasaOS"],
+  "description": "Self-hosted tool to edit, validate, and get suggestions for docker-compose.yml files.",
+  "tipi_version": 1,
+  "version": "latest",
+  "supported_architectures": ["arm64", "amd64"]
+}

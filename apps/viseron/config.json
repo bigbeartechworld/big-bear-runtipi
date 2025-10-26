@@ -1,0 +1,13 @@
+{
+  "name": "Viseron",
+  "id": "viseron",
+  "available": true,
+  "short_desc": "Viseron",
+  "author": "roflcoopter",
+  "port": 8888,
+  "categories": ["BigBearCasaOS"],
+  "description": "Viseron is a self-hosted, local only NVR and AI Computer Vision software",
+  "tipi_version": 1,
+  "version": "3.3.1",
+  "supported_architectures": ["arm64", "amd64"]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Zotero",
+  "id": "zotero",
+  "available": true,
+  "short_desc": "Zotero",
+  "author": "linuxserver",
+  "port": 3000,
+  "categories": ["BigBearCasaOS"],
+  "description": "Zotero is a free, easy-to-use tool to help you collect, organize, annotate, cite, and share research.",
+  "tipi_version": 1,
+  "version": "7.0.20240809",
+  "supported_architectures": ["arm64", "amd64"]
+}

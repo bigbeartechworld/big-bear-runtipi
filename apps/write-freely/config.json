@@ -1,0 +1,13 @@
+{
+  "name": "Write Freely",
+  "id": "write-freely",
+  "available": true,
+  "short_desc": "Markdown-based publishing platform.",
+  "author": "nephatrine",
+  "port": 8080,
+  "categories": ["BigBearCasaOS"],
+  "description": "WriteFreely is a clean, minimalist publishing platform made for writers. Start a blog, share knowledge within your organization, or build a community around the shared act of writing.",
+  "tipi_version": 1,
+  "version": "0.16",
+  "supported_architectures": ["arm64", "amd64"]
+}

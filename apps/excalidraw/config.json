@@ -1,19 +1,13 @@
 {
-  "$schema": "../schema.json",
   "name": "Excalidraw",
-  "port": 8172,
-  "available": true,
-  "exposable": true,
   "id": "excalidraw",
-  "tipi_version": 2,
-  "version": "latest",
-  "categories": ["utilities"],
+  "available": true,
+  "short_desc": "Virtual whiteboard for sketching hand-drawn like diagrams",
+  "author": "excalidraw",
+  "port": 8000,
+  "categories": ["BigBearCasaOS"],
   "description": "Virtual whiteboard for sketching hand-drawn like diagrams",
-  "short_desc": "Online whiteboard collaboration made easy",
-  "author": "Excalidraw",
-  "source": "https://github.com/excalidraw/excalidraw",
-  "form_fields": [],
-  "supported_architectures": ["amd64"],
-  "created_at": 1691943801422,
-  "updated_at": 1723566284000
+  "tipi_version": 1,
+  "version": "latest",
+  "supported_architectures": ["arm64", "amd64"]
 }

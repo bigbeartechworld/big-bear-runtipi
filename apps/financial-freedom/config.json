@@ -1,0 +1,13 @@
+{
+  "name": "Financial Freedom",
+  "id": "financial-freedom",
+  "available": true,
+  "short_desc": "Financial Freedom",
+  "author": "serversideup",
+  "port": 8443,
+  "categories": ["BigBearCasaOS"],
+  "description": "Keep investors and their buyers out of your financial data. Own 100% of your data and start building financial wealth.",
+  "tipi_version": 1,
+  "version": "v0.2.0-alpha1",
+  "supported_architectures": ["arm64", "amd64"]
+}

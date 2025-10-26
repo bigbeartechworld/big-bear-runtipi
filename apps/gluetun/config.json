@@ -1,0 +1,13 @@
+{
+  "name": "Gluetun",
+  "id": "gluetun",
+  "available": true,
+  "short_desc": "Gluetun",
+  "author": "portainer",
+  "port": 8080,
+  "categories": ["BigBearCasaOS"],
+  "description": "Lightweight swiss-knife-like VPN client to multiple VPN service providers",
+  "tipi_version": 1,
+  "version": "3.40.0",
+  "supported_architectures": ["arm64", "amd64"]
+}

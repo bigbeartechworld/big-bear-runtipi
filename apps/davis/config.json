@@ -1,0 +1,13 @@
+{
+  "name": "Davis",
+  "id": "davis",
+  "available": true,
+  "short_desc": "Davis",
+  "author": "tchapi",
+  "port": 9000,
+  "categories": ["BigBearCasaOS"],
+  "description": "A simple, fully translatable admin interface for sabre/dav based on Symfony 5 and Bootstrap 5, initially inspired by Baïkal. Provides user edition, calendar creation and sharing, and address book creation. The interface is simple and straightforward, responsive, and provides a light and a dark mode.",
+  "tipi_version": 1,
+  "version": "5.2.0",
+  "supported_architectures": ["arm64", "amd64"]
+}

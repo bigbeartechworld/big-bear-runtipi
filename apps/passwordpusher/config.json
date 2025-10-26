@@ -1,0 +1,13 @@
+{
+  "name": "Password Pusher",
+  "id": "passwordpusher",
+  "available": true,
+  "short_desc": "Give your users the tools to be secure by default.",
+  "author": "pglombardo",
+  "port": 5100,
+  "categories": ["BigBearCasaOS"],
+  "description": "Password Pusher is an open source application to communicate passwords over the web. Links to passwords expire after a certain number of views and/or time has passed.",
+  "tipi_version": 1,
+  "version": "1.62.1",
+  "supported_architectures": ["arm64", "amd64"]
+}

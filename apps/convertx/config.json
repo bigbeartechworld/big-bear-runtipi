@@ -1,0 +1,13 @@
+{
+  "name": "ConvertX",
+  "id": "convertx",
+  "available": true,
+  "short_desc": "💾 Self-hosted online file converter. Supports 1000+ formats ⚙️",
+  "author": "C4illin",
+  "port": 3000,
+  "categories": ["BigBearCasaOS"],
+  "description": "A self-hosted online file converter. Supports over a thousand different formats. Written with TypeScript, Bun and Elysia.",
+  "tipi_version": 1,
+  "version": "0.15.1",
+  "supported_architectures": ["arm64", "amd64"]
+}

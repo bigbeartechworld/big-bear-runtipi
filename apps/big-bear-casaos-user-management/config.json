@@ -1,0 +1,13 @@
+{
+  "name": "Big Bear CasaOS User Management",
+  "id": "big-bear-casaos-user-management",
+  "available": true,
+  "short_desc": "Manage users in CasaOS",
+  "author": "bigbeartechworld",
+  "port": 5000,
+  "categories": ["BigBearCasaOS"],
+  "description": "Manage users in CasaOS",
+  "tipi_version": 1,
+  "version": "0.1.1",
+  "supported_architectures": ["arm64", "amd64"]
+}

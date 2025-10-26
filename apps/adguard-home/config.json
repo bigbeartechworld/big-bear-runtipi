@@ -1,0 +1,13 @@
+{
+  "name": "AdGuard Home",
+  "id": "adguard-home",
+  "available": true,
+  "short_desc": "Network-wide ads & trackers blocking DNS server.",
+  "author": "AdGuardTeam",
+  "port": 8080,
+  "categories": ["BigBearCasaOS"],
+  "description": "AdGuard Home is a network-wide software for blocking ads and tracking. After you set it up, it'll cover all your home devices, and you won't need any client-side software for that. Learn more on our official Github repository.",
+  "tipi_version": 1,
+  "version": "0.107.67",
+  "supported_architectures": ["arm64", "amd64"]
+}

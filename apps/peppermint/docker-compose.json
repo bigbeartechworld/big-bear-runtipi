@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "app",
+      "image": "pepperlabs/peppermint:latest",
+      "internalPort": 3000/tcp,
+      "isMain": true
+    }
+  ]
+}

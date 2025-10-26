@@ -1,0 +1,13 @@
+{
+  "name": "Immich AIO Alpine",
+  "id": "immich-aio-alpine",
+  "available": true,
+  "short_desc": "Immich All In One Alpine",
+  "author": "imagegenius",
+  "port": 2283,
+  "categories": ["BigBearCasaOS"],
+  "description": "AIO Alpine. Self-hosted photo and video storage.",
+  "tipi_version": 1,
+  "version": "2.0.0-alpine",
+  "supported_architectures": ["arm64", "amd64"]
+}

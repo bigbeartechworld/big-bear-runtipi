@@ -1,0 +1,13 @@
+{
+  "name": "I Hate Money",
+  "id": "ihatemoney",
+  "available": true,
+  "short_desc": "A simple shared budget manager web application",
+  "author": "spiral-project",
+  "port": 8001,
+  "categories": ["BigBearCasaOS"],
+  "description": "I hate money is a web application made to ease shared budget management. It keeps track of who bought what, when, and for whom; and helps to settle the bills.",
+  "tipi_version": 1,
+  "version": "6.1.5",
+  "supported_architectures": ["arm64", "amd64"]
+}

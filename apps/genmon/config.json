@@ -1,0 +1,13 @@
+{
+  "name": "Genmon",
+  "id": "genmon",
+  "available": true,
+  "short_desc": "Genmon",
+  "author": "bigbeartechworld",
+  "port": 8000,
+  "categories": ["BigBearCasaOS"],
+  "description": "Generac (and other models) Generator Monitoring using a Raspberry Pi and WiFi",
+  "tipi_version": 1,
+  "version": "1.19.06",
+  "supported_architectures": ["arm64", "amd64"]
+}

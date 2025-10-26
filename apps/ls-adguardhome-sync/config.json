@@ -1,0 +1,13 @@
+{
+  "name": "LS Adguard Home Sync",
+  "id": "ls-adguardhome-sync",
+  "available": true,
+  "short_desc": "LS Adguard Home Sync",
+  "author": "bakito",
+  "port": 8080,
+  "categories": ["BigBearCasaOS"],
+  "description": "🛡️ Synchronize AdGuard Home config to replicas. This is the LinuxServer version.",
+  "tipi_version": 1,
+  "version": "0.8.1",
+  "supported_architectures": ["arm64", "amd64"]
+}

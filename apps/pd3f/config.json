@@ -1,0 +1,13 @@
+{
+  "name": "PD3F",
+  "id": "pd3f",
+  "available": true,
+  "short_desc": "PD3F",
+  "author": "pd3f",
+  "port": 1616,
+  "categories": ["BigBearCasaOS"],
+  "description": "pd3f is a PDF text extraction pipeline that is self-hosted, local-first and Docker-based. It reconstructs the original continuous text with the help of machine learning.",
+  "tipi_version": 1,
+  "version": "latest",
+  "supported_architectures": ["arm64", "amd64"]
+}

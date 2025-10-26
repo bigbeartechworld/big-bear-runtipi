@@ -1,0 +1,13 @@
+{
+  "name": "Libredesk",
+  "id": "libredesk",
+  "available": true,
+  "short_desc": "Open source, self-hosted customer support desk. Single binary app.",
+  "author": "libredesk",
+  "port": 9000,
+  "categories": ["BigBearCasaOS"],
+  "description": "Open source, self-hosted customer support desk. Single binary app.",
+  "tipi_version": 1,
+  "version": "0.7.4-alpha",
+  "supported_architectures": ["arm64", "amd64"]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Portainer Agent",
+  "id": "portainer-agent",
+  "available": true,
+  "short_desc": "Portainer Agent",
+  "author": "portainer",
+  "port": 8080,
+  "categories": ["BigBearCasaOS"],
+  "description": "Portainer uses the Portainer Agent container to communicate with the Portainer Server instance and provide access to the node's resources. This document will outline how to install the Portainer Agent on your node and how to connect to it from your Portainer Server instance. If you do not have a working Portainer Server instance yet, please refer to the Portainer Server installation guide first.",
+  "tipi_version": 1,
+  "version": "2.35.0",
+  "supported_architectures": ["arm64", "amd64"]
+}

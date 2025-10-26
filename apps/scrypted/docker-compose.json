@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "scrypted",
+      "image": "koush/scrypted:v0.123.58-jammy-full",
+      "internalPort": null,
+      "isMain": true
+    }
+  ]
+}

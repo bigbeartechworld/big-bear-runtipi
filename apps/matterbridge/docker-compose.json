@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "big-bear-matterbridge",
+      "image": "luligu/matterbridge:3.3.3",
+      "internalPort": null,
+      "isMain": true
+    }
+  ]
+}

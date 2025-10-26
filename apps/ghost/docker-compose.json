@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "app",
+      "image": "ghost:6.5.0-alpine",
+      "internalPort": 2368,
+      "isMain": true
+    }
+  ]
+}

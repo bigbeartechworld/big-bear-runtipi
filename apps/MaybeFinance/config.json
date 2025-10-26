@@ -1,0 +1,13 @@
+{
+  "name": "Maybe Finance",
+  "id": "MaybeFinance",
+  "available": true,
+  "short_desc": "maybe-finance",
+  "author": "Maybe Finance",
+  "port": 4000,
+  "categories": ["BigBearCasaOS"],
+  "description": "Maybe is a fully* open-source OS for your personal finances built by a small team alongside an incredible community Discord",
+  "tipi_version": 1,
+  "version": "sha-347c0a790693031fdd3b32792b5b6792693d1805",
+  "supported_architectures": ["arm64", "amd64"]
+}

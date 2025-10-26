@@ -1,41 +1,25 @@
-version: '3.9'
+# Configuration for lobe-chat setup
+
+# Name of the big-bear-lobe-chat application
+name: big-bear-lobe-chat
+# Service definitions for the big-bear-lobe-chat application
 services:
-  lobe-chat:
-    container_name: lobe-chat
-    image: lobehub/lobe-chat:v1.21.6
-    environment:
-      - OPENAI_API_KEY=${OPENAI_API_KEY}
-      - OPENAI_PROXY_URL=${OPEANAI_PROXY_URL}
-      - CUSTOM_MODELS=${CUSTOM_MODELS}
-      - ACCESS_CODE=${ACCESS_CODE}
-    ports:
-      - ${APP_PORT}:3210
+  # Service name: big-bear-lobe-chat
+  # The `big-bear-lobe-chat` service definition
+  big-bear-lobe-chat:
+    # Name of the container
+    container_name: big-bear-lobe-chat
+    # Image to be used for the container
+    image: lobehub/lobe-chat:1.141.6
+    # Container restart policy
     restart: unless-stopped
-    networks:
-      - tipi_main_network
-    labels:
-      # Main
-      traefik.enable: true
-      traefik.http.middlewares.lobe-chat-web-redirect.redirectscheme.scheme: https
-      traefik.http.services.lobe-chat.loadbalancer.server.port: 3210
-      # Web
-      traefik.http.routers.lobe-chat-insecure.rule: Host(`${APP_DOMAIN}`)
-      traefik.http.routers.lobe-chat-insecure.entrypoints: web
-      traefik.http.routers.lobe-chat-insecure.service: lobe-chat
-      traefik.http.routers.lobe-chat-insecure.middlewares: lobe-chat-web-redirect
-      # Websecure
-      traefik.http.routers.lobe-chat.rule: Host(`${APP_DOMAIN}`)
-      traefik.http.routers.lobe-chat.entrypoints: websecure
-      traefik.http.routers.lobe-chat.service: lobe-chat
-      traefik.http.routers.lobe-chat.tls.certresolver: myresolver
-      # Local domain
-      traefik.http.routers.lobe-chat-local-insecure.rule: Host(`lobe-chat.${LOCAL_DOMAIN}`)
-      traefik.http.routers.lobe-chat-local-insecure.entrypoints: web
-      traefik.http.routers.lobe-chat-local-insecure.service: lobe-chat
-      traefik.http.routers.lobe-chat-local-insecure.middlewares: lobe-chat-web-redirect
-      # Local domain secure
-      traefik.http.routers.lobe-chat-local.rule: Host(`lobe-chat.${LOCAL_DOMAIN}`)
-      traefik.http.routers.lobe-chat-local.entrypoints: websecure
-      traefik.http.routers.lobe-chat-local.service: lobe-chat
-      traefik.http.routers.lobe-chat-local.tls: true
-      runtipi.managed: true
+    # Environment variables for the container
+    environment:
+      - OPENAI_API_KEY=""
+      - OPENAI_PROXY_URL=""
+      - CUSTOM_MODELS=""
+      - ACCESS_CODE=""
+    # Ports mapping between host and container
+    ports:
+      # Mapping port 3210 of the host to port 3210 of the container
+      - "3210:3210"

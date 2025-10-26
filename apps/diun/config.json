@@ -1,0 +1,13 @@
+{
+  "name": "DIUN",
+  "id": "diun",
+  "available": true,
+  "short_desc": "Docker Image Update Notifier",
+  "author": "crazymax",
+  "port": 8080,
+  "categories": ["BigBearCasaOS"],
+  "description": "Docker Image Update Notifier is a CLI application written in Go and delivered as a single executable (and a Docker image) to receive notifications when a Docker image is updated on a Docker registry.",
+  "tipi_version": 1,
+  "version": "4.30.0",
+  "supported_architectures": ["arm64", "amd64"]
+}

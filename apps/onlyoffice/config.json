@@ -1,0 +1,13 @@
+{
+  "name": "OnlyOffice",
+  "id": "onlyoffice",
+  "available": true,
+  "short_desc": "OnlyOffice",
+  "author": "",
+  "port": 7400,
+  "categories": ["BigBearCasaOS"],
+  "description": "Feature-rich web-based office suite with a vast range of collaborative capabilities",
+  "tipi_version": 1,
+  "version": "9.1.0",
+  "supported_architectures": ["arm64", "amd64"]
+}

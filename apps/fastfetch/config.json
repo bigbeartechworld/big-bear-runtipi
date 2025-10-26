@@ -1,0 +1,13 @@
+{
+  "name": "Fastfetch",
+  "id": "fastfetch",
+  "available": true,
+  "short_desc": "Fastfetch is a neofetch-like tool.",
+  "author": "bigbeartechworld",
+  "port": 7681,
+  "categories": ["BigBearCasaOS"],
+  "description": "Fastfetch is a neofetch-like tool for fetching system information and displaying it prettily. It is written mainly in C, with performance and customizability in mind. Currently, Linux, Android, FreeBSD, macOS, SunOS and Windows 7+ are supported. https://github.com/fastfetch-cli/fastfetch",
+  "tipi_version": 1,
+  "version": "0.0.4",
+  "supported_architectures": ["arm64", "amd64"]
+}

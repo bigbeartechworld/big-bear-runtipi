@@ -1,0 +1,13 @@
+{
+  "name": "Pocket ID",
+  "id": "pocketid",
+  "available": true,
+  "short_desc": "Passkey-based OIDC authentication",
+  "author": "pocket-id",
+  "port": 1411,
+  "categories": ["BigBearCasaOS"],
+  "description": "Simple and easy-to-use OIDC provider that allows users to authenticate with their passkeys to your services.",
+  "tipi_version": 1,
+  "version": "1.14",
+  "supported_architectures": ["arm64", "amd64"]
+}

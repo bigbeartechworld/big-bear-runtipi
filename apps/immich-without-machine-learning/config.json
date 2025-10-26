@@ -1,0 +1,13 @@
+{
+  "name": "Immich without machine learning",
+  "id": "immich-without-machine-learning",
+  "available": true,
+  "short_desc": "Immich without machine learning",
+  "author": "immich",
+  "port": 2283,
+  "categories": ["BigBearCasaOS"],
+  "description": "Self-hosted photo and video storage. This does not include the machine learning part.",
+  "tipi_version": 1,
+  "version": "2.1.0",
+  "supported_architectures": ["arm64", "amd64"]
+}

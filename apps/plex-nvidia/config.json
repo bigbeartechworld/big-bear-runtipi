@@ -1,0 +1,13 @@
+{
+  "name": "Plex with NVIDIA GPU",
+  "id": "plex-nvidia",
+  "available": true,
+  "short_desc": "Stream Movies & TV Shows with NVIDIA GPU",
+  "author": "plexinc",
+  "port": 32400,
+  "categories": ["BigBearCasaOS"],
+  "description": "Stream Movies & TV Shows with NVIDIA GPU",
+  "tipi_version": 1,
+  "version": "1.42.2",
+  "supported_architectures": ["arm64", "amd64"]
+}

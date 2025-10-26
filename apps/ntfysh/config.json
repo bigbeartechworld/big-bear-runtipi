@@ -1,0 +1,13 @@
+{
+  "name": "Ntfy.sh",
+  "id": "ntfysh",
+  "available": true,
+  "short_desc": "A simple HTTP-based pub-sub notification service",
+  "author": "",
+  "port": 7200,
+  "categories": ["BigBearCasaOS"],
+  "description": "ntfy (pronounced notify) is a simple HTTP-based pub-sub notification service. It allows you to send notifications to your phone or desktop via scripts from any computer, and/or using a REST API. It's infinitely flexible, and 100% free software.",
+  "tipi_version": 1,
+  "version": "2.14.0",
+  "supported_architectures": ["arm64", "amd64"]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Homarr v1",
+  "id": "homarr-v1",
+  "available": true,
+  "short_desc": "Homarr v1 (Latest)",
+  "author": "homarr-labs",
+  "port": 7575,
+  "categories": ["BigBearCasaOS"],
+  "description": "Homarr v1 - A sleek, modern dashboard for your server. This is the latest major version (v1.x) from homarr-labs with improved architecture and features. Note: This version uses a different data structure and requires SECRET_ENCRYPTION_KEY. Not compatible with legacy Homarr (v0.x) data without migration.",
+  "tipi_version": 1,
+  "version": "1.43.0",
+  "supported_architectures": ["arm64", "amd64"]
+}

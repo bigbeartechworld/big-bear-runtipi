@@ -1,0 +1,13 @@
+{
+  "name": "Appsmith",
+  "id": "appsmith",
+  "available": true,
+  "short_desc": "Appsmith",
+  "author": "appsmithorg",
+  "port": 1080,
+  "categories": ["BigBearCasaOS"],
+  "description": "Low code project to build admin panels, internal tools, and dashboards, integrating 15+ databases.",
+  "tipi_version": 1,
+  "version": "1.73.1",
+  "supported_architectures": ["arm64", "amd64"]
+}

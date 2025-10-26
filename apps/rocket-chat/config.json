@@ -1,0 +1,13 @@
+{
+  "name": "Rocket.Chat",
+  "id": "rocket-chat",
+  "available": true,
+  "short_desc": "The communications platform that puts data protection first.",
+  "author": "rocket.chat",
+  "port": 3000,
+  "categories": ["BigBearCasaOS"],
+  "description": "Rocket.Chat is an open-source fully customizable communications platform [...]",
+  "tipi_version": 1,
+  "version": "6.13.1",
+  "supported_architectures": ["arm64", "amd64"]
+}

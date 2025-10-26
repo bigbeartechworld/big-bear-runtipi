@@ -1,0 +1,13 @@
+{
+  "name": "RetroArch",
+  "id": "retroarch-web",
+  "available": true,
+  "short_desc": "RetroArch Web Player",
+  "author": "inglebard",
+  "port": 8080,
+  "categories": ["BigBearCasaOS"],
+  "description": "Online retro games emulator.The RetroArch Web Player is RetroArch compiled through Emscripten.",
+  "tipi_version": 1,
+  "version": "latest",
+  "supported_architectures": ["arm64", "amd64"]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "LyriOn Music Server",
+  "id": "lyrionmusicserver",
+  "available": true,
+  "short_desc": "Streaming audio server",
+  "author": "LMS-Community",
+  "port": 9000,
+  "categories": ["BigBearCasaOS"],
+  "description": "Simplify the management of your server with Homarr - a sleek, modern dashboard that puts all of your apps and services at your fingertips. With Homarr, you can access and control everything in one convenient location. Homarr seamlessly integrates with the apps you've added, providing you with valuable information and giving you complete control. Installation is a breeze, and Homarr supports a wide range of deployment methods.",
+  "tipi_version": 1,
+  "version": "9.1.0",
+  "supported_architectures": ["arm64", "amd64"]
+}

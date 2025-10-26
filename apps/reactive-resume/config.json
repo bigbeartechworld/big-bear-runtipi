@@ -1,0 +1,13 @@
+{
+  "name": "Reactive Resume",
+  "id": "reactive-resume",
+  "available": true,
+  "short_desc": "A free and open-source resume builder",
+  "author": "AmruthPillai",
+  "port": 3000,
+  "categories": ["BigBearCasaOS"],
+  "description": "A free and open-source resume builder that simplifies the process of creating, updating, and sharing your resume.",
+  "tipi_version": 1,
+  "version": "4.5.2",
+  "supported_architectures": ["arm64", "amd64"]
+}

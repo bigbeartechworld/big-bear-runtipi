@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "app",
+      "image": "dysta/playitgg:1.1.0",
+      "internalPort": null,
+      "isMain": true
+    }
+  ]
+}
