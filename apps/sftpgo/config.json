@@ -7,15 +7,15 @@
   "id": "sftpgo",
   "description": "Full-featured and highly configurable SFTP, HTTP/S, FTP/S and WebDAV server - S3, Google Cloud Storage, Azure Blob",
   "tipi_version": 1,
-  "version": "v2.6",
+  "version": "2.7",
   "categories": ["bigbearcasaos"],
   "short_desc": "SFTPGO",
   "author": "drakkan",
   "source": "",
   "website": "",
   "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761504293000,
-  "updated_at": 1761504293000,
+  "created_at": 1761508343000,
+  "updated_at": 1761508343000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

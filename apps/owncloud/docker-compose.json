@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "big-bear-owncloud",
-      "image": "owncloud/server:10.15.3",
+      "image": "owncloud/server:10.16.0",
       "internalPort": 8080,
       "isMain": true
     }
