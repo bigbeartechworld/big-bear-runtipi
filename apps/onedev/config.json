@@ -1,50 +1,21 @@
 {
-  "$schema": "../schema.json",
   "name": "OneDev",
-  "port": 6610,
   "available": true,
+  "port": 6610,
   "exposable": true,
+  "dynamic_config": true,
   "id": "onedev",
-  "tipi_version": 119,
-  "version": "11.2.1",
-  "categories": ["development"],
   "description": "Self-hosted Git Server with Kanban and CI/CD",
+  "tipi_version": 1,
+  "version": "13.0.9",
+  "categories": ["bigbearcasaos"],
   "short_desc": "Self-hosted Git Server with Kanban and CI/CD",
-  "author": "https://code.onedev.io/",
-  "source": "https://code.onedev.io/onedev/server",
-  "form_fields": [
-    {
-      "type": "random",
-      "label": "DB_PASSWORD",
-      "min": 32,
-      "env_variable": "ONEDEV_DB_PASSWORD"
-    },
-    {
-      "type": "text",
-      "label": "Onedev username",
-      "max": 50,
-      "min": 3,
-      "required": true,
-      "env_variable": "ONEDEV_USERNAME"
-    },
-    {
-      "type": "email",
-      "label": "Onedev email",
-      "max": 50,
-      "min": 3,
-      "required": true,
-      "env_variable": "ONEDEV_EMAIL"
-    },
-    {
-      "type": "password",
-      "label": "Onedev password",
-      "max": 50,
-      "min": 8,
-      "required": true,
-      "env_variable": "ONEDEV_PASSWORD"
-    }
-  ],
+  "author": "theonedev",
+  "source": "",
+  "website": "",
   "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1691943801422,
-  "updated_at": 1727245793000
+  "created_at": 1761453423000,
+  "updated_at": 1761453423000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
 }

@@ -1,63 +1,55 @@
-version: "3.7"
+# Configuration for bookstack setup
+
+# Name of the big-bear-bookstack application
+name: big-bear-bookstack
+# Service definitions for the big-bear-bookstack application
 services:
-  bookstack:
-    image: lscr.io/linuxserver/bookstack:24.05.20240520
-    container_name: bookstack
+  # Service name: big-bear-bookstack
+  # The `big-bear-bookstack` service definition
+  big-bear-bookstack:
+    # Name of the container
+    container_name: big-bear-bookstack
+    # Image to be used for the container
+    image: linuxserver/bookstack:25.07.20250804
+    # Container restart policy
+    restart: unless-stopped
+    volumes:
+      - ./data/config:/config
+    # Environment variables
     environment:
-      - APP_URL=${APP_PROTOCOL:-http}://${APP_DOMAIN}
-      - DB_HOST=bookstack-db
-      - DB_USERNAME=tipi
-      - DB_PASSWORD=${BOOKSTACK_DB_PASS}
+      - APP_KEY=base64:3w/hRS2HYVFH5tJqD9AFlyurTh8mBByMKeMRyH9kEEQ=
+      - APP_URL=http://[change to your IP]:8080
+      - DB_HOST=big-bear-bookstack-db
+      - DB_USERNAME=bigbear
+      - DB_PASSWORD=a3e8949f-484c-4877-afdb-391f892f9bb6
       - DB_DATABASE=bookstackapp
-    volumes:
-      - ${APP_DATA_DIR}/data/config:/config
-    dns:
-      - ${DNS_IP}
+    # Ports mapping between host and container
     ports:
-      - ${APP_PORT}:80
-    restart: unless-stopped
+      # Mapping port 8080 of the host to port 80 of the container
+      - "8080:80"
     depends_on:
-      - bookstack-db
+      - big-bear-bookstack-db
     networks:
-      - tipi_main_network
+      - big_bear_bookstack_network
     labels:
-      # Main
-      traefik.enable: true
-      traefik.http.middlewares.bookstack-web-redirect.redirectscheme.scheme: https
-      traefik.http.services.bookstack.loadbalancer.server.port: 80
-      # Web
-      traefik.http.routers.bookstack-insecure.rule: Host(`${APP_DOMAIN}`)
-      traefik.http.routers.bookstack-insecure.entrypoints: web
-      traefik.http.routers.bookstack-insecure.service: bookstack
-      traefik.http.routers.bookstack-insecure.middlewares: bookstack-web-redirect
-      # Websecure
-      traefik.http.routers.bookstack.rule: Host(`${APP_DOMAIN}`)
-      traefik.http.routers.bookstack.entrypoints: websecure
-      traefik.http.routers.bookstack.service: bookstack
-      traefik.http.routers.bookstack.tls.certresolver: myresolver
-      # Local domain
-      traefik.http.routers.bookstack-local-insecure.rule: Host(`bookstack.${LOCAL_DOMAIN}`)
-      traefik.http.routers.bookstack-local-insecure.entrypoints: web
-      traefik.http.routers.bookstack-local-insecure.service: bookstack
-      traefik.http.routers.bookstack-local-insecure.middlewares: bookstack-web-redirect
-      # Local domain secure
-      traefik.http.routers.bookstack-local.rule: Host(`bookstack.${LOCAL_DOMAIN}`)
-      traefik.http.routers.bookstack-local.entrypoints: websecure
-      traefik.http.routers.bookstack-local.service: bookstack
-      traefik.http.routers.bookstack-local.tls: true
-      runtipi.managed: true
-  bookstack-db:
-    image: lscr.io/linuxserver/mariadb
-    container_name: bookstack-db
-    environment:
-      - TZ=${TZ}
-      - MYSQL_DATABASE=bookstackapp
-      - MYSQL_USER=tipi
-      - MYSQL_PASSWORD=${BOOKSTACK_DB_PASS}
+      runtipi.managed: "true"
+  # Service definition for the database (MariaDB)
+  big-bear-bookstack-db:
+    image: linuxserver/mariadb:10.11.6 # The Docker image for MariaDB
+    container_name: big-bear-bookstack-db # Name of the container
+    environment: # Environment variables for the MariaDB service
+      - MYSQL_ROOT_PASSWORD=793e92b7-58d2-47b9-aae5-b8c7d58bd699 # Root password for MariaDB
+      - MYSQL_DATABASE=bookstackapp # Database name
+      - MYSQL_USER=bigbear # Database user
+      - MYSQL_PASSWORD=a3e8949f-484c-4877-afdb-391f892f9bb6 # Database password
     volumes:
-      - ${APP_DATA_DIR}/data/db:/config
-    restart: unless-stopped
+      - ./data/mysql:/config # Mount the volume for MariaDB data
+    restart: unless-stopped # Restart policy
     networks:
-      - tipi_main_network
+      - big_bear_bookstack_network # Connect to the bookstack-network
     labels:
-      runtipi.managed: true
+      runtipi.managed: "true"
+# Network definition for the bookstack application
+networks:
+  big_bear_bookstack_network:
+    driver: bridge

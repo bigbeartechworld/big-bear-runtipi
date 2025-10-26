@@ -1,55 +1,21 @@
 {
-  "$schema": "../schema.json",
   "name": "Paperless-ngx",
   "available": true,
+  "port": 8000,
   "exposable": true,
-  "port": 8012,
+  "dynamic_config": true,
   "id": "paperless-ngx",
-  "tipi_version": 49,
-  "version": "2.12.1",
-  "categories": ["utilities"],
   "description": "Paperless-ngx is a community-supported open-source document management system that transforms your physical documents into a searchable online archive so you can keep, well, less paper.",
-  "short_desc": "Document Management System (DMS)",
-  "author": "Daniel Quinn, Jonas Winkler, and the Paperless-ngx team",
-  "source": "https://github.com/paperless-ngx/paperless-ngx",
-  "form_fields": [
-    {
-      "type": "text",
-      "label": "Administrator Username",
-      "required": true,
-      "min": 5,
-      "max": 20,
-      "hint": "Username for the paperless-ngx Admin user",
-      "env_variable": "PAPERLESS_ADMIN_USERNAME"
-    },
-    {
-      "type": "password",
-      "label": "Administrator password",
-      "required": true,
-      "min": 5,
-      "max": 64,
-      "hint": "Password for the paperless-ngx Admin user",
-      "env_variable": "PAPERLESS_ADMIN_PASSWORD"
-    },
-    {
-      "label": "Enable Tika",
-      "type": "text",
-      "hint": "Do you want to enable a Tika server for parsing and converting 'Office' documents (such as '.doc', '.xlsx' and '.odt')",
-      "required": true,
-      "options": [
-        {
-          "label": "Yes",
-          "value": "1"
-        },
-        {
-          "label": "No",
-          "value": "2"
-        }
-      ],
-      "env_variable": "PAPERLESS_TIKA_ENABLED"
-    }
-  ],
+  "tipi_version": 1,
+  "version": "2.19.2",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "Paperless-ngx",
+  "author": "paperless-ngx",
+  "source": "",
+  "website": "",
   "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1691943801422,
-  "updated_at": 1726470095000
+  "created_at": 1761453424000,
+  "updated_at": 1761453424000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
 }

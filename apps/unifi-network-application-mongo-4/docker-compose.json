@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "unifi-db",
+      "image": "mongo:4.4.28",
+      "internalPort": 27017,
+      "isMain": true
+    }
+  ]
+}

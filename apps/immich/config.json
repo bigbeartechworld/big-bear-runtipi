@@ -1,39 +1,21 @@
 {
-  "$schema": "../schema.json",
   "name": "Immich",
   "available": true,
+  "port": 2283,
   "exposable": true,
-  "port": 8128,
+  "dynamic_config": true,
   "id": "immich",
-  "tipi_version": 107,
-  "version": "1.117.0",
-  "categories": ["data", "photography"],
-  "description": "Photo and video backup solution directly from your mobile phone.",
-  "short_desc": "Photo and video backup solution directly from your mobile phone.",
-  "author": "Alex Tran",
-  "website": "https://www.immich.app/",
-  "source": "https://github.com/immich-app/immich",
-  "form_fields": [
-    {
-      "type": "random",
-      "label": "DB_PASSWORD",
-      "min": 32,
-      "env_variable": "DB_PASSWORD"
-    },
-    {
-      "type": "random",
-      "label": "JWT_SECRET",
-      "min": 32,
-      "env_variable": "JWT_SECRET"
-    },
-    {
-      "type": "random",
-      "label": "IMMICH_TYPESENSE_API_KEY",
-      "min": 32,
-      "env_variable": "IMMICH_TYPESENSE_API_KEY"
-    }
-  ],
+  "description": "Self-hosted photo and video storage.",
+  "tipi_version": 1,
+  "version": "2.1.0",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "Immich",
+  "author": "",
+  "source": "",
+  "website": "",
   "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1691943801422,
-  "updated_at": 1727938560000
+  "created_at": 1761453416000,
+  "updated_at": 1761453416000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
 }

@@ -1,50 +1,44 @@
-version: "3.7"
+# Configuration for pihole setup
 
+# Name of the big-bear-pihole application
+name: big-bear-pihole
+# Service definitions for the big-bear-pihole application
 services:
-  pihole:
-    container_name: pihole
-    image: pihole/pihole:2024.07.0
+  # Service name: app
+  # The `app` service definition
+  app:
+    # Name of the container
+    container_name: big-bear-pihole
+    # Image to be used for the container
+    image: pihole/pihole:2025.08.0
+    # Container restart policy
     restart: unless-stopped
-    hostname: pihole
-    dns:
-      - 127.0.0.1
-    ports:
-      - ${NETWORK_INTERFACE:-0.0.0.0}:53:53/tcp
-      - ${NETWORK_INTERFACE:-0.0.0.0}:53:53/udp
-      - ${APP_PORT}:80
-    volumes:
-      - ${APP_DATA_DIR}/data/pihole:/etc/pihole
-      - ${APP_DATA_DIR}/data/dnsmasq:/etc/dnsmasq.d
+    # Environment variables
     environment:
-      TZ: ${TZ}
-      WEBPASSWORD: ${APP_PASSWORD}
-    cap_add:
-      - NET_ADMIN
+      TZ: "UTC"
+      FTLCONF_webserver_api_password: "your_password"
+    # Volumes to be mounted to the container
+    volumes:
+      # Mounting the local ./data/etc directory to /etc/pihole/ inside the container
+      - ./data/etc:/etc/pihole/
+      # Mounting the local ./data/dnsmasq.d directory to /etc/dnsmasq.d inside the container
+      - ./data/dnsmasq.d:/etc/dnsmasq.d/
+    # Ports mapping between host and container
+    ports:
+      - "53:53/tcp"
+      - "53:53/udp"
+      - "67:67/udp"
+      - "8080:80/tcp"
+      - "10443:443/tcp"
+    # Define the networks section
     networks:
-      - tipi_main_network
+      # Define the pihole-network
+      - pihole-network
     labels:
-      # Main
-      traefik.enable: true
-      traefik.http.middlewares.pihole-web-redirect.redirectscheme.scheme: https
-      traefik.http.services.pihole.loadbalancer.server.port: 80
-      # Web
-      traefik.http.routers.pihole-insecure.rule: Host(`${APP_DOMAIN}`)
-      traefik.http.routers.pihole-insecure.entrypoints: web
-      traefik.http.routers.pihole-insecure.service: pihole
-      traefik.http.routers.pihole-insecure.middlewares: pihole-web-redirect
-      # Websecure
-      traefik.http.routers.pihole.rule: Host(`${APP_DOMAIN}`)
-      traefik.http.routers.pihole.entrypoints: websecure
-      traefik.http.routers.pihole.service: pihole
-      traefik.http.routers.pihole.tls.certresolver: myresolver
-      # Local domain
-      traefik.http.routers.pihole-local-insecure.rule: Host(`pihole.${LOCAL_DOMAIN}`)
-      traefik.http.routers.pihole-local-insecure.entrypoints: web
-      traefik.http.routers.pihole-local-insecure.service: pihole
-      traefik.http.routers.pihole-local-insecure.middlewares: pihole-web-redirect
-      # Local domain secure
-      traefik.http.routers.pihole-local.rule: Host(`pihole.${LOCAL_DOMAIN}`)
-      traefik.http.routers.pihole-local.entrypoints: websecure
-      traefik.http.routers.pihole-local.service: pihole
-      traefik.http.routers.pihole-local.tls: true
-      runtipi.managed: true
+      runtipi.managed: "true"
+# Define the networks section
+networks:
+  # Define the pihole-network
+  pihole-network:
+    # Set the driver to bridge
+    driver: bridge

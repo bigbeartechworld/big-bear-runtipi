@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "big-bear-ghostfolio",
+      "image": "ghostfolio/ghostfolio:2.210.1",
+      "internalPort": 3333,
+      "isMain": true
+    }
+  ]
+}

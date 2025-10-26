@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "big-bear-erugo",
+      "image": "wardy784/erugo:0.1.1",
+      "internalPort": 80,
+      "isMain": true
+    }
+  ]
+}

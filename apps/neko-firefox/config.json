@@ -1,0 +1,21 @@
+{
+  "name": "Neko Firefox",
+  "available": true,
+  "port": 8080,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "neko-firefox",
+  "description": "Welcome to Neko, a self-hosted virtual browser that runs in Docker and uses WebRTC technology. Neko is a powerful tool that allows you to run a fully-functional browser in a virtual environment, giving you the ability to access the internet securely and privately from anywhere. With Neko, you can browse the web, run applications, and perform other tasks just as you would on a regular browser, all within a secure and isolated environment. Whether you are a developer looking to test web applications, a privacy-conscious user seeking a secure browsing experience, or simply someone who wants to take advantage of the convenience and flexibility of a virtual browser, Neko is the perfect solution.",
+  "tipi_version": 1,
+  "version": "firefox",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "A self hosted virtual browser that runs in docker and uses WebRTC.",
+  "author": "m1k1o",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761453421000,
+  "updated_at": 1761453421000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

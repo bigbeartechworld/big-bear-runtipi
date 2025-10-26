@@ -1,14 +1,1 @@
-## The easiest way to run WireGuard VPN + Web-based Admin UI.
-
-You have found the easiest way to install & manage WireGuard on any Linux host!
-
-* All-in-one: WireGuard + Web UI.
-* Easy installation, simple to use.
-* List, create, edit, delete, enable & disable clients.
-* Show a client's QR code.
-* Download a client's configuration file.
-* Statistics for which clients are connected.
-* Tx/Rx charts for each connected client.
-* Gravatar support.
-
-![Screenshot](https://raw.githubusercontent.com/WeeJeWel/wg-easy/master/assets/screenshot.png)
+Access your homeserver from anywhere even on your mobile device. Wireguard-easy is a simple tool to configure and manage Wireguard VPN servers. It is written in Go and uses the official Wireguard client. You have to open and redirect port 51820 to your homeserver in order to connect.

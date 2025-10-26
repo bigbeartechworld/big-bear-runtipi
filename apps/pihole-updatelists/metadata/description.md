@@ -1,0 +1,1 @@
+The Pi-hole® is a DNS sinkhole that protects your devices from unwanted content without installing any client-side software. This is a fork of the Pi-hole® application that adds the ability to update the lists of blocked domains and regexes.

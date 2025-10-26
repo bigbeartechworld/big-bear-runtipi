@@ -1,27 +1,21 @@
 {
-  "$schema": "../schema.json",
   "name": "Planka",
-  "port": 8016,
   "available": true,
+  "port": 3000,
   "exposable": true,
+  "dynamic_config": true,
   "id": "planka",
-  "tipi_version": 36,
-  "version": "1.23.1",
-  "categories": ["development"],
   "description": "The realtime kanban board for workgroups built with React and Redux.",
+  "tipi_version": 1,
+  "version": "1.26.3",
+  "categories": ["bigbearcasaos"],
   "short_desc": "Free open source kanban board for workgroups.",
-  "author": "Planka",
-  "source": "https://github.com/plankanban/planka",
-  "website": "https://docs.planka.cloud/",
-  "form_fields": [
-    {
-      "type": "random",
-      "label": "Planka Secret Key",
-      "min": 32,
-      "env_variable": "PLANKA_SECRET_KEY"
-    }
-  ],
+  "author": "plankanban",
+  "source": "",
+  "website": "",
   "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1691943801422,
-  "updated_at": 1727887910000
+  "created_at": 1761453426000,
+  "updated_at": 1761453426000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
 }

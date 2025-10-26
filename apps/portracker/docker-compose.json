@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "big-bear-portracker",
+      "image": "mostafawahied/portracker:1.1",
+      "internalPort": 4999,
+      "isMain": true
+    }
+  ]
+}

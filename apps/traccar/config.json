@@ -1,0 +1,21 @@
+{
+  "name": "Traccar",
+  "available": true,
+  "port": 8080,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "traccar",
+  "description": "Traccar GPS Tracking System in Docker image.",
+  "tipi_version": 1,
+  "version": "6.10-ubuntu",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "Traccar",
+  "author": "traccar",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761453430000,
+  "updated_at": 1761453430000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

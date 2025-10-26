@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "big-bear-poste-io",
+      "image": "analogic/poste.io:2.5.7",
+      "internalPort": null,
+      "isMain": true
+    }
+  ]
+}

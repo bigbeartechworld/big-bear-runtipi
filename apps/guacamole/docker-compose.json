@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "guacd",
+      "image": "guacamole/guacd:1.6.0",
+      "internalPort": null,
+      "isMain": true
+    }
+  ]
+}

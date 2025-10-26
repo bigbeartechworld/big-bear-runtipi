@@ -1,60 +1,60 @@
-version: "3.7"
+# Configuration for linkwarden setup
 
+# Name of the big-bear-linkwarden application
+name: big-bear-linkwarden
+# Service definitions for the big-bear-linkwarden application
 services:
+  # Service name: linkwarden
+  # The `linkwarden` service definition
   linkwarden:
-    image: ghcr.io/linkwarden/linkwarden:v2.7.1
-    container_name: linkwarden
-    environment:
-      - DATABASE_URL=postgresql://tipi:${LINKWARDEN_DB_PASSWORD}@linkwarden-db:5432/linkwarden
-      - NEXTAUTH_SECRET=${LINKWARDEN_NEXTAUTH_SECRET}
-      - NEXTAUTH_URL=${APP_PROTOCOL:-http}://${APP_DOMAIN}/api/v1/auth
-      - NEXT_PUBLIC_DISABLE_REGISTRATION=${LINKWARDEN_NEXT_PUBLIC_DISABLE_REGISTRATION}
+    # Name of the container
+    container_name: big-bear-linkwarden
+    # Image to be used for the container
+    image: ghcr.io/linkwarden/linkwarden:v2.13.1
+    # Container restart policy
     restart: unless-stopped
+    # Volumes to be mounted to the container
     volumes:
-      - ${APP_DATA_DIR}/data/linkwarden:/data/data
+      - ./data/data/linkwarden:/data/data
+    # Environment variables
+    environment:
+      - DATABASE_URL=postgresql://casaos:casaospassword@big-bear-linkwarden-db:5432/big-bear-linkwarden
+      - NEXTAUTH_SECRET=7e2d8797-dc20-422a-9a68-44b958bd33c0
+      - NEXTAUTH_URL=http://localhost/api/v1/auth
+      - NEXT_PUBLIC_DISABLE_REGISTRATION=
+    # Ports mapping between host and container
     ports:
-      - ${APP_PORT}:3000
-    depends_on:
-      - linkwarden-db
+      # Mapping port 3000 of the host to port 3000 of the container
+      - "3000:3000"
+    # Networks to be attached to the container
     networks:
-      - tipi_main_network
+      - linkwarden_network
     labels:
-      # Main
-      traefik.enable: true
-      traefik.http.middlewares.linkwarden-web-redirect.redirectscheme.scheme: https
-      traefik.http.services.linkwarden.loadbalancer.server.port: 3000
-      # Web
-      traefik.http.routers.linkwarden-insecure.rule: Host(`${APP_DOMAIN}`)
-      traefik.http.routers.linkwarden-insecure.entrypoints: web
-      traefik.http.routers.linkwarden-insecure.service: linkwarden
-      traefik.http.routers.linkwarden-insecure.middlewares: linkwarden-web-redirect
-      # Websecure
-      traefik.http.routers.linkwarden.rule: Host(`${APP_DOMAIN}`)
-      traefik.http.routers.linkwarden.entrypoints: websecure
-      traefik.http.routers.linkwarden.service: linkwarden
-      traefik.http.routers.linkwarden.tls.certresolver: myresolver
-      # Local domain
-      traefik.http.routers.linkwarden-local-insecure.rule: Host(`linkwarden.${LOCAL_DOMAIN}`)
-      traefik.http.routers.linkwarden-local-insecure.entrypoints: web
-      traefik.http.routers.linkwarden-local-insecure.service: linkwarden
-      traefik.http.routers.linkwarden-local-insecure.middlewares: linkwarden-web-redirect
-      # Local domain secure
-      traefik.http.routers.linkwarden-local.rule: Host(`linkwarden.${LOCAL_DOMAIN}`)
-      traefik.http.routers.linkwarden-local.entrypoints: websecure
-      traefik.http.routers.linkwarden-local.service: linkwarden
-      traefik.http.routers.linkwarden-local.tls: true
-      runtipi.managed: true
+      runtipi.managed: "true"
+  # Postgres database
   linkwarden-db:
-    container_name: linkwarden-db
-    image: postgres:16-alpine
+    # Name of the container
+    container_name: big-bear-linkwarden-db
+    # Image to be used
+    image: postgres:16
+    # Container restart policy
     restart: unless-stopped
+    # Environment variables
     environment:
-      - POSTGRES_USER=tipi
-      - POSTGRES_PASSWORD=${LINKWARDEN_DB_PASSWORD}
-      - POSTGRES_DB=linkwarden
+      - POSTGRES_USER=casaos
+      - POSTGRES_PASSWORD=casaospassword
+      - POSTGRES_DB=big-bear-linkwarden
+    # Volumes to be mounted
     volumes:
-      - ${APP_DATA_DIR}/data/postgres:/var/lib/postgresql/data
+      - ./data/data/postgres:/var/lib/postgresql/data
+    # Networks to be attached
     networks:
-      - tipi_main_network
+      - linkwarden_network
     labels:
-      runtipi.managed: true
+      runtipi.managed: "true"
+# Networks to be created
+networks:
+  # Network name
+  linkwarden_network:
+    # Set the driver to bridge
+    driver: bridge

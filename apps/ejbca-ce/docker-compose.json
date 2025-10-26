@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "big-bear-ejbca-ce",
+      "image": "keyfactor/ejbca-ce:9.1.1",
+      "internalPort": 8080,
+      "isMain": true
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "big-bear-neko-firefox",
+      "image": "m1k1o/neko:firefox",
+      "internalPort": 8080,
+      "isMain": true
+    }
+  ]
+}

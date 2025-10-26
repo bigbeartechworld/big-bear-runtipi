@@ -1,47 +1,37 @@
-version: '3.7'
+# Configuration for ollama-nvidia setup
 
+# Name of the big-bear-ollama-nvidia application
+name: big-bear-ollama-nvidia
+# Service definitions for the big-bear-ollama-nvidia application
 services:
-  ollama-nvidia:
-    image: ollama/ollama:0.3.12
+  # Service name: big-bear-ollama-nvidia
+  # The `big-bear-ollama-nvidia` service definition
+  big-bear-ollama-nvidia:
+    # Name of the container
+    container_name: big-bear-ollama-nvidia
+    # Image to be used for the container
+    image: ollama/ollama:0.12.6
+    # Container restart policy
     restart: unless-stopped
-    container_name: ollama-nvidia
+    # Volumes to be mounted to the container
+    volumes:
+      - ./data/.ollama:/root/.ollama
+    # Ports mapping between host and container
     ports:
-      - '${APP_PORT}:11434'
-    networks:
-      - tipi_main_network
+      # Mapping port 11434 of the host to port 11434 of the container
+      - "11434:11434"
+    # Define the deployment settings
     deploy:
+      # Specify resource reservations
       resources:
         reservations:
           devices:
+            # Specify the device driver as NVIDIA
             - driver: nvidia
+              # Allocate all available GPUs
               count: all
               capabilities:
+                # Define the required capabilities (gpu for GPU resources)
                 - gpu
-    volumes:
-      - ${APP_DATA_DIR}/data/.ollama:/root/.ollama
     labels:
-      # Main
-      traefik.enable: true
-      traefik.http.middlewares.ollama-nvidia-web-redirect.redirectscheme.scheme: https
-      traefik.http.services.ollama-nvidia.loadbalancer.server.port: 11434
-      # Web
-      traefik.http.routers.ollama-nvidia-insecure.rule: Host(`${APP_DOMAIN}`)
-      traefik.http.routers.ollama-nvidia-insecure.entrypoints: web
-      traefik.http.routers.ollama-nvidia-insecure.service: ollama-nvidia
-      traefik.http.routers.ollama-nvidia-insecure.middlewares: ollama-nvidia-web-redirect
-      # Websecure
-      traefik.http.routers.ollama-nvidia.rule: Host(`${APP_DOMAIN}`)
-      traefik.http.routers.ollama-nvidia.entrypoints: websecure
-      traefik.http.routers.ollama-nvidia.service: ollama-nvidia
-      traefik.http.routers.ollama-nvidia.tls.certresolver: myresolver
-      # Local domain
-      traefik.http.routers.ollama-nvidia-local-insecure.rule: Host(`ollama-nvidia.${LOCAL_DOMAIN}`)
-      traefik.http.routers.ollama-nvidia-local-insecure.entrypoints: web
-      traefik.http.routers.ollama-nvidia-local-insecure.service: ollama-nvidia
-      traefik.http.routers.ollama-nvidia-local-insecure.middlewares: ollama-nvidia-web-redirect
-      # Local domain secure
-      traefik.http.routers.ollama-nvidia-local.rule: Host(`ollama-nvidia.${LOCAL_DOMAIN}`)
-      traefik.http.routers.ollama-nvidia-local.entrypoints: websecure
-      traefik.http.routers.ollama-nvidia-local.service: ollama-nvidia
-      traefik.http.routers.ollama-nvidia-local.tls: true
-      runtipi.managed: true
+      runtipi.managed: "true"

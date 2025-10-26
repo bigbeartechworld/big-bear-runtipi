@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "app",
+      "image": "mbentley/omada-controller:5.15",
+      "internalPort": null,
+      "isMain": true
+    }
+  ]
+}

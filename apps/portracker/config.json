@@ -1,0 +1,21 @@
+{
+  "name": "Portracker",
+  "available": true,
+  "port": 4999,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "portracker",
+  "description": "A self-hosted, real-time port monitoring and discovery tool that automatically discovers and maps network services across systems.",
+  "tipi_version": 1,
+  "version": "1.1",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "Real-time Port Monitoring Tool",
+  "author": "Mostafa-Wahied",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761453427000,
+  "updated_at": 1761453427000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}
