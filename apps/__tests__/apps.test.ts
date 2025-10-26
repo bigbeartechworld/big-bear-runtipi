@@ -43,6 +43,17 @@ const networkExceptions = [
   'beszel-agent',
   'watchyourlan',
 ];
+
+// Helper function to check if an app uses network_mode: host
+const usesHostNetworking = (appId: string): boolean => {
+  const dockerComposeFile = fs.readFileSync(`./apps/${appId}/docker-compose.yml`).toString();
+  const dockerCompose: any = jsyaml.load(dockerComposeFile);
+  
+  // Check if any service uses network_mode: host
+  const services = dockerCompose.services || {};
+  return Object.values(services).some((service: any) => service.network_mode === 'host');
+};
+
 const getAppConfigs = (): AppConfig[] => {
   const apps: AppConfig[] = [];
 
@@ -252,7 +263,8 @@ describe('App configs', () => {
 
     apps.forEach((app) => {
       test(app.id, () => {
-        if (!networkExceptions.includes(app.id)) {
+        // Skip apps in network exceptions list or using host networking
+        if (!networkExceptions.includes(app.id) && !usesHostNetworking(app.id)) {
           const dockerComposeFile = fs.readFileSync(`./apps/${app.id}/docker-compose.yml`).toString();
 
           const dockerCompose: any = jsyaml.load(dockerComposeFile);
@@ -324,6 +336,27 @@ describe('App configs', () => {
         expect(app.updated_at).toBeGreaterThan(0);
         expect(app.updated_at).toBeLessThan(Date.now());
         expect(new Date(app.updated_at).getFullYear()).toBeGreaterThanOrEqual(2023);
+      });
+    });
+  });
+
+  describe('Apps with network_mode host should not have ports in docker-compose.yml', () => {
+    const apps = getAppConfigs();
+    apps.forEach((app) => {
+      test(app.id, () => {
+        const dockerComposeFile = fs.readFileSync(`./apps/${app.id}/docker-compose.yml`).toString();
+        const dockerCompose: any = jsyaml.load(dockerComposeFile);
+
+        // Check all services for network_mode: host
+        const services = dockerCompose.services;
+        Object.keys(services).forEach((serviceName) => {
+          const service = services[serviceName];
+          
+          // If service has network_mode: host, it should not have ports defined
+          if (service.network_mode === 'host') {
+            expect(service.ports).toBeUndefined();
+          }
+        });
       });
     });
   });
