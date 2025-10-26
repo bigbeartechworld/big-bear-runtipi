@@ -1,0 +1,21 @@
+{
+  "name": "Zigbee to MQTT bridge",
+  "available": true,
+  "port": 8144,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "zigbee2mqtt",
+  "description": "Zigbee to MQTT bridge, get rid of your proprietary Zigbee bridges",
+  "tipi_version": 1,
+  "version": "2.6.2",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "Zigbee to MQTT bridge",
+  "author": "koenkk",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761501396000,
+  "updated_at": 1761501396000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

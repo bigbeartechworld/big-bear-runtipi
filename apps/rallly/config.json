@@ -1,0 +1,21 @@
+{
+  "name": "Rallly",
+  "available": true,
+  "port": 3019,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "rallly",
+  "description": "Rallly is an open-source scheduling and collaboration tool designed to make organizing events and meetings easier.",
+  "tipi_version": 1,
+  "version": "4.4.1",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "Rallly",
+  "author": "lukevella",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761501362000,
+  "updated_at": 1761501362000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

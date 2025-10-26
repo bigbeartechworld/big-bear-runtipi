@@ -1,0 +1,21 @@
+{
+  "name": "Dashy",
+  "available": true,
+  "port": 4001,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "dashy",
+  "description": "Dashy helps you organize your self-hosted services by making them accessible from a single place",
+  "tipi_version": 1,
+  "version": "3.1.0",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "Dashy",
+  "author": "Lissy93",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761501262000,
+  "updated_at": 1761501262000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

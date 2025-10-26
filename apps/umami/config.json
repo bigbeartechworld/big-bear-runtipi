@@ -1,0 +1,21 @@
+{
+  "name": "Umami",
+  "available": true,
+  "port": 3023,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "umami",
+  "description": "Umami is a simple, fast, privacy-focused alternative to Google Analytics.",
+  "tipi_version": 1,
+  "version": "postgresql-latest",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "Umami is a simple, fast, privacy-focused alternative to Google Analytics.",
+  "author": "umami-software",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761501382000,
+  "updated_at": 1761501382000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

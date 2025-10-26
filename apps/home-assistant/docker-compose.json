@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "app",
+      "image": "ghcr.io/home-assistant/home-assistant:2025.10.4",
+      "internalPort": null,
+      "isMain": true
+    }
+  ]
+}

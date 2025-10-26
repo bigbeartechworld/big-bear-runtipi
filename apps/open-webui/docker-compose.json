@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "big-bear-open-webui",
+      "image": "ghcr.io/open-webui/open-webui:git-33e54a9",
+      "internalPort": 8080,
+      "isMain": true
+    }
+  ]
+}

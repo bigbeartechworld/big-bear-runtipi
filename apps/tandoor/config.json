@@ -1,0 +1,21 @@
+{
+  "name": "Tandoor",
+  "available": true,
+  "port": 8134,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "tandoor",
+  "description": "Drop your collection of links and notes. Get Tandoor and never look back onto a time without recipe management, storage, sharing and collaborative cooking!",
+  "tipi_version": 1,
+  "version": "2.3.3",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "Recipe collection manager.",
+  "author": "tandoorrecipes",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761501377000,
+  "updated_at": 1761501377000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

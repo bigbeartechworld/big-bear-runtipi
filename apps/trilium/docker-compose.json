@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "app",
+      "image": "triliumnext/trilium:v0.99.3",
+      "internalPort": 8080,
+      "isMain": true
+    }
+  ]
+}

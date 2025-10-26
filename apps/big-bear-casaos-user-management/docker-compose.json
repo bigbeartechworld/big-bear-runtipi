@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "big-bear-casaos-user-management",
+      "image": "bigbeartechworld/big-bear-casaos-user-management:0.1.1",
+      "internalPort": 5000,
+      "isMain": true
+    }
+  ]
+}

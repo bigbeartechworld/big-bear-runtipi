@@ -1,0 +1,21 @@
+{
+  "name": "Unifi Network Application",
+  "available": true,
+  "port": 8446,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "unifi-network-application",
+  "description": "The Unifi-network-application software is a powerful, enterprise wireless software engine ideal for high-density client deployments requiring low latency and high uptime performance.",
+  "tipi_version": 1,
+  "version": "6.0.11",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "The Unifi-network-application",
+  "author": "Ubiquiti",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761501384000,
+  "updated_at": 1761501384000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

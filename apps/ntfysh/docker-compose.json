@@ -1,0 +1,12 @@
+{
+  "services": [
+    {
+      "name": "app",
+      "image": "binwiederhier/ntfy:v2.14.0",
+      "internalPort":  80 # Container port
+ "7200" # Host port
+ tcp # Protocol type,
+      "isMain": true
+    }
+  ]
+}

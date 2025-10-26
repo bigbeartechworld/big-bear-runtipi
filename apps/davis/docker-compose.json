@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "big-bear-davis",
+      "image": "ghcr.io/tchapi/davis-standalone:5.2.0",
+      "internalPort": 9000,
+      "isMain": true
+    }
+  ]
+}

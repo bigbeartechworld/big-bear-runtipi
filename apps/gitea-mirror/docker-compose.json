@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "big-bear-gitea-mirror",
+      "image": "ghcr.io/raylabshq/gitea-mirror:v3.8.10",
+      "internalPort": 4321,
+      "isMain": true
+    }
+  ]
+}

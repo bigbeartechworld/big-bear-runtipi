@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "app",
+      "image": "ghcr.io/pterodactyl/wings:v1.11.13",
+      "internalPort": 8080,
+      "isMain": true
+    }
+  ]
+}

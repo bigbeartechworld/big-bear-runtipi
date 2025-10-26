@@ -1,0 +1,21 @@
+{
+  "name": "Ghostfolio",
+  "available": true,
+  "port": 3334,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "ghostfolio",
+  "description": "Open Source Wealth Management Software. Angular + NestJS + Prisma + Nx + TypeScript 🤍",
+  "tipi_version": 1,
+  "version": "2.210.1",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "Ghostfolio",
+  "author": "ghostfolio",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761501280000,
+  "updated_at": 1761501280000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

@@ -1,0 +1,20 @@
+# Configuration for big-bear-codex-docs setup
+name: big-bear-codex-docs
+# Service definitions for the big-bear-codex-docs application
+services:
+  codex-docs:
+    image: ghcr.io/codex-team/codex.docs:v2.2
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./data/uploads:/usr/src/app/uploads
+      - ./data/db:/usr/src/app/db
+      - ./data/codex-docs-config.local.yaml:/usr/src/app/docs-config.yaml
+    labels:
+      runtipi.managed: "true"
+    container_name: codex-docs
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

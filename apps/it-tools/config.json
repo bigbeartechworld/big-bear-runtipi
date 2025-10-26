@@ -1,0 +1,21 @@
+{
+  "name": "IT Tools",
+  "available": true,
+  "port": 8102,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "it-tools",
+  "description": "Collection of handy online tools for developers, with great UX as a web app.",
+  "tipi_version": 1,
+  "version": "2023.11.2-7d94e11",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "IT Tools",
+  "author": "corentinth",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761501295000,
+  "updated_at": 1761501295000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

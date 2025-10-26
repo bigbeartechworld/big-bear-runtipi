@@ -1,0 +1,21 @@
+{
+  "name": "Nextcloud with SMB (Legacy)",
+  "available": true,
+  "port": 7581,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "nextcloud-with-smbclient",
+  "description": "This is legacy and you should use the BigBearCasaOS Nextcloud instead. Nextcloud puts your data at your fingertips, under your control. Store your documents, calendar, contacts and photos on a server at home, at one of our providers or in a data center you trust.",
+  "tipi_version": 1,
+  "version": "0.0.11",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "The productivity platform that keeps you in control",
+  "author": "nextcloud",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761501324000,
+  "updated_at": 1761501324000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

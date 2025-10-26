@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "app",
+      "image": "linuxserver/code-server:4.105.1",
+      "internalPort": 8443,
+      "isMain": true
+    }
+  ]
+}

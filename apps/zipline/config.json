@@ -1,0 +1,21 @@
+{
+  "name": "zipline",
+  "available": true,
+  "port": 3026,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "zipline",
+  "description": "A ShareX/file upload server that is easy to use, packed with features, and with an easy setup!",
+  "tipi_version": 1,
+  "version": "3.7.13",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "zipline",
+  "author": "zipline",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761501397000,
+  "updated_at": 1761501397000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

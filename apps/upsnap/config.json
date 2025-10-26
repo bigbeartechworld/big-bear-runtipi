@@ -1,0 +1,21 @@
+{
+  "name": "Upsnap",
+  "available": true,
+  "port": 8139,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "upsnap",
+  "description": "A simple wake on lan web app written with SvelteKit, Go and PocketBase.",
+  "tipi_version": 1,
+  "version": "5.2.3",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "Upsnap",
+  "author": "seriousm4x",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761501386000,
+  "updated_at": 1761501386000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

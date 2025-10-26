@@ -1,0 +1,21 @@
+{
+  "name": "Paperless-ngx",
+  "available": true,
+  "port": 8008,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "paperless-ngx",
+  "description": "Paperless-ngx is a community-supported open-source document management system that transforms your physical documents into a searchable online archive so you can keep, well, less paper.",
+  "tipi_version": 1,
+  "version": "2.19.2",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "Paperless-ngx",
+  "author": "paperless-ngx",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761501340000,
+  "updated_at": 1761501340000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

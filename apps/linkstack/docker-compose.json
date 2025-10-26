@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "big-bear-linkstack",
+      "image": "linkstackorg/linkstack:V4",
+      "internalPort": 80,
+      "isMain": true
+    }
+  ]
+}

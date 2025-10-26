@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "big-bear-nextcloud-smb",
+      "image": "bigbeartechworld/big-bear-nextcloud-with-smbclient:0.0.11",
+      "internalPort": 80,
+      "isMain": true
+    }
+  ]
+}
