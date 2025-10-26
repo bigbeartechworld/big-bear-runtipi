@@ -1,0 +1,30 @@
+# Configuration for audiobookshelf setup
+
+# Name of the big-bear-audiobookshelf application
+name: big-bear-audiobookshelf
+# Service definitions for the big-bear-audiobookshelf application
+services:
+  audiobookshelf:
+    # Name of the container
+    container_name: audiobookshelf
+    # Image to be used for the container
+    image: ghcr.io/advplyr/audiobookshelf:2.30.0
+    # Container restart policy
+    restart: unless-stopped
+    # Volumes to be mounted to the container
+    volumes:
+      - ./data/media/data/books/spoken:/audiobooks
+      - ./data/media/data/podcasts:/podcasts
+      - ./data/data/config:/config
+      - ./data/data/metadata:/metadata
+    # Ports mapping between host and container
+    ports:
+      # Mapping port 8080 of the host to port 80 of the container
+      - "8080:80"
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

@@ -1,0 +1,22 @@
+# Configuration for big-bear-gotify setup
+name: big-bear-gotify
+# Service definitions for the big-bear-gotify application
+services:
+  gotify:
+    image: gotify/server:2.7.3 # Docker image for the service
+    ports:
+      - 8091:80 # Port mapping (host:container)
+    environment: # Environment variables for the service
+      - GOTIFY_DEFAULTUSER_NAME=admin
+      - GOTIFY_DEFAULTUSER_PASS=custom
+    volumes: # Volume mapping (host:container)
+      - "./data/data:/app/data"
+    network_mode: bridge # Network mode
+    labels:
+      runtipi.managed: "true"
+    container_name: gotify
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

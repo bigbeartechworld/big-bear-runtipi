@@ -1,0 +1,30 @@
+# Configuration for kavita setup
+
+# Name of the big-bear-kavita application
+name: big-bear-kavita
+# Service definitions for the big-bear-kavita application
+services:
+  kavita:
+    # Name of the container
+    container_name: kavita
+    # Image to be used for the container
+    image: jvmilazz0/kavita:0.8.8
+    # Container restart policy
+    restart: unless-stopped
+    # Volumes to be mounted to the container
+    volumes:
+      - ./data/data/kavita-config:/kavita/config
+      - ./data/media/data/books:/books
+      - ./data/media/data/comics:/comics
+      - ./data/media/data/manga:/manga
+    # Ports mapping between host and container
+    ports:
+      # Mapping port 5000 of the host to port 5000 of the container
+      - "5000:5000"
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

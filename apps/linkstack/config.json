@@ -1,0 +1,21 @@
+{
+  "name": "LinkStack",
+  "available": true,
+  "port": 10443,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "linkstack",
+  "description": "LinkStack is a link-in-bio tool that allows you to create a personalized and easily customizable page that houses all the important links you want to share with your audience.",
+  "tipi_version": 1,
+  "version": "V4",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "Your all-in-one link sharing solution",
+  "author": "LinkStackOrg",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761501348000,
+  "updated_at": 1761501348000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

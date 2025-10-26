@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "app",
+      "image": "gotify/server:2.7.3",
+      "internalPort": 80,
+      "isMain": true
+    }
+  ]
+}

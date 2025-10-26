@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "big-bear-retroarch-web",
+      "image": "inglebard/retroarch-web:latest",
+      "internalPort": 80,
+      "isMain": true
+    }
+  ]
+}

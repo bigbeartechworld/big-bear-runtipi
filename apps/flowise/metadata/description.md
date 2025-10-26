@@ -1,0 +1,1 @@
+Flowise AI is an Open source UI visual tool to build your customized LLM orchestration flow & AI agents. Developing LLM apps takeslength iterations. With low code approach, Flowise AI enable quick iterations to go from testing to production.

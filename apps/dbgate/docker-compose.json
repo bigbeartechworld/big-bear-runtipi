@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "big-bear-dbgate",
+      "image": "dbgate/dbgate:6.6.5-alpine",
+      "internalPort": 3000,
+      "isMain": true
+    }
+  ]
+}

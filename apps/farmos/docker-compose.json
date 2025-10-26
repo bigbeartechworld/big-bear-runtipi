@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "big-bear-farmos",
+      "image": "farmos/farmos:3.4.5",
+      "internalPort": 80,
+      "isMain": true
+    }
+  ]
+}

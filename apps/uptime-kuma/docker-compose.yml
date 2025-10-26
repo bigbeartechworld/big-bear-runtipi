@@ -1,0 +1,26 @@
+# Configuration for uptime-kuma setup
+
+# Name of the big-bear-uptime-kuma application
+name: big-bear-uptime-kuma
+# Service definitions for the big-bear-uptime-kuma application
+services:
+  uptime-kuma:
+    # Docker image to use for the app service
+    image: louislam/uptime-kuma:1
+    # Custom container name for identification
+    container_name: uptime-kuma
+    # Volume mappings: Maps host directory to container directory for persistent storage
+    volumes:
+      - ./data/data:/app/data
+    # Port mapping: Maps a port on the host to a port on the container
+    ports:
+      - "3001:3001" # <Host Port>:<Container Port>
+    # Restart policy: Always restart the container if it stops
+    restart: always
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

@@ -1,0 +1,21 @@
+{
+  "name": "Syncthing",
+  "available": true,
+  "port": 8384,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "syncthing",
+  "description": "Syncthing is a continuous file synchronization program. It synchronizes files between two or more computers. We strive to fulfill the goals below. The goals are listed in order of importance, the most important one being the first.",
+  "tipi_version": 1,
+  "version": "2.0",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "Peer-to-peer file synchronization between your devices",
+  "author": "syncthing",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761501374000,
+  "updated_at": 1761501374000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

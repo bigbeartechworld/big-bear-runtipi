@@ -1,0 +1,21 @@
+{
+  "name": "Big Bear CasaOS User Management",
+  "available": true,
+  "port": 5001,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "big-bear-casaos-user-management",
+  "description": "Manage users in CasaOS",
+  "tipi_version": 1,
+  "version": "0.1.1",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "Manage users in CasaOS",
+  "author": "bigbeartechworld",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761501247000,
+  "updated_at": 1761501247000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

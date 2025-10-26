@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "app",
+      "image": "2fauth/2fauth:5.6.0",
+      "internalPort": 8000,
+      "isMain": true
+    }
+  ]
+}

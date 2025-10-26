@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "big-bear-gem-digest-bot",
+      "image": "piero24/gemdigest:1.0",
+      "internalPort": 8080,
+      "isMain": true
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "NPMPlus",
+  "available": true,
+  "port": 8114,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "npmplus",
+  "description": "Docker container for managing Nginx proxy hosts with a simple, powerful interface",
+  "tipi_version": 1,
+  "version": "449",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "NPMPlus",
+  "author": "zoeyvid",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761501356000,
+  "updated_at": 1761501356000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

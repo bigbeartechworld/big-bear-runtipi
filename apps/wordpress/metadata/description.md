@@ -1,0 +1,1 @@
+Initially started as a blogging tool in 2003, it has evolved into a highly flexible CMS that powers over 40% of the web (as of my last training data in 2022).

@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "big-bear-immich-kiosk",
+      "image": "ghcr.io/damongolding/immich-kiosk:0.26.1",
+      "internalPort": 3000,
+      "isMain": true
+    }
+  ]
+}

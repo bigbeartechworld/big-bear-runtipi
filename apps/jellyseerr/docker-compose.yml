@@ -1,0 +1,21 @@
+name: big-bear-jellyseerr # Name of the compose project
+services:
+  jellyseerr:
+    image: fallenbagel/jellyseerr:2.7.3 # Image to use for the jellyseerr service
+    ports:
+      - "5055:5055" # Maps port 5055 on the host to port 5055 on the container
+    volumes:
+      - ./data/config:/app/config # Binds a volume from host to container for configuration
+    environment:
+      - LOG_LEVEL=debug # Sets the log level to debug
+      - TZ=$TZ # Sets the timezone, using host's timezone variable
+    restart: unless-stopped # Service will restart unless it is explicitly stopped
+    network_mode: bridge # Uses bridge network mode
+    labels:
+      runtipi.managed: "true"
+    container_name: jellyseerr
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true
