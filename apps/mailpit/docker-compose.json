@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "app",
+      "image": "axllent/mailpit:v1.27",
+      "internalPort": 8025,
+      "isMain": true
+    }
+  ]
+}

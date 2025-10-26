@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "immich-server",
+      "image": "ghcr.io/immich-app/immich-server:v2.1.0",
+      "internalPort": 2283,
+      "isMain": true
+    }
+  ]
+}

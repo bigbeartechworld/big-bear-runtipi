@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "big-bear-eufy-security-ws",
+      "image": "bropat/eufy-security-ws:1.9.3",
+      "internalPort": 3008,
+      "isMain": true
+    }
+  ]
+}

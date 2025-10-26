@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "big-bear-nightscout",
+      "image": "nightscout/cgm-remote-monitor:15.0.3",
+      "internalPort": 1337,
+      "isMain": true
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "app",
+      "image": "couchdb:3.5.0",
+      "internalPort": 5984,
+      "isMain": true
+    }
+  ]
+}

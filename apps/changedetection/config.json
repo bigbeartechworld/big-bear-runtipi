@@ -1,0 +1,21 @@
+{
+  "name": "Change Detection",
+  "available": true,
+  "port": 5002,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "changedetection",
+  "description": "The best and simplest free open source website change detection, restock monitor and notification service.",
+  "tipi_version": 1,
+  "version": "0.50.32",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "Website change detection.",
+  "author": "dgtlmoon",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761504170000,
+  "updated_at": 1761504170000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

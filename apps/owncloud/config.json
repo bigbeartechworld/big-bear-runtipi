@@ -1,0 +1,21 @@
+{
+  "name": "ownCloud",
+  "available": true,
+  "port": 8116,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "owncloud",
+  "description": "ownCloud offers file sharing and collaboration trusted by 200+ million users worldwide regardless of device or location.",
+  "tipi_version": 1,
+  "version": "10.15.3",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "ownCloud",
+  "author": "owncloud",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761504201000,
+  "updated_at": 1761504201000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

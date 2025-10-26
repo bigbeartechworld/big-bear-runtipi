@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "big-bear-nocodb",
+      "image": "nocodb/nocodb:0.265.1",
+      "internalPort": 8080,
+      "isMain": true
+    }
+  ]
+}

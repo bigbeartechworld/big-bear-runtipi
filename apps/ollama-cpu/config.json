@@ -1,0 +1,21 @@
+{
+  "name": "Ollama - CPU",
+  "available": true,
+  "port": 11435,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "ollama-cpu",
+  "description": "Get up and running with Llama 3, Mistral, Gemma, and other large language models.",
+  "tipi_version": 1,
+  "version": "0.12.6",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "LLMs inference server with OpenAI compatible API",
+  "author": "ollama",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761504199000,
+  "updated_at": 1761504199000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

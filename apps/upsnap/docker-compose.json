@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "big-bear-upsnap",
+      "image": "ghcr.io/seriousm4x/upsnap:5.2.3",
+      "internalPort": 8139,
+      "isMain": true
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "app",
+      "image": "flcontainers/guacamole:1.6.0",
+      "internalPort": 8080,
+      "isMain": true
+    }
+  ]
+}

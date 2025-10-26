@@ -1,0 +1,21 @@
+{
+  "name": "Playit Docker Web",
+  "available": true,
+  "port": 8010,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "playit-docker-web",
+  "description": "Playit.gg is a global proxy that allows anyone to host a server without port forwarding. We use tunneling. Only the server needs to run the program, not every player!",
+  "tipi_version": 1,
+  "version": "1.1",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "Playit.gg is a global proxy that allows anyone to host a server without port forwarding.",
+  "author": "wisdomsky",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761504205000,
+  "updated_at": 1761504205000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

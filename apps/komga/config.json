@@ -1,0 +1,21 @@
+{
+  "name": "Komga",
+  "available": true,
+  "port": 25600,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "komga",
+  "description": "A media server for your comics, mangas, BDs, magazines and eBooks.",
+  "tipi_version": 1,
+  "version": "1.23.5",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "A media server for your comics, mangas, BDs, magazines and eBooks.",
+  "author": "gotson",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761504189000,
+  "updated_at": 1761504189000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

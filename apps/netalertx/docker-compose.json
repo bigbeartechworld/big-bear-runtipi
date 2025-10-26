@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "big-bear-netalertx",
+      "image": "jokobsk/netalertx:25.10.1",
+      "internalPort": 8112,
+      "isMain": true
+    }
+  ]
+}

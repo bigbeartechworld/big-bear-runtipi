@@ -1,0 +1,20 @@
+# Configuration for big-bear-wud setup
+
+# Name of the big-bear-wud application
+name: big-bear-wud
+# Service definitions for the big-bear-wud application
+services:
+  whats-up-docker:
+    image: fmartinou/whats-up-docker:6.6.1
+    container_name: whats-up-docker
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    ports:
+      - 3000:3000
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

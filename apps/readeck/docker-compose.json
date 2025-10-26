@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "big-bear-readeck",
+      "image": "codeberg.org/readeck/readeck:0.20.4",
+      "internalPort": 8000,
+      "isMain": true
+    }
+  ]
+}

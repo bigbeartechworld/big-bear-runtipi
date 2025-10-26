@@ -1,0 +1,21 @@
+{
+  "name": "Authentik",
+  "available": true,
+  "port": 9443,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "authentik",
+  "description": "Authentik is a self-hosted identity and access management platform that provides a secure and scalable solution for managing user accounts, authentication, and authorization. It offers a range of features, including user management, role-based access control, and multi-factor authentication. Authentik is designed to be easy to use and integrate with your existing systems, making it a great choice for organizations looking to improve their security and compliance.",
+  "tipi_version": 1,
+  "version": "2025.8.4",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "Authentik",
+  "author": "authentik",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761504167000,
+  "updated_at": 1761504167000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

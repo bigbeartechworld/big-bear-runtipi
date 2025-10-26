@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "big-bear-stalwart-mail",
+      "image": "stalwartlabs/stalwart:v0.14.0",
+      "internalPort": 8080,
+      "isMain": true
+    }
+  ]
+}

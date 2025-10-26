@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "big-bear-syncthing",
+      "image": "syncthing/syncthing:2.0",
+      "internalPort": 8384,
+      "isMain": true
+    }
+  ]
+}

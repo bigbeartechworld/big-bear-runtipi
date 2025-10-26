@@ -1,0 +1,21 @@
+{
+  "name": "FarmOS",
+  "available": true,
+  "port": 8093,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "farmos",
+  "description": "farmOS is a web-based application for farm management, planning, and record keeping. It is developed by a community of volunteers and aims to provide a standard platform for farmers, developers, and researchers to build upon.",
+  "tipi_version": 1,
+  "version": "3.4.5",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "A web-based farm record keeping application.",
+  "author": "farmOS",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761504177000,
+  "updated_at": 1761504177000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

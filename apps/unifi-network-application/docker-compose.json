@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "unifi-db",
+      "image": "mongo:6.0.11",
+      "internalPort": 27017,
+      "isMain": true
+    }
+  ]
+}

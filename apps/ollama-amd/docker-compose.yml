@@ -1,0 +1,34 @@
+# Configuration for ollama-amd setup
+
+# Name of the big-bear-ollama-amd application
+name: big-bear-ollama-amd
+# Service definitions for the big-bear-ollama-amd application
+services:
+  ollama-amd:
+    # Name of the container
+    container_name: ollama-amd
+    # Image to be used for the container
+    image: ollama/ollama:0.12.6-rocm
+    # Container restart policy
+    restart: unless-stopped
+    # Environment variables
+    environment:
+      - PORT=11434
+    # Volumes to be mounted to the container
+    volumes:
+      - ./data/.ollama:/root/.ollama
+    # Ports mapping between host and container
+    ports:
+      # Mapping port 11434 of the host to port 11434 of the container
+      - "11434:11434"
+    devices:
+      # Attach GPU
+      - /dev/kfd
+      - /dev/dri
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

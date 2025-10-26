@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "big-bear-bookstack",
+      "image": "linuxserver/bookstack:25.07.20250804",
+      "internalPort": 80,
+      "isMain": true
+    }
+  ]
+}

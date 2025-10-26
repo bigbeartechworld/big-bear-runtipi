@@ -1,0 +1,21 @@
+{
+  "name": "Trilium",
+  "available": true,
+  "port": 8137,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "trilium",
+  "description": "Build your personal knowledge base with Trilium Notes",
+  "tipi_version": 1,
+  "version": "v0.99.3",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "Build your personal knowledge base with Trilium Notes",
+  "author": "TriliumNext",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761504215000,
+  "updated_at": 1761504215000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

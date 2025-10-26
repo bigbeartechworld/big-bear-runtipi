@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "big-bear-zigbee2mqtt",
+      "image": "koenkk/zigbee2mqtt:2.6.2",
+      "internalPort": 8080,
+      "isMain": true
+    }
+  ]
+}

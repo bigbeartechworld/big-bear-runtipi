@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "big-bear-umbrel",
+      "image": "dockurr/umbrel:1.4.0",
+      "internalPort": 80,
+      "isMain": true
+    }
+  ]
+}

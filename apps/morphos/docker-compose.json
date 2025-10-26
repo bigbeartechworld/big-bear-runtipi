@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "big-bear-morphos",
+      "image": "ghcr.io/danvergara/morphos-server:0.6.0",
+      "internalPort": 8080,
+      "isMain": true
+    }
+  ]
+}

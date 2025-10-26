@@ -1,0 +1,21 @@
+{
+  "name": "Libredesk",
+  "available": true,
+  "port": 9001,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "libredesk",
+  "description": "Open source, self-hosted customer support desk. Single binary app.",
+  "tipi_version": 1,
+  "version": "0.7.4-alpha",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "Open source, self-hosted customer support desk. Single binary app.",
+  "author": "libredesk",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761504190000,
+  "updated_at": 1761504190000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

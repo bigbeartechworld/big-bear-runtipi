@@ -1,0 +1,21 @@
+{
+  "name": "Plex",
+  "available": true,
+  "port": 32400,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "plex",
+  "description": "Stream Movies & TV Shows",
+  "tipi_version": 1,
+  "version": "1.42.2",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "Stream Movies & TV Shows",
+  "author": "plexinc",
+  "source": "",
+  "website": "/web/index.html",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761504206000,
+  "updated_at": 1761504206000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}
