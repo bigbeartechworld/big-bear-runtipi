@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "app",
+      "image": "binwiederhier/ntfy:v2.14.0",
+      "internalPort": 80,
+      "isMain": true
+    }
+  ]
+}

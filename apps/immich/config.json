@@ -1,0 +1,21 @@
+{
+  "name": "Immich",
+  "available": true,
+  "port": 2283,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "immich",
+  "description": "Self-hosted photo and video storage.",
+  "tipi_version": 1,
+  "version": "2.1.0",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "Immich",
+  "author": "",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761504215000,
+  "updated_at": 1761504215000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

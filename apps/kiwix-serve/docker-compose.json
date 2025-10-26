@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "big-bear-kiwix-serve",
+      "image": "ghcr.io/kiwix/kiwix-serve:3.7.0-2",
+      "internalPort": 8080,
+      "isMain": true
+    }
+  ]
+}

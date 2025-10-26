@@ -1,0 +1,33 @@
+# Configuration for wallos setup
+
+# Name of the big-bear-wallos application
+name: big-bear-wallos
+# Service definitions for the big-bear-wallos application
+services:
+  wallos:
+    # Name of the container
+    container_name: wallos
+    # Image to be used for the container
+    image: bellamy/wallos:4.5.0
+    # Container restart policy
+    restart: unless-stopped
+    # Environment variables for the container
+    environment:
+      TZ: "UTC" # Sets the time zone inside the container to Coordinated Universal Time (UTC).
+    # Volumes to be mounted to the container
+    volumes:
+      # Mounting the local /DATA/AppData/big-bear-wallos/db directory to /var/www/html/db inside the container
+      - ./data/db:/var/www/html/db
+      # Mounting the local /DATA/AppData/big-bear-wallos/logos directory to /var/www/html/images/uploads/logos inside the container
+      - ./data/logos:/var/www/html/images/uploads/logos
+    # Ports mapping between host and container
+    ports:
+      # Mapping port 8282 of the host to port 80 of the container
+      - "8282:80"
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

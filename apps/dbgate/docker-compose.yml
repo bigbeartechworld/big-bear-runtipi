@@ -1,0 +1,28 @@
+# Configuration for dbgate setup
+
+# Name of the big-bear-dbgate application
+name: big-bear-dbgate
+# Service definitions for the big-bear-dbgate application
+services:
+  dbgate:
+    # Name of the container
+    container_name: dbgate
+    # Image to be used for the container
+    image: dbgate/dbgate:6.6.5-alpine
+    # Container restart policy
+    restart: unless-stopped
+    # Volumes to be mounted to the container
+    volumes:
+      # Mounting the local homarr/configs directory to /app/data/configs inside the container
+      - ./data/config:/root/.dbgate
+    # Ports mapping between host and container
+    ports:
+      # Mapping port 3000 of the host to port 3000 of the container
+      - "3000:3000"
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

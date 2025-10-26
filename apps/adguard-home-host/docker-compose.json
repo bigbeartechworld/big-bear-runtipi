@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "big-bear-adguard-home-host",
+      "image": "adguard/adguardhome:v0.107.68",
+      "internalPort": 8081,
+      "isMain": true
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "app",
+      "image": "amir20/dozzle:v8.14.5",
+      "internalPort": 8080,
+      "isMain": true
+    }
+  ]
+}

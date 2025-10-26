@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "big-bear-write-freely",
+      "image": "nephatrine/write-freely:0.16",
+      "internalPort": 70,
+      "isMain": true
+    }
+  ]
+}

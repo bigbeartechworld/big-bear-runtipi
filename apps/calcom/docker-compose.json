@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "big-bear-calcom",
+      "image": "calcom/cal.com:v5.8.2",
+      "internalPort": 3000,
+      "isMain": true
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "RomM",
+  "available": true,
+  "port": 1083,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "romm",
+  "description": "ROM manager for organizing, enriching, and playing retro games, with support for 400+ platforms.",
+  "tipi_version": 1,
+  "version": "4.3.2",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "RomM",
+  "author": "RomM Team",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761504288000,
+  "updated_at": 1761504288000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

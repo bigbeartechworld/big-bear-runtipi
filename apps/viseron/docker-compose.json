@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "big-bear-viseron",
+      "image": "roflcoopter/viseron:3.3.1",
+      "internalPort": 8888,
+      "isMain": true
+    }
+  ]
+}

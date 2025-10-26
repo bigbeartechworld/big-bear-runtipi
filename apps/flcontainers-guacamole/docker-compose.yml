@@ -1,0 +1,25 @@
+# Name of the configuration: big-bear-flcontainers-guacamole
+name: big-bear-flcontainers-guacamole
+# Define the services required for the application
+services:
+  flcontainers-guacamole:
+    # Docker image to use for this service
+    image: flcontainers/guacamole:1.6.0
+    # Container name
+    container_name: flcontainers-guacamole
+    # Restart policy for the container
+    restart: always
+    # Environment variables for the app service
+    environment:
+      tz: "UTC"
+      EXTENSIONS: "auth-totp,auth-ldap"
+    # Map port 8080 on the host to port 8080 on the container
+    ports:
+      - 8080:8080
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

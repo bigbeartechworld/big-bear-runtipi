@@ -1,0 +1,33 @@
+# Docker Compose configuration for BigBearCasaOS Spacedrive Service
+# This service provides a web interface for managing files
+# Version: 0.4.2
+
+# Name of the big-bear-spacedrive application
+name: big-bear-spacedrive
+# Service definitions for the big-bear-spacedrive application
+services:
+  spacedrive:
+    # Name of the container
+    container_name: spacedrive
+    # Image to be used for the container specifies the spacedrive version and source
+    image: ghcr.io/spacedriveapp/spacedrive/server:0.4.2
+    # Container restart policy - restarts the container unless manually stopped
+    restart: unless-stopped
+    # Environment variables for service configuration
+    # These settings control the spacedrive application behavior and authentication
+    environment:
+      - SD_AUTH=bigbear:casaos # username:password
+    # Volume mappings required for system integration
+    # These mounts allow the container to interact with the host system
+    volumes:
+      - ./data/data/spacedrive:/var/spacedrive
+    # Map port 8080 on the host to port 8080 on the container
+    ports:
+      - 8080:8080
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

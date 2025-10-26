@@ -1,0 +1,21 @@
+{
+  "name": "Excalidraw",
+  "available": true,
+  "port": 8002,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "excalidraw",
+  "description": "Virtual whiteboard for sketching hand-drawn like diagrams",
+  "tipi_version": 1,
+  "version": "latest",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "Virtual whiteboard for sketching hand-drawn like diagrams",
+  "author": "excalidraw",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761504196000,
+  "updated_at": 1761504196000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

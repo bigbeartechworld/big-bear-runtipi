@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "big-bear-fastfetch",
+      "image": "bigbeartechworld/big-bear-fastfetch:0.0.4",
+      "internalPort": 7681,
+      "isMain": true
+    }
+  ]
+}

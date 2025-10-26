@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "web",
+      "image": "pd3f/pd3f:latest",
+      "internalPort": 5000,
+      "isMain": true
+    }
+  ]
+}

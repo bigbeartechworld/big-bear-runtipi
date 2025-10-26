@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "app",
+      "image": "mrcas/mind:v1.4.1",
+      "internalPort": 8080,
+      "isMain": true
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Open WebUI",
+  "available": true,
+  "port": 8115,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "open-webui",
+  "description": "Open WebUI is an extensible, feature-rich, and user-friendly self-hosted WebUI designed to operate entirely offline.",
+  "tipi_version": 1,
+  "version": "git-33e54a9",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "User-friendly WebUI for LLMs",
+  "author": "open-webui",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761504260000,
+  "updated_at": 1761504260000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

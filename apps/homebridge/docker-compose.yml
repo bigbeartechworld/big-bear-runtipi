@@ -1,0 +1,23 @@
+# Configuration for homebridge setup
+
+# Name of the big-bear-homebridge application
+name: big-bear-homebridge
+# Service definitions for the big-bear-homebridge application
+services:
+  homebridge:
+    # Name of the container
+    container_name: homebridge
+    # Image to be used for the container
+    image: homebridge/homebridge:2024-05-02
+    # Container restart policy
+    restart: unless-stopped
+    # Environment Variables
+    environment:
+      - TZ=UTC # Timezone
+    privileged: true
+    network_mode: host
+    # Volumes HOST:CONTAINER
+    volumes:
+      - ./data/data:/homebridge
+    labels:
+      runtipi.managed: "true"

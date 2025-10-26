@@ -1,0 +1,31 @@
+# Configuration for trilium setup
+
+# Name of the big-bear-trilium application
+name: big-bear-trilium
+# Service definitions for the big-bear-trilium application
+services:
+  trilium:
+    # Name of the container
+    container_name: trilium
+    # Image to be used for the container
+    image: triliumnext/trilium:v0.99.3
+    # Container restart policy
+    restart: unless-stopped
+    # Environment variables
+    environment:
+      - TRILIUM_DATA_DIR=/home/node/trilium-data
+    # Volumes to be mounted to the container
+    volumes:
+      # Mounting the local ./data/data directory to /home/node/trilium-data inside the container
+      - ./data/data:/home/node/trilium-data
+    # Ports mapping between host and container
+    ports:
+      # Mapping port 8080 of the host to port 8080 of the container
+      - "8080:8080"
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

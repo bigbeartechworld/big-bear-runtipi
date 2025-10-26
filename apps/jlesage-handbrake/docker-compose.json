@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "big-bear-jlesage-handbrake",
+      "image": "jlesage/handbrake:v25.10.1",
+      "internalPort": 5800,
+      "isMain": true
+    }
+  ]
+}

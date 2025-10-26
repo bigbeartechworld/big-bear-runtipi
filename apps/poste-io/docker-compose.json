@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "big-bear-poste-io",
+      "image": "analogic/poste.io:2.5.7",
+      "internalPort": 8125,
+      "isMain": true
+    }
+  ]
+}

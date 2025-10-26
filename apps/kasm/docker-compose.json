@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "app",
+      "image": "linuxserver/kasm:1.120.20221218",
+      "internalPort": 3000,
+      "isMain": true
+    }
+  ]
+}

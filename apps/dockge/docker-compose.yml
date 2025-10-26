@@ -1,0 +1,32 @@
+# Configuration for dockge setup
+
+# Name of the big-bear-dockge application
+name: big-bear-dockge
+# Service definitions for the big-bear-dockge application
+services:
+  dockge:
+    # Name of the container
+    container_name: dockge
+    # Image to be used for the container
+    image: louislam/dockge:1.5.0
+    # Environment variables
+    environment:
+      # Tell Dockge where is your stacks directory
+      DOCKGE_STACKS_DIR: "/DATA/AppData/big-bear-dockge/stacks"
+    # Container restart policy
+    restart: unless-stopped
+    # Volumes to be mounted to the container
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./data/data:/app/data
+      - ./data/stacks:/DATA/AppData/big-bear-dockge/stacks
+    # Ports mapping between host and container
+    ports:
+      - 5001:5001
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

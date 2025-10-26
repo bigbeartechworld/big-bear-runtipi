@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "big-bear-plex",
+      "image": "linuxserver/plex:1.42.2",
+      "internalPort": 32400,
+      "isMain": true
+    }
+  ]
+}

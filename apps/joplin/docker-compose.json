@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "big-bear-joplin",
+      "image": "joplin/server:3.4.3",
+      "internalPort": 22300,
+      "isMain": true
+    }
+  ]
+}

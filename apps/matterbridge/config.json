@@ -1,0 +1,21 @@
+{
+  "name": "Matterbridge",
+  "available": true,
+  "port": 8283,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "matterbridge",
+  "description": "Matterbridge is a Matter plugin manager that allows you to have all your Matter devices up and running in a couple of minutes without having to deal with the pairing process for each individual device. It creates a device that can be paired with any ecosystem, such as Apple Home, Google Home, Amazon Alexa, Home Assistant, or any other platform supporting Matter.",
+  "tipi_version": 1,
+  "version": "3.3.3",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "Matter plugin manager for smart home devices",
+  "author": "Luligu",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761504236000,
+  "updated_at": 1761504236000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

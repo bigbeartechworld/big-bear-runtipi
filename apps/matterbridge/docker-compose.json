@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "big-bear-matterbridge",
+      "image": "luligu/matterbridge:3.3.3",
+      "internalPort": 8283,
+      "isMain": true
+    }
+  ]
+}

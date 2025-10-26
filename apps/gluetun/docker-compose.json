@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "gluetun",
+      "image": "qmcgaw/gluetun:v3.40.0",
+      "internalPort": 8888,
+      "isMain": true
+    }
+  ]
+}

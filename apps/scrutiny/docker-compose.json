@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "big-bear-scrutiny",
+      "image": "ghcr.io/analogj/scrutiny:master-omnibus",
+      "internalPort": 8080,
+      "isMain": true
+    }
+  ]
+}

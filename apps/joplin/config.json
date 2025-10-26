@@ -1,0 +1,21 @@
+{
+  "name": "joplin",
+  "available": true,
+  "port": 22300,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "joplin",
+  "description": "Note taking and to-do application with synchronisation",
+  "tipi_version": 1,
+  "version": "3.4.3",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "joplin",
+  "author": "joplin",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761504224000,
+  "updated_at": 1761504224000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

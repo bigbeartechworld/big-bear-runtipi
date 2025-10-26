@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "big-bear-odoo",
+      "image": "odoo:19",
+      "internalPort": 8069,
+      "isMain": true
+    }
+  ]
+}

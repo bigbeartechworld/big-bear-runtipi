@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "big-bear-anse",
+      "image": "ddiu8081/anse:v1.1.11",
+      "internalPort": 8014,
+      "isMain": true
+    }
+  ]
+}
