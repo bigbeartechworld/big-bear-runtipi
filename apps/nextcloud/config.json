@@ -1,36 +1,21 @@
 {
-  "$schema": "../schema.json",
   "name": "Nextcloud",
   "available": true,
+  "port": 7580,
   "exposable": true,
-  "port": 8083,
+  "dynamic_config": true,
   "id": "nextcloud",
-  "tipi_version": 23,
-  "version": "26.0.13-apache",
-  "categories": ["data"],
-  "description": "Nextcloud is a self-hosted, open source, and fully-featured cloud storage solution for your personal files, office documents, and photos.",
-  "short_desc": "Productivity platform that keeps you in control",
-  "author": "Nextcloud GmbH",
-  "source": "https://github.com/nextcloud/server",
-  "form_fields": [
-    {
-      "type": "text",
-      "label": "Username",
-      "max": 50,
-      "min": 3,
-      "required": true,
-      "env_variable": "NEXTCLOUD_ADMIN_USER"
-    },
-    {
-      "type": "password",
-      "label": "Password",
-      "max": 50,
-      "min": 10,
-      "required": true,
-      "env_variable": "NEXTCLOUD_ADMIN_PASSWORD"
-    }
-  ],
+  "description": "Nextcloud puts your data at your fingertips, under your control. Store your documents, calendar, contacts and photos on a server at home, at one of our providers or in a data center you trust.",
+  "tipi_version": 1,
+  "version": "0.0.11",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "The productivity platform that keeps you in control",
+  "author": "nextcloud",
+  "source": "",
+  "website": "",
   "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1691943801422,
-  "updated_at": 1723566283000
+  "created_at": 1761455335000,
+  "updated_at": 1761455335000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
 }

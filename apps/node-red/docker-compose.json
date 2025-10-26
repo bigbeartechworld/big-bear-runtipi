@@ -1,0 +1,12 @@
+{
+  "services": [
+    {
+      "name": "app",
+      "image": "nodered/node-red:4.1.1",
+      "internalPort":  1880 # Container's port
+ "1880" # Host's port
+ tcp # Communication protocol,
+      "isMain": true
+    }
+  ]
+}

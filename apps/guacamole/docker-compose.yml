@@ -1,71 +1,55 @@
-version: "3.9"
+# Name of the configuration: big-bear-guacamole
+name: big-bear-guacamole
+# Define the services required for the application
 services:
-  guacamole:
-    container_name: guacamole
-    image: guacamole/guacamole:1.5.5
-    restart: unless-stopped
+  # app service configuration
+  app:
+    image: guacamole/guacamole:1.6.0
+    restart: always
+    # Link this service to the guacd service
+    links:
+      - guacd
+    # Environment variables for the app service
+    environment:
+      - GUACD_HOSTNAME=guacd
+      - MYSQL_HOSTNAME=mysql
+      - MYSQL_DATABASE=guacamole_db
+      - MYSQL_USER=guacamole_user
+      - MYSQL_PASSWORD=some_password
+    # Map port 8090 on the host to port 8080 on the container
     ports:
-      - ${APP_PORT}:8080
+      - 8090:8080
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+  # mysql service configuration
+  mysql:
+    image: mysql:5.7
+    restart: always
+    # Environment variables for the MySQL service
     environment:
-      - POSTGRESQL_DATABASE=guacamole
-      - POSTGRESQL_USER=guacamole
-      - POSTGRESQL_PASSWORD=${GUACAMOLE_DB_PASSWORD}
-      - GUACD_HOSTNAME=guacamole-guacd
-      - POSTGRESQL_HOSTNAME=guacamole-db
-    networks:
-      - tipi_main_network
-    labels:
-      # Main
-      traefik.enable: true
-      traefik.http.middlewares.guacamole-web-redirect.redirectscheme.scheme: https
-      traefik.http.services.guacamole.loadbalancer.server.port: 8080
-      # Web
-      traefik.http.routers.guacamole-insecure.rule: Host(`${APP_DOMAIN}`)
-      traefik.http.routers.guacamole-insecure.entrypoints: web
-      traefik.http.routers.guacamole-insecure.service: guacamole
-      traefik.http.routers.guacamole-insecure.middlewares: guacamole-web-redirect
-      # Websecure
-      traefik.http.routers.guacamole.rule: Host(`${APP_DOMAIN}`)
-      traefik.http.routers.guacamole.entrypoints: websecure
-      traefik.http.routers.guacamole.service: guacamole
-      traefik.http.routers.guacamole.tls.certresolver: myresolver
-      # Local domain
-      traefik.http.routers.guacamole-local-insecure.rule: Host(`guacamole.${LOCAL_DOMAIN}`)
-      traefik.http.routers.guacamole-local-insecure.entrypoints: web
-      traefik.http.routers.guacamole-local-insecure.service: guacamole
-      traefik.http.routers.guacamole-local-insecure.middlewares: guacamole-web-redirect
-      # Local domain secure
-      traefik.http.routers.guacamole-local.rule: Host(`guacamole.${LOCAL_DOMAIN}`)
-      traefik.http.routers.guacamole-local.entrypoints: websecure
-      traefik.http.routers.guacamole-local.service: guacamole
-      traefik.http.routers.guacamole-local.tls: true
-      # Runtipi Managed
-      runtipi.managed: true
-
-  guacamole-guacd:
-    container_name: guacamole-guacd
-    image: guacamole/guacd:1.5.5
-    restart: unless-stopped
-    networks:
-      - tipi_main_network
-    labels:
-      # Runtipi Managed
-      runtipi.managed: true
-    
-  guacamole-db:
-    container_name: guacamole-db
-    image: postgres:14
-    restart: unless-stopped
+      - MYSQL_ROOT_PASSWORD=my-secret-pw
+      - MYSQL_DATABASE=guacamole_db
+      - MYSQL_USER=guacamole_user
+      - MYSQL_PASSWORD=some_password
+    # Volume mapping for persistent storage
     volumes:
-      - ${APP_DATA_DIR}/data/db:/var/lib/postgresql/data
-      - ${APP_DATA_DIR}/data/init/sql:/config/sql
-      - ${APP_DATA_DIR}/data/init/init-guacamole.sh:/docker-entrypoint-initdb.d/init-guacamole.sh
-    environment:
-      - POSTGRES_DB=guacamole
-      - POSTGRES_USER=guacamole
-      - POSTGRES_PASSWORD=${GUACAMOLE_DB_PASSWORD}
+      - ./data/mysql:/var/lib/mysql
+    labels:
+      runtipi.managed: "true"
     networks:
       - tipi_main_network
+  guacamole:
+    # Docker image to use for this service
+    image: guacamole/guacd:1.6.0
+    # Restart policy for the container
+    restart: always
     labels:
-      # Runtipi Managed
-      runtipi.managed: true
+      runtipi.managed: "true"
+    container_name: guacamole
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

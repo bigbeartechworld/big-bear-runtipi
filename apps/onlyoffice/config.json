@@ -1,0 +1,21 @@
+{
+  "name": "OnlyOffice",
+  "available": true,
+  "port": 7400,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "onlyoffice",
+  "description": "Feature-rich web-based office suite with a vast range of collaborative capabilities",
+  "tipi_version": 1,
+  "version": "9.1.0",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "OnlyOffice",
+  "author": "",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761455338000,
+  "updated_at": 1761455338000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

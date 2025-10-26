@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "big-bear-composetoolbox",
+      "image": "ghcr.io/bluegoosemedia/composetoolbox:latest",
+      "internalPort": 3000,
+      "isMain": true
+    }
+  ]
+}

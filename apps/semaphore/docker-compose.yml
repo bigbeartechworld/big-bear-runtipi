@@ -1,70 +1,60 @@
-version: '3.9'
-services:
-  semaphore:
-    container_name: semaphore
-    image: semaphoreui/semaphore:v2.10.22
-    restart: unless-stopped
-    volumes:
-      - ${APP_DATA_DIR}/data/repositories:/repositories
-    environment:
-      - SEMAPHORE_DB_USER=semaphore
-      - SEMAPHORE_DB_PASS=${SEMAPHORE_DB_PASSWORD}
-      - SEMAPHORE_DB_HOST=semaphore-db
-      - SEMAPHORE_DB_PORT=5432
-      - SEMAPHORE_DB_DIALECT=postgres
-      - SEMAPHORE_DB=semaphore
-      - SEMAPHORE_PLAYBOOK_PATH=/tmp/semaphore
-      - SEMAPHORE_ADMIN_PASSWORD=${SEMAPHORE_ADMIN_PASSWORD}
-      - SEMAPHORE_ADMIN_NAME=${SEMAPHORE_ADMIN_NAME}
-      - SEMAPHORE_ADMIN_EMAIL=${SEMAPHORE_ADMIN_EMAIL}
-      - SEMAPHORE_ADMIN=${SEMAPHORE_ADMIN_NAME}
-      - SEMAPHORE_ACCESS_KEY_ENCRYPTION=${SEMAPHORE_ACCESS_KEY_ENCRYPTION}
-      - SEMAPHORE_LDAP_ACTIVATED=no
-      - TZ=${TZ}
-    ports:
-      - ${APP_PORT}:3000
-    networks:
-      - tipi_main_network
-    labels:
-      # Main
-      traefik.enable: true
-      traefik.http.middlewares.semaphore-web-redirect.redirectscheme.scheme: https
-      traefik.http.services.semaphore.loadbalancer.server.port: 3000
-      # Web
-      traefik.http.routers.semaphore-insecure.rule: Host(`${APP_DOMAIN}`)
-      traefik.http.routers.semaphore-insecure.entrypoints: web
-      traefik.http.routers.semaphore-insecure.service: semaphore
-      traefik.http.routers.semaphore-insecure.middlewares: semaphore-web-redirect
-      # Websecure
-      traefik.http.routers.semaphore.rule: Host(`${APP_DOMAIN}`)
-      traefik.http.routers.semaphore.entrypoints: websecure
-      traefik.http.routers.semaphore.service: semaphore
-      traefik.http.routers.semaphore.tls.certresolver: myresolver
-      # Local domain
-      traefik.http.routers.semaphore-local-insecure.rule: Host(`semaphore.${LOCAL_DOMAIN}`)
-      traefik.http.routers.semaphore-local-insecure.entrypoints: web
-      traefik.http.routers.semaphore-local-insecure.service: semaphore
-      traefik.http.routers.semaphore-local-insecure.middlewares: semaphore-web-redirect
-      # Local domain secure
-      traefik.http.routers.semaphore-local.rule: Host(`semaphore.${LOCAL_DOMAIN}`)
-      traefik.http.routers.semaphore-local.entrypoints: websecure
-      traefik.http.routers.semaphore-local.service: semaphore
-      traefik.http.routers.semaphore-local.tls: true
-      # Runtipi managed
-      runtipi.managed: true
+# Configuration for semaphore setup
 
-  semaphore-db:
-    container_name: semaphore-db
-    image: postgres:14
+# Name of the big-bear-semaphore application
+name: big-bear-semaphore
+# Service definitions for the big-bear-semaphore application
+services:
+  # MySQL database service for semaphore
+  big-bear-semaphore-db:
+    container_name: big-bear-semaphore-db
+    image: mysql:8.0
     restart: unless-stopped
     volumes:
-      - ${APP_DATA_DIR}/data/db:/var/lib/postgresql/data
+      - ./data/mysql:/var/lib/mysql # Data directory for MySQL
     environment:
-      - POSTGRES_USER=semaphore
-      - POSTGRES_PASSWORD=${SEMAPHORE_DB_PASSWORD}
-      - POSTGRES_DB=semaphore
+      MYSQL_RANDOM_ROOT_PASSWORD: "yes" # Generate a random root password
+      MYSQL_DATABASE: "semaphore" # Database name to create
+      MYSQL_USER: "semaphore" # Database user
+      MYSQL_PASSWORD: "semaphore" # Database password
     networks:
+      - big-bear-semaphore-network
       - tipi_main_network
     labels:
-      # Runtipi managed
-      runtipi.managed: true
+      runtipi.managed: "true"
+  semaphore:
+    # Name of the container
+    container_name: semaphore
+    # Image to be used for the container
+    image: semaphoreui/semaphore:v2.16.34
+    # Container restart policy
+    restart: unless-stopped
+    # Environment variables for configuration
+    environment:
+      SEMAPHORE_DB_USER: semaphore
+      SEMAPHORE_DB_PASS: semaphore
+      SEMAPHORE_DB_HOST: big-bear-semaphore-db
+      SEMAPHORE_DB_PORT: "3306"
+      SEMAPHORE_DB_DIALECT: mysql
+      SEMAPHORE_DB: semaphore
+      SEMAPHORE_ADMIN_PASSWORD: password
+      SEMAPHORE_ADMIN_NAME: admin
+      SEMAPHORE_ADMIN_EMAIL: admin@example.com
+      SEMAPHORE_ADMIN: admin
+      TZ: UTC
+    # Volumes to be mounted to the container
+    volumes:
+      - ./data/home:/etc/semaphore # Configuration files for Semaphore
+      - ./data/lib:/var/lib/semaphore # Local storage for Semaphore data (not needed if using an external database)
+    # Ports mapping between host and container
+    ports:
+      - "3000:3000" # Expose port 3000 for web access
+    networks:
+      - big-bear-semaphore-network
+      - tipi_main_network
+    labels:
+      runtipi.managed: "true"
+networks:
+  big-bear-semaphore-network:
+    driver: bridge # Specifies network driver type
+  tipi_main_network:
+    external: true

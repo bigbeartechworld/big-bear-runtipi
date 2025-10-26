@@ -1,74 +1,63 @@
+# Configuration for the big-bear-rally setup
+
+# Name of the big-bear-rallly application
+name: big-bear-rallly
+# Definition of services required for the big-bear-rallly application
 services:
-  rallly:
-    container_name: rallly
-    image: lukevella/rallly:3.10.1
-    restart: always
-    depends_on:
-      rallly_db:
-        condition: service_healthy
-    ports:
-      - ${APP_PORT}:3000
-    environment:
-      - DATABASE_URL=postgres://tipi:${RALLLY_DB_PASSWORD}@rallly_db:5432/rallly
-      - SECRET_PASSWORD=${RALLLY_SECRET_KEY}
-      - NEXT_PUBLIC_BASE_URL=${APP_PROTOCOL:-http}://${APP_DOMAIN}
-      - NOREPLY_EMAIL=${RALLLY_NOREPLY_EMAIL}
-      - SUPPORT_EMAIL=${RALLLY_SUPPORT_EMAIL}
-      - SMTP_HOST=${RALLLY_SMTP_HOST}
-      - SMTP_PORT=${RALLLY_SMTP_PORT}
-      - SMTP_SECURE=${RALLLY_SMTP_SECURE}
-      - SMTP_USER=${RALLLY_SMTP_USER}
-      - SMTP_PWD=${RALLLY_SMTP_PWD}
-      - SMTP_TLS_ENABLED=${RALLLY_SMTP_TLS_ENABLED}
-      - ALLOWED_EMAILS=${RALLLY_ALLOWED_EMAILS}
-    networks:
-      - tipi_main_network
-    labels:
-      # Main
-      traefik.enable: true
-      traefik.http.middlewares.rallly-web-redirect.redirectscheme.scheme: https
-      traefik.http.services.rallly.loadbalancer.server.port:
-        3000
-        # Web
-      traefik.http.routers.rallly-insecure.rule: Host(`${APP_DOMAIN}`)
-      traefik.http.routers.rallly-insecure.entrypoints: web
-      traefik.http.routers.rallly-insecure.service: rallly
-      traefik.http.routers.rallly-insecure.middlewares:
-        rallly-web-redirect
-        # Websecure
-      traefik.http.routers.rallly.rule: Host(`${APP_DOMAIN}`)
-      traefik.http.routers.rallly.entrypoints: websecure
-      traefik.http.routers.rallly.service: rallly
-      traefik.http.routers.rallly.tls.certresolver:
-        myresolver
-        # Local domain
-      traefik.http.routers.rallly-local-insecure.rule: Host(`rallly.${LOCAL_DOMAIN}`)
-      traefik.http.routers.rallly-local-insecure.entrypoints: web
-      traefik.http.routers.rallly-local-insecure.service: rallly
-      traefik.http.routers.rallly-local-insecure.middlewares:
-        rallly-web-redirect
-        # Local domain secure
-      traefik.http.routers.rallly-local.rule: Host(`rallly.${LOCAL_DOMAIN}`)
-      traefik.http.routers.rallly-local.entrypoints: websecure
-      traefik.http.routers.rallly-local.service: rallly
-      traefik.http.routers.rallly-local.tls: true
-      runtipi.managed: true
-  rallly_db:
-    container_name: rallly_db
-    image: postgres:14
-    restart: always
+  # Database service for the application
+  big-bear-rallly-db:
+    container_name: big-bear-rallly-db # Container name for the database service
+    image: postgres:14 # PostgreSQL version 14 as the database
+    restart: unless-stopped # Restart policy similar to the application service
     volumes:
-      - ${APP_DATA_DIR}/data/db:/var/lib/postgresql/data
+      - ./data/postgresql:/var/lib/postgresql/data # Persistent data storage
     environment:
-      - POSTGRES_PASSWORD=${RALLLY_DB_PASSWORD}
-      - POSTGRES_DB=rallly
-      - POSTGRES_USER=tipi
+      - POSTGRES_PASSWORD=f87c7126-f816-47ef-9193-2e5eec763fcd # DB password
+      - POSTGRES_DB=big-bear-rallly # Database name
+      - POSTGRES_USER=rallly # Database user
     networks:
+      - big_bear_rally_network # Uses the same network as the application service
       - tipi_main_network
-    healthcheck:
-      test: ['CMD-SHELL', 'pg_isready -U tipi']
-      interval: 5s
-      timeout: 5s
-      retries: 5
+    healthcheck: # Checks if the database service is ready to accept connections
+      test: ["CMD-SHELL", "pg_isready -U rallly"] # This is a utility provided by PostgreSQL, used to check if a PostgreSQL server is ready to accept connections. The -U rallly option specifies the username to connect as.
+      interval: 5s # This specifies how often the health check command should be run. In your configuration, it’s set to every 5 seconds (5s). This means Docker will execute the pg_isready command every 5 seconds to check if the database server is up and ready to accept connections.
+      timeout: 5s # This is the maximum time allowed for the health check command to run. If the command takes longer than this time to complete, it is considered a failure. Here, the timeout is also set to 5 seconds.
+      retries: 5 # This specifies the number of consecutive failures required to consider the container as unhealthy. In your case, the pg_isready command must fail 5 consecutive times before Docker marks the container as unhealthy.
     labels:
-      runtipi.managed: true
+      runtipi.managed: "true"
+  rallly:
+    container_name: rallly # The name for the container instance of this service
+    image: lukevella/rallly:4.4.1 # Docker image to be used for creating the container
+    restart: unless-stopped # Policy to restart the container unless manually stopped
+    environment: # Environment variables passed to the container for configuration
+      # Database connection URL (DATABASE_URL=postgres://username:password@host/database)
+      - DATABASE_URL=postgres://rallly:f87c7126-f816-47ef-9193-2e5eec763fcd@big-bear-rallly-db/big-bear-rallly
+      - SECRET_PASSWORD=0f6f292d-c78c-4709-920d-e3b6361eb5b5 # Secret password for application security UUID V4
+      # URL for the frontend to use, replace [YOUR_CASAOS_IP] with your actual CasaOS IP
+      - NEXT_PUBLIC_BASE_URL=http://[YOUR_CASAOS_IP]:3000
+      - NOREPLY_EMAIL=noreply@example.com # Email used for sending no-reply messages
+      - SUPPORT_EMAIL=support@example.com # Support contact email
+      # SMTP configuration for sending emails, to be filled with your SMTP server details
+      - SMTP_HOST=[YOUR_CASAOS_IP]
+      - SMTP_PORT=1025
+      - SMTP_SECURE=
+      - SMTP_USER=
+      - SMTP_PWD=
+      - SMTP_TLS_ENABLED=
+      - ALLOWED_EMAILS= # Specify allowed emails if needed
+    ports:
+      - "3000:3000" # Maps port 3000 on the host to port 3000 on the container
+    networks:
+      - big_bear_rally_network # Connects the container to the specified network
+      - tipi_main_network
+    depends_on:
+      big-bear-rallly-db:
+        condition: service_healthy # Ensures the DB service is healthy before starting
+    labels:
+      runtipi.managed: "true"
+# Network definitions for the application
+networks:
+  big_bear_rally_network:
+    driver: bridge # Uses bridge network driver
+  tipi_main_network:
+    external: true

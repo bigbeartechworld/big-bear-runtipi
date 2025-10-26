@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "big-bear-semaphore",
+      "image": "semaphoreui/semaphore:v2.16.34",
+      "internalPort": 3000,
+      "isMain": true
+    }
+  ]
+}

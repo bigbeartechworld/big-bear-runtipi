@@ -1,37 +1,21 @@
 {
-  "$schema": "../schema.json",
   "name": "Gotify",
   "available": true,
-  "port": 8129,
-  "id": "gotify",
+  "port": 8091,
   "exposable": true,
-  "tipi_version": 7,
-  "version": "2.5.0",
-  "categories": ["utilities"],
-  "description": "Simple server for sending and receiving notification messages.",
-  "short_desc": "Gotify, a simple server for sending and receiving notification messages.",
-  "author": "gotigy",
-  "source": "https://github.com/gotify/server",
-  "website": "https://gotify.net",
-  "form_fields": [
-    {
-      "type": "text",
-      "label": "Gotify username",
-      "max": 50,
-      "min": 3,
-      "required": true,
-      "env_variable": "GOTIFY_DEFAULTUSER_NAME"
-    },
-    {
-      "type": "password",
-      "label": "Gotify password",
-      "max": 50,
-      "min": 8,
-      "required": true,
-      "env_variable": "GOTIFY_DEFAULTUSER_PASS"
-    }
-  ],
+  "dynamic_config": true,
+  "id": "gotify",
+  "description": "a simple server for sending and receiving messages",
+  "tipi_version": 1,
+  "version": "2.7.3",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "Gotify",
+  "author": "gotify",
+  "source": "",
+  "website": "",
   "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1691943801422,
-  "updated_at": 1723566284000
+  "created_at": 1761455327000,
+  "updated_at": 1761455327000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
 }

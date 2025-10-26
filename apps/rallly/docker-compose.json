@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "big-bear-rallly",
+      "image": "lukevella/rallly:4.4.1",
+      "internalPort": 3000,
+      "isMain": true
+    }
+  ]
+}

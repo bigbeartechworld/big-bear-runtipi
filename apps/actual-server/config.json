@@ -1,0 +1,21 @@
+{
+  "name": "Actual Budget",
+  "available": true,
+  "port": 5006,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "actual-server",
+  "description": "Actual Budget is a super fast and privacy-focused app for managing your finances. At its heart is the well proven and much loved Envelope Budgeting methodology. You own your data and can do whatever you want with it. Featuring multi-device sync, optional end-to-end encryption and so much more.",
+  "tipi_version": 1,
+  "version": "25.10.0",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "Local-first OpenSource Budget tool",
+  "author": "",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761455317000,
+  "updated_at": 1761455317000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

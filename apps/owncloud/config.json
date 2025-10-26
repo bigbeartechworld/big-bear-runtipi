@@ -1,43 +1,21 @@
 {
-  "$schema": "../schema.json",
-  "name": "Owncloud",
-  "port": 8151,
+  "name": "ownCloud",
   "available": true,
+  "port": 8080,
   "exposable": true,
+  "dynamic_config": true,
   "id": "owncloud",
-  "tipi_version": 12,
-  "version": "10.15.0",
-  "categories": ["data"],
-  "description": "ownCloud gives you freedom and control over your own data. A personal cloud which runs on your own server.  ",
-  "short_desc": "A personal cloud which runs on your own server. ",
-  "author": "https://github.com/owncloud",
-  "source": "https://github.com/owncloud/core",
-  "website": "https://owncloud.com/",
-  "form_fields": [
-    {
-      "type": "random",
-      "label": "OWNCLOUD_DB_PASSWORD",
-      "min": 32,
-      "env_variable": "OWNCLOUD_DB_PASSWORD"
-    },
-    {
-      "type": "text",
-      "label": "Owncloud username",
-      "max": 50,
-      "min": 3,
-      "required": true,
-      "env_variable": "OWNCLOUD_USERNAME"
-    },
-    {
-      "type": "password",
-      "label": "Owncloud password",
-      "max": 50,
-      "min": 8,
-      "required": true,
-      "env_variable": "OWNCLOUD_PASSWORD"
-    }
-  ],
+  "description": "ownCloud offers file sharing and collaboration trusted by 200+ million users worldwide regardless of device or location.",
+  "tipi_version": 1,
+  "version": "10.15.3",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "ownCloud",
+  "author": "owncloud",
+  "source": "",
+  "website": "",
   "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1691943801422,
-  "updated_at": 1723566284000
+  "created_at": 1761455338000,
+  "updated_at": 1761455338000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
 }

@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "big-bear-libretranslate",
+      "image": "libretranslate/libretranslate:v1.7.3",
+      "internalPort": 5000,
+      "isMain": true
+    }
+  ]
+}

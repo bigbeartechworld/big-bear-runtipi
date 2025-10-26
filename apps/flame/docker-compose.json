@@ -1,0 +1,13 @@
+{
+  "services": [
+    {
+      "name": "app",
+      "image": "pawelmalak/flame:multiarch2.3.1",
+      "internalPort": # Maps the container's port (target) to the host's port (published)
+ 5005
+ "5005"
+ tcp,
+      "isMain": true
+    }
+  ]
+}

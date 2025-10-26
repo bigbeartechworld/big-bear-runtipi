@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "app",
+      "image": "bigbeartechworld/big-bear-pihole-unbound:2025.08.0",
+      "internalPort": 53/tcp,
+      "isMain": true
+    }
+  ]
+}

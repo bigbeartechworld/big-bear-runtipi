@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "app",
+      "image": "lancachenet/monolithic:latest",
+      "internalPort": 80,
+      "isMain": true
+    }
+  ]
+}

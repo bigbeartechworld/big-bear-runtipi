@@ -1,0 +1,21 @@
+{
+  "name": "btop",
+  "available": true,
+  "port": 7681,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "btop",
+  "description": "A monitor of resources. Software made by Aristocratos at https://github.com/aristocratos/btop",
+  "tipi_version": 1,
+  "version": "0.1.5",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "A monitor of resources",
+  "author": "bigbeartechworld",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761455319000,
+  "updated_at": 1761455319000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

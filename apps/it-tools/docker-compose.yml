@@ -1,37 +1,24 @@
-version: "3"
+# Configuration for it-tools setup
 
+# Name of the big-bear-it-tools application
+name: big-bear-it-tools
+# Service definitions for the big-bear-it-tools application
 services:
   it-tools:
+    # Name of the container
     container_name: it-tools
-    image: corentinth/it-tools:latest
-    ports:
-      - ${APP_PORT}:80
+    # Image to be used for the container
+    image: corentinth/it-tools:2023.11.2-7d94e11
+    # Container restart policy
     restart: unless-stopped
+    # Ports mapping between host and container
+    ports:
+      # Mapping port 8080 of the host to port 80 of the container
+      - "8080:80"
+    labels:
+      runtipi.managed: "true"
     networks:
       - tipi_main_network
-    labels:
-      # Main
-      traefik.enable: true
-      traefik.http.middlewares.it-tools-web-redirect.redirectscheme.scheme: https
-      traefik.http.services.it-tools.loadbalancer.server.port: 80
-      # Web
-      traefik.http.routers.it-tools-insecure.rule: Host(`${APP_DOMAIN}`)
-      traefik.http.routers.it-tools-insecure.entrypoints: web
-      traefik.http.routers.it-tools-insecure.service: it-tools
-      traefik.http.routers.it-tools-insecure.middlewares: it-tools-web-redirect
-      # Websecure
-      traefik.http.routers.it-tools.rule: Host(`${APP_DOMAIN}`)
-      traefik.http.routers.it-tools.entrypoints: websecure
-      traefik.http.routers.it-tools.service: it-tools
-      traefik.http.routers.it-tools.tls.certresolver: myresolver
-      # Local domain
-      traefik.http.routers.it-tools-local-insecure.rule: Host(`it-tools.${LOCAL_DOMAIN}`)
-      traefik.http.routers.it-tools-local-insecure.entrypoints: web
-      traefik.http.routers.it-tools-local-insecure.service: it-tools
-      traefik.http.routers.it-tools-local-insecure.middlewares: it-tools-web-redirect
-      # Local domain secure
-      traefik.http.routers.it-tools-local.rule: Host(`it-tools.${LOCAL_DOMAIN}`)
-      traefik.http.routers.it-tools-local.entrypoints: websecure
-      traefik.http.routers.it-tools-local.service: it-tools
-      traefik.http.routers.it-tools-local.tls: true
-      runtipi.managed: true
+networks:
+  tipi_main_network:
+    external: true

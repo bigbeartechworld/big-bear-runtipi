@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "app",
+      "image": "mauricenino/dashdot:6.2.0",
+      "internalPort": 3001,
+      "isMain": true
+    }
+  ]
+}

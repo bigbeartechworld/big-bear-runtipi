@@ -1,0 +1,23 @@
+# Configuration for big-bear-onlyoffice setup
+name: big-bear-onlyoffice
+# Service definitions for the big-bear-onlyoffice application
+services:
+  onlyoffice:
+    image: onlyoffice/documentserver:9.1.0
+    container_name: onlyoffice
+    ports:
+      - "7400:80"
+    volumes:
+      - ./data/onlyoffice/logs:/var/log/onlyoffice
+      - ./data/onlyoffice/data:/var/www/onlyoffice/Data
+      - ./data/onlyoffice/lib:/var/lib/onlyoffice
+      - ./data/onlyoffice/rabbitmq:/var/lib/rabbitmq
+      - ./data/onlyoffice/redis:/var/lib/redis
+      - ./data/onlyoffice/db:/var/lib/postgresql
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

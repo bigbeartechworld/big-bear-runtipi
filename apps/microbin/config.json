@@ -1,0 +1,21 @@
+{
+  "name": "Microbin",
+  "available": true,
+  "port": 8888,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "microbin",
+  "description": "Self-hosted, encrypted pastebin alternative with configurable features.",
+  "tipi_version": 1,
+  "version": "2.0.4",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "Pastebin alternative with encryption",
+  "author": "danielszabo99",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761455333000,
+  "updated_at": 1761455333000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

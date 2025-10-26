@@ -1,27 +1,21 @@
 {
-  "$schema": "../schema.json",
   "name": "Scrypted",
-  "port": 10443,
   "available": true,
-  "exposable": false,
-  "https": true,
+  "port": 10443,
+  "exposable": true,
+  "dynamic_config": true,
   "id": "scrypted",
-  "tipi_version": 7,
-  "version": "18-jammy-full.s6-v0.88.0",
-  "categories": ["security"],
-  "description": "Scrypted is a high performance home video integration and automation platform",
-  "short_desc": "High performance home video integration and automation platform",
-  "author": "Koush",
-  "source": "https://github.com/koush/scrypted",
-  "form_fields": [
-    {
-      "type": "random",
-      "label": "Scrypted Bearer Token",
-      "min": 32,
-      "env_variable": "SCRYPTED_BEARER_TOKEN"
-    }
-  ],
+  "description": "Scrypted is an open source video integration platform. Using various Plugins, Scrypted can receive streams from a range of cameras and send them to other platforms (HomeKit, Google Home, Alexa, Home Assistant).",
+  "tipi_version": 1,
+  "version": "0.123.58-jammy-full",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "Scrypted",
+  "author": "koush",
+  "source": "",
+  "website": "",
   "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1691943801422,
-  "updated_at": 1723566284000
+  "created_at": 1761455345000,
+  "updated_at": 1761455345000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
 }

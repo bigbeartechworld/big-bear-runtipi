@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "gluetun",
+      "image": "qmcgaw/gluetun:v3.40.0",
+      "internalPort": 8888/tcp,
+      "isMain": true
+    }
+  ]
+}

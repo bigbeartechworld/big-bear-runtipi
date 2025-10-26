@@ -1,0 +1,21 @@
+{
+  "name": "OTEL LGTM",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "otel-lgtm",
+  "description": "An OpenTelemetry Backend in a Docker Image.",
+  "tipi_version": 1,
+  "version": "0.11.12",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "OpenTelemetry Backend",
+  "author": "Grafana Labs",
+  "source": "",
+  "website": "/",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761455338000,
+  "updated_at": 1761455338000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

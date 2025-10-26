@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "phpmyadmin",
+      "image": "phpmyadmin/phpmyadmin:5.2.3",
+      "internalPort": 80,
+      "isMain": true
+    }
+  ]
+}

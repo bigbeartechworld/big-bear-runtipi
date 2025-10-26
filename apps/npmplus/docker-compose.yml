@@ -1,0 +1,28 @@
+# Configuration for npmplus setup
+
+# Name of the big-bear-npmplus application
+name: big-bear-npmplus
+# Service definitions for the big-bear-npmplus application
+services:
+  npmplus:
+    # Name of the container
+    container_name: npmplus
+    # Image to be used for the container
+    image: zoeyvid/npmplus:449
+    # Container restart policy
+    restart: unless-stopped
+    # Network mode for the container
+    network_mode: host
+    environment:
+      - "TZ=America/Chicago" # Required for the container to function properly
+    # Volumes to be mounted to the container
+    volumes:
+      # Mounting the local ./data/data directory to /data inside the container
+      - "./data/data:/data"
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

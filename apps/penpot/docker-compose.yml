@@ -1,106 +1,134 @@
-version: "3.9"
-services:
-  penpot:
-    image: penpotapp/frontend:latest
-    container_name: penpot
-    restart: unless-stopped
-    ports:
-      - ${APP_PORT}:80
-    volumes:
-      - ${APP_DATA_DIR}/data/assets:/opt/data/assets
-    depends_on:
-      - penpot-backend
-      - penpot-exporter
-    networks:
-      - tipi_main_network
-    labels:
-      # Main
-      traefik.enable: true
-      traefik.http.middlewares.penpot-web-redirect.redirectscheme.scheme: https
-      traefik.http.services.penpot.loadbalancer.server.port:
-        80
-        # Web
-      traefik.http.routers.penpot-insecure.rule: Host(`${APP_DOMAIN}`)
-      traefik.http.routers.penpot-insecure.entrypoints: web
-      traefik.http.routers.penpot-insecure.service: penpot
-      traefik.http.routers.penpot-insecure.middlewares:
-        penpot-web-redirect
-        # Websecure
-      traefik.http.routers.penpot.rule: Host(`${APP_DOMAIN}`)
-      traefik.http.routers.penpot.entrypoints: websecure
-      traefik.http.routers.penpot.service: penpot
-      traefik.http.routers.penpot.tls.certresolver:
-        myresolver
-        # Local domain
-      traefik.http.routers.penpot-local-insecure.rule: Host(`penpot.${LOCAL_DOMAIN}`)
-      traefik.http.routers.penpot-local-insecure.entrypoints: web
-      traefik.http.routers.penpot-local-insecure.service: penpot
-      traefik.http.routers.penpot-local-insecure.middlewares:
-        penpot-web-redirect
-        # Local domain secure
-      traefik.http.routers.penpot-local.rule: Host(`penpot.${LOCAL_DOMAIN}`)
-      traefik.http.routers.penpot-local.entrypoints: websecure
-      traefik.http.routers.penpot-local.service: penpot
-      traefik.http.routers.penpot-local.tls: true
-      runtipi.managed: true
-    environment:
-      - PENPOT_FLAGS=enable-registration enable-login-with-password
+# Configuration for penpot setup
 
+# Name of the big-bear-penpot application
+name: big-bear-penpot
+# Service definitions for the big-bear-penpot application
+services:
+  # Definition for penpot-backend service
   penpot-backend:
-    image: penpotapp/backend:latest
-    container_name: penpot-backend
+    # Docker image for the service
+    image: penpotapp/backend:2.10.1
+    # Name of the container
+    container_name: big-bear-penpot-backend
+    # Restart policy for the container
     restart: unless-stopped
+    # Volumes to mount to the container
     volumes:
-      - ${APP_DATA_DIR}/data/assets:/opt/data/assets
+      - ./data/assets:/opt/data/assets
+    # Dependencies for the service
     depends_on:
       - penpot-postgres
       - penpot-redis
+    # Networks to connect the container to
     networks:
+      - big-bear-penpot-network
       - tipi_main_network
+    # Environment variables for the service
     environment:
-      - PENPOT_FLAGS=enable-registration enable-login-with-password disable-email-verification
-      - PENPOT_PUBLIC_URI=${APP_PROTOCOL:-http}://${APP_DOMAIN}:${APP_PORT}
-      - PENPOT_DATABASE_URI=postgresql://penpot-postgres/penpot
-      - PENPOT_DATABASE_USERNAME=tipi
-      - PENPOT_DATABASE_PASSWORD=${PENPOT_POSTGRES_PASSWORD}
-      - PENPOT_REDIS_URI=redis://penpot-redis/0
+      - PENPOT_FLAGS=enable-registration enable-login-with-password disable-email-verification disable-secure-session-cookies
+      - PENPOT_SECRET_KEY=big-bear-penpot-secret-key
+      - PENPOT_PUBLIC_URI=http://big-bear-penpot-frontend:8080
+      - PENPOT_DATABASE_URI=postgresql://big-bear-penpot-postgres/penpot
+      - PENPOT_DATABASE_USERNAME=bigbear
+      - PENPOT_DATABASE_PASSWORD=casaos
+      - PENPOT_REDIS_URI=redis://big-bear-penpot-redis/0
       - PENPOT_ASSETS_STORAGE_BACKEND=assets-fs
       - PENPOT_STORAGE_ASSETS_FS_DIRECTORY=/opt/data/assets
       - PENPOT_TELEMETRY_ENABLED=false
     labels:
-      runtipi.managed: true
+      runtipi.managed: "true"
+  # Define the penpot-exporter service
   penpot-exporter:
-    image: penpotapp/exporter:latest
-    container_name: penpot-exporter
+    # Use the penpotapp/exporter:1.19.3 Docker image
+    image: penpotapp/exporter:2.10.1
+    # Set the container name to big-bear-penpot-exporter
+    container_name: big-bear-penpot-exporter
+    # Automatically restart the container unless stopped
     restart: unless-stopped
+    # Connect the container to the big-bear-penpot-network network
     networks:
+      - big-bear-penpot-network
       - tipi_main_network
+    # Set environment variables for the container
     environment:
-      - PENPOT_PUBLIC_URI=http://penpot
-      - PENPOT_REDIS_URI=redis://penpot-redis/0
+      # Set the PENPOT_PUBLIC_URI environment variable
+      - PENPOT_PUBLIC_URI=http://big-bear-penpot-frontend:8080
+      # Set the PENPOT_REDIS_URI environment variable
+      - PENPOT_REDIS_URI=redis://big-bear-penpot-redis/0
     labels:
-      runtipi.managed: true
+      runtipi.managed: "true"
+  # Define the PostgreSQL service for Penpot
   penpot-postgres:
     image: postgres:14
     restart: unless-stopped
-    container_name: penpot-postgres
+    container_name: big-bear-penpot-postgres
     stop_signal: SIGINT
     volumes:
-      - ${APP_DATA_DIR}/data/postgres:/var/lib/postgresql/data
+      - ./data/pgdata:/var/lib/postgresql/data
     networks:
+      - big-bear-penpot-network
       - tipi_main_network
     environment:
+      # Initialize the database with data checksums
       - POSTGRES_INITDB_ARGS=--data-checksums
-      - POSTGRES_DB=penpot
-      - POSTGRES_USER=tipi
-      - POSTGRES_PASSWORD=${PENPOT_POSTGRES_PASSWORD}
+      - POSTGRES_DB=penpot # Set the name of the database
+      - POSTGRES_USER=bigbear # Set the username for the database
+      - POSTGRES_PASSWORD=casaos # Set the password for the database
     labels:
-      runtipi.managed: true
+      runtipi.managed: "true"
+  # Define the Redis service for Penpot
   penpot-redis:
-    image: redis:7
-    container_name: penpot-redis
+    image: redis:7.4.6@sha256:d7432711a2a5c99c2e9dd0e006061cd274d7cb7a9e77f07ffe2ea99e21244677
+    container_name: big-bear-penpot-redis
     restart: unless-stopped
     networks:
+      - big-bear-penpot-network
       - tipi_main_network
     labels:
-      runtipi.managed: true
+      runtipi.managed: "true"
+  # Define the penpot-mailcatch service
+  penpot-mailcatch:
+    image: sj26/mailcatcher:latest
+    restart: always
+    expose:
+      - "1025" # Expose port 1025 for SMTP
+    ports:
+      - "1080:1080" # Map port 1080 for the web interface
+    networks:
+      - big-bear-penpot-network # Connect to the big-bear-penpot-network
+      - tipi_main_network
+    labels:
+      runtipi.managed: "true"
+  penpot:
+    # Name of the container
+    container_name: penpot
+    # Image to be used for the container
+    image: penpotapp/frontend:2.10.1
+    # Container restart policy
+    restart: unless-stopped
+    # Volumes to be mounted to the container
+    volumes:
+      # Mounting the local ./data/assets directory to /opt/data/assets inside the container
+      - ./data/assets:/opt/data/assets
+    # Ports mapping between host and container
+    ports:
+      # Mapping port 9001 of the host to port 8080 of the container
+      - "9001:8080"
+    # Other services that this service depends on
+    depends_on:
+      - penpot-backend
+      - penpot-exporter
+    # Networks to be attached to the container
+    networks:
+      - big-bear-penpot-network
+      - tipi_main_network
+    labels:
+      runtipi.managed: "true"
+# Define the networks section
+networks:
+  # Define the penpot-network
+  big-bear-penpot-network:
+    # Set the driver to bridge
+    driver: bridge
+  tipi_main_network:
+    external: true
