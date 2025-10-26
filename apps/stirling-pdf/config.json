@@ -1,25 +1,21 @@
 {
-  "$schema": "../schema.json",
   "name": "Stirling-PDF",
-  "port": 8234,
   "available": true,
+  "port": 8080,
   "exposable": true,
+  "dynamic_config": true,
   "id": "stirling-pdf",
-  "tipi_version": 46,
-  "version": "0.29.0",
-  "categories": ["data", "utilities"],
-  "description": "Locally hosted web application that allows you to perform various operations on PDF files.",
-  "short_desc": "Powerful locally hosted web based PDF manipulation tool.",
-  "author": "Frooodle",
-  "source": "https://github.com/Frooodle/Stirling-PDF/",
-  "form_fields": [
-    {
-      "type": "boolean",
-      "label": "Docker > Enable Security",
-      "env_variable": "STIRLING_PDF_DOCKER_ENABLE_SECURITY"
-    }
-  ],
+  "description": "Stirling PDF - Local hosted web based PDF editor",
+  "tipi_version": 1,
+  "version": "1.5.0",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "Stirling PDF - Local hosted web based PDF editor",
+  "author": "stirlingtools",
+  "source": "",
+  "website": "",
   "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1691943801422,
-  "updated_at": 1726366302000
+  "created_at": 1761451384000,
+  "updated_at": 1761451384000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
 }

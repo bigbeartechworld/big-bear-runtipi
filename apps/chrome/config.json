@@ -1,0 +1,21 @@
+{
+  "name": "chrome",
+  "available": true,
+  "port": 6902,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "chrome",
+  "description": "This Image contains a browser-accessible version of chrome.",
+  "tipi_version": 1,
+  "version": "1.15.0-rolling",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "chrome",
+  "author": "kasmweb",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761451368000,
+  "updated_at": 1761451368000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

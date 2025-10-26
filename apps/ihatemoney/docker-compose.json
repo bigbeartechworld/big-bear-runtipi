@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "big-bear-ihatemoney",
+      "image": "ihatemoney/ihatemoney:6.1.5",
+      "internalPort": 8000,
+      "isMain": true
+    }
+  ]
+}

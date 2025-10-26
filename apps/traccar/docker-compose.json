@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "app",
+      "image": "traccar/traccar:6.10-ubuntu",
+      "internalPort": 8082,
+      "isMain": true
+    }
+  ]
+}

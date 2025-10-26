@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "big-bear-goaway",
+      "image": "pommee/goaway:0.62.11",
+      "internalPort": 53/udp,
+      "isMain": true
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "big-bear-homebridge",
+      "image": "homebridge/homebridge:2024-05-02",
+      "internalPort": null,
+      "isMain": true
+    }
+  ]
+}

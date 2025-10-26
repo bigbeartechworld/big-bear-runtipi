@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "app",
+      "image": "ghcr.io/ajnart/homarr:0.16.0",
+      "internalPort": 7575,
+      "isMain": true
+    }
+  ]
+}

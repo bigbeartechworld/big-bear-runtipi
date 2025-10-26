@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "big-bear-music-assistant-server",
+      "image": "ghcr.io/music-assistant/server:2.6.0",
+      "internalPort": null,
+      "isMain": true
+    }
+  ]
+}

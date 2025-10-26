@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "big-bear-npmplus",
+      "image": "zoeyvid/npmplus:449",
+      "internalPort": null,
+      "isMain": true
+    }
+  ]
+}

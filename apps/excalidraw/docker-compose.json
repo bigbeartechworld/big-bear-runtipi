@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "app",
+      "image": "excalidraw/excalidraw:latest",
+      "internalPort": 80,
+      "isMain": true
+    }
+  ]
+}

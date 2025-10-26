@@ -1,78 +1,21 @@
 {
-  "$schema": "../schema.json",
   "name": "Flowise AI",
   "available": true,
-  "exposable": true,
   "port": 8009,
+  "exposable": true,
+  "dynamic_config": true,
   "id": "flowise",
-  "tipi_version": 30,
-  "version": "2.1.1",
-  "categories": ["ai", "automation"],
-  "description": "Flowise AI is an Open source UI visual tool to build your customized LLM ochestration flow & AI agents. Developing LLM apps takes countless iterations. With low code approach, Flowise AI enable quick iterations to go from testing to production.",
+  "description": "Flowise AI is an Open source UI visual tool to build your customized LLM orchestration flow & AI agents. Developing LLM apps takeslength iterations. With low code approach, Flowise AI enable quick iterations to go from testing to production.",
+  "tipi_version": 1,
+  "version": "3.0.8",
+  "categories": ["bigbearcasaos"],
   "short_desc": "Build LLM Apps Easily",
-  "author": "flowise.ai",
-  "source": "https://github.com/FlowiseAI/Flowise",
-  "website": "https://flowiseai.com/",
-  "form_fields": [
-    {
-      "type": "text",
-      "label": "Flowise Username",
-      "max": 50,
-      "min": 3,
-      "required": true,
-      "env_variable": "FLOWISE_USERNAME"
-    },
-    {
-      "type": "password",
-      "label": "Flowise Password",
-      "max": 50,
-      "min": 12,
-      "required": true,
-      "env_variable": "FLOWISE_PASSWORD"
-    },
-    {
-      "type": "random",
-      "label": "Flowise Secret",
-      "min": 16,
-      "env_variable": "FLOWISE_SECRETKEY_OVERWRITE"
-    },
-    {
-      "type": "url",
-      "label": "(Optional) Langchain Endpoint",
-      "hint": "URL of your langhchain endpoint",
-      "required": false,
-      "env_variable": "LANGCHAIN_ENDPOINT"
-    },
-    {
-      "type": "password",
-      "label": "(Optional) Langchain API Key",
-      "max": 50,
-      "min": 3,
-      "required": false,
-      "env_variable": "LANGCHAIN_API_KEY"
-    },
-    {
-      "type": "text",
-      "label": "(Optional) Langchain Project",
-      "max": 50,
-      "min": 3,
-      "required": false,
-      "env_variable": "LANGCHAIN_PROJECT"
-    },
-    {
-      "type": "boolean",
-      "label": "Enable Langchain Tracing v2",
-      "required": false,
-      "env_variable": "LANGCHAIN_TRACING_V2"
-    },
-    {
-      "type": "boolean",
-      "label": "Disable Flowise telemetry",
-      "required": false,
-      "env_variable": "DISABLE_FLOWISE_TELEMETRY"
-    }
-  ],
+  "author": "bigbeartechworld",
+  "source": "",
+  "website": "",
   "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1691943801422,
-  "updated_at": 1726656436000
+  "created_at": 1761451371000,
+  "updated_at": 1761451371000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
 }

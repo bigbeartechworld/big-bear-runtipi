@@ -1,73 +1,57 @@
-version: "3.7"
-services:
-  tandoor:
-    container_name: tandoor
-    image: ghcr.io/tandoorrecipes/recipes:1.5.19
-    volumes:
-      - ${APP_DATA_DIR}/data/staticfiles:/opt/recipes/staticfiles
-      - ${APP_DATA_DIR}/data/mediafiles:/opt/recipes/mediafiles
-    ports:
-      - ${APP_PORT}:8080
-    environment:
-      - SECRET_KEY=${TANDOOR_SECRET_KEY}
-      - DB_ENGINE=django.db.backends.postgresql
-      - POSTGRES_HOST=tandoor-db
-      - POSTGRES_PORT=5432
-      - POSTGRES_USER=tandoor
-      - POSTGRES_PASSWORD=${TANDOOR_POSTGRESS_PASSWORD}
-      - POSTGRES_DB=tandoordb
-    networks:
-      - tipi_main_network
-    restart: unless-stopped
-    healthcheck:
-      test: wget --no-verbose --tries=1 --spider http://localhost:8080
-      interval: 10s
-      timeout: 5s
-      retries: 5
-      start_period: 30s
-    labels:
-      # Main
-      traefik.enable: true
-      traefik.http.middlewares.tandoor-web-redirect.redirectscheme.scheme: https
-      traefik.http.services.tandoor.loadbalancer.server.port: 8080
-      # Web
-      traefik.http.routers.tandoor-insecure.rule: Host(`${APP_DOMAIN}`)
-      traefik.http.routers.tandoor-insecure.entrypoints: web
-      traefik.http.routers.tandoor-insecure.service: tandoor
-      traefik.http.routers.tandoor-insecure.middlewares: tandoor-web-redirect
-      # Websecure
-      traefik.http.routers.tandoor.rule: Host(`${APP_DOMAIN}`)
-      traefik.http.routers.tandoor.entrypoints: websecure
-      traefik.http.routers.tandoor.service: tandoor
-      traefik.http.routers.tandoor.tls.certresolver: myresolver
-      # Local domain
-      traefik.http.routers.tandoor-local-insecure.rule: Host(`tandoor.${LOCAL_DOMAIN}`)
-      traefik.http.routers.tandoor-local-insecure.entrypoints: web
-      traefik.http.routers.tandoor-local-insecure.service: tandoor
-      traefik.http.routers.tandoor-local-insecure.middlewares: tandoor-web-redirect
-      # Local domain secure
-      traefik.http.routers.tandoor-local.rule: Host(`tandoor.${LOCAL_DOMAIN}`)
-      traefik.http.routers.tandoor-local.entrypoints: websecure
-      traefik.http.routers.tandoor-local.service: tandoor
-      traefik.http.routers.tandoor-local.tls: true
-      runtipi.managed: true
-    depends_on:
-      tandoor-db:
-        condition: service_healthy
+# Configuration for tandoor setup
 
-  tandoor-db:
-    image: postgres:15-alpine
-    container_name: tandoor-db
+# Name of the big-bear-tandoor application
+name: big-bear-tandoor
+# Service definitions for the big-bear-tandoor application
+services:
+  # Service name: big-bear-tandoor
+  # The `big-bear-tandoor` service definition
+  big-bear-tandoor:
+    # Name of the container
+    container_name: big-bear-tandoor
+    # Image to be used for the container
+    image: ghcr.io/tandoorrecipes/recipes:2.3.3
+    # Container restart policy
+    restart: unless-stopped
+    # Volumes to be mounted to the container
     volumes:
-      - ${APP_DATA_DIR}/data/postgresql:/var/lib/postgresql/data
+      - ./data/staticfiles:/opt/recipes/staticfiles
+      - ./data/mediafiles:/opt/recipes/mediafiles
+    # Ports mapping between host and container
+    ports:
+      # Mapping port 8080 of the host to port 8080 of the container
+      - "8080:8080"
+    # Environment variables to be passed to the container
+    environment:
+      - SECRET_KEY=6496f725-e4a4-4fa5-9f7b-db0114bc1568
+      - DB_ENGINE=django.db.backends.postgresql
+      - POSTGRES_HOST=big-bear-tandoor-db
+      - POSTGRES_PORT=5432
+      - POSTGRES_USER=tandoor
+      - POSTGRES_PASSWORD=100c7d31-9ec5-44ec-9101-e226c8e2420d
+      - POSTGRES_DB=tandoordb
+    # Network to be used by the container
+    networks:
+      - big_bear_tandoor_network
+    # Healthcheck configuration for the container
+    depends_on:
+      big-bear-tandoor-db:
+        condition: service_healthy
+    labels:
+      runtipi.managed: "true"
+  big-bear-tandoor-db:
+    image: postgres:15-alpine
+    container_name: big-bear-tandoor-db
+    volumes:
+      - ./data/postgresql:/var/lib/postgresql/data
     environment:
       - POSTGRES_PORT=5432
       - POSTGRES_USER=tandoor
-      - POSTGRES_PASSWORD=${TANDOOR_POSTGRESS_PASSWORD}
+      - POSTGRES_PASSWORD=100c7d31-9ec5-44ec-9101-e226c8e2420d
       - POSTGRES_DB=tandoordb
     restart: unless-stopped
     networks:
-      - tipi_main_network
+      - big_bear_tandoor_network
     healthcheck:
       test: ["CMD-SHELL", "pg_isready", "-d", "tandoor"]
       interval: 10s
@@ -75,4 +59,8 @@ services:
       retries: 5
       start_period: 30s
     labels:
-      runtipi.managed: true
+      runtipi.managed: "true"
+# Network definitions for the big-bear-tandoor application
+networks:
+  big_bear_tandoor_network:
+    driver: bridge

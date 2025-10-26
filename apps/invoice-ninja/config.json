@@ -1,50 +1,21 @@
 {
-  "$schema": "../schema.json",
   "name": "Invoice Ninja",
-  "port": 8881,
   "available": true,
+  "port": 8080,
   "exposable": true,
+  "dynamic_config": true,
   "id": "invoice-ninja",
-  "tipi_version": 37,
-  "version": "5.10.31",
-  "categories": ["finance"],
-  "description": "Invoice Ninja is an invoicing application which makes sending invoices and receiving payments simple and easy. Our latest version is a clean slate rewrite of our popular invoicing application which builds on the existing feature set and adds a wide range of features and enhancements the community has asked for.",
-  "short_desc": "Invoices, Expenses and Tasks built with Laravel, Flutter and React.",
-  "author": "https://www.invoiceninja.org/",
-  "source": "https://github.com/invoiceninja/invoiceninja",
-  "website": "https://invoiceninja.com/",
-  "form_fields": [
-    {
-      "type": "email",
-      "label": "Invoice Ninja User Mail",
-      "required": true,
-      "env_variable": "INVOICE_NINJA_USER_MAIL"
-    },
-    {
-      "type": "password",
-      "label": "Invoice Ninja User Password",
-      "required": true,
-      "env_variable": "INVOICE_NINJA_USER_PASSWORD"
-    },
-    {
-      "type": "random",
-      "label": "MySQL Password",
-      "min": 32,
-      "env_variable": "INVOICE_NINJA_BDD_PASSWORD"
-    },
-    {
-      "type": "password",
-      "label": "Encryption key - used for encryption / decryption of some datapoints within the application. Backup this key in a secure location. (cf. Installation Notice in Readme)",
-      "required": true,
-      "env_variable": "INVOICE_NINJA_APP_KEY",
-      "placeholder": "base64:your_encryption_key",
-      "regex": "base64:[a-zA-Z0-9+/=]+",
-      "pattern_error": "The encryption key must be a base64 encoded string.",
-      "min": 51,
-      "max": 51
-    }
-  ],
+  "description": "Invoice Ninja is a free and open-source invoice and expense management system. It is a web-based application that allows you to create, manage, and track invoices and expenses.",
+  "tipi_version": 1,
+  "version": "5.12.28",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "Invoice Ninja",
+  "author": "invoiceninja",
+  "source": "",
+  "website": "",
   "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1691943801422,
-  "updated_at": 1728122401000
+  "created_at": 1761451374000,
+  "updated_at": 1761451374000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
 }

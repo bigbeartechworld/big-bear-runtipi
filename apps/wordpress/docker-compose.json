@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "app",
+      "image": "wordpress:6.8.3",
+      "internalPort": 80,
+      "isMain": true
+    }
+  ]
+}

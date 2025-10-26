@@ -1,0 +1,21 @@
+{
+  "name": "Faster-whisper",
+  "available": true,
+  "port": 7575,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "faster-whisper",
+  "description": "Faster-whisper is a reimplementation of OpenAI's Whisper model using CTranslate2, which is a fast inference engine for Transformer models. This container provides a Wyoming protocol server for faster-whisper.",
+  "tipi_version": 1,
+  "version": "2.5.0",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "Faster-whisper",
+  "author": "systran",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761451371000,
+  "updated_at": 1761451371000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

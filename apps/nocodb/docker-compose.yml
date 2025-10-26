@@ -1,83 +1,60 @@
-version: "2.1"
+# Configuration for nocodb setup
 
+# Name of the big-bear-nocodb application
+name: big-bear-nocodb
+# Service definitions for the big-bear-nocodb application
 services:
-  nocodb:
-    container_name: nocodb
-    depends_on:
-      nocodb-db:
-        condition: service_healthy
-    environment:
-      - NC_DB=pg://nocodb-db:5432?u=postgres&p=${NOCODB_DB_PASSWORD}&d=nocodb
-      - NC_PUBLIC_URL=${APP_PROTOCOL:-http}://${APP_DOMAIN}
-      - NC_AUTH_JWT_SECRET=${NOCODB_JWT_SECRET}
-      - NC_REDIS_URL=redis://default:${NOCODB_REDIS_PASSWORD}@nocodb-redis:6379
-      - DB_QUERY_LIMIT_DEFAULT=${NOCODB_TABLE_ROWS-25}
-    image: "nocodb/nocodb:0.255.2"
+  # Service name: big-bear-nocodb
+  # This section configures the NocoDB application itself
+  big-bear-nocodb:
+    image: nocodb/nocodb:0.265.1 # Specifies the Docker image to use for NocoDB
+    container_name: big-bear-nocodb # Sets a custom name for the container
+    restart: unless-stopped # Container restart policy to ensure availability
+    environment: # Environment variables for configuring NocoDB
+      - DATABASE_URL=postgres://nocodb:nocodb@big-bear-nocodb-db:5432/nocodb # Connection string for the PostgreSQL database
+      - NC_AUTH_JWT_SECRET=899499fc-36a0-4131-b077-7bb9f051ac9b # JWT secret for authentication
+      - NC_REDIS_URL=redis://default:casaos@big-bear-nocodb-redis:6379 # Connection string for Redis
     ports:
-      - "${APP_PORT}:8080"
-    restart: always
+      - "8080:8080" # Maps port 8080 from the container to the host
     volumes:
-      - "${APP_DATA_DIR}/data/nocode-data:/usr/app/data"
+      - ./data/data:/usr/src/app/data # Maps persistent data storage for NocoDB
     networks:
-      - tipi_main_network
+      - big-bear-nocodb-network # Connects to the custom network
     labels:
-      # Main
-      traefik.enable: true
-      traefik.http.middlewares.nocodb-web-redirect.redirectscheme.scheme: https
-      traefik.http.services.nocodb.loadbalancer.server.port: 8080
-      # Web
-      traefik.http.routers.nocodb-insecure.rule: Host(`${APP_DOMAIN}`)
-      traefik.http.routers.nocodb-insecure.entrypoints: web
-      traefik.http.routers.nocodb-insecure.service: nocodb
-      traefik.http.routers.nocodb-insecure.middlewares: nocodb-web-redirect
-      # Websecure
-      traefik.http.routers.nocodb.rule: Host(`${APP_DOMAIN}`)
-      traefik.http.routers.nocodb.entrypoints: websecure
-      traefik.http.routers.nocodb.service: nocodb
-      traefik.http.routers.nocodb.tls.certresolver: myresolver
-      # Local domain
-      traefik.http.routers.nocodb-local-insecure.rule: Host(`nocodb.${LOCAL_DOMAIN}`)
-      traefik.http.routers.nocodb-local-insecure.entrypoints: web
-      traefik.http.routers.nocodb-local-insecure.service: nocodb
-      traefik.http.routers.nocodb-local-insecure.middlewares: nocodb-web-redirect
-      # Local domain secure
-      traefik.http.routers.nocodb-local.rule: Host(`nocodb.${LOCAL_DOMAIN}`)
-      traefik.http.routers.nocodb-local.entrypoints: websecure
-      traefik.http.routers.nocodb-local.service: nocodb
-      traefik.http.routers.nocodb-local.tls: true
-      runtipi.managed: true
-  nocodb-db:
-    container_name: nocodb-db
-    environment:
-      POSTGRES_DB: nocodb
-      POSTGRES_PASSWORD: ${NOCODB_DB_PASSWORD}
-      POSTGRES_USER: postgres
+      runtipi.managed: "true"
+  # Database service configuration
+  big-bear-nocodb-db:
+    container_name: big-bear-nocodb-db
+    image: postgres:13 # Specifies the PostgreSQL Docker image to use
+    restart: always # Ensures the database container is always running
+    environment: # Database credentials and configurations
+      POSTGRES_DB: nocodb # Database name
+      POSTGRES_USER: nocodb # Database user
+      POSTGRES_PASSWORD: nocodb # Database password
+    volumes:
+      - ./data/pgdata:/var/lib/postgresql/data # Persistent storage for the database
+    networks:
+      - big-bear-nocodb-network # Connects to the custom network
+    labels:
+      runtipi.managed: "true"
+  # Redis service configuration
+  big-bear-nocodb-redis:
+    image: redis:8.2.2-alpine@sha256:1c78f5e7512cc8b22b0edc95c20e7abd9e1fd832e5dfd5c3c6b59ce82fb238d0 # Specifies the Redis Docker image to use
+    container_name: big-bear-nocodb-redis
+    restart: unless-stopped # Ensures Redis container is available unless manually stopped
+    command: ["redis-server", "--requirepass", "casaos"] # Starts Redis with a password
+    volumes:
+      - ./data/redis:/data # Persistent storage for Redis data
     healthcheck:
-      interval: 10s
-      retries: 10
-      test: 'pg_isready -U "$$POSTGRES_USER" -d "$$POSTGRES_DB"'
-      timeout: 2s
-    image: postgres:16
-    restart: always
-    volumes:
-      - ${APP_DATA_DIR}/data/postgres:/var/lib/postgresql/data
+      test: ["CMD", "redis-cli", "ping"] # Health check command for Redis
+      interval: 1s # Interval between health checks
+      timeout: 3s # Timeout for each health check
+      retries: 30 # Number of retries before considering the service unhealthy
     networks:
-      - tipi_main_network
+      - big-bear-nocodb-network # Connects to the custom network
     labels:
-      runtipi.managed: true
-  nocodb-redis:
-    image: redis:alpine
-    container_name: nocodb-redis
-    restart: unless-stopped
-    command: "redis-server --requirepass ${NOCODB_REDIS_PASSWORD}"
-    volumes:
-      - ${APP_DATA_DIR}/data/redis:/data
-    healthcheck:
-      test: ["CMD", "redis-cli", "ping"]
-      interval: 1s
-      timeout: 3s
-      retries: 30
-    networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: true
+      runtipi.managed: "true"
+# Network configuration
+networks:
+  big-bear-nocodb-network:
+    driver: bridge # Uses a bridge network for inter-container communication
