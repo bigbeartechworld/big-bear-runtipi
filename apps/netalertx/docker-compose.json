@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "big-bear-netalertx",
+      "image": "jokobsk/netalertx:25.10.1",
+      "internalPort": null,
+      "isMain": true
+    }
+  ]
+}

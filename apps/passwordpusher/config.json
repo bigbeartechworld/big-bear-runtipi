@@ -1,0 +1,21 @@
+{
+  "name": "Password Pusher",
+  "available": true,
+  "port": 5100,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "passwordpusher",
+  "description": "Password Pusher is an open source application to communicate passwords over the web. Links to passwords expire after a certain number of views and/or time has passed.",
+  "tipi_version": 1,
+  "version": "1.62.1",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "Give your users the tools to be secure by default.",
+  "author": "pglombardo",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761451993000,
+  "updated_at": 1761451993000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

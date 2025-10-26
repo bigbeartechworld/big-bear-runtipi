@@ -1,33 +1,21 @@
 {
-  "$schema": "../schema.json",
-  "name": "Zipline",
-  "port": 8139,
+  "name": "zipline",
   "available": true,
+  "port": 3000,
   "exposable": true,
+  "dynamic_config": true,
   "id": "zipline",
-  "tipi_version": 11,
-  "version": "3.7.10",
-  "categories": ["media"],
-  "description": "A ShareX/file upload server that is easy to use, packed with features, and with an easy setup!  ",
-  "short_desc": "A ShareX/file upload server that is easy to use, packed with features, and with an easy setup!  ",
-  "author": "https://github.com/diced",
-  "source": "https://github.com/diced/zipline",
-  "website": "https://zipline.diced.tech/docs/config/",
-  "form_fields": [
-    {
-      "type": "random",
-      "label": "ZIPLINE_DB_PASSWORD",
-      "min": 32,
-      "env_variable": "ZIPLINE_DB_PASSWORD"
-    },
-    {
-      "type": "random",
-      "label": "ZIPLINE_CORE_SECRET",
-      "min": 32,
-      "env_variable": "ZIPLINE_CORE_SECRET"
-    }
-  ],
+  "description": "A ShareX/file upload server that is easy to use, packed with features, and with an easy setup!",
+  "tipi_version": 1,
+  "version": "3.7.13",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "zipline",
+  "author": "zipline",
+  "source": "",
+  "website": "",
   "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1691943801422,
-  "updated_at": 1726186419000
+  "created_at": 1761452001000,
+  "updated_at": 1761452001000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
 }

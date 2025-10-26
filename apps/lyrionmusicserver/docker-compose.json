@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "big-bear-lyrionmusicserver",
+      "image": "lmscommunity/lyrionmusicserver:9.1.0",
+      "internalPort": 9000/tcp,
+      "isMain": true
+    }
+  ]
+}

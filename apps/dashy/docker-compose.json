@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "big-bear-dashy",
+      "image": "lissy93/dashy:3.1.0",
+      "internalPort": 8080,
+      "isMain": true
+    }
+  ]
+}

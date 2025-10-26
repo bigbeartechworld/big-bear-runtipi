@@ -1,48 +1,23 @@
-version: "3.7"
+# Configuration for big-bear-code-server setup
+name: big-bear-code-server
+# Service definitions for the big-bear-code-server application
 services:
-  code-server:
-    image: lscr.io/linuxserver/code-server:4.93.1
-    container_name: code-server
+  # Service name: app
+  app:
+    image: linuxserver/code-server:4.105.1 # The Docker image to be used for the service
+    container_name: code-server # Name of the container instance
     environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=${TZ}
-      - PASSWORD=${CODESERVER_PASSWORD}
-      - SUDO_PASSWORD=${CODESERVER_SUDO_PASSWORD}
+      - PUID=1000 # User ID under which code-server will run
+      - PGID=1000 # Group ID under which code-server will run
+      - TZ=UTC # Timezone for the container
+      - PASSWORD=my_password # Password to access code-server
+      - SUDO_PASSWORD=sudo_my_password # Password to access code-server
       - DEFAULT_WORKSPACE=/config/workspace
     volumes:
-      - ${APP_DATA_DIR}/data/config:/config
-      - ${APP_DATA_DIR}/data/projects:/projects
-      - ${ROOT_FOLDER_HOST}/app-data:/runtipi/app-data
-      - ${ROOT_FOLDER_HOST}/user-config:/runtipi/user-config
+      - ./data/config:/config #config dir
+      - ./data/projects:/projects #project dir
     ports:
-      - ${APP_PORT}:8443
-    restart: unless-stopped
-    networks:
-      - tipi_main_network
+      - "8080:8443" # Expose code-server's port 8080 on the host's port 8080
+    restart: always # Policy to restart the container if it stops unexpectedly
     labels:
-      # Main
-      traefik.enable: true
-      traefik.http.middlewares.code-server-web-redirect.redirectscheme.scheme: https
-      traefik.http.services.code-server.loadbalancer.server.port: 8443
-      # Web
-      traefik.http.routers.code-server-insecure.rule: Host(`${APP_DOMAIN}`)
-      traefik.http.routers.code-server-insecure.entrypoints: web
-      traefik.http.routers.code-server-insecure.service: code-server
-      traefik.http.routers.code-server-insecure.middlewares: code-server-web-redirect
-      # Websecure
-      traefik.http.routers.code-server.rule: Host(`${APP_DOMAIN}`)
-      traefik.http.routers.code-server.entrypoints: websecure
-      traefik.http.routers.code-server.service: code-server
-      traefik.http.routers.code-server.tls.certresolver: myresolver
-      # Local domain
-      traefik.http.routers.code-server-local-insecure.rule: Host(`code-server.${LOCAL_DOMAIN}`)
-      traefik.http.routers.code-server-local-insecure.entrypoints: web
-      traefik.http.routers.code-server-local-insecure.service: code-server
-      traefik.http.routers.code-server-local-insecure.middlewares: code-server-web-redirect
-      # Local domain secure
-      traefik.http.routers.code-server-local.rule: Host(`code-server.${LOCAL_DOMAIN}`)
-      traefik.http.routers.code-server-local.entrypoints: websecure
-      traefik.http.routers.code-server-local.service: code-server
-      traefik.http.routers.code-server-local.tls: true
-      runtipi.managed: true
+      runtipi.managed: "true"

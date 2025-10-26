@@ -1,0 +1,21 @@
+{
+  "name": "playit.gg",
+  "available": true,
+  "port": 8080,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "playitgg",
+  "description": "playit.gg is a global proxy that allows anyone to host a server without port forwarding. We use tunneling. Only the server needs to run the program, not every player!",
+  "tipi_version": 1,
+  "version": "1.1.0",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "playit.gg is a global proxy that allows anyone to host a server without port forwarding. We use tunneling. Only the server needs to run the program, not every player!",
+  "author": "Dysta",
+  "source": "",
+  "website": "/",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761451994000,
+  "updated_at": 1761451994000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

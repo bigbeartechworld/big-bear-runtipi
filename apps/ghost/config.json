@@ -1,61 +1,21 @@
 {
-  "$schema": "../schema.json",
-  "name": "Ghost Production",
-  "port": 8117,
+  "name": "Ghost",
   "available": true,
+  "port": 2368,
   "exposable": true,
+  "dynamic_config": true,
   "id": "ghost",
-  "tipi_version": 117,
-  "version": "5.95.0",
-  "categories": ["social", "media"],
-  "description": "Ghost is a powerful app for new-media creators to publish, share, and grow a business around their content. It comes with modern tools to build a website, publish content, send newsletters & offer paid subscriptions to members.",
-  "short_desc": "Ghost - Turn your audience into a business.",
-  "author": "TryGhost",
-  "source": "https://github.com/TryGhost/Ghost",
-  "form_fields": [
-    {
-      "type": "random",
-      "label": "Ghost Database password",
-      "min": 20,
-      "env_variable": "GHOST_DATABASE_PASSWORD"
-    },
-    {
-      "type": "text",
-      "label": "Mail Service name",
-      "hint": "The name of your mail service (ie. Google)",
-      "required": false,
-      "env_variable": "GHOST_MAIL_SERVICE"
-    },
-    {
-      "type": "text",
-      "label": "SMTP Host",
-      "hint": "Your SMTP Server",
-      "required": false,
-      "env_variable": "GHOST_MAIL_HOST"
-    },
-    {
-      "type": "text",
-      "label": "SMTP Port",
-      "hint": "Your SMTP Port",
-      "required": false,
-      "env_variable": "GHOST_MAIL_PORT"
-    },
-    {
-      "type": "text",
-      "label": "SMTP Username",
-      "hint": "Your SMTP Server User/Username",
-      "required": false,
-      "env_variable": "GHOST_MAIL_USER"
-    },
-    {
-      "type": "text",
-      "label": "SMTP Password",
-      "hint": "Your SMTP Server Password",
-      "required": false,
-      "env_variable": "GHOST_MAIL_PASSWORD"
-    }
-  ],
+  "description": "Ghost is a free and open source blogging platform written in JavaScript and distributed under the MIT License, designed to simplify the process of online publishing for individual bloggers as well as online publications.",
+  "tipi_version": 1,
+  "version": "6.5.0-alpine",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "Ghost is a free and open source blogging platform",
+  "author": "ghost",
+  "source": "",
+  "website": "",
   "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1691943801422,
-  "updated_at": 1727493422000
+  "created_at": 1761451983000,
+  "updated_at": 1761451983000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
 }

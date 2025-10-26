@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "big-bear-seafile",
+      "image": "seafileltd/seafile-mc:11.0.13",
+      "internalPort": 80,
+      "isMain": true
+    }
+  ]
+}

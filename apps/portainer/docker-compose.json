@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "app",
+      "image": "portainer/portainer-ce:2.35.0-alpine",
+      "internalPort": 8000,
+      "isMain": true
+    }
+  ]
+}

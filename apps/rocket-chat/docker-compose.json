@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "app",
+      "image": "rocket.chat:6.13.1",
+      "internalPort": 3000,
+      "isMain": true
+    }
+  ]
+}

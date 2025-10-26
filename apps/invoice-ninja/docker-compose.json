@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "big-bear-invoice-ninja",
+      "image": "invoiceninja/invoiceninja:5.12.28",
+      "internalPort": null,
+      "isMain": true
+    }
+  ]
+}

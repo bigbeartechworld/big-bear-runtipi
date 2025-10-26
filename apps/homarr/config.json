@@ -1,29 +1,21 @@
 {
-  "$schema": "../schema.json",
   "name": "Homarr",
   "available": true,
+  "port": 7575,
   "exposable": true,
-  "port": 8102,
+  "dynamic_config": true,
   "id": "homarr",
-  "tipi_version": 30,
-  "version": "0.15.4",
-  "categories": ["utilities"],
-  "description": "A homepage for your server.",
-  "short_desc": "Homarr is a simple and lightweight homepage for your server, that helps you easily access all of your services in one place.",
+  "description": "Simplify the management of your server with Homarr - a sleek, modern dashboard that puts all of your apps and services at your fingertips. With Homarr, you can access and control everything in one convenient location. Homarr seamlessly integrates with the apps you've added, providing you with valuable information and giving you complete control. Installation is a breeze, and Homarr supports a wide range of deployment methods.",
+  "tipi_version": 1,
+  "version": "0.16.0",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "Homarr",
   "author": "ajnart",
-  "source": "https://github.com/ajnart/homarr",
-  "website": "https://discord.gg/C2WTXkzkwK",
-  "form_fields": [
-    {
-      "type": "password",
-      "label": "Password",
-      "max": 50,
-      "min": 3,
-      "required": true,
-      "env_variable": "HOMARR_PASSWORD"
-    }
-  ],
+  "source": "",
+  "website": "",
   "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1691943801422,
-  "updated_at": 1725219552000
+  "created_at": 1761451984000,
+  "updated_at": 1761451984000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
 }

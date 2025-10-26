@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "big-bear-kavita",
+      "image": "jvmilazz0/kavita:0.8.7",
+      "internalPort": 5000,
+      "isMain": true
+    }
+  ]
+}

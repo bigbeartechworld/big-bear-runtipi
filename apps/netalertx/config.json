@@ -1,0 +1,21 @@
+{
+  "name": "NetAlertX",
+  "available": true,
+  "port": 8080,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "netalertx",
+  "description": "WIFI / LAN intruder detector. Scans for devices connected to your network and alerts you if new and unknown devices are found.",
+  "tipi_version": 1,
+  "version": "25.10.1",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "NetAlertX",
+  "author": "jokobsk",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761451990000,
+  "updated_at": 1761451990000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

@@ -1,46 +1,21 @@
 {
-  "$schema": "../schema.json",
-  "name": "Obsidian LiveSync",
-  "port": 5984,
+  "name": "Obsidian Livesync",
   "available": true,
+  "port": 5984,
   "exposable": true,
-  "no_gui": true,
+  "dynamic_config": true,
   "id": "obsidian-livesync",
+  "description": "Self-hosted database for synchronizing Obsidian vaults.",
   "tipi_version": 1,
-  "version": "3.1.2",
-  "categories": ["utilities"],
-  "description": "LiveSync couchdb backend for Obsidian",
-  "short_desc": "LiveSync couchdb backend for Obsidian",
-  "author": "vorotamoroz",
-  "source": "https://github.com/vrtmrz/self-hosted-livesync-server",
-  "form_fields": [
-    {
-      "type": "text",
-      "label": "CouchDB username",
-      "min": 5,
-      "required": true,
-      "env_variable": "OBSIDIAN_LIVESYNC_USER"
-    },
-    {
-      "type": "password",
-      "label": "CouchDB password",
-      "max": 50,
-      "min": 8,
-      "required": true,
-      "env_variable": "OBSIDIAN_LIVESYNC_PASSWORD"
-    },
-    {
-      "type": "number",
-      "label": "CouchDB port",
-      "hint": "Default is 5984",
-      "min": 1,
-      "max": 65535,
-      "required": false,
-      "default": "5984",
-      "env_variable": "CUSTOM_PORTOBSIDIAN_LIVESYNC_PORT"
-    }
-  ],
+  "version": "3.5.0",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "Self-hosted database for synchronizing Obsidian vaults.",
+  "author": "",
+  "source": "",
+  "website": "",
   "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1691943801422,
-  "updated_at": 1723566284000
+  "created_at": 1761451991000,
+  "updated_at": 1761451991000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
 }

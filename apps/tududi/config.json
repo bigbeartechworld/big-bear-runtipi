@@ -1,0 +1,21 @@
+{
+  "name": "Tududi",
+  "available": true,
+  "port": 9292,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "tududi",
+  "description": "tududi is a task and project management web application built with Sinatra. It allows users to efficiently manage their tasks and projects, categorize them into different areas, and track due dates. tududi is designed to be intuitive and easy to use, providing a seamless experience for personal productivity.",
+  "tipi_version": 1,
+  "version": "0.84",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "tududi is a task and project management web application built with Sinatra",
+  "author": "chrisvel",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761451998000,
+  "updated_at": 1761451998000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

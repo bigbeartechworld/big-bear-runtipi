@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "big-bear-piwigo",
+      "image": "linuxserver/piwigo:15.7.0",
+      "internalPort": 80,
+      "isMain": true
+    }
+  ]
+}

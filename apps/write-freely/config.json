@@ -1,0 +1,21 @@
+{
+  "name": "Write Freely",
+  "available": true,
+  "port": 8080,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "write-freely",
+  "description": "WriteFreely is a clean, minimalist publishing platform made for writers. Start a blog, share knowledge within your organization, or build a community around the shared act of writing.",
+  "tipi_version": 1,
+  "version": "0.16",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "Markdown-based publishing platform.",
+  "author": "nephatrine",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761452001000,
+  "updated_at": 1761452001000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

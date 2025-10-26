@@ -1,36 +1,21 @@
 {
-  "$schema": "../schema.json",
   "name": "Code Server",
   "available": true,
+  "port": 8080,
   "exposable": true,
-  "port": 8138,
+  "dynamic_config": true,
   "id": "code-server",
-  "tipi_version": 40,
-  "version": "4.93.1",
-  "categories": ["development"],
-  "description": "Code-server is VS Code running on a remote server, accessible through the browser.",
-  "short_desc": "VS Code in the browser",
-  "author": "coder",
-  "source": "https://github.com/coder/code-server",
-  "form_fields": [
-    {
-      "type": "password",
-      "label": "Password",
-      "max": 50,
-      "min": 3,
-      "required": true,
-      "env_variable": "CODESERVER_PASSWORD"
-    },
-    {
-      "type": "password",
-      "label": "Sudo Password",
-      "max": 50,
-      "min": 3,
-      "required": false,
-      "env_variable": "CODESERVER_SUDO_PASSWORD"
-    }
-  ],
+  "description": "Run VS Code on any machine anywhere and access it in the browser.",
+  "tipi_version": 1,
+  "version": "4.105.1",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "Code Server",
+  "author": "",
+  "source": "",
+  "website": "",
   "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1691943801422,
-  "updated_at": 1727290482000
+  "created_at": 1761451980000,
+  "updated_at": 1761451980000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
 }

@@ -1,0 +1,21 @@
+{
+  "name": "MySpeed",
+  "available": true,
+  "port": 5216,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "myspeed",
+  "description": "MySpeed is a speed test analysis software that records your internet speed for up to 30 days.",
+  "tipi_version": 1,
+  "version": "1.0.9",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "A speed test analysis software that shows your internet speed for up to 30 days",
+  "author": "gnmyt",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761451989000,
+  "updated_at": 1761451989000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

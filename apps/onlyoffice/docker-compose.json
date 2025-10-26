@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "app",
+      "image": "onlyoffice/documentserver:9.1.0",
+      "internalPort": 80,
+      "isMain": true
+    }
+  ]
+}

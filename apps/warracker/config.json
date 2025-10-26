@@ -1,0 +1,21 @@
+{
+  "name": "Warracker",
+  "available": true,
+  "port": 8005,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "warracker",
+  "description": "A self-hosted warranty tracker",
+  "tipi_version": 1,
+  "version": "9.9.3",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "A self-hosted warranty tracker",
+  "author": "sassanix",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761452000000,
+  "updated_at": 1761452000000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

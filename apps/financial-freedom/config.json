@@ -1,0 +1,21 @@
+{
+  "name": "Financial Freedom",
+  "available": true,
+  "port": 8443,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "financial-freedom",
+  "description": "Keep investors and their buyers out of your financial data. Own 100% of your data and start building financial wealth.",
+  "tipi_version": 1,
+  "version": "v0.2.0-alpha1",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "Financial Freedom",
+  "author": "serversideup",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761451982000,
+  "updated_at": 1761451982000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

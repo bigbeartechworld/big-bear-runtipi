@@ -1,0 +1,21 @@
+{
+  "name": "TP-Link Omada Controller",
+  "available": true,
+  "port": 8088,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "tp-link-omada-controller",
+  "description": "Docker image for TP-Link Omada Controller to control TP-Link Omada Hardware",
+  "tipi_version": 1,
+  "version": "5.15",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "TP-Link Omada Controller",
+  "author": "",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761451998000,
+  "updated_at": 1761451998000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

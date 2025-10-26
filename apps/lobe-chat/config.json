@@ -1,45 +1,21 @@
 {
-  "name": "Lobe Chat",
+  "name": "LobeChat",
   "available": true,
   "port": 3210,
   "exposable": true,
+  "dynamic_config": true,
   "id": "lobe-chat",
-  "description": "LobeChat is an open-source, high-performance chatbot framework that supports speech synthesis, multimodal, and extensible (Function Call) plugin system.",
-  "tipi_version": 329,
-  "version": "1.21.6",
-  "categories": ["ai"],
-  "short_desc": "LLM chatbot framework",
-  "author": "https://github.com/lobehub",
-  "source": "https://github.com/lobehub/lobe-chat",
-  "website": "https://github.com/lobehub/lobe-chat",
-  "form_fields": [
-    {
-      "type": "text",
-      "label": "OpenAI API Key",
-      "required": true,
-      "env_variable": "OPENAI_API_KEY"
-    },
-    {
-      "type": "url",
-      "label": "OpenAI API URL",
-      "required": false,
-      "env_variable": "OPENAI_PROXY_URL"
-    },
-    {
-      "type": "text",
-      "label": "Custom Models",
-      "hint": "Comma separated list of model IDs",
-      "required": false,
-      "env_variable": "CUSTOM_MODELS"
-    },
-    {
-      "type": "password",
-      "label": "Password",
-      "required": false,
-      "env_variable": "ACCESS_CODE"
-    }
-  ],
+  "description": "LobeChat is a open-source, extensible (Function Calling), high-performance chatbot framework. It supports one-click free deployment of your private ChatGPT/LLM web application.",
+  "tipi_version": 1,
+  "version": "1.141.7",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "LobeChat",
+  "author": "lobehub",
+  "source": "",
+  "website": "",
   "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1691943801422,
-  "updated_at": 1728154109000
+  "created_at": 1761451988000,
+  "updated_at": 1761451988000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
 }

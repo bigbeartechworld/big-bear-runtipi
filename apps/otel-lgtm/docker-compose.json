@@ -1,0 +1,14 @@
+{
+  "services": [
+    {
+      "name": "big-bear-otel-lgtm",
+      "image": "grafana/otel-lgtm:0.11.12",
+      "internalPort": # Mapping port 3000 of the host to port 3000 of the container
+ ingress
+ 3000
+ "3000"
+ tcp,
+      "isMain": true
+    }
+  ]
+}

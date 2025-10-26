@@ -1,36 +1,21 @@
 {
-  "$schema": "../schema.json",
   "name": "Monica",
   "available": true,
+  "port": 8080,
   "exposable": true,
-  "port": 3291,
+  "dynamic_config": true,
   "id": "monica",
-  "tipi_version": 3,
-  "version": "4.1.2",
-  "categories": ["data", "social"],
   "description": "Monica is an open-source web application to organize and record your interactions with your loved ones. We call it a PRM, or Personal Relationship Management. Think of it as a CRM (a popular tool used by sales teams in the corporate world) for your friends or family.",
+  "tipi_version": 1,
+  "version": "4.1.2",
+  "categories": ["bigbearcasaos"],
   "short_desc": "A Personal Relationship Management tool to help you document your social life.",
-  "author": "monicahq",
-  "source": "https://github.com/monicahq/monica",
-  "form_fields": [
-    {
-      "type": "random",
-      "label": "Database password",
-      "required": false,
-      "min": 30,
-      "max": 30,
-      "env_variable": "MONICA_DB_PASS"
-    },
-    {
-      "type": "random",
-      "label": "Application key",
-      "required": false,
-      "min": 32,
-      "max": 32,
-      "env_variable": "MONICA_APP_KEY"
-    }
-  ],
+  "author": "monica",
+  "source": "",
+  "website": "",
   "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1691943801422,
-  "updated_at": 1723566283000
+  "created_at": 1761451989000,
+  "updated_at": 1761451989000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
 }

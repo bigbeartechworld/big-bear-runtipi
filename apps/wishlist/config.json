@@ -1,0 +1,21 @@
+{
+  "name": "Wishlist",
+  "available": true,
+  "port": 3280,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "wishlist",
+  "description": "Wishlist is a self-hosted wishlist application that you can share with your friends and family. You no longer have to wonder what to get your family for the holidays, simply check their wishlist and claim any available item!",
+  "tipi_version": 1,
+  "version": "0.51.1",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "Wishlist is a self-hosted wishlist application that you can share with your friends and family.",
+  "author": "cmintey",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1761452000000,
+  "updated_at": 1761452000000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "big-bear-wg-easy-v15",
+      "image": "ghcr.io/wg-easy/wg-easy:15",
+      "internalPort": 51820/udp,
+      "isMain": true
+    }
+  ]
+}

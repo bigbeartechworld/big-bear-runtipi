@@ -1,28 +1,21 @@
 {
-  "$schema": "../schema.json",
-  "name": "Joplin Server",
+  "name": "joplin",
   "available": true,
+  "port": 22300,
   "exposable": true,
-  "port": 8099,
+  "dynamic_config": true,
   "id": "joplin",
-  "tipi_version": 14,
-  "version": "3.0.1",
-  "categories": ["utilities"],
-  "description": "Default credentials: admin@localhost / admin",
-  "short_desc": "Note taking and to-do application with synchronisation",
-  "author": "https://github.com/laurent22",
-  "source": "https://github.com/laurent22/joplin",
-  "website": "https://joplinapp.org",
-  "form_fields": [
-    {
-      "type": "random",
-      "label": "Joplin DB password",
-      "max": 50,
-      "min": 8,
-      "env_variable": "JOPLIN_DB_PASSWORD"
-    }
-  ],
+  "description": "Note taking and to-do application with synchronisation",
+  "tipi_version": 1,
+  "version": "3.4.3",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "joplin",
+  "author": "joplin",
+  "source": "",
+  "website": "",
   "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1691943801422,
-  "updated_at": 1724015121000
+  "created_at": 1761451986000,
+  "updated_at": 1761451986000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
 }
