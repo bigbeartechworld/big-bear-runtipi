@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "big-bear-budibase",
-      "image": "budibase/budibase:3.22.2",
+      "image": "budibase/budibase:3.22.3",
       "internalPort": 80,
       "isMain": true
     }
