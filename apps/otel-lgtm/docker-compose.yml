@@ -8,7 +8,7 @@ services:
     # Name of the container
     container_name: otel-lgtm
     # Image to be used for the container
-    image: grafana/otel-lgtm:0.11.12
+    image: grafana/otel-lgtm:0.11.13
     # Container restart policy
     restart: unless-stopped
     # Volumes to be mounted to the container

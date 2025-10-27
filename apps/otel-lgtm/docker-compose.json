@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "big-bear-otel-lgtm",
-      "image": "grafana/otel-lgtm:0.11.12",
+      "image": "grafana/otel-lgtm:0.11.13",
       "internalPort": 3000,
       "isMain": true
     }
