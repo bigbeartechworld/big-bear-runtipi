@@ -7,15 +7,15 @@
   "id": "nextcloud-ls",
   "description": "Nextcloud puts your data at your fingertips, under your control. Store your documents, calendar, contacts and photos on a server at home, at one of our providers or in a data center you trust.",
   "tipi_version": 1,
-  "version": "32.0.0",
+  "version": "32.0.1",
   "categories": ["bigbearcasaos"],
   "short_desc": "LinuxServer - The productivity platform that keeps you in control",
   "author": "nextcloud",
   "source": "",
   "website": "",
   "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508294000,
-  "updated_at": 1761508294000,
+  "created_at": 1761582116000,
+  "updated_at": 1761582116000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
