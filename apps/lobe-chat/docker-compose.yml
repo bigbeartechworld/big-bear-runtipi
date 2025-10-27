@@ -8,7 +8,7 @@ services:
     # Name of the container
     container_name: lobe-chat
     # Image to be used for the container
-    image: lobehub/lobe-chat:1.141.10
+    image: lobehub/lobe-chat:1.142.0
     # Container restart policy
     restart: unless-stopped
     # Environment variables for the container

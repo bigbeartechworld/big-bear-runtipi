@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "big-bear-lobe-chat",
-      "image": "lobehub/lobe-chat:1.141.10",
+      "image": "lobehub/lobe-chat:1.142.0",
       "internalPort": 3210,
       "isMain": true
     }
