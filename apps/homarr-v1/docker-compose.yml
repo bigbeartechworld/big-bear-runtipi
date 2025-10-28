@@ -16,7 +16,7 @@ services:
       # Mounting docker.sock to allow docker management via Homarr
       - /var/run/docker.sock:/var/run/docker.sock
       # Mounting the local homarr directory to /appdata inside the container
-      - ./data/appdata:/appdata
+      - homarr-v1_appdata:/appdata
     # Environment variables
     environment:
       # Secret encryption key for securing sensitive data (64 character hex string)
@@ -30,6 +30,10 @@ services:
       runtipi.managed: "true"
     networks:
       - tipi_main_network
+volumes:
+  homarr-v1_appdata:
+    name: homarr-v1_appdata
+    driver: local
 networks:
   tipi_main_network:
     external: true

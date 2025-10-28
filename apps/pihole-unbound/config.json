@@ -1,7 +1,7 @@
 {
   "name": "Pi-hole and Unbound",
   "available": true,
-  "port": 8119,
+  "port": 8080,
   "exposable": true,
   "dynamic_config": true,
   "id": "pihole-unbound",
@@ -12,10 +12,10 @@
   "short_desc": "Pi-hole and Unbound",
   "author": "bigbeartechworld",
   "source": "",
-  "website": "/admin",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508319000,
-  "updated_at": 1761508319000,
+  "website": "",
+  "supported_architectures": ["amd64","arm64"],
+  "created_at": 1761682004000,
+  "updated_at": 1761682004000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

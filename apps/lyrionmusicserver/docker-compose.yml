@@ -17,11 +17,11 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Mounting the local big-bear-lyrionmusicserver/config directory to /config inside the container
-      - ./data/config:/config:rw
+      - lyrionmusicserver_config:/config:rw
       # Mounting the local big-bear-lyrionmusicserver/music directory to /music inside the container
-      - ./data/music:/music:ro
+      - lyrionmusicserver_music:/music:ro
       # Mounting the local big-bear-lyrionmusicserver/playlists directory to /playlist inside the container
-      - ./data/playlists:/playlist:rw
+      - lyrionmusicserver_playlists:/playlist:rw
       # Mounting the local /etc/localtime directory to /etc/localtime inside the container
       - /etc/localtime:/etc/localtime:ro
       # Mounting the local /etc/timezone directory to /etc/timezone inside the container
@@ -40,6 +40,16 @@ services:
       runtipi.managed: "true"
     networks:
       - tipi_main_network
+volumes:
+  lyrionmusicserver_config:
+    name: lyrionmusicserver_config
+    driver: local
+  lyrionmusicserver_music:
+    name: lyrionmusicserver_music
+    driver: local
+  lyrionmusicserver_playlists:
+    name: lyrionmusicserver_playlists
+    driver: local
 networks:
   tipi_main_network:
     external: true

@@ -1,7 +1,7 @@
 {
   "name": "Unifi Network Application",
   "available": true,
-  "port": 8446,
+  "port": 8443,
   "exposable": true,
   "dynamic_config": true,
   "id": "unifi-network-application",
@@ -13,9 +13,9 @@
   "author": "Ubiquiti",
   "source": "",
   "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508357000,
-  "updated_at": 1761508357000,
+  "supported_architectures": ["amd64","arm64"],
+  "created_at": 1761682040000,
+  "updated_at": 1761682040000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

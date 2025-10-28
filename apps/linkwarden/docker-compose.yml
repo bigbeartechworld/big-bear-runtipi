@@ -15,7 +15,7 @@ services:
     restart: unless-stopped
     # Volumes to be mounted to the container
     volumes:
-      - ./data/data/linkwarden:/data/data
+      - linkwarden_data_linkwarden:/data/data
     # Environment variables
     environment:
       - DATABASE_URL=postgresql://casaos:casaospassword@big-bear-linkwarden-db:5432/big-bear-linkwarden
@@ -28,7 +28,6 @@ services:
       - "3000:3000"
     # Networks to be attached to the container
     networks:
-      - linkwarden_network
       - tipi_main_network
     labels:
       runtipi.managed: "true"
@@ -47,13 +46,10 @@ services:
       - POSTGRES_DB=big-bear-linkwarden
     # Volumes to be mounted
     volumes:
-      - ./data/data/postgres:/var/lib/postgresql/data
+      - linkwarden_data_postgres:/var/lib/postgresql/data
     # Networks to be attached
     networks:
       - linkwarden_network
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
 # Networks to be created
 networks:
   # Network name
@@ -62,3 +58,10 @@ networks:
     driver: bridge
   tipi_main_network:
     external: true
+volumes:
+  linkwarden_data_linkwarden:
+    name: linkwarden_data_linkwarden
+    driver: local
+  linkwarden_data_postgres:
+    name: linkwarden_data_postgres
+    driver: local

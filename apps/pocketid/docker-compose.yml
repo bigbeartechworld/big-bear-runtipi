@@ -28,7 +28,7 @@ services:
         protocol: tcp # Port mapping between host and container
     volumes:
       - type: bind
-        source: ./data/data
+        source: pocketid_data
         target: /app/data # Volume for persistent data
     devices: []
     cap_add: []
@@ -43,6 +43,10 @@ services:
       start_period: 10s
     networks:
       - tipi_main_network
+volumes:
+  pocketid_data:
+    name: pocketid_data
+    driver: local
 networks:
   tipi_main_network:
     external: true

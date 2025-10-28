@@ -22,7 +22,7 @@ services:
     # Volume mappings required for system integration
     # These mounts allow the container to interact with the host system
     volumes:
-      - ./data/data/config:/mnt/config
+      - write-freely_data_config:/mnt/config
     # Map port 8080 on the host to port 8080 on the container
     ports:
       - 70:70/tcp
@@ -31,6 +31,10 @@ services:
       runtipi.managed: "true"
     networks:
       - tipi_main_network
+volumes:
+  write-freely_data_config:
+    name: write-freely_data_config
+    driver: local
 networks:
   tipi_main_network:
     external: true

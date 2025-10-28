@@ -13,13 +13,10 @@ services:
       - MYSQL_USER=big_bear_piwigo # Database user
       - MYSQL_PASSWORD=358fac48-4beb-4027-9c11-840464aca400 # Database user password
     volumes:
-      - ./data/mysql:/var/lib/mysql # Persist database data
+      - piwigo_mysql:/var/lib/mysql # Persist database data
     restart: unless-stopped
     networks:
       - big_bear_piwigo_network
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
   piwigo:
     # Name of the container
     container_name: piwigo
@@ -34,13 +31,12 @@ services:
       - TZ=UTC # Timezone setting for the container
     # Volumes to be mounted to the container
     volumes:
-      - ./data/config:/config # Configuration files
-      - ./data/gallery:/gallery # Gallery files
+      - piwigo_config:/config # Configuration files
+      - piwigo_gallery:/gallery # Gallery files
     # Ports mapping between host and container
     ports:
       - "8080:80" # Mapping port 8080 of the host to port 80 of the container
     networks:
-      - big_bear_piwigo_network
       - tipi_main_network
     labels:
       runtipi.managed: "true"
@@ -50,3 +46,13 @@ networks:
     driver: bridge # Defines the network driver to be used (bridge)
   tipi_main_network:
     external: true
+volumes:
+  piwigo_config:
+    name: piwigo_config
+    driver: local
+  piwigo_gallery:
+    name: piwigo_gallery
+    driver: local
+  piwigo_mysql:
+    name: piwigo_mysql
+    driver: local

@@ -10,9 +10,9 @@ services:
     # Assigns a name to the container created from this service definition
     container_name: homer
     # Binds the container's volumes to host directories or named volumes
-    # In this case, bind-mounts `./data/assets` from the host to `/www/assets` inside the container
+    # In this case, bind-mounts `/DATA/AppData/$AppID/assets` from the host to `/www/assets` inside the container
     volumes:
-      - ./data/assets:/www/assets
+      - homer_assets:/www/assets
     # Maps the container's ports to the host's ports
     # In this case, it maps port 8080 inside the container to port 8080 on the host
     ports:
@@ -28,6 +28,10 @@ services:
       runtipi.managed: "true"
     networks:
       - tipi_main_network
+volumes:
+  homer_assets:
+    name: homer_assets
+    driver: local
 networks:
   tipi_main_network:
     external: true

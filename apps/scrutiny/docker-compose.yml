@@ -15,10 +15,10 @@ services:
     volumes:
       # Mount the config directory from the host to the container
       # This allows the user to persist configuration changes
-      - ./data/config:/opt/scrutiny/config
+      - scrutiny_config:/opt/scrutiny/config
       # Mount the InfluxDB data directory from the host to the container
       # This allows the user to persist data from the InfluxDB database
-      - ./data/influxdb:/opt/scrutiny/influxdb
+      - scrutiny_influxdb:/opt/scrutiny/influxdb
       # Mount the udev directory from the host to the container
       # This is required for the container to access raw I/O devices
       - /run/udev:/run/udev:ro
@@ -64,6 +64,13 @@ services:
       runtipi.managed: "true"
     networks:
       - tipi_main_network
+volumes:
+  scrutiny_config:
+    name: scrutiny_config
+    driver: local
+  scrutiny_influxdb:
+    name: scrutiny_influxdb
+    driver: local
 networks:
   tipi_main_network:
     external: true

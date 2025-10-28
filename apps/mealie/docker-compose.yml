@@ -13,8 +13,8 @@ services:
     restart: unless-stopped
     # Volumes to be mounted to the container
     volumes:
-      # Mounting the local /app/data directory to ./data/data inside the container
-      - ./data/data:/app/data
+      # Mounting the local /app/data directory to /DATA/AppData/$AppID/data inside the container
+      - mealie_data:/app/data
     # Ports mapping between host and container
     ports:
       # Mapping port 7575 of the host to port 9000 of the container
@@ -23,6 +23,10 @@ services:
       runtipi.managed: "true"
     networks:
       - tipi_main_network
+volumes:
+  mealie_data:
+    name: mealie_data
+    driver: local
 networks:
   tipi_main_network:
     external: true

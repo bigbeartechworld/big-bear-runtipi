@@ -24,11 +24,18 @@ services:
       - TS_STATE_DIR=/var/lib/tailscale
     # Volumes to be mounted to the container
     volumes:
-      - ./data/state:/var/lib/tailscale
-      - ./data/config:/config
+      - tailscale_state:/var/lib/tailscale
+      - tailscale_config:/config
       - /dev/net/tun:/dev/net/tun
     cap_add:
       - net_admin
       - sys_module
     labels:
       runtipi.managed: "true"
+volumes:
+  tailscale_config:
+    name: tailscale_config
+    driver: local
+  tailscale_state:
+    name: tailscale_state
+    driver: local
