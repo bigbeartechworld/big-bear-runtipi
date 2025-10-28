@@ -10,17 +10,13 @@ services:
       POSTGRES_USER: umami
       POSTGRES_PASSWORD: umami
     volumes: # Volumes for data persistence
-      - ./data/pgdata:/var/lib/postgresql/data
+      - umami_pgdata:/var/lib/postgresql/data
     restart: always # Restart policy
     healthcheck: # Health check configuration
       test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
       interval: 5s
       timeout: 5s
       retries: 5
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
   umami:
     image: ghcr.io/umami-software/umami:postgresql-latest # Docker image for the Umami app
     ports:
@@ -33,11 +29,15 @@ services:
       db:
         condition: service_healthy
     restart: always # Restart policy
+    container_name: umami
     labels:
       runtipi.managed: "true"
-    container_name: umami
     networks:
       - tipi_main_network
+volumes:
+  umami_pgdata:
+    name: umami_pgdata
+    driver: local
 networks:
   tipi_main_network:
     external: true

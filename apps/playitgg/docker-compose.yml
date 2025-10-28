@@ -14,11 +14,15 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Mounting the local playitgg directory to /secrets inside the container
-      - ./data/secrets:/secrets
+      - playitgg_secrets:/secrets
     labels:
       runtipi.managed: "true"
     networks:
       - tipi_main_network
+volumes:
+  playitgg_secrets:
+    name: playitgg_secrets
+    driver: local
 networks:
   tipi_main_network:
     external: true

@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-microbin",
+      "name": "microbin",
       "image": "danielszabo99/microbin:2.0.4",
-      "internalPort": 8080,
+      "internalPort": 8888,
       "isMain": true
     }
   ]

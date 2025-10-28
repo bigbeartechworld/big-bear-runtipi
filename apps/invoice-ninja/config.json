@@ -1,7 +1,7 @@
 {
   "name": "Invoice Ninja",
   "available": true,
-  "port": 8101,
+  "port": 8080,
   "exposable": true,
   "dynamic_config": true,
   "id": "invoice-ninja",
@@ -13,9 +13,9 @@
   "author": "invoiceninja",
   "source": "",
   "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508266000,
-  "updated_at": 1761508266000,
+  "supported_architectures": ["amd64","arm64"],
+  "created_at": 1761686618000,
+  "updated_at": 1761686618000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

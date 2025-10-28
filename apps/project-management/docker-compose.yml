@@ -13,18 +13,15 @@ services:
       - MYSQL_PASSWORD=ed3f3aa2-9d2e-45e3-b20f-6c4c70f7382a
       - MYSQL_ROOT_PASSWORD=ed3f3aa2-9d2e-45e3-b20f-6c4c70f7382a
     volumes:
-      - ./data/mysql:/var/lib/mysql
+      - project-management_mysql:/var/lib/mysql
     restart: unless-stopped
     networks:
       - big_bear_project_management_network
-      - tipi_main_network
     healthcheck:
       test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-p${MYSQL_ROOT_PASSWORD}"]
       interval: 20s
       start_period: 10s
       timeout: 10s
-    labels:
-      runtipi.managed: "true"
   project-management:
     # Name of the container
     container_name: project-management
@@ -54,7 +51,6 @@ services:
       # Mapping port 8000 of the host to port 8000 of the container
       - "8000:8000"
     networks:
-      - big_bear_project_management_network
       - tipi_main_network
     depends_on:
       - big-bear-project-management-db
@@ -65,3 +61,7 @@ networks:
     driver: bridge
   tipi_main_network:
     external: true
+volumes:
+  project-management_mysql:
+    name: project-management_mysql
+    driver: local

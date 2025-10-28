@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-faster-whisper",
+      "name": "faster-whisper",
       "image": "linuxserver/faster-whisper:2.5.0",
-      "internalPort": 10300,
+      "internalPort": 7575,
       "isMain": true
     }
   ]

@@ -10,7 +10,7 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - ./data/pgdata:/var/lib/postgresql/data
+      - coolify_pgdata:/var/lib/postgresql/data
     environment:
       POSTGRES_USER: "coolify"
       POSTGRES_PASSWORD: "f1986213-9d72-4c36-bbd4-adca2f414fa1"
@@ -22,9 +22,6 @@ services:
       timeout: 2s
     networks:
       - big_bear_coolify_network
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
   big-bear-coolify-redis: # Redis service configuration
     container_name: big-bear-coolify-redis # Name of the running container
     image: redis:8.2.2-alpine@sha256:1c78f5e7512cc8b22b0edc95c20e7abd9e1fd832e5dfd5c3c6b59ce82fb238d0
@@ -34,7 +31,7 @@ services:
     environment:
       REDIS_PASSWORD: "9e3df6aa-ea48-4e59-a9c4-59798f1ba9b4"
     volumes:
-      - ./data/redis:/data
+      - coolify_redis:/data
     healthcheck:
       test: redis-cli ping
       interval: 5s
@@ -42,9 +39,6 @@ services:
       timeout: 2s
     networks:
       - big_bear_coolify_network
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
   big-bear-coolify-soketi:
     container_name: big-bear-coolify-soketi
     image: quay.io/soketi/soketi:1.6-16-alpine
@@ -63,9 +57,6 @@ services:
       timeout: 2s
     networks:
       - big_bear_coolify_network
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
   coolify:
     # Name of the container
     container_name: coolify
@@ -134,13 +125,13 @@ services:
     # Mount necessary volumes for accessing system information
     volumes:
       # ssh-keygen -f /DATA/AppData/big-bear-coolify/ssh/keys/id.root@host.docker.internal -t ed25519 -N '' -C root@coolify
-      - ./data/ssh:/var/www/html/storage/app/ssh
-      - ./data/applications:/var/www/html/storage/app/applications
-      - ./data/databases:/var/www/html/storage/app/databases
-      - ./data/services:/var/www/html/storage/app/services
-      - ./data/backups:/var/www/html/storage/app/backups
-      - ./data/webhooks-during-maintenance:/var/www/html/storage/app/webhooks-during-maintenance
-      - ./data/logs:/var/www/html/storage/logs
+      - coolify_ssh:/var/www/html/storage/app/ssh
+      - coolify_applications:/var/www/html/storage/app/applications
+      - coolify_databases:/var/www/html/storage/app/databases
+      - coolify_services:/var/www/html/storage/app/services
+      - coolify_backups:/var/www/html/storage/app/backups
+      - coolify_webhooks-during-maintenance:/var/www/html/storage/app/webhooks-during-maintenance
+      - coolify_logs:/var/www/html/storage/logs
     # Map port 8080 on the host to port 80 on the container
     ports:
       - "8000:8080"
@@ -155,7 +146,6 @@ services:
       big-bear-coolify-redis:
         condition: service_healthy
     networks:
-      - big_bear_coolify_network
       - tipi_main_network
     labels:
       runtipi.managed: "true"
@@ -167,3 +157,31 @@ networks:
     external: true
   tipi_main_network:
     external: true
+volumes:
+  coolify_applications:
+    name: coolify_applications
+    driver: local
+  coolify_backups:
+    name: coolify_backups
+    driver: local
+  coolify_databases:
+    name: coolify_databases
+    driver: local
+  coolify_logs:
+    name: coolify_logs
+    driver: local
+  coolify_pgdata:
+    name: coolify_pgdata
+    driver: local
+  coolify_redis:
+    name: coolify_redis
+    driver: local
+  coolify_services:
+    name: coolify_services
+    driver: local
+  coolify_ssh:
+    name: coolify_ssh
+    driver: local
+  coolify_webhooks-during-maintenance:
+    name: coolify_webhooks-during-maintenance
+    driver: local

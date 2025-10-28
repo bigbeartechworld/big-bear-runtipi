@@ -49,8 +49,20 @@ services:
     # Define volume mappings between the host and the container.
     volumes:
       # Mapping for data storage.
-      - ./data/data:/opt/tplink/EAPController/data
+      - tp-link-omada-controller_data:/opt/tplink/EAPController/data
       # Mapping for log storage.
-      - ./data/logs:/opt/tplink/EAPController/logs
+      - tp-link-omada-controller_logs:/opt/tplink/EAPController/logs
     labels:
       runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+volumes:
+  tp-link-omada-controller_data:
+    name: tp-link-omada-controller_data
+    driver: local
+  tp-link-omada-controller_logs:
+    name: tp-link-omada-controller_logs
+    driver: local
+networks:
+  tipi_main_network:
+    external: true

@@ -13,23 +13,17 @@ services:
       - POSTGRES_PASSWORD=ea9dee39-c390-4a88-be39-8034f4bb9b82
     restart: unless-stopped
     volumes:
-      - ./data/data/pgdata:/var/lib/postgresql/data
+      - docmost_data_pgdata:/var/lib/postgresql/data
     networks:
       - big-bear-docmost-network
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
   big-bear-docmost-redis:
     container_name: big-bear-docmost-redis
     image: redis:7.2.11-alpine@sha256:b19a2cb55412c26e0c3725011ac04397eba5cb0d7f090f739cbbce8dc97f8e60
     restart: unless-stopped
     volumes:
-      - ./data/data/redis:/data
+      - docmost_data_redis:/data
     networks:
       - big-bear-docmost-network
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
   docmost:
     # Name of the container
     container_name: docmost
@@ -44,13 +38,12 @@ services:
       - REDIS_URL=redis://big-bear-docmost-redis:6379/0
     # Volumes to be mounted to the container
     volumes:
-      - ./data/data/storage:/app/data/storage
+      - docmost_data_storage:/app/data/storage
     # Ports mapping between host and container
     ports:
       # Mapping port 3000 of the host to port 3000 of the container
       - "3000:3000"
     networks:
-      - big-bear-docmost-network
       - tipi_main_network
     depends_on:
       - big-bear-docmost-db
@@ -62,3 +55,13 @@ networks:
     driver: bridge
   tipi_main_network:
     external: true
+volumes:
+  docmost_data_pgdata:
+    name: docmost_data_pgdata
+    driver: local
+  docmost_data_redis:
+    name: docmost_data_redis
+    driver: local
+  docmost_data_storage:
+    name: docmost_data_storage
+    driver: local
