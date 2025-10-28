@@ -33,15 +33,12 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Mounting the local peppermint/postgres/data directory to /var/lib/postgresql/data inside the container
-      - ./data/postgres/data:/var/lib/postgresql/data
+      - peppermint_postgres_data:/var/lib/postgresql/data
     # Uses default network mode
     networks:
       - default
-      - tipi_main_network
     # Privilege of the container
     privileged: false
-    labels:
-      runtipi.managed: "true"
   peppermint:
     # Name of the container
     container_name: peppermint
@@ -53,7 +50,6 @@ services:
     privileged: false
     # Uses default network mode
     networks:
-      - default
       - tipi_main_network
     # Ports mapping between host and container
     ports:
@@ -89,3 +85,7 @@ networks:
     name: peppermint_default
   tipi_main_network:
     external: true
+volumes:
+  peppermint_postgres_data:
+    name: peppermint_postgres_data
+    driver: local

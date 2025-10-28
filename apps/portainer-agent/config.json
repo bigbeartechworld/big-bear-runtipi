@@ -1,7 +1,7 @@
 {
   "name": "Portainer Agent",
   "available": true,
-  "port": 8124,
+  "port": 8000,
   "exposable": true,
   "dynamic_config": true,
   "id": "portainer-agent",
@@ -13,9 +13,9 @@
   "author": "portainer",
   "source": "",
   "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508329000,
-  "updated_at": 1761508329000,
+  "supported_architectures": ["amd64","arm64"],
+  "created_at": 1761684872000,
+  "updated_at": 1761684872000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

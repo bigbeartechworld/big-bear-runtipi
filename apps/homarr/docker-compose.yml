@@ -14,11 +14,11 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Mounting the local homarr/configs directory to /app/data/configs inside the container
-      - ./data/configs:/app/data/configs
+      - homarr_configs:/app/data/configs
       # Mounting the local homarr/icons directory to /app/public/icons inside the container
-      - ./data/icons:/app/public/icons
+      - homarr_icons:/app/public/icons
       # Mounting the local homarr/dat directory to /data inside the container
-      - ./data/data:/data
+      - homarr_data:/data
       # Mounting docker.sock to allow docker management via Homarr
       - /var/run/docker.sock:/var/run/docker.sock
     # Ports mapping between host and container
@@ -29,6 +29,16 @@ services:
       runtipi.managed: "true"
     networks:
       - tipi_main_network
+volumes:
+  homarr_configs:
+    name: homarr_configs
+    driver: local
+  homarr_data:
+    name: homarr_data
+    driver: local
+  homarr_icons:
+    name: homarr_icons
+    driver: local
 networks:
   tipi_main_network:
     external: true

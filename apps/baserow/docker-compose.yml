@@ -17,11 +17,15 @@ services:
       - "7351:443" # Map port 7301 on the host to port 443 in the container.
     # Define volumes to persist data between container restarts.
     volumes:
-      - ./data/data:/baserow/data
+      - baserow_data:/baserow/data
     labels:
       runtipi.managed: "true"
     networks:
       - tipi_main_network
+volumes:
+  baserow_data:
+    name: baserow_data
+    driver: local
 networks:
   tipi_main_network:
     external: true

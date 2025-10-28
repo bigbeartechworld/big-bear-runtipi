@@ -2,8 +2,8 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "app",
-      "image": "ghcr.io/codex-team/codex.docs:v2.2",
+      "name": "codex-docs",
+      "image": "ghcr.io/codex-team/codex.docs:2.2",
       "internalPort": 3000,
       "isMain": true
     }

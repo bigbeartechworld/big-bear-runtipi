@@ -17,7 +17,7 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Mounting the local /DATA/AppData/big-bear-uisp/config directory to /config inside the container
-      - ./data/config:/config
+      - uisp_config:/config
     # Ports mapping between host and container
     ports:
       # Mapping port 8080 of the host to port 80 of the container
@@ -28,6 +28,10 @@ services:
       runtipi.managed: "true"
     networks:
       - tipi_main_network
+volumes:
+  uisp_config:
+    name: uisp_config
+    driver: local
 networks:
   tipi_main_network:
     external: true

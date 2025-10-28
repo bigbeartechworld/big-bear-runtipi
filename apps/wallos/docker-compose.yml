@@ -17,9 +17,9 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Mounting the local /DATA/AppData/big-bear-wallos/db directory to /var/www/html/db inside the container
-      - ./data/db:/var/www/html/db
+      - wallos_db:/var/www/html/db
       # Mounting the local /DATA/AppData/big-bear-wallos/logos directory to /var/www/html/images/uploads/logos inside the container
-      - ./data/logos:/var/www/html/images/uploads/logos
+      - wallos_logos:/var/www/html/images/uploads/logos
     # Ports mapping between host and container
     ports:
       # Mapping port 8282 of the host to port 80 of the container
@@ -28,6 +28,13 @@ services:
       runtipi.managed: "true"
     networks:
       - tipi_main_network
+volumes:
+  wallos_db:
+    name: wallos_db
+    driver: local
+  wallos_logos:
+    name: wallos_logos
+    driver: local
 networks:
   tipi_main_network:
     external: true

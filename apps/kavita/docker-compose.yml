@@ -13,10 +13,10 @@ services:
     restart: unless-stopped
     # Volumes to be mounted to the container
     volumes:
-      - ./data/data/kavita-config:/kavita/config
-      - ./data/media/data/books:/books
-      - ./data/media/data/comics:/comics
-      - ./data/media/data/manga:/manga
+      - kavita_data_kavita-config:/kavita/config
+      - kavita_media_data_books:/books
+      - kavita_media_data_comics:/comics
+      - kavita_media_data_manga:/manga
     # Ports mapping between host and container
     ports:
       # Mapping port 5000 of the host to port 5000 of the container
@@ -25,6 +25,19 @@ services:
       runtipi.managed: "true"
     networks:
       - tipi_main_network
+volumes:
+  kavita_data_kavita-config:
+    name: kavita_data_kavita-config
+    driver: local
+  kavita_media_data_books:
+    name: kavita_media_data_books
+    driver: local
+  kavita_media_data_comics:
+    name: kavita_media_data_comics
+    driver: local
+  kavita_media_data_manga:
+    name: kavita_media_data_manga
+    driver: local
 networks:
   tipi_main_network:
     external: true

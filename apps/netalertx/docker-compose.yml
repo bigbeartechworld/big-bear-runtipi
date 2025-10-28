@@ -15,10 +15,10 @@ services:
     privileged: true
     # Volumes to be mounted to the container
     volumes:
-      # Mounting the local ./data/config directory to /app/config inside the container
-      - ./data/config:/app/config
-      # Mounting the local ./data/db directory to /app/db inside the container
-      - ./data/db:/app/db
+      # Mounting the local /DATA/AppData/$AppID/config directory to /app/config inside the container
+      - netalertx_config:/app/config
+      # Mounting the local /DATA/AppData/$AppID/db directory to /app/db inside the container
+      - netalertx_db:/app/db
     # Environment variables
     environment:
       - TZ=UTC
@@ -29,3 +29,15 @@ services:
     network_mode: host
     labels:
       runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+volumes:
+  netalertx_config:
+    name: netalertx_config
+    driver: local
+  netalertx_db:
+    name: netalertx_db
+    driver: local
+networks:
+  tipi_main_network:
+    external: true

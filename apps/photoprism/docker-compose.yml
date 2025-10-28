@@ -15,7 +15,7 @@ services:
     # Command and options for the database service
     command: ["mysqld", "--innodb-buffer-pool-size=128M", "--transaction-isolation=READ-COMMITTED", "--character-set-server=utf8mb4", "--collation-server=utf8mb4_unicode_ci", "--max-connections=512", "--innodb-rollback-on-timeout=OFF", "--innodb-lock-wait-timeout=120"] # File system volumes for the database
     volumes:
-      - "./data/mysql:/var/lib/mysql"
+      - "photoprism_mysql:/var/lib/mysql"
     # Environment variables for the MariaDB
     environment:
       MARIADB_DATABASE: "photoprism"
@@ -25,9 +25,6 @@ services:
     # Network configurations for the database
     networks:
       - photoprism-network
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
   photoprism:
     # Name of the container
     container_name: photoprism
@@ -64,14 +61,13 @@ services:
     # File system volumes to be mounted to the container
     volumes:
       # Mount points for originals and storage
-      - "./data/originals:/photoprism/originals"
-      - "./data/storage:/photoprism/storage"
+      - "photoprism_originals:/photoprism/originals"
+      - "photoprism_storage:/photoprism/storage"
     # Network ports mapping between the host and the container
     ports:
       - "2342:2342" # Map host port 2342 to container port 2342
     # Networks to be attached to the container
     networks:
-      - photoprism-network
       - tipi_main_network
     # Other services that this service depends on
     depends_on:
@@ -86,3 +82,13 @@ networks:
     driver: bridge
   tipi_main_network:
     external: true
+volumes:
+  photoprism_mysql:
+    name: photoprism_mysql
+    driver: local
+  photoprism_originals:
+    name: photoprism_originals
+    driver: local
+  photoprism_storage:
+    name: photoprism_storage
+    driver: local

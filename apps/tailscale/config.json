@@ -1,7 +1,7 @@
 {
   "name": "Tailscale",
   "available": true,
-  "port": 8133,
+  "port": 8000,
   "exposable": true,
   "dynamic_config": true,
   "id": "tailscale",
@@ -13,9 +13,9 @@
   "author": "tailscale",
   "source": "",
   "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508348000,
-  "updated_at": 1761508348000,
+  "supported_architectures": ["amd64","arm64"],
+  "created_at": 1761684891000,
+  "updated_at": 1761684891000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

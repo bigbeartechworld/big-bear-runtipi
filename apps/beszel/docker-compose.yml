@@ -13,7 +13,7 @@ services:
     restart: unless-stopped
     # Volumes to be mounted to the container
     volumes:
-      - ./data/data:/beszel_data
+      - beszel_data:/beszel_data
     # Ports mapping between host and container
     ports:
       # Mapping port 8090 of the host to port 8090 of the container
@@ -22,6 +22,10 @@ services:
       runtipi.managed: "true"
     networks:
       - tipi_main_network
+volumes:
+  beszel_data:
+    name: beszel_data
+    driver: local
 networks:
   tipi_main_network:
     external: true

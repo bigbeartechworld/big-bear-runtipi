@@ -13,7 +13,7 @@ services:
       - MYSQL_LOG_CONSOLE=true
       - MARIADB_AUTO_UPGRADE=1
     volumes:
-      - ./data/mysql:/var/lib/mysql
+      - seafile_mysql:/var/lib/mysql
     restart: unless-stopped
     healthcheck:
       test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
@@ -24,9 +24,6 @@ services:
       retries: 3
     networks:
       - big_bear_seafile_network
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
   # Memcached service for seafile
   big-bear-seafile-memcached:
     container_name: big-bear-seafile-memcached
@@ -34,9 +31,6 @@ services:
     entrypoint: memcached -m 256
     networks:
       - big_bear_seafile_network
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
   seafile:
     # Name of the container
     container_name: seafile
@@ -51,7 +45,7 @@ services:
       big-bear-seafile-memcached:
         condition: service_started
     volumes:
-      - ./data/shared:/shared
+      - seafile_shared:/shared
     # Ports mapping between host and container
     ports:
       # Mapping port 8080 of the host to port 80 of the container
@@ -67,7 +61,6 @@ services:
       - SEAFILE_SERVER_HOSTNAME=docs.seafile.com # Specifies your host name if https is enabled.
     # Networks to be attached to the container
     networks:
-      - big_bear_seafile_network
       - tipi_main_network
     labels:
       runtipi.managed: "true"
@@ -77,3 +70,10 @@ networks:
     driver: bridge
   tipi_main_network:
     external: true
+volumes:
+  seafile_mysql:
+    name: seafile_mysql
+    driver: local
+  seafile_shared:
+    name: seafile_shared
+    driver: local

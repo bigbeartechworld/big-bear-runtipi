@@ -18,11 +18,15 @@ services:
     network_mode: bridge
     # Volumes for the service HOST -> CONTAINER
     volumes:
-      - ./data/data:/opt/focalboard/data
+      - focalboard_data:/opt/focalboard/data
     labels:
       runtipi.managed: "true"
     networks:
       - tipi_main_network
+volumes:
+  focalboard_data:
+    name: focalboard_data
+    driver: local
 networks:
   tipi_main_network:
     external: true

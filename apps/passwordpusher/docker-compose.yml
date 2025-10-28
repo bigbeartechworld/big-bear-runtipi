@@ -15,12 +15,9 @@ services:
       MARIADB_DATABASE: "passwordpusher_db"
       MARIADB_RANDOM_ROOT_PASSWORD: "yes"
     volumes:
-      - ./data/mysql:/var/lib/mysql
+      - passwordpusher_mysql:/var/lib/mysql
     networks:
       - big_bear_pwpush_network
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
   passwordpusher:
     # Name of the container (Docker does not have to generate a random name)
     container_name: passwordpusher
@@ -39,13 +36,12 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Storage volume
-      - ./data/storage:/opt/PasswordPusher/storage:rw
+      - passwordpusher_storage:/opt/PasswordPusher/storage:rw
     # Ports mapping between host and container
     ports:
       # Mapping port 5100 of the host to port 5100 of the container
       - "5100:5100"
     networks:
-      - big_bear_pwpush_network
       - tipi_main_network
     labels:
       runtipi.managed: "true"
@@ -54,3 +50,10 @@ networks:
     driver: bridge
   tipi_main_network:
     external: true
+volumes:
+  passwordpusher_mysql:
+    name: passwordpusher_mysql
+    driver: local
+  passwordpusher_storage:
+    name: passwordpusher_storage
+    driver: local

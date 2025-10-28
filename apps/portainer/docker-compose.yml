@@ -11,12 +11,16 @@ services:
       - 9000:9000
       - 9443:9443
     volumes:
-      - ./data/data:/data # Bind mount for Docker volumes
+      - portainer_data:/data # Bind mount for Docker volumes
       - /var/run/docker.sock:/var/run/docker.sock # Bind mount for Docker socket
     labels:
       runtipi.managed: "true"
     networks:
       - tipi_main_network
+volumes:
+  portainer_data:
+    name: portainer_data
+    driver: local
 networks:
   tipi_main_network:
     external: true
