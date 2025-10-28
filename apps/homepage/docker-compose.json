@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "Homepage",
+      "image": "ghcr.io/gethomepage/homepage:1.5.0",
+      "internalPort": 3000,
+      "isMain": true
+    }
+  ]
+}

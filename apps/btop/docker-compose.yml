@@ -29,7 +29,7 @@ services:
       # Mount the host's /etc/localtime file to the container's /etc/localtime file (read-only)
       - /etc/localtime:/etc/localtime:ro
       # Mount a local directory for persisting btop configuration files
-      - ./data/config:/root/.config/btop
+      - btop_config:/root/.config/btop
     # Map port 7681 on the host to port 7681 on the container
     ports:
       - "7681:7681"
@@ -37,6 +37,10 @@ services:
       runtipi.managed: "true"
     networks:
       - tipi_main_network
+volumes:
+  btop_config:
+    name: btop_config
+    driver: local
 networks:
   tipi_main_network:
     external: true

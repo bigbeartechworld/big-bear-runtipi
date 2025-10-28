@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "app",
+      "name": "pihole-unbound",
       "image": "bigbeartechworld/big-bear-pihole-unbound:2025.08.0",
-      "internalPort": 53,
+      "internalPort": 8080,
       "isMain": true
     }
   ]

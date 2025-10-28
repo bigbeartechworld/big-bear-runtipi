@@ -15,8 +15,8 @@ services:
     restart: unless-stopped
     # Volumes to be mounted to the container
     volumes:
-      - "./data/uploads:/zipline/uploads"
-      - "./data/public:/zipline/public"
+      - "zipline_uploads:/zipline/uploads"
+      - "zipline_public:/zipline/public"
     # Environment variables
     environment:
       - CORE_RETURN_HTTPS=false
@@ -31,7 +31,6 @@ services:
       - "3000:3000"
     # Networks to be attached to the container
     networks:
-      - zipline_network
       - tipi_main_network
     labels:
       runtipi.managed: "true"
@@ -50,13 +49,10 @@ services:
       - POSTGRES_DATABASE=zipline
     # Volumes to be mounted
     volumes:
-      - ./data/postgres:/var/lib/postgresql/data
+      - zipline_postgres:/var/lib/postgresql/data
     # Networks to be attached
     networks:
       - zipline_network
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
 # Networks to be created
 networks:
   # Network name
@@ -65,3 +61,13 @@ networks:
     driver: bridge
   tipi_main_network:
     external: true
+volumes:
+  zipline_postgres:
+    name: zipline_postgres
+    driver: local
+  zipline_public:
+    name: zipline_public
+    driver: local
+  zipline_uploads:
+    name: zipline_uploads
+    driver: local

@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-btop",
+      "name": "btop",
       "image": "bigbeartechworld/big-bear-btop:0.1.5",
       "internalPort": 7681,
       "isMain": true

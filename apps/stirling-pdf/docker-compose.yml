@@ -34,8 +34,8 @@ services:
     # These mounts allow the container to interact with the host system
     volumes:
       # Required for monitoring system resources and container metrics
-      - ./data/tessdata:/usr/share/tessdata # Required for extra OCR languages
-      - ./data/configs:/configs
+      - stirling-pdf_tessdata:/usr/share/tessdata # Required for extra OCR languages
+      - stirling-pdf_configs:/configs
     # Map port 8080 on the host to port 8080 on the container
     ports:
       - "8080:8080"
@@ -43,6 +43,13 @@ services:
       runtipi.managed: "true"
     networks:
       - tipi_main_network
+volumes:
+  stirling-pdf_configs:
+    name: stirling-pdf_configs
+    driver: local
+  stirling-pdf_tessdata:
+    name: stirling-pdf_tessdata
+    driver: local
 networks:
   tipi_main_network:
     external: true

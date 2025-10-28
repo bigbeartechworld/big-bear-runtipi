@@ -2,8 +2,8 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-pocketid",
-      "image": "ghcr.io/pocket-id/pocket-id:v1.14",
+      "name": "pocketid",
+      "image": "ghcr.io/pocket-id/pocket-id:1.14",
       "internalPort": 1411,
       "isMain": true
     }

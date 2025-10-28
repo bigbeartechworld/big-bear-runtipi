@@ -23,7 +23,7 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Mounting the local /config directory to /config inside the container
-      - ./data/config:/config
+      - komf_config:/config
     # User to run the container as
     user: "1000:1000"
     # Ports mapping between host and container
@@ -32,7 +32,6 @@ services:
       - "8085:8085"
     # Networks to be attached to the container
     networks:
-      - big_bear_komf_network
       - tipi_main_network
     labels:
       runtipi.managed: "true"
@@ -42,3 +41,7 @@ networks:
     driver: bridge
   tipi_main_network:
     external: true
+volumes:
+  komf_config:
+    name: komf_config
+    driver: local

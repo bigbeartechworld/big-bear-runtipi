@@ -1,7 +1,7 @@
 {
   "name": "seafile",
   "available": true,
-  "port": 8127,
+  "port": 8080,
   "exposable": true,
   "dynamic_config": true,
   "id": "seafile",
@@ -13,9 +13,9 @@
   "author": "seafile",
   "source": "",
   "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508341000,
-  "updated_at": 1761508341000,
+  "supported_architectures": ["amd64","arm64"],
+  "created_at": 1761686642000,
+  "updated_at": 1761686642000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

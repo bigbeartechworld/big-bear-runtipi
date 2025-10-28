@@ -21,8 +21,18 @@ services:
     network_mode: host
     # Volumes to be mounted to the container
     volumes:
-      - ./data/config:/config
-      - ./data/tv:/tv
-      - ./data/movies:/movies
+      - plex_config:/config
+      - plex_tv:/tv
+      - plex_movies:/movies
     labels:
       runtipi.managed: "true"
+volumes:
+  plex_config:
+    name: plex_config
+    driver: local
+  plex_movies:
+    name: plex_movies
+    driver: local
+  plex_tv:
+    name: plex_tv
+    driver: local

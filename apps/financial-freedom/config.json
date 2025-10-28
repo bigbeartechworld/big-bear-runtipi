@@ -1,7 +1,7 @@
 {
   "name": "Financial Freedom",
   "available": true,
-  "port": 8445,
+  "port": 8443,
   "exposable": true,
   "dynamic_config": true,
   "id": "financial-freedom",
@@ -13,9 +13,9 @@
   "author": "serversideup",
   "source": "",
   "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508242000,
-  "updated_at": 1761508242000,
+  "supported_architectures": ["amd64","arm64"],
+  "created_at": 1761686548000,
+  "updated_at": 1761686548000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

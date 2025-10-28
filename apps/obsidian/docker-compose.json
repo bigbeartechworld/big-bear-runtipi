@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-obsidian",
+      "name": "obsidian",
       "image": "linuxserver/obsidian:1.9.14",
       "internalPort": 3000,
       "isMain": true
