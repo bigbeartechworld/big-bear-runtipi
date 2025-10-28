@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-watchyourlan",
+      "name": "watchyourlan",
       "image": "aceberg/watchyourlan:2.1.4",
       "internalPort": 8840,
       "isMain": true

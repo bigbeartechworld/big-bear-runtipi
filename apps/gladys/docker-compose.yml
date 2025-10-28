@@ -18,8 +18,17 @@ services:
       SERVER_PORT: "1080" # Server port for UI
     volumes: # Mount points from the host to the container
       - /var/run/docker.sock:/var/run/docker.sock # Docker socket file for Docker within Docker
-      - ./data/data:/var/lib/gladysassistant # Persistent storage for Gladys data
+      - gladys_data:/var/lib/gladysassistant # Persistent storage for Gladys data
       - /dev:/dev # Access to host devices
       - /run/udev:/run/udev # Access to host devices
     labels:
       runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+volumes:
+  gladys_data:
+    name: gladys_data
+    driver: local
+networks:
+  tipi_main_network:
+    external: true

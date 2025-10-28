@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-npmplus",
+      "name": "npmplus",
       "image": "zoeyvid/npmplus:449",
-      "internalPort": 8114,
+      "internalPort": 8081,
       "isMain": true
     }
   ]

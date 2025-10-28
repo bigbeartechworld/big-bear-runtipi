@@ -1,7 +1,7 @@
 {
   "name": "Linkwarden",
   "available": true,
-  "port": 3012,
+  "port": 3000,
   "exposable": true,
   "dynamic_config": true,
   "id": "linkwarden",
@@ -13,9 +13,9 @@
   "author": "linkwarden",
   "source": "",
   "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508280000,
-  "updated_at": 1761508280000,
+  "supported_architectures": ["amd64","arm64"],
+  "created_at": 1761684926000,
+  "updated_at": 1761684926000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
