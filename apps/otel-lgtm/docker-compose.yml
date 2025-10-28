@@ -13,9 +13,9 @@ services:
     restart: unless-stopped
     # Volumes to be mounted to the container
     volumes:
-      # Mounting the local ./data/data directory to /data inside the container
+      # Mounting the local /DATA/AppData/$AppID/data directory to /data inside the container
       - type: bind
-        source: ./data/data
+        source: otel-lgtm_data
         target: /data
         bind:
           create_host_path: true
@@ -38,7 +38,6 @@ services:
         protocol: tcp
     # Networks to be attached to the container
     networks:
-      - big-bear-otel-lgtm
       - tipi_main_network
     labels:
       runtipi.managed: "true"
@@ -47,3 +46,7 @@ networks:
     driver: bridge
   tipi_main_network:
     external: true
+volumes:
+  otel-lgtm_data:
+    name: otel-lgtm_data
+    driver: local

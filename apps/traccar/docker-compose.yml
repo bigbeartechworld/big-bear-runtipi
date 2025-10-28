@@ -14,12 +14,19 @@ services:
       - "5000-5150:5000-5150" # Maps ports range 5000-5150 on the host to the same range in the container for TCP
       - "5000-5150:5000-5150/udp" # Maps ports range 5000-5150 on the host to the same range in the container for UDP
     volumes: # Defines volume mounts for the container
-      - "./data/logs:/opt/traccar/logs:rw" # Mounts the logs directory from the host to the container with read and write permissions
-      - "./data/traccar.xml:/opt/traccar/conf/traccar.xml:ro" # Mounts the traccar.xml config file from the host to the container with read-only permissions
+      - "traccar_logs:/opt/traccar/logs:rw" # Mounts the logs directory from the host to the container with read and write permissions
+      - "traccar_traccar.xml:/opt/traccar/conf/traccar.xml:ro" # Mounts the traccar.xml config file from the host to the container with read-only permissions
     labels:
       runtipi.managed: "true"
     networks:
       - tipi_main_network
+volumes:
+  traccar_logs:
+    name: traccar_logs
+    driver: local
+  traccar_traccar.xml:
+    name: traccar_traccar.xml
+    driver: local
 networks:
   tipi_main_network:
     external: true

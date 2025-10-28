@@ -9,21 +9,15 @@ services:
     image: axarev/parsr:v1.2.2
     networks:
       - big-bear-pd3f-network
-      - tipi_main_network
     expose:
       - 3001
-    labels:
-      runtipi.managed: "true"
   # Service name: redis
   redis:
     image: redis:6.2.20-alpine@sha256:2185e741f4c1e7b0ea9ca1e163a3767c4270a73086b6bbea2049a7203212fb7f
     networks:
       - big-bear-pd3f-network
-      - tipi_main_network
     expose:
       - 6379
-    labels:
-      runtipi.managed: "true"
   # Service name: worker
   worker:
     image: pd3f/pd3f:latest
@@ -32,27 +26,21 @@ services:
       - redis
     networks:
       - big-bear-pd3f-network
-      - tipi_main_network
     volumes:
-      - ./data/cache:/root/.cache/
-      - ./data/to-ocr:/to-ocr/
-      - ./data/uploads:/uploads/
+      - pd3f_cache:/root/.cache/
+      - pd3f_to-ocr:/to-ocr/
+      - pd3f_uploads:/uploads/
     # delete results / files after one day
     environment:
       - KEEP_RESULTS_HOURS=24
     command: ["rq", "worker", "-u", "redis://redis:6379", "--results-ttl", "86400"]
-    labels:
-      runtipi.managed: "true"
   # Service name: ocr_worker
   ocr_worker:
     image: pd3f/pd3f-ocr:latest
     networks:
       - big-bear-pd3f-network
-      - tipi_main_network
     volumes:
-      - ./data/to-ocr:/to-ocr/
-    labels:
-      runtipi.managed: "true"
+      - pd3f_to-ocr:/to-ocr/
   pd3f:
     # Name of the container
     container_name: pd3f
@@ -62,8 +50,8 @@ services:
     restart: unless-stopped
     # Volumes to be mounted to the container
     volumes:
-      # Mounting the local ./data/uploads directory to /uploads/ inside the container
-      - ./data/uploads:/uploads/
+      # Mounting the local /DATA/AppData/$AppID/uploads directory to /uploads/ inside the container
+      - pd3f_uploads:/uploads/
     # Ports mapping between host and container
     ports:
       # Mapping port 1616 of the host to port 5000 of the container
@@ -76,7 +64,6 @@ services:
       - worker
       - ocr_worker
     networks:
-      - big-bear-pd3f-network
       - tipi_main_network
     labels:
       runtipi.managed: "true"
@@ -86,3 +73,13 @@ networks:
     name: big-bear-pd3f-network
   tipi_main_network:
     external: true
+volumes:
+  pd3f_cache:
+    name: pd3f_cache
+    driver: local
+  pd3f_to-ocr:
+    name: pd3f_to-ocr
+    driver: local
+  pd3f_uploads:
+    name: pd3f_uploads
+    driver: local

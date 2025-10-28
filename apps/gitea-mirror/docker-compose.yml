@@ -21,7 +21,7 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Mounting the local data directory to the container
-      - ./data/data:/app/data
+      - gitea-mirror_data:/app/data
     # Environment variables for the container
     environment:
       - NODE_ENV=production
@@ -47,6 +47,10 @@ services:
       runtipi.managed: "true"
     networks:
       - tipi_main_network
+volumes:
+  gitea-mirror_data:
+    name: gitea-mirror_data
+    driver: local
 networks:
   tipi_main_network:
     external: true

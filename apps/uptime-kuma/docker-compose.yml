@@ -11,7 +11,7 @@ services:
     container_name: uptime-kuma
     # Volume mappings: Maps host directory to container directory for persistent storage
     volumes:
-      - ./data/data:/app/data
+      - uptime-kuma_data:/app/data
     # Port mapping: Maps a port on the host to a port on the container
     ports:
       - "3001:3001" # <Host Port>:<Container Port>
@@ -21,6 +21,10 @@ services:
       runtipi.managed: "true"
     networks:
       - tipi_main_network
+volumes:
+  uptime-kuma_data:
+    name: uptime-kuma_data
+    driver: local
 networks:
   tipi_main_network:
     external: true

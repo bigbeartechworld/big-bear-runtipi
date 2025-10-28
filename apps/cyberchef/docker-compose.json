@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-cyberchef",
+      "name": "cyberchef",
       "image": "ghcr.io/gchq/cyberchef:10.19.4",
-      "internalPort": 80,
+      "internalPort": 8080,
       "isMain": true
     }
   ]

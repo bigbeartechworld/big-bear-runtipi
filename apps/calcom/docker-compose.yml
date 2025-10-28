@@ -9,16 +9,13 @@ services:
     image: postgres:16.1
     restart: on-failure
     volumes:
-      - ./data/data/db:/var/lib/postgresql/data
+      - calcom_data_db:/var/lib/postgresql/data
     environment:
       - POSTGRES_PASSWORD=9e45944b-37bb-41f7-aa6f-b74195fb58ec
       - POSTGRES_USER=bigbear
       - POSTGRES_DB=bigbear_calcom
     networks:
       - big_bear_calcom_network
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
   calcom:
     # Name of the container
     container_name: calcom
@@ -52,13 +49,12 @@ services:
       - NODE_ENV=production
     # Volumes to be mounted to the container
     volumes:
-      - ./data/config:/config
+      - calcom_config:/config
     # Ports mapping between host and container
     ports:
       - 3000:3000
       - 3001:3001
     networks:
-      - big_bear_calcom_network
       - tipi_main_network
     labels:
       runtipi.managed: "true"
@@ -67,3 +63,10 @@ networks:
     driver: bridge
   tipi_main_network:
     external: true
+volumes:
+  calcom_config:
+    name: calcom_config
+    driver: local
+  calcom_data_db:
+    name: calcom_data_db
+    driver: local

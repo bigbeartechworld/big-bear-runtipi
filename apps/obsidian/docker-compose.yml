@@ -18,7 +18,7 @@ services:
       - TZ=Etc/UTC
     # Volumes to be mounted to the container
     volumes:
-      - ./data/config:/config
+      - obsidian_config:/config
     # Ports mapping between host and container
     ports:
       - 3000:3000
@@ -27,6 +27,10 @@ services:
       runtipi.managed: "true"
     networks:
       - tipi_main_network
+volumes:
+  obsidian_config:
+    name: obsidian_config
+    driver: local
 networks:
   tipi_main_network:
     external: true

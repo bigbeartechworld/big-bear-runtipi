@@ -17,7 +17,7 @@ services:
     # These mounts allow the container to interact with the host system
     volumes:
       # Required for monitoring system resources and container metrics
-      - ./data/data:/opt/stalwart
+      - stalwart-mail_data:/opt/stalwart
     # Map port 8080 on the host to port 8080 on the container for the web interface
     ports:
       - 8080:8080
@@ -37,6 +37,10 @@ services:
       runtipi.managed: "true"
     networks:
       - tipi_main_network
+volumes:
+  stalwart-mail_data:
+    name: stalwart-mail_data
+    driver: local
 networks:
   tipi_main_network:
     external: true

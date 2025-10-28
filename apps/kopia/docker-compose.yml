@@ -22,10 +22,10 @@ services:
       - KOPIA_PASSWORD=casaos # Repository password
       - REFRESH_INTERVAL= # Optional
     volumes:
-      - ./data/config:/config
-      - ./data/home:/backups/home:ro # Optional
+      - kopia_config:/config
+      - kopia_home:/backups/home:ro # Optional
       - /var/lib/docker/volumes:/backups/docker:ro # Optional
-      - ./data/repository:/repository # Optional
+      - kopia_repository:/repository # Optional
       - /tmp:/tmp:shared # Optional
       - /var/run/docker.sock:/var/run/docker.sock:ro # Optional
     # Ports mapping between host and container
@@ -39,6 +39,16 @@ services:
       runtipi.managed: "true"
     networks:
       - tipi_main_network
+volumes:
+  kopia_config:
+    name: kopia_config
+    driver: local
+  kopia_home:
+    name: kopia_home
+    driver: local
+  kopia_repository:
+    name: kopia_repository
+    driver: local
 networks:
   tipi_main_network:
     external: true

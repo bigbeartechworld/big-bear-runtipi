@@ -8,16 +8,35 @@ services:
     ports:
       - "7400:80"
     volumes:
-      - ./data/onlyoffice/logs:/var/log/onlyoffice
-      - ./data/onlyoffice/data:/var/www/onlyoffice/Data
-      - ./data/onlyoffice/lib:/var/lib/onlyoffice
-      - ./data/onlyoffice/rabbitmq:/var/lib/rabbitmq
-      - ./data/onlyoffice/redis:/var/lib/redis
-      - ./data/onlyoffice/db:/var/lib/postgresql
+      - onlyoffice_onlyoffice_logs:/var/log/onlyoffice
+      - onlyoffice_onlyoffice_data:/var/www/onlyoffice/Data
+      - onlyoffice_onlyoffice_lib:/var/lib/onlyoffice
+      - onlyoffice_onlyoffice_rabbitmq:/var/lib/rabbitmq
+      - onlyoffice_onlyoffice_redis:/var/lib/redis
+      - onlyoffice_onlyoffice_db:/var/lib/postgresql
     labels:
       runtipi.managed: "true"
     networks:
       - tipi_main_network
+volumes:
+  onlyoffice_onlyoffice_data:
+    name: onlyoffice_onlyoffice_data
+    driver: local
+  onlyoffice_onlyoffice_db:
+    name: onlyoffice_onlyoffice_db
+    driver: local
+  onlyoffice_onlyoffice_lib:
+    name: onlyoffice_onlyoffice_lib
+    driver: local
+  onlyoffice_onlyoffice_logs:
+    name: onlyoffice_onlyoffice_logs
+    driver: local
+  onlyoffice_onlyoffice_rabbitmq:
+    name: onlyoffice_onlyoffice_rabbitmq
+    driver: local
+  onlyoffice_onlyoffice_redis:
+    name: onlyoffice_onlyoffice_redis
+    driver: local
 networks:
   tipi_main_network:
     external: true

@@ -14,7 +14,7 @@ services:
     # Volumes to be mounted to the container
     volumes:
       - type: bind
-        source: ./data/data
+        source: music-assistant_data
         target: /data
     # Network mode for the container
     network_mode: host
@@ -29,3 +29,12 @@ services:
       - DAC_READ_SEARCH
     labels:
       runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+volumes:
+  music-assistant_data:
+    name: music-assistant_data
+    driver: local
+networks:
+  tipi_main_network:
+    external: true
