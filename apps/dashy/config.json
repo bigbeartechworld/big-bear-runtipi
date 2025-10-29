@@ -1,7 +1,7 @@
 {
   "name": "Dashy",
   "available": true,
-  "port": 4001,
+  "port": 4000,
   "exposable": true,
   "dynamic_config": true,
   "id": "dashy",
@@ -13,9 +13,9 @@
   "author": "Lissy93",
   "source": "",
   "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508230000,
-  "updated_at": 1761508230000,
+  "supported_architectures": ["amd64","armv7","arm64"],
+  "created_at": 1761698049000,
+  "updated_at": 1761698049000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

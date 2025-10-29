@@ -18,9 +18,9 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Mounting the local kasm/opt directory to /opt inside the container
-      - ./data/opt:/opt
+      - kasm_opt:/opt
       # Mounting the local kasm/profiles directory to /profiles inside the container
-      - ./data/profiles:/profiles
+      - kasm_profiles:/profiles
       # Mounting the local /dev/input directory to /dev/input inside the container
       - /dev/input:/dev/input
       # Mounting the local /run/udev/data directory to /run/udev/data inside the container
@@ -39,6 +39,13 @@ services:
       runtipi.managed: "true"
     networks:
       - tipi_main_network
+volumes:
+  kasm_opt:
+    name: kasm_opt
+    driver: local
+  kasm_profiles:
+    name: kasm_profiles
+    driver: local
 networks:
   tipi_main_network:
     external: true

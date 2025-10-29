@@ -8,14 +8,27 @@ services:
     environment:
       - VNC_PASSWORD=casaos # Set the VNC password to 'casaos'
     volumes:
-      - ./data/config:/config:rw
-      - ./data/storage:/storage:ro
-      - ./data/watch:/watch:rw
-      - ./data/output:/output:rw
+      - jlesage-handbrake_config:/config:rw
+      - jlesage-handbrake_storage:/storage:ro
+      - jlesage-handbrake_watch:/watch:rw
+      - jlesage-handbrake_output:/output:rw
     labels:
       runtipi.managed: "true"
     networks:
       - tipi_main_network
+volumes:
+  jlesage-handbrake_config:
+    name: jlesage-handbrake_config
+    driver: local
+  jlesage-handbrake_output:
+    name: jlesage-handbrake_output
+    driver: local
+  jlesage-handbrake_storage:
+    name: jlesage-handbrake_storage
+    driver: local
+  jlesage-handbrake_watch:
+    name: jlesage-handbrake_watch
+    driver: local
 networks:
   tipi_main_network:
     external: true

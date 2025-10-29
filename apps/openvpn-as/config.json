@@ -1,7 +1,7 @@
 {
   "name": "OpenVPN",
   "available": true,
-  "port": 9444,
+  "port": 8943,
   "exposable": true,
   "dynamic_config": true,
   "id": "openvpn-as",
@@ -12,10 +12,10 @@
   "short_desc": "OpenVPN is an open-source commercial software that implements virtual private network (VPN).",
   "author": "openvpn",
   "source": "",
-  "website": "/admin",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508309000,
-  "updated_at": 1761508309000,
+  "website": "",
+  "supported_architectures": ["amd64"],
+  "created_at": 1761698128000,
+  "updated_at": 1761698128000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

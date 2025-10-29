@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-changedetection",
+      "name": "changedetection",
       "image": "ghcr.io/dgtlmoon/changedetection.io:0.50.32",
       "internalPort": 5000,
       "isMain": true

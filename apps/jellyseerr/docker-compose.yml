@@ -5,17 +5,21 @@ services:
     ports:
       - "5055:5055" # Maps port 5055 on the host to port 5055 on the container
     volumes:
-      - ./data/config:/app/config # Binds a volume from host to container for configuration
+      - jellyseerr_config:/app/config # Binds a volume from host to container for configuration
     environment:
       - LOG_LEVEL=debug # Sets the log level to debug
       - TZ=$TZ # Sets the timezone, using host's timezone variable
     restart: unless-stopped # Service will restart unless it is explicitly stopped
     network_mode: bridge # Uses bridge network mode
+    container_name: jellyseerr
     labels:
       runtipi.managed: "true"
-    container_name: jellyseerr
     networks:
       - tipi_main_network
+volumes:
+  jellyseerr_config:
+    name: jellyseerr_config
+    driver: local
 networks:
   tipi_main_network:
     external: true

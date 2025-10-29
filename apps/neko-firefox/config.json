@@ -1,7 +1,7 @@
 {
   "name": "Neko Firefox",
   "available": true,
-  "port": 8111,
+  "port": 8080,
   "exposable": true,
   "dynamic_config": true,
   "id": "neko-firefox",
@@ -13,9 +13,9 @@
   "author": "m1k1o",
   "source": "",
   "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508292000,
-  "updated_at": 1761508292000,
+  "supported_architectures": ["amd64"],
+  "created_at": 1761698113000,
+  "updated_at": 1761698113000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

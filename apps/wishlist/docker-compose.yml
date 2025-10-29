@@ -27,8 +27,8 @@ services:
     # Volume mappings required for system integration
     # These mounts allow the container to interact with the host system
     volumes:
-      - ./data/uploads:/usr/src/app/uploads
-      - ./data/data:/usr/src/app/data
+      - wishlist_uploads:/usr/src/app/uploads
+      - wishlist_data:/usr/src/app/data
     # Map port 3280 on the host to port 3280 on the container
     ports:
       - "3280:3280"
@@ -36,6 +36,13 @@ services:
       runtipi.managed: "true"
     networks:
       - tipi_main_network
+volumes:
+  wishlist_data:
+    name: wishlist_data
+    driver: local
+  wishlist_uploads:
+    name: wishlist_uploads
+    driver: local
 networks:
   tipi_main_network:
     external: true
