@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "app",
-      "image": "ghcr.io/pterodactyl/panel:v1.11.11",
-      "internalPort": 80,
+      "name": "pterodactyl-panel",
+      "image": "ghcr.io/pterodactyl/panel:1.11.11",
+      "internalPort": 1180,
       "isMain": true
     }
   ]

@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-healthchecks",
+      "name": "healthchecks",
       "image": "linuxserver/healthchecks:3.11.20250828",
       "internalPort": 8000,
       "isMain": true

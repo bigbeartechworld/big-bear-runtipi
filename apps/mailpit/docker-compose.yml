@@ -7,7 +7,7 @@ services:
     container_name: mailpit # Container name for the app service
     restart: unless-stopped # Restart policy for the container
     volumes: # Volumes to mount for the app service
-      - ./data/data:/data
+      - mailpit_data:/data
     environment: # Environment variables for the app service
       - TZ=UTC
     ports: # Ports to expose for the app service
@@ -17,6 +17,10 @@ services:
       runtipi.managed: "true"
     networks:
       - tipi_main_network
+volumes:
+  mailpit_data:
+    name: mailpit_data
+    driver: local
 networks:
   tipi_main_network:
     external: true

@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-filebrowser",
-      "image": "filebrowser/filebrowser:v2.44.2-s6",
-      "internalPort": 80,
+      "name": "filebrowser",
+      "image": "filebrowser/filebrowser:2.44.2-s6",
+      "internalPort": 8080,
       "isMain": true
     }
   ]

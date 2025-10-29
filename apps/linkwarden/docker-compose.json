@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "linkwarden",
-      "image": "ghcr.io/linkwarden/linkwarden:v2.13.1",
+      "image": "ghcr.io/linkwarden/linkwarden:2.13.1",
       "internalPort": 3000,
       "isMain": true
     }

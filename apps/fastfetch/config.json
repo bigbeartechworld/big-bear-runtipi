@@ -1,7 +1,7 @@
 {
   "name": "Fastfetch",
   "available": true,
-  "port": 7682,
+  "port": 7681,
   "exposable": true,
   "dynamic_config": true,
   "id": "fastfetch",
@@ -13,9 +13,9 @@
   "author": "bigbeartechworld",
   "source": "",
   "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508240000,
-  "updated_at": 1761508240000,
+  "supported_architectures": ["amd64","arm64"],
+  "created_at": 1761698560000,
+  "updated_at": 1761698560000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

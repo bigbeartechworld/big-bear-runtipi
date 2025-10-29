@@ -15,13 +15,10 @@ services:
       - MARIADB_USER=usermonica
       - MARIADB_PASSWORD=passwordmonica
     volumes:
-      - ./data/mysql:/var/lib/mysql
+      - monica_mysql:/var/lib/mysql
     restart: unless-stopped
     networks:
       - big_bear_monica_network
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
   monica:
     # Name of the container
     container_name: monica
@@ -35,14 +32,13 @@ services:
       - DB_USERNAME=usermonica
       - DB_PASSWORD=passwordmonica
     volumes:
-      - ./data/storage:/var/www/html/storage
+      - monica_storage:/var/www/html/storage
     # Ports mapping between host and container
     ports:
       # Mapping port 8080 of the host to port 80 of the container
       - "8080:80"
     # Networks to be attached to the container
     networks:
-      - big_bear_monica_network
       - tipi_main_network
     labels:
       runtipi.managed: "true"
@@ -52,3 +48,10 @@ networks:
     driver: bridge
   tipi_main_network:
     external: true
+volumes:
+  monica_mysql:
+    name: monica_mysql
+    driver: local
+  monica_storage:
+    name: monica_storage
+    driver: local

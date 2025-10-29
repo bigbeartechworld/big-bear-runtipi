@@ -20,11 +20,11 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Mounting the local /DATA/AppData/big-bear-pihole-updatelists/etc directory to /etc/pihole/ inside the container
-      - ./data/etc:/etc/pihole/
+      - pihole-updatelists_etc:/etc/pihole/
       # Mounting the local /DATA/AppData/big-bear-pihole-updatelists/etc/pihole-updatelists directory to /etc/pihole-updatelists/ inside the container
-      - ./data/etc/pihole-updatelists:/etc/pihole-updatelists/
+      - pihole-updatelists_etc_pihole-updatelists:/etc/pihole-updatelists/
       # Mounting the local /DATA/AppData/big-bear-pihole-updatelists/dnsmasq.d directory to /etc/dnsmasq.d inside the container
-      - ./data/dnsmasq.d:/etc/dnsmasq.d/
+      - pihole-updatelists_dnsmasq.d:/etc/dnsmasq.d/
     # Ports mapping between host and container
     ports:
       - "53:53/tcp"
@@ -34,8 +34,6 @@ services:
       - "10443:443/tcp"
     # Define the networks section
     networks:
-      # Define the pihole-network
-      - pihole-network
       - tipi_main_network
     # Capabilities to be added to the container
     cap_add:
@@ -50,3 +48,13 @@ networks:
     driver: bridge
   tipi_main_network:
     external: true
+volumes:
+  pihole-updatelists_dnsmasq.d:
+    name: pihole-updatelists_dnsmasq.d
+    driver: local
+  pihole-updatelists_etc:
+    name: pihole-updatelists_etc
+    driver: local
+  pihole-updatelists_etc_pihole-updatelists:
+    name: pihole-updatelists_etc_pihole-updatelists
+    driver: local

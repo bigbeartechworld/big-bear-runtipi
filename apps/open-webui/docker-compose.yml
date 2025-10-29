@@ -13,7 +13,7 @@ services:
     restart: unless-stopped
     # Volumes to be mounted to the container
     volumes:
-      - ./data/data:/app/backend/data
+      - open-webui_data:/app/backend/data
     # Environment variables
     environment:
       - OLLAMA_BASE_URL=
@@ -26,6 +26,10 @@ services:
       runtipi.managed: "true"
     networks:
       - tipi_main_network
+volumes:
+  open-webui_data:
+    name: open-webui_data
+    driver: local
 networks:
   tipi_main_network:
     external: true

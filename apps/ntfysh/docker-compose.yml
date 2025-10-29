@@ -21,16 +21,23 @@ services:
     # Volumes to be mounted inside the container
     volumes:
       - type: bind
-        source: ./data/cache
+        source: ntfysh_cache
         target: /var/cache/ntfy
       - type: bind
-        source: ./data/config
+        source: ntfysh_config
         target: /etc/ntfy
+    container_name: ntfysh
     labels:
       runtipi.managed: "true"
-    container_name: ntfysh
     networks:
       - tipi_main_network
+volumes:
+  ntfysh_cache:
+    name: ntfysh_cache
+    driver: local
+  ntfysh_config:
+    name: ntfysh_config
+    driver: local
 networks:
   tipi_main_network:
     external: true

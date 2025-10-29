@@ -20,12 +20,9 @@ services:
       timeout: 5s
       retries: 5
     volumes: # Persistent volume mapping for database data
-      - ./data/data/db:/var/lib/postgresql/data
+      - ghostfolio_data_db:/var/lib/postgresql/data
     networks:
       - big_bear_ghostfolio_network # Connects the service to the defined network
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
   # Redis service for Ghostfolio, used for caching and session storage
   big-bear-ghostfolio-redis:
     container_name: big-bear-ghostfolio-redis
@@ -41,12 +38,9 @@ services:
       retries: 5
       start_period: 30s
     volumes: # Persistent volume mapping for Redis data
-      - ./data/data/redis:/data
+      - ghostfolio_data_redis:/data
     networks:
       - big_bear_ghostfolio_network # Connects the service to the defined network
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
   ghostfolio:
     container_name: ghostfolio # Unique name for the container instance
     image: ghostfolio/ghostfolio:2.210.1 # Docker image to use
@@ -73,7 +67,6 @@ services:
       big-bear-ghostfolio-redis:
         condition: service_healthy
     networks:
-      - big_bear_ghostfolio_network # Connects the service to the defined network
       - tipi_main_network
     labels:
       runtipi.managed: "true"
@@ -83,3 +76,10 @@ networks:
     driver: bridge # Uses a bridge network for container communication
   tipi_main_network:
     external: true
+volumes:
+  ghostfolio_data_db:
+    name: ghostfolio_data_db
+    driver: local
+  ghostfolio_data_redis:
+    name: ghostfolio_data_redis
+    driver: local

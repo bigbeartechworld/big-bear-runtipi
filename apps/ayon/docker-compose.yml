@@ -14,7 +14,7 @@ services:
       - POSTGRES_PASSWORD=ayon
       - POSTGRES_DB=ayon
     volumes:
-      - ./data/postgres:/var/lib/postgresql/data
+      - ayon_postgres:/var/lib/postgresql/data
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U ayon"]
       interval: 10s
@@ -23,16 +23,13 @@ services:
     expose: ["5432"]
     networks:
       - big-bear-ayon-network
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
   # Service definition for the Redis database
   redis:
     image: redis:7.4.6-alpine@sha256:7a7c6b5c49a6896d0a58ee0c6dc0dcabe14f30f0a2f7d2d1362d276fa2d43166
     container_name: redis
     restart: unless-stopped
     volumes:
-      - ./data/redis:/data
+      - ayon_redis:/data
     healthcheck:
       test: ["CMD-SHELL", "redis-cli ping | grep PONG"]
       interval: 5s
@@ -41,9 +38,6 @@ services:
     expose: ["6379"]
     networks:
       - big-bear-ayon-network
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
   ayon:
     # Name of the container
     container_name: ayon
@@ -59,8 +53,8 @@ services:
       retries: "3"
     # Volumes to be mounted to the container
     volumes:
-      - "./data/addons:/addons"
-      - "./data/storage:/storage"
+      - "ayon_addons:/addons"
+      - "ayon_storage:/storage"
       # comment out the following line on Windows
       - "/etc/localtime:/etc/localtime:ro"
     # Ports mapping between host and container
@@ -69,7 +63,6 @@ services:
       - "5000:5000"
     expose: ["5000"]
     networks:
-      - big-bear-ayon-network
       - tipi_main_network
     depends_on:
       postgres:
@@ -83,3 +76,16 @@ networks:
     driver: bridge
   tipi_main_network:
     external: true
+volumes:
+  ayon_addons:
+    name: ayon_addons
+    driver: local
+  ayon_postgres:
+    name: ayon_postgres
+    driver: local
+  ayon_redis:
+    name: ayon_redis
+    driver: local
+  ayon_storage:
+    name: ayon_storage
+    driver: local
