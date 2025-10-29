@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "app",
+      "name": "playitgg",
       "image": "dysta/playitgg:1.1.0",
-      "internalPort": 8122,
+      "internalPort": 8080,
       "isMain": true
     }
   ]

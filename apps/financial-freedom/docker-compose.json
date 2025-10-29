@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "app",
+      "name": "financial-freedom",
       "image": "serversideup/financial-freedom:v0.2.0-alpha1",
-      "internalPort": 80,
+      "internalPort": 8443,
       "isMain": true
     }
   ]

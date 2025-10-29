@@ -14,11 +14,11 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Mounting the local ejbca-ce/persistent directory to /mnt/persistent inside the container
-      - ./data/persistent:/mnt/persistent
+      - ${APP_DATA_DIR}/data/ejbca-ce_persistent:/mnt/persistent
     # Ports mapping between host and container
     ports:
       # Mapping port 8080 of the host to port 8080 of the container
-      - "8080:8080"
+      - "${APP_PORT}:8080"
       # Mapping port 8443 of the host to port 8443 of the container
       - "8443:8443"
     # Environment variables
