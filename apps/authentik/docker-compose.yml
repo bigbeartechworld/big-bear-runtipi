@@ -5,7 +5,7 @@ name: big-bear-authentik
 # Service definitions for the big-bear-authentik application
 services:
   big-bear-authentik-worker:
-    image: ghcr.io/goauthentik/server:2025.8.4
+    image: ghcr.io/goauthentik/server:2025.10.0
     restart: unless-stopped
     command: worker
     container_name: big-bear-authentik-worker
@@ -25,14 +25,13 @@ services:
     user: root
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - ./data/data/authentik-media:/media
-      - ./data/data/authentik-certs:/certs
-      - ./data/data/authentik-custom-templates:/templates
+      - ${APP_DATA_DIR}/data/authentik_data_authentik-media:/media
+      - ${APP_DATA_DIR}/data/authentik_data_authentik-certs:/certs
+      - ${APP_DATA_DIR}/data/authentik_data_authentik-custom-templates:/templates
     depends_on:
       - big-bear-authentik-db
       - big-bear-authentik-redis
     networks:
-      - big_bear_authentik_network
       - tipi_main_network
     labels:
       runtipi.managed: "true"
@@ -50,13 +49,12 @@ services:
       retries: 5
       timeout: 5s
     volumes:
-      - ./data/data/postgres:/var/lib/postgresql/data
+      - ${APP_DATA_DIR}/data/authentik_data_postgres:/var/lib/postgresql/data
     environment:
       POSTGRES_PASSWORD: authentik-password
       POSTGRES_USER: authentik
       POSTGRES_DB: authentik
     networks:
-      - big_bear_authentik_network
       - tipi_main_network
     labels:
       runtipi.managed: "true"
@@ -72,9 +70,8 @@ services:
       retries: 5
       timeout: 3s
     volumes:
-      - ./data/data/redis:/data
+      - ${APP_DATA_DIR}/data/authentik_data_redis:/data
     networks:
-      - big_bear_authentik_network
       - tipi_main_network
     labels:
       runtipi.managed: "true"
@@ -82,7 +79,7 @@ services:
     # Name of the container
     container_name: authentik
     # Image to be used for the container
-    image: ghcr.io/goauthentik/server:2025.8.4
+    image: ghcr.io/goauthentik/server:2025.10.0
     command: server
     environment:
       AUTHENTIK_REDIS__HOST: big-bear-authentik-redis
@@ -92,20 +89,17 @@ services:
       AUTHENTIK_POSTGRESQL__PASSWORD: authentik-password
       AUTHENTIK_SECRET_KEY: changeme
     volumes:
-      - ./data/data/authentik-media:/media
-      - ./data/data/authentik-custom-templates:/templates
+      - ${APP_DATA_DIR}/data/authentik_data_authentik-media:/media
+      - ${APP_DATA_DIR}/data/authentik_data_authentik-custom-templates:/templates
     ports:
-      - "9443:9443"
+      - "${APP_PORT}:9443"
     depends_on:
       - big-bear-authentik-db
       - big-bear-authentik-redis
     networks:
-      - big_bear_authentik_network
       - tipi_main_network
     labels:
       runtipi.managed: "true"
 networks:
-  big_bear_authentik_network:
-    driver: bridge
   tipi_main_network:
     external: true

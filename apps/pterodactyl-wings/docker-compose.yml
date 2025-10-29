@@ -11,7 +11,7 @@ services:
     restart: always
     # Maps the host's port 2022 to the container's port 2022
     ports:
-      - "8080:8080"
+      - "${APP_PORT}:8080"
       - "2022:2022"
     # Allocate a pseudo-TTY, making it act like a terminal
     tty: true

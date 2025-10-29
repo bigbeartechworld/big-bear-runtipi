@@ -7,13 +7,13 @@ services:
   dashdot:
     image: mauricenino/dashdot:6.2.0 # Image to be used for this service
     ports:
-      - "3001:3001" # Port 3001 on the host is mapped to port 3001 in the container
+      - "${APP_PORT}:3001" # Port 3001 on the host is mapped to port 3001 in the container
     volumes:
-      - ./data:/mnt/host# Mounting the local dashdot directory to /mnt/host inside the container
+      - /DATA/AppData/$AppID:/mnt/host# Mounting the local dashdot directory to /mnt/host inside the container
     privileged: true # Runs the container in privileged mode, allowing it access to host devices
+    container_name: dashdot
     labels:
       runtipi.managed: "true"
-    container_name: dashdot
     networks:
       - tipi_main_network
 networks:

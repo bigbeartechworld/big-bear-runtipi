@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-goaway",
+      "name": "goaway",
       "image": "pommee/goaway:0.62.11",
-      "internalPort": 53,
+      "internalPort": 8080,
       "isMain": true
     }
   ]
