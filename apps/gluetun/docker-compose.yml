@@ -25,7 +25,7 @@ services:
       - 8388:8388/udp # Shadowsocks UDP port mapping.
     # Map volumes from the host to the container.
     volumes:
-      - ./data/data:/gluetun # Map the data directory.
+      - gluetun_data:/gluetun # Map the data directory.
     # Define environment variables for the container.
     environment:
       # Specify the VPN service provider.
@@ -48,6 +48,10 @@ services:
       runtipi.managed: "true"
     networks:
       - tipi_main_network
+volumes:
+  gluetun_data:
+    name: gluetun_data
+    driver: local
 networks:
   tipi_main_network:
     external: true

@@ -16,7 +16,7 @@ services:
     #  - /dev/ttyACM0:/dev/ttyACM0
     #  - /dev/video0:/dev/video0
     volumes:
-      - ./data/octoprint:/octoprint
+      - octoprint_octoprint:/octoprint
     # uncomment the lines below to ensure camera streaming is enabled when
     # you add a video device
     #environment:
@@ -30,6 +30,10 @@ services:
       runtipi.managed: "true"
     networks:
       - tipi_main_network
+volumes:
+  octoprint_octoprint:
+    name: octoprint_octoprint
+    driver: local
 networks:
   tipi_main_network:
     external: true

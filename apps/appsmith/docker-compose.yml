@@ -11,12 +11,16 @@ services:
       - "1080:80" # Port mapping host:container for HTTP
       - "10443:443" # Port mapping host:container for HTTPS
     volumes:
-      - ./data/stacks:/appsmith-stacks # Mount volume for app data
+      - appsmith_stacks:/appsmith-stacks # Mount volume for app data
     restart: unless-stopped # Container restart policy
     labels:
       runtipi.managed: "true"
     networks:
       - tipi_main_network
+volumes:
+  appsmith_stacks:
+    name: appsmith_stacks
+    driver: local
 networks:
   tipi_main_network:
     external: true

@@ -17,8 +17,17 @@ services:
     volumes:
       # Map the data directory from the host to the container
       # Make sure to create an .env file that sets the USERDIR environment variable
-      - ./data/data:/data/
+      - python-matter-server_data:/data/
       # Map the dbus directory from the host to the container in read-only mode
       - /run/dbus:/run/dbus:ro
     labels:
       runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+volumes:
+  python-matter-server_data:
+    name: python-matter-server_data
+    driver: local
+networks:
+  tipi_main_network:
+    external: true

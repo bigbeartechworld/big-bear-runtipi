@@ -1,7 +1,7 @@
 {
   "name": "Coolify",
   "available": true,
-  "port": 8001,
+  "port": 8000,
   "exposable": true,
   "dynamic_config": true,
   "id": "coolify",
@@ -13,9 +13,9 @@
   "author": "coollabsio",
   "source": "",
   "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508227000,
-  "updated_at": 1761508227000,
+  "supported_architectures": ["amd64","arm64"],
+  "created_at": 1761703482000,
+  "updated_at": 1761703482000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

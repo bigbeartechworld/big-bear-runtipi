@@ -13,8 +13,8 @@ services:
     restart: unless-stopped
     # Volumes to be mounted to the container
     volumes:
-      - ./data/data:/var/syncthing
-      - ./data/media/data/syncthing:/media/data/syncthing
+      - syncthing_data:/var/syncthing
+      - syncthing_media_data_syncthing:/media/data/syncthing
     # Ports mapping between host and container
     ports:
       - 8384:8384 # WebUI
@@ -31,6 +31,13 @@ services:
       runtipi.managed: "true"
     networks:
       - tipi_main_network
+volumes:
+  syncthing_data:
+    name: syncthing_data
+    driver: local
+  syncthing_media_data_syncthing:
+    name: syncthing_media_data_syncthing
+    driver: local
 networks:
   tipi_main_network:
     external: true

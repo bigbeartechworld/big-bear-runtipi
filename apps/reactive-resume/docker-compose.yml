@@ -24,7 +24,7 @@ services:
     image: postgres:15-alpine
     restart: unless-stopped
     volumes:
-      - ./data/pg_data:/var/lib/postgresql/data
+      - reactive-resume_pg_data:/var/lib/postgresql/data
     environment:
       POSTGRES_DB: "postgres"
       POSTGRES_USER: "postgres"
@@ -36,9 +36,6 @@ services:
       retries: 5
     networks:
       - reactive-resume-network
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
   # Storage (for image uploads)
   minio:
     container_name: big-bear-reactive-resume-minio
@@ -48,15 +45,12 @@ services:
     ports:
       - 9000:9000
     volumes:
-      - ./data/minio_data:/data
+      - reactive-resume_minio_data:/data
     environment:
       MINIO_ROOT_USER: "minioadmin"
       MINIO_ROOT_PASSWORD: "minioadmin"
     networks:
       - reactive-resume-network
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
   # Chrome Browser (for printing and previews)
   chrome:
     container_name: big-bear-reactive-resume-chrome
@@ -68,9 +62,6 @@ services:
       PRE_REQUEST_HEALTH_CHECK: "true"
     networks:
       - reactive-resume-network
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
   # Redis (for cache & server session management)
   redis:
     container_name: big-bear-reactive-resume-redis
@@ -79,9 +70,6 @@ services:
     command: ["redis-server", "--requirepass", "password"]
     networks:
       - reactive-resume-network
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
   reactive-resume:
     container_name: reactive-resume
     image: amruthpillai/reactive-resume:v4.5.2
@@ -94,7 +82,6 @@ services:
       - redis
       - chrome
     networks:
-      - reactive-resume-network
       - tipi_main_network
     environment:
       # -- Environment Variables --
@@ -136,3 +123,10 @@ networks:
     driver: bridge
   tipi_main_network:
     external: true
+volumes:
+  reactive-resume_minio_data:
+    name: reactive-resume_minio_data
+    driver: local
+  reactive-resume_pg_data:
+    name: reactive-resume_pg_data
+    driver: local

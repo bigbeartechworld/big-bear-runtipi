@@ -8,7 +8,7 @@ services:
     image: postgres:15-alpine
     container_name: big-bear-tandoor-db
     volumes:
-      - ./data/postgresql:/var/lib/postgresql/data
+      - tandoor_postgresql:/var/lib/postgresql/data
     environment:
       - POSTGRES_PORT=5432
       - POSTGRES_USER=tandoor
@@ -17,15 +17,12 @@ services:
     restart: unless-stopped
     networks:
       - big_bear_tandoor_network
-      - tipi_main_network
     healthcheck:
       test: ["CMD-SHELL", "pg_isready", "-d", "tandoor"]
       interval: 10s
       timeout: 5s
       retries: 5
       start_period: 30s
-    labels:
-      runtipi.managed: "true"
   tandoor:
     # Name of the container
     container_name: tandoor
@@ -35,8 +32,8 @@ services:
     restart: unless-stopped
     # Volumes to be mounted to the container
     volumes:
-      - ./data/staticfiles:/opt/recipes/staticfiles
-      - ./data/mediafiles:/opt/recipes/mediafiles
+      - tandoor_staticfiles:/opt/recipes/staticfiles
+      - tandoor_mediafiles:/opt/recipes/mediafiles
     # Ports mapping between host and container
     ports:
       # Mapping port 8080 of the host to port 8080 of the container
@@ -52,7 +49,6 @@ services:
       - POSTGRES_DB=tandoordb
     # Network to be used by the container
     networks:
-      - big_bear_tandoor_network
       - tipi_main_network
     # Healthcheck configuration for the container
     depends_on:
@@ -66,3 +62,13 @@ networks:
     driver: bridge
   tipi_main_network:
     external: true
+volumes:
+  tandoor_mediafiles:
+    name: tandoor_mediafiles
+    driver: local
+  tandoor_postgresql:
+    name: tandoor_postgresql
+    driver: local
+  tandoor_staticfiles:
+    name: tandoor_staticfiles
+    driver: local

@@ -39,10 +39,14 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Mounting the local OpenVPN/data directory to /openvpn inside the container
-      - ./data/data:/openvpn
+      - openvpn-as_data:/openvpn
     network_mode: bridge
     networks:
       - tipi_main_network
+volumes:
+  openvpn-as_data:
+    name: openvpn-as_data
+    driver: local
 networks:
   tipi_main_network:
     external: true

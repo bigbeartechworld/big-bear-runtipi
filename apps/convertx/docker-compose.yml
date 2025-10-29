@@ -18,11 +18,15 @@ services:
       - HTTP_ALLOWED=true
     # Volume mappings for data persistence
     volumes:
-      - ./data/data:/app/data
+      - convertx_data:/app/data
     labels:
       runtipi.managed: "true"
     networks:
       - tipi_main_network
+volumes:
+  convertx_data:
+    name: convertx_data
+    driver: local
 networks:
   tipi_main_network:
     external: true

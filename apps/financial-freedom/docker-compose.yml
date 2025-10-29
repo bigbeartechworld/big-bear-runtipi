@@ -7,11 +7,10 @@ services:
   mariadb:
     image: mariadb:10.11
     volumes:
-      - ./data/mariadb:/var/lib/mysql
+      - financial-freedom_mariadb:/var/lib/mysql
     # financial-freedom-network is defined in networks section
     networks:
       - financial-freedom-network
-      - tipi_main_network
     # The 'environment' key is used to set environment variables inside the container.
     environment:
       # PUID & PGID are used to set user/group IDs.
@@ -28,8 +27,6 @@ services:
       - MYSQL_PASSWORD=cd876479-f30b-43f2-8714-e52e040c657a
       # REMOTE_SQL allows linking to a remote SQL server (optional).
       - REMOTE_SQL=
-    labels:
-      runtipi.managed: "true"
   financial-freedom:
     # Name of the container
     container_name: financial-freedom
@@ -39,12 +36,11 @@ services:
     restart: unless-stopped
     # financial-freedom-network networks
     networks:
-      - financial-freedom-network
       - tipi_main_network
     # Volumes to be mounted to the container
     volumes:
-      - ./data/logs:/var/www/html/storage/logs
-      - ./data/sessions:/var/www/html/storage/framework/sessions
+      - financial-freedom_logs:/var/www/html/storage/logs
+      - financial-freedom_sessions:/var/www/html/storage/framework/sessions
     # Ports mapping between host and container
     ports:
       # Mapping port 8080 of the host to port 80 of the container
@@ -104,3 +100,13 @@ networks:
     driver: bridge
   tipi_main_network:
     external: true
+volumes:
+  financial-freedom_logs:
+    name: financial-freedom_logs
+    driver: local
+  financial-freedom_mariadb:
+    name: financial-freedom_mariadb
+    driver: local
+  financial-freedom_sessions:
+    name: financial-freedom_sessions
+    driver: local

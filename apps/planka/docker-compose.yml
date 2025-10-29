@@ -16,7 +16,7 @@ services:
     # Maps a host directory to the container's data directory
     # Ensures that the database data persists across container restarts and deployments
     volumes:
-      - ./data/postgresql:/var/lib/postgresql/data
+      - planka_postgresql:/var/lib/postgresql/data
     # Environment variables passed to the PostgreSQL container for configuration
     environment:
       # Sets the default database that is created when the container starts
@@ -27,7 +27,6 @@ services:
       - POSTGRES_HOST_AUTH_METHOD=trust
     networks:
       - big-bear-planka-network
-      - tipi_main_network
     # Healthcheck configuration to ensure the database service is running properly
     # Runs a command inside the container at specified intervals to check the health of the service
     healthcheck:
@@ -42,8 +41,6 @@ services:
       timeout: 5s
       # Number of consecutive failures needed to consider the service as unhealthy
       retries: 5
-    labels:
-      runtipi.managed: "true"
   planka:
     # Name of the container
     container_name: planka
@@ -53,9 +50,9 @@ services:
     restart: unless-stopped
     # Volumes to be mounted to the container for persistent storage
     volumes:
-      - ./data/user-avatars:/app/public/user-avatars
-      - ./data/project-background-images:/app/public/project-background-images
-      - ./data/attachments:/app/private/attachments
+      - planka_user-avatars:/app/public/user-avatars
+      - planka_project-background-images:/app/public/project-background-images
+      - planka_attachments:/app/private/attachments
     # Ports mapping between host and container for network access
     ports:
       # Mapping port 3000 of the host to port 1337 of the container
@@ -93,7 +90,6 @@ services:
       # - OIDC_IGNORE_ROLES=true
       # - OIDC_ENFORCED=true
     networks:
-      - big-bear-planka-network
       - tipi_main_network
     # Dependency on another service, ensuring it is healthy before starting
     depends_on:
@@ -106,3 +102,16 @@ networks:
     driver: bridge
   tipi_main_network:
     external: true
+volumes:
+  planka_attachments:
+    name: planka_attachments
+    driver: local
+  planka_postgresql:
+    name: planka_postgresql
+    driver: local
+  planka_project-background-images:
+    name: planka_project-background-images
+    driver: local
+  planka_user-avatars:
+    name: planka_user-avatars
+    driver: local
