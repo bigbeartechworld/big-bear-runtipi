@@ -20,10 +20,10 @@ services:
     # Volume mappings required for system integration
     # These mounts allow the container to interact with the host system
     volumes:
-      - ./data/data/spacedrive:/var/spacedrive
+      - ${APP_DATA_DIR}/data/spacedrive_data_spacedrive:/var/spacedrive
     # Map port 8080 on the host to port 8080 on the container
     ports:
-      - 8080:8080
+      - ${APP_PORT}:8080
     labels:
       runtipi.managed: "true"
     networks:

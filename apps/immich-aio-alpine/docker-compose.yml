@@ -8,7 +8,6 @@ services:
     image: redis:6.2.20-alpine@sha256:2185e741f4c1e7b0ea9ca1e163a3767c4270a73086b6bbea2049a7203212fb7f # patched for CVE-2025-49844
     restart: always # Policy to always restart the container if it stops
     networks:
-      - big_bear_immich_network # Connects the container to a defined network
       - tipi_main_network
     labels:
       runtipi.managed: "true"
@@ -22,11 +21,10 @@ services:
       POSTGRES_DB: immich
       PG_DATA: /var/lib/postgresql/data
     volumes: # Mounting directories for persistent data storage
-      - ./data/pgdata:/var/lib/postgresql/data
+      - ${APP_DATA_DIR}/data/immich-aio-alpine_pgdata:/var/lib/postgresql/data
     restart: unless-stopped # Policy to always restart the container if it stops
     # CasaOS specific configuration for the database service
     networks:
-      - big_bear_immich_network # Connects the container to a defined network
       - tipi_main_network
     labels:
       runtipi.managed: "true"
@@ -34,10 +32,10 @@ services:
     container_name: immich-aio-alpine # Name of the running container
     image: ghcr.io/imagegenius/immich:2.0.0-alpine # Image to be used
     ports: # Mapping ports from the host OS to the container
-      - 2283:8080
+      - ${APP_PORT}:8080
     volumes: # Mounting directories for persistent data storage
-      - ./data/config:/config
-      - ./data/photos:/usr/src/app/photos
+      - ${APP_DATA_DIR}/data/immich-aio-alpine_config:/config
+      - ${APP_DATA_DIR}/data/immich-aio-alpine_photos:/usr/src/app/photos
       # - path_to_imports:/import:ro #optional
     environment: # Setting environment variables
       - PUID=1000
@@ -60,12 +58,9 @@ services:
     restart: unless-stopped # Policy to restart unless stopped
     # Networks to be attached to the container
     networks:
-      - big_bear_immich_network
       - tipi_main_network
     labels:
       runtipi.managed: "true"
-networks: # Defines network configurations for the services
-  big_bear_immich_network:
-    driver: bridge # Uses bridge network driver
+networks:
   tipi_main_network:
     external: true

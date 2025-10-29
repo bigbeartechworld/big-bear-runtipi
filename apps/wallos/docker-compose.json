@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-wallos",
+      "name": "wallos",
       "image": "bellamy/wallos:4.5.0",
-      "internalPort": 80,
+      "internalPort": 8282,
       "isMain": true
     }
   ]

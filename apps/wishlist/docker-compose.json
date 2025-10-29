@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-wishlist",
+      "name": "wishlist",
       "image": "ghcr.io/cmintey/wishlist:v0.51.1",
       "internalPort": 3280,
       "isMain": true

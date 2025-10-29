@@ -8,8 +8,8 @@ services:
     image: postgres:14.2 # Docker image and version for PostgreSQL
     restart: on-failure # Restart policy: Restart on failure
     volumes:
-      - ./data/pgdata:/var/lib/postgresql/data # Persistent DB data
-      - ./data/db/init-data.sh:/docker-entrypoint-initdb.d/init-data.sh # DB initialization script
+      - ${APP_DATA_DIR}/data/n8n_pgdata:/var/lib/postgresql/data # Persistent DB data
+      - ${APP_DATA_DIR}/data/n8n_db_init-data.sh:/docker-entrypoint-initdb.d/init-data.sh # DB initialization script
     environment:
       # PostgreSQL user, password, and database environment variables
       - POSTGRES_PASSWORD=bigbearcasaos
@@ -27,14 +27,14 @@ services:
       - tipi_main_network
   n8n:
     container_name: n8n # Name of the n8n container
-    image: n8nio/n8n:1.117.0 # Docker image and version to use for n8n
+    image: n8nio/n8n:1.117.1 # Docker image and version to use for n8n
     restart: unless-stopped # Restart policy: Restart unless manually stopped
     ports:
-      - 5678:5678 # Port mapping between host and container
+      - ${APP_PORT}:5678 # Port mapping between host and container
     links:
       - db-n8n # Link to the database container
     volumes:
-      - ./data/.n8n:/home/node/.n8n # Volume for persistent data
+      - ${APP_DATA_DIR}/data/n8n_.n8n:/home/node/.n8n # Volume for persistent data
     environment:
       # Database configuration environment variables
       - DB_TYPE=postgresdb

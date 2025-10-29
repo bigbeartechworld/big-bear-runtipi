@@ -1,7 +1,7 @@
 {
   "name": "Immich AIO Alpine",
   "available": true,
-  "port": 2284,
+  "port": 2283,
   "exposable": true,
   "dynamic_config": true,
   "id": "immich-aio-alpine",
@@ -13,9 +13,9 @@
   "author": "imagegenius",
   "source": "",
   "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508263000,
-  "updated_at": 1761508263000,
+  "supported_architectures": ["amd64","arm64"],
+  "created_at": 1761774195000,
+  "updated_at": 1761774195000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

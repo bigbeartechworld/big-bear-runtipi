@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-nexterm",
+      "name": "nexterm",
       "image": "germannewsmaker/nexterm:1.0.5-OPEN-PREVIEW",
       "internalPort": 6989,
       "isMain": true
