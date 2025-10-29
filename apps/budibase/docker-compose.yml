@@ -8,13 +8,13 @@ services:
     # Name of the container
     container_name: budibase
     # Image to be used for the container
-    image: budibase/budibase:3.22.2
+    image: budibase/budibase:3.22.4
     # Container restart policy
     restart: unless-stopped
     # Volumes to be mounted to the container
     volumes:
-      # Mounting the local directory ./data/data to /data in the container
-      - ./data/data:/data
+      # Mounting the local directory /DATA/AppData/$AppID/data to /data in the container
+      - budibase_data:/data
     # Ports mapping between host and container
     ports:
       # Mapping port 80 of the container to port 8080 of the host
@@ -23,6 +23,10 @@ services:
       runtipi.managed: "true"
     networks:
       - tipi_main_network
+volumes:
+  budibase_data:
+    name: budibase_data
+    driver: local
 networks:
   tipi_main_network:
     external: true

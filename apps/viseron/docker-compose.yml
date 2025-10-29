@@ -15,11 +15,11 @@ services:
     shm_size: "1024mb"
     # Volumes to be mounted to the container
     volumes:
-      - ./data/segments:/segments
-      - ./data/snapshots:/snapshots
-      - ./data/thumbnails:/thumbnails
-      - ./data/event_clips:/event_clips
-      - ./data/config:/config
+      - viseron_segments:/segments
+      - viseron_snapshots:/snapshots
+      - viseron_thumbnails:/thumbnails
+      - viseron_event_clips:/event_clips
+      - viseron_config:/config
       - /etc/localtime:/etc/localtime:ro
     # Ports mapping between host and container
     ports:
@@ -33,6 +33,22 @@ services:
       runtipi.managed: "true"
     networks:
       - tipi_main_network
+volumes:
+  viseron_config:
+    name: viseron_config
+    driver: local
+  viseron_event_clips:
+    name: viseron_event_clips
+    driver: local
+  viseron_segments:
+    name: viseron_segments
+    driver: local
+  viseron_snapshots:
+    name: viseron_snapshots
+    driver: local
+  viseron_thumbnails:
+    name: viseron_thumbnails
+    driver: local
 networks:
   tipi_main_network:
     external: true

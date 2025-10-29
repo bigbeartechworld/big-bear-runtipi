@@ -1,7 +1,7 @@
 {
   "name": "Stirling-PDF",
   "available": true,
-  "port": 8132,
+  "port": 8080,
   "exposable": true,
   "dynamic_config": true,
   "id": "stirling-pdf",
@@ -13,9 +13,9 @@
   "author": "stirlingtools",
   "source": "",
   "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508347000,
-  "updated_at": 1761508347000,
+  "supported_architectures": ["amd64","arm64"],
+  "created_at": 1761704293000,
+  "updated_at": 1761704293000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

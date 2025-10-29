@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-homarr-v1",
+      "name": "homarr-v1",
       "image": "ghcr.io/homarr-labs/homarr:v1.43.0",
       "internalPort": 7575,
       "isMain": true

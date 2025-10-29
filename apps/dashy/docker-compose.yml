@@ -11,7 +11,7 @@ services:
     container_name: dashy
     # Uncomment below if you want to mount volumes
     volumes:
-      - ./data/public:/app/public
+      - dashy_public:/app/public
     # Ports mapping
     ports:
       - 4000:8080
@@ -31,6 +31,10 @@ services:
       runtipi.managed: "true"
     networks:
       - tipi_main_network
+volumes:
+  dashy_public:
+    name: dashy_public
+    driver: local
 networks:
   tipi_main_network:
     external: true

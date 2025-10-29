@@ -14,7 +14,7 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Mounting the local homarr/configs directory to /app/data/configs inside the container
-      - ./data/config:/root/.dbgate
+      - dbgate_config:/root/.dbgate
     # Ports mapping between host and container
     ports:
       # Mapping port 3000 of the host to port 3000 of the container
@@ -23,6 +23,10 @@ services:
       runtipi.managed: "true"
     networks:
       - tipi_main_network
+volumes:
+  dbgate_config:
+    name: dbgate_config
+    driver: local
 networks:
   tipi_main_network:
     external: true

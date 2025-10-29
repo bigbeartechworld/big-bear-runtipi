@@ -36,7 +36,7 @@ services:
       - SITE_LOGO_URL= #optional
     # Volumes to be mounted to the container
     volumes:
-      - ./data/config:/config
+      - healthchecks_config:/config
     # Ports mapping between host and container
     ports:
       # Mapping port 8000 of the host to port 8000 of the container
@@ -47,6 +47,10 @@ services:
       runtipi.managed: "true"
     networks:
       - tipi_main_network
+volumes:
+  healthchecks_config:
+    name: healthchecks_config
+    driver: local
 networks:
   tipi_main_network:
     external: true

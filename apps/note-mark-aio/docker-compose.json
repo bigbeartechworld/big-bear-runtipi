@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-note-mark-aio",
+      "name": "note-mark-aio",
       "image": "ghcr.io/enchant97/note-mark-aio:0.17.1",
       "internalPort": 8000,
       "isMain": true

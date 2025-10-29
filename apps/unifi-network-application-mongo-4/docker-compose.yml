@@ -4,10 +4,21 @@
 name: big-bear-unifi-network-application-mongo-4
 # Service definitions for the big-bear-unifi-network-application-mongo-4 application
 services:
-  # Main application service
-  app: # Name of the service
+  # MongoDB database for the application
+  unifi-db:
+    image: mongo:4.4.28
+    container_name: big-bear-unifi-db
+    volumes:
+      - unifi-network-application-mongo-4_db_data:/data/db # MongoDB data persistence
+      - /DATA/AppData/big-bear-unifi-network-application/db/init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
+    ports:
+      - 27017:27017 # MongoDB default port
+    networks: # Networks to join
+      - unifi-nework-application-network
+    restart: unless-stopped # Restart policy
+  unifi-network-application-mongo-4:
     image: linuxserver/unifi-network-application:9.5.21 # Docker image to use
-    container_name: big-bear-unifi-network-application # Name for the created container
+    container_name: unifi-network-application-mongo-4 # Name for the created container
     environment: # Environmental variables for the container
       - PUID=1000 # User ID
       - PGID=1000 # Group ID
@@ -22,7 +33,7 @@ services:
       - MONGO_TLS= #optional  # MongoDB TLS setting
       - MONGO_AUTHSOURCE= #optional  # MongoDB authentication source
     volumes: # Volumes to mount in the container
-      - ./data/config:/config # Map host directory to container directory
+      - unifi-network-application-mongo-4_config:/config # Map host directory to container directory
     ports: # Ports to expose and forward
       - 8443:8443 # HTTPS portal
       - 3478:3478/udp # STUN service
@@ -35,24 +46,9 @@ services:
       - 5514:5514/udp #optional  # Remote syslog port
     restart: unless-stopped # Restart policy for the container
     networks: # Networks to join
-      - unifi-nework-application-network
       - tipi_main_network
     depends_on:
       - unifi-db
-    labels:
-      runtipi.managed: "true"
-  unifi-network-application-mongo-4:
-    image: mongo:4.4.28
-    container_name: unifi-network-application-mongo-4
-    volumes:
-      - ./data/db/data:/data/db # MongoDB data persistence
-      - /DATA/AppData/big-bear-unifi-network-application/db/init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
-    ports:
-      - 27017:27017 # MongoDB default port
-    networks: # Networks to join
-      - unifi-nework-application-network
-      - tipi_main_network
-    restart: unless-stopped # Restart policy
     labels:
       runtipi.managed: "true"
 # Networks used by the application
@@ -62,3 +58,13 @@ networks:
     driver: bridge
   tipi_main_network:
     external: true
+# Volumes for data persistence
+volumes:
+  # Configuration data for the application
+  unifi-network-application-mongo-4_config:
+    name: unifi-network-application-mongo-4_config
+    driver: local
+  # Database data for MongoDB
+  unifi-network-application-mongo-4_db_data:
+    name: unifi-network-application-mongo-4_db_data
+    driver: local

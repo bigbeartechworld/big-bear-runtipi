@@ -13,7 +13,7 @@ services:
     # These mounts allow the container to interact with the host system
     volumes:
       # Temporary storage for morphos
-      - ./data/tmp:/tmp
+      - morphos_tmp:/tmp
     # Map port 8080 on the host to port 8080 on the container
     ports:
       - "8080:8080"
@@ -28,6 +28,10 @@ services:
       runtipi.managed: "true"
     networks:
       - tipi_main_network
+volumes:
+  morphos_tmp:
+    name: morphos_tmp
+    driver: local
 networks:
   tipi_main_network:
     external: true
