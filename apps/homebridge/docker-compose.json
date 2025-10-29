@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-homebridge",
+      "name": "homebridge",
       "image": "homebridge/homebridge:2024-05-02",
       "internalPort": 8581,
       "isMain": true

@@ -35,7 +35,7 @@ services:
       - MYSQL_PASSWORD=some_password
     # Volume mapping for persistent storage
     volumes:
-      - ./data/mysql:/var/lib/mysql
+      - ${APP_DATA_DIR}/data/guacamole_mysql:/var/lib/mysql
     labels:
       runtipi.managed: "true"
     networks:
@@ -45,9 +45,9 @@ services:
     image: guacamole/guacd:1.6.0
     # Restart policy for the container
     restart: always
+    container_name: guacamole
     labels:
       runtipi.managed: "true"
-    container_name: guacamole
     networks:
       - tipi_main_network
 networks:
