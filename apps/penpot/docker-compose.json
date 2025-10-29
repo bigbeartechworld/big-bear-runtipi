@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "penpot-frontend",
+      "name": "penpot",
       "image": "penpotapp/frontend:2.10.1",
-      "internalPort": 8080,
+      "internalPort": 9001,
       "isMain": true
     }
   ]

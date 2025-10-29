@@ -21,9 +21,8 @@ services:
       timeout: 5s
       retries: 5
     volumes:
-      - ./data/mysql:/var/lib/mysql
+      - ${APP_DATA_DIR}/data/owncloud_mysql:/var/lib/mysql
     networks:
-      - big_bear_owncloud_network
       - tipi_main_network
     labels:
       runtipi.managed: "true"
@@ -38,9 +37,8 @@ services:
       timeout: 5s
       retries: 5
     volumes:
-      - ./data/redis:/data
+      - ${APP_DATA_DIR}/data/owncloud_redis:/data
     networks:
-      - big_bear_owncloud_network
       - tipi_main_network
     labels:
       runtipi.managed: "true"
@@ -67,15 +65,14 @@ services:
       - OWNCLOUD_REDIS_HOST=big-bear-owncloud-redis
     # Volumes to be mounted to the container
     volumes:
-      # Mounting the local ./data/data directory to /mnt/data inside the container
-      - ./data/data:/mnt/data
+      # Mounting the local /DATA/AppData/$AppID/data directory to /mnt/data inside the container
+      - ${APP_DATA_DIR}/data/owncloud_data:/mnt/data
     # Ports mapping between host and container
     ports:
       # Mapping port 8080 of the host to port 8080 of the container
-      - "8080:8080"
+      - "${APP_PORT}:8080"
     # Networks to be attached to the container
     networks:
-      - big_bear_owncloud_network
       - tipi_main_network
     # Healthcheck configuration for the service
     healthcheck:
@@ -89,8 +86,5 @@ services:
     labels:
       runtipi.managed: "true"
 networks:
-  big_bear_owncloud_network:
-    name: big_bear_owncloud_network
-    driver: bridge
   tipi_main_network:
     external: true

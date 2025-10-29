@@ -13,10 +13,10 @@ services:
       - SUDO_PASSWORD=sudo_my_password # Password to access code-server
       - DEFAULT_WORKSPACE=/config/workspace
     volumes:
-      - ./data/config:/config #config dir
-      - ./data/projects:/projects #project dir
+      - ${APP_DATA_DIR}/data/code-server_config:/config #config dir
+      - ${APP_DATA_DIR}/data/code-server_projects:/projects #project dir
     ports:
-      - "8080:8443" # Expose code-server's port 8080 on the host's port 8080
+      - "${APP_PORT}:8443" # Expose code-server's port 8080 on the host's port 8080
     restart: always # Policy to restart the container if it stops unexpectedly
     labels:
       runtipi.managed: "true"

@@ -10,7 +10,7 @@ services:
 
     ports:
       # Port mapping between host and container
-      - 3000:3000
+      - ${APP_PORT}:3000
       # Maps port 3000 on the host to port 3000 in the container
     volumes:
       # Defines volume mounts for the service
@@ -18,9 +18,9 @@ services:
       # Maps data directory from host to container's backend data directory
       - "/DATA/AppData/pingvin-share/images:/opt/app/frontend/public/img"
       # Maps images directory from host to container's frontend public img directory
+    container_name: pingvin-share
     labels:
       runtipi.managed: "true"
-    container_name: pingvin-share
     networks:
       - tipi_main_network
 networks:

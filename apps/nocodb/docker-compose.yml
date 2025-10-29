@@ -14,9 +14,8 @@ services:
       POSTGRES_USER: nocodb # Database user
       POSTGRES_PASSWORD: nocodb # Database password
     volumes:
-      - ./data/pgdata:/var/lib/postgresql/data # Persistent storage for the database
+      - ${APP_DATA_DIR}/data/nocodb_pgdata:/var/lib/postgresql/data # Persistent storage for the database
     networks:
-      - big-bear-nocodb-network # Connects to the custom network
       - tipi_main_network
     labels:
       runtipi.managed: "true"
@@ -27,14 +26,13 @@ services:
     restart: unless-stopped # Ensures Redis container is available unless manually stopped
     command: ["redis-server", "--requirepass", "casaos"] # Starts Redis with a password
     volumes:
-      - ./data/redis:/data # Persistent storage for Redis data
+      - ${APP_DATA_DIR}/data/nocodb_redis:/data # Persistent storage for Redis data
     healthcheck:
       test: ["CMD", "redis-cli", "ping"] # Health check command for Redis
       interval: 1s # Interval between health checks
       timeout: 3s # Timeout for each health check
       retries: 30 # Number of retries before considering the service unhealthy
     networks:
-      - big-bear-nocodb-network # Connects to the custom network
       - tipi_main_network
     labels:
       runtipi.managed: "true"
@@ -47,17 +45,13 @@ services:
       - NC_AUTH_JWT_SECRET=899499fc-36a0-4131-b077-7bb9f051ac9b # JWT secret for authentication
       - NC_REDIS_URL=redis://default:casaos@big-bear-nocodb-redis:6379 # Connection string for Redis
     ports:
-      - "8080:8080" # Maps port 8080 from the container to the host
+      - "${APP_PORT}:8080" # Maps port 8080 from the container to the host
     volumes:
-      - ./data/data:/usr/src/app/data # Maps persistent data storage for NocoDB
+      - ${APP_DATA_DIR}/data/nocodb_data:/usr/src/app/data # Maps persistent data storage for NocoDB
     networks:
-      - big-bear-nocodb-network # Connects to the custom network
       - tipi_main_network
     labels:
       runtipi.managed: "true"
-# Network configuration
 networks:
-  big-bear-nocodb-network:
-    driver: bridge # Uses a bridge network for inter-container communication
   tipi_main_network:
     external: true
