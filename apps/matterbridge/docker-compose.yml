@@ -8,14 +8,26 @@ services:
     # Name of the container
     container_name: matterbridge
     # Docker image to be used
-    image: luligu/matterbridge:3.3.3
+    image: luligu/matterbridge:3.3.4
     # Restart policy for the service
     restart: unless-stopped
     # Network mode set to host for Matter mdns support
     network_mode: host
     # Volume mappings for persistent storage
     volumes:
-      - ./data/Matterbridge:/root/Matterbridge
-      - ./data/.matterbridge:/root/.matterbridge
+      - matterbridge_Matterbridge:/root/Matterbridge
+      - matterbridge_.matterbridge:/root/.matterbridge
     labels:
       runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+volumes:
+  matterbridge_.matterbridge:
+    name: matterbridge_.matterbridge
+    driver: local
+  matterbridge_Matterbridge:
+    name: matterbridge_Matterbridge
+    driver: local
+networks:
+  tipi_main_network:
+    external: true

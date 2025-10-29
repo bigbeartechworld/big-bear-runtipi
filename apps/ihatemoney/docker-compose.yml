@@ -16,12 +16,9 @@ services:
     ports:
       - "3306:3306" # Maps MySQL port 3306 inside the container to port 3306 on the host.
     volumes:
-      - ./data/mysql:/var/lib/mysql # Maps a volume for data persistence.
+      - ihatemoney_mysql:/var/lib/mysql # Maps a volume for data persistence.
     networks:
       - big_bear_ihatemoney_network # Connects the MySQL service to the network.
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
   ihatemoney:
     # Name of the container
     container_name: ihatemoney
@@ -40,7 +37,6 @@ services:
       # Mapping port 8001 of the host to port 8000 of the container
       - "8001:8000"
     networks:
-      - big_bear_ihatemoney_network # Connects the service to a network.
       - tipi_main_network
     labels:
       runtipi.managed: "true"
@@ -49,3 +45,7 @@ networks:
     driver: bridge # Use the bridge network driver.
   tipi_main_network:
     external: true
+volumes:
+  ihatemoney_mysql:
+    name: ihatemoney_mysql
+    driver: local

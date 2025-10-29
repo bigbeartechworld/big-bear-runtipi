@@ -13,8 +13,8 @@ services:
     restart: unless-stopped
     # Volumes to be mounted to the container
     volumes:
-      # Mounting the local ./data/data directory to /app/data inside the container
-      - ./data/data:/app/data
+      # Mounting the local /DATA/AppData/$AppID/data directory to /app/data inside the container
+      - nexterm_data:/app/data
     # Ports mapping between host and container
     ports:
       # Mapping port 6989 of the host to port 6989 of the container
@@ -23,6 +23,10 @@ services:
       runtipi.managed: "true"
     networks:
       - tipi_main_network
+volumes:
+  nexterm_data:
+    name: nexterm_data
+    driver: local
 networks:
   tipi_main_network:
     external: true

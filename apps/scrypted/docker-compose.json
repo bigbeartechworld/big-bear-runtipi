@@ -3,8 +3,8 @@
   "services": [
     {
       "name": "scrypted",
-      "image": "koush/scrypted:v0.123.58-jammy-full",
-      "internalPort": 10445,
+      "image": "koush/scrypted:v0.142.9-noble-full",
+      "internalPort": 10443,
       "isMain": true
     }
   ]

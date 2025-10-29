@@ -1,7 +1,7 @@
 {
   "name": "EJBCA Community",
   "available": true,
-  "port": 8444,
+  "port": 8443,
   "exposable": true,
   "dynamic_config": true,
   "id": "ejbca-ce",
@@ -13,9 +13,9 @@
   "author": "Keyfactor",
   "source": "",
   "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508236000,
-  "updated_at": 1761508236000,
+  "supported_architectures": ["amd64"],
+  "created_at": 1761700341000,
+  "updated_at": 1761700341000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

@@ -24,3 +24,8 @@ services:
       - BASIC_AUTH_PASS=""
     labels:
       runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

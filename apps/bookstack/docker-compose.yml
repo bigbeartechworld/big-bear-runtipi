@@ -14,13 +14,10 @@ services:
       - MYSQL_USER=bigbear # Database user
       - MYSQL_PASSWORD=a3e8949f-484c-4877-afdb-391f892f9bb6 # Database password
     volumes:
-      - ./data/mysql:/config # Mount the volume for MariaDB data
+      - bookstack_mysql:/config # Mount the volume for MariaDB data
     restart: unless-stopped # Restart policy
     networks:
       - big_bear_bookstack_network # Connect to the bookstack-network
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
   bookstack:
     # Name of the container
     container_name: bookstack
@@ -29,7 +26,7 @@ services:
     # Container restart policy
     restart: unless-stopped
     volumes:
-      - ./data/config:/config
+      - bookstack_config:/config
     # Environment variables
     environment:
       - APP_KEY=base64:3w/hRS2HYVFH5tJqD9AFlyurTh8mBByMKeMRyH9kEEQ=
@@ -45,7 +42,6 @@ services:
     depends_on:
       - big-bear-bookstack-db
     networks:
-      - big_bear_bookstack_network
       - tipi_main_network
     labels:
       runtipi.managed: "true"
@@ -55,3 +51,10 @@ networks:
     driver: bridge
   tipi_main_network:
     external: true
+volumes:
+  bookstack_config:
+    name: bookstack_config
+    driver: local
+  bookstack_mysql:
+    name: bookstack_mysql
+    driver: local

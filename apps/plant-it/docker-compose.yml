@@ -22,13 +22,10 @@ services:
       - "3306:3306"
     volumes:
       # Volume for MySQL data
-      - "./data/mysql:/var/lib/mysql"
+      - "plant-it_mysql:/var/lib/mysql"
     networks:
       # Network definition
       - big_bear_plant_it_network
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
   # Service definition for the cache
   big-bear-plant-it-cache:
     # Name of the cache container
@@ -40,9 +37,6 @@ services:
     networks:
       # Network definition
       - big_bear_plant_it_network
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
   plant-it:
     # Name of the container
     container_name: plant-it
@@ -92,9 +86,9 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Volume for uploads
-      - "./data/upload-dir:/upload-dir"
+      - "plant-it_upload-dir:/upload-dir"
       # Volume for SSL certificates
-      - "./data/certificates:/certificates"
+      - "plant-it_certificates:/certificates"
     # Ports mapping between host and container
     ports:
       # Mapping port 8080 of the host to port 8080 of the container
@@ -102,8 +96,6 @@ services:
       # Mapping port 3000 of the host to port 3000 of the container
       - "3000:3000"
     networks:
-      # Network definition
-      - big_bear_plant_it_network
       - tipi_main_network
     labels:
       runtipi.managed: "true"
@@ -114,3 +106,13 @@ networks:
     driver: bridge
   tipi_main_network:
     external: true
+volumes:
+  plant-it_certificates:
+    name: plant-it_certificates
+    driver: local
+  plant-it_mysql:
+    name: plant-it_mysql
+    driver: local
+  plant-it_upload-dir:
+    name: plant-it_upload-dir
+    driver: local

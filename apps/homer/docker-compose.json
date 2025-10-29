@@ -2,8 +2,8 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "app",
-      "image": "b4bz/homer:v25.10.1",
+      "name": "homer",
+      "image": "b4bz/homer:25.10.1",
       "internalPort": 8080,
       "isMain": true
     }

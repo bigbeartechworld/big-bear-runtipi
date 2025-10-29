@@ -20,7 +20,7 @@ services:
     # Volume mappings required for system integration
     # These mounts allow the container to interact with the host system
     volumes:
-      - ./data/data/spacedrive:/var/spacedrive
+      - spacedrive_data_spacedrive:/var/spacedrive
     # Map port 8080 on the host to port 8080 on the container
     ports:
       - 8080:8080
@@ -28,6 +28,10 @@ services:
       runtipi.managed: "true"
     networks:
       - tipi_main_network
+volumes:
+  spacedrive_data_spacedrive:
+    name: spacedrive_data_spacedrive
+    driver: local
 networks:
   tipi_main_network:
     external: true

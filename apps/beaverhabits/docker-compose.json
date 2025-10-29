@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-beaverhabits",
+      "name": "beaverhabits",
       "image": "daya0576/beaverhabits:0.7.3",
       "internalPort": 8080,
       "isMain": true

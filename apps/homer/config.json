@@ -1,7 +1,7 @@
 {
   "name": "Homer",
   "available": true,
-  "port": 8100,
+  "port": 8080,
   "exposable": true,
   "dynamic_config": true,
   "id": "homer",
@@ -13,9 +13,9 @@
   "author": "bastienwirtz",
   "source": "",
   "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508256000,
-  "updated_at": 1761508256000,
+  "supported_architectures": ["amd64","arm64"],
+  "created_at": 1761700362000,
+  "updated_at": 1761700362000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
