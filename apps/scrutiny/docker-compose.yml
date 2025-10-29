@@ -15,10 +15,10 @@ services:
     volumes:
       # Mount the config directory from the host to the container
       # This allows the user to persist configuration changes
-      - ./data/config:/opt/scrutiny/config
+      - ${APP_DATA_DIR}/data/scrutiny_config:/opt/scrutiny/config
       # Mount the InfluxDB data directory from the host to the container
       # This allows the user to persist data from the InfluxDB database
-      - ./data/influxdb:/opt/scrutiny/influxdb
+      - ${APP_DATA_DIR}/data/scrutiny_influxdb:/opt/scrutiny/influxdb
       # Mount the udev directory from the host to the container
       # This is required for the container to access raw I/O devices
       - /run/udev:/run/udev:ro
@@ -26,7 +26,7 @@ services:
     ports:
       # Map port 8080 from the container to port 38080 on the host.
       # This allows users to access the Scrutiny web interface from the host.
-      - "38080:8080"
+      - "${APP_PORT}:8080"
       # Map port 8086 from the container to port 38086 on the host.
       # This allows users to access the InfluxDB API from the host.
       - "38086:8086"

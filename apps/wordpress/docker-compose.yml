@@ -16,7 +16,7 @@ services:
       MYSQL_ROOT_PASSWORD: casaos
     # Volume mapping for the database
     volumes:
-      - ./data/mysql:/var/lib/mysql
+      - ${APP_DATA_DIR}/data/wordpress_mysql:/var/lib/mysql
     labels:
       runtipi.managed: "true"
     networks:
@@ -26,7 +26,7 @@ services:
     image: wordpress:6.8.3
     # Port mapping for the application
     ports:
-      - 8080:80
+      - ${APP_PORT}:80
     # Environment variables for the application
     environment:
       WORDPRESS_DB_HOST: db
@@ -35,13 +35,13 @@ services:
       WORDPRESS_DB_NAME: wordpress
     # Volume mapping for the application
     volumes:
-      - ./data/html:/var/www/html
+      - ${APP_DATA_DIR}/data/wordpress_html:/var/www/html
     # Service dependencies for the application
     depends_on:
       - db
+    container_name: wordpress
     labels:
       runtipi.managed: "true"
-    container_name: wordpress
     networks:
       - tipi_main_network
 networks:

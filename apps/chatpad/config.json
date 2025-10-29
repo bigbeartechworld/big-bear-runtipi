@@ -1,11 +1,11 @@
 {
   "name": "Chatpad",
   "available": true,
-  "port": 8087,
+  "port": 8080,
   "exposable": true,
   "dynamic_config": true,
   "id": "chatpad",
-  "description": "Recently, there has been a surge of UIs for ChatGPT, making it the new \"to-do app\" that everyone wants to try their hand at. Chatpad sets itself apart with a broader vision - to become the ultimate interface for ChatGPT users.",
+  "description": "Recently, there has been a surge of UIs for ChatGPT, making it the new to-do app that everyone wants to try their hand at. Chatpad sets itself apart with a broader vision - to become the ultimate interface for ChatGPT users.",
   "tipi_version": 1,
   "version": "f45cd53bc410412610c1ba1cbd84cd137d8e167d",
   "categories": ["bigbearcasaos"],
@@ -13,9 +13,9 @@
   "author": "deiucanta",
   "source": "",
   "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508221000,
-  "updated_at": 1761508221000,
+  "supported_architectures": ["amd64","arm64"],
+  "created_at": 1761771180000,
+  "updated_at": 1761771180000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

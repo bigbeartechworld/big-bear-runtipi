@@ -1,7 +1,7 @@
 {
   "name": "Dashdot",
   "available": true,
-  "port": 3005,
+  "port": 3001,
   "exposable": true,
   "dynamic_config": true,
   "id": "dashdot",
@@ -13,9 +13,9 @@
   "author": "mauricenino",
   "source": "",
   "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508229000,
-  "updated_at": 1761508229000,
+  "supported_architectures": ["amd64","armv7","arm64"],
+  "created_at": 1761771190000,
+  "updated_at": 1761771190000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
