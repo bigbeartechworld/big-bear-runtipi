@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "app",
+      "name": "gladys",
       "image": "gladysassistant/gladys:v4.64.0",
-      "internalPort": 1081,
+      "internalPort": 1080,
       "isMain": true
     }
   ]

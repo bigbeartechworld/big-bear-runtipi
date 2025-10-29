@@ -1,7 +1,7 @@
 {
   "name": "Vikunja",
   "available": true,
-  "port": 8140,
+  "port": 8081,
   "exposable": true,
   "dynamic_config": true,
   "id": "vikunja",
@@ -13,9 +13,9 @@
   "author": "kolaente",
   "source": "",
   "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508361000,
-  "updated_at": 1761508361000,
+  "supported_architectures": ["amd64","arm64"],
+  "created_at": 1761774298000,
+  "updated_at": 1761774298000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-flowise",
+      "name": "flowise",
       "image": "flowiseai/flowise:3.0.8",
       "internalPort": 8009,
       "isMain": true

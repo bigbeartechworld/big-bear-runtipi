@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-send-visee",
+      "name": "send-visee",
       "image": "registry.gitlab.com/timvisee/send:v3.4.27",
       "internalPort": 1443,
       "isMain": true

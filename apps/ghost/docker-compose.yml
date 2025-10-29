@@ -14,7 +14,7 @@ services:
     restart: on-failure
     # Volume mappings for persistent storage
     volumes:
-      - ./data/mysql:/var/lib/mysql
+      - ${APP_DATA_DIR}/data/ghost_mysql:/var/lib/mysql
     # MySQL environment variables
     environment:
       MYSQL_USER: "ghost"
@@ -23,7 +23,6 @@ services:
       MYSQL_ROOT_PASSWORD: "casaos"
     # Networks used by the service
     networks:
-      - ghost-network
       - tipi_main_network
     labels:
       runtipi.managed: "true"
@@ -31,12 +30,11 @@ services:
     # Name of the container
     container_name: ghost
     # Docker image to be used
-    image: ghost:6.5.0-alpine
+    image: ghost:6.5.3-alpine
     # Restart policy for the service
     restart: on-failure
     # Networks used by the service
     networks:
-      - ghost-network
       - tipi_main_network
     environment:
       # Database configuration for Ghost (see Ghost documentation for more details)
@@ -51,19 +49,15 @@ services:
       #NODE_ENV: development
     # Volume mappings for persistent storage
     volumes:
-      - ./data/content:/var/lib/ghost/content
+      - ${APP_DATA_DIR}/data/ghost_content:/var/lib/ghost/content
     # Port mappings for the service
     ports:
-      - 2368:2368
+      - ${APP_PORT}:2368
     # Dependencies for the service
     depends_on:
       - db
     labels:
       runtipi.managed: "true"
-# Networks used by the application
 networks:
-  # Define the network for AdGuard Home
-  ghost-network:
-    driver: bridge
   tipi_main_network:
     external: true
