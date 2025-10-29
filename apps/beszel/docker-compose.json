@@ -2,8 +2,8 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-beszel",
-      "image": "henrygd/beszel:0.14.1",
+      "name": "beszel",
+      "image": "henrygd/beszel:0.15.0",
       "internalPort": 8090,
       "isMain": true
     }

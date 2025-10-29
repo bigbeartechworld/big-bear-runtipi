@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-onedev",
+      "name": "onedev",
       "image": "1dev/server:13.0.9",
       "internalPort": 6610,
       "isMain": true
