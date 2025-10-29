@@ -1,7 +1,7 @@
 {
   "name": "IT Tools",
   "available": true,
-  "port": 8102,
+  "port": 8080,
   "exposable": true,
   "dynamic_config": true,
   "id": "it-tools",
@@ -13,9 +13,9 @@
   "author": "corentinth",
   "source": "",
   "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508267000,
-  "updated_at": 1761508267000,
+  "supported_architectures": ["amd64","arm64"],
+  "created_at": 1761774020000,
+  "updated_at": 1761774020000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

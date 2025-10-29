@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-pwpush",
+      "name": "passwordpusher",
       "image": "pglombardo/pwpush:1.62.1",
       "internalPort": 5100,
       "isMain": true
