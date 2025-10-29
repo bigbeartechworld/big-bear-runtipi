@@ -15,21 +15,21 @@ services:
     ports:
       # Maps the container's port (target) to the host's port (published)
       - target: 5005
-        published: "5005"
+        published: "${APP_PORT}"
         protocol: tcp
     # Specifies the storage volumes that the application should use
     volumes:
       # Mounts the application data directory from the host system to the container
       - type: bind
-        source: ./data/data
+        source: ${APP_DATA_DIR}/data/flame_data
         target: /app/data
       # Mounts the Docker socket from the host system to the container
       - type: bind
         source: /var/run/docker.sock
         target: /var/run/docker.sock
+    container_name: flame
     labels:
       runtipi.managed: "true"
-    container_name: flame
     networks:
       - tipi_main_network
 networks:

@@ -15,7 +15,12 @@ services:
     network_mode: host
     # Volumes to be mounted to the container
     volumes:
-      # Mounting the local ./data/pb_data directory to /app/pb_data inside the container
-      - ./data/pb_data:/app/pb_data
+      # Mounting the local /DATA/AppData/$AppID/pb_data directory to /app/pb_data inside the container
+      - ${APP_DATA_DIR}/data/upsnap_pb_data:/app/pb_data
     labels:
       runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

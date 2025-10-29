@@ -1,0 +1,33 @@
+# Configuration for GemDigest bot setup
+
+# Name of the gem-digest-bot application
+name: big-bear-gem-digest-bot
+# Service definitions for the gem-digest-bot application
+services:
+  GemDigest:
+    # Name of the container
+    container_name: GemDigest
+    # Docker image to use
+    image: piero24/gemdigest:1.0
+    # Mount local directory to the container's /home/dev directory
+    volumes:
+      - ${APP_DATA_DIR}/data/GemDigest_extra_configs:/gem_digest_bot/extra_configs
+    # Environment variables with default values
+    environment:
+      TELEGRAM_API_KEY: TELEGRAM_API_KEY
+      GEMINI_API_KEY: GEMINI_API_KEY
+      # Add more users separating their id with ";"
+      ADMIN_USER_ID: 123;456
+    # Container restart policy
+    restart: unless-stopped
+    # Ports mapping between host and container
+    ports:
+      # Example: Mapping port 8080 of the host to port 8080 of the container (adjust as needed)
+      - "${APP_PORT}:8080"
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true
