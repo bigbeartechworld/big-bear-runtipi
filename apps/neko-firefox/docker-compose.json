@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-neko-firefox",
+      "name": "neko-firefox",
       "image": "m1k1o/neko:firefox",
       "internalPort": 8080,
       "isMain": true

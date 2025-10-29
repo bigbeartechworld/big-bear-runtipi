@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-warracker",
+      "name": "warracker",
       "image": "ghcr.io/sassanix/warracker/main:9.9.3",
-      "internalPort": 80,
+      "internalPort": 8005,
       "isMain": true
     }
   ]

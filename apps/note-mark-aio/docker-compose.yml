@@ -17,20 +17,16 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Mounting the local /config directory to /config inside the container
-      - ./data/data:/data
+      - ${APP_DATA_DIR}/data/note-mark-aio_data:/data
     # Ports mapping between host and container
     ports:
       # Mapping port 8000 of the host to port 8000 of the container
-      - "8000:8000"
+      - "${APP_PORT}:8000"
     # Networks to be attached to the container
     networks:
-      - big_bear_note_mark_aio_network
       - tipi_main_network
     labels:
       runtipi.managed: "true"
-# Network definitions for the big-bear-note-mark-aio application
 networks:
-  big_bear_note_mark_aio_network:
-    driver: bridge
   tipi_main_network:
     external: true

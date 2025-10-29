@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-linkstack",
+      "name": "linkstack",
       "image": "linkstackorg/linkstack:V4",
-      "internalPort": 80,
+      "internalPort": 10443,
       "isMain": true
     }
   ]
