@@ -30,10 +30,6 @@ services:
     ports:
       - 53:53/udp
       - 53:53/tcp
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
   lancache:
     image: lancachenet/monolithic:latest # Docker image for the caching service
     environment:
@@ -61,13 +57,20 @@ services:
       - 10443:443
     volumes:
       # Mount points for cache and logs
-      - ./data/cache:/data/cache
-      - ./data/logs:/data/logs
+      - lancache_cache:/data/cache
+      - lancache_logs:/data/logs
+    container_name: lancache
     labels:
       runtipi.managed: "true"
-    container_name: lancache
     networks:
       - tipi_main_network
+volumes:
+  lancache_cache:
+    name: lancache_cache
+    driver: local
+  lancache_logs:
+    name: lancache_logs
+    driver: local
 networks:
   tipi_main_network:
     external: true

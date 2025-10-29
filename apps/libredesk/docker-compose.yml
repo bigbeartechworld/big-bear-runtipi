@@ -11,7 +11,6 @@ services:
     restart: unless-stopped
     networks:
       - big-bear-libredesk-network
-      - tipi_main_network
     ports:
       - "5432:5432"
     environment:
@@ -25,9 +24,7 @@ services:
       timeout: 5s
       retries: 6
     volumes:
-      - ./data/data/postgres:/var/lib/postgresql/data
-    labels:
-      runtipi.managed: "true"
+      - libredesk_data_postgres:/var/lib/postgresql/data
   # Redis
   big-bear-libredesk-redis:
     image: redis:7.4.6-alpine@sha256:7a7c6b5c49a6896d0a58ee0c6dc0dcabe14f30f0a2f7d2d1362d276fa2d43166
@@ -37,11 +34,8 @@ services:
       - "6379:6379"
     networks:
       - big-bear-libredesk-network
-      - tipi_main_network
     volumes:
-      - ./data/data/redis:/data
-    labels:
-      runtipi.managed: "true"
+      - libredesk_data_redis:/data
   libredesk:
     # Name of the container
     container_name: libredesk
@@ -55,9 +49,9 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Mounting the local libredesk/uploads directory to /libredesk/uploads inside the container
-      - ./data/uploads:/libredesk/uploads:rw
+      - libredesk_uploads:/libredesk/uploads:rw
       # Mounting the local libredesk/config.toml directory to /libredesk/config.toml inside the container
-      - ./data/config:/libredesk/config:rw
+      - libredesk_config:/libredesk/config:rw
     # Ports mapping between host and container
     ports:
       # Mapping port 9000 of the host to port 9000 of the container
@@ -69,7 +63,6 @@ services:
       - big-bear-libredesk-redis
     # Networks
     networks:
-      - big-bear-libredesk-network
       - tipi_main_network
     labels:
       runtipi.managed: "true"
@@ -78,3 +71,16 @@ networks:
     driver: bridge
   tipi_main_network:
     external: true
+volumes:
+  libredesk_config:
+    name: libredesk_config
+    driver: local
+  libredesk_data_postgres:
+    name: libredesk_data_postgres
+    driver: local
+  libredesk_data_redis:
+    name: libredesk_data_redis
+    driver: local
+  libredesk_uploads:
+    name: libredesk_uploads
+    driver: local

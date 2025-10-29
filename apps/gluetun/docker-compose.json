@@ -3,8 +3,8 @@
   "services": [
     {
       "name": "gluetun",
-      "image": "qmcgaw/gluetun:v3.40.0",
-      "internalPort": 8888,
+      "image": "qmcgaw/gluetun:3.40.0",
+      "internalPort": 8000,
       "isMain": true
     }
   ]

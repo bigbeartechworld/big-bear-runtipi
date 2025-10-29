@@ -11,7 +11,7 @@ services:
       - 8081:3456
     volumes:
       # Map container path to host path for files
-      - ./data/files:/app/vikunja/files
+      - vikunja_files:/app/vikunja/files
     environment:
       # Set the Vikunja frontend URL, replace <your public frontend url with slash> with the actual URL
       VIKUNJA_SERVICE_PUBLICURL: http://<your public frontend url with slash>/
@@ -26,7 +26,6 @@ services:
     depends_on:
       - vikunja-db
     networks:
-      - vikunja-network
       - tipi_main_network
     labels:
       runtipi.managed: "true"
@@ -44,15 +43,19 @@ services:
       MYSQL_DATABASE: vikunja
     volumes:
       # Map container path to host path for MariaDB data
-      - ./data/mysql:/var/lib/mysql
+      - vikunja_mysql:/var/lib/mysql
     restart: unless-stopped
     networks:
       - vikunja-network
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
 networks:
   vikunja-network:
     driver: bridge
   tipi_main_network:
     external: true
+volumes:
+  vikunja_files:
+    name: vikunja_files
+    driver: local
+  vikunja_mysql:
+    name: vikunja_mysql
+    driver: local

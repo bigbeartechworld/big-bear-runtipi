@@ -13,7 +13,7 @@ services:
       POSTGRES_USER: tianji-user
       POSTGRES_PASSWORD: 227453b7-1286-48cc-b471-1c269495c5fc
     volumes:
-      - ./data/pgdata:/var/lib/postgresql/data
+      - tianji_pgdata:/var/lib/postgresql/data
     restart: always
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
@@ -22,9 +22,6 @@ services:
       retries: 5
     networks:
       - big_bear_tianji_network
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
   tianji:
     # Name of the container
     container_name: tianji
@@ -43,7 +40,6 @@ services:
       # Mapping port 12345 of the host to port 12345 of the container
       - "12345:12345"
     networks:
-      - big_bear_tianji_network
       - tipi_main_network
     depends_on:
       - big-bear-tianji-db
@@ -54,3 +50,7 @@ networks:
     driver: bridge
   tipi_main_network:
     external: true
+volumes:
+  tianji_pgdata:
+    name: tianji_pgdata
+    driver: local

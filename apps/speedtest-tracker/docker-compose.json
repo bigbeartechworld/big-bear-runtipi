@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-speedtest-tracker",
+      "name": "speedtest-tracker",
       "image": "linuxserver/speedtest-tracker:1.6.8",
-      "internalPort": 80,
+      "internalPort": 8080,
       "isMain": true
     }
   ]

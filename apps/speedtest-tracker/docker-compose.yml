@@ -14,12 +14,9 @@ services:
       - MARIADB_PASSWORD=casaos
       - MARIADB_RANDOM_ROOT_PASSWORD=true
     volumes:
-      - "./data/mysql:/var/lib/mysql"
+      - "speedtest-tracker_mysql:/var/lib/mysql"
     networks:
       - big_bear_speedtest_tracker_network
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
   speedtest-tracker:
     container_name: speedtest-tracker
     ports:
@@ -37,14 +34,13 @@ services:
       - TZ=America/Chicago
     volumes:
       - "/etc/localtime:/etc/localtime:ro"
-      - "./data/config:/config"
-      - "./data/web:/etc/ssl/web"
+      - "speedtest-tracker_config:/config"
+      - "speedtest-tracker_web:/etc/ssl/web"
     image: "linuxserver/speedtest-tracker:1.6.8"
     restart: unless-stopped
     depends_on:
       - big-bear-speedtest-tracker-db
     networks:
-      - big_bear_speedtest_tracker_network
       - tipi_main_network
     labels:
       runtipi.managed: "true"
@@ -54,3 +50,13 @@ networks:
     driver: bridge
   tipi_main_network:
     external: true
+volumes:
+  speedtest-tracker_config:
+    name: speedtest-tracker_config
+    driver: local
+  speedtest-tracker_mysql:
+    name: speedtest-tracker_mysql
+    driver: local
+  speedtest-tracker_web:
+    name: speedtest-tracker_web
+    driver: local

@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "app",
+      "name": "docker-cron-restart-notifier",
       "image": "deduard/tools:restart-notifier-latest",
-      "internalPort": 8092,
+      "internalPort": 8000,
       "isMain": true
     }
   ]

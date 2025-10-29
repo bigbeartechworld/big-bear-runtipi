@@ -18,18 +18,15 @@ services:
       - MYSQL_ROOT_PASSWORD=777134a0-4480-49f3-b00c-29db42c6d136
     # Volume mappings for database persistence
     volumes:
-      - ./data/mysql:/var/lib/mysql
+      - wallabag_mysql:/var/lib/mysql
     # Network configuration
     networks:
       - big-bear-wallabag-network
-      - tipi_main_network
     # Health check configuration for database
     healthcheck:
       test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
       interval: 20s
       timeout: 3s
-    labels:
-      runtipi.managed: "true"
   # Redis cache service
   big-bear-wallabag-redis:
     # Name of the container
@@ -41,14 +38,11 @@ services:
     # Network configuration
     networks:
       - big-bear-wallabag-network
-      - tipi_main_network
     # Health check configuration for Redis
     healthcheck:
       test: ["CMD", "redis-cli", "ping"]
       interval: 20s
       timeout: 3s
-    labels:
-      runtipi.managed: "true"
   wallabag:
     # Name of the container
     container_name: wallabag
@@ -76,7 +70,7 @@ services:
       - "8080:80"
     # Volume mappings for persistent storage
     volumes:
-      - ./data/images:/var/www/wallabag/web/assets/images
+      - wallabag_images:/var/www/wallabag/web/assets/images
     # Health check configuration
     healthcheck:
       test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost/api/info"]
@@ -84,7 +78,6 @@ services:
       timeout: 3s
     # Network configuration
     networks:
-      - big-bear-wallabag-network
       - tipi_main_network
     # Service dependencies
     depends_on:
@@ -98,3 +91,10 @@ networks:
     driver: bridge
   tipi_main_network:
     external: true
+volumes:
+  wallabag_images:
+    name: wallabag_images
+    driver: local
+  wallabag_mysql:
+    name: wallabag_mysql
+    driver: local

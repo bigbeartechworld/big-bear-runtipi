@@ -26,6 +26,15 @@ services:
     # These mounts allow the container to interact with the host system
     volumes:
       # Required for monitoring system resources and container metrics
-      - ./data/data:/data
+      - poste-io_data:/data
     labels:
       runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+volumes:
+  poste-io_data:
+    name: poste-io_data
+    driver: local
+networks:
+  tipi_main_network:
+    external: true

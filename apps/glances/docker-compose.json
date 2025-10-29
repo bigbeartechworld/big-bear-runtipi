@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-glances",
+      "name": "glances",
       "image": "nicolargo/glances:4.3.0.8-full",
       "internalPort": 61208,
       "isMain": true

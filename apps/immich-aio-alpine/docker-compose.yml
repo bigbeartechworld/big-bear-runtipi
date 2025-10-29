@@ -9,9 +9,6 @@ services:
     restart: always # Policy to always restart the container if it stops
     networks:
       - big_bear_immich_network # Connects the container to a defined network
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
   # Configuration for Database service
   big-bear-immich-db:
     container_name: big-bear-immich-db # Name of the running container
@@ -22,22 +19,19 @@ services:
       POSTGRES_DB: immich
       PG_DATA: /var/lib/postgresql/data
     volumes: # Mounting directories for persistent data storage
-      - ./data/pgdata:/var/lib/postgresql/data
+      - immich-aio-alpine_pgdata:/var/lib/postgresql/data
     restart: unless-stopped # Policy to always restart the container if it stops
     # CasaOS specific configuration for the database service
     networks:
       - big_bear_immich_network # Connects the container to a defined network
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
   immich-aio-alpine:
     container_name: immich-aio-alpine # Name of the running container
     image: ghcr.io/imagegenius/immich:2.0.0-alpine # Image to be used
     ports: # Mapping ports from the host OS to the container
       - 2283:8080
     volumes: # Mounting directories for persistent data storage
-      - ./data/config:/config
-      - ./data/photos:/usr/src/app/photos
+      - immich-aio-alpine_config:/config
+      - immich-aio-alpine_photos:/usr/src/app/photos
       # - path_to_imports:/import:ro #optional
     environment: # Setting environment variables
       - PUID=1000
@@ -60,7 +54,6 @@ services:
     restart: unless-stopped # Policy to restart unless stopped
     # Networks to be attached to the container
     networks:
-      - big_bear_immich_network
       - tipi_main_network
     labels:
       runtipi.managed: "true"
@@ -69,3 +62,13 @@ networks: # Defines network configurations for the services
     driver: bridge # Uses bridge network driver
   tipi_main_network:
     external: true
+volumes:
+  immich-aio-alpine_config:
+    name: immich-aio-alpine_config
+    driver: local
+  immich-aio-alpine_pgdata:
+    name: immich-aio-alpine_pgdata
+    driver: local
+  immich-aio-alpine_photos:
+    name: immich-aio-alpine_photos
+    driver: local
