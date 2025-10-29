@@ -24,7 +24,7 @@ services:
     image: postgres:15-alpine
     restart: unless-stopped
     volumes:
-      - ./data/pg_data:/var/lib/postgresql/data
+      - ${APP_DATA_DIR}/data/reactive-resume_pg_data:/var/lib/postgresql/data
     environment:
       POSTGRES_DB: "postgres"
       POSTGRES_USER: "postgres"
@@ -35,7 +35,6 @@ services:
       timeout: 5s
       retries: 5
     networks:
-      - reactive-resume-network
       - tipi_main_network
     labels:
       runtipi.managed: "true"
@@ -48,12 +47,11 @@ services:
     ports:
       - 9000:9000
     volumes:
-      - ./data/minio_data:/data
+      - ${APP_DATA_DIR}/data/reactive-resume_minio_data:/data
     environment:
       MINIO_ROOT_USER: "minioadmin"
       MINIO_ROOT_PASSWORD: "minioadmin"
     networks:
-      - reactive-resume-network
       - tipi_main_network
     labels:
       runtipi.managed: "true"
@@ -67,7 +65,6 @@ services:
       EXIT_ON_HEALTH_FAILURE: "true"
       PRE_REQUEST_HEALTH_CHECK: "true"
     networks:
-      - reactive-resume-network
       - tipi_main_network
     labels:
       runtipi.managed: "true"
@@ -78,7 +75,6 @@ services:
     restart: unless-stopped
     command: ["redis-server", "--requirepass", "password"]
     networks:
-      - reactive-resume-network
       - tipi_main_network
     labels:
       runtipi.managed: "true"
@@ -87,14 +83,13 @@ services:
     image: amruthpillai/reactive-resume:v4.5.2
     restart: unless-stopped
     ports:
-      - 3000:3000
+      - ${APP_PORT}:3000
     depends_on:
       - postgres
       - minio
       - redis
       - chrome
     networks:
-      - reactive-resume-network
       - tipi_main_network
     environment:
       # -- Environment Variables --
@@ -129,10 +124,6 @@ services:
       # VITE_SENTRY_DSN: https://id.sentry.io # Optional
     labels:
       runtipi.managed: "true"
-# Networks used by the application
 networks:
-  # Define the network for AdGuard Home
-  reactive-resume-network:
-    driver: bridge
   tipi_main_network:
     external: true
