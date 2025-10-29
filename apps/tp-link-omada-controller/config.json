@@ -1,7 +1,7 @@
 {
   "name": "TP-Link Omada Controller",
   "available": true,
-  "port": 8135,
+  "port": 8088,
   "exposable": true,
   "dynamic_config": true,
   "id": "tp-link-omada-controller",
@@ -13,9 +13,9 @@
   "author": "",
   "source": "",
   "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508351000,
-  "updated_at": 1761508351000,
+  "supported_architectures": ["amd64","armv7","arm64"],
+  "created_at": 1761700513000,
+  "updated_at": 1761700513000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

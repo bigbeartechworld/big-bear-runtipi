@@ -16,8 +16,8 @@ services:
       - TZ=UTC
     # Volumes to be mounted to the container
     volumes:
-      - ./data/config:/config
-      - ./data/data:/data
+      - komga_config:/config
+      - komga_data:/data
     # Ports mapping between host and container
     ports:
       # Mapping port 25600 of the host to port 25600 of the container
@@ -26,6 +26,13 @@ services:
       runtipi.managed: "true"
     networks:
       - tipi_main_network
+volumes:
+  komga_config:
+    name: komga_config
+    driver: local
+  komga_data:
+    name: komga_data
+    driver: local
 networks:
   tipi_main_network:
     external: true

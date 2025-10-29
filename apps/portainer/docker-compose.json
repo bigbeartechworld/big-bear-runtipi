@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "app",
+      "name": "portainer",
       "image": "portainer/portainer-ce:2.35.0-alpine",
-      "internalPort": 8000,
+      "internalPort": 9443,
       "isMain": true
     }
   ]

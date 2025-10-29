@@ -18,9 +18,9 @@ services:
       # Maps data directory from host to container's backend data directory
       - "/DATA/AppData/pingvin-share/images:/opt/app/frontend/public/img"
       # Maps images directory from host to container's frontend public img directory
+    container_name: pingvin-share
     labels:
       runtipi.managed: "true"
-    container_name: pingvin-share
     networks:
       - tipi_main_network
 networks:

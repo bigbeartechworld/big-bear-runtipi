@@ -16,11 +16,7 @@ services:
       MYSQL_ROOT_PASSWORD: casaos
     # Volume mapping for the database
     volumes:
-      - ./data/mysql:/var/lib/mysql
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
+      - wordpress_mysql:/var/lib/mysql
   wordpress:
     # Docker image to use for the application
     image: wordpress:6.8.3
@@ -35,15 +31,22 @@ services:
       WORDPRESS_DB_NAME: wordpress
     # Volume mapping for the application
     volumes:
-      - ./data/html:/var/www/html
+      - wordpress_html:/var/www/html
     # Service dependencies for the application
     depends_on:
       - db
+    container_name: wordpress
     labels:
       runtipi.managed: "true"
-    container_name: wordpress
     networks:
       - tipi_main_network
+volumes:
+  wordpress_html:
+    name: wordpress_html
+    driver: local
+  wordpress_mysql:
+    name: wordpress_mysql
+    driver: local
 networks:
   tipi_main_network:
     external: true

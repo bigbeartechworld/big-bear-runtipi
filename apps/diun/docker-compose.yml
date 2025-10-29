@@ -22,13 +22,17 @@ services:
       DIUN_PROVIDERS_DOCKER: "true"
     # Volumes to be mounted to the container
     volumes:
-      - ./data/data:/data
+      - diun_data:/data
       - /var/run/docker.sock:/var/run/docker.sock
     labels:
       diun.enable: "true"
       runtipi.managed: "true"
     networks:
       - tipi_main_network
+volumes:
+  diun_data:
+    name: diun_data
+    driver: local
 networks:
   tipi_main_network:
     external: true

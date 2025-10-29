@@ -1,7 +1,7 @@
 {
   "name": "AdGuard Home (HOST)",
   "available": true,
-  "port": 8081,
+  "port": 8080,
   "exposable": true,
   "dynamic_config": true,
   "id": "adguard-home-host",
@@ -13,9 +13,9 @@
   "author": "AdGuardTeam",
   "source": "",
   "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508204000,
-  "updated_at": 1761508204000,
+  "supported_architectures": ["amd64","arm64","armv7"],
+  "created_at": 1761700386000,
+  "updated_at": 1761700386000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
