@@ -8,7 +8,7 @@ services:
     # Name of the container
     container_name: ls-adguardhome-sync
     # Image to be used for the container
-    image: linuxserver/adguardhome-sync:0.8.1
+    image: linuxserver/adguardhome-sync:0.8.2
     # Container restart policy
     restart: unless-stopped
     # Environment variables
@@ -29,7 +29,7 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Mounting the local adguard-home-sync/config directory to /config inside the container
-      - ./data/config:/config
+      - ls-adguardhome-sync_config:/config
     # Ports mapping between host and container
     ports:
       # Mapping port 8080 of the host to port 8080 of the container
@@ -38,6 +38,10 @@ services:
       runtipi.managed: "true"
     networks:
       - tipi_main_network
+volumes:
+  ls-adguardhome-sync_config:
+    name: ls-adguardhome-sync_config
+    driver: local
 networks:
   tipi_main_network:
     external: true

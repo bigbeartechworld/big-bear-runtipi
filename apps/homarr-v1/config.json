@@ -1,7 +1,7 @@
 {
   "name": "Homarr v1",
   "available": true,
-  "port": 7577,
+  "port": 7575,
   "exposable": true,
   "dynamic_config": true,
   "id": "homarr-v1",
@@ -13,9 +13,9 @@
   "author": "homarr-labs",
   "source": "",
   "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508254000,
-  "updated_at": 1761508254000,
+  "supported_architectures": ["amd64","arm64"],
+  "created_at": 1761702289000,
+  "updated_at": 1761702289000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

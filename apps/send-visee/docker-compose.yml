@@ -14,7 +14,7 @@ services:
     restart: unless-stopped
     # Volumes to be mounted to the container
     volumes:
-      - ./data/redis:/data
+      - send-visee_redis:/data
     # Health check
     healthcheck:
       test: ["CMD", "redis-cli", "ping"]
@@ -24,9 +24,6 @@ services:
     # Networks to be used for the container
     networks:
       - big_bear_send_visee_network
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
   send-visee:
     # Name of the container (Docker does not have to generate a random name)
     container_name: send-visee
@@ -48,13 +45,12 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Storage volume
-      - ./data/uploads:/uploads
+      - send-visee_uploads:/uploads
     # Ports mapping between host and container
     ports:
       # Mapping port 1443 of the host to port 1443 of the container
       - "1443:1443"
     networks:
-      - big_bear_send_visee_network
       - tipi_main_network
     labels:
       runtipi.managed: "true"
@@ -65,3 +61,10 @@ networks:
     driver: bridge
   tipi_main_network:
     external: true
+volumes:
+  send-visee_redis:
+    name: send-visee_redis
+    driver: local
+  send-visee_uploads:
+    name: send-visee_uploads
+    driver: local

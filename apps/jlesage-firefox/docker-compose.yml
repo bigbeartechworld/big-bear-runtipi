@@ -9,11 +9,15 @@ services:
       - VNC_PASSWORD=casaos # Set the VNC password to 'casaos'
       - FF_OPEN_URL=https://community.bigbeartechworld.com/ # Set the default URL to Big Bear Tech World
     volumes:
-      - ./data/config:/config:rw # Mount the host directory to the container's Downloads directory
+      - jlesage-firefox_config:/config:rw # Mount the host directory to the container's Downloads directory
     labels:
       runtipi.managed: "true"
     networks:
       - tipi_main_network
+volumes:
+  jlesage-firefox_config:
+    name: jlesage-firefox_config
+    driver: local
 networks:
   tipi_main_network:
     external: true

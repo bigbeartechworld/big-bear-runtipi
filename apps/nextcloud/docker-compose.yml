@@ -16,9 +16,9 @@ services:
     # Map port 7580 on the host to port 80 on the container
     ports:
       - 7580:80
-    # Mount the ./data/html directory on the host to /var/www/html in the container
+    # Mount the /DATA/AppData/$AppID/html directory on the host to /var/www/html in the container
     volumes:
-      - ./data/html:/var/www/html
+      - nextcloud_html:/var/www/html
     # Set environment variables for the container
     environment:
       - POSTGRES_HOST=db-nextcloud
@@ -40,7 +40,6 @@ services:
         condition: service_healthy
     # Define the network
     networks:
-      - nextcloud_network
       - tipi_main_network
     labels:
       runtipi.managed: "true"
@@ -50,22 +49,19 @@ services:
     image: postgres:14.2
     restart: unless-stopped
     volumes:
-      - ./data/pgdata:/var/lib/postgresql/data # Mount the PostgreSQL data directory
+      - nextcloud_pgdata:/var/lib/postgresql/data # Mount the PostgreSQL data directory
     environment:
       - POSTGRES_PASSWORD=casaos # Set the PostgreSQL password
       - POSTGRES_USER=casaos # Set the PostgreSQL username
       - POSTGRES_DB=nextcloud # Set the name of the Nextcloud database
     networks:
       - nextcloud_network # Connect to the Nextcloud network
-      - tipi_main_network
     # Healthcheck configuration for the database service
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U casaos -d nextcloud"]
       interval: 10s
       timeout: 5s
       retries: 5
-    labels:
-      runtipi.managed: "true"
   # Redis configuration for Nextcloud
   redis-nextcloud:
     container_name: redis-nextcloud
@@ -73,23 +69,20 @@ services:
     image: redis:6.2.20@sha256:d06ff6ec778c7f2a5c0dfaf58141d598efaa50a89d0e966faedfdf122cef451b
     restart: unless-stopped
     volumes:
-      - "./data/redis:/data" # Mount the Redis data directory
+      - "nextcloud_redis:/data" # Mount the Redis data directory
     networks:
       - nextcloud_network # Connect to the Nextcloud network
-      - tipi_main_network
     # Healthcheck configuration for the Redis service
     healthcheck:
       test: ["CMD-SHELL", "redis-cli ping || exit 1"]
       interval: 10s
       timeout: 5s
       retries: 5
-    labels:
-      runtipi.managed: "true"
   cron:
     image: bigbeartechworld/big-bear-nextcloud-with-smbclient:0.0.11
     restart: unless-stopped
     volumes:
-      - ./data/html:/var/www/html
+      - nextcloud_html:/var/www/html
     entrypoint: /cron.sh
     # Specify the dependencies
     depends_on:
@@ -99,12 +92,19 @@ services:
         condition: service_healthy
     networks:
       - nextcloud_network # Connect to the Nextcloud network
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
 # Network definition for the big-bear-nextcloud application
 networks:
   nextcloud_network:
     driver: bridge
   tipi_main_network:
     external: true
+volumes:
+  nextcloud_html:
+    name: nextcloud_html
+    driver: local
+  nextcloud_pgdata:
+    name: nextcloud_pgdata
+    driver: local
+  nextcloud_redis:
+    name: nextcloud_redis
+    driver: local

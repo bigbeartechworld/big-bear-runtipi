@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-wg-easy",
+      "name": "wg-easy",
       "image": "ghcr.io/wg-easy/wg-easy:14",
-      "internalPort": 51820,
+      "internalPort": 51821,
       "isMain": true
     }
   ]

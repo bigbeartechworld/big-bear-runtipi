@@ -13,7 +13,7 @@ services:
     container_name: big-bear-rocketchat-db
     volumes:
       # Persistent storage for MongoDB
-      - ./data/db:/data/db
+      - rocket-chat_db:/data/db
     # Health Check
     # Checks the health of the MongoDB service.
     healthcheck:
@@ -25,9 +25,6 @@ services:
     # Networks
     networks:
       - rocketchat-net
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
   rocket-chat:
     # Container name
     # This names the Docker container for easy reference.
@@ -55,7 +52,6 @@ services:
     # Networks
     # Assigns the app service to a network.
     networks:
-      - rocketchat-net
       - tipi_main_network
     labels:
       runtipi.managed: "true"
@@ -66,3 +62,7 @@ networks:
     driver: bridge
   tipi_main_network:
     external: true
+volumes:
+  rocket-chat_db:
+    name: rocket-chat_db
+    driver: local

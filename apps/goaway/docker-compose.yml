@@ -20,7 +20,7 @@ services:
     network_mode: bridge
     # Volumes for the service HOST -> CONTAINER
     volumes:
-      - ./data/config:/app/config
+      - goaway_config:/app/config
     # Capabilities required for DNS services
     cap_add:
       - NET_BIND_SERVICE
@@ -29,6 +29,10 @@ services:
       runtipi.managed: "true"
     networks:
       - tipi_main_network
+volumes:
+  goaway_config:
+    name: goaway_config
+    driver: local
 networks:
   tipi_main_network:
     external: true

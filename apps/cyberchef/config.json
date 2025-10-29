@@ -1,11 +1,11 @@
 {
   "name": "CyberChef",
   "available": true,
-  "port": 8089,
+  "port": 8080,
   "exposable": true,
   "dynamic_config": true,
   "id": "cyberchef",
-  "description": "CyberChef is a simple, intuitive web app for carrying out all manner of \"cyber\" operations within a web browser. These operations include simple encoding like XOR and Base64, more complex encryption like AES, DES and Blowfish, creating binary and hexdumps, compression and decompression of data, calculating hashes and checksums, IPv6 and X.509 parsing, changing character encodings, and much more.",
+  "description": "CyberChef is a simple, intuitive web app for carrying out all manner of cyber operations within a web browser. These operations include simple encoding like XOR and Base64, more complex encryption like AES, DES and Blowfish, creating binary and hexdumps, compression and decompression of data, calculating hashes and checksums, IPv6 and X.509 parsing, changing character encodings, and much more.",
   "tipi_version": 1,
   "version": "10.19.4",
   "categories": ["bigbearcasaos"],
@@ -13,9 +13,9 @@
   "author": "gchq",
   "source": "",
   "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508229000,
-  "updated_at": 1761508229000,
+  "supported_architectures": ["amd64","arm64"],
+  "created_at": 1761702260000,
+  "updated_at": 1761702260000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

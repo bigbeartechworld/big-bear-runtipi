@@ -35,8 +35,8 @@ services:
       - net.ipv6.conf.default.forwarding=1
     # Volumes to be mounted to the container
     volumes:
-      # Mounting the local ./data/data directory to /etc/wireguard inside the container
-      - ./data/data:/etc/wireguard
+      # Mounting the local /DATA/AppData/$AppID/data directory to /etc/wireguard inside the container
+      - wg-easy-v15_data:/etc/wireguard
     # Ports mapping between host and container
     ports:
       - 51820:51820/udp
@@ -45,6 +45,10 @@ services:
       runtipi.managed: "true"
     networks:
       - tipi_main_network
+volumes:
+  wg-easy-v15_data:
+    name: wg-easy-v15_data
+    driver: local
 networks:
   tipi_main_network:
     external: true
