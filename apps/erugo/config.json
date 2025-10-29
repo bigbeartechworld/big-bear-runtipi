@@ -13,9 +13,9 @@
   "author": "wardy784",
   "source": "",
   "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508237000,
-  "updated_at": 1761508237000,
+  "supported_architectures": ["amd64","arm64"],
+  "created_at": 1761703555000,
+  "updated_at": 1761703555000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

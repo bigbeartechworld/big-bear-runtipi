@@ -13,8 +13,8 @@ services:
     restart: unless-stopped
     # Volumes to be mounted to the container
     volumes:
-      - ./data/srv:/srv/sftpgo
-      - ./data/data:/var/lib/sftpgo
+      - sftpgo_srv:/srv/sftpgo
+      - sftpgo_data:/var/lib/sftpgo
     # Ports mapping between host and container
     ports:
       # Mapping port 7575 of the host to port 7575 of the container
@@ -33,6 +33,13 @@ services:
       runtipi.managed: "true"
     networks:
       - tipi_main_network
+volumes:
+  sftpgo_data:
+    name: sftpgo_data
+    driver: local
+  sftpgo_srv:
+    name: sftpgo_srv
+    driver: local
 networks:
   tipi_main_network:
     external: true

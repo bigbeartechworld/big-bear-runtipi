@@ -13,10 +13,10 @@ services:
     restart: unless-stopped
     # Volumes to be mounted to the container
     volumes:
-      - ./data/media/data/books/spoken:/audiobooks
-      - ./data/media/data/podcasts:/podcasts
-      - ./data/data/config:/config
-      - ./data/data/metadata:/metadata
+      - audiobookshelf_media_data_books_spoken:/audiobooks
+      - audiobookshelf_media_data_podcasts:/podcasts
+      - audiobookshelf_data_config:/config
+      - audiobookshelf_data_metadata:/metadata
     # Ports mapping between host and container
     ports:
       # Mapping port 8080 of the host to port 80 of the container
@@ -25,6 +25,19 @@ services:
       runtipi.managed: "true"
     networks:
       - tipi_main_network
+volumes:
+  audiobookshelf_data_config:
+    name: audiobookshelf_data_config
+    driver: local
+  audiobookshelf_data_metadata:
+    name: audiobookshelf_data_metadata
+    driver: local
+  audiobookshelf_media_data_books_spoken:
+    name: audiobookshelf_media_data_books_spoken
+    driver: local
+  audiobookshelf_media_data_podcasts:
+    name: audiobookshelf_media_data_podcasts
+    driver: local
 networks:
   tipi_main_network:
     external: true

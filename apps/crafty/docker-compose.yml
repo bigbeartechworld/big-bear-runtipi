@@ -22,15 +22,31 @@ services:
       - 25500-25600:25500-25600
     # Volumes mapping between host and container
     volumes:
-      - ./data/data/backups:/crafty/backups
-      - ./data/data/logs:/crafty/logs
-      - ./data/data/servers:/crafty/servers
-      - ./data/data/config:/crafty/app/config
-      - ./data/data/import:/crafty/import
+      - crafty_data_backups:/crafty/backups
+      - crafty_data_logs:/crafty/logs
+      - crafty_data_servers:/crafty/servers
+      - crafty_data_config:/crafty/app/config
+      - crafty_data_import:/crafty/import
     labels:
       runtipi.managed: "true"
     networks:
       - tipi_main_network
+volumes:
+  crafty_data_backups:
+    name: crafty_data_backups
+    driver: local
+  crafty_data_config:
+    name: crafty_data_config
+    driver: local
+  crafty_data_import:
+    name: crafty_data_import
+    driver: local
+  crafty_data_logs:
+    name: crafty_data_logs
+    driver: local
+  crafty_data_servers:
+    name: crafty_data_servers
+    driver: local
 networks:
   tipi_main_network:
     external: true

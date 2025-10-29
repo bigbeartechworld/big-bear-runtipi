@@ -6,12 +6,12 @@ name: big-bear-uptime-kuma
 services:
   uptime-kuma:
     # Docker image to use for the app service
-    image: louislam/uptime-kuma:1
+    image: louislam/uptime-kuma:2
     # Custom container name for identification
     container_name: uptime-kuma
     # Volume mappings: Maps host directory to container directory for persistent storage
     volumes:
-      - ./data/data:/app/data
+      - uptime-kuma_data:/app/data
     # Port mapping: Maps a port on the host to a port on the container
     ports:
       - "3001:3001" # <Host Port>:<Container Port>
@@ -21,6 +21,10 @@ services:
       runtipi.managed: "true"
     networks:
       - tipi_main_network
+volumes:
+  uptime-kuma_data:
+    name: uptime-kuma_data
+    driver: local
 networks:
   tipi_main_network:
     external: true

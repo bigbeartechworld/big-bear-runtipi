@@ -2,8 +2,8 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-tianji",
-      "image": "moonrailgun/tianji:1.30.0",
+      "name": "tianji",
+      "image": "moonrailgun/tianji:1.30.4",
       "internalPort": 12345,
       "isMain": true
     }

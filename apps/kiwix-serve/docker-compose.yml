@@ -15,8 +15,8 @@ services:
     restart: unless-stopped
     # Volumes to be mounted to the container
     volumes:
-      # Mounting the local ./data/zim directory to /data inside the container
-      - ./data/zim:/data
+      # Mounting the local /DATA/AppData/$AppID/zim directory to /data inside the container
+      - kiwix-serve_zim:/data
     # Ports mapping between host and container
     ports:
       # Mapping port 8080 of the host to port 8080 of the container
@@ -25,6 +25,10 @@ services:
       runtipi.managed: "true"
     networks:
       - tipi_main_network
+volumes:
+  kiwix-serve_zim:
+    name: kiwix-serve_zim
+    driver: local
 networks:
   tipi_main_network:
     external: true

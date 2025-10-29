@@ -13,7 +13,7 @@ services:
     restart: unless-stopped
     # Volumes to be mounted to the container
     volumes:
-      - ./data/.ollama:/root/.ollama
+      - ollama-nvidia_.ollama:/root/.ollama
     # Ports mapping between host and container
     ports:
       # Mapping port 11434 of the host to port 11434 of the container
@@ -35,6 +35,10 @@ services:
       runtipi.managed: "true"
     networks:
       - tipi_main_network
+volumes:
+  ollama-nvidia_.ollama:
+    name: ollama-nvidia_.ollama
+    driver: local
 networks:
   tipi_main_network:
     external: true
