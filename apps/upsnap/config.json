@@ -1,7 +1,7 @@
 {
   "name": "Upsnap",
   "available": true,
-  "port": 8139,
+  "port": 8090,
   "exposable": true,
   "dynamic_config": true,
   "id": "upsnap",
@@ -13,9 +13,9 @@
   "author": "seriousm4x",
   "source": "",
   "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508359000,
-  "updated_at": 1761508359000,
+  "supported_architectures": ["amd64","arm64"],
+  "created_at": 1761700435000,
+  "updated_at": 1761700435000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

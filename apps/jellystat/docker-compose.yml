@@ -12,12 +12,9 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: 8a23ad09-61cf-4178-a783-6d4586496e3a
     volumes:
-      - ./data/postgres-data:/var/lib/postgresql/data # Mounting the volume
+      - jellystat_postgres-data:/var/lib/postgresql/data # Mounting the volume
     networks:
       - big-bear-jellystat-network
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
   jellystat:
     # Name of the container
     container_name: jellystat
@@ -33,13 +30,12 @@ services:
       - JWT_SECRET="my-secret-jwt-key"
     # Volumes to be mounted to the container
     volumes:
-      - ./data/backup-data:/app/backend/backup-data
+      - jellystat_backup-data:/app/backend/backup-data
     # Ports mapping between host and container
     ports:
       # Mapping port 3000 of the host to port 3000 of the container
       - "3000:3000"
     networks:
-      - big-bear-jellystat-network
       - tipi_main_network
     labels:
       runtipi.managed: "true"
@@ -49,3 +45,10 @@ networks:
     driver: bridge
   tipi_main_network:
     external: true
+volumes:
+  jellystat_backup-data:
+    name: jellystat_backup-data
+    driver: local
+  jellystat_postgres-data:
+    name: jellystat_postgres-data
+    driver: local

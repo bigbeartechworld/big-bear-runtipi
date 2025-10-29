@@ -18,7 +18,7 @@ services:
     network_mode: bridge
     # Volumes for the service HOST -> CONTAINER
     volumes:
-      - ./data/data:/2fauth
+      - 2fauth_data:/2fauth
     # Environment variables for the service
     environment:
       - APP_URL=http://[CHANGE_TO_LAN_IP]:8000
@@ -26,6 +26,10 @@ services:
       runtipi.managed: "true"
     networks:
       - tipi_main_network
+volumes:
+  2fauth_data:
+    name: 2fauth_data
+    driver: local
 networks:
   tipi_main_network:
     external: true

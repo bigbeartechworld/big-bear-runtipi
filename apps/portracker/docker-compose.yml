@@ -22,7 +22,7 @@ services:
       - DEBUG=false
     # Volumes to be mounted to the container
     volumes:
-      - ./data/data:/data
+      - portracker_data:/data
       - /var/run/docker.sock:/var/run/docker.sock
     # Ports mapping between host and container
     ports:
@@ -32,6 +32,10 @@ services:
       runtipi.managed: "true"
     networks:
       - tipi_main_network
+volumes:
+  portracker_data:
+    name: portracker_data
+    driver: local
 networks:
   tipi_main_network:
     external: true

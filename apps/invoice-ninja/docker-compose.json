@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-invoice-ninja",
+      "name": "invoice-ninja",
       "image": "invoiceninja/invoiceninja:5.12.28",
-      "internalPort": 8101,
+      "internalPort": 8080,
       "isMain": true
     }
   ]

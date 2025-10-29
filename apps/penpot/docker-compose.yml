@@ -14,7 +14,7 @@ services:
     restart: unless-stopped
     # Volumes to mount to the container
     volumes:
-      - ./data/assets:/opt/data/assets
+      - penpot_assets:/opt/data/assets
     # Dependencies for the service
     depends_on:
       - penpot-postgres
@@ -22,7 +22,6 @@ services:
     # Networks to connect the container to
     networks:
       - big-bear-penpot-network
-      - tipi_main_network
     # Environment variables for the service
     environment:
       - PENPOT_FLAGS=enable-registration enable-login-with-password disable-email-verification disable-secure-session-cookies
@@ -35,8 +34,6 @@ services:
       - PENPOT_ASSETS_STORAGE_BACKEND=assets-fs
       - PENPOT_STORAGE_ASSETS_FS_DIRECTORY=/opt/data/assets
       - PENPOT_TELEMETRY_ENABLED=false
-    labels:
-      runtipi.managed: "true"
   # Define the penpot-exporter service
   penpot-exporter:
     # Use the penpotapp/exporter:1.19.3 Docker image
@@ -48,15 +45,12 @@ services:
     # Connect the container to the big-bear-penpot-network network
     networks:
       - big-bear-penpot-network
-      - tipi_main_network
     # Set environment variables for the container
     environment:
       # Set the PENPOT_PUBLIC_URI environment variable
       - PENPOT_PUBLIC_URI=http://big-bear-penpot-frontend:8080
       # Set the PENPOT_REDIS_URI environment variable
       - PENPOT_REDIS_URI=redis://big-bear-penpot-redis/0
-    labels:
-      runtipi.managed: "true"
   # Define the PostgreSQL service for Penpot
   penpot-postgres:
     image: postgres:14
@@ -64,18 +58,15 @@ services:
     container_name: big-bear-penpot-postgres
     stop_signal: SIGINT
     volumes:
-      - ./data/pgdata:/var/lib/postgresql/data
+      - penpot_pgdata:/var/lib/postgresql/data
     networks:
       - big-bear-penpot-network
-      - tipi_main_network
     environment:
       # Initialize the database with data checksums
       - POSTGRES_INITDB_ARGS=--data-checksums
       - POSTGRES_DB=penpot # Set the name of the database
       - POSTGRES_USER=bigbear # Set the username for the database
       - POSTGRES_PASSWORD=casaos # Set the password for the database
-    labels:
-      runtipi.managed: "true"
   # Define the Redis service for Penpot
   penpot-redis:
     image: redis:7.4.6@sha256:d7432711a2a5c99c2e9dd0e006061cd274d7cb7a9e77f07ffe2ea99e21244677
@@ -83,9 +74,6 @@ services:
     restart: unless-stopped
     networks:
       - big-bear-penpot-network
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
   # Define the penpot-mailcatch service
   penpot-mailcatch:
     image: sj26/mailcatcher:latest
@@ -96,9 +84,6 @@ services:
       - "1080:1080" # Map port 1080 for the web interface
     networks:
       - big-bear-penpot-network # Connect to the big-bear-penpot-network
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
   penpot:
     # Name of the container
     container_name: penpot
@@ -108,8 +93,8 @@ services:
     restart: unless-stopped
     # Volumes to be mounted to the container
     volumes:
-      # Mounting the local ./data/assets directory to /opt/data/assets inside the container
-      - ./data/assets:/opt/data/assets
+      # Mounting the local /DATA/AppData/$AppID/assets directory to /opt/data/assets inside the container
+      - penpot_assets:/opt/data/assets
     # Ports mapping between host and container
     ports:
       # Mapping port 9001 of the host to port 8080 of the container
@@ -120,7 +105,6 @@ services:
       - penpot-exporter
     # Networks to be attached to the container
     networks:
-      - big-bear-penpot-network
       - tipi_main_network
     labels:
       runtipi.managed: "true"
@@ -132,3 +116,10 @@ networks:
     driver: bridge
   tipi_main_network:
     external: true
+volumes:
+  penpot_assets:
+    name: penpot_assets
+    driver: local
+  penpot_pgdata:
+    name: penpot_pgdata
+    driver: local

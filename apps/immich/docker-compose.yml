@@ -7,7 +7,7 @@ services:
     container_name: immich-machine-learning # Name of the running container
     image: ghcr.io/immich-app/immich-machine-learning:v2.1.0 # Image to be used
     volumes: # Mounting directories for persistent data storage
-      - ./data/model-cache:/cache
+      - immich_model-cache:/cache
     environment: # Setting environment variables
       DB_HOSTNAME: immich-postgres
       DB_USERNAME: casaos
@@ -19,9 +19,6 @@ services:
     # Networks to be attached to the container
     networks:
       - big_bear_immich_network # Connects the container to a defined network
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
   # Configuration for Redis service
   redis:
     container_name: immich-redis # Name of the running container
@@ -29,9 +26,6 @@ services:
     restart: always # Policy to always restart the container if it stops
     networks:
       - big_bear_immich_network # Connects the container to a defined network
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
   # Configuration for Database service
   database:
     container_name: immich-postgres # Name of the running container
@@ -44,14 +38,11 @@ services:
       # Uncomment the DB_STORAGE_TYPE: 'HDD' var if your database isn't stored on SSDs
       # DB_STORAGE_TYPE: 'HDD'
     volumes: # Mounting directories for persistent data storage
-      - ./data/pgdata:/var/lib/postgresql/data
+      - immich_pgdata:/var/lib/postgresql/data
     restart: unless-stopped # Policy to always restart the container if it stops
     # CasaOS specific configuration for the database service
     networks:
       - big_bear_immich_network # Connects the container to a defined network
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
   immich:
     container_name: immich # Name of the running container
     image: ghcr.io/immich-app/immich-server:v2.1.0 # Image to be used
@@ -61,7 +52,7 @@ services:
     ports: # Mapping ports from the host OS to the container
       - 2283:2283
     volumes: # Mounting directories for persistent data storage
-      - ./data/upload:/usr/src/app/upload
+      - immich_upload:/usr/src/app/upload
     environment: # Setting environment variables
       DB_HOSTNAME: immich-postgres
       DB_USERNAME: casaos
@@ -76,7 +67,6 @@ services:
     restart: unless-stopped # Policy to restart unless stopped
     # Networks to be attached to the container
     networks:
-      - big_bear_immich_network
       - tipi_main_network
     labels:
       runtipi.managed: "true"
@@ -86,3 +76,13 @@ networks:
     driver: bridge # Uses bridge network driver
   tipi_main_network:
     external: true
+volumes:
+  immich_model-cache:
+    name: immich_model-cache
+    driver: local
+  immich_pgdata:
+    name: immich_pgdata
+    driver: local
+  immich_upload:
+    name: immich_upload
+    driver: local

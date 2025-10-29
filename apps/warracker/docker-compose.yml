@@ -13,7 +13,7 @@ services:
     image: postgres:15-alpine
     # Container volumes
     volumes:
-      - ./data/warrackerdb:/var/lib/postgresql/data
+      - warracker_warrackerdb:/var/lib/postgresql/data
     # Container environment variables
     environment:
       - POSTGRES_DB=big_bear_warracker
@@ -24,15 +24,12 @@ services:
     # Container networks
     networks:
       - big_bear_warracker_network
-      - tipi_main_network
     # Health check for the container
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB"]
       interval: 5s
       timeout: 5s
       retries: 5
-    labels:
-      runtipi.managed: "true"
   warracker:
     # Name of the container
     container_name: warracker
@@ -57,13 +54,12 @@ services:
     # These mounts allow the container to interact with the host system
     volumes:
       # Required for monitoring system resources and container metrics
-      - ./data/uploads:/data/uploads
+      - warracker_uploads:/data/uploads
     # Map port 8005 on the host to port 80 on the container
     ports:
       - "8005:80"
     # Container networks
     networks:
-      - big_bear_warracker_network
       - tipi_main_network
     # Depends on the warrackerdb service
     depends_on:
@@ -78,3 +74,10 @@ networks:
     driver: bridge
   tipi_main_network:
     external: true
+volumes:
+  warracker_uploads:
+    name: warracker_uploads
+    driver: local
+  warracker_warrackerdb:
+    name: warracker_warrackerdb
+    driver: local

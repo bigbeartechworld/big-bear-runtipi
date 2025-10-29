@@ -13,7 +13,7 @@ services:
     restart: unless-stopped
     # Volumes to be mounted to the container
     volumes:
-      - ./data/data:/app/data
+      - zigbee2mqtt_data:/app/data
       - /run/udev:/run/udev:ro
     # Ports mapping between host and container
     ports:
@@ -29,6 +29,10 @@ services:
       runtipi.managed: "true"
     networks:
       - tipi_main_network
+volumes:
+  zigbee2mqtt_data:
+    name: zigbee2mqtt_data
+    driver: local
 networks:
   tipi_main_network:
     external: true

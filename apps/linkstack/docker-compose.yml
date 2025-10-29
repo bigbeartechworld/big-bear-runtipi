@@ -27,7 +27,7 @@ services:
     restart: unless-stopped
     # Volumes to be mounted to the container
     volumes:
-      - ./data/data:/data
+      - linkstack_data:/data
     entrypoint: "/bin/sh"
     # uncomment this after first start
     # to prevent the installing dialog coming up
@@ -38,6 +38,10 @@ services:
       runtipi.managed: "true"
     networks:
       - tipi_main_network
+volumes:
+  linkstack_data:
+    name: linkstack_data
+    driver: local
 networks:
   tipi_main_network:
     external: true
