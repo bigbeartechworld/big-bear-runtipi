@@ -1,20 +1,28 @@
-# Name of the service configuration
-name: big-bear-node-red
-# Define the services for this configuration
+# Configuration for node-red setup
+
+# Application Name
+name: node-red
+# Services used in the application
 services:
   node-red:
-    # Docker image for the service
-    image: nodered/node-red:4.1.1
-    # Use the host's network stack
-    network_mode: host
-    # Restart policy for the service
-    restart: always
-    # Volume configurations for persistent storage
-    volumes:
-      - type: bind # Bind type volume
-        source: ./data/data # Source path on the host
-        target: /data # Path inside the container
     # Name of the container
     container_name: node-red
+    # Docker image to be used
+    image: nodered/node-red:4.1.1
+    # Restart policy for the service
+    restart: unless-stopped
+    # Port mappings for the service
+    ports:
+      - "${APP_PORT}:1880"
+    # Network mode for the service
+    network_mode: bridge
+    # Volumes for the service HOST -> CONTAINER
+    volumes:
+      - ${APP_DATA_DIR}/data/node-red_data:/data
     labels:
       runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

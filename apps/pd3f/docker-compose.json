@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "web",
+      "name": "pd3f",
       "image": "pd3f/pd3f:latest",
-      "internalPort": 5000,
+      "internalPort": 1616,
       "isMain": true
     }
   ]

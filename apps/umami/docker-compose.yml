@@ -10,7 +10,7 @@ services:
       POSTGRES_USER: umami
       POSTGRES_PASSWORD: umami
     volumes: # Volumes for data persistence
-      - ./data/pgdata:/var/lib/postgresql/data
+      - ${APP_DATA_DIR}/data/umami_pgdata:/var/lib/postgresql/data
     restart: always # Restart policy
     healthcheck: # Health check configuration
       test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
@@ -24,7 +24,7 @@ services:
   umami:
     image: ghcr.io/umami-software/umami:postgresql-latest # Docker image for the Umami app
     ports:
-      - "3000:3000" # Port mapping: host:container
+      - "${APP_PORT}:3000" # Port mapping: host:container
     environment: # Environment variables for the service
       DATABASE_URL: postgresql://umami:umami@db:5432/umami
       DATABASE_TYPE: postgresql
@@ -33,9 +33,9 @@ services:
       db:
         condition: service_healthy
     restart: always # Restart policy
+    container_name: umami
     labels:
       runtipi.managed: "true"
-    container_name: umami
     networks:
       - tipi_main_network
 networks:

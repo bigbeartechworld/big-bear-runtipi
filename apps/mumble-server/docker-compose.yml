@@ -13,7 +13,7 @@ services:
     restart: on-failure
     # Ports configuration
     ports:
-      - 64738:64738 # TCP port mapping
+      - ${APP_PORT}:64738 # TCP port mapping
       - 64738:64738/udp # UDP port mapping
     labels:
       runtipi.managed: "true"

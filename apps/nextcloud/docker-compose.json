@@ -4,7 +4,7 @@
     {
       "name": "nextcloud",
       "image": "bigbeartechworld/big-bear-nextcloud-with-smbclient:0.0.11",
-      "internalPort": 80,
+      "internalPort": 7580,
       "isMain": true
     }
   ]

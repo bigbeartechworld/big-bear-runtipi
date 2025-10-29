@@ -5,14 +5,14 @@ services:
   codex-docs:
     image: ghcr.io/codex-team/codex.docs:v2.2
     ports:
-      - "3000:3000"
+      - "${APP_PORT}:3000"
     volumes:
-      - ./data/uploads:/usr/src/app/uploads
-      - ./data/db:/usr/src/app/db
-      - ./data/codex-docs-config.local.yaml:/usr/src/app/docs-config.yaml
+      - ${APP_DATA_DIR}/data/codex-docs_uploads:/usr/src/app/uploads
+      - ${APP_DATA_DIR}/data/codex-docs_db:/usr/src/app/db
+      - ${APP_DATA_DIR}/data/codex-docs_codex-docs-config.local.yaml:/usr/src/app/docs-config.yaml
+    container_name: codex-docs
     labels:
       runtipi.managed: "true"
-    container_name: codex-docs
     networks:
       - tipi_main_network
 networks:

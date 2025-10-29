@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-docmost",
+      "name": "docmost",
       "image": "docmost/docmost:0.23.2",
       "internalPort": 3000,
       "isMain": true
