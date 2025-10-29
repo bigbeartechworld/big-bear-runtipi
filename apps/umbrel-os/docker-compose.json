@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-umbrel",
+      "name": "umbrel-os",
       "image": "dockurr/umbrel:1.4.0",
-      "internalPort": 80,
+      "internalPort": 8080,
       "isMain": true
     }
   ]

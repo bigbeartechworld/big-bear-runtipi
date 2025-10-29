@@ -14,14 +14,13 @@ services:
     restart: unless-stopped
     # Volumes to mount to the container
     volumes:
-      - ./data/assets:/opt/data/assets
+      - ${APP_DATA_DIR}/data/penpot_assets:/opt/data/assets
     # Dependencies for the service
     depends_on:
       - penpot-postgres
       - penpot-redis
     # Networks to connect the container to
     networks:
-      - big-bear-penpot-network
       - tipi_main_network
     # Environment variables for the service
     environment:
@@ -47,7 +46,6 @@ services:
     restart: unless-stopped
     # Connect the container to the big-bear-penpot-network network
     networks:
-      - big-bear-penpot-network
       - tipi_main_network
     # Set environment variables for the container
     environment:
@@ -64,9 +62,8 @@ services:
     container_name: big-bear-penpot-postgres
     stop_signal: SIGINT
     volumes:
-      - ./data/pgdata:/var/lib/postgresql/data
+      - ${APP_DATA_DIR}/data/penpot_pgdata:/var/lib/postgresql/data
     networks:
-      - big-bear-penpot-network
       - tipi_main_network
     environment:
       # Initialize the database with data checksums
@@ -82,7 +79,6 @@ services:
     container_name: big-bear-penpot-redis
     restart: unless-stopped
     networks:
-      - big-bear-penpot-network
       - tipi_main_network
     labels:
       runtipi.managed: "true"
@@ -95,7 +91,6 @@ services:
     ports:
       - "1080:1080" # Map port 1080 for the web interface
     networks:
-      - big-bear-penpot-network # Connect to the big-bear-penpot-network
       - tipi_main_network
     labels:
       runtipi.managed: "true"
@@ -108,27 +103,21 @@ services:
     restart: unless-stopped
     # Volumes to be mounted to the container
     volumes:
-      # Mounting the local ./data/assets directory to /opt/data/assets inside the container
-      - ./data/assets:/opt/data/assets
+      # Mounting the local /DATA/AppData/$AppID/assets directory to /opt/data/assets inside the container
+      - ${APP_DATA_DIR}/data/penpot_assets:/opt/data/assets
     # Ports mapping between host and container
     ports:
       # Mapping port 9001 of the host to port 8080 of the container
-      - "9001:8080"
+      - "${APP_PORT}:8080"
     # Other services that this service depends on
     depends_on:
       - penpot-backend
       - penpot-exporter
     # Networks to be attached to the container
     networks:
-      - big-bear-penpot-network
       - tipi_main_network
     labels:
       runtipi.managed: "true"
-# Define the networks section
 networks:
-  # Define the penpot-network
-  big-bear-penpot-network:
-    # Set the driver to bridge
-    driver: bridge
   tipi_main_network:
     external: true

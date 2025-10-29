@@ -8,16 +8,16 @@ services:
     # Name of the container
     container_name: changedetection
     # Image to be used for the container
-    image: ghcr.io/dgtlmoon/changedetection.io:0.50.32
+    image: ghcr.io/dgtlmoon/changedetection.io:0.50.35
     # Container restart policy
     restart: unless-stopped
     # Ports mapping between host and container
     ports:
       # Mapping port 5000 of the host to port 5000 of the container
-      - "5000:5000"
+      - "${APP_PORT}:5000"
     # Volumes to be mounted to the container
     volumes:
-      - ./data/datastore:/datastore
+      - ${APP_DATA_DIR}/data/changedetection_datastore:/datastore
     labels:
       runtipi.managed: "true"
     networks:

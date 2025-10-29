@@ -11,10 +11,10 @@ services:
     container_name: dashy
     # Uncomment below if you want to mount volumes
     volumes:
-      - ./data/public:/app/public
+      - ${APP_DATA_DIR}/data/dashy_public:/app/public
     # Ports mapping
     ports:
-      - 4000:8080
+      - ${APP_PORT}:8080
     # Set any environmental variables
     environment:
       - NODE_ENV=production

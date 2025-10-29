@@ -1,7 +1,7 @@
 {
   "name": "Dockge",
   "available": true,
-  "port": 5003,
+  "port": 5001,
   "exposable": true,
   "dynamic_config": true,
   "id": "dockge",
@@ -13,9 +13,9 @@
   "author": "louislam",
   "source": "",
   "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508234000,
-  "updated_at": 1761508234000,
+  "supported_architectures": ["amd64","arm64"],
+  "created_at": 1761774027000,
+  "updated_at": 1761774027000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
