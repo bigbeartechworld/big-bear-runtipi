@@ -11,10 +11,15 @@ services:
     image: adguard/adguardhome:v0.107.68
     # Volume mappings for the service
     volumes:
-      - "./data/data/work:/opt/adguardhome/work" # Map data work directory
-      - "./data/data/conf:/opt/adguardhome/conf" # Map configuration directory
+      - "${APP_DATA_DIR}/data/adguard-home-host_data_work:/opt/adguardhome/work" # Map data work directory
+      - "${APP_DATA_DIR}/data/adguard-home-host_data_conf:/opt/adguardhome/conf" # Map configuration directory
     restart: unless-stopped
     # Define the networks section
     network_mode: host
     labels:
       runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

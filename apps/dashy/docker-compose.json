@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-dashy",
+      "name": "dashy",
       "image": "lissy93/dashy:3.1.0",
-      "internalPort": 8080,
+      "internalPort": 4000,
       "isMain": true
     }
   ]
