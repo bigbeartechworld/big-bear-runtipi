@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-diun",
+      "name": "diun",
       "image": "crazymax/diun:4.30.0",
-      "internalPort": 8091,
+      "internalPort": 8080,
       "isMain": true
     }
   ]

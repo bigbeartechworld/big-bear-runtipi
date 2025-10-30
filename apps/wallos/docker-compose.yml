@@ -17,13 +17,13 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Mounting the local /DATA/AppData/big-bear-wallos/db directory to /var/www/html/db inside the container
-      - ./data/db:/var/www/html/db
+      - ${APP_DATA_DIR}/db:/var/www/html/db
       # Mounting the local /DATA/AppData/big-bear-wallos/logos directory to /var/www/html/images/uploads/logos inside the container
-      - ./data/logos:/var/www/html/images/uploads/logos
+      - ${APP_DATA_DIR}/logos:/var/www/html/images/uploads/logos
     # Ports mapping between host and container
     ports:
       # Mapping port 8282 of the host to port 80 of the container
-      - "8282:80"
+      - "${APP_PORT}:80"
     labels:
       runtipi.managed: "true"
     networks:

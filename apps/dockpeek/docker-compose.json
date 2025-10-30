@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-dockpeek",
+      "name": "dockpeek",
       "image": "ghcr.io/dockpeek/dockpeek:v1.7.0",
-      "internalPort": 8000,
+      "internalPort": 3420,
       "isMain": true
     }
   ]

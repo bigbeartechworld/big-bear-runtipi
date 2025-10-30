@@ -2,8 +2,8 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "app",
-      "image": "ghost:6.5.0-alpine",
+      "name": "ghost",
+      "image": "ghost:6.5.3-alpine",
       "internalPort": 2368,
       "isMain": true
     }
