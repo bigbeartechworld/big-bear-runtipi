@@ -22,12 +22,12 @@ services:
       - DEBUG=false
     # Volumes to be mounted to the container
     volumes:
-      - ./data/data:/data
+      - ${APP_DATA_DIR}/data:/data
       - /var/run/docker.sock:/var/run/docker.sock
     # Ports mapping between host and container
     ports:
       # Mapping port 4999 of the host to port 4999 of the container
-      - "4999:4999"
+      - "${APP_PORT}:4999"
     labels:
       runtipi.managed: "true"
     networks:

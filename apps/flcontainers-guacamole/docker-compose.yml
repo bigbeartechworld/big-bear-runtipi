@@ -15,7 +15,7 @@ services:
       EXTENSIONS: "auth-totp,auth-ldap"
     # Map port 8080 on the host to port 8080 on the container
     ports:
-      - 8080:8080
+      - ${APP_PORT}:8080
     labels:
       runtipi.managed: "true"
     networks:

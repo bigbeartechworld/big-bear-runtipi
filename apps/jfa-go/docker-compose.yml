@@ -16,12 +16,12 @@ services:
     # Volume mappings required for system integration
     # These mounts allow the container to interact with the host system
     volumes:
-      - ./data/.config/jfa-go:/data # Path to wherever you want to store the config file and other data
-      - ./data/jellyfin:/jf # Only needed for password resets through Jellyfin, ignore if not using or using Emby
+      - ${APP_DATA_DIR}/.config/jfa-go:/data # Path to wherever you want to store the config file and other data
+      - ${APP_DATA_DIR}/jellyfin:/jf # Only needed for password resets through Jellyfin, ignore if not using or using Emby
       - /etc/localtime:/etc/localtime:ro # Makes sure time is correct
     # Map port 8056 on the host to port 8056 on the container
     ports:
-      - "8056:8056"
+      - "${APP_PORT}:8056"
     labels:
       runtipi.managed: "true"
     networks:

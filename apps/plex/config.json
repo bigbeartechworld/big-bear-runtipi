@@ -12,10 +12,10 @@
   "short_desc": "Stream Movies & TV Shows",
   "author": "plexinc",
   "source": "",
-  "website": "/web/index.html",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508326000,
-  "updated_at": 1761508326000,
+  "website": "",
+  "supported_architectures": ["amd64","arm64"],
+  "created_at": 1761799936000,
+  "updated_at": 1761799936000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

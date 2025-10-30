@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-retroarch-web",
+      "name": "retroarch-web",
       "image": "inglebard/retroarch-web:latest",
-      "internalPort": 80,
+      "internalPort": 8080,
       "isMain": true
     }
   ]

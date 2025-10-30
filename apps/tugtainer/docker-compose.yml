@@ -8,12 +8,12 @@ services:
     # Name of the container
     container_name: tugtainer
     # Image to be used for the container
-    image: quenary/tugtainer:v1.2.3
+    image: quenary/tugtainer:v1.4.2
     # Container restart policy
     restart: unless-stopped
     # Ports to expose from the container
     ports:
-      - "9412:80"
+      - "${APP_PORT}:80"
     # Environment variables for the container
     environment:
       TZ: "UTC"
@@ -24,7 +24,7 @@ services:
       HTTPS: "FALSE"
     # Volumes to be mounted to the container
     volumes:
-      - ./data/data:/tugtainer
+      - ${APP_DATA_DIR}/data:/tugtainer
       - /var/run/docker.sock:/var/run/docker.sock
     labels:
       runtipi.managed: "true"
