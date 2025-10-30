@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-jfa-go",
+      "name": "jfa-go",
       "image": "hrfee/jfa-go:latest",
       "internalPort": 8056,
       "isMain": true

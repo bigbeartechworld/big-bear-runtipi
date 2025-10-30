@@ -26,7 +26,7 @@ services:
       - /:/casaos
     # Map port 7681 on the host to port 7681 on the container
     ports:
-      - "7681:7681"
+      - "${APP_PORT}:7681"
     # Environment variables to be set in the container for application configuration
     environment:
       - NCDU_PATH=/
