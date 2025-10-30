@@ -1,7 +1,7 @@
 {
   "name": "Portainer",
   "available": true,
-  "port": 9445,
+  "port": 9443,
   "exposable": true,
   "dynamic_config": true,
   "id": "portainer",
@@ -13,9 +13,9 @@
   "author": "portainer",
   "source": "",
   "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508328000,
-  "updated_at": 1761508328000,
+  "supported_architectures": ["amd64","arm64"],
+  "created_at": 1761835909000,
+  "updated_at": 1761835909000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

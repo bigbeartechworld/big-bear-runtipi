@@ -13,12 +13,12 @@ services:
     restart: unless-stopped
     # Volumes to be mounted to the container
     volumes:
-      # Mounting the local /app/data directory to ./data/data inside the container
-      - ./data/data:/app/data
+      # Mounting the local mealie_data directory to /app/data inside the container
+      - ${APP_DATA_DIR}/data:/app/data
     # Ports mapping between host and container
     ports:
       # Mapping port 7575 of the host to port 9000 of the container
-      - "9925:9000"
+      - "${APP_PORT}:9000"
     labels:
       runtipi.managed: "true"
     networks:

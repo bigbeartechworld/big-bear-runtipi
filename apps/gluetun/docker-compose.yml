@@ -20,12 +20,12 @@ services:
       - /dev/net/tun:/dev/net/tun # Map the TUN device, required for VPNs.
     # Expose and map specific ports from the container to the host.
     ports:
-      - 8888:8888/tcp # HTTP proxy port mapping.
+      - ${APP_PORT}:8888/tcp # HTTP proxy port mapping.
       - 8388:8388/tcp # Shadowsocks TCP port mapping.
       - 8388:8388/udp # Shadowsocks UDP port mapping.
     # Map volumes from the host to the container.
     volumes:
-      - ./data/data:/gluetun # Map the data directory.
+      - ${APP_DATA_DIR}/data:/gluetun # Map the data directory.
     # Define environment variables for the container.
     environment:
       # Specify the VPN service provider.

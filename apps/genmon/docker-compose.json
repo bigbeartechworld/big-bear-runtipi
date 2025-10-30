@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-genmon",
+      "name": "genmon",
       "image": "bigbeartechworld/big-bear-genmon:1.19.06",
-      "internalPort": 22,
+      "internalPort": 8000,
       "isMain": true
     }
   ]

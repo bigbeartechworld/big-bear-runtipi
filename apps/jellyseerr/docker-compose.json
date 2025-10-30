@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "app",
+      "name": "jellyseerr",
       "image": "fallenbagel/jellyseerr:2.7.3",
       "internalPort": 5055,
       "isMain": true

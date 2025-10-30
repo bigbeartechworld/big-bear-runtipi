@@ -35,11 +35,11 @@ services:
       - net.ipv6.conf.default.forwarding=1
     # Volumes to be mounted to the container
     volumes:
-      # Mounting the local ./data/data directory to /etc/wireguard inside the container
-      - ./data/data:/etc/wireguard
+      # Mounting the local wg-easy-v15_data directory to /etc/wireguard inside the container
+      - ${APP_DATA_DIR}/data:/etc/wireguard
     # Ports mapping between host and container
     ports:
-      - 51820:51820/udp
+      - ${APP_PORT}:51820/udp
       - 51821:51821/tcp # UI port
     labels:
       runtipi.managed: "true"
