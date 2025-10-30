@@ -16,17 +16,17 @@ services:
       - TZ=UTC
     # Ports mapping between host and container HOST:CONTAINER
     ports:
-      - 8443:8443 # Web UI
+      - ${APP_PORT}:8443 # Web UI
       - 8123:8123
       - 19132:19132/udp
       - 25500-25600:25500-25600
     # Volumes mapping between host and container
     volumes:
-      - ./data/data/backups:/crafty/backups
-      - ./data/data/logs:/crafty/logs
-      - ./data/data/servers:/crafty/servers
-      - ./data/data/config:/crafty/app/config
-      - ./data/data/import:/crafty/import
+      - ${APP_DATA_DIR}/data/backups:/crafty/backups
+      - ${APP_DATA_DIR}/data/logs:/crafty/logs
+      - ${APP_DATA_DIR}/data/servers:/crafty/servers
+      - ${APP_DATA_DIR}/data/config:/crafty/app/config
+      - ${APP_DATA_DIR}/data/import:/crafty/import
     labels:
       runtipi.managed: "true"
     networks:

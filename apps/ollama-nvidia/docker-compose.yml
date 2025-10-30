@@ -13,11 +13,11 @@ services:
     restart: unless-stopped
     # Volumes to be mounted to the container
     volumes:
-      - ./data/.ollama:/root/.ollama
+      - ${APP_DATA_DIR}/.ollama:/root/.ollama
     # Ports mapping between host and container
     ports:
       # Mapping port 11434 of the host to port 11434 of the container
-      - "11434:11434"
+      - "${APP_PORT}:11434"
     # Define the deployment settings
     deploy:
       # Specify resource reservations

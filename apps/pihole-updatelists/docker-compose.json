@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-pihole-updatelists",
-      "image": "jacklul/pihole:2025.08.0",
-      "internalPort": 53,
+      "name": "pihole-updatelists",
+      "image": "jacklul/pihole:2025.10.1",
+      "internalPort": 8080,
       "isMain": true
     }
   ]

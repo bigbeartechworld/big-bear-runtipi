@@ -8,10 +8,10 @@ services:
     image: appsmith/appsmith-ce:v1.73.1 # Docker image to use
     container_name: appsmith # Name of the container
     ports:
-      - "1080:80" # Port mapping host:container for HTTP
+      - "${APP_PORT}:80" # Port mapping host:container for HTTP
       - "10443:443" # Port mapping host:container for HTTPS
     volumes:
-      - ./data/stacks:/appsmith-stacks # Mount volume for app data
+      - ${APP_DATA_DIR}/stacks:/appsmith-stacks # Mount volume for app data
     restart: unless-stopped # Container restart policy
     labels:
       runtipi.managed: "true"

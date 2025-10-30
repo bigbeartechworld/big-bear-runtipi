@@ -10,14 +10,13 @@ services:
     image: axllent/mailpit:v1.27 # Image for the app service
     restart: unless-stopped # Restart policy for the container
     volumes: # Volumes to mount for the app service
-      - ./data/mailpit/data:/data
+      - ${APP_DATA_DIR}/mailpit/data:/data
     environment: # Environment variables for the app service
       - TZ=UTC
     ports: # Ports to expose for the app service
       - "8025:8025"
       - "1025:1025"
     networks:
-      - big-bear-davis-network
       - tipi_main_network
     labels:
       runtipi.managed: "true"
@@ -31,9 +30,8 @@ services:
       - MYSQL_USER=bigbear
       - MYSQL_PASSWORD=0c9d2acc-d4f3-423c-8361-86f35cdd3eb2
     volumes:
-      - ./data/mysql:/var/lib/mysql
+      - ${APP_DATA_DIR}/mysql:/var/lib/mysql
     networks:
-      - big-bear-davis-network
       - tipi_main_network
     healthcheck:
       test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
@@ -69,9 +67,8 @@ services:
       - APP_TIMEZONE=UTC
     # Ports to be exposed from the container
     ports:
-      - 9000:9000
+      - ${APP_PORT}:9000
     networks:
-      - big-bear-davis-network
       - tipi_main_network
     depends_on:
       - big-bear-davis-mysql
@@ -79,7 +76,5 @@ services:
     labels:
       runtipi.managed: "true"
 networks:
-  big-bear-davis-network:
-    driver: bridge
   tipi_main_network:
     external: true

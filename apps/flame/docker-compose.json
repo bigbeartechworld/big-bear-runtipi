@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "app",
+      "name": "flame",
       "image": "pawelmalak/flame:multiarch2.3.1",
       "internalPort": 5005,
       "isMain": true
