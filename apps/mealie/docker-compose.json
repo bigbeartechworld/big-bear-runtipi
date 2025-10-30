@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "app",
+      "name": "mealie",
       "image": "hkotel/mealie:v3.3.2",
-      "internalPort": 9000,
+      "internalPort": 9925,
       "isMain": true
     }
   ]

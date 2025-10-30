@@ -15,7 +15,7 @@ services:
     shm_size: "2gb"
     # Port mapping HOST:CONTAINER
     ports:
-      - "8080:8080"
+      - "${APP_PORT}:8080"
       - "52000:52000/udp"
       - "52001:52001/udp"
       - "52002:52002/udp"

@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-bookstack",
-      "image": "linuxserver/bookstack:25.07.20250804",
-      "internalPort": 80,
+      "name": "bookstack",
+      "image": "lscr.io/linuxserver/bookstack:25.07.20250804",
+      "internalPort": 8080,
       "isMain": true
     }
   ]

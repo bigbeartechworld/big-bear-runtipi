@@ -20,9 +20,8 @@ services:
       timeout: 5s
       retries: 5
     volumes: # Persistent volume mapping for database data
-      - ./data/data/db:/var/lib/postgresql/data
+      - ${APP_DATA_DIR}/data/db:/var/lib/postgresql/data
     networks:
-      - big_bear_ghostfolio_network # Connects the service to the defined network
       - tipi_main_network
     labels:
       runtipi.managed: "true"
@@ -41,15 +40,14 @@ services:
       retries: 5
       start_period: 30s
     volumes: # Persistent volume mapping for Redis data
-      - ./data/data/redis:/data
+      - ${APP_DATA_DIR}/data/redis:/data
     networks:
-      - big_bear_ghostfolio_network # Connects the service to the defined network
       - tipi_main_network
     labels:
       runtipi.managed: "true"
   ghostfolio:
     container_name: ghostfolio # Unique name for the container instance
-    image: ghostfolio/ghostfolio:2.210.1 # Docker image to use
+    image: ghostfolio/ghostfolio:2.211.0 # Docker image to use
     restart: unless-stopped # Policy to restart the container unless manually stopped
     environment: # Environment variables for configuration
       NODE_ENV: production # Node environment setting (production, development, etc.)
@@ -66,20 +64,16 @@ services:
       REDIS_PASSWORD: casaosredispassword
       REDIS_PORT: "6379"
     ports:
-      - "3333:3333" # Maps port 3333 on the host to port 3333 on the container
+      - "${APP_PORT}:3333" # Maps port 3333 on the host to port 3333 on the container
     depends_on: # Dependency definitions ensuring database and Redis are ready
       big-bear-ghostfolio-db:
         condition: service_healthy
       big-bear-ghostfolio-redis:
         condition: service_healthy
     networks:
-      - big_bear_ghostfolio_network # Connects the service to the defined network
       - tipi_main_network
     labels:
       runtipi.managed: "true"
-# Network definition for inter-service communication
 networks:
-  big_bear_ghostfolio_network:
-    driver: bridge # Uses a bridge network for container communication
   tipi_main_network:
     external: true

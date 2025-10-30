@@ -3,8 +3,8 @@
   "services": [
     {
       "name": "firefox",
-      "image": "kasmweb/firefox:1.15.0-rolling",
-      "internalPort": 6901,
+      "image": "lscr.io/linuxserver/firefox:1.2404.1",
+      "internalPort": 3000,
       "isMain": true
     }
   ]
