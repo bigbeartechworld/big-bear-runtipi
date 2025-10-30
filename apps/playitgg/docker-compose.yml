@@ -14,7 +14,7 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Mounting the local playitgg directory to /secrets inside the container
-      - ./data/secrets:/secrets
+      - ${APP_DATA_DIR}/secrets:/secrets
     labels:
       runtipi.managed: "true"
     networks:
