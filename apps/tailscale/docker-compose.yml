@@ -13,7 +13,7 @@ services:
     restart: unless-stopped
     # Environment variables for the container
     environment:
-      - TS_SERVE_CONFIG=""
+      - TS_SERVE_CONFIG=/config/serve-config.json
       - TS_ACCEPT_DNS=false
       - TS_AUTH_ONCE=false
       - TS_AUTHKEY=""
@@ -24,8 +24,9 @@ services:
       - TS_STATE_DIR=/var/lib/tailscale
     # Volumes to be mounted to the container
     volumes:
-      - ./data/state:/var/lib/tailscale
-      - ./data/config:/config
+      - ${APP_DATA_DIR}/state:/var/lib/tailscale
+      - ${APP_DATA_DIR}/config:/config
+      - ${APP_DATA_DIR}/shared:/shared
       - /dev/net/tun:/dev/net/tun
     cap_add:
       - net_admin

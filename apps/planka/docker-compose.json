@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-planka",
+      "name": "planka",
       "image": "ghcr.io/plankanban/planka:1.26.3",
-      "internalPort": 1337,
+      "internalPort": 3000,
       "isMain": true
     }
   ]

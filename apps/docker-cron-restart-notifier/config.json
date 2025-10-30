@@ -1,7 +1,7 @@
 {
   "name": "Docker Cron Restart Notifier",
   "available": true,
-  "port": 8092,
+  "port": 8080,
   "exposable": true,
   "dynamic_config": true,
   "id": "docker-cron-restart-notifier",
@@ -13,9 +13,9 @@
   "author": "activecs",
   "source": "",
   "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508233000,
-  "updated_at": 1761508233000,
+  "supported_architectures": ["amd64"],
+  "created_at": 1761800445000,
+  "updated_at": 1761800445000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
