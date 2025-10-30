@@ -2,8 +2,8 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "app",
-      "image": "n8nio/n8n:1.117.0",
+      "name": "n8n",
+      "image": "n8nio/n8n:1.117.1",
       "internalPort": 5678,
       "isMain": true
     }

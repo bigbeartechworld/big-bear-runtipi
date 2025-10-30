@@ -8,7 +8,7 @@ services:
     # Name of the container
     container_name: lobe-chat
     # Image to be used for the container
-    image: lobehub/lobe-chat:1.141.10
+    image: lobehub/lobe-chat:1.142.7
     # Container restart policy
     restart: unless-stopped
     # Environment variables for the container
@@ -20,7 +20,7 @@ services:
     # Ports mapping between host and container
     ports:
       # Mapping port 3210 of the host to port 3210 of the container
-      - "3210:3210"
+      - "${APP_PORT}:3210"
     labels:
       runtipi.managed: "true"
     networks:

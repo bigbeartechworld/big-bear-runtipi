@@ -16,24 +16,18 @@ services:
           memory: 64M
     # Volume mappings for the service
     volumes:
-      - "./data/data/work:/opt/adguardhome/work" # Map data work directory
-      - "./data/data/conf:/opt/adguardhome/conf" # Map configuration directory
+      - "${APP_DATA_DIR}/data/work:/opt/adguardhome/work" # Map data work directory
+      - "${APP_DATA_DIR}/data/conf:/opt/adguardhome/conf" # Map configuration directory
     restart: unless-stopped
     ports:
-      - 53:53/tcp # Map TCP port 53
+      - ${APP_PORT}:53/tcp # Map TCP port 53
       - 53:53/udp # Map UDP port 53
       - 8080:80 # Map port 80
     # Define the networks
     networks:
-      # Specify the adguard-home-network
-      - adguard-home-network
       - tipi_main_network
     labels:
       runtipi.managed: "true"
-# Networks used by the application
 networks:
-  # Define the network for AdGuard Home
-  adguard-home-network:
-    driver: bridge
   tipi_main_network:
     external: true

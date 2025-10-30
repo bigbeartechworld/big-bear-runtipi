@@ -13,7 +13,7 @@ services:
     container_name: big-bear-rocketchat-db
     volumes:
       # Persistent storage for MongoDB
-      - ./data/db:/data/db
+      - ${APP_DATA_DIR}/db:/data/db
     # Health Check
     # Checks the health of the MongoDB service.
     healthcheck:
@@ -24,7 +24,6 @@ services:
       start_period: 40s
     # Networks
     networks:
-      - rocketchat-net
       - tipi_main_network
     labels:
       runtipi.managed: "true"
@@ -46,7 +45,7 @@ services:
     # Port Mappings
     # Maps ports from the container to the host system.
     ports:
-      - "3000:3000" # HostPort:ContainerPort
+      - "${APP_PORT}:3000" # HostPort:ContainerPort
     # Dependencies
     # Specifies other services that this service depends on.
     depends_on:
@@ -55,14 +54,9 @@ services:
     # Networks
     # Assigns the app service to a network.
     networks:
-      - rocketchat-net
       - tipi_main_network
     labels:
       runtipi.managed: "true"
-# Networks
-# Defines the network configurations used by the services.
 networks:
-  rocketchat-net:
-    driver: bridge
   tipi_main_network:
     external: true
