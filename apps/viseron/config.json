@@ -1,7 +1,7 @@
 {
   "name": "Viseron",
   "available": true,
-  "port": 8890,
+  "port": 8888,
   "exposable": true,
   "dynamic_config": true,
   "id": "viseron",
@@ -13,9 +13,9 @@
   "author": "roflcoopter",
   "source": "",
   "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508362000,
-  "updated_at": 1761508362000,
+  "supported_architectures": ["amd64","arm64"],
+  "created_at": 1761790498000,
+  "updated_at": 1761790498000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

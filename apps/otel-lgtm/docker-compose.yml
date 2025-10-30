@@ -8,14 +8,14 @@ services:
     # Name of the container
     container_name: otel-lgtm
     # Image to be used for the container
-    image: grafana/otel-lgtm:0.11.12
+    image: grafana/otel-lgtm:0.11.14
     # Container restart policy
     restart: unless-stopped
     # Volumes to be mounted to the container
     volumes:
-      # Mounting the local ./data/data directory to /data inside the container
+      # Mounting the local /DATA/AppData/$AppID/data directory to /data inside the container
       - type: bind
-        source: ./data/data
+        source: ${APP_DATA_DIR}/data
         target: /data
         bind:
           create_host_path: true
@@ -24,7 +24,7 @@ services:
       # Mapping port 3000 of the host to port 3000 of the container
       - mode: ingress
         target: 3000
-        published: "3000"
+        published: "${APP_PORT}"
         protocol: tcp
       # Mapping port 4317 of the host to port 4317 of the container  
       - mode: ingress
@@ -38,12 +38,9 @@ services:
         protocol: tcp
     # Networks to be attached to the container
     networks:
-      - big-bear-otel-lgtm
       - tipi_main_network
     labels:
       runtipi.managed: "true"
 networks:
-  big-bear-otel-lgtm:
-    driver: bridge
   tipi_main_network:
     external: true

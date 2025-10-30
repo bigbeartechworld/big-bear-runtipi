@@ -1,7 +1,7 @@
 {
   "name": "Umami",
   "available": true,
-  "port": 3023,
+  "port": 3000,
   "exposable": true,
   "dynamic_config": true,
   "id": "umami",
@@ -13,9 +13,9 @@
   "author": "umami-software",
   "source": "",
   "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508356000,
-  "updated_at": 1761508356000,
+  "supported_architectures": ["amd64","arm64"],
+  "created_at": 1761790492000,
+  "updated_at": 1761790492000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

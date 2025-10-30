@@ -7,13 +7,13 @@ services:
   myspeed:
     image: germannewsmaker/myspeed:1.0.9 # Docker image to be used for the service
     ports:
-      - "5216:5216" # Port mapping from host to container
+      - "${APP_PORT}:5216" # Port mapping from host to container
     volumes:
-      - ./data/data:/myspeed/data # Mount host directory to container directory
+      - ${APP_DATA_DIR}/data:/myspeed/data # Mount host directory to container directory
     restart: unless-stopped # Restart policy for the service
+    container_name: myspeed
     labels:
       runtipi.managed: "true"
-    container_name: myspeed
     networks:
       - tipi_main_network
 networks:
