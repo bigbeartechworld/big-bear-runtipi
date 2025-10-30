@@ -14,11 +14,11 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Mounting the local homarr/configs directory to /app/data/configs inside the container
-      - ./data/config:/root/.dbgate
+      - ${APP_DATA_DIR}/config:/root/.dbgate
     # Ports mapping between host and container
     ports:
       # Mapping port 3000 of the host to port 3000 of the container
-      - "3000:3000"
+      - "${APP_PORT}:3000"
     labels:
       runtipi.managed: "true"
     networks:

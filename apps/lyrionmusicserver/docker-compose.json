@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-lyrionmusicserver",
+      "name": "lyrionmusicserver",
       "image": "lmscommunity/lyrionmusicserver:9.1.0",
       "internalPort": 9000,
       "isMain": true

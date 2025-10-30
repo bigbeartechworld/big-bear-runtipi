@@ -1,7 +1,7 @@
 {
   "name": "Readeck",
   "available": true,
-  "port": 8012,
+  "port": 8000,
   "exposable": true,
   "dynamic_config": true,
   "id": "readeck",
@@ -13,9 +13,9 @@
   "author": "readeck",
   "source": "",
   "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508336000,
-  "updated_at": 1761508336000,
+  "supported_architectures": ["amd64","arm64"],
+  "created_at": 1761836220000,
+  "updated_at": 1761836220000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

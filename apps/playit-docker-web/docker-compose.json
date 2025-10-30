@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-playit-docker-web",
+      "name": "playit-docker-web",
       "image": "wisdomsky/playit-docker-web:1.1",
-      "internalPort": 8010,
+      "internalPort": 8008,
       "isMain": true
     }
   ]

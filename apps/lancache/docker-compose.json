@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "app",
+      "name": "lancache",
       "image": "lancachenet/monolithic:latest",
-      "internalPort": 80,
+      "internalPort": 8080,
       "isMain": true
     }
   ]

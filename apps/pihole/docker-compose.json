@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "app",
-      "image": "pihole/pihole:2025.08.0",
-      "internalPort": 53,
+      "name": "pihole",
+      "image": "pihole/pihole:2025.10.3",
+      "internalPort": 8080,
       "isMain": true
     }
   ]
