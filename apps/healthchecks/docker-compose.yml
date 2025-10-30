@@ -36,11 +36,11 @@ services:
       - SITE_LOGO_URL= #optional
     # Volumes to be mounted to the container
     volumes:
-      - ./data/config:/config
+      - ${APP_DATA_DIR}/config:/config
     # Ports mapping between host and container
     ports:
       # Mapping port 8000 of the host to port 8000 of the container
-      - "8000:8000"
+      - "${APP_PORT}:8000"
       # Mapping port 2525 of the host to port 2525 of the container
       - "2525:2525"
     labels:

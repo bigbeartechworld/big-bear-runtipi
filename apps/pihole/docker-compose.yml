@@ -8,7 +8,7 @@ services:
     # Name of the container
     container_name: pihole
     # Image to be used for the container
-    image: pihole/pihole:2025.08.0
+    image: pihole/pihole:2025.10.3
     # Container restart policy
     restart: unless-stopped
     # Environment variables
@@ -17,13 +17,13 @@ services:
       FTLCONF_webserver_api_password: "your_password"
     # Volumes to be mounted to the container
     volumes:
-      # Mounting the local ./data/etc directory to /etc/pihole/ inside the container
-      - ./data/etc:/etc/pihole/
-      # Mounting the local ./data/dnsmasq.d directory to /etc/dnsmasq.d inside the container
-      - ./data/dnsmasq.d:/etc/dnsmasq.d/
+      # Mounting the local /DATA/AppData/$AppID/etc directory to /etc/pihole/ inside the container
+      - ${APP_DATA_DIR}/etc:/etc/pihole/
+      # Mounting the local /DATA/AppData/$AppID/dnsmasq.d directory to /etc/dnsmasq.d inside the container
+      - ${APP_DATA_DIR}/dnsmasq.d:/etc/dnsmasq.d/
     # Ports mapping between host and container
     ports:
-      - "53:53/tcp"
+      - "${APP_PORT}:53/tcp"
       - "53:53/udp"
       - "67:67/udp"
       - "8080:80/tcp"

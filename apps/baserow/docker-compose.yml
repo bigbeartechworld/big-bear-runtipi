@@ -13,11 +13,11 @@ services:
       BASEROW_PUBLIC_URL: "http://[YOUR_CASAOS_IP]:7350"
     # Map ports from the host machine to the Baserow container.
     ports:
-      - "7350:80" # Map port 7300 on the host to port 80 in the container.
+      - "${APP_PORT}:80" # Map port 7300 on the host to port 80 in the container.
       - "7351:443" # Map port 7301 on the host to port 443 in the container.
     # Define volumes to persist data between container restarts.
     volumes:
-      - ./data/data:/baserow/data
+      - ${APP_DATA_DIR}/data:/baserow/data
     labels:
       runtipi.managed: "true"
     networks:

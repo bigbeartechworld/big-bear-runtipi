@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-convertx",
+      "name": "convertx",
       "image": "ghcr.io/c4illin/convertx:v0.15.1",
       "internalPort": 3000,
       "isMain": true

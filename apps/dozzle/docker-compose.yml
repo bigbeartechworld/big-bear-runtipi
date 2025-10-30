@@ -8,7 +8,7 @@ services:
     # Name of the container
     container_name: dozzle
     # Image to be used for the container
-    image: amir20/dozzle:v8.14.5
+    image: amir20/dozzle:v8.14.6
     # Container restart policy
     restart: unless-stopped
     # Volumes to be mounted to the container
@@ -18,7 +18,7 @@ services:
     # Ports mapping between host and container
     ports:
       # Mapping port 8888 of the host to port 8080 of the container
-      - "8888:8080"
+      - "${APP_PORT}:8080"
     labels:
       runtipi.managed: "true"
     networks:

@@ -17,7 +17,12 @@ services:
       - "TZ=America/Chicago" # Required for the container to function properly
     # Volumes to be mounted to the container
     volumes:
-      # Mounting the local ./data/data directory to /data inside the container
-      - "./data/data:/data"
+      # Mounting the local /DATA/AppData/$AppID/data directory to /data inside the container
+      - "${APP_DATA_DIR}/data:/data"
     labels:
       runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

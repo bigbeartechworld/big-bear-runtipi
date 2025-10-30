@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-tandoor",
+      "name": "tandoor",
       "image": "ghcr.io/tandoorrecipes/recipes:2.3.3",
       "internalPort": 8080,
       "isMain": true

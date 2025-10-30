@@ -25,7 +25,7 @@ services:
       - /etc/localtime:/etc/localtime:ro
     # Map port 7681 on the host to port 7681 on the container
     ports:
-      - "7681:7681"
+      - "${APP_PORT}:7681"
     labels:
       runtipi.managed: "true"
     networks:
