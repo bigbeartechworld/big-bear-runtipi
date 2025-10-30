@@ -14,12 +14,11 @@ services:
       - MYSQL_USER=romm-user # MariaDB user
       - MYSQL_PASSWORD=casaos # MariaDB password
     volumes:
-      - ./data/mysql:/var/lib/mysql # MariaDB data volume (can also be mounted locally)
+      - ${APP_DATA_DIR}/mysql:/var/lib/mysql # MariaDB data volume (can also be mounted locally)
     ports:
       - 3306:3306 # Map host port 3306 to container port 3306
     restart: "unless-stopped"
     networks:
-      - big-bear-romm-network # Use the big-bear-romm-network network
       - tipi_main_network
     labels:
       runtipi.managed: "true"
@@ -47,25 +46,21 @@ services:
       - ENABLE_SCHEDULED_RESCAN=true # Enable scheduled rescan
       - ENABLE_SCHEDULED_UPDATE_SWITCH_TITLEDB=true # Enable scheduled update of Switch TitleDB database
     volumes:
-      - "./data/resources:/romm/resources" # [Optional] Path where roms metadata (covers) are stored
-      - "./data/redis-data:/redis-data" # Cached data for background tasks
-      - "./data/library:/romm/library" # Path to the roms library
-      - "./data/assets:/romm/assets" # Uploaded saves, states, etc.
-      - "./data/config:/romm/config" # [Optional] Path where config is stored
-      - "./data/logs:/romm/logs" # [Optional] Path where logs are stored
+      - "${APP_DATA_DIR}/resources:/romm/resources" # [Optional] Path where roms metadata (covers) are stored
+      - "${APP_DATA_DIR}/redis-data:/redis-data" # Cached data for background tasks
+      - "${APP_DATA_DIR}/library:/romm/library" # Path to the roms library
+      - "${APP_DATA_DIR}/assets:/romm/assets" # Uploaded saves, states, etc.
+      - "${APP_DATA_DIR}/config:/romm/config" # [Optional] Path where config is stored
+      - "${APP_DATA_DIR}/logs:/romm/logs" # [Optional] Path where logs are stored
     ports:
-      - 1080:8080 # Map host port 1080 to container port 8080
+      - ${APP_PORT}:8080 # Map host port 1080 to container port 8080
     depends_on:
       - big-bear-rommdb # Make sure the romm_db service is started before the app service
     restart: "unless-stopped"
     networks:
-      - big-bear-romm-network # Use the big-bear-romm-network network
       - tipi_main_network
     labels:
       runtipi.managed: "true"
-# Network definitions for the big-bear-romm application
 networks:
-  big-bear-romm-network:
-    driver: bridge
   tipi_main_network:
     external: true

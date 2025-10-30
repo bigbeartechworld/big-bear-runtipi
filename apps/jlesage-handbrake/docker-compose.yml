@@ -4,14 +4,14 @@ services:
     container_name: jlesage-handbrake # Name of the Docker container
     image: jlesage/handbrake:v25.10.1 # Docker image for the Handbrake
     ports:
-      - "5800:5800" # Expose port 5800 for VNC access
+      - "${APP_PORT}:5800" # Expose port 5800 for VNC access
     environment:
       - VNC_PASSWORD=casaos # Set the VNC password to 'casaos'
     volumes:
-      - ./data/config:/config:rw
-      - ./data/storage:/storage:ro
-      - ./data/watch:/watch:rw
-      - ./data/output:/output:rw
+      - ${APP_DATA_DIR}/config:/config:rw
+      - ${APP_DATA_DIR}/storage:/storage:ro
+      - ${APP_DATA_DIR}/watch:/watch:rw
+      - ${APP_DATA_DIR}/output:/output:rw
     labels:
       runtipi.managed: "true"
     networks:

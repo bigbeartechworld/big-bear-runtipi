@@ -17,11 +17,11 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Mounting the local /DATA/AppData/big-bear-uisp/config directory to /config inside the container
-      - ./data/config:/config
+      - ${APP_DATA_DIR}/config:/config
     # Ports mapping between host and container
     ports:
       # Mapping port 8080 of the host to port 80 of the container
-      - "8080:80"
+      - "${APP_PORT}:80"
       # Mapping port 10443 of the host to port 443 of the container
       - "10443:443"
     labels:

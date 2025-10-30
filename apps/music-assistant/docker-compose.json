@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-music-assistant-server",
-      "image": "ghcr.io/music-assistant/server:2.6.0",
-      "internalPort": 8110,
+      "name": "music-assistant",
+      "image": "ghcr.io/music-assistant/server:2.6.1",
+      "internalPort": 8095,
       "isMain": true
     }
   ]

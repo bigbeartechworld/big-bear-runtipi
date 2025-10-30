@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "unifi-db",
-      "image": "mongo:4.4.28",
-      "internalPort": 27017,
+      "name": "unifi-network-application-mongo-4",
+      "image": "linuxserver/unifi-network-application:9.5.21",
+      "internalPort": 8443,
       "isMain": true
     }
   ]

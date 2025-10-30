@@ -22,7 +22,7 @@ services:
       PMA_PASSWORD: "password"
     # Port mapping: map host's port 8080 to container's port 80
     ports:
-      - "8080:80"
+      - "${APP_PORT}:80"
     labels:
       runtipi.managed: "true"
     networks:
