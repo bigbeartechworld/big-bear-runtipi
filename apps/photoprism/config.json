@@ -13,9 +13,9 @@
   "author": "photoprism.app",
   "source": "",
   "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508316000,
-  "updated_at": 1761508316000,
+  "supported_architectures": ["amd64","arm64"],
+  "created_at": 1761911770000,
+  "updated_at": 1761911770000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

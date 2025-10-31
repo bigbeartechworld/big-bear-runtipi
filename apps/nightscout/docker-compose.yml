@@ -11,11 +11,10 @@ services:
     image: mongo:4.4
     # Networks for the MongoDB container
     networks:
-      - big-bear-nightscout-network
       - tipi_main_network
     # Volume mappings for the MongoDB container
     volumes:
-      - ./data/mongo-data:/data/db:cached
+      - ${APP_DATA_DIR}/mongo-data:/data/db:cached
     labels:
       runtipi.managed: "true"
   nightscout:
@@ -27,7 +26,7 @@ services:
     restart: unless-stopped
     # Port mappings for the container
     ports:
-      - "1337:1337"
+      - "${APP_PORT}:1337"
     # Environment variables for the container
     environment:
       ### Variables for the container
@@ -63,13 +62,9 @@ services:
       - big-bear-nightscout-mongo
     # Networks for the container
     networks:
-      - big-bear-nightscout-network
       - tipi_main_network
     labels:
       runtipi.managed: "true"
-# Network definitions
 networks:
-  big-bear-nightscout-network:
-    driver: bridge
   tipi_main_network:
     external: true

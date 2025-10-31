@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "app",
+      "name": "baserow",
       "image": "baserow/baserow:1.35.3",
-      "internalPort": 80,
+      "internalPort": 7350,
       "isMain": true
     }
   ]

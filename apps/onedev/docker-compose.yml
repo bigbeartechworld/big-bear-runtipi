@@ -14,9 +14,8 @@ services:
       - POSTGRES_PASSWORD=eea2dad6-2203-45eb-8908-e8ba4d1e7f92 # Password for the default user
       - POSTGRES_DB=onedev # Default database created upon startup
     volumes: # Mount point for database persistence
-      - ./data/postgres_data:/var/lib/postgresql/data
+      - ${APP_DATA_DIR}/postgres/data:/var/lib/postgresql/data
     networks: # Connect to the network
-      - big_bear_ondedev_network
       - tipi_main_network
     labels:
       runtipi.managed: "true"
@@ -30,7 +29,7 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Mounting the local /DATA/AppData/big-bear-onedev/data directory to /opt/onedev inside the container
-      - ./data/data:/opt/onedev
+      - ${APP_DATA_DIR}/data:/opt/onedev
       # Mounting docker.sock to allow docker management via OneDev
       - /var/run/docker.sock:/var/run/docker.sock
     environment: # Environment variables for configuration
@@ -46,19 +45,15 @@ services:
     # Ports mapping between host and container
     ports:
       # Mapping port 6610 of the host to port 6610 of the container
-      - "6610:6610"
+      - "${APP_PORT}:6610"
       # Mapping port 6611 of the host to port 6611 of the container
       - "6611:6611"
     depends_on: # Ensure the database service starts before this service
       - big-bear-onedev-db
     networks: # Connect to the network
-      - big_bear_ondedev_network
       - tipi_main_network
     labels:
       runtipi.managed: "true"
-# Define the network for the big-bear-onedev application
 networks:
-  big_bear_ondedev_network: # Network name
-    driver: bridge # Network driver
   tipi_main_network:
     external: true

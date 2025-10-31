@@ -14,11 +14,11 @@ services:
     # Ports mapping between host and container
     ports:
       # Mapping port 8080 of the host to port 80 of the container
-      - "8080:80"
+      - "${APP_PORT}:80"
     # Volumes to be mounted to the container
     volumes:
-      # Mounting the local ./data directory to /data inside the container
-      - ./data/data:/data
+      # Mounting the local /DATA/AppData/$AppID directory to /data inside the container
+      - ${APP_DATA_DIR}/data:/data
       # Mounting docker.sock to allow docker management via Umbrel
       - /var/run/docker.sock:/var/run/docker.sock
     # Stop grace period for the container
