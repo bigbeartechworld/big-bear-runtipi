@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-stirling-pdf",
-      "image": "stirlingtools/stirling-pdf:1.5.0",
-      "internalPort": 8080,
+      "name": "stirling-pdf",
+      "image": "stirlingpdf/stirlingpdf:1.5.0",
+      "internalPort": 8132,
       "isMain": true
     }
   ]

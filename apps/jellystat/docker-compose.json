@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-jellystat",
+      "name": "jellystat",
       "image": "cyfershepard/jellystat:1.1.6",
-      "internalPort": 3000,
+      "internalPort": 3010,
       "isMain": true
     }
   ]

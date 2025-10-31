@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-semaphore",
+      "name": "semaphore",
       "image": "semaphoreui/semaphore:v2.16.34",
-      "internalPort": 3000,
+      "internalPort": 3022,
       "isMain": true
     }
   ]

@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "app",
+      "name": "dashdot",
       "image": "mauricenino/dashdot:6.2.0",
-      "internalPort": 3001,
+      "internalPort": 3005,
       "isMain": true
     }
   ]

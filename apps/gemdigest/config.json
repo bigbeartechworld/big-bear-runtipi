@@ -1,0 +1,21 @@
+{
+  "name": "GemDigest Bot",
+  "available": true,
+  "port": 3333,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "gemdigest",
+  "description": "Simplify your reads, amplify your time! 📚✨ GemDigest is a Telegram bot that summarizes articles from any website into bite-sized nuggets, saving you time and energy for what matters most. 📱👋",
+  "tipi_version": 1,
+  "version": "1.0",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "Your personal article summarizer",
+  "author": "Armaggheddon",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["amd64","arm64"],
+  "created_at": 1761916503000,
+  "updated_at": 1761916503000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

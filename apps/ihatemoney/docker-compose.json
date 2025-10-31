@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-ihatemoney",
+      "name": "ihatemoney",
       "image": "ihatemoney/ihatemoney:6.1.5",
-      "internalPort": 8000,
+      "internalPort": 8006,
       "isMain": true
     }
   ]

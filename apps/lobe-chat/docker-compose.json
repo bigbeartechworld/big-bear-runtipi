@@ -2,8 +2,8 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-lobe-chat",
-      "image": "lobehub/lobe-chat:1.141.10",
+      "name": "lobe-chat",
+      "image": "lobehub/lobe-chat:1.142.7",
       "internalPort": 3210,
       "isMain": true
     }

@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-dbgate",
-      "image": "dbgate/dbgate:6.6.5-alpine",
-      "internalPort": 3000,
+      "name": "dbgate",
+      "image": "dbgate/dbgate:6.6.6-alpine",
+      "internalPort": 3006,
       "isMain": true
     }
   ]
