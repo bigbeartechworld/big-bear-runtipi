@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "app",
+      "name": "code-server",
       "image": "linuxserver/code-server:4.105.1",
-      "internalPort": 8443,
+      "internalPort": 8088,
       "isMain": true
     }
   ]

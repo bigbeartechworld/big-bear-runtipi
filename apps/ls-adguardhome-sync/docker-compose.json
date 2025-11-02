@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-ls-adguard-home-sync",
-      "image": "linuxserver/adguardhome-sync:0.8.1",
-      "internalPort": 8080,
+      "name": "ls-adguardhome-sync",
+      "image": "linuxserver/adguardhome-sync:0.8.2",
+      "internalPort": 8106,
       "isMain": true
     }
   ]

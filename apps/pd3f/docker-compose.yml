@@ -8,7 +8,6 @@ services:
   parsr:
     image: axarev/parsr:v1.2.2
     networks:
-      - big-bear-pd3f-network
       - tipi_main_network
     expose:
       - 3001
@@ -18,7 +17,6 @@ services:
   redis:
     image: redis:6.2.20-alpine@sha256:2185e741f4c1e7b0ea9ca1e163a3767c4270a73086b6bbea2049a7203212fb7f
     networks:
-      - big-bear-pd3f-network
       - tipi_main_network
     expose:
       - 6379
@@ -31,12 +29,11 @@ services:
       - parsr
       - redis
     networks:
-      - big-bear-pd3f-network
       - tipi_main_network
     volumes:
-      - ./data/cache:/root/.cache/
-      - ./data/to-ocr:/to-ocr/
-      - ./data/uploads:/uploads/
+      - ${APP_DATA_DIR}/cache:/root/.cache/
+      - ${APP_DATA_DIR}/to-ocr:/to-ocr/
+      - ${APP_DATA_DIR}/uploads:/uploads/
     # delete results / files after one day
     environment:
       - KEEP_RESULTS_HOURS=24
@@ -47,10 +44,9 @@ services:
   ocr_worker:
     image: pd3f/pd3f-ocr:latest
     networks:
-      - big-bear-pd3f-network
       - tipi_main_network
     volumes:
-      - ./data/to-ocr:/to-ocr/
+      - ${APP_DATA_DIR}/to-ocr:/to-ocr/
     labels:
       runtipi.managed: "true"
   pd3f:
@@ -62,12 +58,12 @@ services:
     restart: unless-stopped
     # Volumes to be mounted to the container
     volumes:
-      # Mounting the local ./data/uploads directory to /uploads/ inside the container
-      - ./data/uploads:/uploads/
+      # Mounting the local /DATA/AppData/$AppID/uploads directory to /uploads/ inside the container
+      - ${APP_DATA_DIR}/uploads:/uploads/
     # Ports mapping between host and container
     ports:
       # Mapping port 1616 of the host to port 5000 of the container
-      - "1616:5000"
+      - "${APP_PORT}:5000"
     command: ["gunicorn", "app:app", "--bind=0.0.0.0:5000"]
     # Other services that this service depends on
     depends_on:
@@ -76,13 +72,9 @@ services:
       - worker
       - ocr_worker
     networks:
-      - big-bear-pd3f-network
       - tipi_main_network
     labels:
       runtipi.managed: "true"
-# Network definitions
 networks:
-  big-bear-pd3f-network:
-    name: big-bear-pd3f-network
   tipi_main_network:
     external: true

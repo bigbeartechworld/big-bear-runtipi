@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "app",
+      "name": "pingvin-share",
       "image": "stonith404/pingvin-share:v1.13.0",
-      "internalPort": 3000,
+      "internalPort": 3016,
       "isMain": true
     }
   ]

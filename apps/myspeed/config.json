@@ -12,10 +12,10 @@
   "short_desc": "A speed test analysis software that shows your internet speed for up to 30 days",
   "author": "gnmyt",
   "source": "",
-  "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508290000,
-  "updated_at": 1761508290000,
+  "website": "https://hub.docker.com/r/germannewsmaker/myspeed",
+  "supported_architectures": ["amd64","arm64"],
+  "created_at": 1762122286000,
+  "updated_at": 1762122286000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

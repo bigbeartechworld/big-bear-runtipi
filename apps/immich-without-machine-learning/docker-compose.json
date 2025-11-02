@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "immich-server",
-      "image": "ghcr.io/immich-app/immich-server:v2.1.0",
-      "internalPort": 2283,
+      "name": "immich-without-machine-learning",
+      "image": "ghcr.io/immich-app/immich-server:v2.2.1",
+      "internalPort": 2285,
       "isMain": true
     }
   ]

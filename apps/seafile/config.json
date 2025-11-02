@@ -12,10 +12,10 @@
   "short_desc": "Seafile is an open source file sync and share platform, focusing on reliability and performance.",
   "author": "seafile",
   "source": "",
-  "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508341000,
-  "updated_at": 1761508341000,
+  "website": "https://hub.docker.com/r/seafileltd/seafile-mc",
+  "supported_architectures": ["amd64","arm64"],
+  "created_at": 1762122360000,
+  "updated_at": 1762122360000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

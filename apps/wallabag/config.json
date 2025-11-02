@@ -12,10 +12,10 @@
   "short_desc": "Save and classify articles. Read them later. Freely.",
   "author": "wallabag",
   "source": "",
-  "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508363000,
-  "updated_at": 1761508363000,
+  "website": "https://hub.docker.com/r/wallabag/wallabag",
+  "supported_architectures": ["amd64","arm64"],
+  "created_at": 1762122390000,
+  "updated_at": 1762122390000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

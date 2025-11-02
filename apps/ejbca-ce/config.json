@@ -12,10 +12,10 @@
   "short_desc": "The open-source public key infrastructure (PKI) and certificate authority (CA)",
   "author": "Keyfactor",
   "source": "",
-  "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508236000,
-  "updated_at": 1761508236000,
+  "website": "https://hub.docker.com/r/keyfactor/ejbca-ce",
+  "supported_architectures": ["amd64"],
+  "created_at": 1762122174000,
+  "updated_at": 1762122174000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

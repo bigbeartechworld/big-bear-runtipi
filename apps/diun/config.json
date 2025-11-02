@@ -12,10 +12,10 @@
   "short_desc": "Docker Image Update Notifier",
   "author": "crazymax",
   "source": "",
-  "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508232000,
-  "updated_at": 1761508232000,
+  "website": "https://hub.docker.com/r/crazymax/diun",
+  "supported_architectures": ["amd64","arm64"],
+  "created_at": 1762122166000,
+  "updated_at": 1762122166000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

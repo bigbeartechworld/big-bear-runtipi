@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-kavita",
+      "name": "kavita",
       "image": "jvmilazz0/kavita:0.8.8",
-      "internalPort": 5000,
+      "internalPort": 5004,
       "isMain": true
     }
   ]
