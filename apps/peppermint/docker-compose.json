@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "app",
+      "name": "peppermint",
       "image": "pepperlabs/peppermint:latest",
-      "internalPort": 3000,
+      "internalPort": 3015,
       "isMain": true
     }
   ]

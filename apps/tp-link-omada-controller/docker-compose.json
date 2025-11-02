@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "app",
+      "name": "tp-link-omada-controller",
       "image": "mbentley/omada-controller:5.15",
       "internalPort": 8135,
       "isMain": true

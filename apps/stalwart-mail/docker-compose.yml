@@ -10,17 +10,17 @@ services:
     # Name of the container
     container_name: stalwart-mail
     # Image to be used for the container specifies the stalwartlabs/mail-server version and source
-    image: stalwartlabs/stalwart:v0.14.0
+    image: stalwartlabs/stalwart:v0.14.1
     # Container restart policy - restarts the container unless manually stopped
     restart: unless-stopped
     # Volume mappings required for system integration
     # These mounts allow the container to interact with the host system
     volumes:
       # Required for monitoring system resources and container metrics
-      - ./data/data:/opt/stalwart
+      - ${APP_DATA_DIR}/data:/opt/stalwart
     # Map port 8080 on the host to port 8080 on the container for the web interface
     ports:
-      - 8080:8080
+      - ${APP_PORT}:8080
       # Map port 25 on the host to port 25 on the container for the SMTP service
       - 25:25/tcp
       # Map port 143 on the host to port 143 on the container for the IMAP service

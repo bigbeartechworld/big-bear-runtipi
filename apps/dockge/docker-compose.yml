@@ -18,11 +18,11 @@ services:
     # Volumes to be mounted to the container
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - ./data/data:/app/data
-      - ./data/stacks:/DATA/AppData/big-bear-dockge/stacks
+      - ${APP_DATA_DIR}/data:/app/data
+      - ${APP_DATA_DIR}/stacks:/DATA/AppData/big-bear-dockge/stacks
     # Ports mapping between host and container
     ports:
-      - 5001:5001
+      - ${APP_PORT}:5001
     labels:
       runtipi.managed: "true"
     networks:

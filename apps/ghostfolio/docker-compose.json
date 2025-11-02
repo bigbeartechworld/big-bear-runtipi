@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-ghostfolio",
-      "image": "ghostfolio/ghostfolio:2.210.1",
-      "internalPort": 3333,
+      "name": "ghostfolio",
+      "image": "ghostfolio/ghostfolio:2.212.0",
+      "internalPort": 3334,
       "isMain": true
     }
   ]

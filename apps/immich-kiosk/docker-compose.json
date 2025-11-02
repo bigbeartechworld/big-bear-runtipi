@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-immich-kiosk",
+      "name": "immich-kiosk",
       "image": "ghcr.io/damongolding/immich-kiosk:0.26.1",
-      "internalPort": 3000,
+      "internalPort": 3009,
       "isMain": true
     }
   ]

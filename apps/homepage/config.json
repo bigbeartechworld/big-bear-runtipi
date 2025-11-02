@@ -1,0 +1,21 @@
+{
+  "name": "Homepage",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "homepage",
+  "description": "A modern, fully static, fast, secure fully proxied, highly customizable application dashboard with integrations for over 100 services and translations into multiple languages. Easily configured via YAML files or through docker label discovery.",
+  "tipi_version": 1,
+  "version": "v1.5.0",
+  "categories": ["bigbearcasaos"],
+  "short_desc": "Homepage",
+  "author": "gethomepage",
+  "source": "",
+  "website": "",
+  "supported_architectures": ["amd64","arm64"],
+  "created_at": 1762044026000,
+  "updated_at": 1762044026000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

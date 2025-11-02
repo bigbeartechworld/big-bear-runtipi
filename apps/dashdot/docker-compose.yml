@@ -1,19 +1,15 @@
-# Configuration for big-bear-dashdot setup
-
-# Name of the big-bear-dashdot application
 name: big-bear-dashdot
-# Service definitions for the dashdot application
 services:
   dashdot:
-    image: mauricenino/dashdot:6.2.0 # Image to be used for this service
+    image: mauricenino/dashdot:6.2.0
     ports:
-      - "3001:3001" # Port 3001 on the host is mapped to port 3001 in the container
+      - "${APP_PORT}:3001"
     volumes:
-      - ./data:/mnt/host# Mounting the local dashdot directory to /mnt/host inside the container
-    privileged: true # Runs the container in privileged mode, allowing it access to host devices
+      - ${APP_DATA_DIR}/data:/mnt/host
+    privileged: true
+    container_name: dashdot
     labels:
       runtipi.managed: "true"
-    container_name: dashdot
     networks:
       - tipi_main_network
 networks:
