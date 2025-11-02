@@ -29,10 +29,10 @@ services:
       # Mount the host's /etc/localtime file to the container's /etc/localtime file (read-only)
       - /etc/localtime:/etc/localtime:ro
       # Mount a local directory for persisting btop configuration files
-      - ./data/config:/root/.config/btop
+      - ${APP_DATA_DIR}/config:/root/.config/btop
     # Map port 7681 on the host to port 7681 on the container
     ports:
-      - "7681:7681"
+      - "${APP_PORT}:7681"
     labels:
       runtipi.managed: "true"
     networks:

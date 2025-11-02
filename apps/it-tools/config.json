@@ -12,10 +12,10 @@
   "short_desc": "IT Tools",
   "author": "corentinth",
   "source": "",
-  "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508267000,
-  "updated_at": 1761508267000,
+  "website": "https://hub.docker.com/r/corentinth/it-tools",
+  "supported_architectures": ["amd64","arm64"],
+  "created_at": 1762122223000,
+  "updated_at": 1762122223000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

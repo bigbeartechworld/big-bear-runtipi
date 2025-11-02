@@ -18,7 +18,7 @@ services:
       - TZ=Etc/UTC
     # Ports mapping between host and container
     ports:
-      - 3000:3000
+      - ${APP_PORT}:3000
       - 3001:3001
     security_opt:
       - seccomp:unconfined #optional

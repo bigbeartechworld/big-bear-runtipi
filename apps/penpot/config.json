@@ -12,10 +12,10 @@
   "short_desc": "Bring Design Freedom to your Product Team",
   "author": "penpotapp",
   "source": "",
-  "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508315000,
-  "updated_at": 1761508315000,
+  "website": "https://hub.docker.com/r/penpotapp/frontend",
+  "supported_architectures": ["amd64","arm64"],
+  "created_at": 1762122324000,
+  "updated_at": 1762122324000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-libredesk",
+      "name": "libredesk",
       "image": "libredesk/libredesk:v0.7.4-alpha",
-      "internalPort": 9000,
+      "internalPort": 9001,
       "isMain": true
     }
   ]

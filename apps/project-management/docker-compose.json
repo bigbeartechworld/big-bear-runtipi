@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-project-management",
+      "name": "project-management",
       "image": "eloufirhatim/helper:1.2.3",
-      "internalPort": 8000,
+      "internalPort": 8011,
       "isMain": true
     }
   ]

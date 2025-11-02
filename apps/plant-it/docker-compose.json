@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-plant-it",
+      "name": "plant-it",
       "image": "msdeluise/plant-it-server:0.10.0",
-      "internalPort": 8080,
+      "internalPort": 3018,
       "isMain": true
     }
   ]

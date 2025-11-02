@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-rallly",
+      "name": "rallly",
       "image": "lukevella/rallly:4.4.1",
-      "internalPort": 3000,
+      "internalPort": 3019,
       "isMain": true
     }
   ]

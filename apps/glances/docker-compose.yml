@@ -9,7 +9,7 @@ services:
     image: nicolargo/glances:4.3.0.8-full
     # Port mapping between host and container
     ports:
-      - 61208:61208
+      - ${APP_PORT}:61208
     # Environment variables
     environment:
       - TZ=UTC # Timezone

@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "app",
-      "image": "adguard/adguardhome:v0.107.68",
-      "internalPort": 53,
+      "name": "adguard-home",
+      "image": "adguard/adguardhome:v0.107.69",
+      "internalPort": 8080,
       "isMain": true
     }
   ]

@@ -12,10 +12,10 @@
   "short_desc": "Manage users in Jellyfin",
   "author": "hrfee",
   "source": "",
-  "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508269000,
-  "updated_at": 1761508269000,
+  "website": "https://hub.docker.com/r/hrfee/jfa-go",
+  "supported_architectures": ["amd64","arm64"],
+  "created_at": 1762122227000,
+  "updated_at": 1762122227000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

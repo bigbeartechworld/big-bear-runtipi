@@ -8,7 +8,7 @@ services:
     # Name of the container
     container_name: ollama-amd
     # Image to be used for the container
-    image: ollama/ollama:0.12.6-rocm
+    image: ollama/ollama:0.12.7-rocm
     # Container restart policy
     restart: unless-stopped
     # Environment variables
@@ -16,11 +16,11 @@ services:
       - PORT=11434
     # Volumes to be mounted to the container
     volumes:
-      - ./data/.ollama:/root/.ollama
+      - ${APP_DATA_DIR}/.ollama:/root/.ollama
     # Ports mapping between host and container
     ports:
       # Mapping port 11434 of the host to port 11434 of the container
-      - "11434:11434"
+      - "${APP_PORT}:11434"
     devices:
       # Attach GPU
       - /dev/kfd
