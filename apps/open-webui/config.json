@@ -12,10 +12,10 @@
   "short_desc": "User-friendly WebUI for LLMs",
   "author": "open-webui",
   "source": "",
-  "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508308000,
-  "updated_at": 1761508308000,
+  "website": "https://hub.docker.com/r/open-webui/open-webui",
+  "supported_architectures": ["amd64","arm64"],
+  "created_at": 1762133464000,
+  "updated_at": 1762133464000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

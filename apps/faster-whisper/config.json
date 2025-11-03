@@ -12,10 +12,10 @@
   "short_desc": "Faster-whisper",
   "author": "systran",
   "source": "",
-  "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508240000,
-  "updated_at": 1761508240000,
+  "website": "https://hub.docker.com/r/linuxserver/faster-whisper",
+  "supported_architectures": ["amd64"],
+  "created_at": 1762133362000,
+  "updated_at": 1762133362000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

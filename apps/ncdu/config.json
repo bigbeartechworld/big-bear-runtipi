@@ -12,10 +12,10 @@
   "short_desc": "Ncdu is a disk usage analyzer with an ncurses interface.",
   "author": "bigbeartechworld",
   "source": "",
-  "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508291000,
-  "updated_at": 1761508291000,
+  "website": "https://hub.docker.com/r/bigbeartechworld/big-bear-ncdu",
+  "supported_architectures": ["amd64","arm64"],
+  "created_at": 1762133437000,
+  "updated_at": 1762133437000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

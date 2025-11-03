@@ -6,14 +6,14 @@ services:
     image: onlyoffice/documentserver:9.1.0
     container_name: onlyoffice
     ports:
-      - "7400:80"
+      - "${APP_PORT}:80"
     volumes:
-      - ./data/onlyoffice/logs:/var/log/onlyoffice
-      - ./data/onlyoffice/data:/var/www/onlyoffice/Data
-      - ./data/onlyoffice/lib:/var/lib/onlyoffice
-      - ./data/onlyoffice/rabbitmq:/var/lib/rabbitmq
-      - ./data/onlyoffice/redis:/var/lib/redis
-      - ./data/onlyoffice/db:/var/lib/postgresql
+      - ${APP_DATA_DIR}/onlyoffice/logs:/var/log/onlyoffice
+      - ${APP_DATA_DIR}/onlyoffice/data:/var/www/onlyoffice/Data
+      - ${APP_DATA_DIR}/onlyoffice/lib:/var/lib/onlyoffice
+      - ${APP_DATA_DIR}/onlyoffice/rabbitmq:/var/lib/rabbitmq
+      - ${APP_DATA_DIR}/onlyoffice/redis:/var/lib/redis
+      - ${APP_DATA_DIR}/onlyoffice/db:/var/lib/postgresql
     labels:
       runtipi.managed: "true"
     networks:

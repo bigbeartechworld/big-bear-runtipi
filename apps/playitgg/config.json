@@ -12,10 +12,10 @@
   "short_desc": "playit.gg is a global proxy that allows anyone to host a server without port forwarding. We use tunneling. Only the server needs to run the program, not every player!",
   "author": "Dysta",
   "source": "",
-  "website": "/",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508325000,
-  "updated_at": 1761508325000,
+  "website": "https://hub.docker.com/r/dysta/playitgg",
+  "supported_architectures": ["amd64"],
+  "created_at": 1762133494000,
+  "updated_at": 1762133494000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

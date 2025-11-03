@@ -12,10 +12,10 @@
   "short_desc": "Project Management",
   "author": "eloufirhatim",
   "source": "",
-  "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508331000,
-  "updated_at": 1761508331000,
+  "website": "https://hub.docker.com/r/eloufirhatim/helper",
+  "supported_architectures": ["amd64","arm64"],
+  "created_at": 1762133504000,
+  "updated_at": 1762133504000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

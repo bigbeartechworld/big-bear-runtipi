@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-readeck",
+      "name": "readeck",
       "image": "codeberg.org/readeck/readeck:0.20.4",
-      "internalPort": 8000,
+      "internalPort": 8012,
       "isMain": true
     }
   ]

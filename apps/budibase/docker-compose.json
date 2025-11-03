@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-budibase",
-      "image": "budibase/budibase:3.22.2",
-      "internalPort": 80,
+      "name": "budibase",
+      "image": "budibase/budibase:3.23.0",
+      "internalPort": 8085,
       "isMain": true
     }
   ]

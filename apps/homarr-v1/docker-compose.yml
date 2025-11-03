@@ -8,7 +8,7 @@ services:
     # Name of the container
     container_name: homarr-v1
     # Image to be used for the container
-    image: ghcr.io/homarr-labs/homarr:v1.43.0
+    image: ghcr.io/homarr-labs/homarr:v1.43.1
     # Container restart policy
     restart: unless-stopped
     # Volumes to be mounted to the container
@@ -16,7 +16,7 @@ services:
       # Mounting docker.sock to allow docker management via Homarr
       - /var/run/docker.sock:/var/run/docker.sock
       # Mounting the local homarr directory to /appdata inside the container
-      - ./data/appdata:/appdata
+      - ${APP_DATA_DIR}/appdata:/appdata
     # Environment variables
     environment:
       # Secret encryption key for securing sensitive data (64 character hex string)
@@ -25,7 +25,7 @@ services:
     # Ports mapping between host and container
     ports:
       # Mapping port 7575 of the host to port 7575 of the container
-      - "7575:7575"
+      - "${APP_PORT}:7575"
     labels:
       runtipi.managed: "true"
     networks:

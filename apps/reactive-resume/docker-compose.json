@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "app",
+      "name": "reactive-resume",
       "image": "amruthpillai/reactive-resume:v4.5.2",
-      "internalPort": 3000,
+      "internalPort": 3020,
       "isMain": true
     }
   ]

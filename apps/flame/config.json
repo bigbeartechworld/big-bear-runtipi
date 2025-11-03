@@ -10,12 +10,12 @@
   "version": "multiarch2.3.1",
   "categories": ["bigbearcasaos"],
   "short_desc": "Flame is a self-hosted startpage for your server. Manage your apps and bookmarks effortlessly with built-in editors.",
-  "author": "",
+  "author": "pawelmalak",
   "source": "",
-  "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508243000,
-  "updated_at": 1761508243000,
+  "website": "https://hub.docker.com/r/pawelmalak/flame",
+  "supported_architectures": ["amd64","arm64"],
+  "created_at": 1762133369000,
+  "updated_at": 1762133369000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

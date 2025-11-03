@@ -12,10 +12,10 @@
   "short_desc": "Virtual whiteboard for sketching hand-drawn like diagrams",
   "author": "excalidraw",
   "source": "",
-  "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508238000,
-  "updated_at": 1761508238000,
+  "website": "https://hub.docker.com/r/excalidraw/excalidraw",
+  "supported_architectures": ["amd64"],
+  "created_at": 1762133359000,
+  "updated_at": 1762133359000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
