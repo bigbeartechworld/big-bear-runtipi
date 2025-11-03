@@ -13,12 +13,12 @@ services:
     restart: unless-stopped
     # Port mappings for the service
     ports:
-      - "8000:8000"
+      - "${APP_PORT}:8000"
     # Network mode for the service
     network_mode: bridge
     # Volumes for the service HOST -> CONTAINER
     volumes:
-      - ./data/data:/2fauth
+      - ${APP_DATA_DIR}/data:/2fauth
     # Environment variables for the service
     environment:
       - APP_URL=http://[CHANGE_TO_LAN_IP]:8000

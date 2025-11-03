@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "app",
+      "name": "rocket-chat",
       "image": "rocket.chat:6.13.1",
-      "internalPort": 3000,
+      "internalPort": 3021,
       "isMain": true
     }
   ]

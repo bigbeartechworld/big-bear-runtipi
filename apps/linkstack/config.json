@@ -12,10 +12,10 @@
   "short_desc": "Your all-in-one link sharing solution",
   "author": "LinkStackOrg",
   "source": "",
-  "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508279000,
-  "updated_at": 1761508279000,
+  "website": "https://hub.docker.com/r/linkstackorg/linkstack",
+  "supported_architectures": ["amd64","arm64"],
+  "created_at": 1762133417000,
+  "updated_at": 1762133417000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

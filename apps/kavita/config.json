@@ -12,10 +12,10 @@
   "short_desc": "Kavita",
   "author": "jvmilazz0",
   "source": "",
-  "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508273000,
-  "updated_at": 1761508273000,
+  "website": "https://hub.docker.com/r/jvmilazz0/kavita",
+  "supported_architectures": ["amd64","arm64"],
+  "created_at": 1762133407000,
+  "updated_at": 1762133407000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

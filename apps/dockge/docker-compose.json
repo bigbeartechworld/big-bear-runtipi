@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "app",
+      "name": "dockge",
       "image": "louislam/dockge:1.5.0",
-      "internalPort": 5001,
+      "internalPort": 5003,
       "isMain": true
     }
   ]

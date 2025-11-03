@@ -2,8 +2,8 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-tududi",
-      "image": "chrisvel/tududi:0.84",
+      "name": "tududi",
+      "image": "chrisvel/tududi:0.85",
       "internalPort": 9292,
       "isMain": true
     }

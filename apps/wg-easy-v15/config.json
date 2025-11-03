@@ -12,10 +12,10 @@
   "short_desc": "WireGuard VPN server v15 (New Version)",
   "author": "WeeJeWel",
   "source": "",
-  "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508366000,
-  "updated_at": 1761508366000,
+  "website": "https://hub.docker.com/r/wg-easy/wg-easy",
+  "supported_architectures": ["amd64","arm64"],
+  "created_at": 1762133563000,
+  "updated_at": 1762133563000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

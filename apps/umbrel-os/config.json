@@ -12,10 +12,10 @@
   "short_desc": "Umbrel OS",
   "author": "dockurr",
   "source": "",
-  "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508356000,
-  "updated_at": 1761508356000,
+  "website": "https://hub.docker.com/r/dockurr/umbrel",
+  "supported_architectures": ["amd64","arm64"],
+  "created_at": 1762133547000,
+  "updated_at": 1762133547000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

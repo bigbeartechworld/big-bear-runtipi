@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-ejbca-ce",
+      "name": "ejbca-ce",
       "image": "keyfactor/ejbca-ce:9.1.1",
-      "internalPort": 8080,
+      "internalPort": 8444,
       "isMain": true
     }
   ]

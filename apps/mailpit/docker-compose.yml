@@ -7,11 +7,11 @@ services:
     container_name: mailpit # Container name for the app service
     restart: unless-stopped # Restart policy for the container
     volumes: # Volumes to mount for the app service
-      - ./data/data:/data
+      - ${APP_DATA_DIR}/data:/data
     environment: # Environment variables for the app service
       - TZ=UTC
     ports: # Ports to expose for the app service
-      - "8025:8025"
+      - "${APP_PORT}:8025"
       - "1025:1025"
     labels:
       runtipi.managed: "true"

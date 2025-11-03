@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-audiobookshelf",
+      "name": "audiobookshelf",
       "image": "ghcr.io/advplyr/audiobookshelf:2.30.0",
-      "internalPort": 80,
+      "internalPort": 8082,
       "isMain": true
     }
   ]

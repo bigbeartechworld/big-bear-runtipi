@@ -10,12 +10,12 @@
   "version": "4.3.0.8-full",
   "categories": ["bigbearcasaos"],
   "short_desc": "Glances",
-  "author": "",
+  "author": "nicolargo",
   "source": "",
-  "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508250000,
-  "updated_at": 1761508250000,
+  "website": "https://hub.docker.com/r/nicolargo/glances",
+  "supported_architectures": ["amd64","arm64"],
+  "created_at": 1762133378000,
+  "updated_at": 1762133378000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

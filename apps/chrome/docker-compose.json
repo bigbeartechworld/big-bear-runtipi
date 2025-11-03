@@ -4,7 +4,7 @@
     {
       "name": "chrome",
       "image": "kasmweb/chrome:1.15.0-rolling",
-      "internalPort": 6901,
+      "internalPort": 6902,
       "isMain": true
     }
   ]

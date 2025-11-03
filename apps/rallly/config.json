@@ -12,10 +12,10 @@
   "short_desc": "Rallly",
   "author": "lukevella",
   "source": "",
-  "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508334000,
-  "updated_at": 1761508334000,
+  "website": "https://hub.docker.com/r/lukevella/rallly",
+  "supported_architectures": ["amd64","arm64"],
+  "created_at": 1762133510000,
+  "updated_at": 1762133510000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

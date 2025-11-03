@@ -16,7 +16,7 @@ services:
     #  - /dev/ttyACM0:/dev/ttyACM0
     #  - /dev/video0:/dev/video0
     volumes:
-      - ./data/octoprint:/octoprint
+      - ${APP_DATA_DIR}/octoprint:/octoprint
     # uncomment the lines below to ensure camera streaming is enabled when
     # you add a video device
     #environment:
@@ -25,7 +25,7 @@ services:
     # Ports mapping between host and container
     ports:
       # Mapping port 7575 of the host to port 7575 of the container
-      - "1080:80"
+      - "${APP_PORT}:80"
     labels:
       runtipi.managed: "true"
     networks:

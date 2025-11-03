@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-composetoolbox",
+      "name": "composetoolbox",
       "image": "ghcr.io/bluegoosemedia/composetoolbox:latest",
-      "internalPort": 3000,
+      "internalPort": 3003,
       "isMain": true
     }
   ]

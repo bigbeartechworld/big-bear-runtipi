@@ -8,7 +8,7 @@ services:
     # Name of the container
     container_name: tududi
     # Image to be used for the container
-    image: chrisvel/tududi:0.84
+    image: chrisvel/tududi:0.85
     # Container restart policy
     restart: unless-stopped
     # Environment variables
@@ -20,11 +20,11 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Mounting the tududi database directory
-      - ./data/tududi_db:/usr/src/app/tududi_db
+      - ${APP_DATA_DIR}/tududi/db:/usr/src/app/tududi_db
     # Ports mapping between host and container
     ports:
       # Mapping port 9292 of the host to port 9292 of the container
-      - "9292:9292"
+      - "${APP_PORT}:9292"
     labels:
       runtipi.managed: "true"
     networks:

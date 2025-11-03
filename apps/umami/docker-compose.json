@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "app",
+      "name": "umami",
       "image": "ghcr.io/umami-software/umami:postgresql-latest",
-      "internalPort": 3000,
+      "internalPort": 3023,
       "isMain": true
     }
   ]

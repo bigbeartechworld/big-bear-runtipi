@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-farmos",
+      "name": "farmos",
       "image": "farmos/farmos:3.4.5",
-      "internalPort": 80,
+      "internalPort": 8093,
       "isMain": true
     }
   ]
