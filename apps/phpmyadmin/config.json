@@ -8,14 +8,19 @@
   "description": "phpMyAdmin - A web interface for MySQL and MariaDB.",
   "tipi_version": 1,
   "version": "5.2.3",
-  "categories": ["bigbearcasaos"],
+  "categories": [
+    "bigbearcasaos"
+  ],
   "short_desc": "phpMyAdmin",
   "author": "phpMyAdmin",
   "source": "",
-  "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508317000,
-  "updated_at": 1761508317000,
+  "website": "https://hub.docker.com/r/phpmyadmin/phpmyadmin",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1762287252000,
+  "updated_at": 1762287252000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

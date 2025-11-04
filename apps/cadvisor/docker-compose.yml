@@ -34,7 +34,7 @@ services:
     # Port mappings between host and container
     ports:
       # Map port 8085 of the host to port 8080 of the container
-      - 8085:8080
+      - ${APP_PORT}:8080
     labels:
       runtipi.managed: "true"
     networks:

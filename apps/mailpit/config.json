@@ -7,15 +7,20 @@
   "id": "mailpit",
   "description": "Mailpit is a multi-platform email testing tool & API for developers.",
   "tipi_version": 1,
-  "version": "1.27",
-  "categories": ["bigbearcasaos"],
+  "version": "v1.27",
+  "categories": [
+    "bigbearcasaos"
+  ],
   "short_desc": "Mailpit",
   "author": "axllent",
   "source": "",
-  "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508283000,
-  "updated_at": 1761508283000,
+  "website": "https://hub.docker.com/r/axllent/mailpit",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1762287202000,
+  "updated_at": 1762287202000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

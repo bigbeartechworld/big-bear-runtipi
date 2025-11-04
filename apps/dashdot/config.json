@@ -8,14 +8,19 @@
   "description": "About A simple, modern server dashboard, primarily used by smaller private servers.",
   "tipi_version": 1,
   "version": "6.2.0",
-  "categories": ["bigbearcasaos"],
+  "categories": [
+    "bigbearcasaos"
+  ],
   "short_desc": "dash. - a modern server dashboard",
   "author": "mauricenino",
   "source": "",
-  "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508229000,
-  "updated_at": 1761508229000,
+  "website": "https://hub.docker.com/r/mauricenino/dashdot",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1762287121000,
+  "updated_at": 1762287121000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

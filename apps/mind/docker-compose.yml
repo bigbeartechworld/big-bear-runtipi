@@ -8,9 +8,9 @@ services:
     environment:
       - TZ=UTC
     volumes:
-      - "./data/db:/app/db"
+      - "${APP_DATA_DIR}/db:/app/db"
     ports:
-      - "8080:8080"
+      - "${APP_PORT}:8080"
     labels:
       runtipi.managed: "true"
     networks:

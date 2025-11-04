@@ -8,14 +8,19 @@
   "description": "Online retro games emulator.The RetroArch Web Player is RetroArch compiled through Emscripten.",
   "tipi_version": 1,
   "version": "latest",
-  "categories": ["bigbearcasaos"],
+  "categories": [
+    "bigbearcasaos"
+  ],
   "short_desc": "RetroArch Web Player",
   "author": "inglebard",
   "source": "",
-  "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508336000,
-  "updated_at": 1761508336000,
+  "website": "https://hub.docker.com/r/inglebard/retroarch-web",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1762287277000,
+  "updated_at": 1762287277000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

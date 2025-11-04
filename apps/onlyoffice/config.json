@@ -8,14 +8,19 @@
   "description": "Feature-rich web-based office suite with a vast range of collaborative capabilities",
   "tipi_version": 1,
   "version": "9.1.0",
-  "categories": ["bigbearcasaos"],
+  "categories": [
+    "bigbearcasaos"
+  ],
   "short_desc": "OnlyOffice",
-  "author": "",
+  "author": "onlyoffice",
   "source": "",
-  "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508307000,
-  "updated_at": 1761508307000,
+  "website": "https://hub.docker.com/r/onlyoffice/documentserver",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1762287237000,
+  "updated_at": 1762287237000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

@@ -8,14 +8,19 @@
   "description": "ownCloud offers file sharing and collaboration trusted by 200+ million users worldwide regardless of device or location.",
   "tipi_version": 1,
   "version": "10.16.0",
-  "categories": ["bigbearcasaos"],
+  "categories": [
+    "bigbearcasaos"
+  ],
   "short_desc": "ownCloud",
   "author": "owncloud",
   "source": "",
-  "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508310000,
-  "updated_at": 1761508310000,
+  "website": "https://hub.docker.com/r/owncloud/server",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1762287242000,
+  "updated_at": 1762287242000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

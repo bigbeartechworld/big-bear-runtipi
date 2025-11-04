@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "app",
+      "name": "2fauth",
       "image": "2fauth/2fauth:5.6.0",
       "internalPort": 8000,
       "isMain": true

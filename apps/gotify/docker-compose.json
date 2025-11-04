@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "app",
+      "name": "gotify",
       "image": "gotify/server:2.7.3",
-      "internalPort": 80,
+      "internalPort": 8098,
       "isMain": true
     }
   ]

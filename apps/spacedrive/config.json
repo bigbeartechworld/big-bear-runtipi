@@ -8,14 +8,19 @@
   "description": "Spacedrive is an open source cross-platform file explorer, powered by a virtual distributed filesystem written in Rust.",
   "tipi_version": 1,
   "version": "0.4.2",
-  "categories": ["bigbearcasaos"],
+  "categories": [
+    "bigbearcasaos"
+  ],
   "short_desc": "Cross-platform file explorer",
   "author": "spacedriveapp",
   "source": "",
-  "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508344000,
-  "updated_at": 1761508344000,
+  "website": "https://hub.docker.com/r/spacedriveapp/spacedrive/server",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1762287288000,
+  "updated_at": 1762287288000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

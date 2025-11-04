@@ -8,14 +8,18 @@
   "description": "Rocket.Chat is an open-source fully customizable communications platform [...]",
   "tipi_version": 1,
   "version": "6.13.1",
-  "categories": ["bigbearcasaos"],
+  "categories": [
+    "bigbearcasaos"
+  ],
   "short_desc": "The communications platform that puts data protection first.",
   "author": "rocket.chat",
   "source": "",
-  "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508337000,
-  "updated_at": 1761508337000,
+  "website": "https://hub.docker.com/r/rocket.chat",
+  "supported_architectures": [
+    "amd64"
+  ],
+  "created_at": 1762287278000,
+  "updated_at": 1762287278000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

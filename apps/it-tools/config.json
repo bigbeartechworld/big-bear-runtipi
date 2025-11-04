@@ -8,14 +8,19 @@
   "description": "Collection of handy online tools for developers, with great UX as a web app.",
   "tipi_version": 1,
   "version": "2023.11.2-7d94e11",
-  "categories": ["bigbearcasaos"],
+  "categories": [
+    "bigbearcasaos"
+  ],
   "short_desc": "IT Tools",
   "author": "corentinth",
   "source": "",
-  "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508267000,
-  "updated_at": 1761508267000,
+  "website": "https://hub.docker.com/r/corentinth/it-tools",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1762287178000,
+  "updated_at": 1762287178000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

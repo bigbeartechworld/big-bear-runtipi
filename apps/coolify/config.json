@@ -8,14 +8,19 @@
   "description": "Coolify is a self-hosted web application that allows you to manage your servers, applications, and services. It provides a simple and intuitive interface for managing your infrastructure, making it easy to deploy and manage your applications. With Coolify, you can easily manage your servers, applications, and services, providing a streamlined experience for managing your infrastructure.",
   "tipi_version": 1,
   "version": "4.0.0-beta.434",
-  "categories": ["bigbearcasaos"],
+  "categories": [
+    "bigbearcasaos"
+  ],
   "short_desc": "Coolify",
   "author": "coollabsio",
   "source": "",
-  "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508227000,
-  "updated_at": 1761508227000,
+  "website": "https://hub.docker.com/r/coollabsio/coolify",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1762287115000,
+  "updated_at": 1762287115000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

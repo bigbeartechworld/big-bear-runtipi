@@ -8,14 +8,19 @@
   "description": "Create your own online database without technical experience. Our user-friendly no-code tool gives you the powers of a developer without leaving your browser.",
   "tipi_version": 1,
   "version": "1.35.3",
-  "categories": ["bigbearcasaos"],
+  "categories": [
+    "bigbearcasaos"
+  ],
   "short_desc": "Baserow",
-  "author": "",
+  "author": "baserow",
   "source": "",
-  "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508209000,
-  "updated_at": 1761508209000,
+  "website": "https://hub.docker.com/r/baserow/baserow",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1762287089000,
+  "updated_at": 1762287089000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

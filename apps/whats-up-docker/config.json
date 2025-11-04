@@ -8,14 +8,19 @@
   "description": "Gets you notified when new versions of your Docker containers are available and lets you react the way you want.",
   "tipi_version": 1,
   "version": "6.6.1",
-  "categories": ["bigbearcasaos"],
+  "categories": [
+    "bigbearcasaos"
+  ],
   "short_desc": "What's Up Docker",
   "author": "fmartinou",
   "source": "",
-  "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508367000,
-  "updated_at": 1761508367000,
+  "website": "https://hub.docker.com/r/fmartinou/whats-up-docker",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1762287318000,
+  "updated_at": 1762287318000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

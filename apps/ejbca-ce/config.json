@@ -8,14 +8,18 @@
   "description": "The open-source public key infrastructure (PKI) and certificate authority (CA) software EJBCA is one of the longest running CA software projects. EJBCA covers all your needs - from certificate enrollment, via certificate management, to certificate validation.",
   "tipi_version": 1,
   "version": "9.1.1",
-  "categories": ["bigbearcasaos"],
+  "categories": [
+    "bigbearcasaos"
+  ],
   "short_desc": "The open-source public key infrastructure (PKI) and certificate authority (CA)",
   "author": "Keyfactor",
   "source": "",
-  "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508236000,
-  "updated_at": 1761508236000,
+  "website": "https://hub.docker.com/r/keyfactor/ejbca-ce",
+  "supported_architectures": [
+    "amd64"
+  ],
+  "created_at": 1762287136000,
+  "updated_at": 1762287136000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

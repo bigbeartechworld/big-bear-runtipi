@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "app",
+      "name": "whats-up-docker",
       "image": "fmartinou/whats-up-docker:6.6.1",
-      "internalPort": 3000,
+      "internalPort": 3025,
       "isMain": true
     }
   ]

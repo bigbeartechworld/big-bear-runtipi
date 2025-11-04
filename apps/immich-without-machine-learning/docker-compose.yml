@@ -31,12 +31,12 @@ services:
       - tipi_main_network
   immich-without-machine-learning:
     container_name: immich-without-machine-learning # Name of the running container
-    image: ghcr.io/immich-app/immich-server:v2.1.0 # Image to be used
+    image: ghcr.io/immich-app/immich-server:v2.2.2 # Image to be used
     # extends:
     #   file: hwaccel.transcoding.yml
     #   service: cpu # set to one of [nvenc, quicksync, rkmpp, vaapi, vaapi-wsl] for accelerated transcoding
     ports: # Mapping ports from the host OS to the container
-      - 2283:2283
+      - ${APP_PORT}:2283
     volumes: # Mounting directories for persistent data storage
       - /DATA/AppData/big-bear-immich/upload:/usr/src/app/upload
     environment: # Setting environment variables

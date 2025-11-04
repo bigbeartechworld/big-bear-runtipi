@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-uisp",
+      "name": "uisp",
       "image": "nico640/docker-unms:2.4.155.1",
-      "internalPort": 80,
+      "internalPort": 10446,
       "isMain": true
     }
   ]

@@ -2,8 +2,8 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-authentik",
-      "image": "ghcr.io/goauthentik/server:2025.8.4",
+      "name": "authentik",
+      "image": "ghcr.io/goauthentik/server:2025.10.1",
       "internalPort": 9443,
       "isMain": true
     }

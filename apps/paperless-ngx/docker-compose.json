@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-paperless-ngx",
-      "image": "ghcr.io/paperless-ngx/paperless-ngx:2.19.2",
-      "internalPort": 8000,
+      "name": "paperless-ngx",
+      "image": "ghcr.io/paperless-ngx/paperless-ngx:2.19.4",
+      "internalPort": 8008,
       "isMain": true
     }
   ]

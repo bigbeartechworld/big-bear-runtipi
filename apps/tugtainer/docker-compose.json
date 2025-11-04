@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-tugtainer",
-      "image": "quenary/tugtainer:v1.2.3",
-      "internalPort": 80,
+      "name": "tugtainer",
+      "image": "quenary/tugtainer:v1.5.1",
+      "internalPort": 9412,
       "isMain": true
     }
   ]

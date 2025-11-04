@@ -8,14 +8,19 @@
   "description": "Self-hosted Git Server with Kanban and CI/CD",
   "tipi_version": 1,
   "version": "13.0.9",
-  "categories": ["bigbearcasaos"],
+  "categories": [
+    "bigbearcasaos"
+  ],
   "short_desc": "Self-hosted Git Server with Kanban and CI/CD",
   "author": "theonedev",
   "source": "",
-  "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508306000,
-  "updated_at": 1761508306000,
+  "website": "https://hub.docker.com/r/1dev/server",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1762287236000,
+  "updated_at": 1762287236000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

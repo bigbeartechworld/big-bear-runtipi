@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-ollama-nvidia",
-      "image": "ollama/ollama:0.12.6",
-      "internalPort": 11434,
+      "name": "ollama-nvidia",
+      "image": "ollama/ollama:0.12.9",
+      "internalPort": 11436,
       "isMain": true
     }
   ]

@@ -8,14 +8,18 @@
   "description": "This Docker image is designed to automatically restart specified Docker containers and send notifications to a Discord channel upon each restart. It's particularly useful for maintaining long-running services, ensuring they're periodically refreshed and stakeholders are informed of these actions.",
   "tipi_version": 1,
   "version": "restart-notifier-latest",
-  "categories": ["bigbearcasaos"],
+  "categories": [
+    "bigbearcasaos"
+  ],
   "short_desc": "Automatically restart specified Docker containers and send notifications to a Discord channel",
   "author": "activecs",
   "source": "",
-  "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508233000,
-  "updated_at": 1761508233000,
+  "website": "https://hub.docker.com/r/deduard/tools",
+  "supported_architectures": [
+    "amd64"
+  ],
+  "created_at": 1762287128000,
+  "updated_at": 1762287128000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

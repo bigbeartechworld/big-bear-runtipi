@@ -8,7 +8,7 @@ services:
     # Name of the container
     container_name: dockpeek
     # Image to be used for the container
-    image: ghcr.io/dockpeek/dockpeek:v1.7.0
+    image: ghcr.io/dockpeek/dockpeek:v1.7.1
     # Environment variables
     environment:
       # Secret key for the application (change this)
@@ -26,7 +26,7 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
     # Ports mapping between host and container
     ports:
-      - 3420:8000
+      - ${APP_PORT}:8000
     labels:
       runtipi.managed: "true"
     networks:

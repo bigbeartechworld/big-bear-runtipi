@@ -8,14 +8,19 @@
   "description": "A self-hosted, real-time port monitoring and discovery tool that automatically discovers and maps network services across systems.",
   "tipi_version": 1,
   "version": "1.1",
-  "categories": ["bigbearcasaos"],
+  "categories": [
+    "bigbearcasaos"
+  ],
   "short_desc": "Real-time Port Monitoring Tool",
   "author": "Mostafa-Wahied",
   "source": "",
-  "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508329000,
-  "updated_at": 1761508329000,
+  "website": "https://hub.docker.com/r/mostafawahied/portracker",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1762287267000,
+  "updated_at": 1762287267000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
