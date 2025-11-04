@@ -7,15 +7,20 @@
   "id": "pihole",
   "description": "The Pi-hole® is a DNS sinkhole that protects your devices from unwanted content without installing any client-side software.",
   "tipi_version": 1,
-  "version": "2025.08.0",
-  "categories": ["bigbearcasaos"],
+  "version": "2025.10.3",
+  "categories": [
+    "bigbearcasaos"
+  ],
   "short_desc": "A black hole for Internet advertisements",
   "author": "pi-hole.net",
   "source": "",
-  "website": "/admin",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508318000,
-  "updated_at": 1761508318000,
+  "website": "https://hub.docker.com/r/pihole/pihole",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1762287253000,
+  "updated_at": 1762287253000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

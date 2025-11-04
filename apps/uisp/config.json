@@ -8,14 +8,19 @@
   "description": "All-in-one docker image for Ubiquiti UISP (formerly UNMS). Supports x86_64 and ARM (Raspberry Pi).",
   "tipi_version": 1,
   "version": "2.4.155.1",
-  "categories": ["bigbearcasaos"],
+  "categories": [
+    "bigbearcasaos"
+  ],
   "short_desc": "UISP",
   "author": "nico640",
   "source": "",
-  "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508355000,
-  "updated_at": 1761508355000,
+  "website": "https://hub.docker.com/r/nico640/docker-unms",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1762287302000,
+  "updated_at": 1762287302000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

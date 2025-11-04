@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-nextcloud-smb",
-      "image": "bigbeartechworld/big-bear-nextcloud-with-smbclient:0.0.11",
-      "internalPort": 80,
+      "name": "nextcloud-with-smbclient",
+      "image": "bigbeartechworld/big-bear-nextcloud-with-smbclient:0.0.12",
+      "internalPort": 7581,
       "isMain": true
     }
   ]

@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "app",
+      "name": "appsmith",
       "image": "appsmith/appsmith-ce:v1.73.1",
-      "internalPort": 80,
+      "internalPort": 1080,
       "isMain": true
     }
   ]

@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-wallabag",
+      "name": "wallabag",
       "image": "wallabag/wallabag:2.6.14",
-      "internalPort": 80,
+      "internalPort": 8141,
       "isMain": true
     }
   ]

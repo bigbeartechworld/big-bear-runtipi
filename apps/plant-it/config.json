@@ -8,14 +8,19 @@
   "description": "Plant-it is a self-hosted gardening companion app. Useful for keeping track of plant care, receiving notifications about when to water plants, uploading plant images, and more.",
   "tipi_version": 1,
   "version": "0.10.0",
-  "categories": ["bigbearcasaos"],
+  "categories": [
+    "bigbearcasaos"
+  ],
   "short_desc": "Self-hosted, open source gardening companion app",
   "author": "msdeluise",
   "source": "",
-  "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508323000,
-  "updated_at": 1761508323000,
+  "website": "https://hub.docker.com/r/msdeluise/plant-it-server",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1762287261000,
+  "updated_at": 1762287261000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

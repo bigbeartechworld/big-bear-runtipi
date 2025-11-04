@@ -8,14 +8,19 @@
   "description": "Jellystat is a free and open source Statistics App for Jellyfin! (This project is still in development - expect some weirdness)",
   "tipi_version": 1,
   "version": "1.1.6",
-  "categories": ["bigbearcasaos"],
+  "categories": [
+    "bigbearcasaos"
+  ],
   "short_desc": "Jellystat",
   "author": "cyfershepard",
   "source": "",
-  "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508268000,
-  "updated_at": 1761508268000,
+  "website": "https://hub.docker.com/r/cyfershepard/jellystat",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1762287180000,
+  "updated_at": 1762287180000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

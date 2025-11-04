@@ -8,7 +8,7 @@ services:
     image: postgres:15-alpine
     container_name: big-bear-tandoor-db
     volumes:
-      - ./data/postgresql:/var/lib/postgresql/data
+      - ${APP_DATA_DIR}/postgresql:/var/lib/postgresql/data
     environment:
       - POSTGRES_PORT=5432
       - POSTGRES_USER=tandoor
@@ -16,7 +16,6 @@ services:
       - POSTGRES_DB=tandoordb
     restart: unless-stopped
     networks:
-      - big_bear_tandoor_network
       - tipi_main_network
     healthcheck:
       test: ["CMD-SHELL", "pg_isready", "-d", "tandoor"]
@@ -35,12 +34,12 @@ services:
     restart: unless-stopped
     # Volumes to be mounted to the container
     volumes:
-      - ./data/staticfiles:/opt/recipes/staticfiles
-      - ./data/mediafiles:/opt/recipes/mediafiles
+      - ${APP_DATA_DIR}/staticfiles:/opt/recipes/staticfiles
+      - ${APP_DATA_DIR}/mediafiles:/opt/recipes/mediafiles
     # Ports mapping between host and container
     ports:
       # Mapping port 8080 of the host to port 8080 of the container
-      - "8080:8080"
+      - "${APP_PORT}:8080"
     # Environment variables to be passed to the container
     environment:
       - SECRET_KEY=6496f725-e4a4-4fa5-9f7b-db0114bc1568
@@ -52,7 +51,6 @@ services:
       - POSTGRES_DB=tandoordb
     # Network to be used by the container
     networks:
-      - big_bear_tandoor_network
       - tipi_main_network
     # Healthcheck configuration for the container
     depends_on:
@@ -60,9 +58,6 @@ services:
         condition: service_healthy
     labels:
       runtipi.managed: "true"
-# Network definitions for the big-bear-tandoor application
 networks:
-  big_bear_tandoor_network:
-    driver: bridge
   tipi_main_network:
     external: true

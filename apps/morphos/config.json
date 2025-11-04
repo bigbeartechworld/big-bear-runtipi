@@ -8,14 +8,19 @@
   "description": "Today we are forced to rely on third party services to convert files to other formats. This is a serious threat to our privacy, if we use such services to convert files with highly sensitive personal data. It can be used against us, sooner or later. Morphos server aims to solve the problem mentioned above, by providing a self-hosted server to convert files privately. The project provides an user-friendly web UI. For now, Morphos only supports images. Documents will be added soon.",
   "tipi_version": 1,
   "version": "0.6.0",
-  "categories": ["bigbearcasaos"],
+  "categories": [
+    "bigbearcasaos"
+  ],
   "short_desc": "Self-hosted file converter server",
   "author": "danvergara",
   "source": "",
-  "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508288000,
-  "updated_at": 1761508288000,
+  "website": "https://hub.docker.com/r/danvergara/morphos-server",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1762287211000,
+  "updated_at": 1762287211000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

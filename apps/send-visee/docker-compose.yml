@@ -14,7 +14,7 @@ services:
     restart: unless-stopped
     # Volumes to be mounted to the container
     volumes:
-      - ./data/redis:/data
+      - ${APP_DATA_DIR}/redis:/data
     # Health check
     healthcheck:
       test: ["CMD", "redis-cli", "ping"]
@@ -23,7 +23,6 @@ services:
       retries: 30
     # Networks to be used for the container
     networks:
-      - big_bear_send_visee_network
       - tipi_main_network
     labels:
       runtipi.managed: "true"
@@ -48,20 +47,15 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Storage volume
-      - ./data/uploads:/uploads
+      - ${APP_DATA_DIR}/uploads:/uploads
     # Ports mapping between host and container
     ports:
       # Mapping port 1443 of the host to port 1443 of the container
-      - "1443:1443"
+      - "${APP_PORT}:1443"
     networks:
-      - big_bear_send_visee_network
       - tipi_main_network
     labels:
       runtipi.managed: "true"
-# Networks to be used for the containers
 networks:
-  big_bear_send_visee_network:
-    # Driver to be used for the network
-    driver: bridge
   tipi_main_network:
     external: true

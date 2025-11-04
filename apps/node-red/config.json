@@ -8,14 +8,19 @@
   "description": "Node-RED is a programming tool for wiring together hardware devices, APIs and online services in new and interesting ways.  It provides a browser-based editor that makes it easy to wire together flows using the wide range of nodes in the palette that can be deployed to its runtime in a single-click.",
   "tipi_version": 1,
   "version": "4.1.1",
-  "categories": ["bigbearcasaos"],
+  "categories": [
+    "bigbearcasaos"
+  ],
   "short_desc": "Low-code programming for event-driven applications",
-  "author": "",
+  "author": "nodered",
   "source": "",
-  "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508298000,
-  "updated_at": 1761508298000,
+  "website": "https://hub.docker.com/r/nodered/node-red",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1762287225000,
+  "updated_at": 1762287225000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

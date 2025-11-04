@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-sftpgo",
+      "name": "sftpgo",
       "image": "drakkan/sftpgo:v2.7",
-      "internalPort": 8080,
+      "internalPort": 8128,
       "isMain": true
     }
   ]

@@ -8,14 +8,19 @@
   "description": "Wallabag is a self-hosted application for saving web pages. Unlike other services, Wallabag is free and open source.",
   "tipi_version": 1,
   "version": "2.6.14",
-  "categories": ["bigbearcasaos"],
+  "categories": [
+    "bigbearcasaos"
+  ],
   "short_desc": "Save and classify articles. Read them later. Freely.",
   "author": "wallabag",
   "source": "",
-  "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508363000,
-  "updated_at": 1761508363000,
+  "website": "https://hub.docker.com/r/wallabag/wallabag",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1762287313000,
+  "updated_at": 1762287313000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

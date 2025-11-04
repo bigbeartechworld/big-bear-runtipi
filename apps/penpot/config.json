@@ -8,14 +8,19 @@
   "description": "Designers and developers can finally work in unison to build beautifully designed software experiences that truly scale up.",
   "tipi_version": 1,
   "version": "2.10.1",
-  "categories": ["bigbearcasaos"],
+  "categories": [
+    "bigbearcasaos"
+  ],
   "short_desc": "Bring Design Freedom to your Product Team",
   "author": "penpotapp",
   "source": "",
-  "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508315000,
-  "updated_at": 1761508315000,
+  "website": "https://hub.docker.com/r/penpotapp/frontend",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1762287248000,
+  "updated_at": 1762287248000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

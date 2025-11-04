@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-ncdu",
+      "name": "ncdu",
       "image": "bigbeartechworld/big-bear-ncdu:0.0.4",
-      "internalPort": 7681,
+      "internalPort": 7683,
       "isMain": true
     }
   ]

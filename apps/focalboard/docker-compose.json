@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "app",
+      "name": "focalboard",
       "image": "mattermost/focalboard:7.11.4",
-      "internalPort": 8000,
+      "internalPort": 8003,
       "isMain": true
     }
   ]

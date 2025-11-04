@@ -8,14 +8,18 @@
   "description": "a simple server for sending and receiving messages",
   "tipi_version": 1,
   "version": "2.7.3",
-  "categories": ["bigbearcasaos"],
+  "categories": [
+    "bigbearcasaos"
+  ],
   "short_desc": "Gotify",
   "author": "gotify",
   "source": "",
-  "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508251000,
-  "updated_at": 1761508251000,
+  "website": "https://hub.docker.com/r/gotify/server",
+  "supported_architectures": [
+    "amd64"
+  ],
+  "created_at": 1762287162000,
+  "updated_at": 1762287162000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

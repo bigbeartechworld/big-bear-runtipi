@@ -10,14 +10,13 @@ services:
     image: mysql:8.0
     restart: unless-stopped
     volumes:
-      - ./data/mysql:/var/lib/mysql # Data directory for MySQL
+      - ${APP_DATA_DIR}/mysql:/var/lib/mysql # Data directory for MySQL
     environment:
       MYSQL_RANDOM_ROOT_PASSWORD: "yes" # Generate a random root password
       MYSQL_DATABASE: "semaphore" # Database name to create
       MYSQL_USER: "semaphore" # Database user
       MYSQL_PASSWORD: "semaphore" # Database password
     networks:
-      - big-bear-semaphore-network
       - tipi_main_network
     labels:
       runtipi.managed: "true"
@@ -25,7 +24,7 @@ services:
     # Name of the container
     container_name: semaphore
     # Image to be used for the container
-    image: semaphoreui/semaphore:v2.16.34
+    image: semaphoreui/semaphore:v2.16.37
     # Container restart policy
     restart: unless-stopped
     # Environment variables for configuration
@@ -43,18 +42,15 @@ services:
       TZ: UTC
     # Volumes to be mounted to the container
     volumes:
-      - ./data/home:/etc/semaphore # Configuration files for Semaphore
-      - ./data/lib:/var/lib/semaphore # Local storage for Semaphore data (not needed if using an external database)
+      - ${APP_DATA_DIR}/home:/etc/semaphore # Configuration files for Semaphore
+      - ${APP_DATA_DIR}/lib:/var/lib/semaphore # Local storage for Semaphore data (not needed if using an external database)
     # Ports mapping between host and container
     ports:
-      - "3000:3000" # Expose port 3000 for web access
+      - "${APP_PORT}:3000" # Expose port 3000 for web access
     networks:
-      - big-bear-semaphore-network
       - tipi_main_network
     labels:
       runtipi.managed: "true"
 networks:
-  big-bear-semaphore-network:
-    driver: bridge # Specifies network driver type
   tipi_main_network:
     external: true

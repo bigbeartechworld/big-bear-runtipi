@@ -8,14 +8,19 @@
   "description": "PhotoPrism® is an AI-Powered Photos App for the Decentralized Web. It makes use of the latest technologies to tag and find pictures automatically without getting in your way. You can run it at home, on a private server, or in the cloud.",
   "tipi_version": 1,
   "version": "240915",
-  "categories": ["bigbearcasaos"],
+  "categories": [
+    "bigbearcasaos"
+  ],
   "short_desc": "AI-Powered Photos App",
   "author": "photoprism.app",
   "source": "",
-  "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508316000,
-  "updated_at": 1761508316000,
+  "website": "https://hub.docker.com/r/photoprism/photoprism",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1762287251000,
+  "updated_at": 1762287251000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

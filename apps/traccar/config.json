@@ -8,14 +8,19 @@
   "description": "Traccar GPS Tracking System in Docker image.",
   "tipi_version": 1,
   "version": "6.10-ubuntu",
-  "categories": ["bigbearcasaos"],
+  "categories": [
+    "bigbearcasaos"
+  ],
   "short_desc": "Traccar",
   "author": "traccar",
   "source": "",
-  "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508352000,
-  "updated_at": 1761508352000,
+  "website": "https://hub.docker.com/r/traccar/traccar",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1762287298000,
+  "updated_at": 1762287298000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

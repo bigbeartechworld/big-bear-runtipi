@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-libretranslate",
+      "name": "libretranslate",
       "image": "libretranslate/libretranslate:v1.7.3",
-      "internalPort": 5000,
+      "internalPort": 5007,
       "isMain": true
     }
   ]

@@ -8,14 +8,19 @@
   "description": "Viseron is a self-hosted, local only NVR and AI Computer Vision software",
   "tipi_version": 1,
   "version": "3.3.1",
-  "categories": ["bigbearcasaos"],
+  "categories": [
+    "bigbearcasaos"
+  ],
   "short_desc": "Viseron",
   "author": "roflcoopter",
   "source": "",
-  "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508362000,
-  "updated_at": 1761508362000,
+  "website": "https://hub.docker.com/r/roflcoopter/viseron",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1762287311000,
+  "updated_at": 1762287311000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

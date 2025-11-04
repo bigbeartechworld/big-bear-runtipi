@@ -7,15 +7,20 @@
   "id": "linkwarden",
   "description": "⚡️⚡️⚡️Self-hosted collaborative bookmark manager to collect, organize, and preserve webpages and articles.",
   "tipi_version": 1,
-  "version": "2.13.1",
-  "categories": ["bigbearcasaos"],
+  "version": "v2.13.1",
+  "categories": [
+    "bigbearcasaos"
+  ],
   "short_desc": "Linkwarden",
   "author": "linkwarden",
   "source": "",
-  "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508280000,
-  "updated_at": 1761508280000,
+  "website": "https://hub.docker.com/r/linkwarden/linkwarden",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1762287198000,
+  "updated_at": 1762287198000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

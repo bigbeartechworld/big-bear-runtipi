@@ -8,14 +8,19 @@
   "description": "AIO Alpine. Self-hosted photo and video storage.",
   "tipi_version": 1,
   "version": "2.0.0-alpine",
-  "categories": ["bigbearcasaos"],
+  "categories": [
+    "bigbearcasaos"
+  ],
   "short_desc": "Immich All In One Alpine",
   "author": "imagegenius",
   "source": "",
-  "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508263000,
-  "updated_at": 1761508263000,
+  "website": "https://hub.docker.com/r/imagegenius/immich",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1762287173000,
+  "updated_at": 1762287173000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

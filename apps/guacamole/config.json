@@ -8,14 +8,18 @@
   "description": "Apache Guacamole is a free and open-source, cross-platform, clientless remote desktop gateway maintained by the Apache Software Foundation.",
   "tipi_version": 1,
   "version": "1.6.0",
-  "categories": ["bigbearcasaos"],
+  "categories": [
+    "bigbearcasaos"
+  ],
   "short_desc": "Guacamole",
-  "author": "",
+  "author": "guacamole",
   "source": "",
-  "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508252000,
-  "updated_at": 1761508252000,
+  "website": "https://hub.docker.com/r/guacamole/guacamole",
+  "supported_architectures": [
+    "amd64"
+  ],
+  "created_at": 1762287163000,
+  "updated_at": 1762287163000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

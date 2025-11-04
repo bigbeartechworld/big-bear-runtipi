@@ -10,7 +10,6 @@ services:
     container_name: big-bear-libredesk-db
     restart: unless-stopped
     networks:
-      - big-bear-libredesk-network
       - tipi_main_network
     ports:
       - "5432:5432"
@@ -25,7 +24,7 @@ services:
       timeout: 5s
       retries: 6
     volumes:
-      - ./data/data/postgres:/var/lib/postgresql/data
+      - ${APP_DATA_DIR}/data/postgres:/var/lib/postgresql/data
     labels:
       runtipi.managed: "true"
   # Redis
@@ -36,10 +35,9 @@ services:
     ports:
       - "6379:6379"
     networks:
-      - big-bear-libredesk-network
       - tipi_main_network
     volumes:
-      - ./data/data/redis:/data
+      - ${APP_DATA_DIR}/data/redis:/data
     labels:
       runtipi.managed: "true"
   libredesk:
@@ -55,13 +53,13 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Mounting the local libredesk/uploads directory to /libredesk/uploads inside the container
-      - ./data/uploads:/libredesk/uploads:rw
+      - ${APP_DATA_DIR}/uploads:/libredesk/uploads:rw
       # Mounting the local libredesk/config.toml directory to /libredesk/config.toml inside the container
-      - ./data/config:/libredesk/config:rw
+      - ${APP_DATA_DIR}/config:/libredesk/config:rw
     # Ports mapping between host and container
     ports:
       # Mapping port 9000 of the host to port 9000 of the container
-      - "9000:9000"
+      - "${APP_PORT}:9000"
     command: [sh, -c, "./libredesk --install --idempotent-install --yes --config /libredesk/config/config.toml && ./libredesk --upgrade --yes --config /libredesk/config/config.toml && ./libredesk --config /libredesk/config/config.toml"]
     # Dependencies
     depends_on:
@@ -69,12 +67,9 @@ services:
       - big-bear-libredesk-redis
     # Networks
     networks:
-      - big-bear-libredesk-network
       - tipi_main_network
     labels:
       runtipi.managed: "true"
 networks:
-  big-bear-libredesk-network:
-    driver: bridge
   tipi_main_network:
     external: true

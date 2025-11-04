@@ -8,14 +8,19 @@
   "description": "I hate money is a web application made to ease shared budget management. It keeps track of who bought what, when, and for whom; and helps to settle the bills.",
   "tipi_version": 1,
   "version": "6.1.5",
-  "categories": ["bigbearcasaos"],
+  "categories": [
+    "bigbearcasaos"
+  ],
   "short_desc": "A simple shared budget manager web application",
   "author": "spiral-project",
   "source": "",
-  "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508257000,
-  "updated_at": 1761508257000,
+  "website": "https://hub.docker.com/r/ihatemoney/ihatemoney",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1762287170000,
+  "updated_at": 1762287170000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

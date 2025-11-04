@@ -8,14 +8,19 @@
   "description": "Immich Kiosk is a lightweight slideshow for running on kiosk devices and browsers that uses Immich as a data source.",
   "tipi_version": 1,
   "version": "0.26.1",
-  "categories": ["bigbearcasaos"],
+  "categories": [
+    "bigbearcasaos"
+  ],
   "short_desc": "Immich Kiosk",
   "author": "damongolding",
   "source": "",
-  "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508264000,
-  "updated_at": 1761508264000,
+  "website": "https://hub.docker.com/r/damongolding/immich-kiosk",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1762287174000,
+  "updated_at": 1762287174000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

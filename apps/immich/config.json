@@ -7,15 +7,20 @@
   "id": "immich",
   "description": "Self-hosted photo and video storage.",
   "tipi_version": 1,
-  "version": "2.1.0",
-  "categories": ["bigbearcasaos"],
+  "version": "v2.2.2",
+  "categories": [
+    "bigbearcasaos"
+  ],
   "short_desc": "Immich",
-  "author": "",
+  "author": "immich-app",
   "source": "",
-  "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508263000,
-  "updated_at": 1761508263000,
+  "website": "https://hub.docker.com/r/immich-app/immich-server",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1762287171000,
+  "updated_at": 1762287171000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

@@ -8,14 +8,19 @@
   "description": "Audiobookshelf is a self-hosted audiobook server for managing and playing your audiobooks. Audiobookshelf has a clean, accessible design that's loaded with features but not overly complicated.",
   "tipi_version": 1,
   "version": "2.30.0",
-  "categories": ["bigbearcasaos"],
+  "categories": [
+    "bigbearcasaos"
+  ],
   "short_desc": "Audiobookshelf is a self-hosted audiobook and podcast server.",
   "author": "ajnart",
   "source": "",
-  "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508206000,
-  "updated_at": 1761508206000,
+  "website": "https://hub.docker.com/r/advplyr/audiobookshelf",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1762287082000,
+  "updated_at": 1762287082000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

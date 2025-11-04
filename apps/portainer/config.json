@@ -8,14 +8,19 @@
   "description": "Irrespective of your industry, orchestration platform, or computing device, Portainer is the most versatile container management software that simplifies your secure adoption of containers with remarkable speed.",
   "tipi_version": 1,
   "version": "2.35.0-alpine",
-  "categories": ["bigbearcasaos"],
+  "categories": [
+    "bigbearcasaos"
+  ],
   "short_desc": "Portainer",
   "author": "portainer",
   "source": "",
-  "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508328000,
-  "updated_at": 1761508328000,
+  "website": "https://hub.docker.com/r/portainer/portainer-ce",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1762287265000,
+  "updated_at": 1762287265000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

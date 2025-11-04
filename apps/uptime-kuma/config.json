@@ -7,15 +7,20 @@
   "id": "uptime-kuma",
   "description": "A fancy self-hosted monitoring tool",
   "tipi_version": 1,
-  "version": "1",
-  "categories": ["bigbearcasaos"],
+  "version": "2",
+  "categories": [
+    "bigbearcasaos"
+  ],
   "short_desc": "A fancy self-hosted monitoring tool",
   "author": "louislam",
   "source": "",
-  "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508360000,
-  "updated_at": 1761508360000,
+  "website": "https://hub.docker.com/r/louislam/uptime-kuma",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1762287308000,
+  "updated_at": 1762287308000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

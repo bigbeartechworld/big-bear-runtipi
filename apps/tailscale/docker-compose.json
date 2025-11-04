@@ -2,8 +2,8 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-tailscale",
-      "image": "tailscale/tailscale:v1.88.4",
+      "name": "tailscale",
+      "image": "tailscale/tailscale:v1.90.6",
       "internalPort": 8133,
       "isMain": true
     }

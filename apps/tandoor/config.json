@@ -8,14 +8,19 @@
   "description": "Drop your collection of links and notes. Get Tandoor and never look back onto a time without recipe management, storage, sharing and collaborative cooking!",
   "tipi_version": 1,
   "version": "2.3.3",
-  "categories": ["bigbearcasaos"],
+  "categories": [
+    "bigbearcasaos"
+  ],
   "short_desc": "Recipe collection manager.",
   "author": "tandoorrecipes",
   "source": "",
-  "website": "",
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1761508349000,
-  "updated_at": 1761508349000,
+  "website": "https://hub.docker.com/r/tandoorrecipes/recipes",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1762287295000,
+  "updated_at": 1762287295000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
