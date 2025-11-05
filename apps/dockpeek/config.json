@@ -7,7 +7,7 @@
   "id": "dockpeek",
   "description": "A lightweight, self-hosted Docker dashboard that provides quick access to all running containers and their exposed ports with one-click access to web apps.",
   "tipi_version": 1,
-  "version": "v1.7.1",
+  "version": "v1.7.2",
   "categories": [
     "bigbearcasaos"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1762321683000,
-  "updated_at": 1762321683000,
+  "created_at": 1762365658000,
+  "updated_at": 1762365658000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
