@@ -7,7 +7,7 @@
   "id": "beszel",
   "description": "A lightweight server resource monitoring hub with historical data, docker stats, and alerts.",
   "tipi_version": 1,
-  "version": "0.15.2",
+  "version": "0.15.3",
   "categories": [
     "bigbearcasaos"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1762287091000,
-  "updated_at": 1762287091000,
+  "created_at": 1762321655000,
+  "updated_at": 1762321655000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
