@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "dockpeek",
-      "image": "ghcr.io/dockpeek/dockpeek:v1.7.1",
+      "image": "ghcr.io/dockpeek/dockpeek:v1.7.2",
       "internalPort": 3420,
       "isMain": true
     }

@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "immich",
-      "image": "ghcr.io/immich-app/immich-server:v2.2.2",
+      "image": "ghcr.io/immich-app/immich-server:v2.2.3",
       "internalPort": 2283,
       "isMain": true
     }

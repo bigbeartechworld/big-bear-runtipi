@@ -7,7 +7,7 @@
   "id": "immich-without-machine-learning",
   "description": "Self-hosted photo and video storage. This does not include the machine learning part.",
   "tipi_version": 1,
-  "version": "v2.2.2",
+  "version": "v2.2.3",
   "categories": [
     "bigbearcasaos"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1762321723000,
-  "updated_at": 1762321723000,
+  "created_at": 1762365703000,
+  "updated_at": 1762365703000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
