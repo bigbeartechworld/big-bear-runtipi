@@ -6,7 +6,7 @@ name: big-bear-homepage
 services:
   Homepage:
     # Image to be used for the container
-    image: ghcr.io/gethomepage/homepage:v1.6.0
+    image: ghcr.io/gethomepage/homepage:v1.6.1
     # Name of the container instance
     container_name: Homepage
     # Port mapping between host and container

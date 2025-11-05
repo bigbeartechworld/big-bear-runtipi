@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "onedev",
-      "image": "1dev/server:13.0.9",
+      "image": "1dev/server:13.0.10",
       "internalPort": 6610,
       "isMain": true
     }
