@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "playitgg",
-      "image": "dysta/playitgg:1.1.0",
+      "image": "dysta/playitgg:1.2.0",
       "internalPort": 8122,
       "isMain": true
     }

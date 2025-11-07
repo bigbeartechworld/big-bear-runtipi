@@ -7,7 +7,7 @@
   "id": "gitea-mirror",
   "description": "Gitea Mirror is a modern web app for automatically mirroring repositories from GitHub to your self-hosted Gitea instance. It features a user-friendly interface to sync public, private, or starred GitHub repos, mirror entire organizations with structure preservation, and optionally mirror issues and labels. The application includes smart filtering, detailed logs, and scheduled automatic mirroring.",
   "tipi_version": 1,
-  "version": "v3.8.11",
+  "version": "v3.9.0",
   "categories": [
     "bigbearcasaos"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1762365685000,
-  "updated_at": 1762365685000,
+  "created_at": 1762494943000,
+  "updated_at": 1762494943000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
