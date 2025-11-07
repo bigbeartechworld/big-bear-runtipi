@@ -7,7 +7,7 @@
   "id": "playitgg",
   "description": "playit.gg is a global proxy that allows anyone to host a server without port forwarding. We use tunneling. Only the server needs to run the program, not every player!",
   "tipi_version": 1,
-  "version": "1.1.0",
+  "version": "1.2.0",
   "categories": [
     "bigbearcasaos"
   ],
@@ -18,8 +18,8 @@
   "supported_architectures": [
     "amd64"
   ],
-  "created_at": 1762365787000,
-  "updated_at": 1762365787000,
+  "created_at": 1762495042000,
+  "updated_at": 1762495042000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

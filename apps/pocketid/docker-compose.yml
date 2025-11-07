@@ -4,7 +4,7 @@ name: big-bear-pocketid
 services:
   pocketid:
     container_name: pocketid # Name of the pocket-id container
-    image: ghcr.io/pocket-id/pocket-id:v1.14 # Docker image to use for pocket-id
+    image: ghcr.io/pocket-id/pocket-id:v1.15 # Docker image to use for pocket-id
     restart: unless-stopped # Restart policy: Restart unless manually stopped
     cpu_shares: 90
     command: []
