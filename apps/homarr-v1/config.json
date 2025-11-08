@@ -7,7 +7,7 @@
   "id": "homarr-v1",
   "description": "Homarr v1 - A sleek, modern dashboard for your server. This is the latest major version (v1.x) from homarr-labs with improved architecture and features. Note: This version uses a different data structure and requires SECRET_ENCRYPTION_KEY. Not compatible with legacy Homarr (v0.x) data without migration.",
   "tipi_version": 1,
-  "version": "v1.43.1",
+  "version": "v1.43.2",
   "categories": [
     "bigbearcasaos"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1762494951000,
-  "updated_at": 1762494951000,
+  "created_at": 1762581202000,
+  "updated_at": 1762581202000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
