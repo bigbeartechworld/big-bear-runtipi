@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "spoolman",
+      "image": "ghcr.io/donkie/spoolman:0.22.1",
+      "internalPort": 7912,
+      "isMain": true
+    }
+  ]
+}
