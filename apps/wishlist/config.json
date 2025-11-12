@@ -7,7 +7,7 @@
   "id": "wishlist",
   "description": "Wishlist is a self-hosted wishlist application that you can share with your friends and family. You no longer have to wonder what to get your family for the holidays, simply check their wishlist and claim any available item!",
   "tipi_version": 1,
-  "version": "v0.53.1",
+  "version": "v0.53.2",
   "categories": [
     "bigbearcasaos"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1762713880000,
-  "updated_at": 1762713880000,
+  "created_at": 1762976101000,
+  "updated_at": 1762976101000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
