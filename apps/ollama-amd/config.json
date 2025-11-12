@@ -7,7 +7,7 @@
   "id": "ollama-amd",
   "description": "Get up and running with Llama 3, Mistral, Gemma, and other large language models.",
   "tipi_version": 1,
-  "version": "0.12.9-rocm",
+  "version": "0.12.10-rocm",
   "categories": [
     "bigbearcasaos"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1762713789000,
-  "updated_at": 1762713789000,
+  "created_at": 1762976013000,
+  "updated_at": 1762976013000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
