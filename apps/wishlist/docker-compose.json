@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "wishlist",
-      "image": "ghcr.io/cmintey/wishlist:v0.53.1",
+      "image": "ghcr.io/cmintey/wishlist:v0.53.2",
       "internalPort": 3280,
       "isMain": true
     }

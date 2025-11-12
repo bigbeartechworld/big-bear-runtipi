@@ -7,7 +7,7 @@
   "id": "immich-kiosk",
   "description": "Immich Kiosk is a lightweight slideshow for running on kiosk devices and browsers that uses Immich as a data source.",
   "tipi_version": 1,
-  "version": "0.26.1",
+  "version": "0.27.1",
   "categories": [
     "bigbearcasaos"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1762713729000,
-  "updated_at": 1762713729000,
+  "created_at": 1762975945000,
+  "updated_at": 1762975945000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
