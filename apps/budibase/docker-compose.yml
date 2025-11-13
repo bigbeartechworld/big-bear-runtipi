@@ -1,7 +1,6 @@
 # Configuration for budibase setup
 
 # Name of the big-bear-budibase application
-name: big-bear-budibase
 # Service definitions for the big-bear-budibase application
 services:
   budibase:
