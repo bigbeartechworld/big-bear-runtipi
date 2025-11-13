@@ -1,4 +1,3 @@
-name: big-bear-dashdot
 services:
   dashdot:
     image: mauricenino/dashdot:6.2.0

@@ -1,7 +1,6 @@
 # Configuration for tugtainer setup
 
 # Name of the big-bear-tugtainer application
-name: big-bear-tugtainer
 # Service definitions for the big-bear-tugtainer application
 services:
   tugtainer:

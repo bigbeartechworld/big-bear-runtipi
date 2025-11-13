@@ -1,7 +1,6 @@
 # Configuration for romm setup
 
 # Name of the big-bear-romm application
-name: big-bear-romm
 # Service definitions for the big-bear-romm application
 services:
   # MariaDB service for rommdb
@@ -23,7 +22,7 @@ services:
     labels:
       runtipi.managed: "true"
   romm:
-    image: rommapp/romm:4.3.2 # Docker image for the application
+    image: rommapp/romm:4.4.0 # Docker image for the application
     container_name: romm
     environment:
       - DB_HOST=big-bear-rommdb # Hostname of the MariaDB container

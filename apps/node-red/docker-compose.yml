@@ -1,7 +1,6 @@
 # Configuration for node-red setup
 
 # Application Name
-name: node-red
 # Services used in the application
 services:
   node-red:

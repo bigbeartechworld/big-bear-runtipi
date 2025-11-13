@@ -1,4 +1,3 @@
-name: big-bear-jlesage-handbrake # Name of the CasaOS application
 services:
   jlesage-handbrake:
     container_name: jlesage-handbrake # Name of the Docker container

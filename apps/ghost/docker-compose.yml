@@ -1,7 +1,6 @@
 # Configuration for ghost setup
 
 # Application Name
-name: big-bear-ghost
 # Services used in the application
 services:
   # The `db` service for database (MySQL in this case)

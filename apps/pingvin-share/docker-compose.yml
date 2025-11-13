@@ -1,4 +1,3 @@
-name: big-bear-pingvin-share
 services:
   pingvin-share:
     # Name of the service

@@ -1,4 +1,3 @@
-name: big-bear-chrome # Name of the CasaOS application
 services:
   chrome:
     container_name: chrome # Name of the Docker container
