@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "tududi",
-      "image": "chrisvel/tududi:0.85",
+      "image": "chrisvel/tududi:0.86",
       "internalPort": 9292,
       "isMain": true
     }
