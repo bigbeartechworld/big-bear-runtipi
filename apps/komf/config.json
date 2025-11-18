@@ -7,7 +7,7 @@
   "id": "komf",
   "description": "Komga and Kavita Metadata Fetcher is a tool that fetches metadata and thumbnails for your digital comic book library. It can automatically pick up added series and update their metadata and thumbnail. You can also manually search and identify series, or match the entire library or a series. Additionally, you can install the Komf userscript to add Komf integration directly to Komga and Kavita UI, allowing you to launch manual or automatic metadata identification.",
   "tipi_version": 1,
-  "version": "1.6.1",
+  "version": "1.7.0",
   "categories": [
     "bigbearcasaos"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1763182507000,
-  "updated_at": 1763182507000,
+  "created_at": 1763461030000,
+  "updated_at": 1763461030000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

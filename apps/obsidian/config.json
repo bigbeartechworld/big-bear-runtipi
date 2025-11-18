@@ -7,7 +7,7 @@
   "id": "obsidian",
   "description": "Obsidian is a note-taking app that lets you create, link, and organize your notes on your device, with hundreds of plugins and themes to customize your workflow. You can also publish your notes online, access them offline, and sync them securely with end-to-end encryption.",
   "tipi_version": 1,
-  "version": "1.9.14",
+  "version": "1.10.3",
   "categories": [
     "bigbearcasaos"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1763182545000,
-  "updated_at": 1763182545000,
+  "created_at": 1763461087000,
+  "updated_at": 1763461087000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

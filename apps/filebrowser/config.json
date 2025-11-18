@@ -7,7 +7,7 @@
   "id": "filebrowser",
   "description": "Reliable and Performant File Management Desktop Sync and File Sharing Tool.",
   "tipi_version": 1,
-  "version": "v2.45.1-s6",
+  "version": "v2.46.1-s6",
   "categories": [
     "bigbearcasaos"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1763182464000,
-  "updated_at": 1763182464000,
+  "created_at": 1763460967000,
+  "updated_at": 1763460967000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
