@@ -8,14 +8,19 @@
   "description": "A modern, fully static, fast, secure fully proxied, highly customizable application dashboard with integrations for over 100 services and translations into multiple languages. Easily configured via YAML files or through docker label discovery.",
   "tipi_version": 1,
   "version": "v1.7.0",
-  "categories": ["bigbearcasaos"],
+  "categories": [
+    "bigbearcasaos"
+  ],
   "short_desc": "Homepage",
   "author": "gethomepage",
   "source": "",
   "website": "https://hub.docker.com/r/gethomepage/homepage",
-  "supported_architectures": ["amd64", "arm64"],
-  "created_at": 1763517166000,
-  "updated_at": 1763517166000,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1763576900000,
+  "updated_at": 1763576900000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

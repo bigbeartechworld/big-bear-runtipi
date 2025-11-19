@@ -7,7 +7,7 @@
   "id": "homer",
   "description": "A dead simple static HOMepage for your servER to keep your services on hand, from a simple yaml configuration file.",
   "tipi_version": 1,
-  "version": "v25.10.1",
+  "version": "v25.11.1",
   "categories": [
     "bigbearcasaos"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1763517257000,
-  "updated_at": 1763517257000,
+  "created_at": 1763576987000,
+  "updated_at": 1763576987000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
