@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "services": [
     {
-      "name": "big-bear-gem-digest-bot",
+      "name": "GemDigest",
       "image": "piero24/gemdigest:1.0",
-      "internalPort": 8080,
+      "internalPort": 3333,
       "isMain": true
     }
   ]
