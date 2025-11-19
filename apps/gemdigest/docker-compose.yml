@@ -3,9 +3,9 @@
 # Name of the gem-digest-bot application
 # Service definitions for the gem-digest-bot application
 services:
-  GemDigest:
+  gemdigest:
     # Name of the container
-    container_name: GemDigest
+    container_name: gemdigest
     # Docker image to use
     image: piero24/gemdigest:1.0
     # Mount local directory to the container's /home/dev directory
