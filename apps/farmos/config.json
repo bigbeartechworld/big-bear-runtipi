@@ -7,7 +7,7 @@
   "id": "farmos",
   "description": "farmOS is a web-based application for farm management, planning, and record keeping. It is developed by a community of volunteers and aims to provide a standard platform for farmers, developers, and researchers to build upon.",
   "tipi_version": 1,
-  "version": "3.4.5",
+  "version": "3.4.6",
   "categories": [
     "bigbearcasaos"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1763645835000,
-  "updated_at": 1763645835000,
+  "created_at": 1763687406000,
+  "updated_at": 1763687406000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
