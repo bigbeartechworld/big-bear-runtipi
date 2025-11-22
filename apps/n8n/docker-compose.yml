@@ -26,7 +26,7 @@ services:
       - tipi_main_network
   n8n:
     container_name: n8n # Name of the n8n container
-    image: n8nio/n8n:1.121.0 # Docker image and version to use for n8n
+    image: n8nio/n8n:1.121.1 # Docker image and version to use for n8n
     restart: unless-stopped # Restart policy: Restart unless manually stopped
     ports:
       - ${APP_PORT}:5678 # Port mapping between host and container
