@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "nextcloud-ls",
-      "image": "linuxserver/nextcloud:32.0.1",
+      "image": "linuxserver/nextcloud:32.0.2",
       "internalPort": 10444,
       "isMain": true
     }
