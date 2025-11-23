@@ -7,7 +7,7 @@
   "id": "romm",
   "description": "ROM manager for organizing, enriching, and playing retro games, with support for 400+ platforms.",
   "tipi_version": 1,
-  "version": "4.4.0",
+  "version": "4.4.1",
   "categories": [
     "bigbearcasaos"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1763835477000,
-  "updated_at": 1763835477000,
+  "created_at": 1763875817000,
+  "updated_at": 1763875817000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

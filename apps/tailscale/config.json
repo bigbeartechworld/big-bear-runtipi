@@ -7,7 +7,7 @@
   "id": "tailscale",
   "description": "Zero config VPN. Installs on any device in minutes, manages firewall rules for you, and works from anywhere.",
   "tipi_version": 1,
-  "version": "v1.90.6",
+  "version": "v1.90.8",
   "categories": [
     "bigbearcasaos"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1763835497000,
-  "updated_at": 1763835497000,
+  "created_at": 1763875830000,
+  "updated_at": 1763875830000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

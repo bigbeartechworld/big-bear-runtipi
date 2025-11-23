@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "tailscale",
-      "image": "tailscale/tailscale:v1.90.6",
+      "image": "tailscale/tailscale:v1.90.8",
       "internalPort": 8133,
       "isMain": true
     }

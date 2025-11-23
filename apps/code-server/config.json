@@ -7,7 +7,7 @@
   "id": "code-server",
   "description": "Run VS Code on any machine anywhere and access it in the browser.",
   "tipi_version": 1,
-  "version": "4.105.1",
+  "version": "4.106.2",
   "categories": [
     "bigbearcasaos"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1763835314000,
-  "updated_at": 1763835314000,
+  "created_at": 1763875674000,
+  "updated_at": 1763875674000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
