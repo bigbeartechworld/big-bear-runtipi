@@ -7,7 +7,7 @@
   "id": "n8n",
   "description": "Free and open fair-code licensed node based Workflow Automation Tool.",
   "tipi_version": 1,
-  "version": "1.121.2",
+  "version": "1.122.1",
   "categories": [
     "bigbearcasaos"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1764013313000,
-  "updated_at": 1764013313000,
+  "created_at": 1764023941000,
+  "updated_at": 1764023941000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
