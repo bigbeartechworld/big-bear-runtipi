@@ -7,7 +7,7 @@
   "id": "2fauth",
   "description": "A Web app to manage your Two-Factor Authentication (2FA) accounts and generate their security codes",
   "tipi_version": 1,
-  "version": "5.6.0",
+  "version": "5.6.1",
   "categories": [
     "bigbearcasaos"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1763991128000,
-  "updated_at": 1763991128000,
+  "created_at": 1764012997000,
+  "updated_at": 1764012997000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

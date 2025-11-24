@@ -18,8 +18,8 @@
   "supported_architectures": [
     "amd64"
   ],
-  "created_at": 1763991228000,
-  "updated_at": 1763991228000,
+  "created_at": 1764013073000,
+  "updated_at": 1764013073000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
