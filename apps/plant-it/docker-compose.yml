@@ -92,10 +92,10 @@ services:
       - "${APP_DATA_DIR}/certificates:/certificates"
     # Ports mapping between host and container
     ports:
-      # Mapping port 8080 of the host to port 8080 of the container
-      - "${APP_PORT}:8080"
       # Mapping port 3000 of the host to port 3000 of the container
-      - "3000:3000"
+      - "${APP_PORT}:3000"
+      # Mapping port 8080 of the host to port 8080 of the container
+      - "8080:8080"
     networks:
       - tipi_main_network
     labels:
