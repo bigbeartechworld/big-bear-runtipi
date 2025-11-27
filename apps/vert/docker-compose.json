@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "vert",
+      "image": "ghcr.io/vert-sh/vert:sha-a1b0b15",
+      "internalPort": 3030,
+      "isMain": true
+    }
+  ]
+}
