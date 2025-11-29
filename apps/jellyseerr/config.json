@@ -9,7 +9,7 @@
   "tipi_version": 1,
   "version": "2.7.3",
   "categories": [
-    "bigbearcasaos"
+    "utilities"
   ],
   "short_desc": "Jellyseerr is a free and open source software application for managing requests for your media library. It is a fork of Overseerr built to bring support for Jellyfin & Emby media servers!",
   "author": "Fallenbagel",
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1764365930000,
-  "updated_at": 1764365930000,
+  "created_at": 1764402722000,
+  "updated_at": 1764402722000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

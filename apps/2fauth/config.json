@@ -9,7 +9,7 @@
   "tipi_version": 1,
   "version": "5.6.1",
   "categories": [
-    "bigbearcasaos"
+    "utilities"
   ],
   "short_desc": "A Web app to manage your Two-Factor Authentication (2FA) accounts and generate their security codes",
   "author": "bubka",
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1764365834000,
-  "updated_at": 1764365834000,
+  "created_at": 1764402640000,
+  "updated_at": 1764402640000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

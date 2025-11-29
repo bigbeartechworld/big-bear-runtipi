@@ -9,7 +9,7 @@
   "tipi_version": 1,
   "version": "version-6ae43f81",
   "categories": [
-    "bigbearcasaos"
+    "utilities"
   ],
   "short_desc": "chromium",
   "author": "linuxserver",
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1764365865000,
-  "updated_at": 1764365865000,
+  "created_at": 1764402663000,
+  "updated_at": 1764402663000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

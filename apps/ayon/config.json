@@ -9,7 +9,7 @@
   "tipi_version": 1,
   "version": "1.3.6-20240823",
   "categories": [
-    "bigbearcasaos"
+    "utilities"
   ],
   "short_desc": "Ayon",
   "author": "ynput",
@@ -18,8 +18,8 @@
   "supported_architectures": [
     "amd64"
   ],
-  "created_at": 1764365848000,
-  "updated_at": 1764365848000,
+  "created_at": 1764402651000,
+  "updated_at": 1764402651000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

@@ -9,7 +9,7 @@
   "tipi_version": 1,
   "version": "2.0",
   "categories": [
-    "bigbearcasaos"
+    "utilities"
   ],
   "short_desc": "Peer-to-peer file synchronization between your devices",
   "author": "syncthing",
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1764366039000,
-  "updated_at": 1764366039000,
+  "created_at": 1764402832000,
+  "updated_at": 1764402832000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

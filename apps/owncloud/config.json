@@ -9,7 +9,7 @@
   "tipi_version": 1,
   "version": "10.16.0",
   "categories": [
-    "bigbearcasaos"
+    "utilities"
   ],
   "short_desc": "ownCloud",
   "author": "owncloud",
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1764365989000,
-  "updated_at": 1764365989000,
+  "created_at": 1764402782000,
+  "updated_at": 1764402782000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

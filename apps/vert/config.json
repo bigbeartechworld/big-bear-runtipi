@@ -9,7 +9,7 @@
   "tipi_version": 1,
   "version": "sha-a1b0b15",
   "categories": [
-    "bigbearuniversalapps"
+    "utilities"
   ],
   "short_desc": "The next-generation file converter. Open source, fully local and free forever.",
   "author": "VERT-sh",
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1764366055000,
-  "updated_at": 1764366055000,
+  "created_at": 1764402847000,
+  "updated_at": 1764402847000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

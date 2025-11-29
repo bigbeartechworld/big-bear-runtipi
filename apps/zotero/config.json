@@ -9,7 +9,7 @@
   "tipi_version": 1,
   "version": "7.0.20240809",
   "categories": [
-    "bigbearcasaos"
+    "utilities"
   ],
   "short_desc": "Zotero",
   "author": "linuxserver",
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1764366072000,
-  "updated_at": 1764366072000,
+  "created_at": 1764402864000,
+  "updated_at": 1764402864000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

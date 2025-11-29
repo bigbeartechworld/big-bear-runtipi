@@ -9,7 +9,7 @@
   "tipi_version": 1,
   "version": "2025.11.0",
   "categories": [
-    "bigbearcasaos"
+    "utilities"
   ],
   "short_desc": "A black hole for Internet advertisements. This is a fork of the Pi-hole® application that adds the ability to update the lists of blocked domains and regexes.",
   "author": "jacklul",
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1764366003000,
-  "updated_at": 1764366003000,
+  "created_at": 1764402795000,
+  "updated_at": 1764402795000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

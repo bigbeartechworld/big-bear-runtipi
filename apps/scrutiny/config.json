@@ -9,7 +9,7 @@
   "tipi_version": 1,
   "version": "master-omnibus",
   "categories": [
-    "bigbearcasaos"
+    "utilities"
   ],
   "short_desc": "Monitor your server's hard disk health",
   "author": "analogj",
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1764366027000,
-  "updated_at": 1764366027000,
+  "created_at": 1764402820000,
+  "updated_at": 1764402820000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

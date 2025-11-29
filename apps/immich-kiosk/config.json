@@ -9,7 +9,7 @@
   "tipi_version": 1,
   "version": "0.28.0",
   "categories": [
-    "bigbearcasaos"
+    "utilities"
   ],
   "short_desc": "Immich Kiosk",
   "author": "damongolding",
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1764365925000,
-  "updated_at": 1764365925000,
+  "created_at": 1764402717000,
+  "updated_at": 1764402717000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

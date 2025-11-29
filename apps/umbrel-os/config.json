@@ -9,7 +9,7 @@
   "tipi_version": 1,
   "version": "1.4.0",
   "categories": [
-    "bigbearcasaos"
+    "utilities"
   ],
   "short_desc": "Umbrel OS",
   "author": "dockurr",
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1764366050000,
-  "updated_at": 1764366050000,
+  "created_at": 1764402843000,
+  "updated_at": 1764402843000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

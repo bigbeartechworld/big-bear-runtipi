@@ -9,7 +9,7 @@
   "tipi_version": 1,
   "version": "3.7.13",
   "categories": [
-    "bigbearcasaos"
+    "utilities"
   ],
   "short_desc": "zipline",
   "author": "zipline",
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1764366069000,
-  "updated_at": 1764366069000,
+  "created_at": 1764402862000,
+  "updated_at": 1764402862000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

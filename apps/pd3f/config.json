@@ -9,7 +9,7 @@
   "tipi_version": 1,
   "version": "latest",
   "categories": [
-    "bigbearcasaos"
+    "utilities"
   ],
   "short_desc": "PD3F",
   "author": "pd3f",
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1764365994000,
-  "updated_at": 1764365994000,
+  "created_at": 1764402787000,
+  "updated_at": 1764402787000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

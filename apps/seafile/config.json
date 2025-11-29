@@ -9,7 +9,7 @@
   "tipi_version": 1,
   "version": "11.0.13",
   "categories": [
-    "bigbearcasaos"
+    "utilities"
   ],
   "short_desc": "Seafile is an open source file sync and share platform, focusing on reliability and performance.",
   "author": "seafile",
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1764366029000,
-  "updated_at": 1764366029000,
+  "created_at": 1764402822000,
+  "updated_at": 1764402822000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

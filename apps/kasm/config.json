@@ -9,7 +9,7 @@
   "tipi_version": 1,
   "version": "1.120.20221218",
   "categories": [
-    "bigbearcasaos"
+    "utilities"
   ],
   "short_desc": "Kasm",
   "author": "Kasm",
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1764365936000,
-  "updated_at": 1764365936000,
+  "created_at": 1764402729000,
+  "updated_at": 1764402729000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

@@ -9,7 +9,7 @@
   "tipi_version": 1,
   "version": "1.142.9",
   "categories": [
-    "bigbearcasaos"
+    "utilities"
   ],
   "short_desc": "LobeChat",
   "author": "lobehub",
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1764365948000,
-  "updated_at": 1764365948000,
+  "created_at": 1764402741000,
+  "updated_at": 1764402741000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

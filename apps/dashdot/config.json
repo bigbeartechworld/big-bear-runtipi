@@ -9,7 +9,7 @@
   "tipi_version": 1,
   "version": "6.2.0",
   "categories": [
-    "bigbearcasaos"
+    "utilities"
   ],
   "short_desc": "dash. - a modern server dashboard",
   "author": "mauricenino",
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1764365879000,
-  "updated_at": 1764365879000,
+  "created_at": 1764402675000,
+  "updated_at": 1764402675000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

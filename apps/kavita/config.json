@@ -9,7 +9,7 @@
   "tipi_version": 1,
   "version": "0.8.8",
   "categories": [
-    "bigbearcasaos"
+    "utilities"
   ],
   "short_desc": "Kavita",
   "author": "jvmilazz0",
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1764365937000,
-  "updated_at": 1764365937000,
+  "created_at": 1764402730000,
+  "updated_at": 1764402730000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

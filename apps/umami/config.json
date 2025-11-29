@@ -9,7 +9,7 @@
   "tipi_version": 1,
   "version": "postgresql-latest",
   "categories": [
-    "bigbearcasaos"
+    "utilities"
   ],
   "short_desc": "Umami is a simple, fast, privacy-focused alternative to Google Analytics.",
   "author": "umami-software",
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1764366049000,
-  "updated_at": 1764366049000,
+  "created_at": 1764402842000,
+  "updated_at": 1764402842000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
