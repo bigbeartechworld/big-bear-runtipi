@@ -9,7 +9,7 @@
   "tipi_version": 1,
   "version": "v8.14.9",
   "categories": [
-    "bigbearcasaos"
+    "utilities"
   ],
   "short_desc": "Dozzle is a real-time log viewer for docker containers.",
   "author": "amir20",
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1764365891000,
-  "updated_at": 1764365891000,
+  "created_at": 1764402684000,
+  "updated_at": 1764402684000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

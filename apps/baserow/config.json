@@ -9,7 +9,7 @@
   "tipi_version": 1,
   "version": "1.35.3",
   "categories": [
-    "bigbearcasaos"
+    "utilities"
   ],
   "short_desc": "Baserow",
   "author": "baserow",
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1764365849000,
-  "updated_at": 1764365849000,
+  "created_at": 1764402652000,
+  "updated_at": 1764402652000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

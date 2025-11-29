@@ -9,7 +9,7 @@
   "tipi_version": 1,
   "version": "2.30.0",
   "categories": [
-    "bigbearcasaos"
+    "utilities"
   ],
   "short_desc": "Audiobookshelf is a self-hosted audiobook and podcast server.",
   "author": "ajnart",
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1764365844000,
-  "updated_at": 1764365844000,
+  "created_at": 1764402647000,
+  "updated_at": 1764402647000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

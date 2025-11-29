@@ -9,7 +9,7 @@
   "tipi_version": 1,
   "version": "0.62.19",
   "categories": [
-    "bigbearcasaos"
+    "utilities"
   ],
   "short_desc": "Lightweight DNS sinkhole for blocking ads and trackers",
   "author": "pommee",
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1764365913000,
-  "updated_at": 1764365913000,
+  "created_at": 1764402705000,
+  "updated_at": 1764402705000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

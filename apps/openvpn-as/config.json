@@ -9,7 +9,7 @@
   "tipi_version": 1,
   "version": "2.13.1-d8cdeb9c-Ubuntu22",
   "categories": [
-    "bigbearcasaos"
+    "utilities"
   ],
   "short_desc": "OpenVPN is an open-source commercial software that implements virtual private network (VPN).",
   "author": "openvpn",
@@ -18,8 +18,8 @@
   "supported_architectures": [
     "amd64"
   ],
-  "created_at": 1764365986000,
-  "updated_at": 1764365986000,
+  "created_at": 1764402779000,
+  "updated_at": 1764402779000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

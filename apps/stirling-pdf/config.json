@@ -7,9 +7,9 @@
   "id": "stirling-pdf",
   "description": "Stirling PDF - Local hosted web based PDF editor",
   "tipi_version": 1,
-  "version": "1.5.0",
+  "version": "1.6.0",
   "categories": [
-    "bigbearcasaos"
+    "utilities"
   ],
   "short_desc": "Stirling PDF - Local hosted web based PDF editor",
   "author": "stirlingtools",
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1764366038000,
-  "updated_at": 1764366038000,
+  "created_at": 1764402831000,
+  "updated_at": 1764402831000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

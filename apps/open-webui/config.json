@@ -9,7 +9,7 @@
   "tipi_version": 1,
   "version": "git-33e54a9",
   "categories": [
-    "bigbearcasaos"
+    "utilities"
   ],
   "short_desc": "User-friendly WebUI for LLMs",
   "author": "open-webui",
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1764365986000,
-  "updated_at": 1764365986000,
+  "created_at": 1764402778000,
+  "updated_at": 1764402778000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

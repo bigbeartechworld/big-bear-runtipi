@@ -9,7 +9,7 @@
   "tipi_version": 1,
   "version": "v5.9.5",
   "categories": [
-    "bigbearcasaos"
+    "utilities"
   ],
   "short_desc": "Cal.com",
   "author": "calcom",
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1764365860000,
-  "updated_at": 1764365860000,
+  "created_at": 1764402660000,
+  "updated_at": 1764402660000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

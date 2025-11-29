@@ -9,7 +9,7 @@
   "tipi_version": 1,
   "version": "V4",
   "categories": [
-    "bigbearcasaos"
+    "utilities"
   ],
   "short_desc": "Your all-in-one link sharing solution",
   "author": "LinkStackOrg",
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1764365946000,
-  "updated_at": 1764365946000,
+  "created_at": 1764402739000,
+  "updated_at": 1764402739000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

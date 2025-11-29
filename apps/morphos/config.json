@@ -9,7 +9,7 @@
   "tipi_version": 1,
   "version": "0.6.0",
   "categories": [
-    "bigbearcasaos"
+    "utilities"
   ],
   "short_desc": "Self-hosted file converter server",
   "author": "danvergara",
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1764365960000,
-  "updated_at": 1764365960000,
+  "created_at": 1764402752000,
+  "updated_at": 1764402752000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

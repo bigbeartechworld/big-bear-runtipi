@@ -9,7 +9,7 @@
   "tipi_version": 1,
   "version": "1.19.06",
   "categories": [
-    "bigbearcasaos"
+    "utilities"
   ],
   "short_desc": "Genmon",
   "author": "bigbeartechworld",
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1764365906000,
-  "updated_at": 1764365906000,
+  "created_at": 1764402698000,
+  "updated_at": 1764402698000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

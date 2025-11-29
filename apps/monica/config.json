@@ -9,7 +9,7 @@
   "tipi_version": 1,
   "version": "4.1.2",
   "categories": [
-    "bigbearcasaos"
+    "utilities"
   ],
   "short_desc": "A Personal Relationship Management tool to help you document your social life.",
   "author": "monica",
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1764365959000,
-  "updated_at": 1764365959000,
+  "created_at": 1764402751000,
+  "updated_at": 1764402751000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

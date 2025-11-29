@@ -9,7 +9,7 @@
   "tipi_version": 1,
   "version": "v3.4.27",
   "categories": [
-    "bigbearcasaos"
+    "utilities"
   ],
   "short_desc": "A fork of Mozilla's Firefox Send.",
   "author": "timvisee",
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1764366032000,
-  "updated_at": 1764366032000,
+  "created_at": 1764402824000,
+  "updated_at": 1764402824000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

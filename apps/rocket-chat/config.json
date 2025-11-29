@@ -9,7 +9,7 @@
   "tipi_version": 1,
   "version": "6.13.1",
   "categories": [
-    "bigbearcasaos"
+    "utilities"
   ],
   "short_desc": "The communications platform that puts data protection first.",
   "author": "rocket.chat",
@@ -18,8 +18,8 @@
   "supported_architectures": [
     "amd64"
   ],
-  "created_at": 1764366024000,
-  "updated_at": 1764366024000,
+  "created_at": 1764402817000,
+  "updated_at": 1764402817000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

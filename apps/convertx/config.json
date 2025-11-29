@@ -9,7 +9,7 @@
   "tipi_version": 1,
   "version": "v0.15.1",
   "categories": [
-    "bigbearcasaos"
+    "utilities"
   ],
   "short_desc": "💾 Self-hosted online file converter. Supports 1000+ formats ⚙️",
   "author": "C4illin",
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1764365870000,
-  "updated_at": 1764365870000,
+  "created_at": 1764402667000,
+  "updated_at": 1764402667000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
