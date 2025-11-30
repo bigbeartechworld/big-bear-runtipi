@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "passwordpusher",
-      "image": "pglombardo/pwpush:1.63.4",
+      "image": "pglombardo/pwpush:1.63.5",
       "internalPort": 5100,
       "isMain": true
     }
