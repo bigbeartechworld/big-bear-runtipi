@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "pihole-updatelists",
-      "image": "jacklul/pihole:2025.11.0",
+      "image": "jacklul/pihole:2025.11.1",
       "internalPort": 8120,
       "isMain": true
     }
