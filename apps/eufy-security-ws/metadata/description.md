@@ -1,1 +1,0 @@
-eufy-security-ws is a small server wrapper around the eufy-security-client library to access it via a WebSocket. It allows you to control Eufy security devices by connecting to the Eufy cloud servers and local/remote stations.

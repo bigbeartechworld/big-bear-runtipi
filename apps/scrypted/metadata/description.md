@@ -1,1 +1,0 @@
-Scrypted is an open source video integration platform. Using various Plugins, Scrypted can receive streams from a range of cameras and send them to other platforms (HomeKit, Google Home, Alexa, Home Assistant).
