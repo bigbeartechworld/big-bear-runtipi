@@ -1,0 +1,26 @@
+{
+  "name": "RustFS",
+  "available": true,
+  "port": 9000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "rustfs",
+  "description": "RustFS is a high-performance, distributed object storage system built in Rust. It combines the simplicity of MinIO with the memory safety and raw performance of Rust. It offers full S3 compatibility, is completely open-source under Apache 2.0 license, and is optimized for data lakes, AI, and big data workloads.",
+  "tipi_version": 1,
+  "version": "1.0.0-alpha.71",
+  "categories": [
+    "data"
+  ],
+  "short_desc": "High-performance S3-compatible object storage built in Rust",
+  "author": "rustfs",
+  "source": "https://github.com/rustfs/rustfs",
+  "website": "https://rustfs.com/",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1764873423000,
+  "updated_at": 1764873423000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

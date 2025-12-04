@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "rustfs",
+      "image": "rustfs/rustfs:1.0.0-alpha.71",
+      "internalPort": 9000,
+      "isMain": true
+    }
+  ]
+}
