@@ -7,7 +7,7 @@
   "id": "beaverhabits",
   "description": "A self-hosted habit tracking app without Goals",
   "tipi_version": 1,
-  "version": "0.7.4",
+  "version": "0.8.0",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1764877183000,
-  "updated_at": 1764877183000,
+  "created_at": 1764968899000,
+  "updated_at": 1764968899000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
