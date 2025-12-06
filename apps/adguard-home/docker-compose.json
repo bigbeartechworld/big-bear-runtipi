@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "adguard-home",
-      "image": "adguard/adguardhome:v0.107.69",
+      "image": "adguard/adguardhome:v0.107.70",
       "internalPort": 8080,
       "isMain": true
     }
