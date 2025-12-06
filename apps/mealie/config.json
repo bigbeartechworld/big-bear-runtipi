@@ -7,7 +7,7 @@
   "id": "mealie",
   "description": "Mealie is a self hosted recipe manager and meal planner with a RestAPI backend and a reactive frontend application built in Vue for a pleasant user experience for the whole family. Easily add recipes into your database by providing the url and mealie will automatically import the relevant data or add a family recipe with the UI editor",
   "tipi_version": 1,
-  "version": "v3.6.0",
+  "version": "v3.6.1",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1764968999000,
-  "updated_at": 1764968999000,
+  "created_at": 1765030394000,
+  "updated_at": 1765030394000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
