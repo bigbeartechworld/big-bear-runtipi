@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "n8n",
-      "image": "n8nio/n8n:1.123.0",
+      "image": "n8nio/n8n:1.123.2",
       "internalPort": 5678,
       "isMain": true
     }
