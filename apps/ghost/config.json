@@ -7,7 +7,7 @@
   "id": "ghost",
   "description": "Ghost is a free and open source blogging platform written in JavaScript and distributed under the MIT License, designed to simplify the process of online publishing for individual bloggers as well as online publications.",
   "tipi_version": 1,
-  "version": "6.9.1-alpine",
+  "version": "6.9.3-alpine",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1765159276000,
-  "updated_at": 1765159276000,
+  "created_at": 1765237386000,
+  "updated_at": 1765237386000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
