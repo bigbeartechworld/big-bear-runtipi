@@ -7,7 +7,7 @@
   "id": "adguard-home",
   "description": "AdGuard Home is a network-wide software for blocking ads and tracking. After you set it up, it'll cover all your home devices, and you won't need any client-side software for that. Learn more on our official Github repository.",
   "tipi_version": 1,
-  "version": "v0.107.70",
+  "version": "v0.107.71",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1765237314000,
-  "updated_at": 1765237314000,
+  "created_at": 1765491099000,
+  "updated_at": 1765491099000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "komf",
-      "image": "sndxr/komf:1.7.0",
+      "image": "sndxr/komf:1.7.1",
       "internalPort": 8104,
       "isMain": true
     }
