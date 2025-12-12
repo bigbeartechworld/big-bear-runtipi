@@ -7,7 +7,7 @@
   "id": "trilium",
   "description": "Build your personal knowledge base with Trilium Notes",
   "tipi_version": 1,
-  "version": "v0.99.5",
+  "version": "v0.100.0",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1765237558000,
-  "updated_at": 1765237558000,
+  "created_at": 1765505089000,
+  "updated_at": 1765505089000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
