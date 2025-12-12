@@ -7,7 +7,7 @@
   "id": "traccar",
   "description": "Traccar GPS Tracking System in Docker image.",
   "tipi_version": 1,
-  "version": "6.10-ubuntu",
+  "version": "6.11-ubuntu",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1765237557000,
-  "updated_at": 1765237557000,
+  "created_at": 1765505088000,
+  "updated_at": 1765505088000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "traccar",
-      "image": "traccar/traccar:6.10-ubuntu",
+      "image": "traccar/traccar:6.11-ubuntu",
       "internalPort": 8136,
       "isMain": true
     }
