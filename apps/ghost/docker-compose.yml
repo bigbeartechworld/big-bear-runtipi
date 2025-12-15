@@ -29,7 +29,7 @@ services:
     # Name of the container
     container_name: ghost
     # Docker image to be used
-    image: ghost:6.10.1-alpine
+    image: ghost:6.10.2-alpine
     # Restart policy for the service
     restart: on-failure
     # Networks used by the service
