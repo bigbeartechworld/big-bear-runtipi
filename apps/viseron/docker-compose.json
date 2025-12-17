@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "viseron",
-      "image": "roflcoopter/viseron:3.3.1",
+      "image": "roflcoopter/viseron:3.4.0",
       "internalPort": 8890,
       "isMain": true
     }

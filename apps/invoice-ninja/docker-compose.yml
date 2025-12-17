@@ -42,7 +42,7 @@ services:
     labels:
       runtipi.managed: "true"
   big-bear-invoice-ninja-init:
-    image: bash:5.3.8
+    image: bash:5.3.9
     container_name: big-bear-invoice-ninja-init
     volumes:
       - ${APP_DATA_DIR}/data:/tmp/data
