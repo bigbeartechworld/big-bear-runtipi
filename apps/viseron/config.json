@@ -7,7 +7,7 @@
   "id": "viseron",
   "description": "Viseron is a self-hosted, local only NVR and AI Computer Vision software",
   "tipi_version": 1,
-  "version": "3.3.1",
+  "version": "3.4.0",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1765836854000,
-  "updated_at": 1765836854000,
+  "created_at": 1765998468000,
+  "updated_at": 1765998468000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
