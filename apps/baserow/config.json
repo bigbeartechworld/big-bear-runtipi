@@ -7,7 +7,7 @@
   "id": "baserow",
   "description": "Create your own online database without technical experience. Our user-friendly no-code tool gives you the powers of a developer without leaving your browser.",
   "tipi_version": 1,
-  "version": "1.35.3",
+  "version": "2.0.4",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1765998329000,
-  "updated_at": 1765998329000,
+  "created_at": 1766097602000,
+  "updated_at": 1766097602000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
