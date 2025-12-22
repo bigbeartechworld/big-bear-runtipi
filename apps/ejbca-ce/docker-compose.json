@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "ejbca-ce",
-      "image": "keyfactor/ejbca-ce:9.1.1",
+      "image": "keyfactor/ejbca-ce:9.3.7",
       "internalPort": 8444,
       "isMain": true
     }

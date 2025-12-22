@@ -7,7 +7,7 @@
   "id": "dbgate",
   "description": "Web based UI for managing and exploring SQL database data",
   "tipi_version": 1,
-  "version": "6.7.3-alpine",
+  "version": "6.8.0-alpine",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1766169658000,
-  "updated_at": 1766169658000,
+  "created_at": 1766369303000,
+  "updated_at": 1766369303000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
