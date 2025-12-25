@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "goaway",
-      "image": "pommee/goaway:0.62.24",
+      "image": "pommee/goaway:0.63.0",
       "internalPort": 8097,
       "isMain": true
     }
