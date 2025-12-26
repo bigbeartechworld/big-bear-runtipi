@@ -1,7 +1,7 @@
 services:
   jlesage-handbrake:
     container_name: jlesage-handbrake # Name of the Docker container
-    image: jlesage/handbrake:v25.12.3 # Docker image for the Handbrake
+    image: jlesage/handbrake:v25.12.4 # Docker image for the Handbrake
     ports:
       - "${APP_PORT}:5800" # Expose port 5800 for VNC access
     environment:

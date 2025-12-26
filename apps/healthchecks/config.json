@@ -7,7 +7,7 @@
   "id": "healthchecks",
   "description": "Healthchecks is a watchdog for your cron jobs. It's a web server that listens for pings from your cron jobs, plus a web interface.",
   "tipi_version": 1,
-  "version": "3.13.20251215",
+  "version": "3.13.20251222",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1766682179000,
-  "updated_at": 1766682179000,
+  "created_at": 1766769143000,
+  "updated_at": 1766769143000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
