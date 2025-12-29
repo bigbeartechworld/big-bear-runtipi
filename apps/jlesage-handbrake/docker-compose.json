@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "jlesage-handbrake",
-      "image": "jlesage/handbrake:v25.12.3",
+      "image": "jlesage/handbrake:v25.12.4",
       "internalPort": 5801,
       "isMain": true
     }
