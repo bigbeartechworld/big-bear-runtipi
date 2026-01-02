@@ -22,7 +22,7 @@ services:
     labels:
       runtipi.managed: "true"
   romm:
-    image: rommapp/romm:4.4.1 # Docker image for the application
+    image: rommapp/romm:4.5.0 # Docker image for the application
     container_name: romm
     environment:
       - DB_HOST=big-bear-rommdb # Hostname of the MariaDB container

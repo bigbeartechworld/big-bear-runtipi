@@ -7,7 +7,7 @@
   "id": "linkwarden",
   "description": "⚡️⚡️⚡️Self-hosted collaborative bookmark manager to collect, organize, and preserve webpages and articles.",
   "tipi_version": 1,
-  "version": "v2.13.1",
+  "version": "v2.13.5",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1767070400000,
-  "updated_at": 1767070400000,
+  "created_at": 1767314760000,
+  "updated_at": 1767314760000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
