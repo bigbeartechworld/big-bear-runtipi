@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "convertx",
-      "image": "ghcr.io/c4illin/convertx:v0.15.1",
+      "image": "ghcr.io/c4illin/convertx:v0.16.1",
       "internalPort": 3004,
       "isMain": true
     }
