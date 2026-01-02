@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "cadvisor",
-      "image": "gcr.io/cadvisor/cadvisor:v0.52.1",
+      "image": "gcr.io/cadvisor/cadvisor:v0.55.1",
       "internalPort": 8086,
       "isMain": true
     }

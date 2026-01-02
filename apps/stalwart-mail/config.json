@@ -7,7 +7,7 @@
   "id": "stalwart-mail",
   "description": "Stalwart Mail Server is an open-source mail server solution with JMAP, IMAP4, POP3, and SMTP support and a wide range of modern features. It is written in Rust and designed to be secure, fast, robust and scalable.",
   "tipi_version": 1,
-  "version": "v0.15.2",
+  "version": "v0.15.3",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1767070503000,
-  "updated_at": 1767070503000,
+  "created_at": 1767318158000,
+  "updated_at": 1767318158000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

@@ -7,7 +7,7 @@
   "id": "immich",
   "description": "Self-hosted photo and video storage.",
   "tipi_version": 1,
-  "version": "v2.3.1",
+  "version": "v2.4.1",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1767070372000,
-  "updated_at": 1767070372000,
+  "created_at": 1767318031000,
+  "updated_at": 1767318031000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

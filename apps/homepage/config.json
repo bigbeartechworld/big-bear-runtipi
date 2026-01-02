@@ -7,7 +7,7 @@
   "id": "homepage",
   "description": "A modern, fully static, fast, secure fully proxied, highly customizable application dashboard with integrations for over 100 services and translations into multiple languages. Easily configured via YAML files or through docker label discovery.",
   "tipi_version": 1,
-  "version": "v1.7.0",
+  "version": "v1.8.0",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1767070292000,
-  "updated_at": 1767070292000,
+  "created_at": 1767317935000,
+  "updated_at": 1767317935000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
