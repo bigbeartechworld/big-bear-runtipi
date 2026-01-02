@@ -7,7 +7,7 @@
   "id": "audiobookshelf",
   "description": "Audiobookshelf is a self-hosted audiobook server for managing and playing your audiobooks. Audiobookshelf has a clean, accessible design that's loaded with features but not overly complicated.",
   "tipi_version": 1,
-  "version": "2.30.0",
+  "version": "2.32.1",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1767070298000,
-  "updated_at": 1767070298000,
+  "created_at": 1767317940000,
+  "updated_at": 1767317940000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

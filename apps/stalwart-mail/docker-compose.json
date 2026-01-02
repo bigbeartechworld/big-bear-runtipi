@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "stalwart-mail",
-      "image": "stalwartlabs/stalwart:v0.15.2",
+      "image": "stalwartlabs/stalwart:v0.15.3",
       "internalPort": 8131,
       "isMain": true
     }

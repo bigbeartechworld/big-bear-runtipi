@@ -7,7 +7,7 @@
   "id": "nexterm",
   "description": "The open source server management software for SSH, VNC & RDP. This is in Preview Release.",
   "tipi_version": 1,
-  "version": "1.0.7-OPEN-PREVIEW",
+  "version": "1.0.8-OPEN-PREVIEW",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1767070425000,
-  "updated_at": 1767070425000,
+  "created_at": 1767318084000,
+  "updated_at": 1767318084000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
