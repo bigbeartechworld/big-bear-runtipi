@@ -7,7 +7,7 @@
   "id": "goaway",
   "description": "GoAway is a lightweight DNS sinkhole that blocks ads, trackers, and malicious domains at the network level. It provides a web-based admin dashboard for management and supports customizable blocking rules with real-time statistics tracking.",
   "tipi_version": 1,
-  "version": "0.63.3",
+  "version": "0.63.4",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1767319274000,
-  "updated_at": 1767319274000,
+  "created_at": 1767815975000,
+  "updated_at": 1767815975000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
