@@ -1,6 +1,6 @@
 services:
   dashdot:
-    image: mauricenino/dashdot:6.2.0
+    image: mauricenino/dashdot:6.2.4
     ports:
       - "${APP_PORT}:3001"
     volumes:

@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "jlesage-firefox",
-      "image": "jlesage/firefox:v25.12.5",
+      "image": "jlesage/firefox:v26.01.1",
       "internalPort": 5800,
       "isMain": true
     }
