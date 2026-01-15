@@ -7,7 +7,7 @@
   "id": "erugo",
   "description": "A powerful, self-hosted file-sharing platform built with PHP and Laravel with a Vue.js frontend. It offers secure, customizable file-transfer capabilities through an elegant user interface, giving you complete control over your data while providing a seamless experience for both senders and recipients.",
   "tipi_version": 1,
-  "version": "0.2.13",
+  "version": "0.2.14",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1767815944000,
-  "updated_at": 1767815944000,
+  "created_at": 1768440006000,
+  "updated_at": 1768440006000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

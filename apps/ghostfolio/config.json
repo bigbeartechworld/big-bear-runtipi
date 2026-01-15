@@ -7,7 +7,7 @@
   "id": "ghostfolio",
   "description": "Open Source Wealth Management Software. Angular + NestJS + Prisma + Nx + TypeScript 🤍",
   "tipi_version": 1,
-  "version": "2.228.0",
+  "version": "2.229.0",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1767815969000,
-  "updated_at": 1767815969000,
+  "created_at": 1768440024000,
+  "updated_at": 1768440024000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
