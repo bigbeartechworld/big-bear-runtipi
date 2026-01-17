@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "tugtainer",
-      "image": "quenary/tugtainer:v1.15.1",
+      "image": "quenary/tugtainer:v1.16.0",
       "internalPort": 9412,
       "isMain": true
     }

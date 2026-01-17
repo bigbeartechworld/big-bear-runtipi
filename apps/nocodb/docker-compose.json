@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "nocodb",
-      "image": "nocodb/nocodb:0.265.1",
+      "image": "nocodb/nocodb:0.301.0",
       "internalPort": 8113,
       "isMain": true
     }
