@@ -7,7 +7,7 @@
   "id": "n8n",
   "description": "Free and open fair-code licensed node based Workflow Automation Tool.",
   "tipi_version": 1,
-  "version": "2.2.2",
+  "version": "2.4.2",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1767816044000,
-  "updated_at": 1767816044000,
+  "created_at": 1768699698000,
+  "updated_at": 1768699698000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

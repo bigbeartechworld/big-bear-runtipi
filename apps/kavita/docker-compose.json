@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "kavita",
-      "image": "jvmilazz0/kavita:0.8.8",
+      "image": "jvmilazz0/kavita:0.8.9",
       "internalPort": 5004,
       "isMain": true
     }
