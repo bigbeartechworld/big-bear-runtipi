@@ -7,7 +7,7 @@
   "id": "kavita",
   "description": "Kavita is a fast, feature rich, cross platform reading server",
   "tipi_version": 1,
-  "version": "0.8.8",
+  "version": "0.8.9",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1767816006000,
-  "updated_at": 1767816006000,
+  "created_at": 1768785997000,
+  "updated_at": 1768785997000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
