@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "rallly",
-      "image": "lukevella/rallly:4.6.2",
+      "image": "lukevella/rallly:4.6.3",
       "internalPort": 3019,
       "isMain": true
     }
