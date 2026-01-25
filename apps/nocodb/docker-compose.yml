@@ -36,7 +36,7 @@ services:
     labels:
       runtipi.managed: "true"
   nocodb:
-    image: nocodb/nocodb:0.301.1 # Specifies the Docker image to use for NocoDB
+    image: nocodb/nocodb:0.301.2 # Specifies the Docker image to use for NocoDB
     container_name: nocodb # Sets a custom name for the container
     restart: unless-stopped # Container restart policy to ensure availability
     environment: # Environment variables for configuring NocoDB
