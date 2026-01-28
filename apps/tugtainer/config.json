@@ -7,7 +7,7 @@
   "id": "tugtainer",
   "description": "Tugtainer is a self-hosted app for automating updates of your docker containers with a web UI. It's like watchtower but with more control and a user-friendly interface.",
   "tipi_version": 1,
-  "version": "v1.17.1",
+  "version": "v1.17.3",
   "categories": [
     "utilities"
   ],
@@ -18,8 +18,8 @@
   "supported_architectures": [
     "amd64"
   ],
-  "created_at": 1769477365000,
-  "updated_at": 1769477365000,
+  "created_at": 1769563594000,
+  "updated_at": 1769563594000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
