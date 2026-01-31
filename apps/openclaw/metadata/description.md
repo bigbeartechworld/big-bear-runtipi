@@ -1,0 +1,1 @@
+OpenClaw is a self-hosted AI agent platform that provides Claude AI integration through a local gateway. It enables running AI assistants with local tool execution, file access, and workspace management. Features include WebSocket gateway, browser automation, and extensible command framework.
