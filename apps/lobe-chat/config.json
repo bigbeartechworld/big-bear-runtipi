@@ -7,7 +7,7 @@
   "id": "lobe-chat",
   "description": "LobeChat is a open-source, extensible (Function Calling), high-performance chatbot framework. It supports one-click free deployment of your private ChatGPT/LLM web application.",
   "tipi_version": 1,
-  "version": "1.143.2",
+  "version": "1.143.3",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1769737532000,
-  "updated_at": 1769737532000,
+  "created_at": 1769821145000,
+  "updated_at": 1769821145000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

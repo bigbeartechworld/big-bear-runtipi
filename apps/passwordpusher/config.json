@@ -7,7 +7,7 @@
   "id": "passwordpusher",
   "description": "Password Pusher is an open source application to communicate passwords over the web. Links to passwords expire after a certain number of views and/or time has passed.",
   "tipi_version": 1,
-  "version": "1.66.2",
+  "version": "1.67.0",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1769737586000,
-  "updated_at": 1769737586000,
+  "created_at": 1769821212000,
+  "updated_at": 1769821212000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
