@@ -1,0 +1,26 @@
+{
+  "name": "Storyteller",
+  "available": true,
+  "port": 8015,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "storyteller",
+  "description": "Storyteller is a self-hosted platform for ebook reading and library management. It supports multiple ebook formats including EPUB, PDF, and MOBI. Features include a modern web-based reader, library organization, metadata management, and multi-user support. Built with Django and includes optional Readium reader integration for enhanced reading experience.",
+  "tipi_version": 1,
+  "version": "web-v2.6.0-experimental.14",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "Self-hosted ebook reading platform",
+  "author": "storyteller-platform",
+  "source": "https://gitlab.com/storyteller-platform/storyteller",
+  "website": "https://storyteller-platform.gitlab.io/storyteller",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1769829492000,
+  "updated_at": 1769829492000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "storyteller",
+      "image": "registry.gitlab.com/storyteller-platform/storyteller:web-v2.6.0-experimental.14",
+      "internalPort": 8015,
+      "isMain": true
+    }
+  ]
+}
