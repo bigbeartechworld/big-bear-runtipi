@@ -7,7 +7,7 @@
   "id": "romm",
   "description": "ROM manager for organizing, enriching, and playing retro games, with support for 400+ platforms.",
   "tipi_version": 1,
-  "version": "4.5.0",
+  "version": "4.6.1",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1769821258000,
-  "updated_at": 1769821258000,
+  "created_at": 1769821357000,
+  "updated_at": 1769821357000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
