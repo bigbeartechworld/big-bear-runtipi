@@ -1,0 +1,53 @@
+services:
+  big-bear-openclaw-cli:
+    image: ghcr.io/openclaw/openclaw:2026.1.29
+    container_name: big-bear-openclaw-cli
+    environment:
+      - HOME=/home/node
+      - TERM=xterm-256color
+      - BROWSER=echo
+      - "OPENCLAW_GATEWAY_TOKEN=${OPENCLAW_GATEWAY_TOKEN:?Gateway token required. Generate with: openssl rand -hex 32}"
+      - CLAUDE_AI_SESSION_KEY=${CLAUDE_AI_SESSION_KEY:-}
+      - CLAUDE_WEB_SESSION_KEY=${CLAUDE_WEB_SESSION_KEY:-}
+      - CLAUDE_WEB_COOKIE=${CLAUDE_WEB_COOKIE:-}
+    volumes:
+      - ${APP_DATA_DIR}/data/openclaw_config:/home/node/.openclaw
+      - ${APP_DATA_DIR}/data/openclaw_workspace:/home/node/.openclaw/workspace
+    init: true
+    stdin_open: true
+    tty: true
+    network_mode: bridge
+    entrypoint: ["node", "dist/index.js"]
+    profiles:
+      - tools
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+  openclaw:
+    image: ghcr.io/openclaw/openclaw:2026.1.29
+    container_name: openclaw
+    environment:
+      - HOME=/home/node
+      - TERM=xterm-256color
+      - "OPENCLAW_GATEWAY_TOKEN=${OPENCLAW_GATEWAY_TOKEN:?Gateway token required. Generate with: openssl rand -hex 32}"
+      - CLAUDE_AI_SESSION_KEY=${CLAUDE_AI_SESSION_KEY:-}
+      - CLAUDE_WEB_SESSION_KEY=${CLAUDE_WEB_SESSION_KEY:-}
+      - CLAUDE_WEB_COOKIE=${CLAUDE_WEB_COOKIE:-}
+    volumes:
+      - ${APP_DATA_DIR}/data/openclaw_config:/home/node/.openclaw
+      - ${APP_DATA_DIR}/data/openclaw_workspace:/home/node/.openclaw/workspace
+    ports:
+      - "${APP_PORT}:18789"
+      - "18790:18790"
+    init: true
+    restart: unless-stopped
+    network_mode: bridge
+    command: ["node", "dist/index.js", "gateway", "--bind", "lan", "--port", "18789"]
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true
