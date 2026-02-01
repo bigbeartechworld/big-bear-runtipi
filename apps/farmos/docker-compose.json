@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "farmos",
-      "image": "farmos/farmos:3.5.0",
+      "image": "farmos/farmos:3.5.1",
       "internalPort": 8093,
       "isMain": true
     }
