@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "vikunja",
-      "image": "vikunja/vikunja:0.24.6",
+      "image": "vikunja/vikunja:1.0.0",
       "internalPort": 8140,
       "isMain": true
     }
