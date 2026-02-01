@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "rocket-chat-v8",
+      "image": "rocket.chat:8.0.1",
+      "internalPort": 3022,
+      "isMain": true
+    }
+  ]
+}
