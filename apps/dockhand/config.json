@@ -1,0 +1,26 @@
+{
+  "name": "Dockhand",
+  "available": true,
+  "port": 3025,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "dockhand",
+  "description": "Modern, efficient Docker management application providing real-time container management, Compose stack orchestration, and multi-environment support. Features include interactive terminal access, file browser, Git integration, and SSO via OIDC. All in a lightweight, secure and privacy-focused package.",
+  "tipi_version": 1,
+  "version": "latest",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "Modern Docker management you will like",
+  "author": "Finsys",
+  "source": "https://github.com/Finsys/dockhand",
+  "website": "https://dockhand.pro",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1769907849000,
+  "updated_at": 1769907849000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}
