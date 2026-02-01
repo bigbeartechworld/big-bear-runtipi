@@ -79,7 +79,7 @@ services:
       runtipi.managed: "true"
   reactive-resume:
     container_name: reactive-resume
-    image: amruthpillai/reactive-resume:v4.5.6
+    image: amruthpillai/reactive-resume:v5.0.3
     restart: unless-stopped
     ports:
       - ${APP_PORT}:3000

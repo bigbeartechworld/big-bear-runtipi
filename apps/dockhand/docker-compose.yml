@@ -1,0 +1,26 @@
+# Configuration for dockhand setup
+
+# Name of the big-bear-dockhand application
+# Service definitions for the big-bear-dockhand application
+services:
+  dockhand:
+    # Name of the container
+    container_name: dockhand
+    # Image to be used for the container
+    image: fnsys/dockhand:latest
+    # Container restart policy
+    restart: unless-stopped
+    # Volumes to be mounted to the container
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ${APP_DATA_DIR}/data:/app/data
+    # Ports mapping between host and container
+    ports:
+      - "${APP_PORT}:3000"
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true
