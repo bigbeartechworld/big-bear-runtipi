@@ -7,7 +7,7 @@
   "id": "onedev",
   "description": "Self-hosted Git Server with Kanban and CI/CD",
   "tipi_version": 1,
-  "version": "14.1.0",
+  "version": "14.1.1",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1769997106000,
-  "updated_at": 1769997106000,
+  "created_at": 1770027618000,
+  "updated_at": 1770027618000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
