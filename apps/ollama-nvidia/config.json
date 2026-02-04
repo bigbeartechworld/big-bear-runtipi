@@ -7,7 +7,7 @@
   "id": "ollama-nvidia",
   "description": "Get up and running with Llama 3, Mistral, Gemma, and other large language models.",
   "tipi_version": 1,
-  "version": "0.15.2",
+  "version": "0.15.3",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1770083445000,
-  "updated_at": 1770083445000,
+  "created_at": 1770169551000,
+  "updated_at": 1770169551000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
