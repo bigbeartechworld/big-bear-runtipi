@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "faster-whisper",
-      "image": "linuxserver/faster-whisper:3.0.2",
+      "image": "linuxserver/faster-whisper:3.1.0",
       "internalPort": 7575,
       "isMain": true
     }

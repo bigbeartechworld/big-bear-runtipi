@@ -7,7 +7,7 @@
   "id": "faster-whisper",
   "description": "Faster-whisper is a reimplementation of OpenAI's Whisper model using CTranslate2, which is a fast inference engine for Transformer models. This container provides a Wyoming protocol server for faster-whisper.",
   "tipi_version": 1,
-  "version": "3.0.2",
+  "version": "3.1.0",
   "categories": [
     "utilities"
   ],
@@ -18,8 +18,8 @@
   "supported_architectures": [
     "amd64"
   ],
-  "created_at": 1770169450000,
-  "updated_at": 1770169450000,
+  "created_at": 1770255930000,
+  "updated_at": 1770255930000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
