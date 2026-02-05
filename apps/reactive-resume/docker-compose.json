@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "reactive-resume",
-      "image": "amruthpillai/reactive-resume:v5.0.4",
+      "image": "amruthpillai/reactive-resume:v5.0.5",
       "internalPort": 3020,
       "isMain": true
     }
