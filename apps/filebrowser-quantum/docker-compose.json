@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "filebrowser-quantum",
+      "image": "gtstef/filebrowser:1.1.2-stable",
+      "internalPort": 8700,
+      "isMain": true
+    }
+  ]
+}

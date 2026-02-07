@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "penpot",
-      "image": "penpotapp/frontend:2.12.1",
+      "image": "penpotapp/frontend:2.13.0",
       "internalPort": 9003,
       "isMain": true
     }
