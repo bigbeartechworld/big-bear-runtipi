@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "beaverhabits",
-      "image": "daya0576/beaverhabits:0.8.1",
+      "image": "daya0576/beaverhabits:0.8.2",
       "internalPort": 8083,
       "isMain": true
     }
