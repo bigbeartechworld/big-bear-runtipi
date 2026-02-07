@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "flowise",
-      "image": "flowiseai/flowise:3.0.12",
+      "image": "flowiseai/flowise:3.0.13",
       "internalPort": 8009,
       "isMain": true
     }
