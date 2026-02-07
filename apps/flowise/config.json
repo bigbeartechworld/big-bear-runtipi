@@ -7,7 +7,7 @@
   "id": "flowise",
   "description": "Flowise AI is an Open source UI visual tool to build your customized LLM orchestration flow & AI agents. Developing LLM apps takeslength iterations. With low code approach, Flowise AI enable quick iterations to go from testing to production.",
   "tipi_version": 1,
-  "version": "3.0.12",
+  "version": "3.0.13",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1770428567000,
-  "updated_at": 1770428567000,
+  "created_at": 1770467689000,
+  "updated_at": 1770467689000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

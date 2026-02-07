@@ -22,7 +22,7 @@ services:
       - tipi_main_network
   wordpress:
     # Docker image to use for the application
-    image: wordpress:6.9.0
+    image: wordpress:6.9.1
     # Port mapping for the application
     ports:
       - ${APP_PORT}:80
