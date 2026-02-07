@@ -1,0 +1,26 @@
+{
+  "name": "FileBrowser Quantum",
+  "available": true,
+  "port": 8700,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "filebrowser-quantum",
+  "description": "A self-hosted web file manager forked from FileBrowser with advanced features including OIDC authentication, indexed search, office document previews, and multi-source support.",
+  "tipi_version": 1,
+  "version": "1.1.2-stable",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "Advanced self-hosted web file manager",
+  "author": "gtsteffaniak",
+  "source": "https://github.com/gtsteffaniak/filebrowser",
+  "website": "https://hub.docker.com/r/gtstef/filebrowser",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1770505409000,
+  "updated_at": 1770505409000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}
