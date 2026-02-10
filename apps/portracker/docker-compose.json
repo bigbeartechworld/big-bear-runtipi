@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "portracker",
-      "image": "mostafawahied/portracker:1.2",
+      "image": "mostafawahied/portracker:1.3",
       "internalPort": 4999,
       "isMain": true
     }
