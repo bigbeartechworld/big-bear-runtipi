@@ -7,7 +7,7 @@
   "id": "crafty",
   "description": "Crafty 4 is the next iteration of our Minecraft Server Wrapper / Controller / Launcher.",
   "tipi_version": 1,
-  "version": "4.7.0",
+  "version": "4.9.0",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1770839546000,
-  "updated_at": 1770839546000,
+  "created_at": 1770842161000,
+  "updated_at": 1770842161000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

@@ -7,7 +7,7 @@
   "id": "openclaw",
   "description": "OpenClaw is a self-hosted AI agent platform that provides Claude AI integration through a local gateway. It enables running AI assistants with local tool execution, file access, and workspace management. Features include WebSocket gateway, browser automation, and extensible command framework.",
   "tipi_version": 1,
-  "version": "2026.1.29",
+  "version": "2026.2.9",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1770839664000,
-  "updated_at": 1770839664000,
+  "created_at": 1770842299000,
+  "updated_at": 1770842299000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

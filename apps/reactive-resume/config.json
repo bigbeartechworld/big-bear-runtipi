@@ -7,7 +7,7 @@
   "id": "reactive-resume",
   "description": "A free and open-source resume builder that simplifies the process of creating, updating, and sharing your resume.",
   "tipi_version": 1,
-  "version": "v5.0.5",
+  "version": "v5.0.9",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1770839706000,
-  "updated_at": 1770839706000,
+  "created_at": 1770842342000,
+  "updated_at": 1770842342000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
