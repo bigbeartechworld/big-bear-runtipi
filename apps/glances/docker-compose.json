@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "glances",
-      "image": "nicolargo/glances:4.3.0.8-full",
+      "image": "nicolargo/glances:4.5.0.4-full",
       "internalPort": 61208,
       "isMain": true
     }

@@ -7,7 +7,7 @@
   "id": "cyberchef",
   "description": "CyberChef is a simple, intuitive web app for carrying out all manner of cyber operations within a web browser. These operations include simple encoding like XOR and Base64, more complex encryption like AES, DES and Blowfish, creating binary and hexdumps, compression and decompression of data, calculating hashes and checksums, IPv6 and X.509 parsing, changing character encodings, and much more.",
   "tipi_version": 1,
-  "version": "10.19.4",
+  "version": "10.22.0",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1770839547000,
-  "updated_at": 1770839547000,
+  "created_at": 1770842128000,
+  "updated_at": 1770842128000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

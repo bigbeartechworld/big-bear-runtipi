@@ -7,7 +7,7 @@
   "id": "glances",
   "description": "Glances is an open-source system cross-platform monitoring tool. It allows real-time monitoring of various aspects of your system such as CPU, memory, disk, network usage etc. It also allows monitoring of running processes, logged in users, temperatures, voltages, fan speeds etc. It also supports container monitoring, it supports different container management systems such as Docker, LXC. The information is presented in an easy to read dashboard and can also be used for remote monitoring of systems via a web interface or command line interface. It is easy to install and use and can be customized to show only the information that you are interested in.",
   "tipi_version": 1,
-  "version": "4.3.0.8-full",
+  "version": "4.5.0.4-full",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1770839581000,
-  "updated_at": 1770839581000,
+  "created_at": 1770842172000,
+  "updated_at": 1770842172000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

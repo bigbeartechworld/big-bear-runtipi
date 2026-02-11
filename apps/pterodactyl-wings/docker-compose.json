@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "pterodactyl-wings",
-      "image": "ghcr.io/pterodactyl/wings:v1.11.13",
+      "image": "ghcr.io/pterodactyl/wings:v1.12.1",
       "internalPort": 2022,
       "isMain": true
     }
