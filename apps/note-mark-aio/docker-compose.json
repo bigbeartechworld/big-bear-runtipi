@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "note-mark-aio",
-      "image": "ghcr.io/enchant97/note-mark-aio:0.18.0",
+      "image": "ghcr.io/enchant97/note-mark-aio:0.19.0",
       "internalPort": 8007,
       "isMain": true
     }

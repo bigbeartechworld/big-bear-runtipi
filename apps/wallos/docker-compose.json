@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "wallos",
-      "image": "bellamy/wallos:4.6.0",
+      "image": "bellamy/wallos:4.6.1",
       "internalPort": 8282,
       "isMain": true
     }

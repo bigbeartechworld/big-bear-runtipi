@@ -7,7 +7,7 @@
   "id": "tandoor",
   "description": "Drop your collection of links and notes. Get Tandoor and never look back onto a time without recipe management, storage, sharing and collaborative cooking!",
   "tipi_version": 1,
-  "version": "2.3.6",
+  "version": "2.5.0",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1770839734000,
-  "updated_at": 1770839734000,
+  "created_at": 1770842369000,
+  "updated_at": 1770842369000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

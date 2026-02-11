@@ -7,7 +7,7 @@
   "id": "pterodactyl-panel",
   "description": "Pterodactyl® is a free, open-source game server management panel built with PHP, React, and Go. Designed with security in mind, Pterodactyl runs all game servers in isolated Docker containers while exposing a beautiful and intuitive UI to end users.",
   "tipi_version": 1,
-  "version": "v1.11.11",
+  "version": "v1.12.0",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1770839701000,
-  "updated_at": 1770839701000,
+  "created_at": 1770842337000,
+  "updated_at": 1770842337000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

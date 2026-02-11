@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "authentik",
-      "image": "ghcr.io/goauthentik/server:2025.10.3",
+      "image": "ghcr.io/goauthentik/server:2025.12.3",
       "internalPort": 9443,
       "isMain": true
     }
