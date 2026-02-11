@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "firefox",
-      "image": "lscr.io/linuxserver/firefox:1147.0.2",
+      "image": "lscr.io/linuxserver/firefox:1147.0.3",
       "internalPort": 6904,
       "isMain": true
     }
