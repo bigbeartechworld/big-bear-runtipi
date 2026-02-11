@@ -7,7 +7,7 @@
   "id": "pocketid",
   "description": "Simple and easy-to-use OIDC provider that allows users to authenticate with their passkeys to your services.",
   "tipi_version": 1,
-  "version": "v1.16",
+  "version": "v2.2",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1770839693000,
-  "updated_at": 1770839693000,
+  "created_at": 1770842310000,
+  "updated_at": 1770842310000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

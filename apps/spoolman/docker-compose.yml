@@ -1,6 +1,6 @@
 services:
   spoolman:
-    image: ghcr.io/donkie/spoolman:0.22.1 # Image to use for the spoolman service
+    image: ghcr.io/donkie/spoolman:0.23.1 # Image to use for the spoolman service
     ports:
       - "${APP_PORT}:8000" # Maps port 7912 on the host to port 8000 on the container
     volumes:

@@ -7,7 +7,7 @@
   "id": "ntfysh",
   "description": "ntfy (pronounced notify) is a simple HTTP-based pub-sub notification service. It allows you to send notifications to your phone or desktop via scripts from any computer, and/or using a REST API. It's infinitely flexible, and 100% free software.",
   "tipi_version": 1,
-  "version": "v2.16.0",
+  "version": "v2.17.0",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1770839652000,
-  "updated_at": 1770839652000,
+  "created_at": 1770842260000,
+  "updated_at": 1770842260000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

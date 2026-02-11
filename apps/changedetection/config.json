@@ -7,7 +7,7 @@
   "id": "changedetection",
   "description": "The best and simplest free open source website change detection, restock monitor and notification service.",
   "tipi_version": 1,
-  "version": "0.51.4",
+  "version": "0.52.9",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1770839532000,
-  "updated_at": 1770839532000,
+  "created_at": 1770842111000,
+  "updated_at": 1770842111000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
