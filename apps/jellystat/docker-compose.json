@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "jellystat",
-      "image": "cyfershepard/jellystat:1.1.7",
+      "image": "cyfershepard/jellystat:1.1.8",
       "internalPort": 3010,
       "isMain": true
     }

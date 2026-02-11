@@ -7,7 +7,7 @@
   "id": "ihatemoney",
   "description": "I hate money is a web application made to ease shared budget management. It keeps track of who bought what, when, and for whom; and helps to settle the bills.",
   "tipi_version": 1,
-  "version": "6.1.5",
+  "version": "7.0.0",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1770775155000,
-  "updated_at": 1770775155000,
+  "created_at": 1770839592000,
+  "updated_at": 1770839592000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
