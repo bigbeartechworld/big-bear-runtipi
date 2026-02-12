@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "docmost",
-      "image": "docmost/docmost:0.25.2",
+      "image": "docmost/docmost:0.25.3",
       "internalPort": 3007,
       "isMain": true
     }
