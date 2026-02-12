@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "speedtest-tracker",
-      "image": "linuxserver/speedtest-tracker:1.13.8",
+      "image": "linuxserver/speedtest-tracker:1.13.9",
       "internalPort": 8130,
       "isMain": true
     }
