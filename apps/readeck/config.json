@@ -7,7 +7,7 @@
   "id": "readeck",
   "description": "Readeck is a simple web application that lets you save the precious readable content of web pages you like and want to keep forever. It is a self-hosted alternative to Instapaper and Wallabag with a modern interface and powerful features for managing your bookmarks and reading list.",
   "tipi_version": 1,
-  "version": "0.21.5",
+  "version": "0.21.6",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1770842326000,
-  "updated_at": 1770842326000,
+  "created_at": 1770858238000,
+  "updated_at": 1770858238000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
