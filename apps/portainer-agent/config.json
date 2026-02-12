@@ -7,7 +7,7 @@
   "id": "portainer-agent",
   "description": "Portainer uses the Portainer Agent container to communicate with the Portainer Server instance and provide access to the node's resources. This document will outline how to install the Portainer Agent on your node and how to connect to it from your Portainer Server instance. If you do not have a working Portainer Server instance yet, please refer to the Portainer Server installation guide first.",
   "tipi_version": 1,
-  "version": "2.38.0",
+  "version": "2.38.1",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1770842312000,
-  "updated_at": 1770842312000,
+  "created_at": 1770858241000,
+  "updated_at": 1770858241000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
