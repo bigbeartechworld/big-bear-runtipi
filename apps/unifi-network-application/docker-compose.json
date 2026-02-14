@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "unifi-network-application",
-      "image": "linuxserver/unifi-network-application:10.1.84",
+      "image": "linuxserver/unifi-network-application:10.1.85",
       "internalPort": 8446,
       "isMain": true
     }
