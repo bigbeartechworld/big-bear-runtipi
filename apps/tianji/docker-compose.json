@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "tianji",
-      "image": "moonrailgun/tianji:1.31.11",
+      "image": "moonrailgun/tianji:1.31.13",
       "internalPort": 12345,
       "isMain": true
     }
