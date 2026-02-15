@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "tandoor",
-      "image": "ghcr.io/tandoorrecipes/recipes:2.5.0",
+      "image": "ghcr.io/tandoorrecipes/recipes:2.5.3",
       "internalPort": 8134,
       "isMain": true
     }
