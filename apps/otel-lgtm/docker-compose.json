@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "otel-lgtm",
-      "image": "grafana/otel-lgtm:0.17.1",
+      "image": "grafana/otel-lgtm:0.18.1",
       "internalPort": 3014,
       "isMain": true
     }
