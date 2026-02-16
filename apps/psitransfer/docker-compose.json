@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "psitransfer",
-      "image": "psitrax/psitransfer:v2.4.0",
+      "image": "psitrax/psitransfer:v2.4.1",
       "internalPort": 3000,
       "isMain": true
     }

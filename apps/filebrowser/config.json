@@ -7,7 +7,7 @@
   "id": "filebrowser",
   "description": "Reliable and Performant File Management Desktop Sync and File Sharing Tool.",
   "tipi_version": 1,
-  "version": "v2.58.0-s6",
+  "version": "v2.59.0-s6",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1771206593000,
-  "updated_at": 1771206593000,
+  "created_at": 1771265812000,
+  "updated_at": 1771265812000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
