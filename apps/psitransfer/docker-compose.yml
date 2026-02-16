@@ -5,7 +5,7 @@
 services:
   psitransfer:
     # Image to be used for the container
-    image: psitrax/psitransfer:v2.4.0
+    image: psitrax/psitransfer:v2.4.1
     # Name of the container
     container_name: psitransfer
     # Run as UID 1000 (node user) to match the image's default user

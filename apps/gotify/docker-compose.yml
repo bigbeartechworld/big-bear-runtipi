@@ -2,7 +2,7 @@
 # Service definitions for the big-bear-gotify application
 services:
   gotify:
-    image: gotify/server:2.8.0 # Docker image for the service
+    image: gotify/server:2.9.0 # Docker image for the service
     ports:
       - ${APP_PORT}:80 # Port mapping (host:container)
     environment: # Environment variables for the service
