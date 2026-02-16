@@ -7,7 +7,7 @@
   "id": "psitransfer",
   "description": "PsiTransfer is a simple open source self-hosted file sharing solution. It's an alternative to paid services like Dropbox and WeTransfer. Features include no accounts or logins required, mobile friendly responsive interface, support for many and very big files with resumable uploads and downloads, expiring upload buckets, one-time downloads, password protected downloads, and admin dashboard.",
   "tipi_version": 1,
-  "version": "v2.4.0",
+  "version": "v2.4.1",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1771206742000,
-  "updated_at": 1771206742000,
+  "created_at": 1771265952000,
+  "updated_at": 1771265952000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
