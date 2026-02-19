@@ -7,7 +7,7 @@
   "id": "octoprint",
   "description": "OctoPrint is the snappy web interface for your 3D printer!",
   "tipi_version": 1,
-  "version": "1.11.6",
+  "version": "1.11.7",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1771379651000,
-  "updated_at": 1771379651000,
+  "created_at": 1771465948000,
+  "updated_at": 1771465948000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "octoprint",
-      "image": "octoprint/octoprint:1.11.6",
+      "image": "octoprint/octoprint:1.11.7",
       "internalPort": 1082,
       "isMain": true
     }
