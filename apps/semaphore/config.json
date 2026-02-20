@@ -7,7 +7,7 @@
   "id": "semaphore",
   "description": "Ansible Semaphore is a modern UI for Ansible. It lets you easily run Ansible playbooks, get notifications about fails, control access to deployment system.",
   "tipi_version": 1,
-  "version": "v2.17.7",
+  "version": "v2.17.8",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1771466014000,
-  "updated_at": 1771466014000,
+  "created_at": 1771552196000,
+  "updated_at": 1771552196000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
