@@ -7,7 +7,7 @@
   "id": "otel-lgtm",
   "description": "An OpenTelemetry Backend in a Docker Image.",
   "tipi_version": 1,
-  "version": "0.18.1",
+  "version": "0.19.0",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1771685510000,
-  "updated_at": 1771685510000,
+  "created_at": 1771688432000,
+  "updated_at": 1771688432000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
