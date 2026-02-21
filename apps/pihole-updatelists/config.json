@@ -7,7 +7,7 @@
   "id": "pihole-updatelists",
   "description": "The Pi-hole® is a DNS sinkhole that protects your devices from unwanted content without installing any client-side software. This is a fork of the Pi-hole® application that adds the ability to update the lists of blocked domains and regexes.",
   "tipi_version": 1,
-  "version": "2025.11.1",
+  "version": "2026.02.0",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1771638299000,
-  "updated_at": 1771638299000,
+  "created_at": 1771684982000,
+  "updated_at": 1771684982000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
