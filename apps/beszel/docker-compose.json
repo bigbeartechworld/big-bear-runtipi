@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "beszel",
-      "image": "henrygd/beszel:0.18.3",
+      "image": "henrygd/beszel:0.18.4",
       "internalPort": 8090,
       "isMain": true
     }
