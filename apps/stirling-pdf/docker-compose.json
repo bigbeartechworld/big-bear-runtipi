@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "stirling-pdf",
-      "image": "stirlingtools/stirling-pdf:2.5.1",
+      "image": "stirlingtools/stirling-pdf:2.5.2",
       "internalPort": 8132,
       "isMain": true
     }
