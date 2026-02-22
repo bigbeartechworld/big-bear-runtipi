@@ -1,0 +1,26 @@
+{
+  "name": "Planka v2",
+  "available": true,
+  "port": 3017,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "planka-v2",
+  "description": "The realtime kanban board for workgroups built with React and Redux.",
+  "tipi_version": 1,
+  "version": "2.0.1",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "Free open source kanban board for workgroups.",
+  "author": "plankanban",
+  "source": "",
+  "website": "https://hub.docker.com/r/plankanban/planka",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1771726364000,
+  "updated_at": 1771726364000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

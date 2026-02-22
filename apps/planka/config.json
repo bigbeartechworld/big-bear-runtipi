@@ -1,5 +1,5 @@
 {
-  "name": "Planka",
+  "name": "Planka (Legacy)",
   "available": true,
   "port": 3017,
   "exposable": true,
@@ -11,7 +11,7 @@
   "categories": [
     "utilities"
   ],
-  "short_desc": "Free open source kanban board for workgroups.",
+  "short_desc": "Legacy v1 - Use Planka v2 for new installs.",
   "author": "plankanban",
   "source": "",
   "website": "https://hub.docker.com/r/plankanban/planka",
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1771725230000,
-  "updated_at": 1771725230000,
+  "created_at": 1771726361000,
+  "updated_at": 1771726361000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

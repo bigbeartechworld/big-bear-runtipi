@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "filebrowser-quantum",
-      "image": "gtstef/filebrowser:1.1.2-stable",
+      "image": "gtstef/filebrowser:1.1.3-stable",
       "internalPort": 8700,
       "isMain": true
     }
