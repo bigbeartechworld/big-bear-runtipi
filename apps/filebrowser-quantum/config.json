@@ -7,7 +7,7 @@
   "id": "filebrowser-quantum",
   "description": "A self-hosted web file manager forked from FileBrowser with advanced features including OIDC authentication, indexed search, office document previews, and multi-source support.",
   "tipi_version": 1,
-  "version": "1.1.2-stable",
+  "version": "1.1.3-stable",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1771725109000,
-  "updated_at": 1771725109000,
+  "created_at": 1771726203000,
+  "updated_at": 1771726203000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

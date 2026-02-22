@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "dozzle",
-      "image": "amir20/dozzle:v9.0.3",
+      "image": "amir20/dozzle:v10.0.4",
       "internalPort": 8888,
       "isMain": true
     }
