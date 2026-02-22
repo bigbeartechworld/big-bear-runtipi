@@ -1,6 +1,6 @@
 services:
   big-bear-openclaw-cli:
-    image: ghcr.io/openclaw/openclaw:2026.2.19
+    image: ghcr.io/openclaw/openclaw:2026.2.21
     container_name: big-bear-openclaw-cli
     environment:
       - HOME=/home/node
@@ -25,7 +25,7 @@ services:
     networks:
       - tipi_main_network
   openclaw:
-    image: ghcr.io/openclaw/openclaw:2026.2.19
+    image: ghcr.io/openclaw/openclaw:2026.2.21
     container_name: openclaw
     environment:
       - HOME=/home/node
