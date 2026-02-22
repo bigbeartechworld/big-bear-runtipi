@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "lyrionmusicserver",
-      "image": "lmscommunity/lyrionmusicserver:9.1.0",
+      "image": "lmscommunity/lyrionmusicserver:9.2.0",
       "internalPort": 9002,
       "isMain": true
     }
