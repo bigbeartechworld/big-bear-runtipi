@@ -7,7 +7,7 @@
   "id": "genmon",
   "description": "Generac (and other models) Generator Monitoring using a Raspberry Pi and WiFi",
   "tipi_version": 1,
-  "version": "1.19.06",
+  "version": "1.19.08",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1772070363000,
-  "updated_at": 1772070363000,
+  "created_at": 1772156695000,
+  "updated_at": 1772156695000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
