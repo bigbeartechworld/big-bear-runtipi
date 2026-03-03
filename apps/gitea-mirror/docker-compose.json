@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "gitea-mirror",
-      "image": "ghcr.io/raylabshq/gitea-mirror:v3.9.6",
+      "image": "ghcr.io/raylabshq/gitea-mirror:v3.10.1",
       "internalPort": 4321,
       "isMain": true
     }
