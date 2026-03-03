@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "nightscout",
-      "image": "nightscout/cgm-remote-monitor:15.0.4",
+      "image": "nightscout/cgm-remote-monitor:15.0.5",
       "internalPort": 1337,
       "isMain": true
     }
