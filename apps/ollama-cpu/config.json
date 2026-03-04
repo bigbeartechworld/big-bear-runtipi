@@ -7,7 +7,7 @@
   "id": "ollama-cpu",
   "description": "Get up and running with Llama 3, Mistral, Gemma, and other large language models.",
   "tipi_version": 1,
-  "version": "0.17.5",
+  "version": "0.17.6",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1772574165000,
-  "updated_at": 1772574165000,
+  "created_at": 1772588734000,
+  "updated_at": 1772588734000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
