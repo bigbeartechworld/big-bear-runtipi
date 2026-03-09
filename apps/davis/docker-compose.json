@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "davis",
-      "image": "ghcr.io/tchapi/davis-standalone:5.3.0",
+      "image": "ghcr.io/tchapi/davis-standalone:5.4.0",
       "internalPort": 9000,
       "isMain": true
     }

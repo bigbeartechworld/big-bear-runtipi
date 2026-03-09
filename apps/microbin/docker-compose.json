@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "microbin",
-      "image": "danielszabo99/microbin:2.1.2",
+      "image": "danielszabo99/microbin:2.1.4",
       "internalPort": 8889,
       "isMain": true
     }

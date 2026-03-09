@@ -7,7 +7,7 @@
   "id": "davis",
   "description": "A simple, fully translatable admin interface for sabre/dav based on Symfony 5 and Bootstrap 5, initially inspired by Baïkal. Provides user edition, calendar creation and sharing, and address book creation. The interface is simple and straightforward, responsive, and provides a light and a dark mode.",
   "tipi_version": 1,
-  "version": "5.3.0",
+  "version": "5.4.0",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1772934454000,
-  "updated_at": 1772934454000,
+  "created_at": 1773020906000,
+  "updated_at": 1773020906000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
