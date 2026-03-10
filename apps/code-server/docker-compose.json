@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "code-server",
-      "image": "linuxserver/code-server:4.109.5",
+      "image": "linuxserver/code-server:4.110.0",
       "internalPort": 8088,
       "isMain": true
     }
