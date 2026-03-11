@@ -7,7 +7,7 @@
   "id": "dashy",
   "description": "Dashy helps you organize your self-hosted services by making them accessible from a single place",
   "tipi_version": 1,
-  "version": "3.1.2",
+  "version": "3.1.5",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1773106232000,
-  "updated_at": 1773106232000,
+  "created_at": 1773192625000,
+  "updated_at": 1773192625000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
