@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "readeck",
-      "image": "codeberg.org/readeck/readeck:0.22.1",
+      "image": "codeberg.org/readeck/readeck:0.22.2",
       "internalPort": 8012,
       "isMain": true
     }

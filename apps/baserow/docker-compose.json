@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "baserow",
-      "image": "baserow/baserow:2.1.5",
+      "image": "baserow/baserow:2.1.6",
       "internalPort": 7350,
       "isMain": true
     }
