@@ -7,7 +7,7 @@
   "id": "stirling-pdf",
   "description": "Stirling PDF - Local hosted web based PDF editor",
   "tipi_version": 1,
-  "version": "2.7.1",
+  "version": "2.7.2",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1773452794000,
-  "updated_at": 1773452794000,
+  "created_at": 1773510717000,
+  "updated_at": 1773510717000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
