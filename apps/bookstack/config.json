@@ -7,7 +7,7 @@
   "id": "bookstack",
   "description": "BookStack is a simple, self-hosted, easy-to-use platform for organising and storing information. Default login admin@admin.com password password",
   "tipi_version": 1,
-  "version": "25.12.20251224",
+  "version": "26.03.20260315",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1773611205000,
-  "updated_at": 1773611205000,
+  "created_at": 1773626391000,
+  "updated_at": 1773626391000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
