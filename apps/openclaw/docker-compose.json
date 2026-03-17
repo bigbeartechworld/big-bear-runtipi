@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "openclaw",
-      "image": "ghcr.io/openclaw/openclaw:2026.3.12",
+      "image": "ghcr.io/openclaw/openclaw:2026.3.13-1",
       "internalPort": 18789,
       "isMain": true
     }

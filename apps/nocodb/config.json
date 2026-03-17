@@ -7,7 +7,7 @@
   "id": "nocodb",
   "description": "NocoDB allows building no-code database solutions with ease of spreadsheets. Bring your own database or choose ours! Millions of rows? Not a problem. Your Data. Your rules. You are in control.",
   "tipi_version": 1,
-  "version": "0.301.3",
+  "version": "0.301.4",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1773712202000,
-  "updated_at": 1773712202000,
+  "created_at": 1773780580000,
+  "updated_at": 1773780580000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
