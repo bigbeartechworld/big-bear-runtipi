@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "immich-kiosk",
-      "image": "ghcr.io/damongolding/immich-kiosk:0.33.3",
+      "image": "ghcr.io/damongolding/immich-kiosk:0.34.0",
       "internalPort": 3009,
       "isMain": true
     }
