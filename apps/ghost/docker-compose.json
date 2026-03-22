@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "ghost",
-      "image": "ghost:6.22.0-alpine",
+      "image": "ghost:6.22.1-alpine",
       "internalPort": 2368,
       "isMain": true
     }
