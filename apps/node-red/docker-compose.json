@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "node-red",
-      "image": "nodered/node-red:4.1.7",
+      "image": "nodered/node-red:4.1.8",
       "internalPort": 1880,
       "isMain": true
     }
