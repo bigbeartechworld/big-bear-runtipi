@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "dbgate",
-      "image": "dbgate/dbgate:7.1.5-alpine",
+      "image": "dbgate/dbgate:7.1.6-alpine",
       "internalPort": 3006,
       "isMain": true
     }
