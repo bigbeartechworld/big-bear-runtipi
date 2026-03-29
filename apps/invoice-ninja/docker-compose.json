@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "invoice-ninja",
-      "image": "invoiceninja/invoiceninja:5.13.8",
+      "image": "invoiceninja/invoiceninja:5.13.9",
       "internalPort": 8101,
       "isMain": true
     }
