@@ -5,7 +5,7 @@
 services:
   dashy:
     # Image to be used for the app service
-    image: lissy93/dashy:3.2.1
+    image: lissy93/dashy:3.2.3
     # Name of the container
     container_name: dashy
     # Uncomment below if you want to mount volumes
