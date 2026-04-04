@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "romm",
-      "image": "rommapp/romm:4.7.0",
+      "image": "rommapp/romm:4.8.1",
       "internalPort": 1083,
       "isMain": true
     }
