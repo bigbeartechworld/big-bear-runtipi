@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "genmon",
-      "image": "bigbeartechworld/big-bear-genmon:1.19.08",
+      "image": "bigbeartechworld/big-bear-genmon:1.20.00",
       "internalPort": 8004,
       "isMain": true
     }
