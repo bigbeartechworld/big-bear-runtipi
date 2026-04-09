@@ -7,7 +7,7 @@
   "id": "appsmith",
   "description": "Low code project to build admin panels, internal tools, and dashboards, integrating 15+ databases.",
   "tipi_version": 1,
-  "version": "v1.73.1",
+  "version": "v1.98.1",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1775613613000,
-  "updated_at": 1775613613000,
+  "created_at": 1775699535000,
+  "updated_at": 1775699535000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
