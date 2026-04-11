@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "ollama-nvidia",
-      "image": "ollama/ollama:0.20.3",
+      "image": "ollama/ollama:0.20.5",
       "internalPort": 11436,
       "isMain": true
     }
