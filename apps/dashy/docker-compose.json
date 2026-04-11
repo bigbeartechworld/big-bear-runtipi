@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "dashy",
-      "image": "lissy93/dashy:3.2.10",
+      "image": "lissy93/dashy:3.2.11",
       "internalPort": 4001,
       "isMain": true
     }
