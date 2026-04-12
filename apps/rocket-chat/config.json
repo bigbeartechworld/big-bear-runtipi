@@ -1,5 +1,5 @@
 {
-  "name": "Rocket.Chat",
+  "name": "Rocket.Chat (Legacy)",
   "available": true,
   "port": 3021,
   "exposable": true,
@@ -18,8 +18,8 @@
   "supported_architectures": [
     "amd64"
   ],
-  "created_at": 1776016055000,
-  "updated_at": 1776016055000,
+  "created_at": 1776021168000,
+  "updated_at": 1776021168000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

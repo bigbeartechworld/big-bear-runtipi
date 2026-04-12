@@ -1,0 +1,83 @@
+# Configuration for FarmOS v4 setup
+
+# FARMOS V4 - NEW DEPLOYMENT
+# ===========================
+# This is a SEPARATE app from 'farmos' (v3.x Legacy). They can coexist.
+#
+# FarmOS v4 requires:
+# - PHP 8.4 (Drupal 11)
+# - MariaDB 10.6+ (current legacy uses MariaDB 10)
+# - Mandatory upgrade path: must be on farmOS 3.x before upgrading to 4.x
+#
+# FOR NEW INSTALLATIONS:
+# - Deploy this app for new FarmOS instances
+#
+# FOR MIGRATION FROM V3:
+# - Do NOT uninstall your existing 'farmos' v3 app
+# - Ensure you are on the latest farmOS 3.x first
+# - Upgrade your database to MariaDB 10.6+ before migrating data
+# - Create backups before any migration
+# - See: https://farmos.org/hosting/install/
+
+# Name of the big-bear-farmos-v4 application
+# Service definitions for the big-bear-farmos-v4 application
+services:
+  # MariaDB database service configuration for FarmOS v4
+  big-bear-farmos-v4-db:
+    # Specify the container name
+    container_name: big-bear-farmos-v4-db
+    # Use MariaDB 10.6 image (minimum required for farmOS v4)
+    image: mariadb:10.6
+    # Mount the database files to persist data
+    volumes:
+      - "${APP_DATA_DIR}/db:/var/lib/mysql"
+    # Expose MariaDB port to host (different from v3's 3306)
+    ports:
+      - "3307:3306"
+    # Database environment configuration
+    environment:
+      # Root user password
+      MYSQL_ROOT_PASSWORD: 037ed96f-5f27-4fa8-bd7f-49b4a804a05c
+      # Name of the database to create
+      MYSQL_DATABASE: big_bear_farmos
+      # Create a database user
+      MYSQL_USER: farmos
+      # Set the database user password
+      MYSQL_PASSWORD: 037ed96f-5f27-4fa8-bd7f-49b4a804a05c
+    # Health check configuration to ensure database is running properly
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      start_period: 1m
+      start_interval: 10s
+      interval: 1m
+      timeout: 5s
+      retries: 3
+    # Connect to the FarmOS v4 network
+    networks:
+      - tipi_main_network
+    labels:
+      runtipi.managed: "true"
+  farmos-v4:
+    # Name of the container
+    container_name: farmos-v4
+    # Image to be used for the container
+    image: farmos/farmos:4.0.0
+    # Container restart policy
+    restart: unless-stopped
+    # Volumes to be mounted to the container
+    volumes:
+      # Mounting the sites directory
+      - ${APP_DATA_DIR}/sites:/opt/drupal/web/sites
+    # Ports mapping between host and container
+    ports:
+      # Mapping port 8083 of the host to port 80 of the container (8080=v3, 8081=vikunja, 8082=vikunja-v2)
+      - "${APP_PORT}:80"
+    depends_on:
+      - big-bear-farmos-v4-db
+    networks:
+      - tipi_main_network
+    labels:
+      runtipi.managed: "true"
+networks:
+  tipi_main_network:
+    external: true
