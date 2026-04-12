@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "vikunja-v2",
+      "image": "vikunja/vikunja:2.3.0",
+      "internalPort": 8082,
+      "isMain": true
+    }
+  ]
+}

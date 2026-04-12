@@ -1,0 +1,26 @@
+{
+  "name": "Vikunja v2",
+  "available": true,
+  "port": 8082,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "vikunja-v2",
+  "description": "The open-source, self-hostable to-do app. Organize everything, on all platforms.",
+  "tipi_version": 1,
+  "version": "2.3.0",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "Vikunja",
+  "author": "kolaente",
+  "source": "",
+  "website": "https://hub.docker.com/r/vikunja/vikunja",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1776021211000,
+  "updated_at": 1776021211000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

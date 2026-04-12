@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "passwordpusher-v2",
+      "image": "pglombardo/pwpush:2.2.2",
+      "internalPort": 5101,
+      "isMain": true
+    }
+  ]
+}
