@@ -1,0 +1,27 @@
+services:
+  seerr:
+    image: ghcr.io/seerr-team/seerr:3.1.0 # Image to use for the seerr service
+    init: true # Enable init process
+    container_name: seerr
+    ports:
+      - "${APP_PORT}:5055" # Maps port 5056 on the host to port 5055 on the container
+    volumes:
+      - ${APP_DATA_DIR}/config:/app/config # Binds a volume from host to container for configuration
+    environment:
+      - LOG_LEVEL=debug # Sets the log level to debug
+      - TZ=$TZ # Sets the timezone, using host's timezone variable
+    healthcheck:
+      test: wget --no-verbose --tries=1 --spider http://localhost:5055/api/v1/settings/public || exit 1
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 20s
+    restart: unless-stopped # Service will restart unless it is explicitly stopped
+    network_mode: bridge # Uses bridge network mode
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

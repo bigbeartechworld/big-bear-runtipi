@@ -1,17 +1,17 @@
 {
-  "name": "Jellyseerr",
+  "name": "Jellyseerr (Legacy)",
   "available": true,
   "port": 5055,
   "exposable": true,
   "dynamic_config": true,
   "id": "jellyseerr",
-  "description": "Jellyseerr is a free and open source software application for managing requests for your media library. It is a fork of Overseerr built to bring support for Jellyfin & Emby media servers!",
+  "description": "Jellyseerr is a free and open source software application for managing requests for your media library. It is a fork of Overseerr built to bring support for Jellyfin & Emby media servers! Note: Jellyseerr is no longer actively maintained. New users should use Seerr instead.",
   "tipi_version": 1,
   "version": "2.7.3",
   "categories": [
     "utilities"
   ],
-  "short_desc": "Jellyseerr is a free and open source software application for managing requests for your media library. It is a fork of Overseerr built to bring support for Jellyfin & Emby media servers!",
+  "short_desc": "Legacy media request manager - new users should use Seerr instead",
   "author": "Fallenbagel",
   "source": "",
   "website": "https://hub.docker.com/r/fallenbagel/jellyseerr",
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1776046507000,
-  "updated_at": 1776046507000,
+  "created_at": 1776126311000,
+  "updated_at": 1776126311000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
