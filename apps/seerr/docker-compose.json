@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "seerr",
-      "image": "ghcr.io/seerr-team/seerr:3.1.0",
+      "image": "ghcr.io/seerr-team/seerr:3.1.1",
       "internalPort": 5056,
       "isMain": true
     }
