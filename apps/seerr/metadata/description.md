@@ -1,0 +1,1 @@
+Seerr is a free and open source software application for managing requests for your media library. It is the successor to Overseerr and Jellyseerr, bringing support for Jellyfin, Plex, and Emby media servers.
