@@ -7,7 +7,7 @@
   "id": "joplin",
   "description": "Note taking and to-do application with synchronisation",
   "tipi_version": 1,
-  "version": "3.5.2",
+  "version": "3.6.1",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1776651158000,
-  "updated_at": 1776651158000,
+  "created_at": 1776720950000,
+  "updated_at": 1776720950000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
