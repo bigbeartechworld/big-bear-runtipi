@@ -7,7 +7,7 @@
   "id": "seerr",
   "description": "Seerr is a free and open source software application for managing requests for your media library. It is the successor to Overseerr and Jellyseerr, bringing support for Jellyfin, Plex, and Emby media servers.",
   "tipi_version": 1,
-  "version": "v3.1.1",
+  "version": "v3.2.0",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1776564888000,
-  "updated_at": 1776564888000,
+  "created_at": 1776651264000,
+  "updated_at": 1776651264000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
