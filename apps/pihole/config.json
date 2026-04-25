@@ -7,7 +7,7 @@
   "id": "pihole",
   "description": "The Pi-hole® is a DNS sinkhole that protects your devices from unwanted content without installing any client-side software.",
   "tipi_version": 1,
-  "version": "2026.04.0",
+  "version": "2026.04.1",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1776996833000,
-  "updated_at": 1776996833000,
+  "created_at": 1777082596000,
+  "updated_at": 1777082596000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
