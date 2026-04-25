@@ -7,7 +7,7 @@
   "id": "komga",
   "description": "A media server for your comics, mangas, BDs, magazines and eBooks.",
   "tipi_version": 1,
-  "version": "1.24.3",
+  "version": "1.24.4",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1776996756000,
-  "updated_at": 1776996756000,
+  "created_at": 1777082517000,
+  "updated_at": 1777082517000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
