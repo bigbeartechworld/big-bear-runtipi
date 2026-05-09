@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "actual-server",
-      "image": "actualbudget/actual-server:26.5.0",
+      "image": "actualbudget/actual-server:26.5.2",
       "internalPort": 5006,
       "isMain": true
     }
