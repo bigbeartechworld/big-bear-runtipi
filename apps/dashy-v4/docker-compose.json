@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "dashy-v4",
+      "image": "lissy93/dashy:4.0.8",
+      "internalPort": 4001,
+      "isMain": true
+    }
+  ]
+}
