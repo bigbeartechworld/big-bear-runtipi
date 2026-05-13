@@ -1,0 +1,26 @@
+{
+  "name": "Dashy v4",
+  "available": true,
+  "port": 4001,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "dashy-v4",
+  "description": "Dashy helps you organize your self-hosted services by making them accessible from a single place",
+  "tipi_version": 1,
+  "version": "4.0.8",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "Dashy v4",
+  "author": "Lissy93",
+  "source": "",
+  "website": "https://hub.docker.com/r/lissy93/dashy",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1778640138000,
+  "updated_at": 1778640138000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}
