@@ -1,0 +1,26 @@
+{
+  "name": "Nova DSO Tracker",
+  "available": true,
+  "port": 5001,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "nova-dso-tracker",
+  "description": "Nova DSO Tracker is a tool for astrophotographers to track Deep Space Objects, check observability, and manage imaging sessions.",
+  "tipi_version": 1,
+  "version": "5.9.0",
+  "categories": [
+    "photography"
+  ],
+  "short_desc": "Real-time tracking and planning for Deep Space Objects.",
+  "author": "mrantonSG",
+  "source": "https://github.com/mrantonSG/nova_DSO_tracker",
+  "website": "https://nova-tracker.com",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1778730392000,
+  "updated_at": 1778730392000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

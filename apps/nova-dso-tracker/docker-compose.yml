@@ -1,0 +1,17 @@
+services:
+  nova-dso-tracker:
+    image: mrantonsg/nova-dso-tracker:5.9.0
+    container_name: nova-dso-tracker
+    ports:
+      - "${APP_PORT}:5001"
+    volumes:
+      - ${APP_DATA_DIR}/instance:/app/instance
+    restart: unless-stopped
+    network_mode: bridge
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true
