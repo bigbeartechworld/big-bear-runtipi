@@ -7,7 +7,7 @@
   "id": "syncthing",
   "description": "Syncthing is a continuous file synchronization program. It synchronizes files between two or more computers. We strive to fulfill the goals below. The goals are listed in order of importance, the most important one being the first.",
   "tipi_version": 1,
-  "version": "2.0",
+  "version": "2.1",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1778898982000,
-  "updated_at": 1778898982000,
+  "created_at": 1778985875000,
+  "updated_at": 1778985875000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
