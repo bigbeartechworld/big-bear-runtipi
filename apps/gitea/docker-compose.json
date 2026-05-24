@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "gitea",
-      "image": "gitea/gitea:1.26.1",
+      "image": "gitea/gitea:1.26.2",
       "internalPort": 3000,
       "isMain": true
     }
