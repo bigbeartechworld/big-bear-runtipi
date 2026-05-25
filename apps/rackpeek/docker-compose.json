@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "rackpeek",
+      "image": "aptacode/rackpeek:v1.4.0",
+      "internalPort": 8095,
+      "isMain": true
+    }
+  ]
+}
