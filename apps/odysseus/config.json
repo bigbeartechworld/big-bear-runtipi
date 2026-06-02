@@ -1,0 +1,26 @@
+{
+  "name": "Odysseus",
+  "available": true,
+  "port": 7000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "odysseus",
+  "description": "Odysseus is a self-hosted AI workspace. It bundles chat, web search via SearXNG, and a ChromaDB vector store so you can run your own private AI environment with the LLM provider of your choice.",
+  "tipi_version": 1,
+  "version": "2026.06.02",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "Self-hosted AI workspace",
+  "author": "pewdiepie-archdaemon",
+  "source": "https://github.com/pewdiepie-archdaemon/odysseus",
+  "website": "https://github.com/pewdiepie-archdaemon/odysseus",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1780417966000,
+  "updated_at": 1780417966000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}
