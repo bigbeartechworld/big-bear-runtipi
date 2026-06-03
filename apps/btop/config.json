@@ -7,7 +7,7 @@
   "id": "btop",
   "description": "A monitor of resources. Software made by Aristocratos at https://github.com/aristocratos/btop",
   "tipi_version": 1,
-  "version": "0.1.5",
+  "version": "0.1.8",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1780417816000,
-  "updated_at": 1780417816000,
+  "created_at": 1780457876000,
+  "updated_at": 1780457876000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

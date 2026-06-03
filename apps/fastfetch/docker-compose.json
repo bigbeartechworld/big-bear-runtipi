@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "fastfetch",
-      "image": "bigbeartechworld/big-bear-fastfetch:0.0.4",
+      "image": "bigbeartechworld/big-bear-fastfetch:0.0.5",
       "internalPort": 7682,
       "isMain": true
     }
