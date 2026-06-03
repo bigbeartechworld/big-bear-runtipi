@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "discopanel",
+      "image": "nickheyer/discopanel:v2.0.12",
+      "internalPort": 8080,
+      "isMain": true
+    }
+  ]
+}
