@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "ncdu",
-      "image": "bigbeartechworld/big-bear-ncdu:0.0.6",
+      "image": "bigbeartechworld/big-bear-ncdu:0.0.7",
       "internalPort": 7683,
       "isMain": true
     }

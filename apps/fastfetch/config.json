@@ -7,7 +7,7 @@
   "id": "fastfetch",
   "description": "Fastfetch is a neofetch-like tool for fetching system information and displaying it prettily. It is written mainly in C, with performance and customizability in mind. Currently, Linux, Android, FreeBSD, macOS, SunOS and Windows 7+ are supported. https://github.com/fastfetch-cli/fastfetch",
   "tipi_version": 1,
-  "version": "0.0.4",
+  "version": "0.0.5",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1780417868000,
-  "updated_at": 1780417868000,
+  "created_at": 1780457922000,
+  "updated_at": 1780457922000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

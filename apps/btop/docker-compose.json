@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "btop",
-      "image": "bigbeartechworld/big-bear-btop:0.1.5",
+      "image": "bigbeartechworld/big-bear-btop:0.1.8",
       "internalPort": 7681,
       "isMain": true
     }
