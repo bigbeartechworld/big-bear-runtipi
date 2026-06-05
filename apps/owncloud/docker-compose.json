@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "owncloud",
-      "image": "owncloud/server:10.16.2",
+      "image": "owncloud/server:10.16.3",
       "internalPort": 8116,
       "isMain": true
     }
