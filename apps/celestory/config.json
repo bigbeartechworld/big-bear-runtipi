@@ -1,0 +1,26 @@
+{
+  "name": "Celestory & Voltask",
+  "available": true,
+  "port": 1500,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "celestory",
+  "description": "The all-in-one no-code platform for interactive storytelling and Voltask automation engine. Paid license required, no free tier available. Purchase a license at https://celestory.io/pricing",
+  "tipi_version": 1,
+  "version": "1.0.0",
+  "categories": [
+    "development"
+  ],
+  "short_desc": "No-code interactive storytelling & automation",
+  "author": "celestory",
+  "source": "https://github.com/celestory/celestory",
+  "website": "https://www.celestory.io",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1780687657000,
+  "updated_at": 1780687657000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}
