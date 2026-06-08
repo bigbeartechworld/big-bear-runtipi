@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "nextcloud",
-      "image": "bigbeartechworld/big-bear-nextcloud-with-smbclient:33.0.4",
+      "image": "bigbeartechworld/big-bear-nextcloud-with-smbclient:33.0.5",
       "internalPort": 7580,
       "isMain": true
     }
