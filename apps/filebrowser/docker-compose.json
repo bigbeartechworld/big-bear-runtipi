@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "filebrowser",
-      "image": "filebrowser/filebrowser:v2.63.12-s6",
+      "image": "filebrowser/filebrowser:v2.63.13-s6",
       "internalPort": 8094,
       "isMain": true
     }
