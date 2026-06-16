@@ -51,7 +51,7 @@ services:
     networks:
       - tipi_main_network
   api:
-    image: celestory/api:1.1.2
+    image: celestory/api:1.1.3
     container_name: celestory-api
     volumes:
       - ${APP_DATA_DIR}/projectFiles:/app/projectFiles
@@ -108,7 +108,7 @@ services:
     networks:
       - tipi_main_network
   auth:
-    image: celestory/auth:1.1.0
+    image: celestory/auth:1.1.1
     container_name: celestory-auth
     environment:
       PORT: 80
