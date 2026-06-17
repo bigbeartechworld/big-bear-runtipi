@@ -1,6 +1,6 @@
 services:
   frontend:
-    image: celestory/frontend:1.1.1
+    image: celestory/frontend:1.1.3
     container_name: celestory-frontend
     environment:
       CLOUD_API_URL: http://api
