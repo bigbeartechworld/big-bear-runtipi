@@ -7,7 +7,7 @@
   "id": "ncdu",
   "description": "Ncdu is a disk usage analyzer with an ncurses interface. It is designed to find space hogs on a remote server where you don’t have an entire graphical setup available, but it is a useful tool even on regular desktop systems. Ncdu aims to be fast, simple and easy to use, and should be able to run in any minimal POSIX-like environment with ncurses installed. Software made by Yorhel at https://dev.yorhel.nl/ncdu",
   "tipi_version": 1,
-  "version": "0.0.8",
+  "version": "0.0.9",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1781841153000,
-  "updated_at": 1781841153000,
+  "created_at": 1781900086000,
+  "updated_at": 1781900086000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

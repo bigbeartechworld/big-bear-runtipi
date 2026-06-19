@@ -5,22 +5,22 @@
   "exposable": true,
   "dynamic_config": true,
   "id": "nexterm",
-  "description": "The open source server management software for SSH, VNC & RDP. This is in Preview Release.",
+  "description": "The open source server management software for SSH, VNC & RDP. This is in BETA.",
   "tipi_version": 1,
-  "version": "1.0.9-OPEN-PREVIEW",
+  "version": "1.2.1-BETA",
   "categories": [
     "utilities"
   ],
   "short_desc": "Nexterm",
-  "author": "germannewsmaker",
+  "author": "gnmyt",
   "source": "",
-  "website": "https://hub.docker.com/r/germannewsmaker/nexterm",
+  "website": "https://hub.docker.com/r/nexterm/aio",
   "supported_architectures": [
     "amd64",
     "arm64"
   ],
-  "created_at": 1781841162000,
-  "updated_at": 1781841162000,
+  "created_at": 1781900094000,
+  "updated_at": 1781900094000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

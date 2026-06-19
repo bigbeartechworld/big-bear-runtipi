@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "nexterm",
-      "image": "germannewsmaker/nexterm:1.0.9-OPEN-PREVIEW",
+      "image": "nexterm/aio:1.2.1-BETA",
       "internalPort": 6989,
       "isMain": true
     }
