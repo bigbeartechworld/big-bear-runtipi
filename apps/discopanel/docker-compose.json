@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "discopanel",
-      "image": "nickheyer/discopanel:v2.0.13",
+      "image": "nickheyer/discopanel:v2.0.14",
       "internalPort": 8080,
       "isMain": true
     }

@@ -7,7 +7,7 @@
   "id": "gitea",
   "description": "Gitea is a painless self-hosted all-in-one software development service. It includes Git hosting, code review, team collaboration, package registry, and CI/CD. It is similar to GitHub, Bitbucket and GitLab.",
   "tipi_version": 1,
-  "version": "1.26.3",
+  "version": "1.26.4",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1782269340000,
-  "updated_at": 1782269340000,
+  "created_at": 1782355695000,
+  "updated_at": 1782355695000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
