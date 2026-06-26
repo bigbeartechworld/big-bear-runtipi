@@ -7,7 +7,7 @@
   "id": "wallos",
   "description": "Wallos: Open-Source Personal Subscription Tracker",
   "tipi_version": 1,
-  "version": "4.9.5",
+  "version": "4.9.6",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1782355880000,
-  "updated_at": 1782355880000,
+  "created_at": 1782442601000,
+  "updated_at": 1782442601000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

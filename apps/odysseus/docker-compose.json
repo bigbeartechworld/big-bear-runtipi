@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "odysseus",
-      "image": "bigbeartechworld/big-bear-odysseus:2026.06.15",
+      "image": "bigbeartechworld/big-bear-odysseus:2026.06.22",
       "internalPort": 7000,
       "isMain": true
     }
