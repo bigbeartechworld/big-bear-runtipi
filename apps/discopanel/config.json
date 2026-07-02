@@ -7,7 +7,7 @@
   "id": "discopanel",
   "description": "DiscoPanel is a game server panel for Minecraft. It provides a clean interface for creating and managing Minecraft servers, installing modpacks, and running each server as its own Docker container. Features include modpack browsing and installation, per-server configuration, backups, and real-time server management.",
   "tipi_version": 1,
-  "version": "v2.0.14",
+  "version": "v2.0.15",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1783013546000,
-  "updated_at": 1783013546000,
+  "created_at": 1783016157000,
+  "updated_at": 1783016157000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
