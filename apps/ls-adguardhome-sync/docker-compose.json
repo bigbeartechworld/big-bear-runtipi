@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "ls-adguardhome-sync",
-      "image": "linuxserver/adguardhome-sync:0.9.0",
+      "image": "linuxserver/adguardhome-sync:0.9.1",
       "internalPort": 8106,
       "isMain": true
     }
