@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "mealie",
-      "image": "hkotel/mealie:v3.19.2",
+      "image": "hkotel/mealie:v3.20.1",
       "internalPort": 9925,
       "isMain": true
     }
