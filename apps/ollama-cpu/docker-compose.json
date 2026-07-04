@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "ollama-cpu",
-      "image": "ollama/ollama:0.30.11",
+      "image": "ollama/ollama:0.31.1",
       "internalPort": 11435,
       "isMain": true
     }
