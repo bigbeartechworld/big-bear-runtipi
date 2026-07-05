@@ -7,7 +7,7 @@
   "id": "ls-adguardhome-sync",
   "description": "🛡️ Synchronize AdGuard Home config to replicas. This is the LinuxServer version.",
   "tipi_version": 1,
-  "version": "0.9.1",
+  "version": "0.9.2",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1783132179000,
-  "updated_at": 1783132179000,
+  "created_at": 1783219166000,
+  "updated_at": 1783219166000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
