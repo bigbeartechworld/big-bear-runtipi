@@ -1,0 +1,26 @@
+{
+  "name": "SnapOtter",
+  "available": true,
+  "port": 1349,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "snapotter",
+  "description": "SnapOtter is an open-source, self-hosted file manipulation suite with 200+ tools across images, video, audio, PDFs, and files. It includes batch processing, reusable pipelines, local AI tools, a browser image editor, and a REST API so files stay on your own server.",
+  "tipi_version": 1,
+  "version": "2.0.0",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "Self-hosted file toolkit for images, video, audio, PDFs, and files.",
+  "author": "SnapOtter",
+  "source": "https://github.com/snapotter-hq/SnapOtter",
+  "website": "https://snapotter.com",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1783713049000,
+  "updated_at": 1783713049000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}
