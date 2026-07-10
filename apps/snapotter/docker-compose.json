@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "snapotter",
+      "image": "snapotter/snapotter:2.0.0",
+      "internalPort": 1349,
+      "isMain": true
+    }
+  ]
+}
