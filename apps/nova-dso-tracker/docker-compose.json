@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "nova-dso-tracker",
-      "image": "mrantonsg/nova-dso-tracker:5.9.0:6.2.0",
+      "image": "mrantonsg/nova-dso-tracker:5.9.0:5.9.0",
       "internalPort": 5001,
       "isMain": true
     }
