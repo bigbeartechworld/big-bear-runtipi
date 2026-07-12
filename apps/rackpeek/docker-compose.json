@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "rackpeek",
-      "image": "aptacode/rackpeek:v2.0.0",
+      "image": "aptacode/rackpeek:v1.4.0",
       "internalPort": 8095,
       "isMain": true
     }
