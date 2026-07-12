@@ -7,7 +7,7 @@
   "id": "firefox",
   "description": "This Image contains a browser-accessible version of Firefox.",
   "tipi_version": 1,
-  "version": "1151.0.4",
+  "version": "1152.0.5",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1783872432000,
-  "updated_at": 1783872432000,
+  "created_at": 1783872562000,
+  "updated_at": 1783872562000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
