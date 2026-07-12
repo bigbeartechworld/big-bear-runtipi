@@ -7,7 +7,7 @@
   "id": "nova-dso-tracker",
   "description": "Nova DSO Tracker is a tool for astrophotographers to track Deep Space Objects, check observability, and manage imaging sessions.",
   "tipi_version": 1,
-  "version": "5.9.0",
+  "version": "6.2.0",
   "categories": [
     "photography"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1783873064000,
-  "updated_at": 1783873064000,
+  "created_at": 1783874632000,
+  "updated_at": 1783874632000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
