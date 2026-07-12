@@ -1,5 +1,5 @@
 {
-  "name": "WordPress",
+  "name": "WordPress (Legacy)",
   "available": true,
   "port": 8142,
   "exposable": true,
@@ -7,7 +7,7 @@
   "id": "wordpress",
   "description": "Initially started as a blogging tool in 2003, it has evolved into a highly flexible CMS that powers over 40% of the web (as of my last training data in 2022).",
   "tipi_version": 1,
-  "version": "7.0.1",
+  "version": "6.9.4",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1783873205000,
-  "updated_at": 1783873205000,
+  "created_at": 1783874754000,
+  "updated_at": 1783874754000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

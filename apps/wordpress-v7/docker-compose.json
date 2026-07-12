@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "wordpress-v7",
+      "image": "wordpress:7.0.1",
+      "internalPort": 8145,
+      "isMain": true
+    }
+  ]
+}
