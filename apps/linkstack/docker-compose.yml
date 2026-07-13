@@ -5,7 +5,7 @@
 services:
   linkstack:
     # Image to be used for the container
-    image: linkstackorg/linkstack:V4
+    image: linkstackorg/linkstack:V4@sha256:5cc5b4806f57c153e924fbd0c49d4255dee4c66cd6621f0e457fd43e43e5c000
     # Name of the container
     container_name: linkstack
     # Hostname for the container

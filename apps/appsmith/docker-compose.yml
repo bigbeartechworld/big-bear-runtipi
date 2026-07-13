@@ -4,7 +4,7 @@
 # Service definitions for the big-bear-appsmith application
 services:
   appsmith:
-    image: appsmith/appsmith-ce:v1.98.1 # Docker image to use
+    image: appsmith/appsmith-ce:v1.98.1@sha256:9a5119fdbf22c5ae25c2240a5d5f944b9c44c4fe4a6cfa65934dc3792d24c871 # Docker image to use
     container_name: appsmith # Name of the container
     ports:
       - "${APP_PORT}:80" # Port mapping host:container for HTTP
