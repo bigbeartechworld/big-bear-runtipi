@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "paperless-ngx",
-      "image": "ghcr.io/paperless-ngx/paperless-ngx:2.20.15",
+      "image": "ghcr.io/paperless-ngx/paperless-ngx:6c86cad803970ea782683a8e80e7403444c5bf3cf70de63b4d3c8e87500db92f",
       "internalPort": 8008,
       "isMain": true
     }
