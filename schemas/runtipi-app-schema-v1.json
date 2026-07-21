@@ -1,0 +1,300 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/bigbeartechworld/big-bear-runtipi/schemas/runtipi-app-schema-v1.json",
+  "title": "Runtipi App Schema",
+  "description": "JSON Schema for validating Runtipi application structure and metadata (based on official Runtipi app-info schema)",
+  "type": "object",
+  "definitions": {
+    "appInfo": {
+      "type": "object",
+      "description": "Application configuration (config.json)",
+      "required": ["id", "available", "name", "tipi_version", "short_desc", "author", "source"],
+      "properties": {
+        "$schema": {
+          "type": "string",
+          "description": "JSON Schema reference for IDE support (optional)"
+        },
+        "id": {
+          "type": "string",
+          "description": "Application identifier (must match folder name)",
+          "pattern": "^[a-zA-Z0-9-]+$"
+        },
+        "available": {
+          "type": "boolean",
+          "description": "Whether the app is available for installation"
+        },
+        "deprecated": {
+          "type": "boolean",
+          "default": false,
+          "description": "Whether the app is deprecated"
+        },
+        "port": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 65535,
+          "description": "Default port for web UI"
+        },
+        "name": {
+          "type": "string",
+          "description": "Application display name",
+          "minLength": 1
+        },
+        "description": {
+          "type": "string",
+          "default": "",
+          "description": "Detailed description"
+        },
+        "version": {
+          "type": "string",
+          "default": "latest",
+          "description": "Application version"
+        },
+        "tipi_version": {
+          "type": "number",
+          "description": "Runtipi app format version"
+        },
+        "short_desc": {
+          "type": "string",
+          "description": "Short description/tagline",
+          "minLength": 1
+        },
+        "author": {
+          "type": "string",
+          "description": "Configuration author (can be empty string)"
+        },
+        "source": {
+          "type": "string",
+          "description": "Source repository URL (can be empty string)"
+        },
+        "website": {
+          "type": "string",
+          "description": "Application website URL or path (can be empty string, absolute URL, or relative path)"
+        },
+        "force_expose": {
+          "type": "boolean",
+          "default": false,
+          "description": "Force expose the app externally"
+        },
+        "generate_vapid_keys": {
+          "type": "boolean",
+          "default": false,
+          "description": "Generate VAPID keys for web push"
+        },
+        "categories": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": [],
+          "description": "Application categories (recommended: network, media, development, automation, social, utilities, photography, security, featured, books, data, music, finance, gaming, ai)"
+        },
+        "url_suffix": {
+          "type": "string",
+          "description": "URL suffix to append to base URL"
+        },
+        "form_fields": {
+          "type": "array",
+          "description": "User input form fields for configuration",
+          "items": {
+            "type": "object",
+            "required": ["type", "label", "env_variable"],
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": ["text", "password", "email", "number", "fqdn", "ip", "fqdnip", "url", "random", "boolean"],
+                "description": "Field input type"
+              },
+              "label": {
+                "type": "string",
+                "description": "Field label"
+              },
+              "placeholder": {
+                "type": "string",
+                "description": "Placeholder text"
+              },
+              "max": {
+                "type": "number",
+                "description": "Maximum value (for number type)"
+              },
+              "min": {
+                "type": "number",
+                "description": "Minimum value (for number type)"
+              },
+              "hint": {
+                "type": "string",
+                "description": "Helpful hint text"
+              },
+              "options": {
+                "type": "array",
+                "description": "Options for select field",
+                "items": {
+                  "type": "object",
+                  "required": ["label", "value"],
+                  "properties": {
+                    "label": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false
+                }
+              },
+              "required": {
+                "type": "boolean",
+                "default": false,
+                "description": "Whether field is required"
+              },
+              "default": {
+                "type": ["boolean", "string", "number"],
+                "description": "Default value"
+              },
+              "regex": {
+                "type": "string",
+                "description": "Validation regex pattern"
+              },
+              "pattern_error": {
+                "type": "string",
+                "description": "Error message for pattern validation"
+              },
+              "env_variable": {
+                "type": "string",
+                "description": "Environment variable name to map to"
+              },
+              "encoding": {
+                "type": "string",
+                "enum": ["hex", "base64"],
+                "description": "Encoding for random type"
+              }
+            },
+            "additionalProperties": false
+          },
+          "default": []
+        },
+        "https": {
+          "type": "boolean",
+          "default": false,
+          "description": "Whether app requires HTTPS"
+        },
+        "exposable": {
+          "type": "boolean",
+          "default": false,
+          "description": "Whether app can be exposed externally"
+        },
+        "no_gui": {
+          "type": "boolean",
+          "default": false,
+          "description": "Whether app has no GUI"
+        },
+        "supported_architectures": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["arm64", "amd64"]
+          },
+          "description": "Supported CPU architectures"
+        },
+        "uid": {
+          "type": "number",
+          "description": "User ID for container process"
+        },
+        "gid": {
+          "type": "number",
+          "description": "Group ID for container process"
+        },
+        "dynamic_config": {
+          "type": "boolean",
+          "default": false,
+          "description": "Whether config is dynamically generated"
+        },
+        "min_tipi_version": {
+          "type": "string",
+          "description": "Minimum Runtipi version required"
+        },
+        "created_at": {
+          "type": "integer",
+          "minimum": 0,
+          "default": 0,
+          "description": "Creation timestamp (Unix)"
+        },
+        "updated_at": {
+          "type": "integer",
+          "minimum": 0,
+          "default": 0,
+          "description": "Last update timestamp (Unix)"
+        },
+        "force_pull": {
+          "type": "boolean",
+          "default": false,
+          "description": "Force pull image on update"
+        }
+      },
+      "additionalProperties": true
+    },
+    "dockerCompose": {
+      "type": "object",
+      "description": "Docker Compose file (docker-compose.yml) - standard format with optional dynamic config",
+      "properties": {
+        "version": {
+          "type": "string",
+          "description": "Docker Compose version (optional)"
+        },
+        "services": {
+          "type": "object",
+          "description": "Service definitions",
+          "minProperties": 1
+        },
+        "networks": {
+          "type": "object",
+          "description": "Network definitions"
+        },
+        "volumes": {
+          "type": "object",
+          "description": "Named volume definitions"
+        }
+      }
+    }
+  },
+  "properties": {
+    "appId": {
+      "type": "string",
+      "description": "Application identifier (folder name in apps/)",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "appInfo": {
+      "$ref": "#/definitions/appInfo"
+    },
+    "dockerCompose": {
+      "$ref": "#/definitions/dockerCompose"
+    },
+    "metadata": {
+      "type": "object",
+      "description": "Additional metadata (metadata.json) - optional file with extended info",
+      "properties": {
+        "description": {
+          "type": "string",
+          "description": "Extended description with Markdown"
+        }
+      }
+    },
+    "logo": {
+      "type": "string",
+      "description": "Path to logo.jpg file in app folder"
+    }
+  },
+  "notes": [
+    "Repository structure: apps/{appId}/config.json + apps/{appId}/docker-compose.yml",
+    "Required files: config.json, docker-compose.yml",
+    "Optional files: metadata.json (extended description), logo.jpg (app icon)",
+    "config.json must conform to official Runtipi app-info-schema.json",
+    "id field in config.json must match folder name",
+    "Supported architectures are limited to amd64 and arm64",
+    "Categories must match predefined Runtipi categories",
+    "tipi_version indicates the app format version",
+    "form_fields are used to generate installation UI and environment variables",
+    "Docker Compose should use named volumes that map to Runtipi data directory structure",
+    "Common volume pattern: {app-id}-data-{purpose} maps to app-data/{app-id}/data/{purpose}",
+    "Dynamic config apps can use template variables that are replaced at runtime"
+  ]
+}
