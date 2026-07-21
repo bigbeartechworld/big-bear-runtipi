@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "snapotter",
-      "image": "snapotter/snapotter:2.0.0",
+      "image": "snapotter/snapotter:2.1.0",
       "internalPort": 1349,
       "isMain": true
     }
