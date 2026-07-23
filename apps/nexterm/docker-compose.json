@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "nexterm",
-      "image": "nexterm/aio:1.2.1-BETA",
+      "image": "nexterm/aio:1.2.2-BETA",
       "internalPort": 6989,
       "isMain": true
     }
