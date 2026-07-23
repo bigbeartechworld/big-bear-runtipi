@@ -7,7 +7,7 @@
   "id": "nexterm",
   "description": "The open source server management software for SSH, VNC & RDP. This is in BETA.",
   "tipi_version": 1,
-  "version": "1.2.1-BETA",
+  "version": "1.2.2-BETA",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1784707047000,
-  "updated_at": 1784707047000,
+  "created_at": 1784773007000,
+  "updated_at": 1784773007000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
