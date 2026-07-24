@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "healthchecks",
-      "image": "linuxserver/healthchecks:4.3.20260714",
+      "image": "linuxserver/healthchecks:4.3.20260720",
       "internalPort": 8005,
       "isMain": true
     }
