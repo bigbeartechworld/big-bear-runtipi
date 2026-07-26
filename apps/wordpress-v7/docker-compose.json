@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "wordpress-v7",
-      "image": "wordpress:7.0.1",
+      "image": "wordpress:7.0.2",
       "internalPort": 8145,
       "isMain": true
     }
