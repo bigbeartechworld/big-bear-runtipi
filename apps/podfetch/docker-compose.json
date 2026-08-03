@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "podfetch",
+      "image": "samuel19982/podfetch:5.2.2",
+      "internalPort": 8000,
+      "isMain": true
+    }
+  ]
+}
