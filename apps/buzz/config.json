@@ -1,0 +1,26 @@
+{
+  "name": "Buzz",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "buzz",
+  "description": "Buzz is a self-hostable workspace for humans and agents from Block. It runs a Nostr relay, a REST bridge, git-over-object-storage, and a web interface from a single Rust binary, so you can host your own community and agent infrastructure.",
+  "tipi_version": 1,
+  "version": "latest",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "Self-hosted workspace and Nostr relay for humans and agents",
+  "author": "block",
+  "source": "https://github.com/block/buzz",
+  "website": "https://github.com/block/buzz",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1785805998000,
+  "updated_at": 1785805998000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}
