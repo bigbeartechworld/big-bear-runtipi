@@ -7,7 +7,7 @@
   "id": "owncloud",
   "description": "ownCloud offers file sharing and collaboration trusted by 200+ million users worldwide regardless of device or location.",
   "tipi_version": 1,
-  "version": "10.16.3",
+  "version": "10.16.4",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1785982093000,
-  "updated_at": 1785982093000,
+  "created_at": 1786069681000,
+  "updated_at": 1786069681000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
