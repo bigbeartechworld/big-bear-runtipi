@@ -7,7 +7,7 @@
   "id": "vikunja-v2",
   "description": "The open-source, self-hostable to-do app. Organize everything, on all platforms.",
   "tipi_version": 1,
-  "version": "2.4.0",
+  "version": "2.5.0",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1786238517000,
-  "updated_at": 1786238517000,
+  "created_at": 1786325015000,
+  "updated_at": 1786325015000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

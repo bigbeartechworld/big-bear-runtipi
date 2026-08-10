@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "ihatemoney",
-      "image": "ihatemoney/ihatemoney:7.1.1",
+      "image": "ihatemoney/ihatemoney:7.2.0",
       "internalPort": 8006,
       "isMain": true
     }
