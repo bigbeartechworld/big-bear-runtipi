@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "unifi-network-application-mongo-4",
-      "image": "linuxserver/unifi-network-application:10.4.57",
+      "image": "linuxserver/unifi-network-application:10.5.67",
       "internalPort": 8447,
       "isMain": true
     }
