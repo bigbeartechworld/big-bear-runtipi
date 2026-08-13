@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "gotify",
-      "image": "gotify/server:3.0.0",
+      "image": "gotify/server:3.0.0@sha256:d75e89e0e28389c00c2556afe01282a37ee9756b0285799aa25214243aebd5e5",
       "internalPort": 8098,
       "isMain": true
     }

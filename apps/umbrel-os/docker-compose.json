@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "umbrel-os",
-      "image": "dockurr/umbrel:1.7.4",
+      "image": "dockurr/umbrel:1.7.4@sha256:ae33fe21603853c4b8f90afb23493c98f550bfc601274bb74d1a4cadb0dade2e",
       "internalPort": 8138,
       "isMain": true
     }

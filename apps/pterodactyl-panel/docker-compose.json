@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "pterodactyl-panel",
-      "image": "ghcr.io/pterodactyl/panel:v1.12.2",
+      "image": "ghcr.io/pterodactyl/panel:v1.12.2@sha256:dd2687b00a532117fe25a88a8acbb34a6fb23a9ca59a76a405735e3cb729efca",
       "internalPort": 1180,
       "isMain": true
     }

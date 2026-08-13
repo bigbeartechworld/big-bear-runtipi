@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "trilium",
-      "image": "triliumnext/trilium:v0.104.1",
+      "image": "triliumnext/trilium:v0.104.1@sha256:3332fa03198f0b3ecddf11fcf37f3aace352a664728d669a1ffa7a5594a6f2d6",
       "internalPort": 8137,
       "isMain": true
     }

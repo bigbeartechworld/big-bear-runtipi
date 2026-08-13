@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "retroarch-web",
-      "image": "inglebard/retroarch-web:latest",
+      "image": "inglebard/retroarch-web:latest@sha256:bf03014db81776a715b6289f017be2fc988688f9302590413cd6dcb615f07393",
       "internalPort": 8126,
       "isMain": true
     }

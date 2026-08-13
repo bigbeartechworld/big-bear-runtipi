@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "obsidian",
-      "image": "linuxserver/obsidian:1.13.4",
+      "image": "linuxserver/obsidian:1.13.4@sha256:93c8f571dc165a1cdb17ce7d1f6d4679b3af786af01e26c29a439fb34c4c6b76",
       "internalPort": 3013,
       "isMain": true
     }

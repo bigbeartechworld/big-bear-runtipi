@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "neko-firefox",
-      "image": "m1k1o/neko:firefox",
+      "image": "m1k1o/neko:firefox@sha256:950cf633d1f92386b908195c22ad7268d8712e12689c1fb18a997a55bedd28b3",
       "internalPort": 8111,
       "isMain": true
     }

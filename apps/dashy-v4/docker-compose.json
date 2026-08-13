@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "dashy-v4",
-      "image": "lissy93/dashy:4.0.8",
+      "image": "lissy93/dashy:4.0.8@sha256:1b3de6159d93e1a75f0b808e74d8cb5100c06251b120abd2d68e557ec7544ab6",
       "internalPort": 4001,
       "isMain": true
     }

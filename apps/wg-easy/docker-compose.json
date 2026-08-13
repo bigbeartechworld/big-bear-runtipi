@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "wg-easy",
-      "image": "ghcr.io/wg-easy/wg-easy:15",
+      "image": "ghcr.io/wg-easy/wg-easy:15@sha256:93bbd593e07bab98d02807a28770ac87ab6c48818e319e68c1f66561feb99876",
       "internalPort": 51821,
       "isMain": true
     }

@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "mumble-server",
-      "image": "mumblevoip/mumble-server:v1.4.230-6",
+      "image": "mumblevoip/mumble-server:v1.4.230-6@sha256:42ea734f0a8962cde8c3cd5f0dc5536c9caf6131064093b9ba76ed133b104fc4",
       "internalPort": 64738,
       "isMain": true
     }

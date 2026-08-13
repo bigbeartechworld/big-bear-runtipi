@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "write-freely",
-      "image": "nephatrine/write-freely:0.16",
+      "image": "nephatrine/write-freely:0.16@sha256:0be9c6fe236db87cdc9e6728cdd8a1f8d3145870453348305a3950eabe37b27c",
       "internalPort": 8143,
       "isMain": true
     }

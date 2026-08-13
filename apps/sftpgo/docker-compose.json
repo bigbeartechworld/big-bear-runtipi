@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "sftpgo",
-      "image": "drakkan/sftpgo:v2.7",
+      "image": "drakkan/sftpgo:v2.7@sha256:9011fe608d336d3daf6ed6224b16fd40443aab8f3335e0b20853d6a539c58738",
       "internalPort": 8128,
       "isMain": true
     }
