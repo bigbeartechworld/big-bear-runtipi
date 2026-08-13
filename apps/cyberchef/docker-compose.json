@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "cyberchef",
-      "image": "ghcr.io/gchq/cyberchef:11.0.0",
+      "image": "ghcr.io/gchq/cyberchef:11.0.0@sha256:45082a0ac41d6beeea2daeb192d8b20c66520362854542f4fe340aab37635f66",
       "internalPort": 8089,
       "isMain": true
     }

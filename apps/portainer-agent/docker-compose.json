@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "portainer-agent",
-      "image": "portainer/agent:2.44.0",
+      "image": "portainer/agent:2.44.0@sha256:2f8058d946a5dc8f70933afc06726e34de6d7f12a3fd5db1cf7987c327aea2d1",
       "internalPort": 8124,
       "isMain": true
     }

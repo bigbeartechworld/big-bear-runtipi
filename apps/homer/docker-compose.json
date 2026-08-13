@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "homer",
-      "image": "b4bz/homer:v26.4.2",
+      "image": "b4bz/homer:v26.4.2@sha256:ace7c6a2cfb66e13f0e94d5534cb569562f190aa5cac9446b2453ef7822cd195",
       "internalPort": 8100,
       "isMain": true
     }

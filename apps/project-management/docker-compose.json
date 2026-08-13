@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "project-management",
-      "image": "eloufirhatim/helper:1.2.3",
+      "image": "eloufirhatim/helper:1.2.3@sha256:200b25415273529ca5c6513b5ce99931e46bee17e2c730c4d3c2cbc53992fd2e",
       "internalPort": 8011,
       "isMain": true
     }

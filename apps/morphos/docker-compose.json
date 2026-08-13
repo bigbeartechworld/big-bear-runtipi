@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "morphos",
-      "image": "ghcr.io/danvergara/morphos-server:0.6.0",
+      "image": "ghcr.io/danvergara/morphos-server:0.6.0@sha256:3d6f64ef386cbb6a7c5d55526e1a69da2d3661a1996d757897e92bf4369088f5",
       "internalPort": 8109,
       "isMain": true
     }

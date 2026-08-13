@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "excalidraw",
-      "image": "excalidraw/excalidraw:latest",
+      "image": "excalidraw/excalidraw:latest@sha256:f7ee194addd607bf831d2af0f0a34463dd4225e426cf35199ef0b12a803398e9",
       "internalPort": 8002,
       "isMain": true
     }

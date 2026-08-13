@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "bookstack",
-      "image": "lscr.io/linuxserver/bookstack:26.05.20260608",
+      "image": "linuxserver/bookstack:26.05.20260608@sha256:e3c387ac44a20fa29abcae8426e3e0d8c88b4ccf95d3c091fd9d96c8d0edcd8e",
       "internalPort": 8084,
       "isMain": true
     }

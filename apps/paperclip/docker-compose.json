@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "paperclip",
-      "image": "ghcr.io/paperclipai/paperclip:latest",
+      "image": "ghcr.io/paperclipai/paperclip:latest@sha256:66056e8c979bc2f8ef35083ebd333b7c83224fe3234bd92d251b0bbce1054317",
       "internalPort": 3101,
       "isMain": true
     }

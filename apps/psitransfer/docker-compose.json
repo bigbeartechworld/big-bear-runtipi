@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "psitransfer",
-      "image": "psitrax/psitransfer:v2.4.4",
+      "image": "psitrax/psitransfer:v2.4.4@sha256:312d060e0e2934ff618b3e361d766872b89892dc33c5456858b4aa04dc17a18d",
       "internalPort": 3000,
       "isMain": true
     }

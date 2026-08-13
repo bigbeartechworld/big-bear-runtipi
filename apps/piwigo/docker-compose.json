@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "piwigo",
-      "image": "linuxserver/piwigo:16.4.0",
+      "image": "linuxserver/piwigo:16.4.0@sha256:1706f44c31daf23c1607dd2a6b6724d9fa55cf497da59c9220649335ced79215",
       "internalPort": 8121,
       "isMain": true
     }

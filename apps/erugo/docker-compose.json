@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "erugo",
-      "image": "wardy784/erugo:0.2.15",
+      "image": "wardy784/erugo:0.2.15@sha256:0d9d31365e180408baee86172694a420418a7e05badd158fe84eb873a9f77753",
       "internalPort": 9997,
       "isMain": true
     }

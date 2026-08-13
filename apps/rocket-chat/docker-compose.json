@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "rocket-chat",
-      "image": "rocket.chat:6.13.1",
+      "image": "rocket.chat:6.13.1@sha256:b6cfd507cf913290045d380be2c14511c735acb840509d471fb2d7359a820031",
       "internalPort": 3021,
       "isMain": true
     }

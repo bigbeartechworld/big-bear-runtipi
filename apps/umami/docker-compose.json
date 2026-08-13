@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "umami",
-      "image": "ghcr.io/umami-software/umami:postgresql-latest",
+      "image": "ghcr.io/umami-software/umami:postgresql-latest@sha256:87312d334d009ee67ee0d2fba8fed01435547cc468e452243aef5133a9984d48",
       "internalPort": 3023,
       "isMain": true
     }

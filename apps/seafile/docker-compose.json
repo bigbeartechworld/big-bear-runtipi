@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "seafile",
-      "image": "seafileltd/seafile-mc:11.0.13",
+      "image": "seafileltd/seafile-mc:11.0.13@sha256:1239b087aa4bdf1b60a3802e80855f230736ac5d5fa3325a40b15d4c598f422c",
       "internalPort": 8127,
       "isMain": true
     }

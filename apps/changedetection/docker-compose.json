@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "changedetection",
-      "image": "ghcr.io/dgtlmoon/changedetection.io:0.55.3",
+      "image": "ghcr.io/dgtlmoon/changedetection.io:0.55.3@sha256:2d0030e12494be9ebf6a6ebbbad46afe5763f498bbfefe9ebb7f0bf6be3ca5dc",
       "internalPort": 5002,
       "isMain": true
     }

@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "pihole-updatelists",
-      "image": "jacklul/pihole:2026.07.2",
+      "image": "jacklul/pihole:2026.07.2@sha256:5c274108cdd1fca4dcfda8996e3638c457bcde94f7fe53f53d9c8f49c333707b",
       "internalPort": 8120,
       "isMain": true
     }

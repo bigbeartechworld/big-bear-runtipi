@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "zipline",
-      "image": "ghcr.io/diced/zipline:3.7.13",
+      "image": "ghcr.io/diced/zipline:3.7.13@sha256:f0209223b159be9460bf1454b1908417877fef6a1f3a31d5e682885fb9431f30",
       "internalPort": 3026,
       "isMain": true
     }

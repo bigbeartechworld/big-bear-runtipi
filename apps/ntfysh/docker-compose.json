@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "ntfysh",
-      "image": "binwiederhier/ntfy:v2.27.0",
+      "image": "binwiederhier/ntfy:v2.27.0@sha256:f2419f405127afa868f10985c1a41449e673477cee1eb19994339a5ae8b592e7",
       "internalPort": 7200,
       "isMain": true
     }

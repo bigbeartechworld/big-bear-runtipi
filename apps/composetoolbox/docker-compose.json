@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "composetoolbox",
-      "image": "ghcr.io/bluegoosemedia/composetoolbox:latest",
+      "image": "ghcr.io/bluegoosemedia/composetoolbox:latest@sha256:61e8a6f0a00583f145e83018ce0954089f5bd89157dc39ef7459043643ca17f6",
       "internalPort": 3003,
       "isMain": true
     }

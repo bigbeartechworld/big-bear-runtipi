@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "celestory",
-      "image": "celestory/gateway:1.1.2",
+      "image": "celestory/gateway:1.1.2@sha256:d37ccfefd431abde1cec62b1c93d00d5579f57f194e65b5d488057206201154e",
       "internalPort": 1500,
       "isMain": true
     }
