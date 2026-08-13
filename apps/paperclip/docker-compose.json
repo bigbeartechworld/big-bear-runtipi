@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "paperclip",
+      "image": "ghcr.io/paperclipai/paperclip:latest",
+      "internalPort": 3101,
+      "isMain": true
+    }
+  ]
+}

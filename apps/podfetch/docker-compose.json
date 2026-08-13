@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "podfetch",
-      "image": "samuel19982/podfetch:v5.2.2",
+      "image": "samuel19982/podfetch:v5.2.3",
       "internalPort": 8000,
       "isMain": true
     }

@@ -1,0 +1,26 @@
+{
+  "name": "Paperclip",
+  "available": true,
+  "port": 3101,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "paperclip",
+  "description": "Paperclip is an open-source self-hosted board for managing AI coding agents such as Claude Code, Codex, OpenCode, and Gemini CLI. Assign work to agents, run them, and track cost and output from a single dashboard.",
+  "tipi_version": 1,
+  "version": "latest",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "Self-hosted board for managing AI coding agents",
+  "author": "paperclipai",
+  "source": "https://github.com/paperclipai/paperclip",
+  "website": "https://paperclip.ing",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1786647117000,
+  "updated_at": 1786647117000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}
