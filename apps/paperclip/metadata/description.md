@@ -1,0 +1,1 @@
+Paperclip is an open-source self-hosted board for managing AI coding agents such as Claude Code, Codex, OpenCode, and Gemini CLI. Assign work to agents, run them, and track cost and output from a single dashboard.
