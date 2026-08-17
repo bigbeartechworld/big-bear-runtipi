@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "buzz",
-      "image": "ghcr.io/block/buzz:main@sha256:d4a5a9febc6247964819100948fa8870a3e3f5fbdf04ba783715f237e17ed770",
+      "image": "ghcr.io/block/buzz:main@sha256:15adee3700f1b1364f66a843739d63937fccd6576504ef65eff01ae9f23bb427",
       "internalPort": 3000,
       "isMain": true
     }
