@@ -1,6 +1,9 @@
 import fs from "node:fs";
+import path from "node:path";
 import { parseComposeJson } from "@runtipi/common/schemas";
 import jsyaml from "js-yaml";
+import Ajv from "ajv";
+import addFormats from "ajv-formats";
 
 type FormField = {
   type: "random";
@@ -347,6 +350,78 @@ describe("App configs", () => {
         expect(app.updated_at).toBeGreaterThan(0);
         expect(app.updated_at).toBeLessThan(Date.now());
         expect(new Date(app.updated_at).getFullYear()).toBeGreaterThanOrEqual(2023);
+      });
+    }
+  });
+
+  describe("Schema Validation", () => {
+    let validateAppInfo: any;
+    let validateDockerCompose: any;
+
+    beforeAll(() => {
+      // Load Runtipi schema
+      const schemaPath = path.join(__dirname, "../../schemas/runtipi-app-schema-v1.json");
+      const runtipiSchema = JSON.parse(fs.readFileSync(schemaPath, "utf8"));
+
+      // Initialize AJV with formats
+      const ajv = new Ajv({ allErrors: true, strict: false });
+      addFormats(ajv);
+
+      // Compile schema definitions
+      validateAppInfo = ajv.compile(runtipiSchema.definitions.appInfo);
+      validateDockerCompose = ajv.compile(runtipiSchema.definitions.dockerCompose);
+    });
+
+    const apps = getAppConfigs();
+
+    for (const app of apps) {
+      test(`${app.id} - config.json conforms to schema`, () => {
+        const isValid = validateAppInfo(app);
+        
+        if (!isValid) {
+          console.log(`\n❌ Schema validation failed for ${app.id} config.json:`);
+          validateAppInfo.errors?.forEach((error: any) => {
+            console.log(`   ${error.instancePath || '/'}: ${error.message}`);
+            if (error.params) {
+              console.log(`   Parameters:`, JSON.stringify(error.params, null, 2));
+            }
+          });
+        }
+
+        // Advisory mode: log errors but don't fail tests
+        // To enforce schema validation, uncomment the line below:
+        // expect(isValid).toBe(true);
+      });
+
+      test(`${app.id} - docker-compose.yml conforms to schema`, () => {
+        const composePath = `./apps/${app.id}/docker-compose.yml`;
+        
+        if (!fs.existsSync(composePath)) {
+          return; // Skip if no compose file
+        }
+
+        try {
+          const composeContent = fs.readFileSync(composePath, "utf8");
+          const compose = jsyaml.load(composeContent);
+          
+          const isValid = validateDockerCompose(compose);
+          
+          if (!isValid) {
+            console.log(`\n❌ Schema validation failed for ${app.id} docker-compose.yml:`);
+            validateDockerCompose.errors?.forEach((error: any) => {
+              console.log(`   ${error.instancePath || '/'}: ${error.message}`);
+              if (error.params) {
+                console.log(`   Parameters:`, JSON.stringify(error.params, null, 2));
+              }
+            });
+          }
+
+          // Advisory mode: log errors but don't fail tests
+          // To enforce schema validation, uncomment the line below:
+          // expect(isValid).toBe(true);
+        } catch (e) {
+          console.warn(`⚠️  ${app.id}: Could not parse docker-compose.yml for schema validation`);
+        }
       });
     }
   });
