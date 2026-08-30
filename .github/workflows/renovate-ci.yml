@@ -42,7 +42,7 @@ jobs:
           done
 
       - name: Commit and push changes
-        uses: EndBug/add-and-commit@v9
+        uses: EndBug/add-and-commit@v10
         with:
           author_name: Tipi CI
           author_email: ci@runtipi.io
