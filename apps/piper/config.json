@@ -1,0 +1,26 @@
+{
+  "name": "Piper",
+  "available": true,
+  "port": 10200,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "piper",
+  "description": "Piper is a fast, local neural text to speech system that sounds great and is optimized for the Raspberry Pi 4. This container provides a Wyoming protocol server for Piper.",
+  "tipi_version": 1,
+  "version": "2.5.2",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "A fast, local neural text to speech system that sounds great and is optimized for the Raspberry Pi 4. This container provides a Wyoming protocol server for Piper.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-piper",
+  "website": "https://hub.docker.com/r/linuxserver/piper",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765826000,
+  "updated_at": 1789765826000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

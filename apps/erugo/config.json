@@ -12,15 +12,15 @@
     "utilities"
   ],
   "short_desc": "A powerful, self-hosted file-sharing platform built with PHP and Laravel with a Vue.js frontend.",
-  "author": "wardy784",
+  "author": "BigBearTechWorld",
   "source": "",
   "website": "https://hub.docker.com/r/wardy784/erugo",
   "supported_architectures": [
     "amd64",
     "arm64"
   ],
-  "created_at": 1787014705000,
-  "updated_at": 1787014705000,
+  "created_at": 1789765542000,
+  "updated_at": 1789765542000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

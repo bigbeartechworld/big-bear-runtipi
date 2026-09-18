@@ -1,0 +1,25 @@
+{
+  "name": "Azahar",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "azahar",
+  "description": "Azahar is an open-source 3DS emulator based on Citra.",
+  "tipi_version": 1,
+  "version": "12125.1.3",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "An open-source 3DS emulator based on Citra.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-azahar",
+  "website": "https://hub.docker.com/r/linuxserver/azahar",
+  "supported_architectures": [
+    "amd64"
+  ],
+  "created_at": 1789765410000,
+  "updated_at": 1789765410000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

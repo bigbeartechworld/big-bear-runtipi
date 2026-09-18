@@ -1,0 +1,26 @@
+{
+  "name": "Mariadb",
+  "available": true,
+  "port": 3306,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "mariadb",
+  "description": "Mariadb is one of the most popular database servers. Made by the original developers of MySQL.",
+  "tipi_version": 1,
+  "version": "11.8.8",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "One of the most popular database servers. Made by the original developers of MySQL.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-mariadb",
+  "website": "https://hub.docker.com/r/linuxserver/mariadb",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765705000,
+  "updated_at": 1789765705000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

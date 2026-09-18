@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "synclounge",
+      "image": "linuxserver/synclounge:5.2.35@sha256:e2121f13cd6514394bdc82a4a3df8c66b169d3a2cfae960a2f3bf9b15594e20c",
+      "internalPort": 8088,
+      "isMain": true
+    }
+  ]
+}

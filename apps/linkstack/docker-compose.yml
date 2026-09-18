@@ -9,7 +9,7 @@ services:
     # Name of the container
     container_name: linkstack
     # Hostname for the container
-    hostname: big-bear-linkstack
+    hostname: linkstack
     # Environment variables for the container
     environment:
       - HTTP_SERVER_NAME=www.example.xyz

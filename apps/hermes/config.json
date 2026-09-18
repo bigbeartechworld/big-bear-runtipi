@@ -1,0 +1,26 @@
+{
+  "name": "Hermes Agent",
+  "available": true,
+  "port": 9119,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "hermes",
+  "description": "Hermes Agent 0.21.3 is a self-hosted AI agent with a gateway API and an authenticated web dashboard.",
+  "tipi_version": 1,
+  "version": "2026.9.14",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "",
+  "author": "BigBearCommunity",
+  "source": "https://github.com/NousResearch/hermes-agent",
+  "website": "https://hermes-agent.nousresearch.com/",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765621000,
+  "updated_at": 1789765621000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

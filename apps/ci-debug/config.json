@@ -1,0 +1,25 @@
+{
+  "name": "Ci-debug",
+  "available": true,
+  "port": 80,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "ci-debug",
+  "description": "This container needs special attention. Please check https://hub.docker.com/r/linuxserver/ci-debug for details.",
+  "tipi_version": 1,
+  "version": "0.0.0",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "This container needs special attention. Please check https://hub. Docker. Com/r/linuxserver/ci-debug for details.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-ci-debug",
+  "website": "https://hub.docker.com/r/linuxserver/ci-debug",
+  "supported_architectures": [
+    "amd64"
+  ],
+  "created_at": 1789765458000,
+  "updated_at": 1789765458000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

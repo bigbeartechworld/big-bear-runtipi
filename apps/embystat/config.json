@@ -1,0 +1,26 @@
+{
+  "name": "Embystat",
+  "available": true,
+  "port": 6555,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "embystat",
+  "description": "Visit homepage: https://hub.docker.com/r/linuxserver/embystat/",
+  "tipi_version": 1,
+  "version": "0.2.0",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "A personal web server that can calculate all kinds of statistics from your (local) Emby server. Just install this on your server and let him calculate all kinds of fun stuff.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-embystat",
+  "website": "https://hub.docker.com/r/linuxserver/embystat",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765535000,
+  "updated_at": 1789765535000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

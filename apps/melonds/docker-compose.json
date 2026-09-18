@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "melonds",
+      "image": "linuxserver/melonds:1.1.20261229@sha256:1b5a28a03910688f5a44236f1c5afe49ad29ff497ba55614e08e5e6d7a5a1e49",
+      "internalPort": 3000,
+      "isMain": true
+    }
+  ]
+}

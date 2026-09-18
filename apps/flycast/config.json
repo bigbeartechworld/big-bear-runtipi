@@ -1,0 +1,25 @@
+{
+  "name": "Flycast",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "flycast",
+  "description": "Flycast is a multi-platform Sega Dreamcast, Naomi, Naomi 2, and Atomiswave emulator derived from reicast.",
+  "tipi_version": 1,
+  "version": "2.7.20260913",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "A multi-platform Sega Dreamcast, Naomi, Naomi 2, and Atomiswave emulator derived from reicast.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-flycast",
+  "website": "https://hub.docker.com/r/linuxserver/flycast",
+  "supported_architectures": [
+    "amd64"
+  ],
+  "created_at": 1789765572000,
+  "updated_at": 1789765572000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

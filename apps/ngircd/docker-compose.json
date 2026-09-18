@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "ngircd",
+      "image": "linuxserver/ngircd:version-27-r1@sha256:25a924851122b34d933404e4a942e68835e4a1dc182f12d28461c4490476e265",
+      "internalPort": 6667,
+      "isMain": true
+    }
+  ]
+}

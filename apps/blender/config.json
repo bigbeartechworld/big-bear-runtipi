@@ -1,0 +1,26 @@
+{
+  "name": "Blender",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "blender",
+  "description": "Blender is a free and open-source 3D computer graphics software toolset used for creating animated films, visual effects, art, 3D printed models, motion graphics, interactive 3D applications, virtual reality, and computer games. This image does not support GPU rendering out of the box only accelerated workspace experience",
+  "tipi_version": 1,
+  "version": "5.2.2",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "A free and open-source 3D computer graphics software toolset used for creating animated films, visual effects, art, 3D printed models, motion graphics, interactive 3D applications, virtual reality, and computer games. This image does not support GPU rendering out of the box only accelerated workspace experience",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-blender",
+  "website": "https://hub.docker.com/r/linuxserver/blender",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765423000,
+  "updated_at": 1789765423000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

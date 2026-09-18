@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "your-spotify",
+      "image": "linuxserver/your_spotify:1.20.0@sha256:34f592ef352cce88db8f64ca502d646b17aa2ecd6076df47e053241b0dbef2da",
+      "internalPort": 80,
+      "isMain": true
+    }
+  ]
+}

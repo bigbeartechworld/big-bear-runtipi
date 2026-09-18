@@ -1,0 +1,26 @@
+{
+  "name": "Daapd",
+  "available": true,
+  "port": 80,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "daapd",
+  "description": "Visit homepage: https://hub.docker.com/r/linuxserver/daapd/",
+  "tipi_version": 1,
+  "version": "28.10.20250118",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "(iTunes) media server with support for AirPlay devices, Apple Remote (and compatibles), Chromecast, MPD and internet radio. ",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-daapd",
+  "website": "https://hub.docker.com/r/linuxserver/daapd",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765480000,
+  "updated_at": 1789765480000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

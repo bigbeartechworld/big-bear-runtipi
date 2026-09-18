@@ -1,0 +1,26 @@
+{
+  "name": "Vscodium-web",
+  "available": true,
+  "port": 8000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "vscodium-web",
+  "description": "Vscodium-web is a community-driven, freely-licensed binary distribution of the remote host web component of Microsoft's editor VS Code.",
+  "tipi_version": 1,
+  "version": "1.135.06055",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "A community-driven, freely-licensed binary distribution of the remote host web component of Microsoft's editor VS Code.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-vscodium-web",
+  "website": "https://hub.docker.com/r/linuxserver/vscodium-web",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789766004000,
+  "updated_at": 1789766004000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

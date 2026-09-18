@@ -1,0 +1,26 @@
+{
+  "name": "Tautulli",
+  "available": true,
+  "port": 8181,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "tautulli",
+  "description": "Tautulli is a python based web application for monitoring, analytics and notifications for Plex Media Server.",
+  "tipi_version": 1,
+  "version": "2.18.1",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "A python based web application for monitoring, analytics and notifications for Plex Media Server.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-tautulli",
+  "website": "https://hub.docker.com/r/linuxserver/tautulli",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765950000,
+  "updated_at": 1789765950000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

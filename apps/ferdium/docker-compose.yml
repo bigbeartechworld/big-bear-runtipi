@@ -1,0 +1,27 @@
+services:
+  ferdium:
+    image: linuxserver/ferdium:7.2.3@sha256:91d0b770d951cc23ad3666308708082d80bf95b32270dbf03ae3fe7f94065471
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 3000
+        published: ${APP_PORT}
+        protocol: tcp
+      - target: 3001
+        published: 3001
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/ferdium/config
+        target: /config
+    container_name: ferdium
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

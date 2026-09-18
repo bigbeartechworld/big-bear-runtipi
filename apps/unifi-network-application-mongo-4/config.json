@@ -7,20 +7,20 @@
   "id": "unifi-network-application-mongo-4",
   "description": "Supports Zimaboards and PI's. The Unifi-network-application software is a powerful, enterprise wireless software engine ideal for high-density client deployments requiring low latency and high uptime performance.",
   "tipi_version": 1,
-  "version": "10.5.67",
+  "version": "10.6.101",
   "categories": [
     "utilities"
   ],
   "short_desc": "The Unifi-network-application MongoDB 4",
-  "author": "Ubiquiti",
+  "author": "BigBearTechWorld",
   "source": "",
   "website": "https://hub.docker.com/r/linuxserver/unifi-network-application",
   "supported_architectures": [
     "amd64",
     "arm64"
   ],
-  "created_at": 1787014983000,
-  "updated_at": 1787014983000,
+  "created_at": 1789765982000,
+  "updated_at": 1789765982000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

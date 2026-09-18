@@ -1,0 +1,26 @@
+{
+  "name": "Webtop",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "webtop",
+  "description": "Webtop - Alpine, Ubuntu, Fedora, and Arch based containers containing full desktop environments in officially supported flavors accessible via any modern web browser.",
+  "tipi_version": 1,
+  "version": "0.0.0",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "Alpine, Ubuntu, Fedora, and Arch based containers containing full desktop environments in officially supported flavors accessible via any modern web browser.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-webtop",
+  "website": "https://hub.docker.com/r/linuxserver/webtop",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789766017000,
+  "updated_at": 1789766017000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

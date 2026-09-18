@@ -1,0 +1,26 @@
+{
+  "name": "Duckstation",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "duckstation",
+  "description": "DuckStation is a PS1 Emulator aiming for the best accuracy and game support.",
+  "tipi_version": 1,
+  "version": "0.0.0",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "A PS1 Emulator aiming for the best accuracy and game support.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-duckstation",
+  "website": "https://hub.docker.com/r/linuxserver/duckstation",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765525000,
+  "updated_at": 1789765525000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

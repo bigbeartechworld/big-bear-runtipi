@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "syslog-ng",
+      "image": "linuxserver/syslog-ng:4.11.0@sha256:52a7114037bd85cf8acc757a89c331f34a50c18999dfd562dae4a9ab9a402031",
+      "internalPort": 514,
+      "isMain": true
+    }
+  ]
+}

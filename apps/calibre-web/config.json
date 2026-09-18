@@ -1,0 +1,26 @@
+{
+  "name": "Calibre-web",
+  "available": true,
+  "port": 8083,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "calibre-web",
+  "description": "Calibre-web is a web app providing a clean interface for browsing, reading and downloading eBooks using an existing Calibre database. It is also possible to integrate google drive and edit metadata and your calibre library through the app itself. This software is a fork of library and licensed under the GPL v3 License.",
+  "tipi_version": 1,
+  "version": "0.6.27",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "A web app providing a clean interface for browsing, reading and downloading eBooks using an existing Calibre database. It is also possible to integrate google drive and edit metadata and your calibre library through the app itself. This software is a fork of library and licensed under the GPL v3 License.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-calibre-web",
+  "website": "https://hub.docker.com/r/linuxserver/calibre-web",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765445000,
+  "updated_at": 1789765445000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

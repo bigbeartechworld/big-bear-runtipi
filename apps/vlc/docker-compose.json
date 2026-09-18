@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "vlc",
+      "image": "linuxserver/vlc:3.0.23@sha256:52fee84f890b64bb7b8bfc0bb6536c31cfaf371ba7709b5cfa708a8fe64f7b68",
+      "internalPort": 3000,
+      "isMain": true
+    }
+  ]
+}

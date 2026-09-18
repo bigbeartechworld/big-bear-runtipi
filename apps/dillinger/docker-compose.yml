@@ -1,0 +1,24 @@
+services:
+  dillinger:
+    image: linuxserver/dillinger:3.39.1@sha256:58dc39f6cddee732241c78f89805bca608299471f66ec90a8028e10b2cadd1b4
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 8080
+        published: ${APP_PORT}
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/dillinger/config
+        target: /config
+    container_name: dillinger
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "nano-wallet",
+      "image": "linuxserver/nano-wallet:1.3.2@sha256:ad03cd3bcd43db7fd18bf15283c2c77550affc2650acd9c27d529e81bb6b703f",
+      "internalPort": 80,
+      "isMain": true
+    }
+  ]
+}

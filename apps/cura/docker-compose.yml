@@ -1,0 +1,27 @@
+services:
+  cura:
+    image: linuxserver/cura:5.13.0@sha256:2b7a8665a662478c0e486b3841a5eb7517c92c1c661b0d306de238f38ef64da9
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 3000
+        published: ${APP_PORT}
+        protocol: tcp
+      - target: 3001
+        published: 3001
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/cura/config
+        target: /config
+    container_name: cura
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

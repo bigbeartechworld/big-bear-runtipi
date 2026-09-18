@@ -1,0 +1,25 @@
+{
+  "name": "Openshot",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "openshot",
+  "description": "OpenShot Video Editor is an award-winning free and open-source video editor for Linux, Mac, and Windows, and is dedicated to delivering high quality video editing and animation solutions to the world.",
+  "tipi_version": 1,
+  "version": "4.0.0",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "Video Editor is an award-winning free and open-source video editor for Linux, Mac, and Windows, and is dedicated to delivering high quality video editing and animation solutions to the world.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-openshot",
+  "website": "https://hub.docker.com/r/linuxserver/openshot",
+  "supported_architectures": [
+    "amd64"
+  ],
+  "created_at": 1789765784000,
+  "updated_at": 1789765784000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

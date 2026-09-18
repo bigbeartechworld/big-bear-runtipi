@@ -12,15 +12,15 @@
     "utilities"
   ],
   "short_desc": "Cross-platform file explorer",
-  "author": "spacedriveapp",
+  "author": "BigBearTechWorld",
   "source": "",
   "website": "https://hub.docker.com/r/spacedriveapp/spacedrive/server",
   "supported_architectures": [
     "amd64",
     "arm64"
   ],
-  "created_at": 1787014957000,
-  "updated_at": 1787014957000,
+  "created_at": 1789765928000,
+  "updated_at": 1789765928000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "heimdall",
+      "image": "linuxserver/heimdall:2.8.3@sha256:f9b43b696fcbf52f3b20a0121efd3e895543dd085ed13edb54593d614e65eb7a",
+      "internalPort": 80,
+      "isMain": true
+    }
+  ]
+}

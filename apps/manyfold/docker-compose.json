@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "manyfold",
+      "image": "linuxserver/manyfold:0.149.0@sha256:1e3260d3bba74790dc00c57ae8a8ddb8f7aa5cf0f97000d265f8d30dc931f792",
+      "internalPort": 3214,
+      "isMain": true
+    }
+  ]
+}

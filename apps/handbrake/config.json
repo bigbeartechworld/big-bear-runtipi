@@ -1,0 +1,25 @@
+{
+  "name": "Handbrake",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "handbrake",
+  "description": "HandBrake is an open-source tool, built by volunteers, for converting video from nearly any format to a selection of modern, widely supported codecs.",
+  "tipi_version": 1,
+  "version": "1.11.2",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "An open-source tool, built by volunteers, for converting video from nearly any format to a selection of modern, widely supported codecs.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-handbrake",
+  "website": "https://hub.docker.com/r/linuxserver/handbrake",
+  "supported_architectures": [
+    "amd64"
+  ],
+  "created_at": 1789765611000,
+  "updated_at": 1789765611000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

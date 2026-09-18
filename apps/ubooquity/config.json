@@ -1,0 +1,26 @@
+{
+  "name": "Ubooquity",
+  "available": true,
+  "port": 2202,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "ubooquity",
+  "description": "Ubooquity is a free, lightweight and easy-to-use home server for your comics and ebooks. Use it to access your files from anywhere, with a tablet, an e-reader, a phone or a computer.",
+  "tipi_version": 1,
+  "version": "3.1.0",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "A free, lightweight and easy-to-use home server for your comics and ebooks. Use it to access your files from anywhere, with a tablet, an e-reader, a phone or a computer.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-ubooquity",
+  "website": "https://hub.docker.com/r/linuxserver/ubooquity",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765970000,
+  "updated_at": 1789765970000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

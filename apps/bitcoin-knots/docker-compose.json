@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "bitcoin-knots",
+      "image": "linuxserver/bitcoin-knots:version-29.4.knots20260508.1-noble1@sha256:c5f17ac3492af411bf83e2a62c1640be1b53b551570d3d39876c1b18bec82879",
+      "internalPort": 3000,
+      "isMain": true
+    }
+  ]
+}

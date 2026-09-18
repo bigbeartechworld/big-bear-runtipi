@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "yq",
+      "image": "linuxserver/yq:3.4.3@sha256:adf84aa50f4c1bf87a000797ab6cf39dfe23395cd2b9a22544425fce8d0c2160",
+      "internalPort": 80,
+      "isMain": true
+    }
+  ]
+}

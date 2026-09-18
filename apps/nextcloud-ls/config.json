@@ -12,15 +12,15 @@
     "utilities"
   ],
   "short_desc": "LinuxServer - The productivity platform that keeps you in control",
-  "author": "nextcloud",
+  "author": "BigBearTechWorld",
   "source": "",
   "website": "https://hub.docker.com/r/linuxserver/nextcloud",
   "supported_architectures": [
     "amd64",
     "arm64"
   ],
-  "created_at": 1787014845000,
-  "updated_at": 1787014845000,
+  "created_at": 1789765750000,
+  "updated_at": 1789765750000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

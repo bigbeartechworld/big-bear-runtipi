@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "qdirstat",
+      "image": "linuxserver/qdirstat:2.0.20260913@sha256:3b3999ef8f0f3501cd35d373f0868e564937c739d1a79fbe545c6d68692bb727",
+      "internalPort": 3000,
+      "isMain": true
+    }
+  ]
+}

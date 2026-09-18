@@ -1,0 +1,26 @@
+{
+  "name": "Rdesktop",
+  "available": true,
+  "port": 3389,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "rdesktop",
+  "description": "Rdesktop - Containers containing full desktop environments in many popular flavors for Alpine, Ubuntu, Arch, and Fedora accessible via RDP.",
+  "tipi_version": 1,
+  "version": "0.0.0",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "Containers containing full desktop environments in many popular flavors for Alpine, Ubuntu, Arch, and Fedora accessible via RDP. ",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-rdesktop",
+  "website": "https://hub.docker.com/r/linuxserver/rdesktop",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765882000,
+  "updated_at": 1789765882000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

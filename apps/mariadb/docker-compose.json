@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "mariadb",
+      "image": "linuxserver/mariadb:11.8.8@sha256:75ffa39d652653e73848328a667d169a20a1e084fd51a66c4be3eb754a2492c9",
+      "internalPort": 3306,
+      "isMain": true
+    }
+  ]
+}

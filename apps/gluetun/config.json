@@ -12,15 +12,15 @@
     "utilities"
   ],
   "short_desc": "Gluetun",
-  "author": "portainer",
+  "author": "BigBearTechWorld",
   "source": "",
   "website": "https://hub.docker.com/r/qmcgaw/gluetun",
   "supported_architectures": [
     "amd64",
     "arm64"
   ],
-  "created_at": 1787014751000,
-  "updated_at": 1787014751000,
+  "created_at": 1789765597000,
+  "updated_at": 1789765597000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

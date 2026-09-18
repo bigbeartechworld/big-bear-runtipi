@@ -1,0 +1,26 @@
+{
+  "name": "Pylon",
+  "available": true,
+  "port": 3131,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "pylon",
+  "description": "Visit homepage: https://hub.docker.com/r/linuxserver/pylon/",
+  "tipi_version": 1,
+  "version": "2.10.0",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "A web based integrated development environment built with Node. Js as a backend and with a supercharged JavaScript/HTML5 frontend, licensed under GPL version 3. This project originates from Cloud9 v2 project. ",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-pylon",
+  "website": "https://hub.docker.com/r/linuxserver/pylon",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765864000,
+  "updated_at": 1789765864000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Lychee",
+  "available": true,
+  "port": 80,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "lychee",
+  "description": "Lychee is a free photo-management tool, which runs on your server or web-space. Installing is a matter of seconds. Upload, manage and share photos like from a native application. Lychee comes with everything you need and all your photos are stored securely.",
+  "tipi_version": 1,
+  "version": "7.8.3",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "A free photo-management tool, which runs on your server or web-space. Installing is a matter of seconds. Upload, manage and share photos like from a native application. Lychee comes with everything you need and all your photos are stored securely.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-lychee",
+  "website": "https://hub.docker.com/r/linuxserver/lychee",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765698000,
+  "updated_at": 1789765698000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

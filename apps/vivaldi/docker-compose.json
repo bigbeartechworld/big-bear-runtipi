@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "vivaldi",
+      "image": "linuxserver/vivaldi:8.2.4133@sha256:a73b59cc021e2d6425d0a884a4d1f440808125bdb6c2c191723eef332b980bf6",
+      "internalPort": 3000,
+      "isMain": true
+    }
+  ]
+}

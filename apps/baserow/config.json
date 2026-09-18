@@ -12,15 +12,15 @@
     "utilities"
   ],
   "short_desc": "Baserow",
-  "author": "baserow",
+  "author": "BigBearTechWorld",
   "source": "",
   "website": "https://hub.docker.com/r/baserow/baserow",
   "supported_architectures": [
     "amd64",
     "arm64"
   ],
-  "created_at": 1787014624000,
-  "updated_at": 1787014624000,
+  "created_at": 1789765415000,
+  "updated_at": 1789765415000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

@@ -1,0 +1,27 @@
+services:
+  weixin:
+    image: linuxserver/weixin:version-f1376de7@sha256:200f4b7ed2bb29c6d366e804b8cbea5f7030d7a20f38e11cfeb03e23a6ad79d5
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 3000
+        published: ${APP_PORT}
+        protocol: tcp
+      - target: 3001
+        published: 3001
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/weixin/config
+        target: /config
+    container_name: weixin
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

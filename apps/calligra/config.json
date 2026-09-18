@@ -1,0 +1,26 @@
+{
+  "name": "Calligra",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "calligra",
+  "description": "Calligra is an office and graphic art suite by KDE. It is available for desktop PCs, tablet computers, and smartphones. It contains applications for word processing, spreadsheets, presentation, vector graphics, and editing databases.",
+  "tipi_version": 1,
+  "version": "3.2.1",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "An office and graphic art suite by KDE. It is available for desktop PCs, tablet computers, and smartphones. It contains applications for word processing, spreadsheets, presentation, vector graphics, and editing databases.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-calligra",
+  "website": "https://hub.docker.com/r/linuxserver/calligra",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765446000,
+  "updated_at": 1789765446000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

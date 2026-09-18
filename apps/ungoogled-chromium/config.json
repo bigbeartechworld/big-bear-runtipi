@@ -1,0 +1,26 @@
+{
+  "name": "Ungoogled-chromium",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "ungoogled-chromium",
+  "description": "Ungoogled Chromium is Google Chromium, sans dependency on Google web services.",
+  "tipi_version": 1,
+  "version": "153.0.8010",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "Google Chromium, sans dependency on Google web services.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-ungoogled-chromium",
+  "website": "https://hub.docker.com/r/linuxserver/ungoogled-chromium",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765976000,
+  "updated_at": 1789765976000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

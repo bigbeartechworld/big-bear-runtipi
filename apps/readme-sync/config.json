@@ -1,0 +1,26 @@
+{
+  "name": "Readme-sync",
+  "available": true,
+  "port": 80,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "readme-sync",
+  "description": "This container needs special attention. Please check https://hub.docker.com/r/linuxserver/readme-sync for details.",
+  "tipi_version": 1,
+  "version": "0.0.0",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "This container needs special attention. Please check https://hub. Docker. Com/r/linuxserver/readme-sync for details. ",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-readme-sync",
+  "website": "https://hub.docker.com/r/linuxserver/readme-sync",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765887000,
+  "updated_at": 1789765887000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

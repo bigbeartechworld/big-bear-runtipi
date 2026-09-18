@@ -1,0 +1,24 @@
+services:
+  jenkins-builder:
+    image: linuxserver/jenkins-builder:version-4f81ddbe@sha256:dd7cfe3b09302fafc36be18dd4e3030c6318a1f750324e420b16319d4d67d579
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 80
+        published: ${APP_PORT}
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/jenkins-builder/config
+        target: /config
+    container_name: jenkins-builder
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

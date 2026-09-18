@@ -1,0 +1,27 @@
+services:
+  ardour:
+    image: linuxserver/ardour:version-2026-06-19@sha256:720a44efc9e158e56fd1f12e00f190746f73bcf1fa20aa508c8e9c59f27dc423
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 3000
+        published: ${APP_PORT}
+        protocol: tcp
+      - target: 3001
+        published: 3001
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/ardour/config
+        target: /config
+    container_name: ardour
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

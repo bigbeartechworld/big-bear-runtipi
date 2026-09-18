@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "xbackbone",
+      "image": "linuxserver/xbackbone:3.8.2@sha256:265465d3fe217d8c34bc61ababedaa1127c325032618641cf09827ffeb3436bb",
+      "internalPort": 80,
+      "isMain": true
+    }
+  ]
+}

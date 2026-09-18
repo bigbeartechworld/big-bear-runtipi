@@ -1,0 +1,26 @@
+{
+  "name": "Wireshark",
+  "available": true,
+  "port": 80,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "wireshark",
+  "description": "Wireshark is the world’s foremost and widely-used network protocol analyzer. It lets you see what’s happening on your network at a microscopic level and is the de facto (and often de jure) standard across many commercial and non-profit enterprises, government agencies, and educational institutions. Wireshark development thrives thanks to the volunteer contributions of networking experts around the globe and is the continuation of a project started by Gerald Combs in 1998.",
+  "tipi_version": 1,
+  "version": "4.6.6",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "The world’s foremost and widely-used network protocol analyzer. It lets you see what’s happening on your network at a microscopic level and is the de facto (and often de jure) standard across many commercial and non-profit enterprises, government agencies, and educational institutions. Wireshark development thrives thanks to the volunteer contributions of networking experts around the globe and is the continuation of a project started by Gerald Combs in 1998.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-wireshark",
+  "website": "https://hub.docker.com/r/linuxserver/wireshark",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789766030000,
+  "updated_at": 1789766030000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

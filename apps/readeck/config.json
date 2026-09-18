@@ -12,15 +12,15 @@
     "utilities"
   ],
   "short_desc": "Self-hosted bookmark manager and read-it-later app",
-  "author": "readeck",
+  "author": "BigBearTechWorld",
   "source": "",
   "website": "https://hub.docker.com/r/readeck/readeck",
   "supported_architectures": [
     "amd64",
     "arm64"
   ],
-  "created_at": 1787014938000,
-  "updated_at": 1787014938000,
+  "created_at": 1789765886000,
+  "updated_at": 1789765886000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

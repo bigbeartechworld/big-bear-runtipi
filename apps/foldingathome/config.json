@@ -1,0 +1,26 @@
+{
+  "name": "Foldingathome",
+  "available": true,
+  "port": 80,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "foldingathome",
+  "description": "Folding@home is a distributed computing project for simulating protein dynamics, including the process of protein folding and the movements of proteins implicated in a variety of diseases. It brings together citizen scientists who volunteer to run simulations of protein dynamics on their personal computers. Insights from this data are helping scientists to better understand biology, and providing new opportunities for developing therapeutics.",
+  "tipi_version": 1,
+  "version": "8.5.6",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "A distributed computing project for simulating protein dynamics, including the process of protein folding and the movements of proteins implicated in a variety of diseases. It brings together citizen scientists who volunteer to run simulations of protein dynamics on their personal computers. Insights from this data are helping scientists to better understand biology, and providing new opportunities for developing therapeutics.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-foldingathome",
+  "website": "https://hub.docker.com/r/linuxserver/foldingathome",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765575000,
+  "updated_at": 1789765575000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

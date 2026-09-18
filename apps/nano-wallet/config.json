@@ -1,0 +1,27 @@
+{
+  "name": "Nano-wallet",
+  "available": true,
+  "port": 80,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "nano-wallet",
+  "description": "Nano-wallet is a digital payment protocol designed to be accessible and lightweight, with a focus on removing inefficiencies present in other cryptocurrencies. With ultrafast transactions and zero fees on a secure, green and decentralized network, this makes Nano ideal for everyday transactions. This container is a simple nginx wrapper for the light wallet located here. You will need to pass a valid RPC host when accessing this container.",
+  "tipi_version": 1,
+  "version": "1.3.2",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "A digital payment protocol designed to be accessible and lightweight, with a focus on removing inefficiencies present in other cryptocurrencies. With ultrafast transactions and zero fees on a secure, green and decentralized network, this makes Nano ideal for everyday transactions. This container is a simple nginx wrapper for the light wallet located here. You will need to pass a valid RPC host when accessing this container.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-nano-wallet",
+  "website": "https://hub.docker.com/r/linuxserver/nano-wallet",
+  "supported_architectures": [
+    "amd64",
+    "armv7",
+    "arm64"
+  ],
+  "created_at": 1789765739000,
+  "updated_at": 1789765739000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

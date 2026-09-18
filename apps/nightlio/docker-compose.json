@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "nightlio",
+      "image": "ghcr.io/shirsakm/nightlio-frontend:0.1.7@sha256:0a2bd8ec3eefe6adfa79f4809bc57c9ef2d3094dcece13f7d3c5309bacfcc117",
+      "internalPort": 8016,
+      "isMain": true
+    }
+  ]
+}

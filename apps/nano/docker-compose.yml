@@ -1,0 +1,37 @@
+services:
+  nano:
+    image: linuxserver/nano:21.2.20220522@sha256:abba1dc5b14d99b1996a52b51d51f9247deea6f2c540d030c02060ea46491843
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      PEER_HOST: ''
+      LIVE_GENESIS_PUB: ''
+      LIVE_GENESIS_ACCOUNT: ''
+      LIVE_GENESIS_WORK: ''
+      LIVE_GENESIS_SIG: ''
+      CLI_OPTIONS: ''
+      LMDB_BOOTSTRAP_URL: ''
+    ports:
+      - target: 8075
+        published: ${APP_PORT}
+        protocol: tcp
+      - target: 7076
+        published: 3000
+        protocol: tcp
+      - target: 7077
+        published: 3001
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/nano/config
+        target: /config
+    container_name: nano
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "nginx",
+      "image": "linuxserver/nginx:1.30.4@sha256:34e67960f3f818f3d87fdd773e328b53b24c91c64b4c1e4f6d7b22bc175ee174",
+      "internalPort": 80,
+      "isMain": true
+    }
+  ]
+}

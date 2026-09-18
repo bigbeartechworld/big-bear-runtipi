@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "pelorus",
+      "image": "linuxserver/pelorus:0.2.3@sha256:d91ea4e4479e43200ae796000f1999bf9aa6fd8b92eb4bd38a4c96f0e8557d84",
+      "internalPort": 3001,
+      "isMain": true
+    }
+  ]
+}

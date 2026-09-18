@@ -1,0 +1,25 @@
+{
+  "name": "Ci",
+  "available": true,
+  "port": 80,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "ci",
+  "description": "This container needs special attention. Please check https://hub.docker.com/r/linuxserver/ci for details.",
+  "tipi_version": 1,
+  "version": "0.0.0",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "This container needs special attention. Please check https://hub. Docker. Com/r/linuxserver/ci for details. ",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-ci",
+  "website": "https://hub.docker.com/r/linuxserver/ci",
+  "supported_architectures": [
+    "amd64"
+  ],
+  "created_at": 1789765457000,
+  "updated_at": 1789765457000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "nano",
+      "image": "linuxserver/nano:21.2.20220522@sha256:abba1dc5b14d99b1996a52b51d51f9247deea6f2c540d030c02060ea46491843",
+      "internalPort": 8075,
+      "isMain": true
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Plex-meta-manager",
+  "available": true,
+  "port": 8080,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "plex-meta-manager",
+  "description": "Plex-meta-manager is a Python 3 script that can be continuously run using YAML configuration files to update on a schedule the metadata of the movies, shows, and collections in your libraries as well as automatically build collections based on various methods all detailed in the wiki.",
+  "tipi_version": 1,
+  "version": "1.21.1",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "A Python 3 script that can be continuously run using YAML configuration files to update on a schedule the metadata of the movies, shows, and collections in your libraries as well as automatically build collections based on various methods all detailed in the wiki.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-plex-meta-manager",
+  "website": "https://hub.docker.com/r/linuxserver/plex-meta-manager",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765839000,
+  "updated_at": 1789765839000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

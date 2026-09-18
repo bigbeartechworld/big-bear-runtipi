@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "quassel-web",
+      "image": "linuxserver/quassel-web:version-019bfdc1@sha256:15453e655257907853d02a41903c255f0fd4da8a759f13f73b2573dca2d981ba",
+      "internalPort": 64080,
+      "isMain": true
+    }
+  ]
+}

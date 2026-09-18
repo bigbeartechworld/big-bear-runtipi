@@ -1,0 +1,26 @@
+{
+  "name": "Boinc",
+  "available": true,
+  "port": 8080,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "boinc",
+  "description": "BOINC is a platform for high-throughput computing on a large scale (thousands or millions of computers). It can be used for volunteer computing (using consumer devices) or grid computing (using organizational resources). It supports virtualized, parallel, and GPU-based applications.",
+  "tipi_version": 1,
+  "version": "18.04.1",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "A platform for high-throughput computing on a large scale (thousands or millions of computers). It can be used for volunteer computing (using consumer devices) or grid computing (using organizational resources). It supports virtualized, parallel, and GPU-based applications.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-boinc",
+  "website": "https://hub.docker.com/r/linuxserver/boinc",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765425000,
+  "updated_at": 1789765425000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

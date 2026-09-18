@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "thunderbird",
+      "image": "linuxserver/thunderbird:1140.16.0@sha256:483ca2ea649031debad626df3f122e4399849d911483aed1f1623a78b56e7d79",
+      "internalPort": 3000,
+      "isMain": true
+    }
+  ]
+}

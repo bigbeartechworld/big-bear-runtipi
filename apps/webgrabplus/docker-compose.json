@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "webgrabplus",
+      "image": "linuxserver/webgrabplus:5.6.1@sha256:ddf2b93738df3cad8b927f686c8d60db389d1326679a3987739f394f4d6ce2fb",
+      "internalPort": 80,
+      "isMain": true
+    }
+  ]
+}

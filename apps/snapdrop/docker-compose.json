@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "snapdrop",
+      "image": "linuxserver/snapdrop:version-f88d46ed@sha256:3a1423028607899c0bdb62fb3c7a02d43862bb24098cb13a78d91a795a7340d5",
+      "internalPort": 80,
+      "isMain": true
+    }
+  ]
+}

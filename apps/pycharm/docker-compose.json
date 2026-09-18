@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "pycharm",
+      "image": "linuxserver/pycharm:2026.2.20260811@sha256:5ea4f8c48828b48ab4ddd35adac1cd7464975b78897c5afa07f64a947f31ed76",
+      "internalPort": 3000,
+      "isMain": true
+    }
+  ]
+}

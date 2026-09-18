@@ -7,20 +7,20 @@
   "id": "jlesage-firefox",
   "description": "The GUI of the application is accessed through a modern web browser (no installation or configuration needed on the client side) or via any VNC client.",
   "tipi_version": 1,
-  "version": "v26.07.2",
+  "version": "v26.08.3",
   "categories": [
     "utilities"
   ],
   "short_desc": "This project implements a Docker container for Firefox.",
-  "author": "jlesage",
+  "author": "BigBearTechWorld",
   "source": "",
   "website": "https://hub.docker.com/r/jlesage/firefox",
   "supported_architectures": [
     "amd64",
     "arm64"
   ],
-  "created_at": 1787014793000,
-  "updated_at": 1787014793000,
+  "created_at": 1789765649000,
+  "updated_at": 1789765649000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "libreoffice",
+      "image": "linuxserver/libreoffice:25.8.7@sha256:fb3d8001632fc26a3dd9d0ee9b6a8bde0f2d8156f5e633014d5e93a8c103c3e6",
+      "internalPort": 3000,
+      "isMain": true
+    }
+  ]
+}

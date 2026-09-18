@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "github-desktop",
+      "image": "linuxserver/github-desktop:3.4.13@sha256:e1465fe5867239fe1bfea4b41bdfb46af2236c8a54884565bc4f1b119a1f8137",
+      "internalPort": 3000,
+      "isMain": true
+    }
+  ]
+}

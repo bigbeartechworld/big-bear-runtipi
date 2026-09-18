@@ -1,0 +1,26 @@
+{
+  "name": "Ferdium",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "ferdium",
+  "description": "Ferdium is a desktop app that helps you organize how you use your favourite apps by combining them into one application.",
+  "tipi_version": 1,
+  "version": "7.2.3",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "A desktop app that helps you organize how you use your favourite apps by combining them into one application.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-ferdium",
+  "website": "https://hub.docker.com/r/linuxserver/ferdium",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765554000,
+  "updated_at": 1789765554000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

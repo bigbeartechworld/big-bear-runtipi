@@ -1,0 +1,28 @@
+services:
+  quassel-core:
+    image: linuxserver/quassel-core:0.14.0@sha256:cefb9aa752d4db099d98be5966432e9dcd298695571c8eedc84ffc298f3258e0
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      RUN_OPTS: ''
+    ports:
+      - target: 4242
+        published: ${APP_PORT}
+        protocol: tcp
+      - target: 113
+        published: 10113
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/quassel-core/config
+        target: /config
+    container_name: quassel-core
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

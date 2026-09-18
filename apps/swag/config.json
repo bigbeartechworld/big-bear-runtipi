@@ -1,0 +1,26 @@
+{
+  "name": "Swag",
+  "available": true,
+  "port": 443,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "swag",
+  "description": "SWAG - Secure Web Application Gateway (formerly known as letsencrypt, no relation to Let's Encrypt™) sets up an Nginx webserver and reverse proxy with php support and a built-in certbot client that automates free SSL server certificate generation and renewal processes (Let's Encrypt and ZeroSSL). It also contains fail2ban for intrusion prevention.",
+  "tipi_version": 1,
+  "version": "5.8.0",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "SWAG - Secure Web Application Gateway (formerly known as letsencrypt, no relation to Let's Encrypt™) sets up an Nginx webserver and reverse proxy with php support and a built-in certbot client that automates free SSL server certificate generation and renewal processes (Let's Encrypt and ZeroSSL). It also contains fail2ban for intrusion prevention.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-swag",
+  "website": "https://hub.docker.com/r/linuxserver/swag",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765940000,
+  "updated_at": 1789765940000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

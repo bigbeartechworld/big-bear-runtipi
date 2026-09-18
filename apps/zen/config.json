@@ -1,0 +1,26 @@
+{
+  "name": "Zen",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "zen",
+  "description": "Zen Browser is a free and open-source fork of Mozilla Firefox with a focus on privacy, customizability and design.",
+  "tipi_version": 1,
+  "version": "1.22.2",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "A free and open-source fork of Mozilla Firefox with a focus on privacy, customizability and design.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-zen",
+  "website": "https://hub.docker.com/r/linuxserver/zen",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789766050000,
+  "updated_at": 1789766050000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

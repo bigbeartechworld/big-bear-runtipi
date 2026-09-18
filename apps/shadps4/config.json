@@ -1,0 +1,25 @@
+{
+  "name": "Shadps4",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "shadps4",
+  "description": "shadPS4 is an early PlayStation 4 emulator for Windows, Linux and macOS written in C++.",
+  "tipi_version": 1,
+  "version": "0.0.0",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "An early PlayStation 4 emulator for Windows, Linux and macOS written in C++.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-shadps4",
+  "website": "https://hub.docker.com/r/linuxserver/shadps4",
+  "supported_architectures": [
+    "amd64"
+  ],
+  "created_at": 1789765916000,
+  "updated_at": 1789765916000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

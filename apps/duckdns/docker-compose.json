@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "duckdns",
+      "image": "linuxserver/duckdns:version-73f1bc7d@sha256:7edcc8555ecbca2ea6e441290a09d172bc531debce7c6771c14551838a3f67f2",
+      "internalPort": 80,
+      "isMain": true
+    }
+  ]
+}

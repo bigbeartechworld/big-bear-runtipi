@@ -12,14 +12,14 @@
     "utilities"
   ],
   "short_desc": "peppermint",
-  "author": "Pepperlabs",
+  "author": "BigBearCommunity",
   "source": "",
   "website": "https://hub.docker.com/r/pepperlabs/peppermint",
   "supported_architectures": [
     "amd64"
   ],
-  "created_at": 1787014899000,
-  "updated_at": 1787014899000,
+  "created_at": 1789765813000,
+  "updated_at": 1789765813000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

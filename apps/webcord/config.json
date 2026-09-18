@@ -1,0 +1,26 @@
+{
+  "name": "Webcord",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "webcord",
+  "description": "WebCord can be summarized as a pack of security and privacy hardenings, Discord features reimplementations, Electron / Chromium / Discord bugs workarounds, stylesheets, internal pages and wrapped https://discord.com page, designed to conform with ToS as much as it is possible (or hide the changes that might violate it from Discord's eyes).",
+  "tipi_version": 1,
+  "version": "4.14.0",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "Can be summarized as a pack of security and privacy hardenings, Discord features reimplementations, Electron / Chromium / Discord bugs workarounds, stylesheets, internal pages and wrapped https://discord. Com page, designed to conform with ToS as much as it is possible (or hide the changes that might violate it from Discord's eyes).",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-webcord",
+  "website": "https://hub.docker.com/r/linuxserver/webcord",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789766011000,
+  "updated_at": 1789766011000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

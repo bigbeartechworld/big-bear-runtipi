@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "netbox",
+      "image": "linuxserver/netbox:4.7.1@sha256:30f062595c99deafabfc272a23d2337049db18a2ce09bd7c2a5e5399491bd77c",
+      "internalPort": 8000,
+      "isMain": true
+    }
+  ]
+}

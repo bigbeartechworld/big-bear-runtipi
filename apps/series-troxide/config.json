@@ -1,0 +1,26 @@
+{
+  "name": "Series-troxide",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "series-troxide",
+  "description": "Series Troxide a Simple and Modern Series Tracker",
+  "tipi_version": 1,
+  "version": "0.5.1",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "A Simple and Modern Series Tracker",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-series-troxide",
+  "website": "https://hub.docker.com/r/linuxserver/series-troxide",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765913000,
+  "updated_at": 1789765913000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

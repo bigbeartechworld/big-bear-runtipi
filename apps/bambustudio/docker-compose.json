@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "bambustudio",
+      "image": "linuxserver/bambustudio:02.08.02@sha256:7f31ec3fecb07338eb391674f4a4436fed4c5ceab238e5bbc31c330cbf4196ff",
+      "internalPort": 3000,
+      "isMain": true
+    }
+  ]
+}

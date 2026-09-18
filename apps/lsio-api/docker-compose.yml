@@ -1,0 +1,24 @@
+services:
+  lsio-api:
+    image: linuxserver/lsio-api:version-9eda67ec@sha256:374295622f0cc2e951b2f2b7b431fa1718102d2145335cee84b8c24ce72f46fb
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 80
+        published: ${APP_PORT}
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/lsio-api/config
+        target: /config
+    container_name: lsio-api
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

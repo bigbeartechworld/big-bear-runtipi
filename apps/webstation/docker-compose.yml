@@ -1,0 +1,27 @@
+services:
+  webstation:
+    image: linuxserver/webstation:0.8.4-romm@sha256:e5f8e2a2af05b8035c05db8e8713629722313ef819ef660523685b15bf76a2db
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 3000
+        published: ${APP_PORT}
+        protocol: tcp
+      - target: 3001
+        published: 3001
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/webstation/config
+        target: /config
+    container_name: webstation
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

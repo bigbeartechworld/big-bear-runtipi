@@ -1,0 +1,26 @@
+{
+  "name": "Dillinger",
+  "available": true,
+  "port": 8080,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "dillinger",
+  "description": "Visit homepage: https://hub.docker.com/r/linuxserver/dillinger/",
+  "tipi_version": 1,
+  "version": "3.39.1",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "A cloud-enabled, mobile-ready, offline-storage, AngularJS powered HTML5 Markdown editor.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-dillinger",
+  "website": "https://hub.docker.com/r/linuxserver/dillinger",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765494000,
+  "updated_at": 1789765494000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

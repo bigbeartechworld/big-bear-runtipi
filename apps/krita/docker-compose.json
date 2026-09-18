@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "krita",
+      "image": "linuxserver/krita:5.3.4@sha256:834c12be2944134c040d4c781cdb3135b1f761ebe6450a7c97c4780534ec10a6",
+      "internalPort": 3000,
+      "isMain": true
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Pidgin",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "pidgin",
+  "description": "Pidgin is a chat program which lets you log into accounts on multiple chat networks simultaneously. This means that you can be chatting with friends on XMPP and sitting in an IRC channel at the same time.",
+  "tipi_version": 1,
+  "version": "2.14.14",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "A chat program which lets you log into accounts on multiple chat networks simultaneously. This means that you can be chatting with friends on XMPP and sitting in an IRC channel at the same time.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-pidgin",
+  "website": "https://hub.docker.com/r/linuxserver/pidgin",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765819000,
+  "updated_at": 1789765819000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

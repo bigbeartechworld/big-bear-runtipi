@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "smokeping",
+      "image": "linuxserver/smokeping:2.9.0@sha256:0c8b547eda8812e16f9888eccd0e08af211431f16e7e0d4d233cb699e8883394",
+      "internalPort": 80,
+      "isMain": true
+    }
+  ]
+}

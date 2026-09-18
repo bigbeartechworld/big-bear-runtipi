@@ -1,0 +1,26 @@
+{
+  "name": "Synclounge",
+  "available": true,
+  "port": 8088,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "synclounge",
+  "description": "Synclounge is a third party tool that allows you to watch Plex in sync with your friends/family, wherever you are.",
+  "tipi_version": 1,
+  "version": "5.2.35",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "A third party tool that allows you to watch Plex in sync with your friends/family, wherever you are.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-synclounge",
+  "website": "https://hub.docker.com/r/linuxserver/synclounge",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765942000,
+  "updated_at": 1789765942000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

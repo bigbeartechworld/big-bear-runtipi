@@ -12,15 +12,15 @@
     "utilities"
   ],
   "short_desc": "maybe-finance",
-  "author": "Maybe Finance",
+  "author": "BigBearCommunity",
   "source": "",
   "website": "https://hub.docker.com/r/maybe-finance/maybe",
   "supported_architectures": [
     "amd64",
     "arm64"
   ],
-  "created_at": 1787014819000,
-  "updated_at": 1787014819000,
+  "created_at": 1789765711000,
+  "updated_at": 1789765711000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

@@ -1,0 +1,26 @@
+{
+  "name": "Libreoffice",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "libreoffice",
+  "description": "LibreOffice is a free and powerful office suite, and a successor to OpenOffice.org (commonly known as OpenOffice). Its clean interface and feature-rich tools help you unleash your creativity and enhance your productivity.",
+  "tipi_version": 1,
+  "version": "25.8.7",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "A free and powerful office suite, and a successor to OpenOffice. Org (commonly known as OpenOffice). Its clean interface and feature-rich tools help you unleash your creativity and enhance your productivity.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-libreoffice",
+  "website": "https://hub.docker.com/r/linuxserver/libreoffice",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765680000,
+  "updated_at": 1789765680000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

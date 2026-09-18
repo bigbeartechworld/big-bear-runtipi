@@ -1,0 +1,25 @@
+{
+  "name": "Pcsx2",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "pcsx2",
+  "description": "PCSX2 is an open source PS2 Emulator.",
+  "tipi_version": 1,
+  "version": "2.8.2",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "An open source PS2 Emulator.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-pcsx2",
+  "website": "https://hub.docker.com/r/linuxserver/pcsx2",
+  "supported_architectures": [
+    "amd64"
+  ],
+  "created_at": 1789765805000,
+  "updated_at": 1789765805000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

@@ -12,15 +12,15 @@
     "utilities"
   ],
   "short_desc": "The next-generation file converter. Open source, fully local and free forever.",
-  "author": "VERT-sh",
+  "author": "BigBearTechWorld",
   "source": "https://github.com/VERT-sh/VERT",
   "website": "https://vert.sh/",
   "supported_architectures": [
     "amd64",
     "arm64"
   ],
-  "created_at": 1787014986000,
-  "updated_at": 1787014986000,
+  "created_at": 1789765986000,
+  "updated_at": 1789765986000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

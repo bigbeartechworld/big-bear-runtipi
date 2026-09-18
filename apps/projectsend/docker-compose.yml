@@ -1,0 +1,27 @@
+services:
+  projectsend:
+    image: linuxserver/projectsend:version-r2098@sha256:f9a3ef120901e5322c8c0e1261f7b8f10723eaa8a5036510d37e776cefda2e2a
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 80
+        published: ${APP_PORT}
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/projectsend/config
+        target: /config
+      - type: bind
+        source: /DATA/AppData/projectsend/data
+        target: /data
+    container_name: projectsend
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

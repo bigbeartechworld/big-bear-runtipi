@@ -1,0 +1,25 @@
+{
+  "name": "Steamos",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "steamos",
+  "description": "SteamOS is an Arch based Linux distribution made by Valve Software. This container is a vanilla Arch install with Steam repositories added for software support. This container will only work with modern AMD/Intel GPUs on a real Linux Host",
+  "tipi_version": 1,
+  "version": "0.0.0",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "An Arch based Linux distribution made by Valve Software. This container is a vanilla Arch install with Steam repositories added for software support. This container will only work with modern AMD/Intel GPUs on a real Linux Host",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-steamos",
+  "website": "https://hub.docker.com/r/linuxserver/steamos",
+  "supported_architectures": [
+    "amd64"
+  ],
+  "created_at": 1789765936000,
+  "updated_at": 1789765936000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

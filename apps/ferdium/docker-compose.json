@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "ferdium",
+      "image": "linuxserver/ferdium:7.2.3@sha256:91d0b770d951cc23ad3666308708082d80bf95b32270dbf03ae3fe7f94065471",
+      "internalPort": 3000,
+      "isMain": true
+    }
+  ]
+}

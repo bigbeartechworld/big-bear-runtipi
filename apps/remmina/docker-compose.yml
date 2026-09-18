@@ -1,0 +1,27 @@
+services:
+  remmina:
+    image: linuxserver/remmina:1.4.43@sha256:a3a1bcd96d73d634d19b80cf1d10422faf9ad5875edb3dcd01d296151d0ed08a
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 3000
+        published: ${APP_PORT}
+        protocol: tcp
+      - target: 3001
+        published: 3001
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/remmina/config
+        target: /config
+    container_name: remmina
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

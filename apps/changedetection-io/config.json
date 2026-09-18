@@ -1,0 +1,26 @@
+{
+  "name": "Changedetection.io",
+  "available": true,
+  "port": 5000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "changedetection-io",
+  "description": "Changedetection.io provides free, open-source web page monitoring, notification and change detection.",
+  "tipi_version": 1,
+  "version": "0.60.6",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "Provides free, open-source web page monitoring, notification and change detection.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-changedetection.io",
+  "website": "https://hub.docker.com/r/linuxserver/changedetection.io",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765453000,
+  "updated_at": 1789765453000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

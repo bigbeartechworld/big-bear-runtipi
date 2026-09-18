@@ -1,0 +1,26 @@
+{
+  "name": "Pydio-cells",
+  "available": true,
+  "port": 8080,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "pydio-cells",
+  "description": "Pydio-cells is the nextgen file sharing platform for organizations. It is a full rewrite of the Pydio project using the Go language following a micro-service architecture.",
+  "tipi_version": 1,
+  "version": "5.0.2",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "The nextgen file sharing platform for organizations. It is a full rewrite of the Pydio project using the Go language following a micro-service architecture.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-pydio-cells",
+  "website": "https://hub.docker.com/r/linuxserver/pydio-cells",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765863000,
+  "updated_at": 1789765863000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

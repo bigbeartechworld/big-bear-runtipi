@@ -1,0 +1,26 @@
+{
+  "name": "Qdirstat",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "qdirstat",
+  "description": "QDirStat Qt-based directory statistics: KDirStat without any KDE -- from the author of the original KDirStat.",
+  "tipi_version": 1,
+  "version": "2.0.20260913",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "Qt-based directory statistics: KDirStat without any KDE -- from the author of the original KDirStat.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-qdirstat",
+  "website": "https://hub.docker.com/r/linuxserver/qdirstat",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765867000,
+  "updated_at": 1789765867000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

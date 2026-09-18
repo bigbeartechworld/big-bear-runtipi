@@ -1,0 +1,26 @@
+{
+  "name": "Weixin",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "weixin",
+  "description": "Weixin (WeChat) is an instant messaging, social media, and mobile payment app developed by Tencent.",
+  "tipi_version": 1,
+  "version": "0.0.0",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "(WeChat) is an instant messaging, social media, and mobile payment app developed by Tencent.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-weixin",
+  "website": "https://hub.docker.com/r/linuxserver/weixin",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789766019000,
+  "updated_at": 1789766019000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

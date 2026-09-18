@@ -1,0 +1,25 @@
+{
+  "name": "Tester",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "tester",
+  "description": "This internal tool is used as a desktop sandbox in our CI process to grab a screenshot of a hopefully functional endpoint",
+  "tipi_version": 1,
+  "version": "0.0.0",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "This internal tool is used as a desktop sandbox in our CI process to grab a screenshot of a hopefully functional endpoint",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-tester",
+  "website": "https://hub.docker.com/r/linuxserver/tester",
+  "supported_architectures": [
+    "amd64"
+  ],
+  "created_at": 1789765953000,
+  "updated_at": 1789765953000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

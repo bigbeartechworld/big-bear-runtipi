@@ -12,15 +12,15 @@
     "utilities"
   ],
   "short_desc": "Umami is a simple, fast, privacy-focused alternative to Google Analytics.",
-  "author": "umami-software",
+  "author": "BigBearTechWorld",
   "source": "",
   "website": "https://hub.docker.com/r/umami-software/umami",
   "supported_architectures": [
     "amd64",
     "arm64"
   ],
-  "created_at": 1787014978000,
-  "updated_at": 1787014978000,
+  "created_at": 1789765973000,
+  "updated_at": 1789765973000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

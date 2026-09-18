@@ -1,0 +1,26 @@
+{
+  "name": "Gitqlient",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "gitqlient",
+  "description": "GitQlient is a multi-platform Git client originally forked from QGit. Nowadays it goes beyond of just a fork and adds a lot of new functionality.",
+  "tipi_version": 1,
+  "version": "1.6.3",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "A multi-platform Git client originally forked from QGit. Nowadays it goes beyond of just a fork and adds a lot of new functionality.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-gitqlient",
+  "website": "https://hub.docker.com/r/linuxserver/gitqlient",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765592000,
+  "updated_at": 1789765592000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

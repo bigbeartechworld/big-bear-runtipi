@@ -7,20 +7,20 @@
   "id": "otel-lgtm",
   "description": "An OpenTelemetry Backend in a Docker Image.",
   "tipi_version": 1,
-  "version": "0.30.2",
+  "version": "0.33.0",
   "categories": [
     "utilities"
   ],
   "short_desc": "OpenTelemetry Backend",
-  "author": "Grafana Labs",
+  "author": "Konrad Botor (Forinil)",
   "source": "",
   "website": "https://hub.docker.com/r/grafana/otel-lgtm",
   "supported_architectures": [
     "amd64",
     "arm64"
   ],
-  "created_at": 1787014883000,
-  "updated_at": 1787014883000,
+  "created_at": 1789765792000,
+  "updated_at": 1789765792000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

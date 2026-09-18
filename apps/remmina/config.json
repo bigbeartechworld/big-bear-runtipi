@@ -1,0 +1,26 @@
+{
+  "name": "Remmina",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "remmina",
+  "description": "Remmina is a remote desktop client written in GTK, aiming to be useful for system administrators and travellers, who need to work with lots of remote computers in front of either large or tiny screens. Remmina supports multiple network protocols, in an integrated and consistent user interface. Currently RDP, VNC, SPICE, SSH and EXEC are supported.",
+  "tipi_version": 1,
+  "version": "1.4.43",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "A remote desktop client written in GTK, aiming to be useful for system administrators and travellers, who need to work with lots of remote computers in front of either large or tiny screens. Remmina supports multiple network protocols, in an integrated and consistent user interface. Currently RDP, VNC, SPICE, SSH and EXEC are supported.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-remmina",
+  "website": "https://hub.docker.com/r/linuxserver/remmina",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765888000,
+  "updated_at": 1789765888000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

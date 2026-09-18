@@ -1,0 +1,26 @@
+{
+  "name": "Python",
+  "available": true,
+  "port": 80,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "python",
+  "description": "This container needs special attention. Please check https://hub.docker.com/r/linuxserver/python for details.",
+  "tipi_version": 1,
+  "version": "3.14.7",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "This container needs special attention. Please check https://hub. Docker. Com/r/linuxserver/python for details. ",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-python",
+  "website": "https://hub.docker.com/r/linuxserver/python",
+  "supported_architectures": [
+    "arm64",
+    "amd64"
+  ],
+  "created_at": 1789765865000,
+  "updated_at": 1789765865000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

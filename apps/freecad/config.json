@@ -1,0 +1,26 @@
+{
+  "name": "Freecad",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "freecad",
+  "description": "FreeCAD is a general-purpose parametric 3D computer-aided design (CAD) modeler and a building information modeling (BIM) software application with finite element method (FEM) support.",
+  "tipi_version": 1,
+  "version": "1.1.3",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "A general-purpose parametric 3D computer-aided design (CAD) modeler and a building information modeling (BIM) software application with finite element method (FEM) support.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-freecad",
+  "website": "https://hub.docker.com/r/linuxserver/freecad",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765578000,
+  "updated_at": 1789765578000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

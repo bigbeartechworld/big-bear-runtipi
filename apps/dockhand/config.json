@@ -12,15 +12,15 @@
     "utilities"
   ],
   "short_desc": "Modern Docker management you will like",
-  "author": "Finsys",
+  "author": "BigBearTechWorld",
   "source": "https://github.com/Finsys/dockhand",
   "website": "https://dockhand.pro",
   "supported_architectures": [
     "amd64",
     "arm64"
   ],
-  "created_at": 1787014692000,
-  "updated_at": 1787014692000,
+  "created_at": 1789765506000,
+  "updated_at": 1789765506000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

@@ -1,0 +1,26 @@
+{
+  "name": "Fleet",
+  "available": true,
+  "port": 8080,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "fleet",
+  "description": "Fleet provides an online web interface which displays a set of maintained images from one or more owned repositories.",
+  "tipi_version": 1,
+  "version": "2.3.3",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "Provides an online web interface which displays a set of maintained images from one or more owned repositories. ",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-fleet",
+  "website": "https://hub.docker.com/r/linuxserver/fleet",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765570000,
+  "updated_at": 1789765570000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

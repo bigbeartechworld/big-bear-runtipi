@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "emby",
+      "image": "linuxserver/emby:4.10.0@sha256:2b5be3e424c095722f1d8eeac86d74d8e5b5b5323bcfdb68da45c688b5b1a477",
+      "internalPort": 8096,
+      "isMain": true
+    }
+  ]
+}

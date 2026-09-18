@@ -1,0 +1,32 @@
+services:
+  arma3-server:
+    image: ghcr.io/brettmayson/arma3server/arma3server:latest@sha256:951fb164243d35d815259a9ddd2f9ce7b5375d366c665ee7c78e752717fde815
+    container_name: arma3-server
+    ports:
+      - "${APP_PORT}:2302-2306/udp"
+    volumes:
+      - ${APP_DATA_DIR}/data/arma3-server_mpmissions:/arma3/mpmissions
+      - ${APP_DATA_DIR}/data/arma3-server_configs:/arma3/configs
+      - ${APP_DATA_DIR}/data/arma3-server_mods:/arma3/mods
+      - ${APP_DATA_DIR}/data/arma3-server_servermods:/arma3/servermods
+      - ${APP_DATA_DIR}/data/arma3-server_addons:/arma3/addons
+      - ${APP_DATA_DIR}/data/arma3-server_steamcmd:/steamcmd
+    environment:
+      - STEAM_USER=${STEAM_USER:-}
+      - STEAM_PASSWORD=${STEAM_PASSWORD:-}
+      - PORT=2302
+      - ARMA_CONFIG=main.cfg
+      - ARMA_PROFILE=main
+      - ARMA_WORLD=empty
+      - ARMA_LIMITFPS=100
+      - ARMA_BINARY=./arma3server_x64
+      - ARMA_PARAMS=
+      - TZ=UTC
+    restart: unless-stopped
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

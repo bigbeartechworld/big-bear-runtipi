@@ -1,0 +1,26 @@
+{
+  "name": "BookOrbit",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "bookorbit",
+  "description": "BookOrbit is a self-hosted library and reading platform for ebooks, PDFs, audiobooks, and comics. It syncs progress and highlights across the web reader, Kobo, and KOReader, with metadata lookup, reading stats, OPDS, and multi-user OIDC support.",
+  "tipi_version": 1,
+  "version": "2.7.0",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "Your self-hosted reading space for books, audiobooks, and comics",
+  "author": "BigBearTechWorld",
+  "source": "https://github.com/bookorbit/bookorbit",
+  "website": "https://bookorbit.app",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765428000,
+  "updated_at": 1789765428000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

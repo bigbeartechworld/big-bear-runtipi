@@ -1,0 +1,25 @@
+{
+  "name": "Bambustudio",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "bambustudio",
+  "description": "Bambu Studio is an open-source, cutting-edge, feature-rich slicing software. It contains project-based workflows, systematically optimized slicing algorithms, and an easy-to-use graphical interface, bringing users an incredibly smooth printing experience.",
+  "tipi_version": 1,
+  "version": "02.08.02",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "An open-source, cutting-edge, feature-rich slicing software. It contains project-based workflows, systematically optimized slicing algorithms, and an easy-to-use graphical interface, bringing users an incredibly smooth printing experience.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-bambustudio",
+  "website": "https://hub.docker.com/r/linuxserver/bambustudio",
+  "supported_architectures": [
+    "amd64"
+  ],
+  "created_at": 1789765413000,
+  "updated_at": 1789765413000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

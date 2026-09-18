@@ -12,15 +12,15 @@
     "utilities"
   ],
   "short_desc": "Legacy media request manager - new users should use Seerr instead",
-  "author": "Fallenbagel",
+  "author": "BigBearCommunity",
   "source": "",
   "website": "https://hub.docker.com/r/fallenbagel/jellyseerr",
   "supported_architectures": [
     "amd64",
     "arm64"
   ],
-  "created_at": 1787014789000,
-  "updated_at": 1787014789000,
+  "created_at": 1789765645000,
+  "updated_at": 1789765645000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

@@ -1,0 +1,26 @@
+{
+  "name": "Projectsend",
+  "available": true,
+  "port": 80,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "projectsend",
+  "description": "Projectsend is a self-hosted application that lets you upload files and assign them to specific clients that you create yourself. Secure, private and easy. No more depending on external services or e-mail to send those files.",
+  "tipi_version": 1,
+  "version": "0.0.0",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "A self-hosted application that lets you upload files and assign them to specific clients that you create yourself. Secure, private and easy. No more depending on external services or e-mail to send those files.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-projectsend",
+  "website": "https://hub.docker.com/r/linuxserver/projectsend",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765852000,
+  "updated_at": 1789765852000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

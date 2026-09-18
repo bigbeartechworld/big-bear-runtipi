@@ -1,0 +1,26 @@
+{
+  "name": "Darktable",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "darktable",
+  "description": "darktable is an open source photography workflow application and raw developer. A virtual lighttable and darkroom for photographers. It manages your digital negatives in a database, lets you view them through a zoomable lighttable and enables you to develop raw images and enhance them.",
+  "tipi_version": 1,
+  "version": "25.6.1",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "An open source photography workflow application and raw developer. A virtual lighttable and darkroom for photographers. It manages your digital negatives in a database, lets you view them through a zoomable lighttable and enables you to develop raw images and enhance them.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-darktable",
+  "website": "https://hub.docker.com/r/linuxserver/darktable",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765482000,
+  "updated_at": 1789765482000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

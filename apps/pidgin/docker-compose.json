@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "pidgin",
+      "image": "linuxserver/pidgin:2.14.14@sha256:70c7c1741aaf59781f2e6afbe0a30044c61eb94b5359405a691416b0700bf904",
+      "internalPort": 3000,
+      "isMain": true
+    }
+  ]
+}

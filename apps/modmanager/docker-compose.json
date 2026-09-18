@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "modmanager",
+      "image": "linuxserver/modmanager:version-7dc8618e@sha256:742583b32a779fbcbe7d0a8915bd4c6d4a9d7170e802cc576364b1cd3b971d1f",
+      "internalPort": 80,
+      "isMain": true
+    }
+  ]
+}

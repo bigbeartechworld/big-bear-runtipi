@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "daapd",
+      "image": "linuxserver/daapd:28.10.20250118@sha256:c26717699965381d1ca009b60b4f6bb280c4b812b7693d2b4cd99686c2e1e02e",
+      "internalPort": 80,
+      "isMain": true
+    }
+  ]
+}

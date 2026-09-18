@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "unrar",
+      "image": "linuxserver/unrar:7.2.7@sha256:48c0ce2609bb3c35764956bbd9395e95b177421e3c74b3628c3676029f24f2e0",
+      "internalPort": 80,
+      "isMain": true
+    }
+  ]
+}

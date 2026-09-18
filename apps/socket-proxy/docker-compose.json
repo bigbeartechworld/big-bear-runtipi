@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "socket-proxy",
+      "image": "linuxserver/socket-proxy:3.4.4@sha256:ba211325155c463a1a6e6a038c928f21447a8e60ce02ecf41302047974097e84",
+      "internalPort": 80,
+      "isMain": true
+    }
+  ]
+}

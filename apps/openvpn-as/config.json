@@ -12,14 +12,14 @@
     "utilities"
   ],
   "short_desc": "OpenVPN is an open-source commercial software that implements virtual private network (VPN).",
-  "author": "openvpn",
+  "author": "BigBearCommunity",
   "source": "",
   "website": "https://hub.docker.com/r/openvpn/openvpn-as",
   "supported_architectures": [
     "amd64"
   ],
-  "created_at": 1787014882000,
-  "updated_at": 1787014882000,
+  "created_at": 1789765786000,
+  "updated_at": 1789765786000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "kometa",
+      "image": "linuxserver/kometa:2.4.8@sha256:218708a27eb2327c58f2dc560e19b405d1258c371ea4f60e3f9ad992e0587dea",
+      "internalPort": 80,
+      "isMain": true
+    }
+  ]
+}

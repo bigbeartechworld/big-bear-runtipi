@@ -12,15 +12,15 @@
     "utilities"
   ],
   "short_desc": "A black hole for Internet advertisements",
-  "author": "pi-hole.net",
+  "author": "BigBearTechWorld",
   "source": "",
   "website": "https://hub.docker.com/r/pihole/pihole",
   "supported_architectures": [
     "amd64",
     "arm64"
   ],
-  "created_at": 1787014905000,
-  "updated_at": 1787014905000,
+  "created_at": 1789765820000,
+  "updated_at": 1789765820000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

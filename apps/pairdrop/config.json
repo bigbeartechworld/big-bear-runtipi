@@ -1,0 +1,26 @@
+{
+  "name": "Pairdrop",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "pairdrop",
+  "description": "PairDrop is a sublime alternative to AirDrop that works on all platforms. Send images, documents or text via peer to peer connection to devices in the same local network/Wi-Fi or to paired devices.",
+  "tipi_version": 1,
+  "version": "1.11.2",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "A sublime alternative to AirDrop that works on all platforms. Send images, documents or text via peer to peer connection to devices in the same local network/Wi-Fi or to paired devices.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-pairdrop",
+  "website": "https://hub.docker.com/r/linuxserver/pairdrop",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765795000,
+  "updated_at": 1789765795000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

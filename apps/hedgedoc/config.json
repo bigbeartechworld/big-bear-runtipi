@@ -1,0 +1,26 @@
+{
+  "name": "Hedgedoc",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "hedgedoc",
+  "description": "HedgeDoc gives you access to all your files wherever you are. HedgeDoc is a real-time, multi-platform collaborative markdown note editor. This means that you can write notes with other people on your desktop, tablet or even on the phone. You can sign-in via multiple auth providers like Facebook, Twitter, GitHub and many more on the homepage.",
+  "tipi_version": 1,
+  "version": "1.12.0",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "Gives you access to all your files wherever you are. HedgeDoc is a real-time, multi-platform collaborative markdown note editor. This means that you can write notes with other people on your desktop, tablet or even on the phone. You can sign-in via multiple auth providers like Facebook, Twitter, GitHub and many more on the homepage.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-hedgedoc",
+  "website": "https://hub.docker.com/r/linuxserver/hedgedoc",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765614000,
+  "updated_at": 1789765614000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

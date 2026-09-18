@@ -1,0 +1,26 @@
+{
+  "name": "Ardour",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "ardour",
+  "description": "Ardour is an open source, collaborative effort of a worldwide team including musicians, programmers, and professional recording engineers.",
+  "tipi_version": 1,
+  "version": "0.0.0",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "An open source, collaborative effort of a worldwide team including musicians, programmers, and professional recording engineers.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-ardour",
+  "website": "https://hub.docker.com/r/linuxserver/ardour",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765398000,
+  "updated_at": 1789765398000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

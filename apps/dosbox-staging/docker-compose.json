@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "dosbox-staging",
+      "image": "linuxserver/dosbox-staging:0.83.0@sha256:9b47af7cb6c5e51faaef40460816a0e1ffd24fad4beaac67418236085646b183",
+      "internalPort": 3000,
+      "isMain": true
+    }
+  ]
+}

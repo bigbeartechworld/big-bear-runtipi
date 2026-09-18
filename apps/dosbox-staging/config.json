@@ -1,0 +1,25 @@
+{
+  "name": "Dosbox-staging",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "dosbox-staging",
+  "description": "DOSBox Staging is a modern continuation of DOSBox a free and open-source emulator that enables the execution of MS-DOS software, especially video games.",
+  "tipi_version": 1,
+  "version": "0.83.0",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "A modern continuation of DOSBox a free and open-source emulator that enables the execution of MS-DOS software, especially video games.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-dosbox-staging",
+  "website": "https://hub.docker.com/r/linuxserver/dosbox-staging",
+  "supported_architectures": [
+    "amd64"
+  ],
+  "created_at": 1789765517000,
+  "updated_at": 1789765517000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

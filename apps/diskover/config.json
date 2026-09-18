@@ -1,0 +1,26 @@
+{
+  "name": "Diskover",
+  "available": true,
+  "port": 80,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "diskover",
+  "description": "Diskover is an open source file system indexer that uses Elasticsearch to index and manage data across heterogeneous storage systems.",
+  "tipi_version": 1,
+  "version": "2.3.5",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "An open source file system indexer that uses Elasticsearch to index and manage data across heterogeneous storage systems.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-diskover",
+  "website": "https://hub.docker.com/r/linuxserver/diskover",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765499000,
+  "updated_at": 1789765499000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

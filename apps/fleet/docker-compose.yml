@@ -1,0 +1,29 @@
+services:
+  fleet:
+    image: linuxserver/fleet:2.3.3@sha256:6a0c946a9339b848a5f31d06ff45876dd94fee8cc19b1f8b6a8b0b60e3bbff24
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      fleet_admin_authentication_type: ''
+      fleet_database_url: ''
+      fleet_database_username: ''
+      fleet_database_password: ''
+      fleet_admin_secret: ''
+    ports:
+      - target: 8080
+        published: ${APP_PORT}
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/fleet/config
+        target: /config
+    container_name: fleet
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

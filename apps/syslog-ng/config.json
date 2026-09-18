@@ -1,0 +1,26 @@
+{
+  "name": "Syslog-ng",
+  "available": true,
+  "port": 514,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "syslog-ng",
+  "description": "syslog-ng allows you to flexibly collect, parse, classify, rewrite and correlate logs from across your infrastructure and store or route them to log analysis tools.",
+  "tipi_version": 1,
+  "version": "4.11.0",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "Allows you to flexibly collect, parse, classify, rewrite and correlate logs from across your infrastructure and store or route them to log analysis tools.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-syslog-ng",
+  "website": "https://hub.docker.com/r/linuxserver/syslog-ng",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765945000,
+  "updated_at": 1789765945000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

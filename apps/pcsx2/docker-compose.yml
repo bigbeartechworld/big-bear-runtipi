@@ -1,0 +1,27 @@
+services:
+  pcsx2:
+    image: linuxserver/pcsx2:2.8.2@sha256:adad5a2ca1d2fa58cc39fd4212ae20e7fcc730045e67f271a1ea491e442d30f9
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 3000
+        published: ${APP_PORT}
+        protocol: tcp
+      - target: 3001
+        published: 3001
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/pcsx2/config
+        target: /config
+    container_name: pcsx2
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

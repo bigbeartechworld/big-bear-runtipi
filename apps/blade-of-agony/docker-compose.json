@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "blade-of-agony",
+      "image": "linuxserver/blade-of-agony:3.1.20260910@sha256:94847e367511092748d764e6a83a72e9d7f7bfa3fc9da5ac7172c46eed5b28f6",
+      "internalPort": 3000,
+      "isMain": true
+    }
+  ]
+}

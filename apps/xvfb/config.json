@@ -1,0 +1,26 @@
+{
+  "name": "Xvfb",
+  "available": true,
+  "port": 80,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "xvfb",
+  "description": "This container needs special attention. Please check https://hub.docker.com/r/linuxserver/xvfb for details.",
+  "tipi_version": 1,
+  "version": "0.0.0",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "This container needs special attention. Please check https://hub. Docker. Com/r/linuxserver/xvfb for details.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-xvfb",
+  "website": "https://hub.docker.com/r/linuxserver/xvfb",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789766045000,
+  "updated_at": 1789766045000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

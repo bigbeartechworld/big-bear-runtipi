@@ -1,0 +1,26 @@
+{
+  "name": "Mastodon",
+  "available": true,
+  "port": 80,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "mastodon",
+  "description": "Mastodon is a free, open-source social network server based on ActivityPub where users can follow friends and discover new ones..",
+  "tipi_version": 1,
+  "version": "4.7.2",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "A free, open-source social network server based on ActivityPub where users can follow friends and discover new ones. .",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-mastodon",
+  "website": "https://hub.docker.com/r/linuxserver/mastodon",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765708000,
+  "updated_at": 1789765708000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

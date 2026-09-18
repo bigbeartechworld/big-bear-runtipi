@@ -1,0 +1,27 @@
+services:
+  eden:
+    image: linuxserver/eden:0.2.1@sha256:91f5be6bb28b220661c194f7858559f47e3f412e4501d6b3e2814b803b0dee70
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 3000
+        published: ${APP_PORT}
+        protocol: tcp
+      - target: 3001
+        published: 3001
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/eden/config
+        target: /config
+    container_name: eden
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

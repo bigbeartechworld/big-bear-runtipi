@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "flycast",
+      "image": "linuxserver/flycast:2.7.20260913@sha256:74a090d9b743d09d95dfc546064980ea9ded0d1e701de89b11672ce2d1431202",
+      "internalPort": 3000,
+      "isMain": true
+    }
+  ]
+}

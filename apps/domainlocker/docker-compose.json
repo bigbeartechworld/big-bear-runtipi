@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "domainlocker",
+      "image": "ghcr.io/lissy93/domain-locker:0.2.4@sha256:883716e301b7353327cc82d6bd8e4c5f5d2a93d7f8175e0c10e1d0855f5c4094",
+      "internalPort": 8180,
+      "isMain": true
+    }
+  ]
+}

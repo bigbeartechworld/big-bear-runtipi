@@ -7,20 +7,20 @@
   "id": "homer",
   "description": "A dead simple static HOMepage for your servER to keep your services on hand, from a simple yaml configuration file.",
   "tipi_version": 1,
-  "version": "v26.4.2",
+  "version": "v26.08.3",
   "categories": [
     "utilities"
   ],
   "short_desc": "Homer",
-  "author": "bastienwirtz",
+  "author": "BigBearTechWorld",
   "source": "",
   "website": "https://hub.docker.com/r/b4bz/homer",
   "supported_architectures": [
     "amd64",
     "arm64"
   ],
-  "created_at": 1787014762000,
-  "updated_at": 1787014762000,
+  "created_at": 1789765627000,
+  "updated_at": 1789765627000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

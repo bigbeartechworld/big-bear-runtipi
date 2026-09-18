@@ -1,0 +1,26 @@
+{
+  "name": "Nginx",
+  "available": true,
+  "port": 80,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "nginx",
+  "description": "Nginx is an HTTP web server, reverse proxy, content cache, load balancer, TCP/UDP proxy server, and mail proxy server.",
+  "tipi_version": 1,
+  "version": "1.30.4",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "An HTTP web server, reverse proxy, content cache, load balancer, TCP/UDP proxy server, and mail proxy server.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-nginx",
+  "website": "https://hub.docker.com/r/linuxserver/nginx",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765754000,
+  "updated_at": 1789765754000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

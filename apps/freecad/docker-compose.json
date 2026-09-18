@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "freecad",
+      "image": "linuxserver/freecad:1.1.3@sha256:4f56100b99cfc8d967b0c15a34dd86f7a48b42cd318dfd40802fa40cf5a421ea",
+      "internalPort": 3000,
+      "isMain": true
+    }
+  ]
+}

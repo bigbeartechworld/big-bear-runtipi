@@ -7,20 +7,20 @@
   "id": "onedev",
   "description": "Self-hosted Git Server with Kanban and CI/CD",
   "tipi_version": 1,
-  "version": "16.5.0",
+  "version": "16.6.3",
   "categories": [
     "utilities"
   ],
   "short_desc": "Self-hosted Git Server with Kanban and CI/CD",
-  "author": "theonedev",
+  "author": "BigBearTechWorld",
   "source": "",
   "website": "https://hub.docker.com/r/1dev/server",
   "supported_architectures": [
     "amd64",
     "arm64"
   ],
-  "created_at": 1787014876000,
-  "updated_at": 1787014876000,
+  "created_at": 1789765778000,
+  "updated_at": 1789765778000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "raneto",
+      "image": "linuxserver/raneto:0.18.1@sha256:b42adb6267d22bde31295995ed151ba23f6ca01c6da2d5d2562ca46cce859bec",
+      "internalPort": 3000,
+      "isMain": true
+    }
+  ]
+}

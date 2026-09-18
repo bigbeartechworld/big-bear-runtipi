@@ -1,0 +1,26 @@
+{
+  "name": "Znc",
+  "available": true,
+  "port": 6501,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "znc",
+  "description": "Znc is an IRC network bouncer or BNC. It can detach the client from the actual IRC server, and also from selected channels. Multiple clients from different locations can connect to a single ZNC account simultaneously and therefore appear under the same nickname on IRC.",
+  "tipi_version": 1,
+  "version": "1.10.3",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "An IRC network bouncer or BNC. It can detach the client from the actual IRC server, and also from selected channels. Multiple clients from different locations can connect to a single ZNC account simultaneously and therefore appear under the same nickname on IRC.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-znc",
+  "website": "https://hub.docker.com/r/linuxserver/znc",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789766054000,
+  "updated_at": 1789766054000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

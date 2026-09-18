@@ -1,0 +1,26 @@
+{
+  "name": "Sealskin",
+  "available": true,
+  "port": 8443,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "sealskin",
+  "description": "Sealskin is a self-hosted, client-server platform that enables users to run powerful, containerized desktop applications streamed directly to a web browser. It uses a browser extension to intercept user actions—such as clicking a link or downloading a file and redirects them to a secure, isolated application environment running on a remote server.",
+  "tipi_version": 1,
+  "version": "0.3.2",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "A self-hosted, client-server platform that enables users to run powerful, containerized desktop applications streamed directly to a web browser. It uses a browser extension to intercept user actions—such as clicking a link or downloading a file and redirects them to a secure, isolated application environment running on a remote server.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-sealskin",
+  "website": "https://hub.docker.com/r/linuxserver/sealskin",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765908000,
+  "updated_at": 1789765908000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

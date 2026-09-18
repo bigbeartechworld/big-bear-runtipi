@@ -1,0 +1,26 @@
+{
+  "name": "Webgrabplus",
+  "available": true,
+  "port": 80,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "webgrabplus",
+  "description": "Webgrabplus is a multi-site incremental xmltv epg grabber. It collects tv-program guide data from selected tvguide sites for your favourite channels.",
+  "tipi_version": 1,
+  "version": "5.6.1",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "A multi-site incremental xmltv epg grabber. It collects tv-program guide data from selected tvguide sites for your favourite channels.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-webgrabplus",
+  "website": "https://hub.docker.com/r/linuxserver/webgrabplus",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789766013000,
+  "updated_at": 1789766013000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

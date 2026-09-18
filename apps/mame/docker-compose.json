@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "mame",
+      "image": "linuxserver/mame:version-0.289dfsg1-0@sha256:9460e65352a4668f775f45bd68ea44f819515d57065bc07560700153c8644e8d",
+      "internalPort": 3000,
+      "isMain": true
+    }
+  ]
+}

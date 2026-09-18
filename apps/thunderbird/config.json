@@ -1,0 +1,26 @@
+{
+  "name": "Thunderbird",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "thunderbird",
+  "description": "Thunderbird is a free and open-source personal information manager primarily used as an e-mail client with a calendar and contactbook, as well as an RSS feed reader, chat client, and news client.",
+  "tipi_version": 1,
+  "version": "1140.16.0",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "A free and open-source personal information manager primarily used as an e-mail client with a calendar and contactbook, as well as an RSS feed reader, chat client, and news client.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-thunderbird",
+  "website": "https://hub.docker.com/r/linuxserver/thunderbird",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765956000,
+  "updated_at": 1789765956000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

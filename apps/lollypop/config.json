@@ -1,0 +1,26 @@
+{
+  "name": "Lollypop",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "lollypop",
+  "description": "Lollypop is a lightweight modern music player designed to work excellently on the GNOME desktop environment.",
+  "tipi_version": 1,
+  "version": "1.4.45",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "A lightweight modern music player designed to work excellently on the GNOME desktop environment.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-lollypop",
+  "website": "https://hub.docker.com/r/linuxserver/lollypop",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765693000,
+  "updated_at": 1789765693000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

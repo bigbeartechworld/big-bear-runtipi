@@ -1,0 +1,25 @@
+{
+  "name": "Mysql-workbench",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "mysql-workbench",
+  "description": "MySQL Workbench is a unified visual tool for database architects, developers, and DBAs. MySQL Workbench provides data modeling, SQL development, and comprehensive administration tools for server configuration, user administration, backup, and much more.",
+  "tipi_version": 1,
+  "version": "8.0.47",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "A unified visual tool for database architects, developers, and DBAs. MySQL Workbench provides data modeling, SQL development, and comprehensive administration tools for server configuration, user administration, backup, and much more.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-mysql-workbench",
+  "website": "https://hub.docker.com/r/linuxserver/mysql-workbench",
+  "supported_architectures": [
+    "amd64"
+  ],
+  "created_at": 1789765735000,
+  "updated_at": 1789765735000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

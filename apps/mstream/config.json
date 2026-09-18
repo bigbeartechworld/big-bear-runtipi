@@ -1,0 +1,26 @@
+{
+  "name": "Mstream",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "mstream",
+  "description": "Mstream is a personal music streaming server. You can use mStream to stream your music from your home computer to any device, anywhere. There are mobile apps available for both Android and iPhone.",
+  "tipi_version": 1,
+  "version": "6.28.1",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "A personal music streaming server. You can use mStream to stream your music from your home computer to any device, anywhere. There are mobile apps available for both Android and iPhone.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-mstream",
+  "website": "https://hub.docker.com/r/linuxserver/mstream",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765730000,
+  "updated_at": 1789765730000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

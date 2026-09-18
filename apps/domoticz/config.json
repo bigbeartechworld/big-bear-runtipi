@@ -1,0 +1,26 @@
+{
+  "name": "Domoticz",
+  "available": true,
+  "port": 8080,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "domoticz",
+  "description": "Visit homepage: https://hub.docker.com/r/linuxserver/domoticz/",
+  "tipi_version": 1,
+  "version": "2023.2.20231129",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "A Home Automation System that lets you monitor and configure various devices like: Lights, Switches, various sensors/meters like Temperature, Rain, Wind, UV, Electra, Gas, Water and much more. Notifications/Alerts can be sent to any mobile device.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-domoticz",
+  "website": "https://hub.docker.com/r/linuxserver/domoticz",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765516000,
+  "updated_at": 1789765516000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Raneto",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "raneto",
+  "description": "Raneto - is an open source Knowledgebase platform that uses static Markdown files to power your Knowledgebase.",
+  "tipi_version": 1,
+  "version": "0.18.1",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "is an open source Knowledgebase platform that uses static Markdown files to power your Knowledgebase.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-raneto",
+  "website": "https://hub.docker.com/r/linuxserver/raneto",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765879000,
+  "updated_at": 1789765879000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

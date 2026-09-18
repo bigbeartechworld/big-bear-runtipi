@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "ldap-auth",
+      "image": "linuxserver/ldap-auth:3.4.8@sha256:9b94624ff3dff4bcf6d7ba74a9186afe6ac334e48104bb5f688ddf6866659957",
+      "internalPort": 8888,
+      "isMain": true
+    }
+  ]
+}
