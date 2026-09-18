@@ -1,0 +1,25 @@
+{
+  "name": "Blade-of-agony",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "blade-of-agony",
+  "description": "Wolfenstein: Blade of Agony is a story-driven WWII shooter inspired by Wolfenstein and Doom.",
+  "tipi_version": 1,
+  "version": "3.1.20260910",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "A story-driven WWII shooter inspired by Wolfenstein and Doom.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-blade-of-agony",
+  "website": "https://hub.docker.com/r/linuxserver/blade-of-agony",
+  "supported_architectures": [
+    "amd64"
+  ],
+  "created_at": 1789765422000,
+  "updated_at": 1789765422000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

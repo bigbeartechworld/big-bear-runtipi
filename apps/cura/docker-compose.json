@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "cura",
+      "image": "linuxserver/cura:5.13.0@sha256:2b7a8665a662478c0e486b3841a5eb7517c92c1c661b0d306de238f38ef64da9",
+      "internalPort": 3000,
+      "isMain": true
+    }
+  ]
+}

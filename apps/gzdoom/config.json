@@ -1,0 +1,26 @@
+{
+  "name": "Gzdoom",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "gzdoom",
+  "description": "GZDoom is a feature centric port for all Doom engine games, based on ZDoom, adding an OpenGL renderer and powerful scripting capabilities.",
+  "tipi_version": 1,
+  "version": "4.14.2",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "A feature centric port for all Doom engine games, based on ZDoom, adding an OpenGL renderer and powerful scripting capabilities.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-gzdoom",
+  "website": "https://hub.docker.com/r/linuxserver/gzdoom",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765607000,
+  "updated_at": 1789765607000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

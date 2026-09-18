@@ -1,0 +1,25 @@
+{
+  "name": "Audacity",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "audacity",
+  "description": "Audacity is an easy-to-use, multi-track audio editor and recorder. Developed by a group of volunteers as open source.",
+  "tipi_version": 1,
+  "version": "4.0.0",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "An easy-to-use, multi-track audio editor and recorder. Developed by a group of volunteers as open source.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-audacity",
+  "website": "https://hub.docker.com/r/linuxserver/audacity",
+  "supported_architectures": [
+    "amd64"
+  ],
+  "created_at": 1789765402000,
+  "updated_at": 1789765402000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

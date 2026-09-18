@@ -1,0 +1,26 @@
+{
+  "name": "Gimp",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "gimp",
+  "description": "GIMP is a free and open-source raster graphics editor used for image manipulation (retouching) and image editing, free-form drawing, transcoding between different image file formats, and more specialized tasks. It is extensible by means of plugins, and scriptable.",
+  "tipi_version": 1,
+  "version": "0.0.0",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "A free and open-source raster graphics editor used for image manipulation (retouching) and image editing, free-form drawing, transcoding between different image file formats, and more specialized tasks. It is extensible by means of plugins, and scriptable.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-gimp",
+  "website": "https://hub.docker.com/r/linuxserver/gimp",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765586000,
+  "updated_at": 1789765586000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

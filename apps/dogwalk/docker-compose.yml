@@ -1,0 +1,27 @@
+services:
+  dogwalk:
+    image: linuxserver/dogwalk:version-b93769c4@sha256:bda9bb4effc4f9cb23845f52c277e3956e80a5e10e8319295dd81b104d17916c
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 3000
+        published: ${APP_PORT}
+        protocol: tcp
+      - target: 3001
+        published: 3001
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/dogwalk/config
+        target: /config
+    container_name: dogwalk
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

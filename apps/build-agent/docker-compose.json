@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "build-agent",
+      "image": "linuxserver/build-agent:version-0296acb5@sha256:63e38c87cfb1d73beff12975706ffee41c7bb42db41c305648871df98cc24ec0",
+      "internalPort": 80,
+      "isMain": true
+    }
+  ]
+}

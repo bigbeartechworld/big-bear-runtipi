@@ -1,0 +1,25 @@
+{
+  "name": "Dolphin",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "dolphin",
+  "description": "Dolphin Emulator lets you play GameCube and Wii games with various graphical enhancements and other features are available to improve your game experience.",
+  "tipi_version": 1,
+  "version": "0.0.0",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "Lets you play GameCube and Wii games with various graphical enhancements and other features are available to improve your game experience.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-dolphin",
+  "website": "https://hub.docker.com/r/linuxserver/dolphin",
+  "supported_architectures": [
+    "amd64"
+  ],
+  "created_at": 1789765513000,
+  "updated_at": 1789765513000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

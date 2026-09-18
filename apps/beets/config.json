@@ -1,0 +1,26 @@
+{
+  "name": "Beets",
+  "available": true,
+  "port": 8337,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "beets",
+  "description": "Beets is a music library manager and not, for the most part, a music player. It does include a simple player plugin and an experimental Web-based player, but it generally leaves actual sound-reproduction to specialized tools.",
+  "tipi_version": 1,
+  "version": "2.14.0",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "A music library manager and not, for the most part, a music player. It does include a simple player plugin and an experimental Web-based player, but it generally leaves actual sound-reproduction to specialized tools.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-beets",
+  "website": "https://hub.docker.com/r/linuxserver/beets",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765417000,
+  "updated_at": 1789765417000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

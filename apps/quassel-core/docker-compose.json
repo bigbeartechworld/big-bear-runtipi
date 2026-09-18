@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "quassel-core",
+      "image": "linuxserver/quassel-core:0.14.0@sha256:cefb9aa752d4db099d98be5966432e9dcd298695571c8eedc84ffc298f3258e0",
+      "internalPort": 4242,
+      "isMain": true
+    }
+  ]
+}

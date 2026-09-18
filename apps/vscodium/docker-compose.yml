@@ -1,0 +1,27 @@
+services:
+  vscodium:
+    image: linuxserver/vscodium:1.135.06055@sha256:3a7e2ab355c744bcac49457fa01e184e35336eccdcf6192538a4b4d7c611c730
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 3000
+        published: ${APP_PORT}
+        protocol: tcp
+      - target: 3001
+        published: 3001
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/vscodium/config
+        target: /config
+    container_name: vscodium
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

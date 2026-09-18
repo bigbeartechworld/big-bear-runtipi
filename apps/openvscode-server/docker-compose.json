@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "openvscode-server",
+      "image": "linuxserver/openvscode-server:1.109.5@sha256:3a8bef142c1bd8e6b937ca56b3eb145f22632bd01d4ca0021f37e2e79eb15bb1",
+      "internalPort": 3000,
+      "isMain": true
+    }
+  ]
+}

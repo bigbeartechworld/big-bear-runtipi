@@ -1,0 +1,27 @@
+services:
+  budge:
+    image: linuxserver/budge:0.0.9@sha256:187a8087588bd1d8dc6601a81a771549fcfe3cb72388633acb5e19dea11f338e
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 80
+        published: ${APP_PORT}
+        protocol: tcp
+      - target: 443
+        published: 443
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/budge/config
+        target: /config
+    container_name: budge
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

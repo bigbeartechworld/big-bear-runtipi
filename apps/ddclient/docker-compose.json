@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "ddclient",
+      "image": "linuxserver/ddclient:4.0.0@sha256:7fbf1f5ab2b3511b18a21ce5fd49fb48f37ca5c91dad83c25bfbaf8b63b19e06",
+      "internalPort": 80,
+      "isMain": true
+    }
+  ]
+}

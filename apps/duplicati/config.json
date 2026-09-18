@@ -1,0 +1,26 @@
+{
+  "name": "Duplicati",
+  "available": true,
+  "port": 8200,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "duplicati",
+  "description": "Duplicati is a backup client that securely stores encrypted, incremental, compressed backups on local storage, cloud storage services and remote file servers. It works with standard protocols like FTP, SSH, WebDAV as well as popular services like Microsoft OneDrive, Amazon S3, Google Drive, box.com, Mega, B2, and many others.",
+  "tipi_version": 1,
+  "version": "2.4.0",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "A backup client that securely stores encrypted, incremental, compressed backups on local storage, cloud storage services and remote file servers. It works with standard protocols like FTP, SSH, WebDAV as well as popular services like Microsoft OneDrive, Amazon S3, Google Drive, box. Com, Mega, B2, and many others.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-duplicati",
+  "website": "https://hub.docker.com/r/linuxserver/duplicati",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765527000,
+  "updated_at": 1789765527000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

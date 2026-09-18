@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "eden",
+      "image": "linuxserver/eden:0.2.1@sha256:91f5be6bb28b220661c194f7858559f47e3f412e4501d6b3e2814b803b0dee70",
+      "internalPort": 3000,
+      "isMain": true
+    }
+  ]
+}

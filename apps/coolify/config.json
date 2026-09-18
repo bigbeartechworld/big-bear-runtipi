@@ -12,15 +12,15 @@
     "utilities"
   ],
   "short_desc": "Coolify",
-  "author": "coollabsio",
+  "author": "BigBearTechWorld",
   "source": "",
   "website": "https://hub.docker.com/r/coollabsio/coolify",
   "supported_architectures": [
     "amd64",
     "arm64"
   ],
-  "created_at": 1787014669000,
-  "updated_at": 1787014669000,
+  "created_at": 1789765471000,
+  "updated_at": 1789765471000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

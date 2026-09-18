@@ -12,15 +12,15 @@
     "development"
   ],
   "short_desc": "No-code interactive storytelling & automation",
-  "author": "celestory",
+  "author": "Celestory",
   "source": "https://github.com/celestory/celestory",
   "website": "https://www.celestory.io",
   "supported_architectures": [
     "amd64",
     "arm64"
   ],
-  "created_at": 1787014648000,
-  "updated_at": 1787014648000,
+  "created_at": 1789765450000,
+  "updated_at": 1789765450000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

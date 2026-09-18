@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "dokuwiki",
+      "image": "linuxserver/dokuwiki:version-2026-07-14c@sha256:23ff93932dac6e6cad553795b50883d7f9ba906a0a58d77d26bbd85306371939",
+      "internalPort": 80,
+      "isMain": true
+    }
+  ]
+}

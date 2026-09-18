@@ -1,0 +1,26 @@
+{
+  "name": "Filezilla",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "filezilla",
+  "description": "FIleZilla Client is a fast and reliable cross-platform FTP, FTPS and SFTP client with lots of useful features and an intuitive graphical user interface.",
+  "tipi_version": 1,
+  "version": "3.69.6",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "Client is a fast and reliable cross-platform FTP, FTPS and SFTP client with lots of useful features and an intuitive graphical user interface.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-filezilla",
+  "website": "https://hub.docker.com/r/linuxserver/filezilla",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765561000,
+  "updated_at": 1789765561000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

@@ -12,15 +12,15 @@
     "utilities"
   ],
   "short_desc": "A Personal Relationship Management tool to help you document your social life.",
-  "author": "monica",
+  "author": "BigBearTechWorld",
   "source": "",
   "website": "https://hub.docker.com/r/monica",
   "supported_architectures": [
     "amd64",
     "arm64"
   ],
-  "created_at": 1787014826000,
-  "updated_at": 1787014826000,
+  "created_at": 1789765726000,
+  "updated_at": 1789765726000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

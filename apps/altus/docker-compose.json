@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "altus",
+      "image": "linuxserver/altus:5.8.1@sha256:d0da41e0bf3cbd7e2632f01e607942609babe17610d3008132bfce828f337fd9",
+      "internalPort": 3000,
+      "isMain": true
+    }
+  ]
+}

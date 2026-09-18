@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "webcord",
+      "image": "linuxserver/webcord:4.14.0@sha256:33f4850371fdc2a01bee9afa7ef2399d8f4c6acbab131a1ccc506fa5eea2d115",
+      "internalPort": 3000,
+      "isMain": true
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Domain Locker",
+  "available": true,
+  "port": 8180,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "domainlocker",
+  "description": "🌐 The all-in-one tool, for keeping track of your domain name portfolio. Got domain names? Get Domain Locker!",
+  "tipi_version": 1,
+  "version": "0.2.4",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "Domain Locker",
+  "author": "BigBearTechWorld",
+  "source": "https://github.com/Lissy93/domain-locker",
+  "website": "https://hub.docker.com/r/lissy93/domain-locker",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765515000,
+  "updated_at": 1789765515000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

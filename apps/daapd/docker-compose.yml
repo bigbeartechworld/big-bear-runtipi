@@ -1,0 +1,27 @@
+services:
+  daapd:
+    image: linuxserver/daapd:28.10.20250118@sha256:c26717699965381d1ca009b60b4f6bb280c4b812b7693d2b4cd99686c2e1e02e
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 80
+        published: ${APP_PORT}
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/daapd/config
+        target: /config
+      - type: bind
+        source: /DATA/AppData/daapd/music
+        target: /music
+    container_name: daapd
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

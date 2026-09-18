@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "ci-debug",
+      "image": "linuxserver/ci-debug:933e2702-ls1@sha256:ad48184795f11c6e231a845bf844eda0f00dc071f98eab3ba445643d17e53357",
+      "internalPort": 80,
+      "isMain": true
+    }
+  ]
+}

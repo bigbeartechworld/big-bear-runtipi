@@ -1,0 +1,27 @@
+services:
+  retroarch:
+    image: linuxserver/retroarch:1.22.2@sha256:9c49f83df056635e8dd52ea9838e6d7490da36b45325a9913fd08cc79c678b2c
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 3000
+        published: ${APP_PORT}
+        protocol: tcp
+      - target: 3001
+        published: 3001
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/retroarch/config
+        target: /config
+    container_name: retroarch
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

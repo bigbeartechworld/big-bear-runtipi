@@ -1,0 +1,26 @@
+{
+  "name": "Rawtherapee",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "rawtherapee",
+  "description": "RawTherapee is a free, cross-platform raw image processing program!",
+  "tipi_version": 1,
+  "version": "5.13.20260913",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "A free, cross-platform raw image processing program.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-rawtherapee",
+  "website": "https://hub.docker.com/r/linuxserver/rawtherapee",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765881000,
+  "updated_at": 1789765881000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

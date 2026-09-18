@@ -1,0 +1,26 @@
+{
+  "name": "Telegram",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "telegram",
+  "description": "Telegram is a cloud-based mobile and desktop messaging app.",
+  "tipi_version": 1,
+  "version": "7.2.8",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "A cloud-based mobile and desktop messaging app.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-telegram",
+  "website": "https://hub.docker.com/r/linuxserver/telegram",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765952000,
+  "updated_at": 1789765952000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

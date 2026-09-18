@@ -12,15 +12,15 @@
     "utilities"
   ],
   "short_desc": "Self-hosted AI workspace",
-  "author": "pewdiepie-archdaemon",
+  "author": "BigBearTechWorld",
   "source": "https://github.com/pewdiepie-archdaemon/odysseus",
   "website": "https://github.com/pewdiepie-archdaemon/odysseus",
   "supported_architectures": [
     "amd64",
     "arm64"
   ],
-  "created_at": 1787014871000,
-  "updated_at": 1787014871000,
+  "created_at": 1789765773000,
+  "updated_at": 1789765773000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

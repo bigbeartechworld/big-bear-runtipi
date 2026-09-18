@@ -1,0 +1,27 @@
+services:
+  xemu:
+    image: linuxserver/xemu:0.8.134@sha256:eb5da0c57b28a9dddcc93e6cb6c7399c3c179d6943582d68926512abfaa1e14e
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 3000
+        published: ${APP_PORT}
+        protocol: tcp
+      - target: 3001
+        published: 3001
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/xemu/config
+        target: /config
+    container_name: xemu
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

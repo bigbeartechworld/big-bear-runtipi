@@ -1,0 +1,26 @@
+{
+  "name": "Dokuwiki",
+  "available": true,
+  "port": 80,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "dokuwiki",
+  "description": "Dokuwiki is a simple to use and highly versatile Open Source wiki software that doesn't require a database. It is loved by users for its clean and readable syntax. The ease of maintenance, backup and integration makes it an administrator's favorite. Built in access controls and authentication connectors make DokuWiki especially useful in the enterprise context and the large number of plugins contributed by its vibrant community allow for a broad range of use cases beyond a traditional wiki.",
+  "tipi_version": 1,
+  "version": "0.0.0",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "A simple to use and highly versatile Open Source wiki software that doesn't require a database. It is loved by users for its clean and readable syntax. The ease of maintenance, backup and integration makes it an administrator's favorite. Built in access controls and authentication connectors make DokuWiki especially useful in the enterprise context and the large number of plugins contributed by its vibrant community allow for a broad range of use cases beyond a traditional wiki.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-dokuwiki",
+  "website": "https://hub.docker.com/r/linuxserver/dokuwiki",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765511000,
+  "updated_at": 1789765511000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

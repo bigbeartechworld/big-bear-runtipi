@@ -1,0 +1,26 @@
+{
+  "name": "Unifi-controller",
+  "available": true,
+  "port": 8443,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "unifi-controller",
+  "description": "Visit homepage: https://hub.docker.com/r/linuxserver/unifi-controller/",
+  "tipi_version": 1,
+  "version": "8.0.24",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "The Unifi-controller software is a powerful, enterprise wireless software engine ideal for high-density client deployments requiring low latency and high uptime performance.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-unifi-controller",
+  "website": "https://hub.docker.com/r/linuxserver/unifi-controller",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765977000,
+  "updated_at": 1789765977000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

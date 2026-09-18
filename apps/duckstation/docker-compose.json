@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "duckstation",
+      "image": "linuxserver/duckstation:version-latest@sha256:872b926dd713e13f06dac7135b13fa1f3ff4bc40eaabcb3ef01d8eaa16e6d34d",
+      "internalPort": 3000,
+      "isMain": true
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Signal",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "signal",
+  "description": "Signal is a messaging app with privacy at its core. It is free and easy to use, with strong end-to-end encryption that keeps your communication completely private.",
+  "tipi_version": 1,
+  "version": "8.27.0",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "A messaging app with privacy at its core. It is free and easy to use, with strong end-to-end encryption that keeps your communication completely private.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-signal",
+  "website": "https://hub.docker.com/r/linuxserver/signal",
+  "supported_architectures": [
+    "amd64"
+  ],
+  "created_at": 1789765918000,
+  "updated_at": 1789765918000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

@@ -1,0 +1,24 @@
+services:
+  znc:
+    image: linuxserver/znc:1.10.3@sha256:d2bceb0d55c84bb053039724787297b9a8ba4f532182d27eabd47d6e88a5a268
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 6501
+        published: ${APP_PORT}
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/znc/config
+        target: /config
+    container_name: znc
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

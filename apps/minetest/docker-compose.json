@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "minetest",
+      "image": "linuxserver/minetest:5.10.0@sha256:781e50480e4027145d2c81f5cbf6632df40ef0a2b5781682cd149ce58bea305e",
+      "internalPort": 30000,
+      "isMain": true
+    }
+  ]
+}

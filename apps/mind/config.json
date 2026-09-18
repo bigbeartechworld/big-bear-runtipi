@@ -12,15 +12,15 @@
     "utilities"
   ],
   "short_desc": "A simple self hosted reminder application that can send push notifications to your device. Set the reminder and forget about it!",
-  "author": "Casvt",
+  "author": "BigBearTechWorld",
   "source": "",
   "website": "https://hub.docker.com/r/mrcas/mind",
   "supported_architectures": [
     "amd64",
     "arm64"
   ],
-  "created_at": 1787014823000,
-  "updated_at": 1787014823000,
+  "created_at": 1789765718000,
+  "updated_at": 1789765718000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "dillinger",
+      "image": "linuxserver/dillinger:3.39.1@sha256:58dc39f6cddee732241c78f89805bca608299471f66ec90a8028e10b2cadd1b4",
+      "internalPort": 8080,
+      "isMain": true
+    }
+  ]
+}

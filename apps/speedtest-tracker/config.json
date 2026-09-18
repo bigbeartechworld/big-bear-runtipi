@@ -7,20 +7,20 @@
   "id": "speedtest-tracker",
   "description": "A Docker image to check your internet speed using Ookla's Speedtest service. Build using Laravel and the Speedtest CLI.",
   "tipi_version": 1,
-  "version": "1.14.7",
+  "version": "1.15.0",
   "categories": [
     "utilities"
   ],
   "short_desc": "Speedtest Tracker",
-  "author": "alexjustesen",
+  "author": "BigBearTechWorld",
   "source": "",
   "website": "https://hub.docker.com/r/linuxserver/speedtest-tracker",
   "supported_architectures": [
     "amd64",
     "arm64"
   ],
-  "created_at": 1787014959000,
-  "updated_at": 1787014959000,
+  "created_at": 1789765930000,
+  "updated_at": 1789765930000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

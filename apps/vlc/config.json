@@ -1,0 +1,26 @@
+{
+  "name": "Vlc",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "vlc",
+  "description": "VLC Media Player is a free and open source cross-platform multimedia player and framework that delivers dependable performance across multiple devices.",
+  "tipi_version": 1,
+  "version": "3.0.23",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "A free and open source cross-platform multimedia player and framework that delivers dependable performance across multiple devices.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-vlc",
+  "website": "https://hub.docker.com/r/linuxserver/vlc",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765996000,
+  "updated_at": 1789765996000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

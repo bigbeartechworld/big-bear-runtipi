@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "foldingathome",
+      "image": "linuxserver/foldingathome:8.5.6@sha256:ebb32940e4bba0910efaf13dcb4aadc6da9281e81012e6644641c9042ffeb3a1",
+      "internalPort": 80,
+      "isMain": true
+    }
+  ]
+}

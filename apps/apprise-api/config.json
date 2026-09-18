@@ -1,0 +1,26 @@
+{
+  "name": "Apprise-api",
+  "available": true,
+  "port": 8000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "apprise-api",
+  "description": "Apprise-api Takes advantage of Apprise through your network with a user-friendly API. * Send notifications to more than 100 services. * An incredibly lightweight gateway to Apprise. * A production ready micro-service at your disposal. * A Simple Website to verify and test your configuration with. Apprise API was designed to easily fit into existing (and new) eco-systems that are looking for a simple notification solution.",
+  "tipi_version": 1,
+  "version": "1.5.4",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "Takes advantage of Apprise through your network with a user-friendly API. * Send notifications to more than 100 services. * An incredibly lightweight gateway to Apprise. * A production ready micro-service at your disposal. * A Simple Website to verify and test your configuration with. Apprise API was designed to easily fit into existing (and new) eco-systems that are looking for a simple notification solution.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-apprise-api",
+  "website": "https://hub.docker.com/r/linuxserver/apprise-api",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765395000,
+  "updated_at": 1789765395000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

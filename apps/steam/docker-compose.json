@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "steam",
+      "image": "linuxserver/steam:version-0779c5e2@sha256:ed97628a6943b103e3f2ff617c6ceb9062db16cebab6cf71e42a1ceb5ea0cff5",
+      "internalPort": 3000,
+      "isMain": true
+    }
+  ]
+}

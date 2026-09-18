@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "steamos",
+      "image": "linuxserver/steamos:version-2024-12-20@sha256:04adf2c7af1c97c7cf9d8949aebeeaa8ccfc672e24e6bbebe72a95b06013f5af",
+      "internalPort": 3000,
+      "isMain": true
+    }
+  ]
+}

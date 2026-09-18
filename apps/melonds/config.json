@@ -1,0 +1,26 @@
+{
+  "name": "Melonds",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "melonds",
+  "description": "melonDS aims at providing fast and accurate Nintendo DS emulation.",
+  "tipi_version": 1,
+  "version": "1.1.20261229",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "Aims at providing fast and accurate Nintendo DS emulation.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-melonds",
+  "website": "https://hub.docker.com/r/linuxserver/melonds",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765714000,
+  "updated_at": 1789765714000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

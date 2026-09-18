@@ -1,0 +1,26 @@
+{
+  "name": "Helium",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "helium",
+  "description": "Helium is a Chromium-based web browser made for people, with love. Privacy-first with unbiased ad-blocking.",
+  "tipi_version": 1,
+  "version": "0.17.1",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "A Chromium-based web browser made for people, with love. Privacy-first with unbiased ad-blocking.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-helium",
+  "website": "https://hub.docker.com/r/linuxserver/helium",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765617000,
+  "updated_at": 1789765617000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

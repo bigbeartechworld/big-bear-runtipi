@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "kdenlive",
+      "image": "linuxserver/kdenlive:423.08.5@sha256:4c908a8d2e43d788e37f7f1193014f5303b81f452942f26c46cb2a99d7db2d3b",
+      "internalPort": 3000,
+      "isMain": true
+    }
+  ]
+}

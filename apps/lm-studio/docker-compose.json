@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "lm-studio",
+      "image": "linuxserver/lm-studio:version-2026-09-12@sha256:29d2149a8046d54be16a9a3ae60568f63e6e886bed453d5884f8cfa93a3ac389",
+      "internalPort": 3000,
+      "isMain": true
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "citron",
+      "image": "linuxserver/citron:2026.02.1@sha256:6d955bd6dce826c40f3ffdb793c4711826179cf411c2f72c4c27358413195ddb",
+      "internalPort": 3000,
+      "isMain": true
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "pydio-cells",
+      "image": "linuxserver/pydio-cells:5.0.2@sha256:64dfe2e5cdb5d1db16c6ffa02877072cc6b426068929b84a5fe6c2decfca17c6",
+      "internalPort": 8080,
+      "isMain": true
+    }
+  ]
+}

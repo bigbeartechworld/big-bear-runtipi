@@ -12,14 +12,14 @@
     "utilities"
   ],
   "short_desc": "Mumble Server",
-  "author": "mumblevoip",
+  "author": "BigBearTechWorld",
   "source": "",
   "website": "https://hub.docker.com/r/mumblevoip/mumble-server",
   "supported_architectures": [
     "amd64"
   ],
-  "created_at": 1787014828000,
-  "updated_at": 1787014828000,
+  "created_at": 1789765732000,
+  "updated_at": 1789765732000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

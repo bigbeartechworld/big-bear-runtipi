@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "cops",
+      "image": "linuxserver/cops:4.5.2@sha256:56ea339f9f9f885dd1105396e69705e84d6334c2e187bd6be98b212453d3a7cc",
+      "internalPort": 80,
+      "isMain": true
+    }
+  ]
+}

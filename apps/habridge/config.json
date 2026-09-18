@@ -1,0 +1,26 @@
+{
+  "name": "Habridge",
+  "available": true,
+  "port": 8080,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "habridge",
+  "description": "Habridge emulates Philips Hue API to other home automation gateways such as an Amazon Echo/Dot Gen 1 (gen 2 has issues discovering ha-bridge) or other systems that support Philips Hue. The Bridge handles basic commands such as On, Off and brightness commands of the hue protocol. This bridge can control most devices that have a distinct API.",
+  "tipi_version": 1,
+  "version": "5.4.1",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "Emulates Philips Hue API to other home automation gateways such as an Amazon Echo/Dot Gen 1 (gen 2 has issues discovering ha-bridge) or other systems that support Philips Hue. The Bridge handles basic commands such as On, Off and brightness commands of the hue protocol. This bridge can control most devices that have a distinct API.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-habridge",
+  "website": "https://hub.docker.com/r/linuxserver/habridge",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765608000,
+  "updated_at": 1789765608000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

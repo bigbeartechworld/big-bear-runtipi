@@ -1,0 +1,26 @@
+{
+  "name": "Limnoria",
+  "available": true,
+  "port": 8080,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "limnoria",
+  "description": "Limnoria A robust, full-featured, and user/programmer-friendly Python IRC bot, with many existing plugins. Successor of the well-known Supybot.",
+  "tipi_version": 1,
+  "version": "2026.5.8",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "A robust, full-featured, and user/programmer-friendly Python IRC bot, with many existing plugins. Successor of the well-known Supybot.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-limnoria",
+  "website": "https://hub.docker.com/r/linuxserver/limnoria",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765687000,
+  "updated_at": 1789765687000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

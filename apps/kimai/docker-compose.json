@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "kimai",
+      "image": "linuxserver/kimai:2.67.0@sha256:fb8f8d1b6f984ceffbe4945ba22ee69d7ad8b86f81333b78a1d715aac61c8f1a",
+      "internalPort": 80,
+      "isMain": true
+    }
+  ]
+}

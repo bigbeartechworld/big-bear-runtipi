@@ -1,0 +1,26 @@
+{
+  "name": "Grocy",
+  "available": true,
+  "port": 9283,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "grocy",
+  "description": "Grocy is an ERP system for your kitchen! Cut down on food waste, and manage your chores with this brilliant utility. Keep track of your purchases, how much food you are wasting, what chores need doing and what batteries need charging with this proudly Open Source tool For more information on grocy visit their website and check it out: https://grocy.info",
+  "tipi_version": 1,
+  "version": "4.7.1",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "An ERP system for your kitchen. Cut down on food waste, and manage your chores with this brilliant utility. Keep track of your purchases, how much food you are wasting, what chores need doing and what batteries need charging with this proudly Open Source tool For more information on grocy visit their website and check it out: https://grocy. Info",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-grocy",
+  "website": "https://hub.docker.com/r/linuxserver/grocy",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765603000,
+  "updated_at": 1789765603000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

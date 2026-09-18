@@ -1,0 +1,27 @@
+services:
+  gitqlient:
+    image: linuxserver/gitqlient:1.6.3@sha256:4e1835de2a8c259e25a281f3b563cea2318578ecd85917a88e8c199f3d39ccd6
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 3000
+        published: ${APP_PORT}
+        protocol: tcp
+      - target: 3001
+        published: 3001
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/gitqlient/config
+        target: /config
+    container_name: gitqlient
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

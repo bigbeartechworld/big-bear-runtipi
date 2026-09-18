@@ -17,7 +17,7 @@ services:
       - MAXMIND_LICENSE_KEY= # MaxMind license key for geolocation, optional
       - PUID=1000 # User ID for file permissions
       - PGID=1000 # Group ID for file permissions
-    hostname: big-bear-pocketid
+    hostname: pocketid
     labels:
       icon: https://pocket-id.org/img/logo.png # Icon URL
       runtipi.managed: "true"

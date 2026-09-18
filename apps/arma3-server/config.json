@@ -1,0 +1,25 @@
+{
+  "name": "Arma 3 Server",
+  "available": true,
+  "port": 2302,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "arma3-server",
+  "description": "Arma 3 Dedicated Server. Updates to the latest version every time it is restarted. Supports mission configs mods and headless clients.",
+  "tipi_version": 1,
+  "version": "1.0.0",
+  "categories": [
+    "gaming"
+  ],
+  "short_desc": "Arma 3 Dedicated Server",
+  "author": "BigBearCommunity",
+  "source": "https://github.com/BrettMayson/Arma3Server",
+  "website": "https://github.com/BrettMayson/Arma3Server",
+  "supported_architectures": [
+    "amd64"
+  ],
+  "created_at": 1789765401000,
+  "updated_at": 1789765401000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Msedge",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "msedge",
+  "description": "Microsoft Edge is a cross-platform web browser developed by Microsoft and based on Chromium.",
+  "tipi_version": 1,
+  "version": "153.0.4234",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "A cross-platform web browser developed by Microsoft and based on Chromium.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-msedge",
+  "website": "https://hub.docker.com/r/linuxserver/msedge",
+  "supported_architectures": [
+    "amd64"
+  ],
+  "created_at": 1789765728000,
+  "updated_at": 1789765728000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

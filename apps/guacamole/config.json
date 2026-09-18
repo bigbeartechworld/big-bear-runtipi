@@ -12,14 +12,14 @@
     "utilities"
   ],
   "short_desc": "Guacamole",
-  "author": "guacamole",
+  "author": "BigBearTechWorld",
   "source": "",
   "website": "https://hub.docker.com/r/guacamole/guacamole",
   "supported_architectures": [
     "amd64"
   ],
-  "created_at": 1787014755000,
-  "updated_at": 1787014755000,
+  "created_at": 1789765606000,
+  "updated_at": 1789765606000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

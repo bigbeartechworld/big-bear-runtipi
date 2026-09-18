@@ -1,0 +1,27 @@
+services:
+  orcaslicer:
+    image: linuxserver/orcaslicer:2.4.2@sha256:209754c74694f6b99cc40cbf313447ba6464a6bdfae722903b25049ce38c6f64
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 3000
+        published: ${APP_PORT}
+        protocol: tcp
+      - target: 3001
+        published: 3001
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/orcaslicer/config
+        target: /config
+    container_name: orcaslicer
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

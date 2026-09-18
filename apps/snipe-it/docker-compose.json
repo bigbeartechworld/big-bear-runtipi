@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "snipe-it",
+      "image": "linuxserver/snipe-it:7.1.17@sha256:d75283795506f371fe5059f13312c84de01225de373ef3aec154d562bbed9dd4",
+      "internalPort": 8080,
+      "isMain": true
+    }
+  ]
+}

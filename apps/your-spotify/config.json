@@ -1,0 +1,26 @@
+{
+  "name": "Your_spotify",
+  "available": true,
+  "port": 80,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "your-spotify",
+  "description": "Your_spotify is a self-hosted application that tracks what you listen and offers you a dashboard to explore statistics about it! It's composed of a web server which polls the Spotify API every now and then and a web application on which you can explore your statistics.",
+  "tipi_version": 1,
+  "version": "1.20.0",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "A self-hosted application that tracks what you listen and offers you a dashboard to explore statistics about it. It's composed of a web server which polls the Spotify API every now and then and a web application on which you can explore your statistics.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-your_spotify",
+  "website": "https://hub.docker.com/r/linuxserver/your_spotify",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789766048000,
+  "updated_at": 1789766048000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

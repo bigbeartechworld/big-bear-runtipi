@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "freshrss",
+      "image": "linuxserver/freshrss:1.30.0@sha256:5358f396069b36f1399b16a4a368869ed8c1ccca16d15778bbc7782b76fba57e",
+      "internalPort": 80,
+      "isMain": true
+    }
+  ]
+}

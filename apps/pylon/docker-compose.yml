@@ -1,0 +1,30 @@
+services:
+  pylon:
+    image: linuxserver/pylon:2.10.0@sha256:5552a0c4b42f1e09a1146d2265c790fb2833128ec3ea9ebf1b0c634d40784e01
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      GITURL: ''
+      PYUSER: ''
+      PYPASS: ''
+    ports:
+      - target: 3131
+        published: ${APP_PORT}
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/pylon/config
+        target: /config
+      - type: bind
+        source: /DATA/AppData/pylon/code
+        target: /code
+    container_name: pylon
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

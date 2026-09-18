@@ -12,15 +12,15 @@
     "data"
   ],
   "short_desc": "High-performance S3-compatible object storage built in Rust",
-  "author": "rustfs",
+  "author": "BigBearCommunity",
   "source": "https://github.com/rustfs/rustfs",
   "website": "https://rustfs.com/",
   "supported_architectures": [
     "amd64",
     "arm64"
   ],
-  "created_at": 1787014946000,
-  "updated_at": 1787014946000,
+  "created_at": 1789765902000,
+  "updated_at": 1789765902000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

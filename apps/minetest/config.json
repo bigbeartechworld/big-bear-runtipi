@@ -1,0 +1,26 @@
+{
+  "name": "Minetest",
+  "available": true,
+  "port": 30000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "minetest",
+  "description": "Visit homepage: https://hub.docker.com/r/linuxserver/minetest/",
+  "tipi_version": 1,
+  "version": "5.10.0",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "(server) is a near-infinite-world block sandbox game and a game engine, inspired by InfiniMiner, Minecraft, and the like. ",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-minetest",
+  "website": "https://hub.docker.com/r/linuxserver/minetest",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765719000,
+  "updated_at": 1789765719000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

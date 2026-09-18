@@ -1,0 +1,24 @@
+services:
+  build-agent:
+    image: linuxserver/build-agent:version-0296acb5@sha256:63e38c87cfb1d73beff12975706ffee41c7bb42db41c305648871df98cc24ec0
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 80
+        published: ${APP_PORT}
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/build-agent/config
+        target: /config
+    container_name: build-agent
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

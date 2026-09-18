@@ -12,15 +12,15 @@
     "utilities"
   ],
   "short_desc": "Dashy v4",
-  "author": "Lissy93",
+  "author": "BigBearTechWorld",
   "source": "",
   "website": "https://hub.docker.com/r/lissy93/dashy",
   "supported_architectures": [
     "amd64",
     "arm64"
   ],
-  "created_at": 1787014680000,
-  "updated_at": 1787014680000,
+  "created_at": 1789765487000,
+  "updated_at": 1789765487000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

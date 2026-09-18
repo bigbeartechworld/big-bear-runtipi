@@ -1,0 +1,26 @@
+{
+  "name": "Duckdns",
+  "available": true,
+  "port": 80,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "duckdns",
+  "description": "Duckdns is a free service which will point a DNS (sub domains of duckdns.org) to an IP of your choice. The service is completely free, and doesn't require reactivation or forum posts to maintain its existence.",
+  "tipi_version": 1,
+  "version": "0.0.0",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "A free service which will point a DNS (sub domains of duckdns. Org) to an IP of your choice. The service is completely free, and doesn't require reactivation or forum posts to maintain its existence.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-duckdns",
+  "website": "https://hub.docker.com/r/linuxserver/duckdns",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765522000,
+  "updated_at": 1789765522000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

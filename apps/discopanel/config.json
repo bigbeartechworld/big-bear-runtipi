@@ -12,15 +12,15 @@
     "utilities"
   ],
   "short_desc": "A game server panel for Minecraft",
-  "author": "nickheyer",
+  "author": "BigBearTechWorld",
   "source": "https://github.com/nickheyer/DiscoPanel",
   "website": "https://discopanel.app",
   "supported_architectures": [
     "amd64",
     "arm64"
   ],
-  "created_at": 1787014684000,
-  "updated_at": 1787014684000,
+  "created_at": 1789765498000,
+  "updated_at": 1789765498000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

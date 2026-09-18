@@ -1,0 +1,33 @@
+services:
+  your-spotify:
+    image: linuxserver/your_spotify:1.20.0@sha256:34f592ef352cce88db8f64ca502d646b17aa2ecd6076df47e053241b0dbef2da
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      APP_URL: ''
+      SPOTIFY_PUBLIC: ''
+      SPOTIFY_SECRET: ''
+      SPOTIFY_API_DELAY_MS: ''
+      CORS: ''
+      MONGO_ENDPOINT: ''
+    ports:
+      - target: 80
+        published: ${APP_PORT}
+        protocol: tcp
+      - target: 443
+        published: 443
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/your_spotify/config
+        target: /config
+    container_name: your-spotify
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

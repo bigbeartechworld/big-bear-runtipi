@@ -7,20 +7,20 @@
   "id": "joplin",
   "description": "Note taking and to-do application with synchronisation",
   "tipi_version": 1,
-  "version": "3.7.1",
+  "version": "3.7.2",
   "categories": [
     "utilities"
   ],
   "short_desc": "joplin",
-  "author": "joplin",
+  "author": "BigBearTechWorld",
   "source": "",
   "website": "https://hub.docker.com/r/joplin/server",
   "supported_architectures": [
     "amd64",
     "arm64"
   ],
-  "created_at": 1787014796000,
-  "updated_at": 1787014796000,
+  "created_at": 1789765653000,
+  "updated_at": 1789765653000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

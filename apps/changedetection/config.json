@@ -12,15 +12,15 @@
     "utilities"
   ],
   "short_desc": "Website change detection.",
-  "author": "dgtlmoon",
+  "author": "BigBearTechWorld",
   "source": "",
   "website": "https://hub.docker.com/r/dgtlmoon/changedetection.io",
   "supported_architectures": [
     "amd64",
     "arm64"
   ],
-  "created_at": 1787014649000,
-  "updated_at": 1787014649000,
+  "created_at": 1789765452000,
+  "updated_at": 1789765452000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

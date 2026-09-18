@@ -1,0 +1,26 @@
+{
+  "name": "Retroarch",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "retroarch",
+  "description": "RetroArch is a frontend for emulators, game engines and media players. It enables you to run classic games on a wide range of computers and consoles through its slick graphical interface.",
+  "tipi_version": 1,
+  "version": "1.22.2",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "A frontend for emulators, game engines and media players. It enables you to run classic games on a wide range of computers and consoles through its slick graphical interface.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-retroarch",
+  "website": "https://hub.docker.com/r/linuxserver/retroarch",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765890000,
+  "updated_at": 1789765890000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

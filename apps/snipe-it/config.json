@@ -1,0 +1,26 @@
+{
+  "name": "Snipe-it",
+  "available": true,
+  "port": 8080,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "snipe-it",
+  "description": "Visit homepage: https://hub.docker.com/r/linuxserver/snipe-it/",
+  "tipi_version": 1,
+  "version": "7.1.17",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "Makes asset management easy. It was built by people solving real-world IT and asset management problems, and a solid UX has always been a top priority. Straightforward design and bulk actions mean getting things done faster. ",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-snipe-it",
+  "website": "https://hub.docker.com/r/linuxserver/snipe-it",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765924000,
+  "updated_at": 1789765924000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

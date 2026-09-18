@@ -12,14 +12,14 @@
     "utilities"
   ],
   "short_desc": "A self hosted virtual browser that runs in docker and uses WebRTC.",
-  "author": "m1k1o",
+  "author": "BigBearTechWorld",
   "source": "",
   "website": "https://hub.docker.com/r/m1k1o/neko",
   "supported_architectures": [
     "amd64"
   ],
-  "created_at": 1787014839000,
-  "updated_at": 1787014839000,
+  "created_at": 1789765742000,
+  "updated_at": 1789765742000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

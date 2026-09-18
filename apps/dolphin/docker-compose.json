@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "dolphin",
+      "image": "linuxserver/dolphin:version-2606a@sha256:3f7021021e20aa2e244d61cb1ded987181dae30cf1e5ae2c1b88960da4018330",
+      "internalPort": 3000,
+      "isMain": true
+    }
+  ]
+}

@@ -7,20 +7,20 @@
   "id": "ls-adguardhome-sync",
   "description": "🛡️ Synchronize AdGuard Home config to replicas. This is the LinuxServer version.",
   "tipi_version": 1,
-  "version": "0.9.2",
+  "version": "0.9.3",
   "categories": [
     "utilities"
   ],
   "short_desc": "LS Adguard Home Sync",
-  "author": "bakito",
+  "author": "BigBearTechWorld",
   "source": "",
   "website": "https://hub.docker.com/r/linuxserver/adguardhome-sync",
   "supported_architectures": [
     "amd64",
     "arm64"
   ],
-  "created_at": 1787014814000,
-  "updated_at": 1787014814000,
+  "created_at": 1789765695000,
+  "updated_at": 1789765695000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

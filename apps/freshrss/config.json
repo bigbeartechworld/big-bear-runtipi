@@ -1,0 +1,26 @@
+{
+  "name": "Freshrss",
+  "available": true,
+  "port": 80,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "freshrss",
+  "description": "Freshrss is a free, self-hostable aggregator for rss feeds.",
+  "tipi_version": 1,
+  "version": "1.30.0",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "A free, self-hostable aggregator for rss feeds.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-freshrss",
+  "website": "https://hub.docker.com/r/linuxserver/freshrss",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765579000,
+  "updated_at": 1789765579000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Qemu-static",
+  "available": true,
+  "port": 80,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "qemu-static",
+  "description": "This container needs special attention. Please check https://hub.docker.com/r/linuxserver/qemu-static for details.",
+  "tipi_version": 1,
+  "version": "10.0.2",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "This container needs special attention. Please check https://hub. Docker. Com/r/linuxserver/qemu-static for details.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-qemu-static",
+  "website": "https://hub.docker.com/r/linuxserver/qemu-static",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765868000,
+  "updated_at": 1789765868000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

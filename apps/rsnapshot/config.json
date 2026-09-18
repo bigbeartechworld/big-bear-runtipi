@@ -1,0 +1,26 @@
+{
+  "name": "Rsnapshot",
+  "available": true,
+  "port": 80,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "rsnapshot",
+  "description": "Rsnapshot is a filesystem snapshot utility based on rsync. rsnapshot makes it easy to make periodic snapshots of local machines, and remote machines over ssh. The code makes extensive use of hard links whenever possible, to greatly reduce the disk space required.",
+  "tipi_version": 1,
+  "version": "1.4.5",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "A filesystem snapshot utility based on rsync. Rsnapshot makes it easy to make periodic snapshots of local machines, and remote machines over ssh. The code makes extensive use of hard links whenever possible, to greatly reduce the disk space required.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-rsnapshot",
+  "website": "https://hub.docker.com/r/linuxserver/rsnapshot",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765899000,
+  "updated_at": 1789765899000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

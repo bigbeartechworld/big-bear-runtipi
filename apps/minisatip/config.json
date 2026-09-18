@@ -1,0 +1,26 @@
+{
+  "name": "Minisatip",
+  "available": true,
+  "port": 8875,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "minisatip",
+  "description": "Minisatip is a multi-threaded satip server version 1.2 that runs under Linux and it was tested with DVB-S, DVB-S2, DVB-T, DVB-T2, DVB-C, DVB-C2, ATSC and ISDB-T cards.",
+  "tipi_version": 1,
+  "version": "2.0.103",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "A multi-threaded satip server version 1. 2 that runs under Linux and it was tested with DVB-S, DVB-S2, DVB-T, DVB-T2, DVB-C, DVB-C2, ATSC and ISDB-T cards.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-minisatip",
+  "website": "https://hub.docker.com/r/linuxserver/minisatip",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765721000,
+  "updated_at": 1789765721000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

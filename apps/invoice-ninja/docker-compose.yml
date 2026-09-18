@@ -3,21 +3,32 @@
 # Name of the big-bear-invoice-ninja application
 # Service definitions for the big-bear-invoice-ninja application
 services:
-  big-bear-invoice-ninja-web:
-    # Name of the container
-    container_name: big-bear-invoice-ninja-web
-    # Image to be used for the container
-    image: nginx:1.29@sha256:1881968aff6f7cdcc4b888c00a11f4ce241ad7ec957e0cb4a9e19e93a3ff87ea
-    # Container restart policy
+  big-bear-invoice-ninja:
+    image: invoiceninja/invoiceninja:5.13.40@sha256:043ccaafd3e7970c2ffc45a89b4e032566e4a7b50f264c24f49cabfae18598fa
+    container_name: big-bear-invoice-ninja
     restart: unless-stopped
-    # Volumes to be mounted to the container
+    user: 1500:1500
+    environment:
+      - IN_USER_EMAIL=admin@bigbeartechworld.com
+      - IN_PASSWORD=ad178c4b-302f-44e6-937f-8c7808f23795
+      - APP_URL=http://invoice-ninja
+      - APP_KEY=base64:4doW1cidLuSqm7Z/BhPu/bn5HGnCKyEcSSlbVPTYYRU=
+      - APP_CIPHER=AES-256-CBC
+      - DB_HOST=big-bear-invoice-ninja-db
+      - DB_PORT=3306
+      - DB_DATABASE=ninja
+      - DB_USERNAME=ninja
+      - DB_PASSWORD=ninja
+      - REQUIRE_HTTPS=false
+      - QUEUE_CONNECTION=database
+      - IS_DOCKER=TRUE
     volumes:
-      - ${APP_DATA_DIR}/data/nginx/invoice-ninja.conf:/etc/nginx/conf.d/default.conf:ro
-      - ${APP_DATA_DIR}/data/public:/var/www/app/public:ro
-    # Ports mapping between host and container
-    ports:
-      # Mapping port 8080 of the host to port 80 of the container
-      - "8080:80"
+      - ${APP_DATA_DIR}/data/public:/var/www/app/public:rw,delegated
+      - ${APP_DATA_DIR}/data/storage:/var/www/app/storage:rw,delegated
+      - ${APP_DATA_DIR}/data/php/php.ini:/usr/local/etc/php/php.ini:ro
+      - ${APP_DATA_DIR}/data/php/php-cli.ini:/usr/local/etc/php/php-cli.ini:ro
+    depends_on:
+      - big-bear-invoice-ninja-db
     networks:
       - tipi_main_network
     labels:
@@ -58,31 +69,20 @@ services:
     labels:
       runtipi.managed: "true"
   invoice-ninja:
-    image: invoiceninja/invoiceninja:5.13.31@sha256:c0526fc0242f4bd145d0d225bb40e174841f67597a57215723f20f2c00c0698f
+    # Name of the container
     container_name: invoice-ninja
+    # Image to be used for the container
+    image: nginx:1.29@sha256:1881968aff6f7cdcc4b888c00a11f4ce241ad7ec957e0cb4a9e19e93a3ff87ea
+    # Container restart policy
     restart: unless-stopped
-    user: 1500:1500
-    environment:
-      - IN_USER_EMAIL=admin@bigbeartechworld.com
-      - IN_PASSWORD=ad178c4b-302f-44e6-937f-8c7808f23795
-      - APP_URL=http://big-bear-invoice-ninja-web
-      - APP_KEY=base64:4doW1cidLuSqm7Z/BhPu/bn5HGnCKyEcSSlbVPTYYRU=
-      - APP_CIPHER=AES-256-CBC
-      - DB_HOST=big-bear-invoice-ninja-db
-      - DB_PORT=3306
-      - DB_DATABASE=ninja
-      - DB_USERNAME=ninja
-      - DB_PASSWORD=ninja
-      - REQUIRE_HTTPS=false
-      - QUEUE_CONNECTION=database
-      - IS_DOCKER=TRUE
+    # Volumes to be mounted to the container
     volumes:
-      - ${APP_DATA_DIR}/data/public:/var/www/app/public:rw,delegated
-      - ${APP_DATA_DIR}/data/storage:/var/www/app/storage:rw,delegated
-      - ${APP_DATA_DIR}/data/php/php.ini:/usr/local/etc/php/php.ini:ro
-      - ${APP_DATA_DIR}/data/php/php-cli.ini:/usr/local/etc/php/php-cli.ini:ro
-    depends_on:
-      - big-bear-invoice-ninja-db
+      - ${APP_DATA_DIR}/data/nginx/invoice-ninja.conf:/etc/nginx/conf.d/default.conf:ro
+      - ${APP_DATA_DIR}/data/public:/var/www/app/public:ro
+    # Ports mapping between host and container
+    ports:
+      # Mapping port 8080 of the host to port 80 of the container
+      - "${APP_PORT}:80"
     networks:
       - tipi_main_network
     labels:

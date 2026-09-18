@@ -12,15 +12,15 @@
     "utilities"
   ],
   "short_desc": "Genmon",
-  "author": "bigbeartechworld",
+  "author": "BigBearTechWorld",
   "source": "",
   "website": "https://hub.docker.com/r/bigbeartechworld/big-bear-genmon",
   "supported_architectures": [
     "amd64",
     "arm64"
   ],
-  "created_at": 1787014737000,
-  "updated_at": 1787014737000,
+  "created_at": 1789765581000,
+  "updated_at": 1789765581000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

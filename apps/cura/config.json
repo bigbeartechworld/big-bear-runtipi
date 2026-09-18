@@ -1,0 +1,25 @@
+{
+  "name": "Cura",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "cura",
+  "description": "UltiMaker Cura is free, easy-to-use 3D printing software trusted by millions of users. Fine-tune your 3D model with 400+ settings for the best slicing and printing results.",
+  "tipi_version": 1,
+  "version": "5.13.0",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "Free, easy-to-use 3D printing software trusted by millions of users. Fine-tune your 3D model with 400+ settings for the best slicing and printing results.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-cura",
+  "website": "https://hub.docker.com/r/linuxserver/cura",
+  "supported_architectures": [
+    "amd64"
+  ],
+  "created_at": 1789765476000,
+  "updated_at": 1789765476000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

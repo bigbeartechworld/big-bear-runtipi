@@ -12,15 +12,15 @@
     "utilities"
   ],
   "short_desc": "Homarr v1 (Latest)",
-  "author": "homarr-labs",
+  "author": "BigBearTechWorld",
   "source": "",
   "website": "https://hub.docker.com/r/homarr-labs/homarr",
   "supported_architectures": [
     "amd64",
     "arm64"
   ],
-  "created_at": 1787014760000,
-  "updated_at": 1787014760000,
+  "created_at": 1789765625000,
+  "updated_at": 1789765625000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

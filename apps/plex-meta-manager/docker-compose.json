@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "plex-meta-manager",
+      "image": "linuxserver/plex-meta-manager:1.21.1@sha256:7703177e6f29ac7bbe555a7f6c21dd05e59af3bd885582933059ce660ae5536f",
+      "internalPort": 8080,
+      "isMain": true
+    }
+  ]
+}

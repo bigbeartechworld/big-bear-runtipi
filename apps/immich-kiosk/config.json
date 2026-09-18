@@ -12,15 +12,15 @@
     "utilities"
   ],
   "short_desc": "Immich Kiosk",
-  "author": "damongolding",
+  "author": "BigBearTechWorld",
   "source": "",
   "website": "https://hub.docker.com/r/damongolding/immich-kiosk",
   "supported_architectures": [
     "amd64",
     "arm64"
   ],
-  "created_at": 1787014778000,
-  "updated_at": 1787014778000,
+  "created_at": 1789765633000,
+  "updated_at": 1789765633000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

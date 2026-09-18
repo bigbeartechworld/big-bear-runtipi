@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "blender",
+      "image": "linuxserver/blender:5.2.2@sha256:8b1377cca1a53009e5e2ad4bc313c21edee6abc89cf0333ef3f06b35a661be11",
+      "internalPort": 3000,
+      "isMain": true
+    }
+  ]
+}

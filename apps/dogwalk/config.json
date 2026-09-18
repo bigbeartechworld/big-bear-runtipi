@@ -1,0 +1,25 @@
+{
+  "name": "Dogwalk",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "dogwalk",
+  "description": "DOGWALK is Blender Studio's long awaited second game project, focused on creating a bite-sized interactive storytelling playground. Play as a big adorable dog and explore the winter woods with a little kid.",
+  "tipi_version": 1,
+  "version": "0.0.0",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "Blender Studio's long awaited second game project, focused on creating a bite-sized interactive storytelling playground. Play as a big adorable dog and explore the winter woods with a little kid.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-dogwalk",
+  "website": "https://hub.docker.com/r/linuxserver/dogwalk",
+  "supported_architectures": [
+    "amd64"
+  ],
+  "created_at": 1789765510000,
+  "updated_at": 1789765510000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

@@ -12,15 +12,15 @@
     "utilities"
   ],
   "short_desc": "Build LLM Apps Easily",
-  "author": "bigbeartechworld",
+  "author": "BigBearTechWorld",
   "source": "",
   "website": "https://hub.docker.com/r/flowiseai/flowise",
   "supported_architectures": [
     "amd64",
     "arm64"
   ],
-  "created_at": 1787014730000,
-  "updated_at": 1787014730000,
+  "created_at": 1789765571000,
+  "updated_at": 1789765571000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

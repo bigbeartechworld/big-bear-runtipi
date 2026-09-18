@@ -7,20 +7,20 @@
   "id": "actual-server",
   "description": "Actual Budget is a super fast and privacy-focused app for managing your finances. At its heart is the well proven and much loved Envelope Budgeting methodology. You own your data and can do whatever you want with it. Featuring multi-device sync, optional end-to-end encryption and so much more.",
   "tipi_version": 1,
-  "version": "26.8.1",
+  "version": "26.9.0",
   "categories": [
     "utilities"
   ],
   "short_desc": "Local-first OpenSource Budget tool",
-  "author": "actualbudget",
+  "author": "BigBearCommunity",
   "source": "",
   "website": "https://hub.docker.com/r/actualbudget/actual-server",
   "supported_architectures": [
     "amd64",
     "arm64"
   ],
-  "created_at": 1787014610000,
-  "updated_at": 1787014610000,
+  "created_at": 1789765388000,
+  "updated_at": 1789765388000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

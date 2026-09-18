@@ -1,0 +1,28 @@
+services:
+  hermes:
+    image: nousresearch/hermes-agent:v2026.9.14@sha256:99641e57ec762c59e54cb44aa6746b7fc68c18b3c5ddb088af54234c613d9294
+    container_name: hermes
+    restart: unless-stopped
+    command:
+      - gateway
+      - run
+    ports:
+      - "${APP_PORT}:9119"
+      - "8642:8642"
+    volumes:
+      - ${APP_DATA_DIR}/data:/opt/data
+    environment:
+      HERMES_DASHBOARD: "1"
+      HERMES_DASHBOARD_BASIC_AUTH_USERNAME: zimaos
+      HERMES_DASHBOARD_BASIC_AUTH_PASSWORD: ""
+    deploy:
+      resources:
+        reservations:
+          memory: 1G
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

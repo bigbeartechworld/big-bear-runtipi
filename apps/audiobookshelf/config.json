@@ -12,15 +12,15 @@
     "utilities"
   ],
   "short_desc": "Audiobookshelf is a self-hosted audiobook and podcast server.",
-  "author": "ajnart",
+  "author": "advplyr",
   "source": "",
   "website": "https://hub.docker.com/r/advplyr/audiobookshelf",
   "supported_architectures": [
     "amd64",
     "arm64"
   ],
-  "created_at": 1787014617000,
-  "updated_at": 1787014617000,
+  "created_at": 1789765404000,
+  "updated_at": 1789765404000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

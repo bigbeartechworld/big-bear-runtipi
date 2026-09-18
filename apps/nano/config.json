@@ -1,0 +1,27 @@
+{
+  "name": "Nano",
+  "available": true,
+  "port": 8075,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "nano",
+  "description": "Nano is a digital payment protocol designed to be accessible and lightweight, with a focus on removing inefficiencies present in other cryptocurrencies. With ultrafast transactions and zero fees on a secure, green and decentralized network, this makes Nano ideal for everyday transactions.",
+  "tipi_version": 1,
+  "version": "21.2.20220522",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "A digital payment protocol designed to be accessible and lightweight, with a focus on removing inefficiencies present in other cryptocurrencies. With ultrafast transactions and zero fees on a secure, green and decentralized network, this makes Nano ideal for everyday transactions.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-nano",
+  "website": "https://hub.docker.com/r/linuxserver/nano",
+  "supported_architectures": [
+    "amd64",
+    "armv7",
+    "arm64"
+  ],
+  "created_at": 1789765738000,
+  "updated_at": 1789765738000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

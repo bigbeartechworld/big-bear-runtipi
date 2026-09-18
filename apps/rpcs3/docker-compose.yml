@@ -1,0 +1,27 @@
+services:
+  rpcs3:
+    image: linuxserver/rpcs3:version-build-92721aedfe9dda00caae25a7aaf7e6b7d07213d0@sha256:1438172a71f2ee930c91755c69b7b54d894d4eb2b2be2904ad64a5a6e3099cb7
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 3000
+        published: ${APP_PORT}
+        protocol: tcp
+      - target: 3001
+        published: 3001
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/rpcs3/config
+        target: /config
+    container_name: rpcs3
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

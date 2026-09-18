@@ -1,0 +1,24 @@
+services:
+  d2-builder:
+    image: linuxserver/d2-builder:0.9.0@sha256:7f1a533650c6edb3a135fc54abda14384c0d4475b4e67e17a29d532d6620f03b
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 80
+        published: ${APP_PORT}
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/d2-builder/config
+        target: /config
+    container_name: d2-builder
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

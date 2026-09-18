@@ -1,0 +1,26 @@
+{
+  "name": "Feed2toot",
+  "available": true,
+  "port": 8080,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "feed2toot",
+  "description": "Feed2toot automatically parses rss feeds, identifies new posts and posts them on the Mastodon social network.",
+  "tipi_version": 1,
+  "version": "0.17.20251115",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "Automatically parses rss feeds, identifies new posts and posts them on the Mastodon social network. ",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-feed2toot",
+  "website": "https://hub.docker.com/r/linuxserver/feed2toot",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765553000,
+  "updated_at": 1789765553000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

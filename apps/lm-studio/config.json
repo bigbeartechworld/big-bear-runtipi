@@ -1,0 +1,25 @@
+{
+  "name": "Lm-studio",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "lm-studio",
+  "description": "LM Studio can run local AI models like gpt-oss, Llama, Gemma, Qwen, and DeepSeek privately on your computer.",
+  "tipi_version": 1,
+  "version": "0.0.0",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "Can run local AI models like gpt-oss, Llama, Gemma, Qwen, and DeepSeek privately on your computer.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-lm-studio",
+  "website": "https://hub.docker.com/r/linuxserver/lm-studio",
+  "supported_architectures": [
+    "amd64"
+  ],
+  "created_at": 1789765691000,
+  "updated_at": 1789765691000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

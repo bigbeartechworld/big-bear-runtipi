@@ -1,0 +1,24 @@
+services:
+  ngircd:
+    image: linuxserver/ngircd:version-27-r1@sha256:25a924851122b34d933404e4a942e68835e4a1dc182f12d28461c4490476e265
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 6667
+        published: ${APP_PORT}
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/ngircd/config
+        target: /config
+    container_name: ngircd
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

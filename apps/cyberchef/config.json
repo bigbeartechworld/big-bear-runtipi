@@ -12,15 +12,15 @@
     "utilities"
   ],
   "short_desc": "The Cyber Swiss Army Knife",
-  "author": "gchq",
+  "author": "BigBearTechWorld",
   "source": "",
   "website": "https://hub.docker.com/r/gchq/cyberchef",
   "supported_architectures": [
     "amd64",
     "arm64"
   ],
-  "created_at": 1787014673000,
-  "updated_at": 1787014673000,
+  "created_at": 1789765478000,
+  "updated_at": 1789765478000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

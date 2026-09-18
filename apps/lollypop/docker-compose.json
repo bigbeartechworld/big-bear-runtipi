@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "lollypop",
+      "image": "linuxserver/lollypop:1.4.45@sha256:d74da4821ac555698d60a783e1d81f36741a13e777e5c6997b836d81839b0c91",
+      "internalPort": 3000,
+      "isMain": true
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+services:
+  ppsspp:
+    image: linuxserver/ppsspp:1.20.4@sha256:606f11c4694ef0c85e5d33d3f77e8101c071d8c2fc2506838ba8f68362986a8d
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 3000
+        published: ${APP_PORT}
+        protocol: tcp
+      - target: 3001
+        published: 3001
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/ppsspp/config
+        target: /config
+    container_name: ppsspp
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

@@ -1,0 +1,27 @@
+services:
+  dolphin:
+    image: linuxserver/dolphin:version-2606a@sha256:3f7021021e20aa2e244d61cb1ded987181dae30cf1e5ae2c1b88960da4018330
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 3000
+        published: ${APP_PORT}
+        protocol: tcp
+      - target: 3001
+        published: 3001
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/dolphin/config
+        target: /config
+    container_name: dolphin
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

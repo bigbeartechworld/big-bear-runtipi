@@ -1,0 +1,26 @@
+{
+  "name": "Smokeping",
+  "available": true,
+  "port": 80,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "smokeping",
+  "description": "Smokeping keeps track of your network latency. For a full example of what this application is capable of visit UCDavis.",
+  "tipi_version": 1,
+  "version": "2.9.0",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "Keeps track of your network latency. For a full example of what this application is capable of visit UCDavis.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-smokeping",
+  "website": "https://hub.docker.com/r/linuxserver/smokeping",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765920000,
+  "updated_at": 1789765920000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

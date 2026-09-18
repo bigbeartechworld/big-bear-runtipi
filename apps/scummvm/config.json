@@ -1,0 +1,25 @@
+{
+  "name": "Scummvm",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "scummvm",
+  "description": "ScummVM is a program which allows you to run certain classic graphical adventure and role-playing games, provided you already have their data files. The clever part about this: ScummVM just replaces the executables shipped with the games, allowing you to play them on systems for which they were never designed! ScummVM is a complete rewrite of these games' executables and is not an emulator.",
+  "tipi_version": 1,
+  "version": "2026.3.0",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "A program which allows you to run certain classic graphical adventure and role-playing games, provided you already have their data files. The clever part about this: ScummVM just replaces the executables shipped with the games, allowing you to play them on systems for which they were never designed. ScummVM is a complete rewrite of these games' executables and is not an emulator.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-scummvm",
+  "website": "https://hub.docker.com/r/linuxserver/scummvm",
+  "supported_architectures": [
+    "amd64"
+  ],
+  "created_at": 1789765905000,
+  "updated_at": 1789765905000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

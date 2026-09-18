@@ -1,0 +1,26 @@
+{
+  "name": "Budge",
+  "available": true,
+  "port": 80,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "budge",
+  "description": "Budge is an open source 'budgeting with envelopes' personal finance app.",
+  "tipi_version": 1,
+  "version": "0.0.9",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "An open source 'budgeting with envelopes' personal finance app.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-budge",
+  "website": "https://hub.docker.com/r/linuxserver/budge",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765434000,
+  "updated_at": 1789765434000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

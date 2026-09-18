@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "feed2toot",
+      "image": "linuxserver/feed2toot:0.17.20251115@sha256:59e3ea300189052aba25c527a3501ade5c3a57466761c8a1e0ab1c8bdf90170d",
+      "internalPort": 8080,
+      "isMain": true
+    }
+  ]
+}

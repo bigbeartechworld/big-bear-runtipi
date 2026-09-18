@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "audacity",
+      "image": "linuxserver/audacity:4.0.0@sha256:a33f2a0d30b3aea62eb5402df1c4d7721c3af21ae4d92643dfa1badfaa7f9591",
+      "internalPort": 3000,
+      "isMain": true
+    }
+  ]
+}

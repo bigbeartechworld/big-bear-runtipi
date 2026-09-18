@@ -1,0 +1,26 @@
+{
+  "name": "Keepassxc",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "keepassxc",
+  "description": "KeePassXC is a free and open-source password manager. It started as a community fork of KeePassX (itself a cross-platform port of KeePass).",
+  "tipi_version": 1,
+  "version": "2.7.12",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "A free and open-source password manager. It started as a community fork of KeePassX (itself a cross-platform port of KeePass).",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-keepassxc",
+  "website": "https://hub.docker.com/r/linuxserver/keepassxc",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765660000,
+  "updated_at": 1789765660000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Thelounge",
+  "available": true,
+  "port": 9000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "thelounge",
+  "description": "Thelounge (a fork of shoutIRC) is a web IRC client that you host on your own server.",
+  "tipi_version": 1,
+  "version": "4.5.2",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "(a fork of shoutIRC) is a web IRC client that you host on your own server.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-thelounge",
+  "website": "https://hub.docker.com/r/linuxserver/thelounge",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765954000,
+  "updated_at": 1789765954000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

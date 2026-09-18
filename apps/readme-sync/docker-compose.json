@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "readme-sync",
+      "image": "linuxserver/readme-sync:84f2d0c3-ls27@sha256:195a6acb0288d92d0c485d99099b93c5f88c0753c560b169ad0e9c758ad48d5f",
+      "internalPort": 80,
+      "isMain": true
+    }
+  ]
+}

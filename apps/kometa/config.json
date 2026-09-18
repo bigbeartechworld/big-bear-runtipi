@@ -1,0 +1,26 @@
+{
+  "name": "Kometa",
+  "available": true,
+  "port": 80,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "kometa",
+  "description": "Kometa is a powerful tool designed to give you complete control over your media libraries. With Kometa, you can take your customization to the next level, with granular control over metadata, collections, overlays, and much more.",
+  "tipi_version": 1,
+  "version": "2.4.8",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "A powerful tool designed to give you complete control over your media libraries. With Kometa, you can take your customization to the next level, with granular control over metadata, collections, overlays, and much more.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-kometa",
+  "website": "https://hub.docker.com/r/linuxserver/kometa",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765666000,
+  "updated_at": 1789765666000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

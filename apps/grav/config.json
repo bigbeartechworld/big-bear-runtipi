@@ -1,0 +1,26 @@
+{
+  "name": "Grav",
+  "available": true,
+  "port": 80,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "grav",
+  "description": "Grav is a Fast, Simple, and Flexible, file-based Web-platform.",
+  "tipi_version": 1,
+  "version": "2.1.6",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "A Fast, Simple, and Flexible, file-based Web-platform.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-grav",
+  "website": "https://hub.docker.com/r/linuxserver/grav",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765600000,
+  "updated_at": 1789765600000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

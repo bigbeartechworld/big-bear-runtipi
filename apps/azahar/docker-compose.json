@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "azahar",
+      "image": "linuxserver/azahar:12125.1.3@sha256:4bc384663b37a8156ead374a3dde70a69b913e8fd791ab02e0951c6e1f1a979e",
+      "internalPort": 3000,
+      "isMain": true
+    }
+  ]
+}

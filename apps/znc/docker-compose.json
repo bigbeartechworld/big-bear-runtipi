@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "znc",
+      "image": "linuxserver/znc:1.10.3@sha256:d2bceb0d55c84bb053039724787297b9a8ba4f532182d27eabd47d6e88a5a268",
+      "internalPort": 6501,
+      "isMain": true
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Kdenlive",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "kdenlive",
+  "description": "Kdenlive is a powerful free and open source cross-platform video editing program made by the KDE community. Feature rich and production ready.",
+  "tipi_version": 1,
+  "version": "423.08.5",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "A powerful free and open source cross-platform video editing program made by the KDE community. Feature rich and production ready.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-kdenlive",
+  "website": "https://hub.docker.com/r/linuxserver/kdenlive",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765658000,
+  "updated_at": 1789765658000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

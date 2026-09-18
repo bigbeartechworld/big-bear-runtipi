@@ -1,0 +1,25 @@
+{
+  "name": "Intellij-idea",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "intellij-idea",
+  "description": "IntelliJ IDEA helps you write code faster with tools that eliminate tedious tasks and let you focus on what matters – building great software.",
+  "tipi_version": 1,
+  "version": "42026.2.2",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "Helps you write code faster with tools that eliminate tedious tasks and let you focus on what matters – building great software.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-intellij-idea",
+  "website": "https://hub.docker.com/r/linuxserver/intellij-idea",
+  "supported_architectures": [
+    "amd64"
+  ],
+  "created_at": 1789765637000,
+  "updated_at": 1789765637000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

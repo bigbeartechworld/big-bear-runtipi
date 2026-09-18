@@ -12,14 +12,14 @@
     "utilities"
   ],
   "short_desc": "Automatically restart specified Docker containers and send notifications to a Discord channel",
-  "author": "activecs",
+  "author": "BigBearTechWorld",
   "source": "",
   "website": "https://hub.docker.com/r/deduard/tools",
   "supported_architectures": [
     "amd64"
   ],
-  "created_at": 1787014687000,
-  "updated_at": 1787014687000,
+  "created_at": 1789765503000,
+  "updated_at": 1789765503000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

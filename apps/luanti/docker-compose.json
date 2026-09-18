@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "luanti",
+      "image": "linuxserver/luanti:5.17.0@sha256:9411293fa6a84767923d1b310ada55eedfefd883b8093f3f7d64f3726d354e01",
+      "internalPort": 30000,
+      "isMain": true
+    }
+  ]
+}

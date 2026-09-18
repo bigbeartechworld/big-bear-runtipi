@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "ffmpeg",
+      "image": "linuxserver/ffmpeg:8.1.2@sha256:2e7000921be8de2704a4f27dfd3d988562697a346eaabb937a81046c306f0af7",
+      "internalPort": 80,
+      "isMain": true
+    }
+  ]
+}

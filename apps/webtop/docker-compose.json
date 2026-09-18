@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "webtop",
+      "image": "linuxserver/webtop:arch-kde-version-2025-07-12@sha256:ed197a60c161b5d45a0d0137a5c47ecd136964c57791bf3151d01ad41ac6b988",
+      "internalPort": 3000,
+      "isMain": true
+    }
+  ]
+}

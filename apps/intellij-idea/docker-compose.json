@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "intellij-idea",
+      "image": "linuxserver/intellij-idea:42026.2.2@sha256:0bcb707fd86f9238abed6a531ba88d6776dbf8ccdc75bdaa38c571e71bce876e",
+      "internalPort": 3000,
+      "isMain": true
+    }
+  ]
+}

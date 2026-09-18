@@ -1,0 +1,26 @@
+{
+  "name": "Kicad",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "kicad",
+  "description": "KiCad - A Cross Platform and Open Source Electronics Design Automation Suite.",
+  "tipi_version": 1,
+  "version": "10.0.3",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "A Cross Platform and Open Source Electronics Design Automation Suite.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-kicad",
+  "website": "https://hub.docker.com/r/linuxserver/kicad",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765661000,
+  "updated_at": 1789765661000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

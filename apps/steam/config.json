@@ -1,0 +1,25 @@
+{
+  "name": "Steam",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "steam",
+  "description": "Steam is the ultimate destination for playing, discussing, and creating games.",
+  "tipi_version": 1,
+  "version": "0.0.0",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "The ultimate destination for playing, discussing, and creating games.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-steam",
+  "website": "https://hub.docker.com/r/linuxserver/steam",
+  "supported_architectures": [
+    "amd64"
+  ],
+  "created_at": 1789765934000,
+  "updated_at": 1789765934000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

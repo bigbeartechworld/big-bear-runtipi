@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "xvfb",
+      "image": "linuxserver/xvfb:debiantrixie-version-9d327c0f@sha256:db8c513160544109a1ed06256ea0fbdc8e40fc1f78e6096755f9c30bae8aa38a",
+      "internalPort": 80,
+      "isMain": true
+    }
+  ]
+}

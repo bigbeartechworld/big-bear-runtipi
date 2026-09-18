@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "keepassxc",
+      "image": "linuxserver/keepassxc:2.7.12@sha256:1e3620de7342a7368a9820a17a29edfe51bc6381efc2ec5091fe5deb429575b9",
+      "internalPort": 3000,
+      "isMain": true
+    }
+  ]
+}

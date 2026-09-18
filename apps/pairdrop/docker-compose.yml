@@ -1,0 +1,28 @@
+services:
+  pairdrop:
+    image: linuxserver/pairdrop:1.11.2@sha256:15b6792fcd486d8ebd1853dbfb0419188ca92035da2f29f75eb18b5390fa25d1
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      RATE_LIMIT: ''
+      WS_FALLBACK: ''
+      RTC_CONFIG: ''
+      DEBUG_MODE: ''
+    ports:
+      - target: 3000
+        published: ${APP_PORT}
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/pairdrop/config
+        target: /config
+    container_name: pairdrop
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

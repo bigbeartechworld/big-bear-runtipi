@@ -1,0 +1,26 @@
+{
+  "name": "netboot.xyz",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "netboot-xyz",
+  "description": "netboot.xyz is a PXE app: an iPXE menu that boots OS installers and utilities over the network. This Universal App wraps the official container (web UI, TFTP, local asset HTTP). It does not run DHCP; point the LAN DHCP next-server and bootfile at this host.",
+  "tipi_version": 1,
+  "version": "0.7.6-nbxyz24",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "Network boot menu (iPXE) with TFTP and a web UI",
+  "author": "BigBearTechWorld",
+  "source": "https://github.com/netbootxyz/docker-netbootxyz",
+  "website": "https://netboot.xyz",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765744000,
+  "updated_at": 1789765744000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

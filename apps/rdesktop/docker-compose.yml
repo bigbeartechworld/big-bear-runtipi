@@ -1,0 +1,30 @@
+services:
+  rdesktop:
+    image: linuxserver/rdesktop:arch-kde-version-arch-2025-01-10@sha256:c779495feea3bbfbac0fcd239c5be5981a8744df97646236c685357f90fb5565
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 3389
+        published: ${APP_PORT}
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/rdesktop/config
+        target: /config
+      - type: bind
+        source: /var/run/docker.sock
+        target: /var/run/docker.sock
+      - type: bind
+        source: /DATA/AppData/rdesktop/config
+        target: /config
+    container_name: rdesktop
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

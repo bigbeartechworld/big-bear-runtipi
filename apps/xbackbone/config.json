@@ -1,0 +1,26 @@
+{
+  "name": "Xbackbone",
+  "available": true,
+  "port": 80,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "xbackbone",
+  "description": "Xbackbone is a simple, self-hosted, lightweight PHP file manager that support the instant sharing tool ShareX and *NIX systems. It supports uploading and displaying images, GIF, video, code, formatted text, and file downloading and uploading. Also have a web UI with multi user management, past uploads history and search support.",
+  "tipi_version": 1,
+  "version": "3.8.2",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "A simple, self-hosted, lightweight PHP file manager that support the instant sharing tool ShareX and *NIX systems. It supports uploading and displaying images, GIF, video, code, formatted text, and file downloading and uploading. Also have a web UI with multi user management, past uploads history and search support.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-xbackbone",
+  "website": "https://hub.docker.com/r/linuxserver/xbackbone",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789766041000,
+  "updated_at": 1789766041000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

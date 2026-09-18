@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "fail2ban",
+      "image": "linuxserver/fail2ban:1.1.0@sha256:82ca532863046968e06525539a771aa0db9598df5f8e495383c279e3d2491ddf",
+      "internalPort": 80,
+      "isMain": true
+    }
+  ]
+}

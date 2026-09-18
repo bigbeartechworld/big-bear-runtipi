@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "domoticz",
+      "image": "linuxserver/domoticz:2023.2.20231129@sha256:db5939da7ee7979a2a29ac455f5bee6646d59ef32f3ea20a3be0d77667ef8428",
+      "internalPort": 8080,
+      "isMain": true
+    }
+  ]
+}

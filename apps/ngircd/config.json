@@ -1,0 +1,26 @@
+{
+  "name": "Ngircd",
+  "available": true,
+  "port": 6667,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "ngircd",
+  "description": "Ngircd is a free, portable and lightweight Internet Relay Chat server for small or private networks, developed under the GNU General Public License (GPL). It is easy to configure, can cope with dynamic IP addresses, and supports IPv6, SSL-protected connections as well as PAM for authentication. It is written from scratch and not based on the original IRCd.",
+  "tipi_version": 1,
+  "version": "0.0.0",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "A free, portable and lightweight Internet Relay Chat server for small or private networks, developed under the GNU General Public License (GPL). It is easy to configure, can cope with dynamic IP addresses, and supports IPv6, SSL-protected connections as well as PAM for authentication. It is written from scratch and not based on the original IRCd.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-ngircd",
+  "website": "https://hub.docker.com/r/linuxserver/ngircd",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765756000,
+  "updated_at": 1789765756000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

@@ -7,20 +7,20 @@
   "id": "code-server",
   "description": "Run VS Code on any machine anywhere and access it in the browser.",
   "tipi_version": 1,
-  "version": "4.132.0",
+  "version": "4.137.0",
   "categories": [
     "utilities"
   ],
   "short_desc": "Code Server",
-  "author": "linuxserver",
+  "author": "BigBearTechWorld",
   "source": "",
   "website": "https://hub.docker.com/r/linuxserver/code-server",
   "supported_architectures": [
     "amd64",
     "arm64"
   ],
-  "created_at": 1787014658000,
-  "updated_at": 1787014658000,
+  "created_at": 1789765461000,
+  "updated_at": 1789765461000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

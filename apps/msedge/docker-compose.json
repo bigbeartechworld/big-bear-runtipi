@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "msedge",
+      "image": "linuxserver/msedge:153.0.4234@sha256:71a209e720aef2dfa5601dc3004c9c3ba4bbfb7e143e8289919735f776cafa9a",
+      "internalPort": 3000,
+      "isMain": true
+    }
+  ]
+}

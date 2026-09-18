@@ -1,0 +1,26 @@
+{
+  "name": "D2-builder",
+  "available": true,
+  "port": 80,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "d2-builder",
+  "description": "This container needs special attention. Please check https://hub.docker.com/r/linuxserver/d2-builder for details.",
+  "tipi_version": 1,
+  "version": "0.9.0",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "This container needs special attention. Please check https://hub. Docker. Com/r/linuxserver/d2-builder for details. ",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-d2-builder",
+  "website": "https://hub.docker.com/r/linuxserver/d2-builder",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765479000,
+  "updated_at": 1789765479000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

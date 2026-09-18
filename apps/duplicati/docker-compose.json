@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "duplicati",
+      "image": "linuxserver/duplicati:2.4.0@sha256:5c65d960f4885579096979cb791cb379835872b1b125768deaf342ea1ff2f247",
+      "internalPort": 8200,
+      "isMain": true
+    }
+  ]
+}

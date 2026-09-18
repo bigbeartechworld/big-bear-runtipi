@@ -1,0 +1,26 @@
+{
+  "name": "Vscode",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "vscode",
+  "description": "VS Code is an integrated development environment developed by Microsoft. This container runs the full desktop application, for a web native version see Code Server.",
+  "tipi_version": 1,
+  "version": "1.137.0",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "An integrated development environment developed by Microsoft. This container runs the full desktop application, for a web native version see Code Server.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-vscode",
+  "website": "https://hub.docker.com/r/linuxserver/vscode",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789766000000,
+  "updated_at": 1789766000000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

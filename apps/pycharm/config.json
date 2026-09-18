@@ -1,0 +1,25 @@
+{
+  "name": "Pycharm",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "pycharm",
+  "description": "PyCharm offers out-of-the-box support for Python, databases, Jupyter, Git, Conda, PyTorch, TensorFlow, Hugging Face, Django, Flask, FastAPI, and more.",
+  "tipi_version": 1,
+  "version": "2026.2.20260811",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "Offers out-of-the-box support for Python, databases, Jupyter, Git, Conda, PyTorch, TensorFlow, Hugging Face, Django, Flask, FastAPI, and more.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-pycharm",
+  "website": "https://hub.docker.com/r/linuxserver/pycharm",
+  "supported_architectures": [
+    "amd64"
+  ],
+  "created_at": 1789765861000,
+  "updated_at": 1789765861000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

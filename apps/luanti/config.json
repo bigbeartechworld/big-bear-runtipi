@@ -1,0 +1,26 @@
+{
+  "name": "Luanti",
+  "available": true,
+  "port": 30000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "luanti",
+  "description": "Luanti (formerly Minetest) is an open source voxel game-creation platform with easy modding and game creation",
+  "tipi_version": 1,
+  "version": "5.17.0",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "(formerly Minetest) is an open source voxel game-creation platform with easy modding and game creation",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-luanti",
+  "website": "https://hub.docker.com/r/linuxserver/luanti",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765697000,
+  "updated_at": 1789765697000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

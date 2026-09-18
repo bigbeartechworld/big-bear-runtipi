@@ -1,0 +1,24 @@
+services:
+  socket-proxy:
+    image: linuxserver/socket-proxy:3.4.4@sha256:ba211325155c463a1a6e6a038c928f21447a8e60ce02ecf41302047974097e84
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 80
+        published: ${APP_PORT}
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/socket-proxy/config
+        target: /config
+    container_name: socket-proxy
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

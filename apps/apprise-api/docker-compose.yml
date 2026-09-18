@@ -1,0 +1,28 @@
+services:
+  apprise-api:
+    image: linuxserver/apprise-api:1.5.4@sha256:499e551ec5f7711356df5f9ffb5a262eab4a926fee38fb944fd01a0cf5d70e52
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      APPRISE_ATTACH_SIZE: ''
+    ports:
+      - target: 8000
+        published: ${APP_PORT}
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/apprise-api/config
+        target: /config
+      - type: bind
+        source: /DATA/AppData/apprise-api/attachments
+        target: /attachments
+    container_name: apprise-api
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

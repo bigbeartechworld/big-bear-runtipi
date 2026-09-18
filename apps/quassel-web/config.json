@@ -1,0 +1,26 @@
+{
+  "name": "Quassel-web",
+  "available": true,
+  "port": 64080,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "quassel-web",
+  "description": "Visit homepage: https://hub.docker.com/r/linuxserver/quassel-web/",
+  "tipi_version": 1,
+  "version": "0.0.0",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "A web client for Quassel. Note that a Quassel-Core instance is required, we have a container available here.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-quassel-web",
+  "website": "https://hub.docker.com/r/linuxserver/quassel-web",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765873000,
+  "updated_at": 1789765873000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

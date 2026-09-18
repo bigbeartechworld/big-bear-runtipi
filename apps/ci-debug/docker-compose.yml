@@ -1,0 +1,24 @@
+services:
+  ci-debug:
+    image: linuxserver/ci-debug:933e2702-ls1@sha256:ad48184795f11c6e231a845bf844eda0f00dc071f98eab3ba445643d17e53357
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 80
+        published: ${APP_PORT}
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/ci-debug/config
+        target: /config
+    container_name: ci-debug
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "swag",
+      "image": "linuxserver/swag:5.8.0@sha256:7f4646e77ff362efb506a313a504e866d53a3d5c071175dbf4024acb18f795d3",
+      "internalPort": 443,
+      "isMain": true
+    }
+  ]
+}

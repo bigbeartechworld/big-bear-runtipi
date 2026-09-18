@@ -12,15 +12,15 @@
     "utilities"
   ],
   "short_desc": "LobeChat",
-  "author": "lobehub",
+  "author": "BigBearTechWorld",
   "source": "",
   "website": "https://hub.docker.com/r/lobehub/lobe-chat",
   "supported_architectures": [
     "amd64",
     "arm64"
   ],
-  "created_at": 1787014813000,
-  "updated_at": 1787014813000,
+  "created_at": 1789765692000,
+  "updated_at": 1789765692000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

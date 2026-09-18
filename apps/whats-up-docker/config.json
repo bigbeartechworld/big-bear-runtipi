@@ -12,15 +12,15 @@
     "utilities"
   ],
   "short_desc": "What's Up Docker",
-  "author": "fmartinou",
+  "author": "BigBearTechWorld",
   "source": "",
   "website": "https://hub.docker.com/r/fmartinou/whats-up-docker",
   "supported_architectures": [
     "amd64",
     "arm64"
   ],
-  "created_at": 1787014999000,
-  "updated_at": 1787014999000,
+  "created_at": 1789766024000,
+  "updated_at": 1789766024000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

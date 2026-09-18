@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "mullvad-browser",
+      "image": "linuxserver/mullvad-browser:15.0.20251116@sha256:2bb0a028813463e3e7d2dbdbfb5727d7928fb7e8a17e206435ba27e61836d586",
+      "internalPort": 3000,
+      "isMain": true
+    }
+  ]
+}

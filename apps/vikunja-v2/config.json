@@ -7,20 +7,20 @@
   "id": "vikunja-v2",
   "description": "The open-source, self-hostable to-do app. Organize everything, on all platforms.",
   "tipi_version": 1,
-  "version": "2.5.0",
+  "version": "2.6.0",
   "categories": [
     "utilities"
   ],
   "short_desc": "Vikunja",
-  "author": "kolaente",
+  "author": "BigBearTechWorld",
   "source": "",
   "website": "https://hub.docker.com/r/vikunja/vikunja",
   "supported_architectures": [
     "amd64",
     "arm64"
   ],
-  "created_at": 1787014988000,
-  "updated_at": 1787014988000,
+  "created_at": 1789765989000,
+  "updated_at": 1789765989000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

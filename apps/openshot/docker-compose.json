@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "openshot",
+      "image": "linuxserver/openshot:4.0.0@sha256:9ecb4ef33b4692f46977daf8d30cf8e3561e286bdf40631767044a491dac5b94",
+      "internalPort": 3000,
+      "isMain": true
+    }
+  ]
+}

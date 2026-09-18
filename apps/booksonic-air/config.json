@@ -1,0 +1,26 @@
+{
+  "name": "Booksonic-air",
+  "available": true,
+  "port": 4040,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "booksonic-air",
+  "description": "Visit homepage: https://hub.docker.com/r/linuxserver/booksonic-air/",
+  "tipi_version": 1,
+  "version": "2201.1.0",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "A platform for accessing the audiobooks you own wherever you are. At the moment the platform consists of: * Booksonic Air - A server for streaming your audiobooks, successor to the original Booksonic server and based on Airsonic. * Booksonic App - An DSub based Android app for connection to Booksonic-Air servers.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-booksonic-air",
+  "website": "https://hub.docker.com/r/linuxserver/booksonic-air",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765429000,
+  "updated_at": 1789765429000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

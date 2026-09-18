@@ -1,0 +1,25 @@
+{
+  "name": "Ppsspp",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "ppsspp",
+  "description": "PPSSPP is a free and open-source PSP emulator for Windows, macOS, Linux, iOS, Android, Nintendo Wii U, Nintendo Switch, BlackBerry 10, MeeGo, Pandora, Xbox Series and Symbian with a focus on speed and portability.",
+  "tipi_version": 1,
+  "version": "1.20.4",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "A free and open-source PSP emulator for Windows, macOS, Linux, iOS, Android, Nintendo Wii U, Nintendo Switch, BlackBerry 10, MeeGo, Pandora, Xbox Series and Symbian with a focus on speed and portability.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-ppsspp",
+  "website": "https://hub.docker.com/r/linuxserver/ppsspp",
+  "supported_architectures": [
+    "amd64"
+  ],
+  "created_at": 1789765849000,
+  "updated_at": 1789765849000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

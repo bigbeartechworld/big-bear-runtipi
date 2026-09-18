@@ -1,0 +1,26 @@
+{
+  "name": "Airsonic-advanced",
+  "available": true,
+  "port": 4040,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "airsonic-advanced",
+  "description": "Airsonic-advanced is a free, web-based media streamer, providing ubiquitious access to your music. Use it to share your music with friends, or to listen to your own music while at work. You can stream to multiple players simultaneously, for instance to one player in your kitchen and another in your living room.",
+  "tipi_version": 1,
+  "version": "11.1.4",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "A free, web-based media streamer, providing ubiquitious access to your music. Use it to share your music with friends, or to listen to your own music while at work. You can stream to multiple players simultaneously, for instance to one player in your kitchen and another in your living room.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-airsonic-advanced",
+  "website": "https://hub.docker.com/r/linuxserver/airsonic-advanced",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765391000,
+  "updated_at": 1789765391000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

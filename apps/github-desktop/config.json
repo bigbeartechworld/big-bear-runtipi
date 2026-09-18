@@ -1,0 +1,26 @@
+{
+  "name": "Github-desktop",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "github-desktop",
+  "description": "Github Desktop is an open source Electron-based GitHub app. It is written in TypeScript and uses React.",
+  "tipi_version": 1,
+  "version": "3.4.13",
+  "categories": [
+    "automation"
+  ],
+  "short_desc": "An open source Electron-based GitHub app. It is written in TypeScript and uses React.",
+  "author": "WisdomSky",
+  "source": "https://github.com/linuxserver/docker-github-desktop",
+  "website": "https://hub.docker.com/r/linuxserver/github-desktop",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789765591000,
+  "updated_at": 1789765591000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

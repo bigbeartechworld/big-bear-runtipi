@@ -7,20 +7,20 @@
   "id": "warracker",
   "description": "A self-hosted warranty tracker",
   "tipi_version": 1,
-  "version": "9.9.3",
+  "version": "1.0.2",
   "categories": [
     "utilities"
   ],
   "short_desc": "A self-hosted warranty tracker",
-  "author": "sassanix",
+  "author": "BigBearTechWorld",
   "source": "",
   "website": "https://hub.docker.com/r/sassanix/warracker/main",
   "supported_architectures": [
     "amd64",
     "arm64"
   ],
-  "created_at": 1787014995000,
-  "updated_at": 1787014995000,
+  "created_at": 1789766009000,
+  "updated_at": 1789766009000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

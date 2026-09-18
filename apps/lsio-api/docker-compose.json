@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "lsio-api",
+      "image": "linuxserver/lsio-api:version-9eda67ec@sha256:374295622f0cc2e951b2f2b7b431fa1718102d2145335cee84b8c24ce72f46fb",
+      "internalPort": 80,
+      "isMain": true
+    }
+  ]
+}

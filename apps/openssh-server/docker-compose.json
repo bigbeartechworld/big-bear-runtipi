@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "openssh-server",
+      "image": "linuxserver/openssh-server:version-10.3_p1-r1@sha256:39ba37d50fdd6be1bf70644c871e5dcb9234ee79ac56424ea03ca08cadf1e7b0",
+      "internalPort": 2222,
+      "isMain": true
+    }
+  ]
+}

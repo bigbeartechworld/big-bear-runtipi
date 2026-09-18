@@ -1,0 +1,27 @@
+services:
+  gzdoom:
+    image: linuxserver/gzdoom:4.14.2@sha256:46e43bf526c458995e4d0d95232415ca8426a3c6737ebc4f10517448cef92142
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 3000
+        published: ${APP_PORT}
+        protocol: tcp
+      - target: 3001
+        published: 3001
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/gzdoom/config
+        target: /config
+    container_name: gzdoom
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

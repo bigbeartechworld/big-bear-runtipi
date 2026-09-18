@@ -12,15 +12,15 @@
     "utilities"
   ],
   "short_desc": "Self-hosted AI agent platform with Claude integration",
-  "author": "openclaw",
+  "author": "BigBearCommunity",
   "source": "https://github.com/openclaw/openclaw",
   "website": "https://github.com/openclaw/openclaw",
   "supported_architectures": [
     "amd64",
     "arm64"
   ],
-  "created_at": 1787014881000,
-  "updated_at": 1787014881000,
+  "created_at": 1789765783000,
+  "updated_at": 1789765783000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

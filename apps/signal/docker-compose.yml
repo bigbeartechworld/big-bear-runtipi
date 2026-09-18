@@ -1,0 +1,27 @@
+services:
+  signal:
+    image: linuxserver/signal:8.27.0@sha256:cdb4247d5773b5fb85a86cd713f9708c2b2d56eda56170ca3ff38615d48da8e8
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 3000
+        published: ${APP_PORT}
+        protocol: tcp
+      - target: 3001
+        published: 3001
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/signal/config
+        target: /config
+    container_name: signal
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true
