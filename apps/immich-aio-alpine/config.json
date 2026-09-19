@@ -7,7 +7,7 @@
   "id": "immich-aio-alpine",
   "description": "AIO Alpine. Self-hosted photo and video storage.",
   "tipi_version": 1,
-  "version": "2.7.5",
+  "version": "3.2.2",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1789795647000,
-  "updated_at": 1789795647000,
+  "created_at": 1789800318000,
+  "updated_at": 1789800318000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
