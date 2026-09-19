@@ -7,7 +7,7 @@
   "id": "gotify",
   "description": "a simple server for sending and receiving messages",
   "tipi_version": 1,
-  "version": "3.1.0",
+  "version": "3.1.1",
   "categories": [
     "utilities"
   ],
@@ -18,8 +18,8 @@
   "supported_architectures": [
     "amd64"
   ],
-  "created_at": 1789786260000,
-  "updated_at": 1789786260000,
+  "created_at": 1789795623000,
+  "updated_at": 1789795623000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

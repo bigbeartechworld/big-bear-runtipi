@@ -7,7 +7,7 @@
   "id": "ejbca-ce",
   "description": "The open-source public key infrastructure (PKI) and certificate authority (CA) software EJBCA is one of the longest running CA software projects. EJBCA covers all your needs - from certificate enrollment, via certificate management, to certificate validation.",
   "tipi_version": 1,
-  "version": "9.3.7",
+  "version": "9.6.3",
   "categories": [
     "utilities"
   ],
@@ -18,8 +18,8 @@
   "supported_architectures": [
     "amd64"
   ],
-  "created_at": 1789786208000,
-  "updated_at": 1789786208000,
+  "created_at": 1789795570000,
+  "updated_at": 1789795570000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

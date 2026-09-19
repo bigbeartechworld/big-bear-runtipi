@@ -1,0 +1,17 @@
+services:
+  navidrome:
+    image: deluan/navidrome:0.61.2@sha256:9fa40b3d8dec43ceb2213d1fa551da3dcfef6ac6d19c2e534efb92527c2bafd2
+    container_name: navidrome
+    ports:
+      - "${APP_PORT}:4533"
+    volumes:
+      - ${APP_DATA_DIR}/data:/data
+      - ${APP_DATA_DIR}/data/navidrome_music:/music:ro
+    restart: unless-stopped
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

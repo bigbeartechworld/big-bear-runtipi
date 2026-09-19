@@ -1,0 +1,26 @@
+{
+  "name": "Navidrome",
+  "available": true,
+  "port": 4533,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "navidrome",
+  "description": "Modern web-based music server and streamer for your personal music collection.",
+  "tipi_version": 1,
+  "version": "0.61.2",
+  "categories": [
+    "media"
+  ],
+  "short_desc": "Modern music server and streamer",
+  "author": "BigBearCommunity",
+  "source": "https://github.com/navidrome/navidrome",
+  "website": "https://www.navidrome.org/",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789795740000,
+  "updated_at": 1789795740000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}
