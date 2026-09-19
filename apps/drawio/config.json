@@ -1,0 +1,26 @@
+{
+  "name": "Draw.io",
+  "available": true,
+  "port": 8080,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "drawio",
+  "description": "Draw.io is a structured diagram editor for creating flowcharts, network diagrams, and other visual documentation.",
+  "tipi_version": 1,
+  "version": "31.4.6",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "Structured diagram editor",
+  "author": "BigBearCommunity",
+  "source": "https://github.com/jgraph/drawio",
+  "website": "https://www.drawio.com/",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1789795561000,
+  "updated_at": 1789795561000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

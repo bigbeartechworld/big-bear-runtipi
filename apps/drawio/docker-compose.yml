@@ -1,0 +1,14 @@
+services:
+  drawio:
+    image: jgraph/drawio:31.4.6@sha256:4bd19d4bc36b65cabf1ae9c5d234597e564416b6c67f7d4db296c2df758fcb52
+    container_name: drawio
+    ports:
+      - "${APP_PORT}:8080"
+    restart: unless-stopped
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true
