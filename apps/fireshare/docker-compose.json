@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "fireshare",
+      "image": "shaneisrael/fireshare:1.7.1",
+      "internalPort": 8585,
+      "isMain": true
+    }
+  ]
+}
