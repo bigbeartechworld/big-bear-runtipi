@@ -1,7 +1,7 @@
 {
   "name": "Domain Locker",
   "available": true,
-  "port": 8180,
+  "port": 3000,
   "exposable": true,
   "dynamic_config": true,
   "id": "domainlocker",
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1790113382000,
-  "updated_at": 1790113382000,
+  "created_at": 1790126175000,
+  "updated_at": 1790126175000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
