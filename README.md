@@ -20,209 +20,421 @@ https://github.com/bigbeartechworld/big-bear-runtipi
 
 ## Apps available
 
-- [2FAuth](https://github.com/Bubka/2FAuth) - Manage your Two-Factor Authentication codes.
-- [Activepieces](https://github.com/activepieces/activepieces) - True zapier alternative.
-- [Actual Budget](https://github.com/actualbudget/actual-server) - Local-first OpenSource Budget tool
-- [Adguard](https://github.com/AdguardTeam) - World's most advanced adblocker!
-- [AFFiNE](https://github.com/toeverything/affine) - AFFiNE is a workspace with fully merged docs, whiteboards and databases.
-- [Anse](https://github.com/anse-app/anse) - Fully optimized UI for AI Chats.
-- [ArchiveBox](https://github.com/ArchiveBox/ArchiveBox) - Open source self-hosted web archiving.
-- [Atuin Server](https://github.com/atuinsh/atuin) - Magical Shell History
-- [Audiobookshelf](https://github.com/advplyr/audiobookshelf) - Audiobookshelf is a self-hosted audiobook and podcast server.
-- [Authentik](https://github.com/goauthentik/authentik) - The authentication glue you need.
-- [Baïkal](https://github.com/ckulka/baikal-docker) - Baïkal is a Calendar+Contacts server
-- [Bazarr](https://github.com/morpheus65535/bazarr) - A companion application to Sonarr and Radarr that manages and downloads subtitles
-- [Bitcoin](https://github.com/lncm/docker-bitcoind) - Bitcoin core node
-- [Booksonic](https://github.com/popeen/Booksonic-Air) - The selfhosted audiobook server
-- [Bookstack](https://github.com/BookStackApp/BookStack) - BookStack is a self-hosted platform for organising and storing information.
-- [Budibase](https://github.com/Budibase/budibase) - Internal tools made easy.
-- [Cal.com](https://github.com/calcom/cal.com) - Scheduling infrastructure for absolutely everyone.
-- [Calibre-Web - EBook Reader](https://github.com/janeczku/calibre-web) - Calibre-web is a web app providing a clean interface for browsing, reading and downloading eBooks using an existing Calibre database.
-- [ChangeDetection](https://github.com/dgtlmoon/changedetection.io) - Website change detection.
-- [ChatGPT UI](https://github.com/WongSaang/chatgpt-ui) - A ChatGPT web client that supports multiple users, multiple languages, and multiple database connections for persistent data storage
-- [Chatpad AI](https://github.com/deiucanta/chatpad) - Not just another ChatGPT user-interface!
-- [Cheshire Cat AI](https://github.com/cheshire-cat-ai/core) - A production-ready AI framework to develop AI agents.
-- [Cloudflare DDNS](https://github.com/joshuaavalon/docker-cloudflare) - Update DNS records on Cloudflare.
-- [Cloudflared](https://github.com/WisdomSky/Cloudflared-web) - Cloudflare Tunnels in a Web UI
-- [Code-Server - Web VS Code](https://github.com/linuxserver/docker-code-server) - Code-server is VS Code running on a remote server, accessible through the browser.
-- [CodeX.docs](https://github.com/codex-team/codex.docs) - Free Docs app powered by Editor.js ecosystem.
-- [Crafty](https://gitlab.com/crafty-controller/crafty-4) - Python based Control Panel for your Minecraft Server
-- [CTFd](https://github.com/CTFd/CTFd) - Cyber Security Training made simple.
-- [DailyTxT](https://github.com/PhiTux/DailyTxT) - Encrypted Diary Web-App
-- [Dash.](https://github.com/MauriceNino/dashdot) - A simple, modern server dashboard, primarily used by smaller private server
-- [Dashy](https://github.com/lissy93/dashy) - A self-hostable personal dashboard built for you.
-- [Databag](https://github.com/balzack/databag) - Messenger for the Decentralized Web
-- [Dockge](https://github.com/louislam/dockge) - Docker compose.yaml stack-oriented manager.
-- [DokuWiki](https://github.com/dokuwiki/dokuwiki) - DokuWiki is a simple to use and highly versatile Open Source wiki software 
-- [Dozzle](https://github.com/amir20/dozzle) - Dozzle is a small web based app to monitor Docker logs
-- [Draw.io](https://github.com/jgraph/drawio) - Diagramming and whiteboarding app.
-- [Duck DNS](https://github.com/linuxserver/docker-duckdns) - Duck DNS is a free Dynamic DNS service
-- [Duplicati](https://github.com/linuxserver/docker-duplicati) - Store securely encrypted backups in the cloud!
-- [Eclipse Mosquitto](https://github.com/eclipse/mosquitto/) - open source message broker
-- [Email OAuth2 Proxy](https://github.com/simonrob/email-oauth2-proxy) - OAuth Proxy for IMAP/POP/SMTP.
-- [Emulatorjs](https://github.com/EmulatorJS/EmulatorJS) - Self-hosted Javascript emulation for various system.
-- [Excalidraw](https://github.com/excalidraw/excalidraw) - Online whiteboard collaboration made easy
-- [File Browser](https://github.com/filebrowser/filebrowser) - Access your homeserver files from your browser
-- [Filestash](https://github.com/mickael-kerjean/filestash) - A modern web client for SFTP, S3, FTP, WebDAV, Git, Minio, LDAP, CalDAV, CardDAV, Mysql, Backblaze
-- [Firefly III Data Importer](https://github.com/firefly-iii/data-importer) - The Firefly III Data Importer can import data into Firefly III
-- [Firefly III](https://github.com/firefly-iii/firefly-iii) - Firefly III: a personal finances manager 
-- [Fireshare](https://github.com/ShaneIsrael/fireshare) - Self host your media and share with unique links
-- [Flaresolverr](https://github.com/FlareSolverr/FlareSolverr) - Bypass Cloudflare and DDoS-GuARD.
-- [flatnotes](https://github.com/Dullage/flatnotes) - A self-hosted, database-less note taking web app
-- [Flightlog](https://github.com/perdian/flightlog/) - Flightlog, a web application that keeps track of your personal flight history
-- [Flowise AI](https://github.com/FlowiseAI/Flowise) - Build LLM Apps Easily
-- [Forgejo](https://codeberg.org/forgejo/forgejo/) - Beyond coding. We forge. · Lightweight and performant · Guaranteed 100% Free Software
-- [FreshRSS](https://github.com/FreshRSS/FreshRSS) - A free, self-hostable aggregator… 
-- [gandi-livedns](https://github.com/jbbodart/gandi-livedns) - Update your Gandi DNS zone records with your WAN IP
-- [Get A Shell](https://github.com/steveiliop56/getashell) - SSH shells from a Web UI
-- [Ghost](https://github.com/TryGhost/Ghost) - Ghost - Turn your audience into a business.
-- [Ghostfolio](https://github.com/ghostfolio/ghostfolio) - Open Source Wealth Management Software.
-- [Gitea](https://github.com/go-gitea/gitea) - Gitea - Git with a cup of tea · A painless self-hosted Git service. · Cross-platform · Easy to install · Lightweight · Open Source.
-- [Gladys Assistant](https://github.com/gladysassistant/gladys) - A privacy-first, open-source home assistant
-- [Glances](https://github.com/nicolargo/glances) - An eye on your system
-- [Gotify](https://github.com/gotify/server) - Gotify, a simple server for sending and receiving notification messages.
-- [GoToSocial](https://github.com/superseriousbusiness/gotosocial) - Fast, fun, ActivityPub server, powered by Go.
-- [Grafana](https://github.com/grafana/grafana) - The open and composable observability and data visualization platform
-- [Grav](https://github.com/getgrav/grav) - Grav is a Fast, Simple, and Flexible, file-based Web-platform. 
-- [Grist](https://github.com/gristlabs/grist-core) - Grist is the evolution of spreadsheets.
-- [Grocy](https://github.com/grocy/grocy) - ERP beyond your fridge
-- [Halo](https://github.com/halo-dev/halo) - Halo - Open source website building tool.
-- [Hammond](https://github.com/alfhou/hammond) - Self hosted vehicle and expense management system. Like Clarkson, but better
-- [Haven](https://github.com/havenweb/haven) - Self-hostable private blogging
-- [HedgeDoc](https://github.com/hedgedoc/hedgedoc) - A Collaborative Markdown and Note Taking App
-- [Heimdall](https://github.com/linuxserver/Heimdall) - Application Dashboard
-- [Hello World](https://github.com/crccheck/docker-hello-world) - Hello World web server in under 2 MB
-- [Homarr](https://github.com/ajnart/homarr) - Homarr is a simple and lightweight homepage for your server, that helps you easily access all of your services in one place.
-- [Home Assistant](https://github.com/home-assistant/core) - Open source home automation that puts local control and privacy first
-- [HomeBox](https://github.com/hay-kot/homebox) - Homebox is the inventory and organization system built for the Home User
-- [Home Bridge](https://github.com/homebridge/homebridge) - HomeKit support for the impatient.  
-- [Homepage](https://github.com/gethomepage/homepage) - A highly customizable homepage
-- [Immich](https://github.com/immich-app/immich) - Photo and video backup solution directly from your mobile phone.
-- [Invoice Ninja](https://github.com/invoiceninja/invoiceninja) - Invoices, Expenses and Tasks built with Laravel, Flutter and React.
-- [IT-Tools](https://github.com/CorentinTh/it-tools) - Collection of handy online tools for developers, with great UX.
-- [Jellyfin Vue (Beta)](https://github.com/jellyfin/jellyfin-vue) - A modern web client for Jellyfin based on Vue
-- [Jellyfin](https://github.com/jellyfin/jellyfin) - A media server for your home collection
-- [Jellyseerr](https://github.com/Fallenbagel/jellyseerr) - Fork of overseerr for Jellyfin support
-- [Joplin Server](https://github.com/laurent22/joplin) - Note taking and to-do application with synchronisation
-- [Kanboard](https://github.com/kanboard/kanboard) - Open Source Kanban Board
-- [Kapowarr](https://github.com/Casvt/Kapowarr) - Kapowarr is a software to build and manage a comic book library, fitting in the *arr suite of software.
-- [Kasm Workspaces](https://github.com/kasmtech) - Container streaming platform.
-- [Kavita](https://github.com/Kareadita/Kavita) - Kavita is a fast, feature rich, cross platform reading server
-- [Kimai](https://github.com/kimai/kimai) - Open source time-tracker
-- [Kiwix Server](https://github.com/kiwix/kiwix-tools/) - Kiwix Server is a web server for hosting .zim files
-- [Koillection](https://github.com/benjaminjonard/koillection) - Koillection allow you to manage any kind of collections.
-- [Komga](https://github.com/gotson/komga) - A media server for your comics, mangas, BDs, magazines and eBooks.
-- [LibReddit](https://github.com/spikecodes/libreddit) - Browse reddit without problems!
-- [LibrePhotos](https://github.com/LibrePhotos/librephotos) - Complete photo management service
-- [LibreTranslate](https://github.com/LibreTranslate/LibreTranslate) - Free and Open Source Machine Translation API. 100% self-hosted, offline capable and easy to setup.
-- [Lidarr on Steroids](https://github.com/youegraillot/lidarr-on-steroids) - Lidarr with some muscles thanks to deemix
-- [LinkStack](https://github.com/LinkStackOrg/linkstack-docker) - LinkStack is a highly customizable link sharing platform with an intuitive, easy to use user interface
-- [Linkwarden](https://github.com/linkwarden/linkwarden) - A self-hosted, open-source collaborative bookmark manager
-- [Lobe Chat](https://github.com/lobehub/lobe-chat) - LLM chatbot framework
-- [Lodestone Core](https://github.com/Lodestone-Team/lodestone_core) - Server hosting tool for Minecraft and other multiplayers
-- [Logto](https://github.com/logto-io/logto) - Logto is a cost-effective open-source alternative to Auth0. 
-- [Mailpit](https://github.com/axllent/mailpit) - Mailpit is a email testing tool
-- [Maintainerr](https://github.com/jorenn92/Maintainerr) - Maintainerr will manage the storage space on your plex server, launching automated actions to delete your files.
-- [Mastodon](https://github.com/mastodon/mastodon) - Your self-hosted, globally interconnected microblogging community
-- [Conduit](https://gitlab.com/famedly/conduit) - Conduit is a simple, fast and reliable chat server written in Rust
-- [Mealie](https://github.com/hay-kot/mealie) - Mealie is a self-hosted recipe manager and meal planner.
-- [Memos](https://github.com/usememos/memos) - Memo hub for knowledge management and collaboration.
-- [Mind](https://github.com/Casvt/MIND) - A simple self hosted reminder platform that uses push to send notifications to your device.
-- [Minecraft Server](https://github.com/itzg/docker-minecraft-server) - Run a minecraft server
-- [Minio](https://github.com/minio/minio) - High Performance Object Storage
-- [Mixpost Pro](https://github.com/inovector/mixpost) - Self-hosted social media management. Schedule and organize your social content. 
-- [Mixpost](https://github.com/inovector/mixpost) - Self-hosted social media management. Schedule and organize your social content. 
-- [Moneroblock](https://github.com/duggavo/MoneroBlock) - Decentralized and trustless Monero block explorer
-- [Monero Daemon](https://github.com/sethforprivacy/simple-monerod-docker) - Monero is a private, decentralized cryptocurrency that keeps your finances confidential and secure.
-- [Mongo Express](https://github.com/mongo-express/mongo-express) - Web-based MongoDB admin interface, written with Node.js and Express
-- [MongoDB](https://github.com/mongodb/mongo) - MongoDB is an open-source NoSQL database
-- [Monica](https://github.com/monicahq/monica) - A Personal Relationship Management tool to help you document your social life.
-- [Moodist](https://github.com/remvze/moodist) - Ambient sounds for focus and calm.
-- [Movary](https://github.com/leepeuker/movary) - Movary is a self-hosted web application to track and rate your watched movies. 
-- [mStream Music](https://github.com/IrosTheBeggar/mStream) - The easiest music streaming server available
-- [n8n](https://github.com/n8n-io/n8n) - Workflow Automation Tool. Alternative to Zapier
-- [Navidrome](https://github.com/navidrome/navidrome/) - A selfhosted music server
-- [Netboot.xyz](https://github.com/netbootxyz/netboot.xyz) - Your favorite operating systems in one place.
-- [Netdata](https://github.com/netdata/netdata) - Open-source, real-time, performance and health monitoring.
-- [Nextcloud](https://github.com/nextcloud/server) - Productivity platform that keeps you in control
-- [NextGBA](https://github.com/meienberger/nextgba) - Gameboy in your browser
-- [Nginx](https://github.com/nginx/nginx) - Open-source simple and fast web server.
-- [Nitter](https://github.com/zedeus/nitter) - Twitter without annoyances!
-- [NocoDB](https://github.com/nocodb/nocodb) - Open Source Airtable Alternative
-- [Node-RED](https://github.com/node-red/node-red) - Low-code programming for event-driven applications
-- [Notemark](https://github.com/enchant97/note-mark/) - Lighting fast web-based Markdown notes app.
-- [Ntfy](https://github.com/binwiederhier/ntfy) - Ntfy, a simple server for sending and receiving notification messages.
-- [Obsidian LiveSync](https://github.com/vrtmrz/self-hosted-livesync-server) - LiveSync couchdb backend for Obsidian
-- [Octobot](https://github.com/Drakkar-Software/OctoBot) - Octobot is a powerful open-source cryptocurrency trading robot.
-- [Odoo](https://github.com/odoo/odoo) - Open-source business management software with modular applications for streamlined operations.
-- [OneDev](https://code.onedev.io/onedev/server) - Self-hosted Git Server with Kanban and CI/CD
-- [openbooks](https://github.com/evan-buss/openbooks) - Search and Download eBooks
-- [Outline](https://github.com/outline/outline) - A home for all your docs
-- [Overseerr](https://github.com/sct/overseerr) - Request management and media discovery tool for the Plex ecosystem
-- [Owncast](https://github.com/owncast/owncast) -  Take control over your live stream video by running it yourself. Streaming + chat out of the box. 
-- [Owncloud](https://github.com/owncloud/core) - A personal cloud which runs on your own server. 
-- [PairDrop](https://github.com/schlagmichdoch/PairDrop) - Local file sharing in your browser. Inspired by Apple's AirDrop
-- [Paperless-ngx](https://github.com/paperless-ngx/paperless-ngx) - Document Management System (DMS)
-- [Penpot](https://github.com/penpot/penpot) - Open-Source design & prototyping platform.
-- [Peppermint](https://github.com/Peppermint-Lab/peppermint) - An open source ticket management & help desk solution.
-- [PhotoPrism](https://github.com/photoprism/photoprism) - AI-Powered Photos App for the Decentralized Web. We are on a mission to protect your freedom and privacy.
-- [Pi-hole](https://github.com/pi-hole/pi-hole) - A black hole for Internet advertisements
-- [Planka](https://github.com/plankanban/planka) - Free open source kanban board for workgroups.
-- [Planning Poker](https://github.com/axeleroy/self-host-planning-poker) - Online planning poker for scrum master.
-- [Plausible](https://github.com/plausible/analytics) - Simple, open-source, lightweight (< 1 KB) and privacy-friendly web analytics alternative to Google Analytics.
-- [Plex](https://github.com/plexinc/pms-docker) - Stream Movies & TV Shows
-- [PodFetch](https://github.com/SamTV12345/PodFetch) - A sleek and efficient podcast downloader.
-- [Portainer](https://github.com/portainer/portainer) - Making Docker and Kubernetes management easy.
-- [Postfix Mail Relay](https://github.com/shamil/docker-postfix-relay) - Simple SMTP relay for environments where you may have private servers with no Internet connection.
-- [PrivateBin](https://github.com/PrivateBin/PrivateBin) - A minimalist, open source online pastebin where the server has zero knowledge of pasted data. Data is encrypted/decrypted in the browser using 256 bits AES.
-- [ProxiTok](https://github.com/pablouser1/ProxiTok) - Open source alternative frontend for TikTok made using PHP 
-- [qDirStat](https://github.com/linuxserver/docker-qdirstat) - A graphical disk usage analyzer
-- [Rallly](https://github.com/lukevella/rallly) - Scheduling and collaboration tool
-- [Recyclarr](https://github.com/recyclarr/recyclarr) - Sync TRaSH Guides.
-- [Revolt Chat](https://github.com/revoltchat) - Open source user-first chat platform.
-- [RomM](https://github.com/zurdi15/romm) - RomM (Rom Manager) is a web based retro roms manager integrated with IGDB.
-- [RSS](https://github.com/ssddanbrown/rss) - A simple, opinionated, RSS feed aggregator.
-- [Ryot](https://github.com/IgnisDa/ryot) - Roll your own tracker!
-- [SABnzbd](https://github.com/sabnzbd/sabnzbd) - Sabnzbd makes Usenet as simple and streamlined as possible by automating everything we can
-- [Scrypted](https://github.com/koush/scrypted) - High performance home video integration and automation platform
-- [SearXNG](https://github.com/searxng/searxng) - Privacy-respecting, hackable metasearch engine
-- [Send](https://gitlab.com/timvisee/send) - Simple, private file sharing. https://send.vis.ee/
-- [Serge](https://github.com/serge-chat/serge) - LLaMA made easy
-- [SFTPGo](https://github.com/drakkan/sftpgo) - Fully featured and highly configurable SFTP server
-- [Shlink](https://github.com/shlinkio/shlink) - Shlink is a self-hosted URL shortener
-- [Silverbullet](https://github.com/silverbulletmd/silverbullet) - SilverBullet is a creative space where you collect, create and expand your personal knowledge, while also letting you constantly evolve the tools you use to do so.
-- [SimpleX SMP](https://github.com/simplex-chat/simplexmq) - A reference implementation of the SimpleX Messaging Protocol for simplex queues over public networks.
-- [SLSKD](https://github.com/slskd/slskd) - P2P downloads
-- [Speedtest Tracker](https://github.com/alexjustesen/speedtest-tracker) - Internet performance tracking application.
-- [Spoolman](https://github.com/Donkie/Spoolman) - Keep track of your inventory of 3D-printer filament spools
-- [Sshwifty](https://github.com/nirui/sshwifty) - Web SSH & Telnet (WebSSH & WebTelnet client)
-- [Stalwart Mail](https://github.com/stalwartlabs) - Open-source mail server solution with JMAP, IMAP4, and SMTP support
-- [Stirling-PDF](https://github.com/Frooodle/Stirling-PDF/) - Powerful locally hosted web based PDF manipulation tool.
-- [Syncthing](https://github.com/syncthing) - Peer-to-peer file synchronization between your devices
-- [Tailscale](https://github.com/tailscale/tailscale) - The easiest, most secure way to use WireGuard and 2FA.
-- [Tandoor](https://github.com/TandoorRecipes/recipes) - Recipe collection manager.
-- [Tasks.md](https://github.com/BaldissaraMatheus/Tasks.md) - A self-hosted, file based task management board.
-- [Tautulli](https://github.com/Tautulli/Tautulli) - Monitoring and tracking tool for Plex Media Server.
-- [Tooljet](https://github.com/ToolJet/ToolJet) - Alternative to retool to construct CRM dashboard
-- [Traefik Certs Dumper](https://github.com/kereis/traefik-certs-dumper) - Dumps Let's Encrypt certificates of a specified domain which Traefik stores in acme.json.
-- [Trilium](https://github.com/zadam/trilium) - An open-source, self-hosted Notion alterative
-- [Umami](https://github.com/umami-software/umami) - Umami is a simple, fast, privacy-focused alternative to Google Analytics.
-- [Unmanic](https://github.com/Unmanic/unmanic) - Unmanic - Library Optimiser.
-- [Uptime Kuma](https://github.com/louislam/uptime-kuma) - A fancy self-hosted monitoring tool.
-- [VaultWarden](https://github.com/dani-garcia/vaultwarden) - All your passwords in your control!
-- [Vikunja](https://kolaente.dev/vikunja) - The Todo-app to organize your life.
-- [Wallos](https://github.com/ellite/Wallos) - Open-Source Personal Subscription Tracker
-- [Wekan](https://github.com/wekan/wekan) - Open-Source, customizable, and privacy-focused kanban
-- [Wireguard](https://github.com/WeeJeWel/wg-easy/) - VPN server for your homeserver
-- [Whoogle Search](https://github.com/benbusby/whoogle-search) - A self-hosted, ad-free, privacy-respecting metasearch engine.
-- [WikiJS](https://github.com/requarks/wiki) - A modern and powerful wiki app built on Node.js
-- [Windows](https://github.com/dockur/windows/) - Full windows vm in your browser
-- [Wizarr](https://github.com/Wizarrrr/wizarr) - Wizarr is an automatic user invitation system for Plex and Jellyfin.
-- [WordPress](https://github.com/WordPress/WordPress) - Popular CMS for websites and blogs
-- [Your Spotify](https://github.com/Yooooomi/your_spotify) - Self hosted Spotify tracking dashboard.
-- [ZeroTier](https://github.com/zerotier/ZeroTierOne) - Easy to use zero configuration VPN.
-- [Zigbee2MQTT](https://github.com/Koenkk/zigbee2mqtt) - Zigbee to MQTT bridge
-- [Zipline](https://github.com/diced/zipline) - A ShareX/file upload server that is easy to use, packed with features, and with an easy setup!  
+- [2FAuth]() - A Web app to manage your Two-Factor Authentication (2FA) accounts and generate their security codes
+- [Actual Budget]() - Local-first OpenSource Budget tool
+- [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome) - Network-wide ads & trackers blocking DNS server.
+- [Airsonic-advanced](https://github.com/linuxserver/docker-airsonic-advanced) - A free, web-based media streamer, providing ubiquitious access to your music. Use it to share your music with friends, or to listen to your own music while at work. You can stream to multiple players simultaneously, for instance to one player in your kitchen and another in your living room.
+- [Altus](https://github.com/linuxserver/docker-altus) - An Electron-based WhatsApp client with themes and multiple account support.
+- [Anse]() - Fully optimized UI for AI Chats.
+- [Apprise-api](https://github.com/linuxserver/docker-apprise-api) - Takes advantage of Apprise through your network with a user-friendly API. * Send notifications to more than 100 services. * An incredibly lightweight gateway to Apprise. * A production ready micro-service at your disposal. * A Simple Website to verify and test your configuration with. Apprise API was designed to easily fit into existing (and new) eco-systems that are looking for a simple notification solution.
+- [Appsmith]() - Appsmith
+- [Ardour](https://github.com/linuxserver/docker-ardour) - An open source, collaborative effort of a worldwide team including musicians, programmers, and professional recording engineers.
+- [Arma 3 Server](https://github.com/BrettMayson/Arma3Server) - Arma 3 Dedicated Server
+- [Audacity](https://github.com/linuxserver/docker-audacity) - An easy-to-use, multi-track audio editor and recorder. Developed by a group of volunteers as open source.
+- [Audiobookshelf]() - Audiobookshelf is a self-hosted audiobook and podcast server.
+- [Authentik]() - Authentik
+- [Ayon]() - Ayon
+- [Azahar](https://github.com/linuxserver/docker-azahar) - An open-source 3DS emulator based on Citra.
+- [Babybuddy](https://github.com/linuxserver/docker-babybuddy) - A buddy for babies. Helps caregivers track sleep, feedings, diaper changes, tummy time and more to learn about and predict baby's needs without (as much) guess work.
+- [Bambustudio](https://github.com/linuxserver/docker-bambustudio) - An open-source, cutting-edge, feature-rich slicing software. It contains project-based workflows, systematically optimized slicing algorithms, and an easy-to-use graphical interface, bringing users an incredibly smooth printing experience.
+- [Baserow]() - Baserow
+- [Beaver Habit Tracker]() - A self-hosted habit tracking app without Goals
+- [Beets](https://github.com/linuxserver/docker-beets) - A music library manager and not, for the most part, a music player. It does include a simple player plugin and an experimental Web-based player, but it generally leaves actual sound-reproduction to specialized tools.
+- [Beszel]() - Server Monitoring Hub
+- [Bitcoin-knots](https://github.com/linuxserver/docker-bitcoin-knots) - Can be used as a desktop client for regular payments or as a full node server utility for merchants and other payment services.
+- [Blade-of-agony](https://github.com/linuxserver/docker-blade-of-agony) - A story-driven WWII shooter inspired by Wolfenstein and Doom.
+- [Blender](https://github.com/linuxserver/docker-blender) - A free and open-source 3D computer graphics software toolset used for creating animated films, visual effects, art, 3D printed models, motion graphics, interactive 3D applications, virtual reality, and computer games. This image does not support GPU rendering out of the box only accelerated workspace experience
+- [Boinc](https://github.com/linuxserver/docker-boinc) - A platform for high-throughput computing on a large scale (thousands or millions of computers). It can be used for volunteer computing (using consumer devices) or grid computing (using organizational resources). It supports virtualized, parallel, and GPU-based applications.
+- [BookOrbit](https://github.com/bookorbit/bookorbit) - Your self-hosted reading space for books, audiobooks, and comics
+- [Booksonic-air](https://github.com/linuxserver/docker-booksonic-air) - A platform for accessing the audiobooks you own wherever you are. At the moment the platform consists of: * Booksonic Air - A server for streaming your audiobooks, successor to the original Booksonic server and based on Airsonic. * Booksonic App - An DSub based Android app for connection to Booksonic-Air servers.
+- [bookstack]() - BookStack
+- [Brave]() - Brave
+- [btop]() - A monitor of resources
+- [Budge](https://github.com/linuxserver/docker-budge) - An open source 'budgeting with envelopes' personal finance app.
+- [Budibase]() - Internal tools made easy.
+- [Build-agent](https://github.com/linuxserver/docker-build-agent) - This container needs special attention. Please check https://hub. Docker. Com/r/linuxserver/build-agent for details. 
+- [Buzz](https://github.com/block/buzz) - Self-hosted workspace and Nostr relay for humans and agents
+- [cAdvisor]() - cAdvisor
+- [Cal.com]() - Cal.com
+- [Calibre-web](https://github.com/linuxserver/docker-calibre-web) - A web app providing a clean interface for browsing, reading and downloading eBooks using an existing Calibre database. It is also possible to integrate google drive and edit metadata and your calibre library through the app itself. This software is a fork of library and licensed under the GPL v3 License.
+- [Calibre](https://github.com/linuxserver/docker-calibre) - A powerful and easy to use e-book manager. Users say it's outstanding and a must-have. It'll allow you to do nearly everything and it takes things a step beyond normal e-book software. It's also completely free and open source and great for both casual users and computer experts.
+- [Calligra](https://github.com/linuxserver/docker-calligra) - An office and graphic art suite by KDE. It is available for desktop PCs, tablet computers, and smartphones. It contains applications for word processing, spreadsheets, presentation, vector graphics, and editing databases.
+- [Celestory & Voltask](https://github.com/celestory/celestory) - No-code interactive storytelling & automation
+- [Changedetection.io](https://github.com/linuxserver/docker-changedetection.io) - Provides free, open-source web page monitoring, notification and change detection.
+- [Change Detection]() - Website change detection.
+- [Chatpad]() - Not just another ChatGPT user-interface!
+- [chrome]() - chrome
+- [chromium]() - chromium
+- [Ci-debug](https://github.com/linuxserver/docker-ci-debug) - This container needs special attention. Please check https://hub. Docker. Com/r/linuxserver/ci-debug for details.
+- [Ci](https://github.com/linuxserver/docker-ci) - This container needs special attention. Please check https://hub. Docker. Com/r/linuxserver/ci for details. 
+- [Citron](https://github.com/linuxserver/docker-citron) - A feature rich Switch 1 emulator for homebrew.
+- [Code Server]() - Code Server
+- [CodeX Docs]() - CodeX Docs
+- [Compose Toolbox]() - Compose file editor & validator
+- [ConvertX]() - 💾 Self-hosted online file converter. Supports 1000+ formats ⚙️
+- [Coolify]() - Coolify
+- [Cops](https://github.com/linuxserver/docker-cops) - By Sébastien Lucas, now maintained by MikesPub, stands for Calibre OPDS (and HTML) Php Server. COPS links to your Calibre library database and allows downloading and emailing of books directly from a web browser and provides a OPDS feed to connect to your devices. Changes in your Calibre library are reflected immediately in your COPS pages. See : COPS's home for more details. Don't forget to check the Wiki. ## Why. (taken from the author's site) In my opinion Calibre is a marvelous tool but is too big and has too much dependencies to be used for its content server. That's the main reason why I coded this OPDS server. I needed a simple tool to be installed on a small server (Seagate Dockstar in my case). I initially thought of Calibre2OPDS but as it generate static file no search was possible. Later I added an simple HTML catalog that should be usable on my Kobo. So COPS's main advantages are : * No need for many dependencies. * No need for a lot of CPU or RAM. * Not much code. * Search is available. * With Dropbox / owncloud it's very easy to have an up to date OPDS server. * It was fun to code. If you want to use the OPDS feed don't forget to specify /feed at the end of your URL.
+- [Crafty Controller]() - Crafty Controller
+- [Cura](https://github.com/linuxserver/docker-cura) - Free, easy-to-use 3D printing software trusted by millions of users. Fine-tune your 3D model with 400+ settings for the best slicing and printing results.
+- [CyberChef]() - The Cyber Swiss Army Knife
+- [D2-builder](https://github.com/linuxserver/docker-d2-builder) - This container needs special attention. Please check https://hub. Docker. Com/r/linuxserver/d2-builder for details. 
+- [Daapd](https://github.com/linuxserver/docker-daapd) - (iTunes) media server with support for AirPlay devices, Apple Remote (and compatibles), Chromecast, MPD and internet radio. 
+- [Darktable](https://github.com/linuxserver/docker-darktable) - An open source photography workflow application and raw developer. A virtual lighttable and darkroom for photographers. It manages your digital negatives in a database, lets you view them through a zoomable lighttable and enables you to develop raw images and enhance them.
+- [Dashdot]() - dash. - a modern server dashboard
+- [Dashy v4]() - Dashy v4
+- [Dashy (Legacy)]() - Dashy
+- [Davis]() - Davis
+- [DBGate]() - DBGate
+- [Ddclient](https://github.com/linuxserver/docker-ddclient) - A Perl client used to update dynamic DNS entries for accounts on Dynamic DNS Network Service Provider. It was originally written by Paul Burry and is now mostly by wimpunk. It has the capability to update more than just dyndns and it can fetch your WAN-ipaddress in a few different ways.
+- [Digikam](https://github.com/linuxserver/docker-digikam) - digiKam: Professional Photo Management with the Power of Open Source
+- [Dillinger](https://github.com/linuxserver/docker-dillinger) - A cloud-enabled, mobile-ready, offline-storage, AngularJS powered HTML5 Markdown editor.
+- [DiscoPanel](https://github.com/nickheyer/DiscoPanel) - A game server panel for Minecraft
+- [Diskover](https://github.com/linuxserver/docker-diskover) - An open source file system indexer that uses Elasticsearch to index and manage data across heterogeneous storage systems.
+- [DIUN]() - Docker Image Update Notifier
+- [Docker Cron Restart Notifier]() - Automatically restart specified Docker containers and send notifications to a Discord channel
+- [Dockge]() - Dockge
+- [Dockhand](https://github.com/Finsys/dockhand) - Modern Docker management you will like
+- [Dockpeek]() - Docker Dashboard
+- [Docmost]() - Docmost
+- [Dogwalk](https://github.com/linuxserver/docker-dogwalk) - Blender Studio's long awaited second game project, focused on creating a bite-sized interactive storytelling playground. Play as a big adorable dog and explore the winter woods with a little kid.
+- [Dokuwiki](https://github.com/linuxserver/docker-dokuwiki) - A simple to use and highly versatile Open Source wiki software that doesn't require a database. It is loved by users for its clean and readable syntax. The ease of maintenance, backup and integration makes it an administrator's favorite. Built in access controls and authentication connectors make DokuWiki especially useful in the enterprise context and the large number of plugins contributed by its vibrant community allow for a broad range of use cases beyond a traditional wiki.
+- [Dolphin](https://github.com/linuxserver/docker-dolphin) - Lets you play GameCube and Wii games with various graphical enhancements and other features are available to improve your game experience.
+- [Domain Locker](https://github.com/Lissy93/domain-locker) - Domain Locker
+- [Domoticz](https://github.com/linuxserver/docker-domoticz) - A Home Automation System that lets you monitor and configure various devices like: Lights, Switches, various sensors/meters like Temperature, Rain, Wind, UV, Electra, Gas, Water and much more. Notifications/Alerts can be sent to any mobile device.
+- [Dosbox-staging](https://github.com/linuxserver/docker-dosbox-staging) - A modern continuation of DOSBox a free and open-source emulator that enables the execution of MS-DOS software, especially video games.
+- [Doublecommander](https://github.com/linuxserver/docker-doublecommander) - A free cross platform open source file manager with two panels side by side. It is inspired by Total Commander and features some new ideas.
+- [Dozzle]() - Dozzle is a real-time log viewer for docker containers.
+- [Draw.io](https://github.com/jgraph/drawio) - Structured diagram editor
+- [Duckdns](https://github.com/linuxserver/docker-duckdns) - A free service which will point a DNS (sub domains of duckdns. Org) to an IP of your choice. The service is completely free, and doesn't require reactivation or forum posts to maintain its existence.
+- [Duckstation](https://github.com/linuxserver/docker-duckstation) - A PS1 Emulator aiming for the best accuracy and game support.
+- [Duplicati](https://github.com/linuxserver/docker-duplicati) - A backup client that securely stores encrypted, incremental, compressed backups on local storage, cloud storage services and remote file servers. It works with standard protocols like FTP, SSH, WebDAV as well as popular services like Microsoft OneDrive, Amazon S3, Google Drive, box. Com, Mega, B2, and many others.
+- [Eden](https://github.com/linuxserver/docker-eden) - An experimental open-source emulator for the Nintendo Switch, built with performance and stability in mind.
+- [EJBCA Community]() - The open-source public key infrastructure (PKI) and certificate authority (CA)
+- [Emby](https://github.com/linuxserver/docker-emby) - Organizes video, music, live TV, and photos from personal media libraries and streams them to smart TVs, streaming boxes and mobile devices. This container is packaged as a standalone emby Media Server.
+- [Embystat](https://github.com/linuxserver/docker-embystat) - A personal web server that can calculate all kinds of statistics from your (local) Emby server. Just install this on your server and let him calculate all kinds of fun stuff.
+- [Emulatorjs](https://github.com/linuxserver/docker-emulatorjs) - In browser web based emulation portable to nearly any device for many retro consoles. A mix of emulators is used between Libretro and EmulatorJS. 
+- [Endlessh](https://github.com/linuxserver/docker-endlessh) - An SSH tarpit that very slowly sends an endless, random SSH banner. It keeps SSH clients locked up for hours or even days at a time. The purpose is to put your real SSH server on another port and then let the script kiddies get stuck in this tarpit instead of bothering a real server.
+- [Erugo]() - A powerful, self-hosted file-sharing platform built with PHP and Laravel with a Vue.js frontend.
+- [Excalidraw]() - Virtual whiteboard for sketching hand-drawn like diagrams
+- [Fail2ban](https://github.com/linuxserver/docker-fail2ban) - A daemon to ban hosts that cause multiple authentication errors.
+- [FarmOS v4]() - A web-based farm record keeping application.
+- [FarmOS (Legacy)]() - A web-based farm record keeping application.
+- [Faster-whisper]() - Faster-whisper
+- [Fastfetch]() - Fastfetch is a neofetch-like tool.
+- [Feed2toot](https://github.com/linuxserver/docker-feed2toot) - Automatically parses rss feeds, identifies new posts and posts them on the Mastodon social network. 
+- [Ferdium](https://github.com/linuxserver/docker-ferdium) - A desktop app that helps you organize how you use your favourite apps by combining them into one application.
+- [Ffmpeg](https://github.com/linuxserver/docker-ffmpeg) - This container needs special attention. Please check https://hub. Docker. Com/r/linuxserver/ffmpeg for details.
+- [FileBrowser Quantum](https://github.com/gtsteffaniak/filebrowser) - Advanced self-hosted web file manager
+- [Filebrowser]() - Access your homeserver files from your browser
+- [Filezilla](https://github.com/linuxserver/docker-filezilla) - Client is a fast and reliable cross-platform FTP, FTPS and SFTP client with lots of useful features and an intuitive graphical user interface.
+- [Financial Freedom]() - Financial Freedom
+- [Firefox]() - Firefox
+- [Flame]() - Flame is a self-hosted startpage for your server. Manage your apps and bookmarks effortlessly with built-in editors.
+- [FlContainers Guacamole]() - Fully packaged Multi-Arch Guacamole.
+- [Fleet](https://github.com/linuxserver/docker-fleet) - Provides an online web interface which displays a set of maintained images from one or more owned repositories. 
+- [Flowise AI]() - Build LLM Apps Easily
+- [Flycast](https://github.com/linuxserver/docker-flycast) - A multi-platform Sega Dreamcast, Naomi, Naomi 2, and Atomiswave emulator derived from reicast.
+- [Focalboard]() - Focalboard is an open source, self-hosted alternative to Trello, Notion, and Asana.
+- [Foldingathome](https://github.com/linuxserver/docker-foldingathome) - A distributed computing project for simulating protein dynamics, including the process of protein folding and the movements of proteins implicated in a variety of diseases. It brings together citizen scientists who volunteer to run simulations of protein dynamics on their personal computers. Insights from this data are helping scientists to better understand biology, and providing new opportunities for developing therapeutics.
+- [Freecad](https://github.com/linuxserver/docker-freecad) - A general-purpose parametric 3D computer-aided design (CAD) modeler and a building information modeling (BIM) software application with finite element method (FEM) support.
+- [Freshrss](https://github.com/linuxserver/docker-freshrss) - A free, self-hostable aggregator for rss feeds.
+- [GemDigest Bot]() - Your personal article summarizer
+- [Genmon]() - Genmon
+- [Ghost]() - Ghost is a free and open source blogging platform
+- [Ghostfolio]() - Ghostfolio
+- [Gimp](https://github.com/linuxserver/docker-gimp) - A free and open-source raster graphics editor used for image manipulation (retouching) and image editing, free-form drawing, transcoding between different image file formats, and more specialized tasks. It is extensible by means of plugins, and scriptable.
+- [Gitea Mirror]() - Mirror GitHub repositories to Gitea
+- [Gitea](https://github.com/go-gitea/gitea) - Self-hosted Git service
+- [Github-desktop](https://github.com/linuxserver/docker-github-desktop) - An open source Electron-based GitHub app. It is written in TypeScript and uses React.
+- [Gitqlient](https://github.com/linuxserver/docker-gitqlient) - A multi-platform Git client originally forked from QGit. Nowadays it goes beyond of just a fork and adds a lot of new functionality.
+- [Glances]() - Glances
+- [Gluetun]() - Gluetun
+- [GoAway]() - Lightweight DNS sinkhole for blocking ads and trackers
+- [Gotify]() - Gotify
+- [Grav](https://github.com/linuxserver/docker-grav) - A Fast, Simple, and Flexible, file-based Web-platform.
+- [Grocy](https://github.com/linuxserver/docker-grocy) - An ERP system for your kitchen. Cut down on food waste, and manage your chores with this brilliant utility. Keep track of your purchases, how much food you are wasting, what chores need doing and what batteries need charging with this proudly Open Source tool For more information on grocy visit their website and check it out: https://grocy. Info
+- [Guacamole]() - Guacamole
+- [Gzdoom](https://github.com/linuxserver/docker-gzdoom) - A feature centric port for all Doom engine games, based on ZDoom, adding an OpenGL renderer and powerful scripting capabilities.
+- [Habridge](https://github.com/linuxserver/docker-habridge) - Emulates Philips Hue API to other home automation gateways such as an Amazon Echo/Dot Gen 1 (gen 2 has issues discovering ha-bridge) or other systems that support Philips Hue. The Bridge handles basic commands such as On, Off and brightness commands of the hue protocol. This bridge can control most devices that have a distinct API.
+- [Handbrake](https://github.com/linuxserver/docker-handbrake) - An open-source tool, built by volunteers, for converting video from nearly any format to a selection of modern, widely supported codecs.
+- [Healthchecks]() - Healthchecks
+- [Hedgedoc](https://github.com/linuxserver/docker-hedgedoc) - Gives you access to all your files wherever you are. HedgeDoc is a real-time, multi-platform collaborative markdown note editor. This means that you can write notes with other people on your desktop, tablet or even on the phone. You can sign-in via multiple auth providers like Facebook, Twitter, GitHub and many more on the homepage.
+- [Heimdall](https://github.com/linuxserver/docker-heimdall) - A way to organise all those links to your most used web sites and web applications in a simple way. Simplicity is the key to Heimdall. Why not use it as your browser start page. It even has the ability to include a search bar using either Google, Bing or DuckDuckGo.
+- [Helium](https://github.com/linuxserver/docker-helium) - A Chromium-based web browser made for people, with love. Privacy-first with unbiased ad-blocking.
+- [Hermes Agent](https://github.com/NousResearch/hermes-agent) - 
+- [Hishtory-server](https://github.com/linuxserver/docker-hishtory-server) - A better shell history. It stores your shell history in context (what directory you ran the command in, whether it succeeded or failed, how long it took, etc). This is all stored locally and end-to-end encrypted for syncing to to all your other computers.
+- [Homarr v1]() - Homarr v1 (Latest)
+- [Homarr]() - Homarr
+- [Homepage]() - Homepage
+- [Homer]() - Homer
+- [I Hate Money]() - A simple shared budget manager web application
+- [Immich AIO Alpine]() - Immich All In One Alpine
+- [Immich Kiosk]() - Immich Kiosk
+- [Immich without machine learning]() - Immich without machine learning
+- [Immich]() - Immich
+- [Inkscape](https://github.com/linuxserver/docker-inkscape) - Professional quality vector graphics software which runs on Linux, Mac OS X and Windows desktop computers.
+- [Intellij-idea](https://github.com/linuxserver/docker-intellij-idea) - Helps you write code faster with tools that eliminate tedious tasks and let you focus on what matters – building great software.
+- [Invoice Ninja]() - Invoice Ninja
+- [IT Tools]() - IT Tools
+- [Jellyfin](https://github.com/linuxserver/docker-jellyfin) - A Free Software Media System that puts you in control of managing and streaming your media. It is an alternative to the proprietary Emby and Plex, to provide media from a dedicated server to end-user devices via multiple apps. Jellyfin is descended from Emby's 3. 5. 2 release and ported to the. NET Core framework to enable full cross-platform support. There are no strings attached, no premium licenses or features, and no hidden agendas: just a team who want to build something better and work together to achieve it.
+- [Jellyseerr (Legacy)]() - Legacy media request manager - new users should use Seerr instead
+- [Jellystat]() - Jellystat
+- [Jenkins-builder](https://github.com/linuxserver/docker-jenkins-builder) - This container needs special attention. Please check https://hub. Docker. Com/r/linuxserver/jenkins-builder for details. 
+- [jfa-go]() - Manage users in Jellyfin
+- [Jlesage Firefox]() - This project implements a Docker container for Firefox.
+- [Jlesage Handbrake]() - This project implements a Docker container for Handbrake.
+- [joplin]() - joplin
+- [Kali-linux](https://github.com/linuxserver/docker-kali-linux) - is an Advanced Penetration Testing Linux distribution used for Penetration Testing, Ethical Hacking and network security assessments. KALI LINUX ™ is a trademark of OffSec.
+- [Kasm]() - Kasm
+- [Kavita]() - Kavita
+- [Kdenlive](https://github.com/linuxserver/docker-kdenlive) - A powerful free and open source cross-platform video editing program made by the KDE community. Feature rich and production ready.
+- [Keepassxc](https://github.com/linuxserver/docker-keepassxc) - A free and open-source password manager. It started as a community fork of KeePassX (itself a cross-platform port of KeePass).
+- [Kicad](https://github.com/linuxserver/docker-kicad) - A Cross Platform and Open Source Electronics Design Automation Suite.
+- [Kimai](https://github.com/linuxserver/docker-kimai) - A professional grade time-tracking application, free and open-source. It handles use-cases of freelancers as well as companies with dozens or hundreds of users. Kimai was build to track your project times and ships with many advanced features, including but not limited to: JSON API, invoicing, data exports, multi-timer and punch-in punch-out mode, tagging, multi-user - multi-timezones - multi-language (over 30 translations existing. ), authentication via SAML/LDAP/Database, two-factor authentication (2FA) with TOTP, customizable role and team permissions, responsive design, user/customer/project specific rates, advanced search & filtering, money and time budgets, advanced reporting, support for plugins and so much more.
+- [KitchenOwl](https://github.com/TomBursch/kitchenowl) - Self-hosted grocery list and recipe manager
+- [Kiwix Server]() - Kiwix Server
+- [Kometa](https://github.com/linuxserver/docker-kometa) - A powerful tool designed to give you complete control over your media libraries. With Kometa, you can take your customization to the next level, with granular control over metadata, collections, overlays, and much more.
+- [Komf]() - Komga and Kavita Metadata Fetcher
+- [Komga]() - A media server for your comics, mangas, BDs, magazines and eBooks.
+- [Kopia]() - Kopia
+- [Krita](https://github.com/linuxserver/docker-krita) - A professional FREE and open source painting program. It is made by artists that want to see affordable art tools for everyone.
+- [LAN Cache]() - LAN Party game caching made easy
+- [Ldap-auth](https://github.com/linuxserver/docker-ldap-auth) - Software is for authenticating users who request protected resources from servers proxied by nginx. It includes a daemon (ldap-auth) that communicates with an authentication server, and a webserver daemon that generates an authentication cookie based on the user’s credentials. The daemons are written in Python for use with a Lightweight Directory Access Protocol (LDAP) authentication server (OpenLDAP or Microsoft Windows Active Directory 2003 and 2012).
+- [Libredesk]() - Open source, self-hosted customer support desk. Single binary app.
+- [Libreoffice](https://github.com/linuxserver/docker-libreoffice) - A free and powerful office suite, and a successor to OpenOffice. Org (commonly known as OpenOffice). Its clean interface and feature-rich tools help you unleash your creativity and enhance your productivity.
+- [Librespeed](https://github.com/linuxserver/docker-librespeed) - A very lightweight Speedtest implemented in Javascript, using XMLHttpRequest and Web Workers. No Flash, No Java, No Websocket, No Bullshit.
+- [LibreTranslate]() - Free and Open Source Machine Translation API. 100% self-hosted, offline capable and easy to setup.
+- [Librewolf](https://github.com/linuxserver/docker-librewolf) - A custom and independent version of Firefox, with the primary goals of privacy, security and user freedom. LibreWolf also aims to remove all the telemetry, data collection and annoyances, as well as disabling anti-freedom features like DRM.
+- [Limnoria](https://github.com/linuxserver/docker-limnoria) - A robust, full-featured, and user/programmer-friendly Python IRC bot, with many existing plugins. Successor of the well-known Supybot.
+- [LinkStack]() - Your all-in-one link sharing solution
+- [Linkwarden]() - Linkwarden
+- [Lm-studio](https://github.com/linuxserver/docker-lm-studio) - Can run local AI models like gpt-oss, Llama, Gemma, Qwen, and DeepSeek privately on your computer.
+- [LobeChat]() - LobeChat
+- [Lollypop](https://github.com/linuxserver/docker-lollypop) - A lightweight modern music player designed to work excellently on the GNOME desktop environment.
+- [LS Adguard Home Sync]() - LS Adguard Home Sync
+- [Lsio-api](https://github.com/linuxserver/docker-lsio-api) - This container needs special attention. Please check https://hub. Docker. Com/r/linuxserver/lsio-api for details.
+- [Luanti](https://github.com/linuxserver/docker-luanti) - (formerly Minetest) is an open source voxel game-creation platform with easy modding and game creation
+- [Lychee](https://github.com/linuxserver/docker-lychee) - A free photo-management tool, which runs on your server or web-space. Installing is a matter of seconds. Upload, manage and share photos like from a native application. Lychee comes with everything you need and all your photos are stored securely.
+- [LyriOn Music Server]() - Streaming audio server
+- [Mailpit]() - Mailpit
+- [Mame](https://github.com/linuxserver/docker-mame) - A free and open-source emulator designed to emulate the hardware of arcade games, video game consoles, old computers and other systems in software on modern personal computers.
+- [Manyfold](https://github.com/linuxserver/docker-manyfold) - An open source, self-hosted web application for managing a collection of 3D models, particularly focused on 3D printing.
+- [Mariadb](https://github.com/linuxserver/docker-mariadb) - One of the most popular database servers. Made by the original developers of MySQL.
+- [Mastodon](https://github.com/linuxserver/docker-mastodon) - A free, open-source social network server based on ActivityPub where users can follow friends and discover new ones. .
+- [Maybe Finance]() - maybe-finance
+- [Mealie]() - Mealie
+- [Mediaelch](https://github.com/linuxserver/docker-mediaelch) - A MediaManager for Kodi. Information about Movies, TV Shows, Concerts and Music are stored as nfo files. Fanarts are downloaded automatically from fanart. Tv. Using the nfo generator, MediaElch can be used with other MediaCenters as well.
+- [Melonds](https://github.com/linuxserver/docker-melonds) - Aims at providing fast and accurate Nintendo DS emulation.
+- [Microbin]() - Pastebin alternative with encryption
+- [MIND]() - A simple self hosted reminder application that can send push notifications to your device. Set the reminder and forget about it!
+- [Minetest](https://github.com/linuxserver/docker-minetest) - (server) is a near-infinite-world block sandbox game and a game engine, inspired by InfiniMiner, Minecraft, and the like. 
+- [Minio]() - An open-source S3 alternative
+- [Minisatip](https://github.com/linuxserver/docker-minisatip) - A multi-threaded satip server version 1. 2 that runs under Linux and it was tested with DVB-S, DVB-S2, DVB-T, DVB-T2, DVB-C, DVB-C2, ATSC and ISDB-T cards.
+- [Modmanager](https://github.com/linuxserver/docker-modmanager) - This container needs special attention. Please check https://hub. Docker. Com/r/linuxserver/modmanager for details.
+- [Modrinth](https://github.com/linuxserver/docker-modrinth) - A unique, open source launcher that allows you to play your favorite mods, and keep them up to date, all in one neat little package.
+- [Monica]() - A Personal Relationship Management tool to help you document your social life.
+- [Morphos]() - Self-hosted file converter server
+- [Msedge](https://github.com/linuxserver/docker-msedge) - A cross-platform web browser developed by Microsoft and based on Chromium.
+- [Mstream](https://github.com/linuxserver/docker-mstream) - A personal music streaming server. You can use mStream to stream your music from your home computer to any device, anywhere. There are mobile apps available for both Android and iPhone.
+- [Mullvad-browser](https://github.com/linuxserver/docker-mullvad-browser) - The Mullvad Browser is a privacy-focused web browser developed in a collaboration between Mullvad VPN and the Tor Project. It’s designed to minimize tracking and fingerprinting. You could say it’s a Tor Browser to use without the Tor Network. Instead, you can use it with a trustworthy VPN.
+- [Mumble Server]() - Mumble Server
+- [MySpeed]() - A speed test analysis software that shows your internet speed for up to 30 days
+- [Mysql-workbench](https://github.com/linuxserver/docker-mysql-workbench) - A unified visual tool for database architects, developers, and DBAs. MySQL Workbench provides data modeling, SQL development, and comprehensive administration tools for server configuration, user administration, backup, and much more.
+- [n8n]() - Workflow automation tool
+- [Nano-wallet](https://github.com/linuxserver/docker-nano-wallet) - A digital payment protocol designed to be accessible and lightweight, with a focus on removing inefficiencies present in other cryptocurrencies. With ultrafast transactions and zero fees on a secure, green and decentralized network, this makes Nano ideal for everyday transactions. This container is a simple nginx wrapper for the light wallet located here. You will need to pass a valid RPC host when accessing this container.
+- [Nano](https://github.com/linuxserver/docker-nano) - A digital payment protocol designed to be accessible and lightweight, with a focus on removing inefficiencies present in other cryptocurrencies. With ultrafast transactions and zero fees on a secure, green and decentralized network, this makes Nano ideal for everyday transactions.
+- [Navidrome](https://github.com/navidrome/navidrome) - Modern music server and streamer
+- [Ncdu]() - Ncdu is a disk usage analyzer with an ncurses interface.
+- [Neko Firefox]() - A self hosted virtual browser that runs in docker and uses WebRTC.
+- [netboot.xyz](https://github.com/netbootxyz/docker-netbootxyz) - Network boot menu (iPXE) with TFTP and a web UI
+- [Netbox](https://github.com/linuxserver/docker-netbox) - An IP address management (IPAM) and data center infrastructure management (DCIM) tool. Initially conceived by the network engineering team at DigitalOcean, NetBox was developed specifically to address the needs of network and infrastructure engineers. It is intended to function as a domain-specific source of truth for network operations.
+- [Nextcloud LS]() - LinuxServer - The productivity platform that keeps you in control
+- [Nextcloud with SMB (Legacy)]() - The productivity platform that keeps you in control
+- [Nextcloud]() - The productivity platform that keeps you in control
+- [Nexterm]() - Nexterm
+- [Nginx](https://github.com/linuxserver/docker-nginx) - An HTTP web server, reverse proxy, content cache, load balancer, TCP/UDP proxy server, and mail proxy server.
+- [Ngircd](https://github.com/linuxserver/docker-ngircd) - A free, portable and lightweight Internet Relay Chat server for small or private networks, developed under the GNU General Public License (GPL). It is easy to configure, can cope with dynamic IP addresses, and supports IPv6, SSL-protected connections as well as PAM for authentication. It is written from scratch and not based on the original IRCd.
+- [Nightlio](https://github.com/shirsakm/nightlio) - Privacy-first mood tracker and daily journal
+- [nightscout]() - Nightscout
+- [NocoDB]() - 🔥 🔥 🔥 Open Source Airtable Alternative
+- [Node-RED]() - Low-code programming for event-driven applications
+- [Note Mark AIO]() - Note Mark Aio
+- [Nova DSO Tracker](https://github.com/mrantonSG/nova_DSO_tracker) - Real-time tracking and planning for Deep Space Objects.
+- [Ntfy.sh]() - A simple HTTP-based pub-sub notification service
+- [Obsidian Livesync]() - Self-hosted database for synchronizing Obsidian vaults.
+- [Obsidian]() - Obsidian
+- [OctoPrint]() - OctoPrint
+- [Odoo]() - Open-source business management software with modular applications for streamlined operations.
+- [Odysseus](https://github.com/pewdiepie-archdaemon/odysseus) - Self-hosted AI workspace
+- [Ollama - AMD]() - LLMs inference server with OpenAI compatible API
+- [Ollama - CPU]() - LLMs inference server with OpenAI compatible API
+- [Ollama - NVIDIA]() - LLMs inference server with OpenAI compatible API
+- [OneDev]() - Self-hosted Git Server with Kanban and CI/CD
+- [OnlyOffice]() - OnlyOffice
+- [Open WebUI]() - User-friendly WebUI for LLMs
+- [OpenClaw](https://github.com/openclaw/openclaw) - Self-hosted AI agent platform with Claude integration
+- [Openshot](https://github.com/linuxserver/docker-openshot) - Video Editor is an award-winning free and open-source video editor for Linux, Mac, and Windows, and is dedicated to delivering high quality video editing and animation solutions to the world.
+- [Openssh-server](https://github.com/linuxserver/docker-openssh-server) - A sandboxed environment that allows ssh access without giving keys to the entire server. Giving ssh access via private key often means giving full access to the server. This container creates a limited and sandboxed environment that others can ssh into. The users only have access to the folders mapped and the processes running inside this container.
+- [OpenVPN]() - OpenVPN is an open-source commercial software that implements virtual private network (VPN).
+- [Openvscode-server](https://github.com/linuxserver/docker-openvscode-server) - Provides a version of VS Code that runs a server on a remote machine and allows access through a modern web browser.
+- [Opera](https://github.com/linuxserver/docker-opera) - A multi-platform web browser developed by its namesake company Opera. The browser is based on Chromium, but distinguishes itself from other Chromium-based browsers (Chrome, Edge, etc. ) through its user interface and other features.
+- [Orcaslicer](https://github.com/linuxserver/docker-orcaslicer) - An open source slicer for FDM printers. OrcaSlicer is fork of Bambu Studio, it was previously known as BambuStudio-SoftFever, Bambu Studio is forked from PrusaSlicer by Prusa Research, which is from Slic3r by Alessandro Ranellucci and the RepRap community
+- [OTEL LGTM]() - OpenTelemetry Backend
+- [ownCloud]() - ownCloud
+- [Pairdrop](https://github.com/linuxserver/docker-pairdrop) - A sublime alternative to AirDrop that works on all platforms. Send images, documents or text via peer to peer connection to devices in the same local network/Wi-Fi or to paired devices.
+- [Paperclip](https://github.com/paperclipai/paperclip) - Self-hosted board for managing AI coding agents
+- [Paperless-ngx]() - Paperless-ngx
+- [Password Pusher v2]() - Give your users the tools to be secure by default.
+- [Password Pusher (Legacy)]() - Give your users the tools to be secure by default.
+- [Pcsx2](https://github.com/linuxserver/docker-pcsx2) - An open source PS2 Emulator.
+- [PD3F]() - PD3F
+- [Pelorus](https://github.com/linuxserver/docker-pelorus) - An AI navigator for Selkies-powered Linux desktops. Pelorus runs a FastAPI server that gives an LLM agent (Ollama, OpenAI-compatible, or Gemini) control over mouse, keyboard, screenshot, and window management via the Pixelflux computer-use backend, a Linux accessibility tree (AT-SPI), and optional KWin D-Bus integration.
+- [Penpot]() - Bring Design Freedom to your Product Team
+- [Peppermint]() - peppermint
+- [Photoprism]() - AI-Powered Photos App
+- [phpMyAdmin]() - phpMyAdmin
+- [Pidgin](https://github.com/linuxserver/docker-pidgin) - A chat program which lets you log into accounts on multiple chat networks simultaneously. This means that you can be chatting with friends on XMPP and sitting in an IRC channel at the same time.
+- [Pi-hole and Unbound]() - Pi-hole and Unbound
+- [Pi-hole® Updatelists]() - A black hole for Internet advertisements. This is a fork of the Pi-hole® application that adds the ability to update the lists of blocked domains and regexes.
+- [Pi-hole]() - A black hole for Internet advertisements
+- [Pingvin Share]() - Pingvin Share
+- [Piper](https://github.com/linuxserver/docker-piper) - A fast, local neural text to speech system that sounds great and is optimized for the Raspberry Pi 4. This container provides a Wyoming protocol server for Piper.
+- [Piwigo]() - Piwigo
+- [Planka v2]() - Free open source kanban board for workgroups.
+- [Planka (Legacy)]() - Legacy v1 - Use Planka v2 for new installs.
+- [Plant-it]() - Self-hosted, open source gardening companion app
+- [playit.gg]() - playit.gg is a global proxy that allows anyone to host a server without port forwarding. We use tunneling. Only the server needs to run the program, not every player!
+- [Plex-meta-manager](https://github.com/linuxserver/docker-plex-meta-manager) - A Python 3 script that can be continuously run using YAML configuration files to update on a schedule the metadata of the movies, shows, and collections in your libraries as well as automatically build collections based on various methods all detailed in the wiki.
+- [Pocket ID]() - Passkey-based OIDC authentication
+- [PodFetch](https://github.com/SamTV12345/PodFetch) - Sleek podcast downloader with GPodder sync
+- [Portainer Agent]() - Portainer Agent
+- [Portainer]() - Portainer
+- [Portracker]() - Real-time Port Monitoring Tool
+- [Ppsspp](https://github.com/linuxserver/docker-ppsspp) - A free and open-source PSP emulator for Windows, macOS, Linux, iOS, Android, Nintendo Wii U, Nintendo Switch, BlackBerry 10, MeeGo, Pandora, Xbox Series and Symbian with a focus on speed and portability.
+- [Project Management]() - Project Management
+- [Projectsend](https://github.com/linuxserver/docker-projectsend) - A self-hosted application that lets you upload files and assign them to specific clients that you create yourself. Secure, private and easy. No more depending on external services or e-mail to send those files.
+- [PsiTransfer](https://github.com/psi-4ward/psitransfer) - Simple self-hosted file sharing solution
+- [Pterodactyl Panel]() - Pterodactyl Panel
+- [Pterodactyl Wings]() - Pterodactyl Wings
+- [Pwndrop](https://github.com/linuxserver/docker-pwndrop) - A self-deployable file hosting service for sending out red teaming payloads or securely sharing your private files over HTTP and WebDAV.
+- [Pycharm](https://github.com/linuxserver/docker-pycharm) - Offers out-of-the-box support for Python, databases, Jupyter, Git, Conda, PyTorch, TensorFlow, Hugging Face, Django, Flask, FastAPI, and more.
+- [Pydio-cells](https://github.com/linuxserver/docker-pydio-cells) - The nextgen file sharing platform for organizations. It is a full rewrite of the Pydio project using the Go language following a micro-service architecture.
+- [Pylon](https://github.com/linuxserver/docker-pylon) - A web based integrated development environment built with Node. Js as a backend and with a supercharged JavaScript/HTML5 frontend, licensed under GPL version 3. This project originates from Cloud9 v2 project. 
+- [Python](https://github.com/linuxserver/docker-python) - This container needs special attention. Please check https://hub. Docker. Com/r/linuxserver/python for details. 
+- [Qdirstat](https://github.com/linuxserver/docker-qdirstat) - Qt-based directory statistics: KDirStat without any KDE -- from the author of the original KDirStat.
+- [Qemu-static](https://github.com/linuxserver/docker-qemu-static) - This container needs special attention. Please check https://hub. Docker. Com/r/linuxserver/qemu-static for details.
+- [Quassel-core](https://github.com/linuxserver/docker-quassel-core) - A modern, cross-platform, distributed IRC client, meaning that one (or multiple) client(s) can attach to and detach from a central core. This container handles the IRC connection (quasselcore) and requires a desktop client (quasselclient) to be used and configured. It is designed to be always on and will keep your identity present in IRC even when your clients cannot be online. Backlog (history) is downloaded by your client upon reconnection allowing infinite scrollback through time.
+- [Quassel-web](https://github.com/linuxserver/docker-quassel-web) - A web client for Quassel. Note that a Quassel-Core instance is required, we have a container available here.
+- [RackPeek](https://github.com/timmoth/RackPeek) - Document Your Home Lab
+- [Rallly]() - Rallly
+- [Raneto](https://github.com/linuxserver/docker-raneto) - is an open source Knowledgebase platform that uses static Markdown files to power your Knowledgebase.
+- [Rawtherapee](https://github.com/linuxserver/docker-rawtherapee) - A free, cross-platform raw image processing program.
+- [Rdesktop](https://github.com/linuxserver/docker-rdesktop) - Containers containing full desktop environments in many popular flavors for Alpine, Ubuntu, Arch, and Fedora accessible via RDP. 
+- [Reactive Resume]() - A free and open-source resume builder
+- [Readeck]() - Self-hosted bookmark manager and read-it-later app
+- [Readme-sync](https://github.com/linuxserver/docker-readme-sync) - This container needs special attention. Please check https://hub. Docker. Com/r/linuxserver/readme-sync for details. 
+- [Remmina](https://github.com/linuxserver/docker-remmina) - A remote desktop client written in GTK, aiming to be useful for system administrators and travellers, who need to work with lots of remote computers in front of either large or tiny screens. Remmina supports multiple network protocols, in an integrated and consistent user interface. Currently RDP, VNC, SPICE, SSH and EXEC are supported.
+- [RetroArch]() - RetroArch Web Player
+- [Retroarch](https://github.com/linuxserver/docker-retroarch) - A frontend for emulators, game engines and media players. It enables you to run classic games on a wide range of computers and consoles through its slick graphical interface.
+- [Rocket.Chat v8](https://github.com/RocketChat/Rocket.Chat) - The communications platform that puts data protection first (v8).
+- [Rocket.Chat (Legacy)]() - The communications platform that puts data protection first.
+- [RomM]() - RomM
+- [Rpcs3](https://github.com/linuxserver/docker-rpcs3) - A multi-platform open-source Sony PlayStation 3 emulator and debugger written in C++ for Windows, Linux, macOS and FreeBSD.
+- [Rsnapshot](https://github.com/linuxserver/docker-rsnapshot) - A filesystem snapshot utility based on rsync. Rsnapshot makes it easy to make periodic snapshots of local machines, and remote machines over ssh. The code makes extensive use of hard links whenever possible, to greatly reduce the disk space required.
+- [Rustdesk](https://github.com/linuxserver/docker-rustdesk) - A full-featured open source remote control alternative for self-hosting and security with minimal configuration.
+- [RustFS](https://github.com/rustfs/rustfs) - High-performance S3-compatible object storage built in Rust
+- [Scrutiny]() - Monitor your server's hard disk health
+- [Scummvm](https://github.com/linuxserver/docker-scummvm) - A program which allows you to run certain classic graphical adventure and role-playing games, provided you already have their data files. The clever part about this: ScummVM just replaces the executables shipped with the games, allowing you to play them on systems for which they were never designed. ScummVM is a complete rewrite of these games' executables and is not an emulator.
+- [seafile]() - Seafile is an open source file sync and share platform, focusing on reliability and performance.
+- [Sealskin](https://github.com/linuxserver/docker-sealskin) - A self-hosted, client-server platform that enables users to run powerful, containerized desktop applications streamed directly to a web browser. It uses a browser extension to intercept user actions—such as clicking a link or downloading a file and redirects them to a secure, isolated application environment running on a remote server.
+- [Seerr](https://github.com/seerr-team/seerr) - Media request management for Jellyfin, Plex, and Emby
+- [Ansible Semaphore]() - Ansible Semaphore
+- [Send Visee]() - A fork of Mozilla's Firefox Send.
+- [Series-troxide](https://github.com/linuxserver/docker-series-troxide) - A Simple and Modern Series Tracker
+- [SFTPGO]() - SFTPGO
+- [Shadps4](https://github.com/linuxserver/docker-shadps4) - An early PlayStation 4 emulator for Windows, Linux and macOS written in C++.
+- [Shotcut](https://github.com/linuxserver/docker-shotcut) - A free, open source, cross-platform video editor.
+- [Signal](https://github.com/linuxserver/docker-signal) - A messaging app with privacy at its core. It is free and easy to use, with strong end-to-end encryption that keeps your communication completely private.
+- [Smokeping](https://github.com/linuxserver/docker-smokeping) - Keeps track of your network latency. For a full example of what this application is capable of visit UCDavis.
+- [Snapdrop](https://github.com/linuxserver/docker-snapdrop) - A local file sharing in your browser. Inspired by Apple's Airdrop. 
+- [SnapOtter](https://github.com/snapotter-hq/SnapOtter) - Self-hosted file toolkit for images, video, audio, PDFs, and files.
+- [Snipe-it](https://github.com/linuxserver/docker-snipe-it) - Makes asset management easy. It was built by people solving real-world IT and asset management problems, and a solid UX has always been a top priority. Straightforward design and bulk actions mean getting things done faster. 
+- [Socket-proxy](https://github.com/linuxserver/docker-socket-proxy) - This container needs special attention. Please check https://hub. Docker. Com/r/linuxserver/socket-proxy for details.
+- [Spacedrive]() - Cross-platform file explorer
+- [Speedtest Tracker]() - Speedtest Tracker
+- [Spoolman](https://github.com/Donkie/Spoolman) - Filament spool inventory management for 3D printing
+- [Sqlitebrowser](https://github.com/linuxserver/docker-sqlitebrowser) - A high quality, visual, open source tool to create, design, and edit database files compatible with SQLite.
+- [Stalwart Mail]() - Secure & Modern All-in-One Mail Server (IMAP, JMAP, POP3, SMTP) 🛡️
+- [Steam](https://github.com/linuxserver/docker-steam) - The ultimate destination for playing, discussing, and creating games.
+- [Steamos](https://github.com/linuxserver/docker-steamos) - An Arch based Linux distribution made by Valve Software. This container is a vanilla Arch install with Steam repositories added for software support. This container will only work with modern AMD/Intel GPUs on a real Linux Host
+- [Stirling-PDF]() - Stirling PDF - Local hosted web based PDF editor
+- [Storyteller](https://gitlab.com/storyteller-platform/storyteller) - Self-hosted ebook reading platform
+- [Swag](https://github.com/linuxserver/docker-swag) - SWAG - Secure Web Application Gateway (formerly known as letsencrypt, no relation to Let's Encrypt™) sets up an Nginx webserver and reverse proxy with php support and a built-in certbot client that automates free SSL server certificate generation and renewal processes (Let's Encrypt and ZeroSSL). It also contains fail2ban for intrusion prevention.
+- [Synclounge](https://github.com/linuxserver/docker-synclounge) - A third party tool that allows you to watch Plex in sync with your friends/family, wherever you are.
+- [Syncthing]() - Peer-to-peer file synchronization between your devices
+- [Syslog-ng](https://github.com/linuxserver/docker-syslog-ng) - Allows you to flexibly collect, parse, classify, rewrite and correlate logs from across your infrastructure and store or route them to log analysis tools.
+- [Tailscale]() - The easiest, most secure way to use WireGuard and 2FA.
+- [Tandoor]() - Recipe collection manager.
+- [Tautulli](https://github.com/linuxserver/docker-tautulli) - A python based web application for monitoring, analytics and notifications for Plex Media Server.
+- [Telegram](https://github.com/linuxserver/docker-telegram) - A cloud-based mobile and desktop messaging app.
+- [Tester](https://github.com/linuxserver/docker-tester) - This internal tool is used as a desktop sandbox in our CI process to grab a screenshot of a hopefully functional endpoint
+- [Thelounge](https://github.com/linuxserver/docker-thelounge) - (a fork of shoutIRC) is a web IRC client that you host on your own server.
+- [Thunderbird](https://github.com/linuxserver/docker-thunderbird) - A free and open-source personal information manager primarily used as an e-mail client with a calendar and contactbook, as well as an RSS feed reader, chat client, and news client.
+- [Tianji]() - Tianji: Insight into everything, Website Analytics + Uptime Monitor + Server Status. not only another GA alternatives
+- [Traccar]() - Traccar
+- [Trilium]() - Build your personal knowledge base with Trilium Notes
+- [Tududi]() - tududi is a task and project management web application built with Sinatra
+- [Tugtainer]() - Docker Container Update Automator
+- [Ubooquity](https://github.com/linuxserver/docker-ubooquity) - A free, lightweight and easy-to-use home server for your comics and ebooks. Use it to access your files from anywhere, with a tablet, an e-reader, a phone or a computer.
+- [UISP]() - UISP
+- [Umami]() - Umami is a simple, fast, privacy-focused alternative to Google Analytics.
+- [Umbrel OS]() - Umbrel OS
+- [Ungoogled-chromium](https://github.com/linuxserver/docker-ungoogled-chromium) - Google Chromium, sans dependency on Google web services.
+- [Unifi-controller](https://github.com/linuxserver/docker-unifi-controller) - The Unifi-controller software is a powerful, enterprise wireless software engine ideal for high-density client deployments requiring low latency and high uptime performance.
+- [Unifi Network Application]() - The Unifi-network-application MongoDB 4
+- [Unifi Network Application]() - The Unifi-network-application
+- [Unrar](https://github.com/linuxserver/docker-unrar) - This container needs special attention. Please check https://hub. Docker. Com/r/linuxserver/unrar for details. 
+- [Uptime Kuma]() - A fancy self-hosted monitoring tool
+- [VERT](https://github.com/VERT-sh/VERT) - The next-generation file converter. Open source, fully local and free forever.
+- [Vikunja v2]() - Vikunja
+- [Vikunja (Legacy)]() - Vikunja
+- [Viseron]() - Viseron
+- [Vivaldi](https://github.com/linuxserver/docker-vivaldi) - A Norwegian freeware, cross-platform web browser with a built-in email client developed by Vivaldi Technologies.
+- [Vlc](https://github.com/linuxserver/docker-vlc) - A free and open source cross-platform multimedia player and framework that delivers dependable performance across multiple devices.
+- [Vscode](https://github.com/linuxserver/docker-vscode) - An integrated development environment developed by Microsoft. This container runs the full desktop application, for a web native version see Code Server.
+- [Vscodium-web](https://github.com/linuxserver/docker-vscodium-web) - A community-driven, freely-licensed binary distribution of the remote host web component of Microsoft's editor VS Code.
+- [Vscodium](https://github.com/linuxserver/docker-vscodium) - A community-driven, freely-licensed binary distribution of Microsoft’s editor VS Code.
+- [Wallabag]() - Save and classify articles. Read them later. Freely.
+- [Wallos]() - Wallos
+- [Warracker]() - A self-hosted warranty tracker
+- [Webcord](https://github.com/linuxserver/docker-webcord) - Can be summarized as a pack of security and privacy hardenings, Discord features reimplementations, Electron / Chromium / Discord bugs workarounds, stylesheets, internal pages and wrapped https://discord. Com page, designed to conform with ToS as much as it is possible (or hide the changes that might violate it from Discord's eyes).
+- [Webgrabplus](https://github.com/linuxserver/docker-webgrabplus) - A multi-site incremental xmltv epg grabber. It collects tv-program guide data from selected tvguide sites for your favourite channels.
+- [Webstation](https://github.com/linuxserver/docker-webstation) - A web native emulation focused LXQt desktop based on Ubuntu.
+- [Webtop](https://github.com/linuxserver/docker-webtop) - Alpine, Ubuntu, Fedora, and Arch based containers containing full desktop environments in officially supported flavors accessible via any modern web browser.
+- [Weixin](https://github.com/linuxserver/docker-weixin) - (WeChat) is an instant messaging, social media, and mobile payment app developed by Tencent.
+- [WireGuard Easy v15]() - WireGuard VPN server v15 (New Version)
+- [Wireguard Easy 14 (Legacy)]() - VPN server for your homeserver
+- [What's Up Docker]() - What's Up Docker
+- [Wikijs](https://github.com/linuxserver/docker-wikijs) - A modern, lightweight and powerful wiki app built on NodeJS.
+- [Winegui](https://github.com/linuxserver/docker-winegui) - A user-interface friendly Wine manager that provides a graphical frontend for creating and managing Wine bottles.
+- [Wireguard](https://github.com/linuxserver/docker-wireguard) - An extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography. It aims to be faster, simpler, leaner, and more useful than IPsec, while avoiding the massive headache. It intends to be considerably more performant than OpenVPN. WireGuard is designed as a general purpose VPN for running on embedded interfaces and super computers alike, fit for many different circumstances. Initially released for the Linux kernel, it is now cross-platform (Windows, macOS, BSD, iOS, Android) and widely deployable. It is currently under heavy development, but already it might be regarded as the most secure, easiest to use, and simplest VPN solution in the industry.
+- [Wireshark](https://github.com/linuxserver/docker-wireshark) - The world’s foremost and widely-used network protocol analyzer. It lets you see what’s happening on your network at a microscopic level and is the de facto (and often de jure) standard across many commercial and non-profit enterprises, government agencies, and educational institutions. Wireshark development thrives thanks to the volunteer contributions of networking experts around the globe and is the continuation of a project started by Gerald Combs in 1998.
+- [Wishlist]() - Wishlist is a self-hosted wishlist application that you can share with your friends and family.
+- [WordPress v7]() - WordPress
+- [WordPress (Legacy)]() - WordPress
+- [Wps-office](https://github.com/linuxserver/docker-wps-office) - A lightweight, feature-rich comprehensive office suite with high compatibility. As a handy and professional office software, WPS Office allows you to edit files in Writer, Presentation, Spreadsheet, and PDF to improve your work efficiency.
+- [Write Freely]() - Markdown-based publishing platform.
+- [Xbackbone](https://github.com/linuxserver/docker-xbackbone) - A simple, self-hosted, lightweight PHP file manager that support the instant sharing tool ShareX and *NIX systems. It supports uploading and displaying images, GIF, video, code, formatted text, and file downloading and uploading. Also have a web UI with multi user management, past uploads history and search support.
+- [Xemu](https://github.com/linuxserver/docker-xemu) - A free and open-source application that emulates the original Microsoft Xbox game console, enabling people to play their original Xbox games on Windows, macOS, and Linux systems.
+- [Xvfb](https://github.com/linuxserver/docker-xvfb) - This container needs special attention. Please check https://hub. Docker. Com/r/linuxserver/xvfb for details.
+- [Yaak](https://github.com/linuxserver/docker-yaak) - A desktop API client for organizing and executing REST, GraphQL, and gRPC requests. It's built using Tauri, Rust, and ReactJS.
+- [Your_spotify](https://github.com/linuxserver/docker-your_spotify) - A self-hosted application that tracks what you listen and offers you a dashboard to explore statistics about it. It's composed of a web server which polls the Spotify API every now and then and a web application on which you can explore your statistics.
+- [Yq](https://github.com/linuxserver/docker-yq) - This container needs special attention. Please check https://hub. Docker. Com/r/linuxserver/yq for details. 
+- [Zen](https://github.com/linuxserver/docker-zen) - A free and open-source fork of Mozilla Firefox with a focus on privacy, customizability and design.
+- [Zigbee to MQTT bridge]() - Zigbee to MQTT bridge
+- [zipline]() - zipline
+- [Znc](https://github.com/linuxserver/docker-znc) - An IRC network bouncer or BNC. It can detach the client from the actual IRC server, and also from selected channels. Multiple clients from different locations can connect to a single ZNC account simultaneously and therefore appear under the same nickname on IRC.
+- [Zotero]() - Zotero
 
 ## How to sumbit an app
 
