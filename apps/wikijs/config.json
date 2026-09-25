@@ -7,7 +7,7 @@
   "id": "wikijs",
   "description": "Wikijs A modern, lightweight and powerful wiki app built on NodeJS.",
   "tipi_version": 1,
-  "version": "2.5.314",
+  "version": "2.5.315",
   "categories": [
     "automation"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1790276147000,
-  "updated_at": 1790276147000,
+  "created_at": 1790306011000,
+  "updated_at": 1790306011000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

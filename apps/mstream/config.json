@@ -7,7 +7,7 @@
   "id": "mstream",
   "description": "Mstream is a personal music streaming server. You can use mStream to stream your music from your home computer to any device, anywhere. There are mobile apps available for both Android and iPhone.",
   "tipi_version": 1,
-  "version": "6.28.1",
+  "version": "6.29.0",
   "categories": [
     "automation"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1790275849000,
-  "updated_at": 1790275849000,
+  "created_at": 1790305760000,
+  "updated_at": 1790305760000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

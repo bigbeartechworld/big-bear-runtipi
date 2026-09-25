@@ -7,7 +7,7 @@
   "id": "hermes",
   "description": "Hermes Agent 0.21.3 is a self-hosted AI agent with a gateway API and an authenticated web dashboard.",
   "tipi_version": 1,
-  "version": "2026.9.14",
+  "version": "v2026.9.21",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1790275754000,
-  "updated_at": 1790275754000,
+  "created_at": 1790305662000,
+  "updated_at": 1790305662000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
