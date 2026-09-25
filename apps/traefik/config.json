@@ -1,0 +1,27 @@
+{
+  "name": "Traefik",
+  "available": true,
+  "port": 48104,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "traefik",
+  "description": "Cloud-Native Networking Stack That Just Works.",
+  "tipi_version": 1,
+  "version": "v3.7.13",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "Cloud-native Networking Stack That Just Works.",
+  "author": "WisdomSky",
+  "source": "",
+  "website": "https://github.com/WisdomSky/CasaOS-Coolstore/tree/main/Apps/traefik",
+  "supported_architectures": [
+    "amd64",
+    "armv7",
+    "arm64"
+  ],
+  "created_at": 1790362364000,
+  "updated_at": 1790362364000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

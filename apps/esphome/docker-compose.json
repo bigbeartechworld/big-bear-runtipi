@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "esphome",
+      "image": "esphome/esphome:2026.9",
+      "internalPort": 6052,
+      "isMain": true
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "CasaOS Toolbox",
+  "available": true,
+  "port": 8088,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "casaos-toolbox",
+  "description": "CasaOS Toolbox is an extension application that provides additional features to CasaOS.",
+  "tipi_version": 1,
+  "version": "0.2",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "Provides additional features to CasaOS.",
+  "author": "WisdomSky",
+  "source": "",
+  "website": "https://github.com/WisdomSky/CasaOS-Coolstore/tree/main/Apps/casaos-toolbox",
+  "supported_architectures": [
+    "amd64",
+    "armv7",
+    "arm64"
+  ],
+  "created_at": 1790361734000,
+  "updated_at": 1790361734000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

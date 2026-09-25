@@ -1,0 +1,27 @@
+{
+  "name": "Privatebin",
+  "available": true,
+  "port": 48106,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "privatebin",
+  "description": "PrivateBin is a minimalist, open source online pastebin where the server has zero knowledge of pasted data!",
+  "tipi_version": 1,
+  "version": "2.0.6",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "Privatebin Is A Minimalist, Open Source Online Pastebin Where The Server Has Zero Knowledge Of Pasted Data!",
+  "author": "WisdomSky",
+  "source": "",
+  "website": "https://github.com/WisdomSky/CasaOS-Coolstore/tree/main/Apps/privatebin",
+  "supported_architectures": [
+    "amd64",
+    "armv7",
+    "arm64"
+  ],
+  "created_at": 1790362227000,
+  "updated_at": 1790362227000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

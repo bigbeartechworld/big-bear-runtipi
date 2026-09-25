@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "portainer-tools",
+      "image": "technorabilia/portainer-tools",
+      "internalPort": 9999,
+      "isMain": true
+    }
+  ]
+}

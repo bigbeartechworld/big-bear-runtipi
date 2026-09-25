@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "caddy",
+      "image": "caddy:2.11.4",
+      "internalPort": 48100,
+      "isMain": true
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "WebDAV",
+  "available": true,
+  "port": 48108,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "webdav",
+  "description": "Web-based distributed authoring and versioning (WebDAV) is a set of extensions to the HTTP protocol that allows WebDAV clients (such as Microsoft Web Folders) to collaboratively edit and manage files on remote Web servers.",
+  "tipi_version": 1,
+  "version": "latest",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "Web-based distributed authoring and versioning (WebDAV) is a set of extensions to the HTTP protocol that allows WebDAV clients (such as Microsoft Web Folders) to collaboratively edit and manage files on remote Web servers.",
+  "author": "WisdomSky",
+  "source": "",
+  "website": "https://github.com/WisdomSky/CasaOS-Coolstore/tree/main/Apps/webdav",
+  "supported_architectures": [
+    "amd64"
+  ],
+  "created_at": 1790362401000,
+  "updated_at": 1790362401000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

@@ -1,0 +1,26 @@
+services:
+  archivebox:
+    image: archivebox/archivebox:0.9.51
+    restart: unless-stopped
+    environment:
+      ALLOWED_HOSTS: '*'
+      MEDIA_MAX_SIZE: 500m
+      PUBLIC_INDEX: true
+      PUBLIC_SNAPSHOTS: true
+      PUBLIC_ADD_VIEW: true
+    ports:
+      - target: 8000
+        published: ${APP_PORT}
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/$AppID/data
+        target: /data
+    container_name: archivebox
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

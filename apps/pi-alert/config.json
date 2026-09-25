@@ -1,0 +1,27 @@
+{
+  "name": "Pi.alert",
+  "available": true,
+  "port": 20211,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "pi-alert",
+  "description": "WIFI / LAN intruder detector",
+  "tipi_version": 1,
+  "version": "25",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "Wifi / Lan Intruder Detector",
+  "author": "WisdomSky",
+  "source": "",
+  "website": "https://github.com/WisdomSky/CasaOS-Coolstore/tree/main/Apps/pi-alert",
+  "supported_architectures": [
+    "amd64",
+    "armv7",
+    "arm64"
+  ],
+  "created_at": 1790362190000,
+  "updated_at": 1790362190000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

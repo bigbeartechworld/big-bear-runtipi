@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "casaos-toolbox",
+      "image": "wisdomsky/casaos-toolbox:0.2",
+      "internalPort": 8088,
+      "isMain": true
+    }
+  ]
+}

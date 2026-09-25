@@ -1,0 +1,27 @@
+{
+  "name": "Joomla",
+  "available": true,
+  "port": 48105,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "joomla",
+  "description": "Another free and open-source CMS",
+  "tipi_version": 1,
+  "version": "6.1.3-apache",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "Another Free And Open-source Cms",
+  "author": "WisdomSky",
+  "source": "",
+  "website": "https://github.com/WisdomSky/CasaOS-Coolstore/tree/main/Apps/joomla",
+  "supported_architectures": [
+    "amd64",
+    "armv7",
+    "arm64"
+  ],
+  "created_at": 1790361951000,
+  "updated_at": 1790361951000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "mosquitto",
+      "image": "eclipse-mosquitto:2",
+      "internalPort": 1883,
+      "isMain": true
+    }
+  ]
+}

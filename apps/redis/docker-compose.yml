@@ -1,0 +1,23 @@
+services:
+  redis:
+    image: redis:8.8.3
+    restart: unless-stopped
+    ports:
+      - target: 6379
+        published: '${APP_PORT}'
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/redis/data
+        target: /data
+      - type: bind
+        source: /DATA/AppData/redis/config
+        target: /usr/local/etc/redis
+    container_name: redis
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

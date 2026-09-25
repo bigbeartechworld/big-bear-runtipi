@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "rustdesk-server",
+      "image": "rustdesk/rustdesk-server:1",
+      "internalPort": 8080,
+      "isMain": true
+    }
+  ]
+}

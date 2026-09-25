@@ -1,0 +1,27 @@
+{
+  "name": "ESPHome",
+  "available": true,
+  "port": 6052,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "esphome",
+  "description": "ESPHome is a system to control your microcontrollers by simple yet powerful configuration files and control them remotely through Home Automation systems.",
+  "tipi_version": 1,
+  "version": "2026.9",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "ESPHome is a system to control your microcontrollers by simple yet powerful configuration files and control them remotely through Home Automation systems.",
+  "author": "WisdomSky",
+  "source": "",
+  "website": "https://github.com/WisdomSky/CasaOS-Coolstore/tree/main/Apps/esphome",
+  "supported_architectures": [
+    "amd64",
+    "arm64",
+    "armv7"
+  ],
+  "created_at": 1790361819000,
+  "updated_at": 1790361819000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

@@ -1,0 +1,29 @@
+services:
+  mosquitto:
+    image: eclipse-mosquitto:2
+    restart: unless-stopped
+    ports:
+      - target: 1883
+        published: ${APP_PORT}
+        protocol: tcp
+      - target: 9001
+        published: 48114
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/$AppID/config
+        target: /mosquitto/config
+      - type: bind
+        source: /DATA/AppData/$AppID/data
+        target: /mosquitto/data
+      - type: bind
+        source: /DATA/AppData/$AppID/log
+        target: /mosquitto/log
+    container_name: mosquitto
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

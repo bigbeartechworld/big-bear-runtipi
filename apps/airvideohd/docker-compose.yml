@@ -1,0 +1,23 @@
+services:
+  airvideohd:
+    image: dmaxwell/airvideohd:latest
+    restart: unless-stopped
+    network_mode: host
+    volumes:
+      - type: bind
+        source: /DATA/AppData/airvideohd/config
+        target: /config
+      - type: bind
+        source: /DATA/AppData/airvideohd/conversionPath
+        target: /conversionPath
+      - type: bind
+        source: /DATA/Media/Movies
+        target: /videos
+    container_name: airvideohd
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

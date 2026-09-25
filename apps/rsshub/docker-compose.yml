@@ -1,0 +1,46 @@
+services:
+  browserless:
+    image: browserless/chrome:1-puppeteer-10.4.0
+    restart: unless-stopped
+    ulimits:
+      core:
+        hard: 0
+        soft: 0
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+  redis:
+    image: redis:8.8.3-alpine
+    restart: always
+    volumes:
+      - type: bind
+        source: /DATA/AppData/rsshub/redis
+        target: /data
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+  rsshub:
+    image: diygod/rsshub:2026-09-24
+    restart: unless-stopped
+    environment:
+      NODE_ENV: production
+      CACHE_TYPE: redis
+      REDIS_URL: redis://redis:6379/
+      PUPPETEER_WS_ENDPOINT: ws://browserless:3000
+    ports:
+      - target: 1200
+        published: ${APP_PORT}
+        protocol: tcp
+    depends_on:
+      - redis
+      - browserless
+    container_name: rsshub
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

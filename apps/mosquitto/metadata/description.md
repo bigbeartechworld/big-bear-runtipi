@@ -1,0 +1,1 @@
+Eclipse Mosquitto is an open source implementation of a server for versions 5, 3.1.1, and 3.1 of the MQTT protocol. You will need to create /portainer/Files/AppData/Config/Mosquitto/config/mosquitto.conf and if needed your password file. Have a look on https://mosquitto.org/man/mosquitto_passwd-1.html

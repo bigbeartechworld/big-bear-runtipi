@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "minecraft",
+      "image": "itzg/minecraft-server:2026.9.1",
+      "internalPort": 25565,
+      "isMain": true
+    }
+  ]
+}

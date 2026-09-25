@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "websync",
+      "image": "furier/websync:latest",
+      "internalPort": 48109,
+      "isMain": true
+    }
+  ]
+}

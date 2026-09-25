@@ -7,7 +7,7 @@
   "id": "calibre",
   "description": "Calibre is a powerful and easy to use e-book manager. Users say it's outstanding and a must-have. It'll allow you to do nearly everything and it takes things a step beyond normal e-book software. It's also completely free and open source and great for both casual users and computer experts.",
   "tipi_version": 1,
-  "version": "9.14.0",
+  "version": "9.15.0",
   "categories": [
     "automation"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1790305548000,
-  "updated_at": 1790305548000,
+  "created_at": 1790361730000,
+  "updated_at": 1790361730000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

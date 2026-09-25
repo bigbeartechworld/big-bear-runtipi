@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "hrconvert2",
+      "image": "dwaaan/hrconvert2-docker:latest",
+      "internalPort": 48113,
+      "isMain": true
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "hestiacp",
+      "image": "artsemkniazeu/hestiacp",
+      "internalPort": 48112,
+      "isMain": true
+    }
+  ]
+}

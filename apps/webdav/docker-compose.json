@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "webdav",
+      "image": "bytemark/webdav:latest",
+      "internalPort": 48108,
+      "isMain": true
+    }
+  ]
+}

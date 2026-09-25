@@ -1,0 +1,28 @@
+{
+  "name": "Redis",
+  "available": true,
+  "port": 48110,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "redis",
+  "description": "Redis is an open source (BSD licensed), in-memory data structure store used as a database, cache, message broker, and streaming engine. Redis provides data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs, geospatial indexes, and streams. Redis has built-in replication, Lua scripting, LRU eviction, transactions, and different levels of on-disk persistence, and provides high availability via Redis Sentinel and automatic partitioning with Redis Cluster.",
+  "tipi_version": 1,
+  "version": "8.8.3",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache, and message broker.",
+  "author": "WisdomSky",
+  "source": "",
+  "website": "https://github.com/WisdomSky/CasaOS-Coolstore/tree/main/Apps/redis",
+  "supported_architectures": [
+    "amd64",
+    "arm64",
+    "armv7",
+    "i386"
+  ],
+  "created_at": 1790362273000,
+  "updated_at": 1790362273000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}
