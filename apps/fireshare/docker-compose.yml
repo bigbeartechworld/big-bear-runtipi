@@ -1,6 +1,6 @@
 services:
   fireshare:
-    image: shaneisrael/fireshare:1.7.1
+    image: shaneisrael/fireshare:1.8.1
     container_name: fireshare
     ports:
       - "${APP_PORT}:80"

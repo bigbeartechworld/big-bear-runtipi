@@ -7,7 +7,7 @@
   "id": "bambustudio",
   "description": "Bambu Studio is an open-source, cutting-edge, feature-rich slicing software. It contains project-based workflows, systematically optimized slicing algorithms, and an easy-to-use graphical interface, bringing users an incredibly smooth printing experience.",
   "tipi_version": 1,
-  "version": "02.08.02",
+  "version": "02.08.03",
   "categories": [
     "automation"
   ],
@@ -18,8 +18,8 @@
   "supported_architectures": [
     "amd64"
   ],
-  "created_at": 1790275600000,
-  "updated_at": 1790275600000,
+  "created_at": 1790305526000,
+  "updated_at": 1790305526000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

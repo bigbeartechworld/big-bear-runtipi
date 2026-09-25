@@ -7,7 +7,7 @@
   "id": "write-freely",
   "description": "WriteFreely is a clean, minimalist publishing platform made for writers. Start a blog, share knowledge within your organization, or build a community around the shared act of writing.",
   "tipi_version": 1,
-  "version": "0.16",
+  "version": "0.17",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1790276162000,
-  "updated_at": 1790276162000,
+  "created_at": 1790306020000,
+  "updated_at": 1790306020000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
