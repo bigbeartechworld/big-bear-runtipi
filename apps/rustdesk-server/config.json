@@ -1,0 +1,27 @@
+{
+  "name": "Rustdesk Server",
+  "available": true,
+  "port": 8080,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "rustdesk-server",
+  "description": "RustDesk is a full-featured open source remote control alternative for self-hosting and security with minimal configuration. You have full control of your data, with no concerns about security.",
+  "tipi_version": 1,
+  "version": "1",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "RustDesk is a full-featured open source remote control alternative for self-hosting and security with minimal configuration. You have full control of your data, with no concerns about security.",
+  "author": "WisdomSky",
+  "source": "",
+  "website": "https://github.com/WisdomSky/CasaOS-Coolstore/tree/main/Apps/rustdesk-server",
+  "supported_architectures": [
+    "amd64",
+    "armv7",
+    "arm64"
+  ],
+  "created_at": 1790362291000,
+  "updated_at": 1790362291000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

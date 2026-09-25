@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "redis",
+      "image": "redis:8.8.3",
+      "internalPort": 48110,
+      "isMain": true
+    }
+  ]
+}

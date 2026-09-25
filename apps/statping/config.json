@@ -1,0 +1,27 @@
+{
+  "name": "Statping",
+  "available": true,
+  "port": 48107,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "statping",
+  "description": "An easy to use Status Page for your websites and applications. Statping will automatically fetch the application and render a beautiful status page with tons of features for you to build an even better status page.",
+  "tipi_version": 1,
+  "version": "v0.90.74",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "An Easy To Use Status Page For Your Websites And Applications. Statping Will Automatically Fetch The Application And Render A Beautiful Status Page With Tons Of Features For You To Build An Even Better Status Page.",
+  "author": "WisdomSky",
+  "source": "",
+  "website": "https://github.com/WisdomSky/CasaOS-Coolstore/tree/main/Apps/statping",
+  "supported_architectures": [
+    "amd64",
+    "armv7",
+    "arm64"
+  ],
+  "created_at": 1790362334000,
+  "updated_at": 1790362334000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

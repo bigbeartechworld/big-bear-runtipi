@@ -1,0 +1,25 @@
+{
+  "name": "Air Video HD",
+  "available": true,
+  "port": 8080,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "airvideohd",
+  "description": "Watch videos streamed instantly from your computer on your iPhone, iPad, iPod touch or Apple TV.",
+  "tipi_version": 1,
+  "version": "latest",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "Watch videos streamed instantly from your computer on your iPhone, iPad, iPod touch or Apple TV.",
+  "author": "WisdomSky",
+  "source": "",
+  "website": "https://github.com/WisdomSky/CasaOS-Coolstore/tree/main/Apps/airvideohd",
+  "supported_architectures": [
+    "amd64"
+  ],
+  "created_at": 1790361682000,
+  "updated_at": 1790361682000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

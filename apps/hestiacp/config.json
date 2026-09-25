@@ -1,0 +1,27 @@
+{
+  "name": "Hestia CP",
+  "available": true,
+  "port": 48112,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "hestiacp",
+  "description": "Hestia Control Panel (HestiaCP) is an open-source web hosting control panel that allows users to manage their websites, domains, email accounts, databases, and more. It provides a user-friendly interface for managing web hosting environments and simplifies various administrative tasks.",
+  "tipi_version": 1,
+  "version": "latest",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "An open-source web hosting control panel that allows users to manage their websites, domains, email accounts, databases, and more. It provides a user-friendly interface for managing web hosting environments and simplifies various administrative tasks.",
+  "author": "WisdomSky",
+  "source": "",
+  "website": "https://github.com/WisdomSky/CasaOS-Coolstore/tree/main/Apps/hestiacp",
+  "supported_architectures": [
+    "amd64",
+    "armv7",
+    "arm64"
+  ],
+  "created_at": 1790361906000,
+  "updated_at": 1790361906000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

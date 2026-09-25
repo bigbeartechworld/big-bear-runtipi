@@ -1,0 +1,27 @@
+{
+  "name": "Caddy",
+  "available": true,
+  "port": 48100,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "caddy",
+  "description": "Caddy - The Ultimate Server with Automatic HTTPS.",
+  "tipi_version": 1,
+  "version": "2.11.4",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "Caddy - The Ultimate Server With Automatic Https.",
+  "author": "WisdomSky",
+  "source": "",
+  "website": "https://github.com/WisdomSky/CasaOS-Coolstore/tree/main/Apps/caddy",
+  "supported_architectures": [
+    "amd64",
+    "armv7",
+    "arm64"
+  ],
+  "created_at": 1790361725000,
+  "updated_at": 1790361725000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

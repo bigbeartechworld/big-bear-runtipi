@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "statping",
+      "image": "statping/statping:v0.90.74",
+      "internalPort": 48107,
+      "isMain": true
+    }
+  ]
+}

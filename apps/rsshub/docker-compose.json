@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "rsshub",
+      "image": "diygod/rsshub:2026-09-24",
+      "internalPort": 1200,
+      "isMain": true
+    }
+  ]
+}

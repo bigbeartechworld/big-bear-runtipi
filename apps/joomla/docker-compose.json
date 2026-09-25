@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "joomla",
+      "image": "joomla:6.1.3-apache",
+      "internalPort": 48105,
+      "isMain": true
+    }
+  ]
+}

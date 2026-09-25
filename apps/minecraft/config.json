@@ -1,0 +1,27 @@
+{
+  "name": "Minecraft Server",
+  "available": true,
+  "port": 25565,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "minecraft",
+  "description": "This docker image provides a Minecraft Server that will automatically download the latest stable version at startup. You can also run/upgrade to any specific version or the latest snapshot. See the Versions section below for more information.",
+  "tipi_version": 1,
+  "version": "2026.9.1",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "This Docker Image Provides A Minecraft Server That Will Automatically Download The Latest Stable Version At Startup. You Can Also Run/upgrade To Any Specific Version Or The Latest Snapshot. See The Versions Section Below For More Information.",
+  "author": "WisdomSky",
+  "source": "",
+  "website": "https://github.com/WisdomSky/CasaOS-Coolstore/tree/main/Apps/minecraft",
+  "supported_architectures": [
+    "amd64",
+    "armv7",
+    "arm64"
+  ],
+  "created_at": 1790362053000,
+  "updated_at": 1790362053000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

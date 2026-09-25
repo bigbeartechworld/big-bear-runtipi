@@ -1,0 +1,27 @@
+{
+  "name": "Archivebox",
+  "available": true,
+  "port": 8002,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "archivebox",
+  "description": "ArchiveBox is a powerful, self-hosted internet archiving solution to collect, save, and view sites you want to preserve offline.",
+  "tipi_version": 1,
+  "version": "0.9.51",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "Archivebox Is A Powerful, Self-hosted Internet Archiving Solution To Collect, Save, And View Sites You Want To Preserve Offline.",
+  "author": "WisdomSky",
+  "source": "",
+  "website": "https://github.com/WisdomSky/CasaOS-Coolstore/tree/main/Apps/archivebox",
+  "supported_architectures": [
+    "amd64",
+    "armv7",
+    "arm64"
+  ],
+  "created_at": 1790361688000,
+  "updated_at": 1790361688000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

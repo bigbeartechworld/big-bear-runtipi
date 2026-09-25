@@ -1,0 +1,33 @@
+services:
+  hestiacp:
+    image: artsemkniazeu/hestiacp
+    restart: unless-stopped
+    environment:
+      TZ: $TZ
+    networks:
+      - tipi_main_network
+    ports:
+      - target: 8083
+        published: ${APP_PORT}
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/$AppID/config
+        target: /hestia
+      - type: bind
+        source: /DATA/AppData/$AppID/home
+        target: /home
+      - type: bind
+        source: /DATA/AppData/$AppID/backup
+        target: /backup
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+      - SYS_NICE
+      - DAC_READ_SEARCH
+    container_name: hestiacp
+    labels:
+      runtipi.managed: "true"
+networks:
+  tipi_main_network:
+    external: true

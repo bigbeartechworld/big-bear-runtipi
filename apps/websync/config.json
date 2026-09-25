@@ -1,0 +1,25 @@
+{
+  "name": "Web Sync (RSync)",
+  "available": true,
+  "port": 48109,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "websync",
+  "description": "Websync is intended to be an rsync task manager, where rsync tasks can be added, scheduled and maintained in a sane manner.",
+  "tipi_version": 1,
+  "version": "latest",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "Websync is intended to be an rsync task manager, where rsync tasks can be added, scheduled and maintained in a sane manner.",
+  "author": "WisdomSky",
+  "source": "",
+  "website": "https://github.com/WisdomSky/CasaOS-Coolstore/tree/main/Apps/websync",
+  "supported_architectures": [
+    "amd64"
+  ],
+  "created_at": 1790362405000,
+  "updated_at": 1790362405000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}
