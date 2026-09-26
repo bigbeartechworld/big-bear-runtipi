@@ -7,7 +7,7 @@
   "id": "navidrome",
   "description": "Modern web-based music server and streamer for your personal music collection.",
   "tipi_version": 1,
-  "version": "0.64.0",
+  "version": "0.64.1",
   "categories": [
     "media"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1790362862000,
-  "updated_at": 1790362862000,
+  "created_at": 1790392519000,
+  "updated_at": 1790392519000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

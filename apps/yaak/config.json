@@ -7,7 +7,7 @@
   "id": "yaak",
   "description": "Yaak is a desktop API client for organizing and executing REST, GraphQL, and gRPC requests. It's built using Tauri, Rust, and ReactJS.",
   "tipi_version": 1,
-  "version": "2026.7.1",
+  "version": "2026.8.0",
   "categories": [
     "automation"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1790363146000,
-  "updated_at": 1790363146000,
+  "created_at": 1790392793000,
+  "updated_at": 1790392793000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
