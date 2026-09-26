@@ -7,7 +7,7 @@
   "id": "vscode",
   "description": "VS Code is an integrated development environment developed by Microsoft. This container runs the full desktop application, for a web native version see Code Server.",
   "tipi_version": 1,
-  "version": "1.137.0",
+  "version": "1.138.0",
   "categories": [
     "automation"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1790363109000,
-  "updated_at": 1790363109000,
+  "created_at": 1790392746000,
+  "updated_at": 1790392746000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

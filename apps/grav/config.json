@@ -7,7 +7,7 @@
   "id": "grav",
   "description": "Grav is a Fast, Simple, and Flexible, file-based Web-platform.",
   "tipi_version": 1,
-  "version": "2.1.8",
+  "version": "2.1.10",
   "categories": [
     "automation"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1790362731000,
-  "updated_at": 1790362731000,
+  "created_at": 1790392399000,
+  "updated_at": 1790392399000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
