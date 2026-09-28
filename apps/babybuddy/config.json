@@ -7,7 +7,7 @@
   "id": "babybuddy",
   "description": "Babybuddy is a buddy for babies! Helps caregivers track sleep, feedings, diaper changes, tummy time and more to learn about and predict baby's needs without (as much) guess work.",
   "tipi_version": 1,
-  "version": "2.10.1",
+  "version": "2.11.0",
   "categories": [
     "automation"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1790478950000,
-  "updated_at": 1790478950000,
+  "created_at": 1790565159000,
+  "updated_at": 1790565159000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
