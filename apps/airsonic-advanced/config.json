@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1790826255000,
-  "updated_at": 1790826255000,
+  "created_at": 1790912651000,
+  "updated_at": 1790912651000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
