@@ -7,7 +7,7 @@
   "id": "hishtory-server",
   "description": "hiSHtory is a better shell history. It stores your shell history in context (what directory you ran the command in, whether it succeeded or failed, how long it took, etc). This is all stored locally and end-to-end encrypted for syncing to to all your other computers.",
   "tipi_version": 1,
-  "version": "0.335.20260911",
+  "version": "0.335.20260925",
   "categories": [
     "automation"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791021093000,
-  "updated_at": 1791021093000,
+  "created_at": 1791048354000,
+  "updated_at": 1791048354000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

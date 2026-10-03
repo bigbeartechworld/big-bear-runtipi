@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "minecraft",
-      "image": "itzg/minecraft-server:2026.9.1",
+      "image": "itzg/minecraft-server:2026.9.2",
       "internalPort": 25565,
       "isMain": true
     }

@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "penpot",
-      "image": "penpotapp/frontend:2.17.2@sha256:94fa2864d8fc0cd62245af95c03cca89306a7fd23c206a98a3e9dc9a376ea27e",
+      "image": "penpotapp/frontend:2.18.0@sha256:09c462d0938d804a91ce0d9e130a7bad63b967261a10b16b4ea740b0a0b1fc70",
       "internalPort": 9003,
       "isMain": true
     }
