@@ -1,0 +1,25 @@
+services:
+  cantinarr:
+    image: ghcr.io/windoze95/cantinarr:0.16.0@sha256:92e0c7099303616a833c1a75fdf4904645be4008e981151e24540553b5c4249c
+    container_name: cantinarr
+    restart: unless-stopped
+    ports:
+      - "${APP_PORT}:8585"
+    environment:
+      CANTINARR_PUSH_GATEWAY_URL: https://push.cantinarr.com
+      CANTINARR_ARR_CALLBACK_URL: ""
+    volumes:
+      - ${APP_DATA_DIR}/config:/config
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://127.0.0.1:8585/api/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 5
+      start_period: 15s
+    networks:
+      - tipi_main_network
+    labels:
+      runtipi.managed: "true"
+networks:
+  tipi_main_network:
+    external: true

@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "cantinarr",
+      "image": "ghcr.io/windoze95/cantinarr:0.16.0@sha256:92e0c7099303616a833c1a75fdf4904645be4008e981151e24540553b5c4249c",
+      "internalPort": 8585,
+      "isMain": true
+    }
+  ]
+}

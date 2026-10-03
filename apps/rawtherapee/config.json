@@ -7,7 +7,7 @@
   "id": "rawtherapee",
   "description": "RawTherapee is a free, cross-platform raw image processing program!",
   "tipi_version": 1,
-  "version": "5.13.20260913",
+  "version": "5.13.20260927",
   "categories": [
     "automation"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791021280000,
-  "updated_at": 1791021280000,
+  "created_at": 1791048626000,
+  "updated_at": 1791048626000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
