@@ -7,7 +7,7 @@
   "id": "changedetection-io",
   "description": "Changedetection.io provides free, open-source web page monitoring, notification and change detection.",
   "tipi_version": 1,
-  "version": "0.60.7",
+  "version": "0.60.8",
   "categories": [
     "automation"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791049389000,
-  "updated_at": 1791049389000,
+  "created_at": 1791052803000,
+  "updated_at": 1791052803000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

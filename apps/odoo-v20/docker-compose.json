@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "odoo-v20",
+      "image": "odoo:20@sha256:cdd83e8359b3e8c357895d476396c05021fed9975bf420f353bab25fcaed1533",
+      "internalPort": 8069,
+      "isMain": true
+    }
+  ]
+}
