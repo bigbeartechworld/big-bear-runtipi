@@ -7,7 +7,7 @@
   "id": "ungoogled-chromium",
   "description": "Ungoogled Chromium is Google Chromium, sans dependency on Google web services.",
   "tipi_version": 1,
-  "version": "153.0.8010",
+  "version": "154.0.8037",
   "categories": [
     "automation"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791049691000,
-  "updated_at": 1791049691000,
+  "created_at": 1791049795000,
+  "updated_at": 1791049795000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
