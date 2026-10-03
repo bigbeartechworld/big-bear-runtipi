@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "homarr-v2",
+      "image": "ghcr.io/homarr-labs/homarr:v2.0.0@sha256:3eeef80bfc58f6588844e9405da47550f681006d3019005a34f9388b5c00eb73",
+      "internalPort": 7575,
+      "isMain": true
+    }
+  ]
+}

@@ -1,17 +1,17 @@
 {
-  "name": "Homarr v1",
+  "name": "Homarr v1 (Legacy)",
   "available": true,
   "port": 7577,
   "exposable": true,
   "dynamic_config": true,
   "id": "homarr-v1",
-  "description": "Homarr v1 - A sleek, modern dashboard for your server. This is the latest major version (v1.x) from homarr-labs with improved architecture and features. Note: This version uses a different data structure and requires SECRET_ENCRYPTION_KEY. Not compatible with legacy Homarr (v0.x) data without migration.",
+  "description": "Homarr v1 dashboard, pinned at v1.63.0. Use Homarr v2 for new installs. This version uses a different data structure from Homarr v0 and requires SECRET_ENCRYPTION_KEY. Not compatible with legacy Homarr (v0.x) data without migration.",
   "tipi_version": 1,
-  "version": "v2.0.0",
+  "version": "v1.63.0",
   "categories": [
     "utilities"
   ],
-  "short_desc": "Homarr v1 (Latest)",
+  "short_desc": "Homarr v1",
   "author": "BigBearTechWorld",
   "source": "",
   "website": "https://hub.docker.com/r/homarr-labs/homarr",
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791049544000,
-  "updated_at": 1791049544000,
+  "created_at": 1791052932000,
+  "updated_at": 1791052932000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
