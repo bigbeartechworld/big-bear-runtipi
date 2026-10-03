@@ -7,7 +7,7 @@
   "id": "drawio",
   "description": "Draw.io is a structured diagram editor for creating flowcharts, network diagrams, and other visual documentation.",
   "tipi_version": 1,
-  "version": "31.4.6",
+  "version": "32.0.1",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791048274000,
-  "updated_at": 1791048274000,
+  "created_at": 1791049389000,
+  "updated_at": 1791049389000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
