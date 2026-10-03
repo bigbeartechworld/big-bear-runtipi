@@ -7,7 +7,7 @@
   "id": "bookorbit",
   "description": "BookOrbit is a self-hosted library and reading platform for ebooks, PDFs, audiobooks, and comics. It syncs progress and highlights across the web reader, Kobo, and KOReader, with metadata lookup, reading stats, OPDS, and multi-user OIDC support.",
   "tipi_version": 1,
-  "version": "3.2.0",
+  "version": "2.7.0",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791049364000,
-  "updated_at": 1791049364000,
+  "created_at": 1791049336000,
+  "updated_at": 1791049336000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

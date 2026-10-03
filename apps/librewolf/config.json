@@ -7,7 +7,7 @@
   "id": "librewolf",
   "description": "LibreWolf is a custom and independent version of Firefox, with the primary goals of privacy, security and user freedom. LibreWolf also aims to remove all the telemetry, data collection and annoyances, as well as disabling anti-freedom features like DRM.",
   "tipi_version": 1,
-  "version": "156.0.1",
+  "version": "155.0.1",
   "categories": [
     "automation"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791049596000,
-  "updated_at": 1791049596000,
+  "created_at": 1791049566000,
+  "updated_at": 1791049566000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
