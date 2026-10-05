@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "joomla",
-      "image": "joomla:6.1.3-apache",
+      "image": "joomla:6.1.4-apache",
       "internalPort": 48105,
       "isMain": true
     }
