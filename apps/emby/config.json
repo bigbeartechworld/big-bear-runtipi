@@ -7,7 +7,7 @@
   "id": "emby",
   "description": "Emby organizes video, music, live TV, and photos from personal media libraries and streams them to smart TVs, streaming boxes and mobile devices. This container is packaged as a standalone emby Media Server.",
   "tipi_version": 1,
-  "version": "4.10.0",
+  "version": "4.10.1",
   "categories": [
     "automation"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791086261000,
-  "updated_at": 1791086261000,
+  "created_at": 1791171779000,
+  "updated_at": 1791171779000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
