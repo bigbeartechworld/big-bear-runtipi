@@ -7,7 +7,7 @@
   "id": "tautulli",
   "description": "Tautulli is a python based web application for monitoring, analytics and notifications for Plex Media Server.",
   "tipi_version": 1,
-  "version": "2.18.1",
+  "version": "2.18.2",
   "categories": [
     "automation"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791172227000,
-  "updated_at": 1791172227000,
+  "created_at": 1791261533000,
+  "updated_at": 1791261533000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
