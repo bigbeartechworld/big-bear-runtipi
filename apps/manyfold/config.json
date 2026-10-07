@@ -7,7 +7,7 @@
   "id": "manyfold",
   "description": "Manyfold is an open source, self-hosted web application for managing a collection of 3D models, particularly focused on 3D printing.",
   "tipi_version": 1,
-  "version": "0.149.0",
+  "version": "0.150.0",
   "categories": [
     "automation"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791261194000,
-  "updated_at": 1791261194000,
+  "created_at": 1791345557000,
+  "updated_at": 1791345557000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
