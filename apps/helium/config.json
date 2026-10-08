@@ -7,7 +7,7 @@
   "id": "helium",
   "description": "Helium is a Chromium-based web browser made for people, with love. Privacy-first with unbiased ad-blocking.",
   "tipi_version": 1,
-  "version": "0.18.2",
+  "version": "0.18.3",
   "categories": [
     "automation"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791345460000,
-  "updated_at": 1791345460000,
+  "created_at": 1791432689000,
+  "updated_at": 1791432689000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
