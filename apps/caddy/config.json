@@ -7,7 +7,7 @@
   "id": "caddy",
   "description": "Caddy - The Ultimate Server with Automatic HTTPS.",
   "tipi_version": 1,
-  "version": "2.11.4",
+  "version": "2.11.6",
   "categories": [
     "utilities"
   ],
@@ -20,8 +20,8 @@
     "armv7",
     "arm64"
   ],
-  "created_at": 1791345323000,
-  "updated_at": 1791345323000,
+  "created_at": 1791432529000,
+  "updated_at": 1791432529000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
