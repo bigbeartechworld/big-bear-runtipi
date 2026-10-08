@@ -7,7 +7,7 @@
   "id": "kimai",
   "description": "Kimai is a professional grade time-tracking application, free and open-source. It handles use-cases of freelancers as well as companies with dozens or hundreds of users. Kimai was build to track your project times and ships with many advanced features, including but not limited to: JSON API, invoicing, data exports, multi-timer and punch-in punch-out mode, tagging, multi-user - multi-timezones - multi-language (over 30 translations existing!), authentication via SAML/LDAP/Database, two-factor authentication (2FA) with TOTP, customizable role and team permissions, responsive design, user/customer/project specific rates, advanced search & filtering, money and time budgets, advanced reporting, support for plugins and so much more.",
   "tipi_version": 1,
-  "version": "2.67.0",
+  "version": "2.68.0",
   "categories": [
     "automation"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791444374000,
-  "updated_at": 1791444374000,
+  "created_at": 1791491360000,
+  "updated_at": 1791491360000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
