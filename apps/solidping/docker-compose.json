@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "solidping",
+      "image": "ghcr.io/fclairamb/solidping:0.37.0@sha256:b7905f7747e217c259f7442b14fcdb49b145b06dbe6791f9fc8dd4dde5e95428",
+      "internalPort": 4000,
+      "isMain": true
+    }
+  ]
+}
