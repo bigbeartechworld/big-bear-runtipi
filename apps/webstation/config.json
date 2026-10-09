@@ -7,7 +7,7 @@
   "id": "webstation",
   "description": "Webstation is a web native emulation focused LXQt desktop based on Ubuntu.",
   "tipi_version": 1,
-  "version": "0.14.0-romm",
+  "version": "0.14.2-romm",
   "categories": [
     "automation"
   ],
@@ -18,8 +18,8 @@
   "supported_architectures": [
     "amd64"
   ],
-  "created_at": 1791519837000,
-  "updated_at": 1791519837000,
+  "created_at": 1791575659000,
+  "updated_at": 1791575659000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
