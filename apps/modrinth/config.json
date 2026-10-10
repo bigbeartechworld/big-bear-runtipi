@@ -7,7 +7,7 @@
   "id": "modrinth",
   "description": "Modrinth App is a unique, open source launcher that allows you to play your favorite mods, and keep them up to date, all in one neat little package.",
   "tipi_version": 1,
-  "version": "0.21.6",
+  "version": "0.21.8",
   "categories": [
     "automation"
   ],
@@ -18,8 +18,8 @@
   "supported_architectures": [
     "amd64"
   ],
-  "created_at": 1791576189000,
-  "updated_at": 1791576189000,
+  "created_at": 1791605001000,
+  "updated_at": 1791605001000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
