@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "archivebox",
-      "image": "archivebox/archivebox:0.9.71",
+      "image": "archivebox/archivebox:0.9.73",
       "internalPort": 8002,
       "isMain": true
     }
