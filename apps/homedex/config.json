@@ -1,0 +1,27 @@
+{
+  "name": "Homedex",
+  "available": true,
+  "port": 7377,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "homedex",
+  "description": "Homedex 0.2.5 is a read-only homelab inventory of services, ports, routes, and certificate expiry.",
+  "tipi_version": 1,
+  "version": "0.2.5",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "Read-only homelab inventory",
+  "author": "BigBearTechWorld",
+  "source": "https://github.com/HarshShah0203/homedex",
+  "website": "https://github.com/HarshShah0203/homedex",
+  "supported_architectures": [
+    "amd64",
+    "arm64",
+    "armv7"
+  ],
+  "created_at": 1791828510000,
+  "updated_at": 1791828510000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

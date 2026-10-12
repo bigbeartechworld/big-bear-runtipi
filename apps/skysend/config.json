@@ -1,0 +1,26 @@
+{
+  "name": "SkySend",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "skysend",
+  "description": "SkySend is a self-hosted file and note sharing service. Files and notes are encrypted in the browser before they are stored, and the server keeps only encrypted blobs.",
+  "tipi_version": 1,
+  "version": "v2.12.2",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "Encrypted file and note sharing",
+  "author": "BigBearTechWorld",
+  "source": "https://github.com/skyfay/skysend",
+  "website": "https://github.com/skyfay/skysend",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1791828808000,
+  "updated_at": 1791828808000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

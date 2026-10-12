@@ -1,0 +1,26 @@
+{
+  "name": "GameVault",
+  "available": true,
+  "port": 8080,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "gamevault",
+  "description": "GameVault 17.0.1 is a self-hosted library for DRM-free games, with a web UI and PostgreSQL.",
+  "tipi_version": 1,
+  "version": "17.0.1",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "Self-hosted DRM-free game library",
+  "author": "BigBearTechWorld",
+  "source": "https://github.com/Phalcode/gamevault-backend",
+  "website": "https://gamevau.lt",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1791828457000,
+  "updated_at": 1791828457000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

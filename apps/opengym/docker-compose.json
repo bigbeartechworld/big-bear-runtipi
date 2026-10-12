@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "opengym",
+      "image": "registry.gitlab.com/duartesantos8/opengym/web:1.3.9@sha256:eb97d4f78a9d495a41d0181440ae3394feab41e7200b7a4a36099cee36e80036",
+      "internalPort": 80,
+      "isMain": true
+    }
+  ]
+}

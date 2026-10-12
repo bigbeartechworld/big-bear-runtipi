@@ -1,0 +1,25 @@
+{
+  "name": "Stoat",
+  "available": true,
+  "port": 80,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "stoat",
+  "description": "Stoat is a self-hosted chat server, formerly Revolt. This stack runs the API, web app, file server, proxy, and voice ingress behind Caddy.",
+  "tipi_version": 1,
+  "version": "4017c18",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "Self-hosted chat, formerly Revolt",
+  "author": "BigBearTechWorld",
+  "source": "https://github.com/stoatchat/stoatchat",
+  "website": "https://stoat.chat/",
+  "supported_architectures": [
+    "amd64"
+  ],
+  "created_at": 1791828833000,
+  "updated_at": 1791828833000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

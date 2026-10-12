@@ -1,0 +1,68 @@
+services:
+  claude:
+    image: ghcr.io/worph/claude-code-container:1.0.28@sha256:a73863d23af0222037a0d51cef0c350bfd86825f693cc9bbf889a6484aad2f94
+    container_name: claude-code-app
+    restart: unless-stopped
+    ports:
+      - "20041:9090"
+    environment:
+      ANTHROPIC_API_KEY: ""
+      AUTH_PASSWORD: "9c93e0aa-ebe4-4737-b222-d6445c64da29"
+      MCP_ENABLED: "true"
+      CLAUDE_SESSION_TTL: "1800"
+    entrypoint:
+      - /bin/sh
+      - -c
+      - |
+        if [ -z "$$AUTH_PASSWORD" ] || [ "$$AUTH_PASSWORD" = "9c93e0aa-ebe4-4737-b222-d6445c64da29" ]; then
+          echo "Replace AUTH_PASSWORD before start. An empty value opens the API, and the catalog value is public. This container mounts the Docker socket." >&2
+          exit 1
+        fi
+        exec /init
+    volumes:
+      - ${APP_DATA_DIR}/workspace:/home/claude/workspace
+      - ${APP_DATA_DIR}/config:/home/claude/.claude
+      - /var/run/docker.sock:/var/run/docker.sock
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+  claude-code:
+    image: caddy:2.11.6@sha256:3422ce6de165df66534f9b9ba50efaf457114ec961763cc52f5dbdaac2972d73
+    container_name: claude-code
+    restart: unless-stopped
+    depends_on:
+      - claude
+    ports:
+      - "${APP_PORT}:8080"
+    networks:
+      - tipi_main_network
+    configs:
+      - source: caddyfile
+        target: /etc/caddy/Caddyfile
+    labels:
+      runtipi.managed: "true"
+configs:
+  caddyfile:
+    content: |
+      :8080 {
+        handle /login* {
+          reverse_proxy claude:9090
+        }
+        handle /logout {
+          reverse_proxy claude:9090
+        }
+        handle {
+          forward_auth claude:9090 {
+            uri /auth
+            @unauthorized status 401
+            handle_response @unauthorized {
+              redir * /login
+            }
+          }
+          reverse_proxy claude:8080
+        }
+      }
+networks:
+  tipi_main_network:
+    external: true

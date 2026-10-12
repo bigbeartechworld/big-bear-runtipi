@@ -1,0 +1,26 @@
+{
+  "name": "Documenso",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "documenso",
+  "description": "Documenso v2.19.0 is an open-source document signing platform backed by PostgreSQL.",
+  "tipi_version": 1,
+  "version": "v2.19.0",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "Open source document signing",
+  "author": "BigBearTechWorld",
+  "source": "https://github.com/documenso/documenso",
+  "website": "https://documenso.com",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1791828385000,
+  "updated_at": 1791828385000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

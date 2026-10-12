@@ -1,0 +1,26 @@
+{
+  "name": "AFFiNE",
+  "available": true,
+  "port": 3010,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "affine",
+  "description": "AFFiNE 0.27.4 is a self-hosted workspace for docs, whiteboards, and knowledge bases, with Postgres and Redis.",
+  "tipi_version": 1,
+  "version": "0.27.4",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "",
+  "author": "BigBearTechWorld",
+  "source": "https://github.com/toeverything/AFFiNE",
+  "website": "https://affine.pro",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1791828257000,
+  "updated_at": 1791828257000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Trackie",
+  "available": true,
+  "port": 5006,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "trackie",
+  "description": "Trackie is a New Zealand Actual Budget server image. Sign-in is OpenID Connect, and optional per-user Akahu bank tokens are encrypted at rest.",
+  "tipi_version": 1,
+  "version": "26.9.0",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "New Zealand Actual Budget",
+  "author": "BigBearTechWorld",
+  "source": "https://github.com/trackie-nz/trackie",
+  "website": "https://trackie.nz/",
+  "supported_architectures": [
+    "amd64"
+  ],
+  "created_at": 1791828853000,
+  "updated_at": 1791828853000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Claude Code Container",
+  "available": true,
+  "port": 8080,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "claude-code",
+  "description": "Claude Code Container 1.0.28 runs Anthropic Claude Code in a browser terminal and an MCP API.",
+  "tipi_version": 1,
+  "version": "1.0.28",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "",
+  "author": "BigBearTechWorld",
+  "source": "https://github.com/worph/claude-code-container",
+  "website": "https://github.com/worph/claude-code-container",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1791828338000,
+  "updated_at": 1791828338000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

@@ -1,0 +1,1 @@
+Indelible is a self-hosted read-it-later and knowledge library. It stores articles, newsletters, PDFs, and EPUBs in PostgreSQL and an S3-compatible object store, and the API serves the web app on the same port.

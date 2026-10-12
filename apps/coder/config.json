@@ -1,0 +1,27 @@
+{
+  "name": "Coder",
+  "available": true,
+  "port": 7080,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "coder",
+  "description": "Coder v2.36.7 is a self-hosted development-platform control plane with Postgres and a Docker socket for workspace templates.",
+  "tipi_version": 1,
+  "version": "v2.36.7",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "",
+  "author": "BigBearTechWorld",
+  "source": "https://github.com/coder/coder",
+  "website": "https://coder.com",
+  "supported_architectures": [
+    "amd64",
+    "arm64",
+    "armv7"
+  ],
+  "created_at": 1791828345000,
+  "updated_at": 1791828345000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

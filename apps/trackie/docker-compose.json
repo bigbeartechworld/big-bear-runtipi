@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "trackie",
+      "image": "ghcr.io/trackie-nz/trackie:26.9.0@sha256:7c13fedacc7232f10ed3ebc59374c1b2fbe42f89d04575d2838992fb9587540d",
+      "internalPort": 5006,
+      "isMain": true
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Cloudreve Fork",
+  "available": true,
+  "port": 5212,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "cloudreve-pro",
+  "description": "Cloudreve Fork v4.23.0 is the Dvorinka open-source Cloudreve server. It uses the same Postgres and Redis layout as upstream and is not the official paid Pro image.",
+  "tipi_version": 1,
+  "version": "v4.23.0",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "",
+  "author": "BigBearTechWorld",
+  "source": "https://github.com/Dvorinka/cloudreve",
+  "website": "https://github.com/Dvorinka/cloudreve",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1791828342000,
+  "updated_at": 1791828342000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}
