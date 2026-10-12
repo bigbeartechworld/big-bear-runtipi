@@ -7,7 +7,7 @@
   "id": "reactive-resume-v6",
   "description": "Reactive Resume v6 resume builder. This is a new app, separate from Reactive Resume v5. v6 stores uploads on a local volume, renders PDFs in the app, and bundles PostgreSQL 18. It does not include MinIO, Redis, or Browserless. Do not attach it to a v5 database volume. A v5 database migration is one-way, and PostgreSQL 18 cannot open the v5 data directory.",
   "tipi_version": 1,
-  "version": "v6.0.0",
+  "version": "v6.0.1",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791690006000,
-  "updated_at": 1791690006000,
+  "created_at": 1791777845000,
+  "updated_at": 1791777845000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
