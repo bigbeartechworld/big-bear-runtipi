@@ -7,7 +7,7 @@
   "id": "documenso",
   "description": "Documenso v2.19.0 is an open-source document signing platform backed by PostgreSQL.",
   "tipi_version": 1,
-  "version": "v2.19.0",
+  "version": "v2.20.0",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791828385000,
-  "updated_at": 1791828385000,
+  "created_at": 1791829429000,
+  "updated_at": 1791829429000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }

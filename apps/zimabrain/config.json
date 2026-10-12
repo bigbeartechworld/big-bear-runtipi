@@ -7,7 +7,7 @@
   "id": "zimabrain",
   "description": "ZimaBrain CE is a local verifier-first diagnostic assistant for ZimaOS. It checks host evidence and keeps monitor history in a local SQLite database.",
   "tipi_version": 1,
-  "version": "1.6.0-beta",
+  "version": "1.6.2-beta",
   "categories": [
     "utilities"
   ],
@@ -18,8 +18,8 @@
   "supported_architectures": [
     "amd64"
   ],
-  "created_at": 1791828922000,
-  "updated_at": 1791828922000,
+  "created_at": 1791829978000,
+  "updated_at": 1791829978000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.5.0"
 }
