@@ -1,0 +1,1 @@
+FileBrowser Quantum 2.0 file manager. This is a new app, separate from FileBrowser Quantum 1.5.8. v2 stores users and shares in SQLite and refuses to start while a v1 database.db file is still in the data directory. Do not attach the 1.5.8 data volume. A fresh install prints a one-time admin password in the container logs.
