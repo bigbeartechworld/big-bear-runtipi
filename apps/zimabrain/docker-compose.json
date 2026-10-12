@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "zimabrain",
+      "image": "gelbuilding/zimabrain-ce:1.6.0-beta@sha256:930c689a0f4389b767d726dbc41766590ca5d58cd030f840099ec0ddf382cca5",
+      "internalPort": 8601,
+      "isMain": true
+    }
+  ]
+}

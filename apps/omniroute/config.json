@@ -1,0 +1,26 @@
+{
+  "name": "OmniRoute",
+  "available": true,
+  "port": 20128,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "omniroute",
+  "description": "OmniRoute is a self-hosted LLM router. The dashboard and an OpenAI-compatible endpoint on one port send requests to the provider accounts you connect, with Redis for rate limiting.",
+  "tipi_version": 1,
+  "version": "3.8.51",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "Self-hosted LLM router",
+  "author": "BigBearTechWorld",
+  "source": "https://github.com/diegosouzapw/OmniRoute",
+  "website": "https://github.com/diegosouzapw/OmniRoute",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1791828673000,
+  "updated_at": 1791828673000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

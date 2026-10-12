@@ -1,0 +1,26 @@
+{
+  "name": "DocuSeal",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "docuseal",
+  "description": "DocuSeal 3.3.1 is an open-source platform to create, fill, and sign PDF documents.",
+  "tipi_version": 1,
+  "version": "3.3.1",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "Open source PDF signing",
+  "author": "BigBearTechWorld",
+  "source": "https://github.com/docusealco/docuseal",
+  "website": "https://www.docuseal.com",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1791828386000,
+  "updated_at": 1791828386000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

@@ -1,0 +1,21 @@
+services:
+  skysend:
+    image: skyfay/skysend:v2.12.2@sha256:64fcc07d2dfedb15efa72badc538c452c9e889125bdd9f1e35347f14de108cc0
+    container_name: skysend
+    restart: unless-stopped
+    ports:
+      - "${APP_PORT}:3000"
+    volumes:
+      - ${APP_DATA_DIR}/data:/data
+      - ${APP_DATA_DIR}/data/uploads:/uploads
+    environment:
+      BASE_URL: http://localhost:23001
+      DATA_DIR: /data
+      UPLOADS_DIR: /uploads
+    labels:
+      runtipi.managed: "true"
+    networks:
+      - tipi_main_network
+networks:
+  tipi_main_network:
+    external: true

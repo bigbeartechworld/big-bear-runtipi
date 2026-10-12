@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "claude-code",
+      "image": "ghcr.io/worph/claude-code-container:1.0.28@sha256:a73863d23af0222037a0d51cef0c350bfd86825f693cc9bbf889a6484aad2f94",
+      "internalPort": 8080,
+      "isMain": true
+    }
+  ]
+}

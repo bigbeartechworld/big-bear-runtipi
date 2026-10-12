@@ -1,0 +1,26 @@
+{
+  "name": "Continuwuity",
+  "available": true,
+  "port": 8008,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "continuwuity",
+  "description": "Continuwuity v26.7.2 is a community-driven Matrix homeserver and the continuation of conduwuit.",
+  "tipi_version": 1,
+  "version": "v26.7.2",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "Community Matrix homeserver",
+  "author": "BigBearTechWorld",
+  "source": "https://github.com/continuwuity/continuwuity",
+  "website": "https://continuwuity.org",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1791828349000,
+  "updated_at": 1791828349000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

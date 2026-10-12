@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "autoxpose",
+      "image": "mostafawahied/autoxpose:0.5.2@sha256:5e29bc48b7b164127f1ade8f3d9be9dba06e665ed2cdeeb569173fa343eca5d3",
+      "internalPort": 3000,
+      "isMain": true
+    }
+  ]
+}

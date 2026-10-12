@@ -1,0 +1,26 @@
+{
+  "name": "Cloudreve",
+  "available": true,
+  "port": 5212,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "cloudreve",
+  "description": "Cloudreve 4.19.1 is a self-hosted file manager with multi-cloud storage, backed by Postgres and Redis.",
+  "tipi_version": 1,
+  "version": "4.19.1",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "",
+  "author": "BigBearTechWorld",
+  "source": "https://github.com/cloudreve/Cloudreve",
+  "website": "https://cloudreve.org",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1791828340000,
+  "updated_at": 1791828340000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

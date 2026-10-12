@@ -1,0 +1,26 @@
+{
+  "name": "Web-Check",
+  "available": true,
+  "port": 3000,
+  "exposable": true,
+  "dynamic_config": true,
+  "id": "web-check",
+  "description": "Web-Check is an on-demand OSINT tool for analysing any website: server, security headers, technologies, DNS, and related public signals.",
+  "tipi_version": 1,
+  "version": "2.3.2",
+  "categories": [
+    "utilities"
+  ],
+  "short_desc": "OSINT for any website",
+  "author": "BigBearTechWorld",
+  "source": "https://github.com/lissy93/web-check",
+  "website": "https://web-check.xyz",
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "created_at": 1791828888000,
+  "updated_at": 1791828888000,
+  "$schema": "../app-info-schema.json",
+  "min_tipi_version": "4.5.0"
+}

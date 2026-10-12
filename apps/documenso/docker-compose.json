@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "services": [
+    {
+      "name": "documenso",
+      "image": "documenso/documenso:v2.19.0@sha256:a0592ef8edbc8d74e5e236d9c2dffb3fc4f0104a3ea1c52baaae4673799d8d91",
+      "internalPort": 3000,
+      "isMain": true
+    }
+  ]
+}
