@@ -7,7 +7,7 @@
   "id": "signal",
   "description": "Signal is a messaging app with privacy at its core. It is free and easy to use, with strong end-to-end encryption that keeps your communication completely private.",
   "tipi_version": 2,
-  "version": "8.29.0",
+  "version": "8.30.0",
   "categories": [
     "automation"
   ],
@@ -18,8 +18,8 @@
   "supported_architectures": [
     "amd64"
   ],
-  "created_at": 1791909864000,
-  "updated_at": 1791909864000,
+  "created_at": 1791926506000,
+  "updated_at": 1791926506000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.7.0"
 }
