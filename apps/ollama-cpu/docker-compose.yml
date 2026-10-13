@@ -16,18 +16,12 @@ services:
     # Volumes to be mounted to the container
     volumes:
       - ${APP_DATA_DIR}/.ollama:/root/.ollama
-    # Ports mapping between host and container
-    ports:
-      # Mapping port 11434 of the host to port 11434 of the container
-      - "${APP_PORT}:11434"
     devices:
       # Attach GPU
       - /dev/kfd
       - /dev/dri
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+    x-runtipi:
+      is_main: true
+      internal_port: 11434
+x-runtipi:
+  schema_version: 2

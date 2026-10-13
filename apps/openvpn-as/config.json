@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "openvpn-as",
   "description": "OpenVPN is an open-source commercial software that implements virtual private network (VPN) techniques to create secure point-to-point or site-to-site connections in routed or bridged configurations and remote access facilities.",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "2.13.1-d8cdeb9c-Ubuntu22",
   "categories": [
     "utilities"
@@ -18,8 +18,8 @@
   "supported_architectures": [
     "amd64"
   ],
-  "created_at": 1791868338000,
-  "updated_at": 1791868338000,
+  "created_at": 1791909735000,
+  "updated_at": 1791909735000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

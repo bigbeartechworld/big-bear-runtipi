@@ -20,14 +20,12 @@ services:
       - ${APP_DATA_DIR}/mysql:/var/lib/mysql
     # Network configuration
     networks:
-      - tipi_main_network
+      - big-bear-wallabag-network
     # Health check configuration for database
     healthcheck:
       test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
       interval: 20s
       timeout: 3s
-    labels:
-      runtipi.managed: "true"
   # Redis cache service
   big-bear-wallabag-redis:
     # Name of the container
@@ -38,14 +36,12 @@ services:
     restart: unless-stopped
     # Network configuration
     networks:
-      - tipi_main_network
+      - big-bear-wallabag-network
     # Health check configuration for Redis
     healthcheck:
       test: ["CMD", "redis-cli", "ping"]
       interval: 20s
       timeout: 3s
-    labels:
-      runtipi.managed: "true"
   wallabag:
     # Name of the container
     container_name: wallabag
@@ -68,9 +64,6 @@ services:
       - SYMFONY__ENV__FROM_EMAIL=wallabag@example.com
       - SYMFONY__ENV__DOMAIN_NAME=http://[IP]:8080
       - SYMFONY__ENV__SERVER_NAME="Big Bear Wallabag"
-    # Port mapping
-    ports:
-      - "${APP_PORT}:80"
     # Volume mappings for persistent storage
     volumes:
       - ${APP_DATA_DIR}/images:/var/www/wallabag/web/assets/images
@@ -81,13 +74,17 @@ services:
       timeout: 3s
     # Network configuration
     networks:
-      - tipi_main_network
+      - big-bear-wallabag-network
     # Service dependencies
     depends_on:
       - big-bear-wallabag-db
       - big-bear-wallabag-redis
-    labels:
-      runtipi.managed: "true"
+    x-runtipi:
+      is_main: true
+      internal_port: 80
+# Network configuration
 networks:
-  tipi_main_network:
-    external: true
+  big-bear-wallabag-network:
+    driver: bridge
+x-runtipi:
+  schema_version: 2

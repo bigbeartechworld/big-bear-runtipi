@@ -5,11 +5,8 @@ services:
     environment:
       TZ: $TZ
     networks:
-      - tipi_main_network
-    ports:
-      - target: 8083
-        published: ${APP_PORT}
-        protocol: tcp
+      docnet:
+        ipv4_address: 10.1.1.0
     volumes:
       - type: bind
         source: /DATA/AppData/$AppID/config
@@ -26,8 +23,17 @@ services:
       - SYS_NICE
       - DAC_READ_SEARCH
     container_name: hestiacp
-    labels:
-      runtipi.managed: "true"
+    x-runtipi:
+      is_main: true
+      internal_port: 8083
 networks:
-  tipi_main_network:
-    external: true
+  docnet:
+    name: docnet
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.1.0.0/16
+          ip_range: 10.1.1.0/24
+          gateway: 10.1.0.1
+x-runtipi:
+  schema_version: 2

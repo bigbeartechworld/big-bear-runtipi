@@ -20,18 +20,12 @@ services:
     hostname: pocketid
     labels:
       icon: https://pocket-id.org/img/logo.png # Icon URL
-      runtipi.managed: "true"
-    ports:
-      - target: 1411
-        published: "${APP_PORT}"
-        protocol: tcp # Port mapping between host and container
     volumes:
       - type: bind
         source: ${APP_DATA_DIR}/data
         target: /app/data # Volume for persistent data
     devices: []
     cap_add: []
-    network_mode: bridge
     privileged: false
     # Optional healthcheck
     healthcheck:
@@ -40,8 +34,8 @@ services:
       timeout: 5s
       retries: 2
       start_period: 10s
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+    x-runtipi:
+      is_main: true
+      internal_port: 1411
+x-runtipi:
+  schema_version: 2

@@ -20,9 +20,7 @@ services:
       timeout: 5s
       retries: 5
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - big_bear_tianji_network
   tianji:
     # Name of the container
     container_name: tianji
@@ -36,16 +34,15 @@ services:
       JWT_SECRET: replace-me-with-a-random-string
       ALLOW_REGISTER: "false"
       ALLOW_OPENAPI: "true"
-    # Ports mapping between host and container
-    ports:
-      # Mapping port 12345 of the host to port 12345 of the container
-      - "${APP_PORT}:12345"
     networks:
-      - tipi_main_network
+      - big_bear_tianji_network
     depends_on:
       - big-bear-tianji-db
-    labels:
-      runtipi.managed: "true"
+    x-runtipi:
+      is_main: true
+      internal_port: 12345
 networks:
-  tipi_main_network:
-    external: true
+  big_bear_tianji_network:
+    driver: bridge
+x-runtipi:
+  schema_version: 2

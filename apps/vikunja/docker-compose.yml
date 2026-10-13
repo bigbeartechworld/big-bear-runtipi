@@ -6,8 +6,6 @@ services:
   vikunja:
     image: vikunja/vikunja:1.1.0@sha256:84b56920e2860c67cb889bce0e0950aa529e42838b45bdf81eb2422178e90cc7
     container_name: vikunja
-    ports:
-      - ${APP_PORT}:3456
     volumes:
       # Map container path to host path for files
       - ${APP_DATA_DIR}/files:/app/vikunja/files
@@ -25,9 +23,10 @@ services:
     depends_on:
       - vikunja-db
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - vikunja-network
+    x-runtipi:
+      is_main: true
+      internal_port: 3456
   vikunja-db:
     image: mariadb:10@sha256:be981e4113326ada8d6004174dd09eeaefc03094037f811182a52d4f2e737350
     container_name: vikunja-db
@@ -45,9 +44,9 @@ services:
       - ${APP_DATA_DIR}/mysql:/var/lib/mysql
     restart: unless-stopped
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - vikunja-network
 networks:
-  tipi_main_network:
-    external: true
+  vikunja-network:
+    driver: bridge
+x-runtipi:
+  schema_version: 2

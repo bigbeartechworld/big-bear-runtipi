@@ -10,9 +10,7 @@ services:
     volumes:
       - ${APP_DATA_DIR}/redis:/data
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - big-bear-paperless-ngx-network
   # The PostgreSQL database service is used to store the data for the paperless-ngx service.
   big-bear-paperless-ngx-db:
     # Container name
@@ -34,9 +32,7 @@ services:
       POSTGRES_PASSWORD: c6e74adb-3fce-4318-b657-4bdc0858fcac
     # Networks to be used for the service
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - big-bear-paperless-ngx-network
   # The gotenberg service is used for converting documents to PDFs. It is
   # configured to disable JavaScript and only allow access to the
   # /tmp directory to prevent potential security issues.
@@ -53,9 +49,7 @@ services:
       - "--chromium-disable-javascript=true"
       - "--chromium-allow-list=file:///tmp/.*"
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - big-bear-paperless-ngx-network
   # The Tika service is used to extract text from files. It is based on the
   # Apache Tika project and is configured to use the minimal image.
   big-bear-paperless-ngx-tika:
@@ -68,9 +62,7 @@ services:
     # The Tika service is connected to the big-bear-paperless-ngx-network
     # network.
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - big-bear-paperless-ngx-network
   paperless-ngx:
     # Name of the container
     container_name: paperless-ngx
@@ -101,17 +93,19 @@ services:
       - ${APP_DATA_DIR}/paperless/export:/usr/src/paperless/export
       - ${APP_DATA_DIR}/paperless/consume:/usr/src/paperless/consume
       - ${APP_DATA_DIR}/paperless/tmp:/tmp
-    # Ports mapping between host and container
-    ports:
-      # Mapping port 8000 of the host to port 8000 of the container
-      - "${APP_PORT}:8000"
     depends_on:
       - big-bear-paperless-ngx-db
       - big-bear-paperless-ngx-broker
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - big-bear-paperless-ngx-network
+    x-runtipi:
+      is_main: true
+      internal_port: 8000
+# Define a network for the paperless-ngx services to communicate with
+# each other. This network is a bridge network, which means that it is
+# not isolated from the host's network stack.
 networks:
-  tipi_main_network:
-    external: true
+  big-bear-paperless-ngx-network:
+    driver: bridge
+x-runtipi:
+  schema_version: 2

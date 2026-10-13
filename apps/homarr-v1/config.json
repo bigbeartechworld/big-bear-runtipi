@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "homarr-v1",
   "description": "Homarr v1 dashboard, pinned at v1.63.0. Use Homarr v2 for new installs. This version uses a different data structure from Homarr v0 and requires SECRET_ENCRYPTION_KEY. Not compatible with legacy Homarr (v0.x) data without migration.",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "v1.63.0",
   "categories": [
     "utilities"
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791868212000,
-  "updated_at": 1791868212000,
+  "created_at": 1791909540000,
+  "updated_at": 1791909540000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

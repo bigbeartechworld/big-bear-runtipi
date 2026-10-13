@@ -1,20 +1,15 @@
 services:
   jellyseerr:
     image: fallenbagel/jellyseerr:2.7.3@sha256:4538137bc5af902dece165f2bf73776d9cf4eafb6dd714670724af8f3eb77764 # Image to use for the jellyseerr service
-    ports:
-      - "${APP_PORT}:5055" # Maps port 5055 on the host to port 5055 on the container
     volumes:
       - ${APP_DATA_DIR}/config:/app/config # Binds a volume from host to container for configuration
     environment:
       - LOG_LEVEL=debug # Sets the log level to debug
       - TZ=$TZ # Sets the timezone, using host's timezone variable
     restart: unless-stopped # Service will restart unless it is explicitly stopped
-    network_mode: bridge # Uses bridge network mode
     container_name: jellyseerr
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+    x-runtipi:
+      is_main: true
+      internal_port: 5055
+x-runtipi:
+  schema_version: 2

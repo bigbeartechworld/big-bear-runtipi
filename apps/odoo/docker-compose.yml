@@ -16,9 +16,7 @@ services:
     volumes:
       - ${APP_DATA_DIR}/data/postgresql:/var/lib/postgresql/data # Mounts PostgreSQL data directory
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - big_bear_odoo_network # Attached network for internal communication
   odoo:
     # Name of the container
     container_name: odoo # Specifies the container instance name for identification
@@ -32,9 +30,6 @@ services:
     volumes:
       - ${APP_DATA_DIR}/data/etc:/etc/odoo # Mounts Odoo configuration files
       - ${APP_DATA_DIR}/data/addons:/mnt/extra-addons # Mounts additional Odoo addons
-    # Ports mapping between host and container
-    ports:
-      - "${APP_PORT}:8069" # Exposes port 8069 on host and container for web access
     # Environment variables
     environment:
       - HOST=big-bear-odoo-db # Database host
@@ -42,9 +37,13 @@ services:
       - PASSWORD=a8d785b6-bc00-49cc-8675-d404093d1507 # Database password
     # Networks to be attached to the container
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - big_bear_odoo_network # Specifies network attachment for internal communication
+    x-runtipi:
+      is_main: true
+      internal_port: 8069
+# Network definition for the big-bear-odoo application
 networks:
-  tipi_main_network:
-    external: true
+  big_bear_odoo_network:
+    driver: bridge # Specifies network driver as bridge
+x-runtipi:
+  schema_version: 2

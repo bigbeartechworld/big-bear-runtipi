@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "pwndrop",
   "description": "Pwndrop is a self-deployable file hosting service for sending out red teaming payloads or securely sharing your private files over HTTP and WebDAV.",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "1.0.1",
   "categories": [
     "automation"
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791868405000,
-  "updated_at": 1791868405000,
+  "created_at": 1791909812000,
+  "updated_at": 1791909812000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

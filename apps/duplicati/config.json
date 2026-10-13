@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "duplicati",
   "description": "Duplicati is a backup client that securely stores encrypted, incremental, compressed backups on local storage, cloud storage services and remote file servers. It works with standard protocols like FTP, SSH, WebDAV as well as popular services like Microsoft OneDrive, Amazon S3, Google Drive, box.com, Mega, B2, and many others.",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "2.4.0",
   "categories": [
     "automation"
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791868148000,
-  "updated_at": 1791868148000,
+  "created_at": 1791909463000,
+  "updated_at": 1791909463000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

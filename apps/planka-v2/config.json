@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "planka-v2",
   "description": "The realtime kanban board for workgroups built with React and Redux.",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "2.1.1",
   "categories": [
     "utilities"
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791868380000,
-  "updated_at": 1791868380000,
+  "created_at": 1791909789000,
+  "updated_at": 1791909789000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

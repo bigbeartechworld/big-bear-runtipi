@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "blender",
   "description": "Blender is a free and open-source 3D computer graphics software toolset used for creating animated films, visual effects, art, 3D printed models, motion graphics, interactive 3D applications, virtual reality, and computer games. This image does not support GPU rendering out of the box only accelerated workspace experience",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "5.2.2",
   "categories": [
     "automation"
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791868048000,
-  "updated_at": 1791868048000,
+  "created_at": 1791909363000,
+  "updated_at": 1791909363000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

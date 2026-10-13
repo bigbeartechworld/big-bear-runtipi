@@ -14,13 +14,9 @@ services:
       - MYSQL_PASSWORD=casaos # MariaDB password
     volumes:
       - ${APP_DATA_DIR}/mysql:/var/lib/mysql # MariaDB data volume (can also be mounted locally)
-    ports:
-      - 3306:3306 # Map host port 3306 to container port 3306
     restart: "unless-stopped"
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - big-bear-romm-network # Use the big-bear-romm-network network
   romm:
     image: rommapp/romm:5.3.1@sha256:0d66b4ea152a237c7f24b95e87459f46d3c596a7c0b35a82f26bc971487278b3 # Docker image for the application
     container_name: romm
@@ -51,15 +47,17 @@ services:
       - "${APP_DATA_DIR}/assets:/romm/assets" # Uploaded saves, states, etc.
       - "${APP_DATA_DIR}/config:/romm/config" # [Optional] Path where config is stored
       - "${APP_DATA_DIR}/logs:/romm/logs" # [Optional] Path where logs are stored
-    ports:
-      - ${APP_PORT}:8080 # Map host port 1080 to container port 8080
     depends_on:
       - big-bear-rommdb # Make sure the romm_db service is started before the app service
     restart: "unless-stopped"
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - big-bear-romm-network # Use the big-bear-romm-network network
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+# Network definitions for the big-bear-romm application
 networks:
-  tipi_main_network:
-    external: true
+  big-bear-romm-network:
+    driver: bridge
+x-runtipi:
+  schema_version: 2

@@ -14,9 +14,7 @@ services:
     volumes:
       - ${APP_DATA_DIR}/data/pgdata:/var/lib/postgresql/data
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - big-bear-docmost-network
   big-bear-docmost-redis:
     container_name: big-bear-docmost-redis
     image: redis:7.2.11-alpine@sha256:b19a2cb55412c26e0c3725011ac04397eba5cb0d7f090f739cbbce8dc97f8e60
@@ -24,9 +22,7 @@ services:
     volumes:
       - ${APP_DATA_DIR}/data/redis:/data
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - big-bear-docmost-network
   docmost:
     # Name of the container
     container_name: docmost
@@ -42,17 +38,16 @@ services:
     # Volumes to be mounted to the container
     volumes:
       - ${APP_DATA_DIR}/data/storage:/app/data/storage
-    # Ports mapping between host and container
-    ports:
-      # Mapping port 3000 of the host to port 3000 of the container
-      - "${APP_PORT}:3000"
     networks:
-      - tipi_main_network
+      - big-bear-docmost-network
     depends_on:
       - big-bear-docmost-db
       - big-bear-docmost-redis
-    labels:
-      runtipi.managed: "true"
+    x-runtipi:
+      is_main: true
+      internal_port: 3000
 networks:
-  tipi_main_network:
-    external: true
+  big-bear-docmost-network:
+    driver: bridge
+x-runtipi:
+  schema_version: 2

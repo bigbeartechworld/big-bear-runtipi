@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "joomla",
   "description": "Another free and open-source CMS",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "6.1.4-apache",
   "categories": [
     "utilities"
@@ -20,8 +20,8 @@
     "armv7",
     "arm64"
   ],
-  "created_at": 1791868238000,
-  "updated_at": 1791868238000,
+  "created_at": 1791909575000,
+  "updated_at": 1791909575000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

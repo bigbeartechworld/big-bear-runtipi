@@ -16,14 +16,9 @@ services:
     init: true
     stdin_open: true
     tty: true
-    network_mode: bridge
     entrypoint: ["node", "dist/index.js"]
     profiles:
       - tools
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
   openclaw:
     image: ghcr.io/openclaw/openclaw:2026.5.3-1@sha256:142f70fa2751bdedf03648ae427372fff3f92ac0e96ab91abb3824b088c38b7b
     container_name: openclaw
@@ -37,17 +32,11 @@ services:
     volumes:
       - ${APP_DATA_DIR}/data/openclaw_config:/home/node/.openclaw
       - ${APP_DATA_DIR}/data/openclaw_workspace:/home/node/.openclaw/workspace
-    ports:
-      - "${APP_PORT}:18789"
-      - "18790:18790"
     init: true
     restart: unless-stopped
-    network_mode: bridge
     command: ["node", "dist/index.js", "gateway", "--bind", "lan", "--port", "18789"]
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+    x-runtipi:
+      is_main: true
+      internal_port: 18789
+x-runtipi:
+  schema_version: 2

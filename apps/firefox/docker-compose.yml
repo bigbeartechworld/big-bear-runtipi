@@ -2,9 +2,6 @@ services:
   firefox:
     container_name: firefox # Name of the Docker container
     image: linuxserver/firefox:1155.0.1@sha256:1d224760c3b9e45aac55457d73a174188cc55b34480fc7cdd3e9e13023d7b9a0 # Docker image for the Firefox browser
-    ports:
-      - "${APP_PORT}:3000" # Expose port 3000 for HTTP VNC access
-      - "3001:3001" # Expose port 3001 for HTTPS VNC access
     environment:
       - PUID=1000
       - PGID=1000
@@ -13,10 +10,8 @@ services:
     shm_size: 1gb # Allocate 1 GB of shared memory
     volumes:
       - ${APP_DATA_DIR}/config:/config # Mount the config directory for persistent data
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+    x-runtipi:
+      is_main: true
+      internal_port: 3000
+x-runtipi:
+  schema_version: 2

@@ -2,8 +2,6 @@ services:
   podfetch:
     image: samuel19982/podfetch:v5.2.3@sha256:a9705ffb906c020740b1e1aae4b38a0ea966d7190d47ee7956b4d573a48c16f9
     container_name: podfetch
-    ports:
-      - "${APP_PORT}:8000"
     volumes:
       - ${APP_DATA_DIR}/podfetch/podcasts:/app/podcasts
       - ${APP_DATA_DIR}/podfetch/db:/app/db
@@ -16,9 +14,12 @@ services:
       - GPODDER_INTEGRATION_ENABLED=false
     restart: unless-stopped
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - podfetch-network
+    x-runtipi:
+      is_main: true
+      internal_port: 8000
 networks:
-  tipi_main_network:
-    external: true
+  podfetch-network:
+    driver: bridge
+x-runtipi:
+  schema_version: 2

@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "steamos",
   "description": "SteamOS is an Arch based Linux distribution made by Valve Software. This container is a vanilla Arch install with Steam repositories added for software support. This container will only work with modern AMD/Intel GPUs on a real Linux Host",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "0.0.0",
   "categories": [
     "utilities"
@@ -18,8 +18,8 @@
   "supported_architectures": [
     "amd64"
   ],
-  "created_at": 1791868479000,
-  "updated_at": 1791868479000,
+  "created_at": 1791909884000,
+  "updated_at": 1791909884000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

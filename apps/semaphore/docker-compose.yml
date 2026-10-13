@@ -16,9 +16,7 @@ services:
       MYSQL_USER: "semaphore" # Database user
       MYSQL_PASSWORD: "semaphore" # Database password
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - big-bear-semaphore-network
   semaphore:
     # Name of the container
     container_name: semaphore
@@ -43,13 +41,13 @@ services:
     volumes:
       - ${APP_DATA_DIR}/home:/etc/semaphore # Configuration files for Semaphore
       - ${APP_DATA_DIR}/lib:/var/lib/semaphore # Local storage for Semaphore data (not needed if using an external database)
-    # Ports mapping between host and container
-    ports:
-      - "${APP_PORT}:3000" # Expose port 3000 for web access
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - big-bear-semaphore-network
+    x-runtipi:
+      is_main: true
+      internal_port: 3000
 networks:
-  tipi_main_network:
-    external: true
+  big-bear-semaphore-network:
+    driver: bridge # Specifies network driver type
+x-runtipi:
+  schema_version: 2

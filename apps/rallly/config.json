@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "rallly",
   "description": "Rallly is an open-source scheduling and collaboration tool designed to make organizing events and meetings easier.",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "4.15.4",
   "categories": [
     "utilities"
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791868415000,
-  "updated_at": 1791868415000,
+  "created_at": 1791909823000,
+  "updated_at": 1791909823000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

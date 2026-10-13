@@ -1,28 +1,19 @@
 services:
   ungoogled-chromium:
-    image: linuxserver/ungoogled-chromium:155.0.8059@sha256:d0730ec58f4befff20dc4cd6651c88fa656e1689fb1a084452be4841ee794cad
+    image: linuxserver/ungoogled-chromium:155.0.8059@sha256:6a8446ff5728b32212e412d46c0981ac10b276c4a97222fa12d07352654ada28
     restart: unless-stopped
     environment:
       PUID: $PUID
       PGID: $PGID
       TZ: $TZ
       CHROME_CLI: ''
-    ports:
-      - target: 3000
-        published: ${APP_PORT}
-        protocol: tcp
-      - target: 3001
-        published: 3001
-        protocol: tcp
     volumes:
       - type: bind
         source: /DATA/AppData/ungoogled-chromium/config
         target: /config
     container_name: ungoogled-chromium
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+    x-runtipi:
+      is_main: true
+      internal_port: 3000
+x-runtipi:
+  schema_version: 2

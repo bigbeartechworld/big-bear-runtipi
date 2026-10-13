@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "eden",
   "description": "Eden is an experimental open-source emulator for the Nintendo Switch, built with performance and stability in mind.",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "0.2.1",
   "categories": [
     "automation"
@@ -18,8 +18,8 @@
   "supported_architectures": [
     "amd64"
   ],
-  "created_at": 1791868149000,
-  "updated_at": 1791868149000,
+  "created_at": 1791909464000,
+  "updated_at": 1791909464000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

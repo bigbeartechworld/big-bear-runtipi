@@ -7,13 +7,6 @@ services:
       PGID: $PGID
       TZ: $TZ
       HOST_URL: ''
-    ports:
-      - target: 8443
-        published: ${APP_PORT}
-        protocol: tcp
-      - target: 8000
-        published: 8000
-        protocol: tcp
     volumes:
       - type: bind
         source: /DATA/AppData/sealskin/config
@@ -25,10 +18,8 @@ services:
         source: /var/run/docker.sock
         target: /var/run/docker.sock
     container_name: sealskin
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+    x-runtipi:
+      is_main: true
+      internal_port: 8443
+x-runtipi:
+  schema_version: 2

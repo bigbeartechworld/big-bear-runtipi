@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "dosbox-staging",
   "description": "DOSBox Staging is a modern continuation of DOSBox a free and open-source emulator that enables the execution of MS-DOS software, especially video games.",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "0.83.0",
   "categories": [
     "automation"
@@ -18,8 +18,8 @@
   "supported_architectures": [
     "amd64"
   ],
-  "created_at": 1791868141000,
-  "updated_at": 1791868141000,
+  "created_at": 1791909456000,
+  "updated_at": 1791909456000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

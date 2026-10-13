@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "mame",
   "description": "MAME is a free and open-source emulator designed to emulate the hardware of arcade games, video game consoles, old computers and other systems in software on modern personal computers.",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "0.0.0",
   "categories": [
     "automation"
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791868273000,
-  "updated_at": 1791868273000,
+  "created_at": 1791909646000,
+  "updated_at": 1791909646000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

@@ -7,25 +7,14 @@ services:
       PGID: $PGID
       TZ: $TZ
       RUN_OPTS: ''
-    ports:
-      - target: 8875
-        published: ${APP_PORT}
-        protocol: tcp
-      - target: 554
-        published: 554
-        protocol: tcp
-      - target: 1900
-        published: 1900
-        protocol: udp
+    ports: [{"target": 554, "published": 554, "protocol": "tcp"}, {"target": 1900, "published": 1900, "protocol": "udp"}]
     volumes:
       - type: bind
         source: /DATA/AppData/minisatip/config
         target: /config
     container_name: minisatip
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+    x-runtipi:
+      is_main: true
+      internal_port: 8875
+x-runtipi:
+  schema_version: 2

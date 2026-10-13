@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "jellyseerr",
   "description": "Jellyseerr is a free and open source software application for managing requests for your media library. It is a fork of Overseerr built to bring support for Jellyfin & Emby media servers! Note: Jellyseerr is no longer actively maintained. New users should use Seerr instead.",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "2.7.3",
   "categories": [
     "utilities"
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791868232000,
-  "updated_at": 1791868232000,
+  "created_at": 1791909567000,
+  "updated_at": 1791909567000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "nginx",
   "description": "Nginx is an HTTP web server, reverse proxy, content cache, load balancer, TCP/UDP proxy server, and mail proxy server.",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "1.30.4",
   "categories": [
     "automation"
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791868310000,
-  "updated_at": 1791868310000,
+  "created_at": 1791909695000,
+  "updated_at": 1791909695000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

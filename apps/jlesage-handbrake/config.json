@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "jlesage-handbrake",
   "description": "The GUI of the application is accessed through a modern web browser (no installation or configuration needed on the client side) or via any VNC client.",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "v26.09.1",
   "categories": [
     "utilities"
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791868237000,
-  "updated_at": 1791868237000,
+  "created_at": 1791909573000,
+  "updated_at": 1791909573000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

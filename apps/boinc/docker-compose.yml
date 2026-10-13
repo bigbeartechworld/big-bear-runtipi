@@ -7,22 +7,13 @@ services:
       PGID: $PGID
       TZ: $TZ
       PASSWORD: ''
-    ports:
-      - target: 8080
-        published: ${APP_PORT}
-        protocol: tcp
-      - target: 8181
-        published: 8181
-        protocol: tcp
     volumes:
       - type: bind
         source: /DATA/AppData/boinc/config
         target: /config
     container_name: boinc
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+x-runtipi:
+  schema_version: 2

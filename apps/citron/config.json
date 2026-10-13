@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "citron",
   "description": "Citron is a feature rich Switch 1 emulator for homebrew.",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "2026.02.1",
   "categories": [
     "utilities"
@@ -18,8 +18,8 @@
   "supported_architectures": [
     "amd64"
   ],
-  "created_at": 1791868082000,
-  "updated_at": 1791868082000,
+  "created_at": 1791909399000,
+  "updated_at": 1791909399000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

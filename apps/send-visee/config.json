@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "send-visee",
   "description": "A fork of Mozilla's Firefox Send. Mozilla discontinued Send, this fork is a community effort to keep the project up-to-date and alive.",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "v3.4.27",
   "categories": [
     "utilities"
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791868448000,
-  "updated_at": 1791868448000,
+  "created_at": 1791909858000,
+  "updated_at": 1791909858000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

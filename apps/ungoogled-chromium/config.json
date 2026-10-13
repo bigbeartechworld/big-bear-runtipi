@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "ungoogled-chromium",
   "description": "Ungoogled Chromium is Google Chromium, sans dependency on Google web services.",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "155.0.8059",
   "categories": [
     "automation"
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791868528000,
-  "updated_at": 1791868528000,
+  "created_at": 1791909919000,
+  "updated_at": 1791909919000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

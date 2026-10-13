@@ -25,15 +25,15 @@ services:
       - ${APP_DATA_DIR}/config:/config
     # User to run the container as
     user: "1000:1000"
-    # Ports mapping between host and container
-    ports:
-      # Mapping port 8080 of the host to port 8080 of the container
-      - "${APP_PORT}:8085"
     # Networks to be attached to the container
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - big_bear_komf_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8085
+# Network definitions for the big-bear-komf application
 networks:
-  tipi_main_network:
-    external: true
+  big_bear_komf_network:
+    driver: bridge
+x-runtipi:
+  schema_version: 2

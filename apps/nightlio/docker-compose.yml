@@ -15,23 +15,22 @@ services:
     volumes:
       - ${APP_DATA_DIR}/data:/app/data
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - big_bear_nightlio_network
   nightlio:
     container_name: nightlio
     image: ghcr.io/shirsakm/nightlio-frontend:0.1.7@sha256:0a2bd8ec3eefe6adfa79f4809bc57c9ef2d3094dcece13f7d3c5309bacfcc117
     restart: unless-stopped
     environment:
       - API_URL=http://big-bear-nightlio-api:5000
-    ports:
-      - "${APP_PORT}:80"
     depends_on:
       - big-bear-nightlio-api
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - big_bear_nightlio_network
+    x-runtipi:
+      is_main: true
+      internal_port: 80
 networks:
-  tipi_main_network:
-    external: true
+  big_bear_nightlio_network:
+    driver: bridge
+x-runtipi:
+  schema_version: 2

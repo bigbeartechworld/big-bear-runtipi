@@ -12,10 +12,6 @@ services:
     # In this case, bind-mounts `homer_assets` from the host to `/www/assets` inside the container
     volumes:
       - ${APP_DATA_DIR}/assets:/www/assets
-    # Maps the container's ports to the host's ports
-    # In this case, it maps port 8080 inside the container to port 8080 on the host
-    ports:
-      - ${APP_PORT}:8080
     # Specifies the user and group ID under which the container will run
     # The default is user ID 1000 and group ID 1000
     user: 1000:1000 # default
@@ -23,10 +19,8 @@ services:
     # In this case, the `INIT_ASSETS` variable is set to 1 (which is the default value)
     environment:
       - INIT_ASSETS=1 # default
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+x-runtipi:
+  schema_version: 2

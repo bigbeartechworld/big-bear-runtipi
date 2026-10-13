@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "continuwuity",
   "description": "Continuwuity v26.7.2 is a community-driven Matrix homeserver and the continuation of conduwuit.",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "v26.7.2",
   "categories": [
     "utilities"
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791868095000,
-  "updated_at": 1791868095000,
+  "created_at": 1791909412000,
+  "updated_at": 1791909412000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

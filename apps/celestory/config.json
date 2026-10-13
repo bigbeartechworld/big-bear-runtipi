@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "celestory",
   "description": "The all-in-one no-code platform for interactive storytelling and Voltask automation engine. Paid license required, no free tier available. Purchase a license at https://celestory.io/pricing",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "1.1.2",
   "categories": [
     "development"
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791868074000,
-  "updated_at": 1791868074000,
+  "created_at": 1791909391000,
+  "updated_at": 1791909391000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

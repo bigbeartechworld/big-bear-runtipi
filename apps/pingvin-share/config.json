@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "pingvin-share",
   "description": "Pingvin Share is self-hosted file sharing platform and an alternative for WeTransfer.",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "v1.13.0",
   "categories": [
     "utilities"
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791868373000,
-  "updated_at": 1791868373000,
+  "created_at": 1791909781000,
+  "updated_at": 1791909781000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

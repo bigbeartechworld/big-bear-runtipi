@@ -37,15 +37,9 @@ services:
     volumes:
       - ${APP_DATA_DIR}/config:/config
     # Ports mapping between host and container
-    ports:
-      # Mapping port 8000 of the host to port 8000 of the container
-      - "${APP_PORT}:8000"
-      # Mapping port 2525 of the host to port 2525 of the container
-      - "2525:2525"
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+    ports: ["2525:2525"]
+    x-runtipi:
+      is_main: true
+      internal_port: 8000
+x-runtipi:
+  schema_version: 2

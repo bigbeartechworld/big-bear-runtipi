@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "rsshub",
   "description": "RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything. RSSHub delivers millions of contents aggregated from all kinds of sources, our vibrant open source community is ensuring the deliver of RSSHub's new routes, new features and bug fixes. RSSHub can be used with browser extension RSSHub Radar and mobile auxiliary app RSSBud (iOS) and RSSAid (Android)",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "2026-09-24",
   "categories": [
     "utilities"
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791868436000,
-  "updated_at": 1791868436000,
+  "created_at": 1791909845000,
+  "updated_at": 1791909845000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

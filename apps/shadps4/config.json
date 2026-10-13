@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "shadps4",
   "description": "shadPS4 is an early PlayStation 4 emulator for Windows, Linux and macOS written in C++.",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "0.0.0",
   "categories": [
     "automation"
@@ -18,8 +18,8 @@
   "supported_architectures": [
     "amd64"
   ],
-  "created_at": 1791868451000,
-  "updated_at": 1791868451000,
+  "created_at": 1791909862000,
+  "updated_at": 1791909862000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

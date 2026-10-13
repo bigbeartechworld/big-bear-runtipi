@@ -38,9 +38,7 @@ services:
       timeout: 5s
       retries: 5
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - big_bear_pwpush_v2_network
   passwordpusher-v2:
     # Name of the container
     container_name: passwordpusher-v2
@@ -64,17 +62,16 @@ services:
     volumes:
       # Storage volume
       - ${APP_DATA_DIR}/storage:/opt/PasswordPusher/storage:rw
-    # Ports mapping between host and container
-    ports:
-      # Mapping port 5101 of the host to port 5100 of the container (different from v1's 5100)
-      - "${APP_PORT}:5100"
     networks:
-      - tipi_main_network
+      - big_bear_pwpush_v2_network
     depends_on:
       big-bear-pwpush-v2-db:
         condition: service_healthy
-    labels:
-      runtipi.managed: "true"
+    x-runtipi:
+      is_main: true
+      internal_port: 5100
 networks:
-  tipi_main_network:
-    external: true
+  big_bear_pwpush_v2_network:
+    driver: bridge
+x-runtipi:
+  schema_version: 2

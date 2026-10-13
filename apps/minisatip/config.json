@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "minisatip",
   "description": "Minisatip is a multi-threaded satip server version 1.2 that runs under Linux and it was tested with DVB-S, DVB-S2, DVB-T, DVB-T2, DVB-C, DVB-C2, ATSC and ISDB-T cards.",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "2.0.103",
   "categories": [
     "automation"
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791868286000,
-  "updated_at": 1791868286000,
+  "created_at": 1791909663000,
+  "updated_at": 1791909663000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

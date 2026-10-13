@@ -17,14 +17,8 @@ services:
     environment:
       - COUCHDB_USER=casaos
       - COUCHDB_PASSWORD=casaos
-    # Ports mapping between host and container
-    ports:
-      # Mapping port 5984 of the host to port 5984 of the container
-      - "${APP_PORT}:5984"
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+    x-runtipi:
+      is_main: true
+      internal_port: 5984
+x-runtipi:
+  schema_version: 2

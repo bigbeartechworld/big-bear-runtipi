@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "webcord",
   "description": "WebCord can be summarized as a pack of security and privacy hardenings, Discord features reimplementations, Electron / Chromium / Discord bugs workarounds, stylesheets, internal pages and wrapped https://discord.com page, designed to conform with ToS as much as it is possible (or hide the changes that might violate it from Discord's eyes).",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "4.14.0",
   "categories": [
     "automation"
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791868566000,
-  "updated_at": 1791868566000,
+  "created_at": 1791909953000,
+  "updated_at": 1791909953000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

@@ -16,9 +16,7 @@ services:
       timeout: 3s
       retries: 10
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - big_bear_domainlocker_network
   updater:
     container_name: domain-locker-updater
     image: alpine:3.24@sha256:294b683cb724975bec92580e1e685676bd4b50bda910ddb8c51d4cabeaec77e6
@@ -27,7 +25,7 @@ services:
       domainlocker:
         condition: service_healthy
     networks:
-      - tipi_main_network
+      - big_bear_domainlocker_network
     command:
       - /bin/sh
       - -c
@@ -38,8 +36,6 @@ services:
         echo '*/15 * * * * /usr/bin/curl -f -X POST http://domainlocker:3000/api/domain-monitor || echo "ERROR: domain-monitor failed at $(date)" >&2' >> /etc/crontabs/root &&
         echo '0 2 * * 0 /usr/bin/curl -f -X POST http://domainlocker:3000/api/cleanup-monitor-data || echo "ERROR: cleanup-monitor-data failed at $(date)" >&2' >> /etc/crontabs/root &&
         crond -f -L /dev/stdout
-    labels:
-      runtipi.managed: "true"
   domainlocker:
     container_name: domainlocker
     image: ghcr.io/lissy93/domain-locker:0.2.4@sha256:883716e301b7353327cc82d6bd8e4c5f5d2a93d7f8175e0c10e1d0855f5c4094
@@ -51,8 +47,6 @@ services:
       DL_PG_USER: postgres
       DL_PG_PASSWORD: changeme2420
       DL_PG_NAME: domain_locker
-    ports:
-      - ${APP_PORT}:3000
     depends_on:
       postgres:
         condition: service_healthy
@@ -63,9 +57,12 @@ services:
       retries: 3
       start_period: 30s
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - big_bear_domainlocker_network
+    x-runtipi:
+      is_main: true
+      internal_port: 3000
 networks:
-  tipi_main_network:
-    external: true
+  big_bear_domainlocker_network:
+    driver: bridge
+x-runtipi:
+  schema_version: 2

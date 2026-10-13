@@ -12,14 +12,10 @@ services:
       MYSQL_DATABASE: ihatemoney # Default database name.
       MYSQL_USER: bigbear # Username for MariaDB.
       MYSQL_PASSWORD: password # Password for the MariaDB user.
-    ports:
-      - "3306:3306" # Maps MySQL port 3306 inside the container to port 3306 on the host.
     volumes:
       - ${APP_DATA_DIR}/mysql:/var/lib/mysql # Maps a volume for data persistence.
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - big_bear_ihatemoney_network # Connects the MySQL service to the network.
   ihatemoney:
     # Name of the container
     container_name: ihatemoney
@@ -33,14 +29,13 @@ services:
       ACTIVATE_ADMIN_DASHBOARD: "True" # Enables the admin dashboard.
       ADMIN_PASSWORD: "" # Sets the admin password. On the host run: docker run -it --rm --entrypoint ihatemoney ihatemoney/ihatemoney generate_password_hash
       SESSION_COOKIE_SECURE: "False" # Disables secure session cookies for development.
-    # Ports mapping between host and container
-    ports:
-      # Mapping port 8001 of the host to port 8000 of the container
-      - "${APP_PORT}:8000"
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - big_bear_ihatemoney_network # Connects the service to a network.
+    x-runtipi:
+      is_main: true
+      internal_port: 8000
 networks:
-  tipi_main_network:
-    external: true
+  big_bear_ihatemoney_network: # Define a network named 'big_bear_ihatemoney_network'.
+    driver: bridge # Use the bridge network driver.
+x-runtipi:
+  schema_version: 2

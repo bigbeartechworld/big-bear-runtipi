@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "lsio-api",
   "description": "This container needs special attention. Please check https://hub.docker.com/r/linuxserver/lsio-api for details.",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "0.0.0",
   "categories": [
     "utilities"
@@ -18,8 +18,8 @@
   "supported_architectures": [
     "amd64"
   ],
-  "created_at": 1791868268000,
-  "updated_at": 1791868268000,
+  "created_at": 1791909640000,
+  "updated_at": 1791909640000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

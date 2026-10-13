@@ -21,9 +21,7 @@ services:
       retries: "5"
     expose: ["5432"]
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - big-bear-ayon-network
   # Service definition for the Redis database
   redis:
     image: redis:7.4.6-alpine@sha256:7a7c6b5c49a6896d0a58ee0c6dc0dcabe14f30f0a2f7d2d1362d276fa2d43166
@@ -38,9 +36,7 @@ services:
       retries: "5"
     expose: ["6379"]
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - big-bear-ayon-network
   ayon:
     # Name of the container
     container_name: ayon
@@ -60,20 +56,19 @@ services:
       - "${APP_DATA_DIR}/storage:/storage"
       # comment out the following line on Windows
       - "/etc/localtime:/etc/localtime:ro"
-    # Ports mapping between host and container
-    ports:
-      # Mapping port 5000 of the host to port 5000 of the container
-      - "${APP_PORT}:5000"
     expose: ["5000"]
     networks:
-      - tipi_main_network
+      - big-bear-ayon-network
     depends_on:
       postgres:
         condition: service_healthy
       redis:
         condition: service_started
-    labels:
-      runtipi.managed: "true"
+    x-runtipi:
+      is_main: true
+      internal_port: 5000
 networks:
-  tipi_main_network:
-    external: true
+  big-bear-ayon-network:
+    driver: bridge
+x-runtipi:
+  schema_version: 2

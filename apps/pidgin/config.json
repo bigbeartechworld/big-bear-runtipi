@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "pidgin",
   "description": "Pidgin is a chat program which lets you log into accounts on multiple chat networks simultaneously. This means that you can be chatting with friends on XMPP and sitting in an IRC channel at the same time.",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "2.14.14",
   "categories": [
     "automation"
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791868368000,
-  "updated_at": 1791868368000,
+  "created_at": 1791909776000,
+  "updated_at": 1791909776000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "kiwix-serve",
   "description": "Kiwix Server is a web server for hosting .zim files",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "3.7.0-2",
   "categories": [
     "utilities"
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791868247000,
-  "updated_at": 1791868247000,
+  "created_at": 1791909587000,
+  "updated_at": 1791909587000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

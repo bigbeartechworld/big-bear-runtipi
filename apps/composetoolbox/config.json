@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "composetoolbox",
   "description": "Self-hosted tool to edit, validate, and get suggestions for docker-compose.yml files.",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "latest",
   "categories": [
     "utilities"
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791868094000,
-  "updated_at": 1791868094000,
+  "created_at": 1791909411000,
+  "updated_at": 1791909411000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

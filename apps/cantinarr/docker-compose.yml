@@ -3,8 +3,6 @@ services:
     image: ghcr.io/windoze95/cantinarr:1.0.0@sha256:4d061d80aa66f691b2071b43dafd93b604607effa3138862078a341f973e55d4
     container_name: cantinarr
     restart: unless-stopped
-    ports:
-      - "${APP_PORT}:8585"
     environment:
       CANTINARR_PUSH_GATEWAY_URL: https://push.cantinarr.com
       CANTINARR_ARR_CALLBACK_URL: ""
@@ -17,9 +15,12 @@ services:
       retries: 5
       start_period: 15s
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - big_bear_cantinarr_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8585
 networks:
-  tipi_main_network:
-    external: true
+  big_bear_cantinarr_network:
+    driver: bridge
+x-runtipi:
+  schema_version: 2

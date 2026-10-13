@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "filezilla",
   "description": "FIleZilla Client is a fast and reliable cross-platform FTP, FTPS and SFTP client with lots of useful features and an intuitive graphical user interface.",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "3.69.6",
   "categories": [
     "automation"
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791868173000,
-  "updated_at": 1791868173000,
+  "created_at": 1791909489000,
+  "updated_at": 1791909489000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

@@ -15,19 +15,13 @@ services:
       DB_PASSWORD: ''
       DB_PORT: ''
       IPINFO_APIKEY: ''
-    ports:
-      - target: 80
-        published: ${APP_PORT}
-        protocol: tcp
     volumes:
       - type: bind
         source: /DATA/AppData/librespeed/config
         target: /config
     container_name: librespeed
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+    x-runtipi:
+      is_main: true
+      internal_port: 80
+x-runtipi:
+  schema_version: 2

@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "rdesktop",
   "description": "Rdesktop - Containers containing full desktop environments in many popular flavors for Alpine, Ubuntu, Arch, and Fedora accessible via RDP.",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "0.0.0",
   "categories": [
     "utilities"
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791868417000,
-  "updated_at": 1791868417000,
+  "created_at": 1791909827000,
+  "updated_at": 1791909827000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "linkstack",
   "description": "LinkStack is a link-in-bio tool that allows you to create a personalized and easily customizable page that houses all the important links you want to share with your audience.",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "V4",
   "categories": [
     "utilities"
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791868262000,
-  "updated_at": 1791868262000,
+  "created_at": 1791909618000,
+  "updated_at": 1791909618000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

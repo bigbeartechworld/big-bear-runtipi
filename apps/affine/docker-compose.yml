@@ -3,8 +3,6 @@ services:
     image: ghcr.io/toeverything/affine:0.27.4@sha256:b649f5ce2384ffdf13c23bccf81d759e15973d59d0b0058af65d895a84373099
     container_name: affine
     restart: unless-stopped
-    ports:
-      - "${APP_PORT}:3010"
     depends_on:
       redis:
         condition: service_healthy
@@ -19,10 +17,9 @@ services:
       REDIS_SERVER_HOST: redis
       DATABASE_URL: postgresql://affine@postgres:5432/affine
       AFFINE_INDEXER_ENABLED: "false"
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 3010
   affine_migration:
     image: ghcr.io/toeverything/affine:0.27.4@sha256:b649f5ce2384ffdf13c23bccf81d759e15973d59d0b0058af65d895a84373099
     container_name: affine_migration
@@ -39,10 +36,6 @@ services:
         condition: service_healthy
       redis:
         condition: service_healthy
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
   redis:
     image: redis:8.10.2@sha256:6f81e8915c60b065a524e6967e0ad1c639ba6efa84d669f823683ea04d9150ee
     container_name: affine-redis
@@ -52,10 +45,6 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
   postgres:
     image: pgvector/pgvector:pg16@sha256:7b822b0aac60967beb1ea5e576b8602c94c300a157d187f385ae3e0da199b90a
     container_name: affine-postgres
@@ -72,10 +61,5 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+x-runtipi:
+  schema_version: 2

@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "beets",
   "description": "Beets is a music library manager and not, for the most part, a music player. It does include a simple player plugin and an experimental Web-based player, but it generally leaves actual sound-reproduction to specialized tools.",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "2.14.1",
   "categories": [
     "automation"
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791868044000,
-  "updated_at": 1791868044000,
+  "created_at": 1791909329000,
+  "updated_at": 1791909329000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

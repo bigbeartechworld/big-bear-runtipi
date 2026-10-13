@@ -40,16 +40,9 @@ services:
     # Volume mapping for the database
     volumes:
       - ${APP_DATA_DIR}/mysql:/var/lib/mysql
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
   wordpress-v7:
     # Docker image to use for the application
     image: wordpress:7.1.0@sha256:74103f21d460e96abdee0dc304852a00823950bef3cb343ba855e19b6983c31d
-    # Port mapping for the application
-    ports:
-      - ${APP_PORT}:80
     # Environment variables for the application
     environment:
       WORDPRESS_DB_HOST: db
@@ -63,10 +56,8 @@ services:
     depends_on:
       - db
     container_name: wordpress-v7
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+    x-runtipi:
+      is_main: true
+      internal_port: 80
+x-runtipi:
+  schema_version: 2

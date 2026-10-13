@@ -24,15 +24,12 @@ services:
       - CORE_PORT=3000
       - CORE_DATABASE_URL=postgres://postgres:postgrespassword@zipline-db/zipline
       - CORE_LOGGER=true
-    # Ports mapping between host and container
-    ports:
-      # Mapping port 3000 of the host to port 3000 of the container
-      - "${APP_PORT}:3000"
     # Networks to be attached to the container
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - zipline_network
+    x-runtipi:
+      is_main: true
+      internal_port: 3000
   # Postgres database
   zipline-db:
     # Name of the container
@@ -51,9 +48,12 @@ services:
       - ${APP_DATA_DIR}/postgres:/var/lib/postgresql/data
     # Networks to be attached
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - zipline_network
+# Networks to be created
 networks:
-  tipi_main_network:
-    external: true
+  # Network name
+  zipline_network:
+    # Set the driver to bridge
+    driver: bridge
+x-runtipi:
+  schema_version: 2

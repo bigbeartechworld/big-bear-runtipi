@@ -22,9 +22,7 @@ services:
       retries: 30
     # Networks to be used for the container
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - big_bear_send_visee_network
   send-visee:
     # Name of the container (Docker does not have to generate a random name)
     container_name: send-visee
@@ -47,14 +45,15 @@ services:
     volumes:
       # Storage volume
       - ${APP_DATA_DIR}/uploads:/uploads
-    # Ports mapping between host and container
-    ports:
-      # Mapping port 1443 of the host to port 1443 of the container
-      - "${APP_PORT}:1443"
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - big_bear_send_visee_network
+    x-runtipi:
+      is_main: true
+      internal_port: 1443
+# Networks to be used for the containers
 networks:
-  tipi_main_network:
-    external: true
+  big_bear_send_visee_network:
+    # Driver to be used for the network
+    driver: bridge
+x-runtipi:
+  schema_version: 2

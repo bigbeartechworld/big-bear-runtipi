@@ -2,8 +2,6 @@ services:
   paperclip:
     image: ghcr.io/paperclipai/paperclip:latest@sha256:66056e8c979bc2f8ef35083ebd333b7c83224fe3234bd92d251b0bbce1054317
     container_name: paperclip
-    ports:
-      - "${APP_PORT}:3100"
     environment:
       PORT: "3100"
       HOST: 0.0.0.0
@@ -28,9 +26,12 @@ services:
       start_period: 60s
     restart: unless-stopped
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - paperclip_network
+    x-runtipi:
+      is_main: true
+      internal_port: 3100
 networks:
-  tipi_main_network:
-    external: true
+  paperclip_network:
+    driver: bridge
+x-runtipi:
+  schema_version: 2

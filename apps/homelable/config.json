@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "homelable",
   "description": "Homelable 3.5.1 is a self-hosted homelab diagram with live status monitoring.",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "3.5.1",
   "categories": [
     "utilities"
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791868216000,
-  "updated_at": 1791868216000,
+  "created_at": 1791909546000,
+  "updated_at": 1791909546000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

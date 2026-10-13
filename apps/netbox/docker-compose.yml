@@ -28,19 +28,13 @@ services:
       REMOTE_AUTH_AUTO_CREATE_USER: $REMOTE_AUTH_AUTO_CREATE_USER
       REMOTE_AUTH_DEFAULT_GROUPS: $REMOTE_AUTH_DEFAULT_GROUPS
       REMOTE_AUTH_DEFAULT_PERMISSIONS: $REMOTE_AUTH_DEFAULT_PERMISSIONS
-    ports:
-      - target: 8000
-        published: ${APP_PORT}
-        protocol: tcp
     volumes:
       - type: bind
         source: /DATA/AppData/netbox/config
         target: /config
     container_name: netbox
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+    x-runtipi:
+      is_main: true
+      internal_port: 8000
+x-runtipi:
+  schema_version: 2

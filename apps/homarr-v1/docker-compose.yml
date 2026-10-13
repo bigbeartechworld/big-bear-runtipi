@@ -21,14 +21,8 @@ services:
       # Secret encryption key for securing sensitive data (64 character hex string)
       # Generate with: openssl rand -hex 32
       - SECRET_ENCRYPTION_KEY=
-    # Ports mapping between host and container
-    ports:
-      # Mapping port 7575 of the host to port 7575 of the container
-      - "${APP_PORT}:7575"
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+    x-runtipi:
+      is_main: true
+      internal_port: 7575
+x-runtipi:
+  schema_version: 2

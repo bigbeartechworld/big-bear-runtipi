@@ -4,8 +4,6 @@ services:
   onlyoffice:
     image: onlyoffice/documentserver:9.1.0@sha256:34b92f4a67bfd939bd6b75893e8217556e3b977f81e49472f7e28737b741ba1d
     container_name: onlyoffice
-    ports:
-      - "${APP_PORT}:80"
     volumes:
       - ${APP_DATA_DIR}/onlyoffice/logs:/var/log/onlyoffice
       - ${APP_DATA_DIR}/onlyoffice/data:/var/www/onlyoffice/Data
@@ -13,10 +11,8 @@ services:
       - ${APP_DATA_DIR}/onlyoffice/rabbitmq:/var/lib/rabbitmq
       - ${APP_DATA_DIR}/onlyoffice/redis:/var/lib/redis
       - ${APP_DATA_DIR}/onlyoffice/db:/var/lib/postgresql
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+    x-runtipi:
+      is_main: true
+      internal_port: 80
+x-runtipi:
+  schema_version: 2

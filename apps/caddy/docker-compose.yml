@@ -2,16 +2,6 @@ services:
   caddy:
     image: caddy:2.11.7
     restart: unless-stopped
-    ports:
-      - target: 80
-        published: ${APP_PORT}
-        protocol: tcp
-      - target: 443
-        published: 48101
-        protocol: tcp
-      - target: 2019
-        published: 2019
-        protocol: tcp
     volumes:
       - type: bind
         source: /DATA/AppData/caddy/data
@@ -23,10 +13,8 @@ services:
         source: /DATA/AppData/caddy/caddyfile
         target: /etc/caddy/caddyfile
     container_name: caddy
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+    x-runtipi:
+      is_main: true
+      internal_port: 80
+x-runtipi:
+  schema_version: 2

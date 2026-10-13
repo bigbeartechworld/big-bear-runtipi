@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "librespeed",
   "description": "Librespeed is a very lightweight Speedtest implemented in Javascript, using XMLHttpRequest and Web Workers. No Flash, No Java, No Websocket, No Bullshit.",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "6.3.0",
   "categories": [
     "automation"
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791868258000,
-  "updated_at": 1791868258000,
+  "created_at": 1791909610000,
+  "updated_at": 1791909610000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "statping",
   "description": "An easy to use Status Page for your websites and applications. Statping will automatically fetch the application and render a beautiful status page with tons of features for you to build an even better status page.",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "v0.90.74",
   "categories": [
     "utilities"
@@ -20,8 +20,8 @@
     "armv7",
     "arm64"
   ],
-  "created_at": 1791868477000,
-  "updated_at": 1791868477000,
+  "created_at": 1791909881000,
+  "updated_at": 1791909881000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

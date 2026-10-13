@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "photoprism",
   "description": "PhotoPrism® is an AI-Powered Photos App for the Decentralized Web. It makes use of the latest technologies to tag and find pictures automatically without getting in your way. You can run it at home, on a private server, or in the cloud.",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "240915",
   "categories": [
     "utilities"
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791868365000,
-  "updated_at": 1791868365000,
+  "created_at": 1791909773000,
+  "updated_at": 1791909773000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

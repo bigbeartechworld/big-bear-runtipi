@@ -21,21 +21,19 @@ services:
       # Mounting the local /DATA/AppData/$AppID/dnsmasq.d directory to /etc/dnsmasq.d inside the container
       - ${APP_DATA_DIR}/dnsmasq.d:/etc/dnsmasq.d/
     # Ports mapping between host and container
-    ports:
-      - "${APP_PORT}:53/tcp"
-      - "53:53/udp"
-      - "67:67/udp"
-      - "8080:80/tcp"
-      - "10443:443/tcp"
+    ports: ["53:53/tcp", "53:53/udp", "67:67/udp"]
     # Define the networks section
     networks:
       # Define the pihole-network
       - pihole-network
-    labels:
-      runtipi.managed: "true"
+    x-runtipi:
+      is_main: true
+      internal_port: 80
 # Define the networks section
 networks:
   # Define the pihole-network
   pihole-network:
     # Set the driver to bridge
     driver: bridge
+x-runtipi:
+  schema_version: 2

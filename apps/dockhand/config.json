@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "dockhand",
   "description": "Modern, efficient Docker management application providing real-time container management, Compose stack orchestration, and multi-environment support. Features include interactive terminal access, file browser, Git integration, and SSO via OIDC. All in a lightweight, secure and privacy-focused package.",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "latest",
   "categories": [
     "utilities"
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791868126000,
-  "updated_at": 1791868126000,
+  "created_at": 1791909441000,
+  "updated_at": 1791909441000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

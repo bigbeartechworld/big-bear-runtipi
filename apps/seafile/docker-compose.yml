@@ -22,18 +22,14 @@ services:
       timeout: 5s
       retries: 3
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - big_bear_seafile_network
   # Memcached service for seafile
   big-bear-seafile-memcached:
     container_name: big-bear-seafile-memcached
     image: memcached:1.6.39@sha256:462fa779babc9b64a235a69dd843cb79fb3591f229ee1f3ff6cb2ca058d8a759
     entrypoint: memcached -m 256
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - big_bear_seafile_network
   seafile:
     # Name of the container
     container_name: seafile
@@ -49,11 +45,6 @@ services:
         condition: service_started
     volumes:
       - ${APP_DATA_DIR}/shared:/shared
-    # Ports mapping between host and container
-    ports:
-      # Mapping port 8080 of the host to port 80 of the container
-      - "${APP_PORT}:80"
-      # - "443:443"  # If https is enabled, cancel the comment.
     environment:
       - DB_HOST=big-bear-seafile-db # Specifies MySQL service host name.
       - DB_ROOT_PASSWD=seafilepassword # Requested, the value should be root's password of MySQL service.
@@ -64,9 +55,13 @@ services:
       - SEAFILE_SERVER_HOSTNAME=docs.seafile.com # Specifies your host name if https is enabled.
     # Networks to be attached to the container
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - big_bear_seafile_network
+    x-runtipi:
+      is_main: true
+      internal_port: 80
+# Networks used by the application
 networks:
-  tipi_main_network:
-    external: true
+  big_bear_seafile_network:
+    driver: bridge
+x-runtipi:
+  schema_version: 2

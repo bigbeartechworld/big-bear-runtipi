@@ -8,10 +8,6 @@ services:
       - type: bind
         source: /DATA/AppData/$AppID/mysql
         target: /var/lib/mysql
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
   joomla:
     image: joomla:6.1.4-apache
     environment:
@@ -19,19 +15,13 @@ services:
       JOOMLA_DB_PASSWORD: 15311349-803b-40a2-9153-5b13f8d4022e
     depends_on:
       - joomladb
-    ports:
-      - target: 80
-        published: ${APP_PORT}
-        protocol: tcp
     volumes:
       - type: bind
         source: /DATA/AppData/$AppID/www
         target: /var/www/html
     container_name: joomla
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+    x-runtipi:
+      is_main: true
+      internal_port: 80
+x-runtipi:
+  schema_version: 2

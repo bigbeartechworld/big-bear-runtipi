@@ -21,14 +21,6 @@ services:
       # Mount the udev directory from the host to the container
       # This is required for the container to access raw I/O devices
       - /run/udev:/run/udev:ro
-    # Expose the following ports from the container to the host
-    ports:
-      # Map port 8080 from the container to port 38080 on the host.
-      # This allows users to access the Scrutiny web interface from the host.
-      - "${APP_PORT}:8080"
-      # Map port 8086 from the container to port 38086 on the host.
-      # This allows users to access the InfluxDB API from the host.
-      - "38086:8086"
     # Grant the container the capability to access raw I/O devices
     cap_add:
       # The SYS_RAWIO capability allows the container to access raw I/O devices
@@ -59,10 +51,8 @@ services:
       retries: 3
       # The amount of time to wait after the container starts before running the healthcheck
       start_period: 40s
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+x-runtipi:
+  schema_version: 2

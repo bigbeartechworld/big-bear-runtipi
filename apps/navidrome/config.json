@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "navidrome",
   "description": "Modern web-based music server and streamer for your personal music collection.",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "0.64.2",
   "categories": [
     "media"
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791868299000,
-  "updated_at": 1791868299000,
+  "created_at": 1791909680000,
+  "updated_at": 1791909680000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

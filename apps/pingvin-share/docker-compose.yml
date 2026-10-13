@@ -7,10 +7,6 @@ services:
     restart: unless-stopped
     # Service will always restart unless it's manually stopped
 
-    ports:
-      # Port mapping between host and container
-      - ${APP_PORT}:3000
-      # Maps port 3000 on the host to port 3000 in the container
     volumes:
       # Defines volume mounts for the service
       - "/DATA/AppData/pingvin-share/data:/opt/app/backend/data"
@@ -18,10 +14,8 @@ services:
       - "/DATA/AppData/pingvin-share/images:/opt/app/frontend/public/img"
       # Maps images directory from host to container's frontend public img directory
     container_name: pingvin-share
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+    x-runtipi:
+      is_main: true
+      internal_port: 3000
+x-runtipi:
+  schema_version: 2

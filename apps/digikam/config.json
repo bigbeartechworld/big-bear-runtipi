@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "digikam",
   "description": "digiKam: Professional Photo Management with the Power of Open Source",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "9.1.0",
   "categories": [
     "automation"
@@ -18,8 +18,8 @@
   "supported_architectures": [
     "amd64"
   ],
-  "created_at": 1791868118000,
-  "updated_at": 1791868118000,
+  "created_at": 1791909434000,
+  "updated_at": 1791909434000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

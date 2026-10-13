@@ -18,19 +18,11 @@ services:
       MYSQL_PASSWORD: "casaos" # Database user password
       MYSQL_ROOT_PASSWORD: "casaos" # Database root password
       # Container configuration for the cache
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
   cache:
     # Image to use for the cache
     image: redis:8.2.2-alpine@sha256:1c78f5e7512cc8b22b0edc95c20e7abd9e1fd832e5dfd5c3c6b59ce82fb238d0
     # Restart the container automatically if it stops
     restart: always
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
   pterodactyl-panel:
     # Container configuration for the Pterodactyl Panel
     container_name: pterodactyl-panel
@@ -38,10 +30,6 @@ services:
     image: ghcr.io/pterodactyl/panel:v1.12.2@sha256:dd2687b00a532117fe25a88a8acbb34a6fb23a9ca59a76a405735e3cb729efca
     # Restart the container automatically if it stops
     restart: always
-    # Ports mapping: [HOST:CONTAINER]
-    ports:
-      - "${APP_PORT}:80" # Map host port 1180 to container port 80
-      - "11443:443" # Map host port 11443 to container port 443
     # Link this container with the 'database' and 'cache' containers
     links:
       - database
@@ -76,10 +64,8 @@ services:
       DB_PASSWORD: casaos # Database password
       DB_PORT: "3306" # Database port
       DB_CONNECTION: "mariadb" # Use MariaDB connector to avoid mysql binary requirement (v1.12.0+)
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+    x-runtipi:
+      is_main: true
+      internal_port: 80
+x-runtipi:
+  schema_version: 2

@@ -25,9 +25,7 @@ services:
       start_period: 40s
     # Networks
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - rocketchat-v8-net
   rocket-chat-v8:
     # Container name
     # This names the Docker container for easy reference.
@@ -43,10 +41,6 @@ services:
     environment:
       MONGO_OPLOG_URL: mongodb://db:27017/local
       ROOT_URL: http://localhost:3100
-    # Port Mappings
-    # Maps ports from the container to the host system.
-    ports:
-      - "${APP_PORT}:3000" # HostPort:ContainerPort (using 3100 to avoid conflicts with other apps)
     # Dependencies
     # Specifies other services that this service depends on.
     depends_on:
@@ -55,9 +49,14 @@ services:
     # Networks
     # Assigns the app service to a network.
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - rocketchat-v8-net
+    x-runtipi:
+      is_main: true
+      internal_port: 3000
+# Networks
+# Defines the network configurations used by the services.
 networks:
-  tipi_main_network:
-    external: true
+  rocketchat-v8-net:
+    driver: bridge
+x-runtipi:
+  schema_version: 2

@@ -16,14 +16,8 @@ services:
       interval: 5s
       timeout: 5s
       retries: 5
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
   umami:
     image: ghcr.io/umami-software/umami:postgresql-latest@sha256:85909afc45bdcda1917394594a087421fdbb05610fded0fa9f6fb861abb2f367 # Docker image for the Umami app
-    ports:
-      - "${APP_PORT}:3000" # Port mapping: host:container
     environment: # Environment variables for the service
       DATABASE_URL: postgresql://umami:umami@db:5432/umami
       DATABASE_TYPE: postgresql
@@ -33,10 +27,8 @@ services:
         condition: service_healthy
     restart: always # Restart policy
     container_name: umami
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+    x-runtipi:
+      is_main: true
+      internal_port: 3000
+x-runtipi:
+  schema_version: 2

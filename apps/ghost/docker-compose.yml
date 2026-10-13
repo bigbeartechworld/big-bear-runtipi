@@ -22,9 +22,7 @@ services:
       MYSQL_ROOT_PASSWORD: "casaos"
     # Networks used by the service
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - ghost-network
   ghost:
     # Name of the container
     container_name: ghost
@@ -34,7 +32,7 @@ services:
     restart: on-failure
     # Networks used by the service
     networks:
-      - tipi_main_network
+      - ghost-network
     environment:
       # Database configuration for Ghost (see Ghost documentation for more details)
       database__client: mysql
@@ -49,14 +47,16 @@ services:
     # Volume mappings for persistent storage
     volumes:
       - ${APP_DATA_DIR}/content:/var/lib/ghost/content
-    # Port mappings for the service
-    ports:
-      - ${APP_PORT}:2368
     # Dependencies for the service
     depends_on:
       - db
-    labels:
-      runtipi.managed: "true"
+    x-runtipi:
+      is_main: true
+      internal_port: 2368
+# Networks used by the application
 networks:
-  tipi_main_network:
-    external: true
+  # Define the network for AdGuard Home
+  ghost-network:
+    driver: bridge
+x-runtipi:
+  schema_version: 2

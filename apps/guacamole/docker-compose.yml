@@ -7,10 +7,6 @@ services:
     image: guacamole/guacd:1.6.0@sha256:8974eaa9ba32f713daf311e7cc8cd7e4cdfba1edea39eed75524e78ef4b08f4f
     # Restart policy for the container
     restart: always
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
   # mysql service configuration
   mysql:
     image: mysql:5.7@sha256:4bc6bc963e6d8443453676cae56536f4b8156d78bae03c0145cbe47c2aad73bb
@@ -24,10 +20,6 @@ services:
     # Volume mapping for persistent storage
     volumes:
       - ${APP_DATA_DIR}/mysql:/var/lib/mysql
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
   guacamole:
     image: guacamole/guacamole:1.6.0@sha256:f344085e618bb05e22b964b0208dbd06d3468275bac70206f93805245e067b40
     restart: always
@@ -41,14 +33,9 @@ services:
       - MYSQL_DATABASE=guacamole_db
       - MYSQL_USER=guacamole_user
       - MYSQL_PASSWORD=some_password
-    # Map port 8090 on the host to port 8080 on the container
-    ports:
-      - ${APP_PORT}:8080
     container_name: guacamole
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+x-runtipi:
+  schema_version: 2

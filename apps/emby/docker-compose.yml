@@ -6,13 +6,6 @@ services:
       PUID: $PUID
       PGID: $PGID
       TZ: $TZ
-    ports:
-      - target: 8096
-        published: ${APP_PORT}
-        protocol: tcp
-      - target: 8920
-        published: 8920
-        protocol: tcp
     volumes:
       - type: bind
         source: /DATA/AppData/emby/config
@@ -27,10 +20,8 @@ services:
         source: /opt/vc/lib
         target: /opt/vc/lib
     container_name: emby
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+    x-runtipi:
+      is_main: true
+      internal_port: 8096
+x-runtipi:
+  schema_version: 2

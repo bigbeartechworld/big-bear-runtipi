@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "minecraft",
   "description": "This docker image provides a Minecraft Server that will automatically download the latest stable version at startup. You can also run/upgrade to any specific version or the latest snapshot. See the Versions section below for more information.",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "2026.9.2",
   "categories": [
     "utilities"
@@ -20,8 +20,8 @@
     "armv7",
     "arm64"
   ],
-  "created_at": 1791868283000,
-  "updated_at": 1791868283000,
+  "created_at": 1791909660000,
+  "updated_at": 1791909660000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

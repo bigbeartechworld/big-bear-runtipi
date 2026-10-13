@@ -5,8 +5,6 @@ services:
     container_name: snapotter
     image: snapotter/snapotter:2.2.0@sha256:2e11b4fa9138fa93e0fdfde5da3a2d042eebcfa81dd51286488872a3eb8086c8
     restart: unless-stopped
-    ports:
-      - "${APP_PORT}:1349"
     environment:
       - AUTH_ENABLED=true
       - DEFAULT_USERNAME=admin
@@ -25,10 +23,8 @@ services:
       timeout: 10s
       retries: 10
       start_period: 90s
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+    x-runtipi:
+      is_main: true
+      internal_port: 1349
+x-runtipi:
+  schema_version: 2

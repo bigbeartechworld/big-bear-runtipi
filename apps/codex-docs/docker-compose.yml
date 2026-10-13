@@ -3,17 +3,13 @@
 services:
   codex-docs:
     image: ghcr.io/codex-team/codex.docs:v2.2@sha256:c25f47c7f5af84206cef1fcedb2debcd25ba9ce1d4c6e5a33a0f273faff5a41f
-    ports:
-      - "${APP_PORT}:3000"
     volumes:
       - ${APP_DATA_DIR}/uploads:/usr/src/app/uploads
       - ${APP_DATA_DIR}/db:/usr/src/app/db
       - ${APP_DATA_DIR}/codex-docs-config.local.yaml:/usr/src/app/docs-config.yaml
     container_name: codex-docs
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+    x-runtipi:
+      is_main: true
+      internal_port: 3000
+x-runtipi:
+  schema_version: 2

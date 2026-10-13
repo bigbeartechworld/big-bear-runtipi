@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "flame",
   "description": "Flame is a self-hosted startpage for your server. Its design is heavily inspired by SUI. Flame is user-friendly and easy to set up. With its built-in editors, users can quickly establish their own application hub without any file editing.",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "multiarch2.3.1",
   "categories": [
     "utilities"
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791868178000,
-  "updated_at": 1791868178000,
+  "created_at": 1791909496000,
+  "updated_at": 1791909496000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

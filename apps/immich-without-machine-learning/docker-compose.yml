@@ -6,10 +6,6 @@ services:
     container_name: immich-redis # Name of the running container
     image: redis:6.2.20-alpine@sha256:2185e741f4c1e7b0ea9ca1e163a3767c4270a73086b6bbea2049a7203212fb7f # patched for CVE-2025-49844
     restart: always # Policy to always restart the container if it stops
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
   # Configuration for Database service
   database:
     container_name: immich-postgres # Name of the running container
@@ -24,18 +20,9 @@ services:
     volumes: # Mounting directories for persistent data storage
       - /DATA/AppData/big-bear-immich/pgdata:/var/lib/postgresql/data
     restart: always # Policy to always restart the container if it stops
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
   immich-without-machine-learning:
     container_name: immich-without-machine-learning # Name of the running container
     image: ghcr.io/immich-app/immich-server:v3.1.0@sha256:b434cb9287eea1471c9974845914d4dd328c9c2d652e446ed4930f99944f0ceb # Image to be used
-    # extends:
-    #   file: hwaccel.transcoding.yml
-    #   service: cpu # set to one of [nvenc, quicksync, rkmpp, vaapi, vaapi-wsl] for accelerated transcoding
-    ports: # Mapping ports from the host OS to the container
-      - ${APP_PORT}:2283
     volumes: # Mounting directories for persistent data storage
       - /DATA/AppData/big-bear-immich/upload:/usr/src/app/upload
     environment: # Setting environment variables
@@ -49,10 +36,8 @@ services:
       - redis
       - database
     restart: unless-stopped # Policy to restart unless stopped
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+    x-runtipi:
+      is_main: true
+      internal_port: 2283
+x-runtipi:
+  schema_version: 2

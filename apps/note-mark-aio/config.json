@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "note-mark-aio",
   "description": "Note Mark Aio is a self-hosted note taking app that allows you to create, organize, and share notes. It's a fork of the popular note-mark app with a focus on simplicity and ease of use.",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "0.19.4",
   "categories": [
     "utilities"
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791868316000,
-  "updated_at": 1791868316000,
+  "created_at": 1791909702000,
+  "updated_at": 1791909702000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

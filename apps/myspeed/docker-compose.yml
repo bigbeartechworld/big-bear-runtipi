@@ -5,16 +5,12 @@
 services:
   myspeed:
     image: germannewsmaker/myspeed:1.0.9@sha256:3a3e774b3f78d930a5a962d625b99bcb3d71730bfeb4a6b93e04fd38cfe7d9a9 # Docker image to be used for the service
-    ports:
-      - "${APP_PORT}:5216" # Port mapping from host to container
     volumes:
       - ${APP_DATA_DIR}/data:/myspeed/data # Mount host directory to container directory
     restart: unless-stopped # Restart policy for the service
     container_name: myspeed
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+    x-runtipi:
+      is_main: true
+      internal_port: 5216
+x-runtipi:
+  schema_version: 2

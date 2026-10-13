@@ -7,9 +7,7 @@ services:
     image: redis:6.2.20-alpine@sha256:2185e741f4c1e7b0ea9ca1e163a3767c4270a73086b6bbea2049a7203212fb7f # patched for CVE-2025-49844
     restart: always # Policy to always restart the container if it stops
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - big_bear_immich_network # Connects the container to a defined network
   # Configuration for Database service
   big-bear-immich-db:
     container_name: big-bear-immich-db # Name of the running container
@@ -24,14 +22,10 @@ services:
     restart: unless-stopped # Policy to always restart the container if it stops
     # CasaOS specific configuration for the database service
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - big_bear_immich_network # Connects the container to a defined network
   immich-aio-alpine:
     container_name: immich-aio-alpine # Name of the running container
     image: ghcr.io/imagegenius/immich:3.2.2@sha256:cc08fbdcc1eef6e5fd5286667f70be63b8ab027cfac8710901f0b7a0f4c913de # Image to be used
-    ports: # Mapping ports from the host OS to the container
-      - ${APP_PORT}:8080
     volumes: # Mounting directories for persistent data storage
       - ${APP_DATA_DIR}/config:/config
       - ${APP_DATA_DIR}/photos:/usr/src/app/photos
@@ -57,9 +51,12 @@ services:
     restart: unless-stopped # Policy to restart unless stopped
     # Networks to be attached to the container
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
-networks:
-  tipi_main_network:
-    external: true
+      - big_bear_immich_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+networks: # Defines network configurations for the services
+  big_bear_immich_network:
+    driver: bridge # Uses bridge network driver
+x-runtipi:
+  schema_version: 2
