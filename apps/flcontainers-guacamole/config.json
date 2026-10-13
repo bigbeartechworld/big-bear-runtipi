@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "flcontainers-guacamole",
   "description": "A Docker Container for Apache Guacamole, a client-less remote desktop gateway. It supports standard protocols like VNC, RDP, and SSH over HTML5.",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "1.6.0",
   "categories": [
     "utilities"
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791868179000,
-  "updated_at": 1791868179000,
+  "created_at": 1791909497000,
+  "updated_at": 1791909497000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

@@ -2,9 +2,6 @@ services:
   chromium:
     container_name: chromium # Name of the Docker container
     image: linuxserver/chromium:version-6ae43f81@sha256:da269d40b655eb25ca0cd17c87f2e8e34b5b21f3e3eb14143746e40c62cb6951 # Docker image for the chromium browser
-    ports:
-      - "${APP_PORT}:3000" # Expose port 3000 for HTTP VNC access
-      - "3001:3001" # Expose port 3001 for HTTPS VNC access
     environment:
       - PUID=1000
       - PGID=1000
@@ -13,10 +10,8 @@ services:
     shm_size: 1gb # Allocate 1 GB of shared memory
     volumes:
       - ${APP_DATA_DIR}/config:/config # Mount the config directory for persistent data
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+    x-runtipi:
+      is_main: true
+      internal_port: 3000
+x-runtipi:
+  schema_version: 2

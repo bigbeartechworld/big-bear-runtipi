@@ -14,11 +14,7 @@ services:
     environment:
       - TZ=UTC
     # Ports mapping between host and container HOST:CONTAINER
-    ports:
-      - ${APP_PORT}:8443 # Web UI
-      - 8123:8123
-      - 19132:19132/udp
-      - 25500-25600:25500-25600
+    ports: ["19132:19132/udp", "25500-25600:25500-25600"]
     # Volumes mapping between host and container
     volumes:
       - ${APP_DATA_DIR}/data/backups:/crafty/backups
@@ -26,10 +22,8 @@ services:
       - ${APP_DATA_DIR}/data/servers:/crafty/servers
       - ${APP_DATA_DIR}/data/config:/crafty/app/config
       - ${APP_DATA_DIR}/data/import:/crafty/import
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+    x-runtipi:
+      is_main: true
+      internal_port: 8443
+x-runtipi:
+  schema_version: 2

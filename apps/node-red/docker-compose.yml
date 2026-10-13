@@ -10,18 +10,11 @@ services:
     image: nodered/node-red:5.0.8@sha256:b5adb6c9dd29ab80c852d82bc87daed84e729dcff9b00ca1bf958e6de470f2c1
     # Restart policy for the service
     restart: unless-stopped
-    # Port mappings for the service
-    ports:
-      - "${APP_PORT}:1880"
-    # Network mode for the service
-    network_mode: bridge
     # Volumes for the service HOST -> CONTAINER
     volumes:
       - ${APP_DATA_DIR}/data:/data
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+    x-runtipi:
+      is_main: true
+      internal_port: 1880
+x-runtipi:
+  schema_version: 2

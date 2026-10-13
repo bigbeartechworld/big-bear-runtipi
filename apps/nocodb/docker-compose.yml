@@ -15,9 +15,7 @@ services:
     volumes:
       - ${APP_DATA_DIR}/pgdata:/var/lib/postgresql/data # Persistent storage for the database
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - big-bear-nocodb-network # Connects to the custom network
   # Redis service configuration
   big-bear-nocodb-redis:
     image: redis:8.2.2-alpine@sha256:1c78f5e7512cc8b22b0edc95c20e7abd9e1fd832e5dfd5c3c6b59ce82fb238d0 # Specifies the Redis Docker image to use
@@ -32,9 +30,7 @@ services:
       timeout: 3s # Timeout for each health check
       retries: 30 # Number of retries before considering the service unhealthy
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - big-bear-nocodb-network # Connects to the custom network
   nocodb:
     image: nocodb/nocodb:0.301.5@sha256:d9516f0bf546fd6c78a382ab0657626c683fca7aaafdbbe53c66baf15df7fc0d # Specifies the Docker image to use for NocoDB
     container_name: nocodb # Sets a custom name for the container
@@ -43,14 +39,16 @@ services:
       - DATABASE_URL=postgres://nocodb:nocodb@big-bear-nocodb-db:5432/nocodb # Connection string for the PostgreSQL database
       - NC_AUTH_JWT_SECRET=899499fc-36a0-4131-b077-7bb9f051ac9b # JWT secret for authentication
       - NC_REDIS_URL=redis://default:casaos@big-bear-nocodb-redis:6379 # Connection string for Redis
-    ports:
-      - "${APP_PORT}:8080" # Maps port 8080 from the container to the host
     volumes:
       - ${APP_DATA_DIR}/data:/usr/src/app/data # Maps persistent data storage for NocoDB
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - big-bear-nocodb-network # Connects to the custom network
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+# Network configuration
 networks:
-  tipi_main_network:
-    external: true
+  big-bear-nocodb-network:
+    driver: bridge # Uses a bridge network for inter-container communication
+x-runtipi:
+  schema_version: 2

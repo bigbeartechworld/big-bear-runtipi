@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "cura",
   "description": "UltiMaker Cura is free, easy-to-use 3D printing software trusted by millions of users. Fine-tune your 3D model with 400+ settings for the best slicing and printing results.",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "5.13.0",
   "categories": [
     "automation"
@@ -18,8 +18,8 @@
   "supported_architectures": [
     "amd64"
   ],
-  "created_at": 1791868107000,
-  "updated_at": 1791868107000,
+  "created_at": 1791909421000,
+  "updated_at": 1791909421000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

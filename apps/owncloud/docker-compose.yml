@@ -22,9 +22,7 @@ services:
     volumes:
       - ${APP_DATA_DIR}/mysql:/var/lib/mysql
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - big_bear_owncloud_network
   big-bear-owncloud-redis:
     container_name: big-bear-owncloud-redis
     image: redis:6.2.20@sha256:d06ff6ec778c7f2a5c0dfaf58141d598efaa50a89d0e966faedfdf122cef451b
@@ -38,9 +36,7 @@ services:
     volumes:
       - ${APP_DATA_DIR}/redis:/data
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - big_bear_owncloud_network
   owncloud:
     # Name of the container
     container_name: owncloud
@@ -66,13 +62,9 @@ services:
     volumes:
       # Mounting the local owncloud_data directory to /mnt/data inside the container
       - ${APP_DATA_DIR}/data:/mnt/data
-    # Ports mapping between host and container
-    ports:
-      # Mapping port 8080 of the host to port 8080 of the container
-      - "${APP_PORT}:8080"
     # Networks to be attached to the container
     networks:
-      - tipi_main_network
+      - big_bear_owncloud_network
     # Healthcheck configuration for the service
     healthcheck:
       test: ["CMD", "/usr/bin/healthcheck"]
@@ -82,8 +74,12 @@ services:
     depends_on:
       - big-bear-owncloud-db
       - big-bear-owncloud-redis
-    labels:
-      runtipi.managed: "true"
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
 networks:
-  tipi_main_network:
-    external: true
+  big_bear_owncloud_network:
+    name: big_bear_owncloud_network
+    driver: bridge
+x-runtipi:
+  schema_version: 2

@@ -13,10 +13,6 @@ services:
     image: ghcr.io/raylabshq/gitea-mirror:v3.15.10@sha256:2d97c98fd6f32915bbcc247373b9b39606d337cb3fb576980673d842dcaea291
     # Container restart policy
     restart: unless-stopped
-    # Ports mapping between host and container
-    ports:
-      # Mapping port 4321 of the host to port 4321 of the container
-      - "${APP_PORT}:4321"
     # Volumes to be mounted to the container
     volumes:
       # Mounting the local data directory to the container
@@ -42,10 +38,8 @@ services:
       timeout: 10s
       retries: 5
       start_period: 30s
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+    x-runtipi:
+      is_main: true
+      internal_port: 4321
+x-runtipi:
+  schema_version: 2

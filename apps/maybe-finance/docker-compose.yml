@@ -36,9 +36,8 @@ services:
       retries: 5
     # Network configuration for the PostgreSQL service
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      # Use the default Docker network
+      - big_bear_maybe_finance_network
   # Service name: big-bear-maybe-finance-redis
   # The `big-bear-maybe-finance-redis` service definition
   big-bear-maybe-finance-redis:
@@ -64,9 +63,8 @@ services:
       retries: 5
     # Network configuration for the Redis service
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      # Use the default Docker network
+      - big_bear_maybe_finance_network
   maybe-finance:
     # Name of the container
     container_name: maybe-finance
@@ -78,15 +76,12 @@ services:
     privileged: false
     # Uses default network mode
     networks:
-      - tipi_main_network
+      # Use the default Docker network
+      - big_bear_maybe_finance_network
     # Volumes to be mounted to the container
     volumes:
       # Mounting the local maybe/pp-storage directory to /rails/storage inside the container
       - ${APP_DATA_DIR}/MaybeFinance/app-storage:/rails/storage
-    # Ports mapping between host and container
-    ports:
-      # Mapping port 4000 of the host to port 3000 of the container
-      - ${APP_PORT}:3000
     # Environment variables
     environment:
       # Indicates the application is self-hosted
@@ -117,8 +112,13 @@ services:
       big-bear-maybe-finance-redis:
         # Ensures that the `app` service starts only after `redis` is healthy
         condition: service_healthy
-    labels:
-      runtipi.managed: "true"
+    x-runtipi:
+      is_main: true
+      internal_port: 3000
+# Definition of networks used in the services
 networks:
-  tipi_main_network:
-    external: true
+  big_bear_maybe_finance_network:
+    # Custom name for the default network
+    name: big_bear_maybe_finance_network
+x-runtipi:
+  schema_version: 2

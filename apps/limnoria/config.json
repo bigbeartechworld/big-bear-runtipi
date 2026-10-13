@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "limnoria",
   "description": "Limnoria A robust, full-featured, and user/programmer-friendly Python IRC bot, with many existing plugins. Successor of the well-known Supybot.",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "2026.5.8",
   "categories": [
     "automation"
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791868261000,
-  "updated_at": 1791868261000,
+  "created_at": 1791909615000,
+  "updated_at": 1791909615000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

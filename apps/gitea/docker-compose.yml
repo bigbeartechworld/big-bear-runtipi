@@ -3,9 +3,7 @@ services:
     container_name: gitea
     image: gitea/gitea:28.1.0@sha256:f505a0d3a41323b786e05942fc7a4075e07ae7c169fd9485649aa55ee543a21a
     restart: unless-stopped
-    ports:
-      - "${APP_PORT}:3000"
-      - "2222:22"
+    ports: ["2222:22"]
     volumes:
       - ${APP_DATA_DIR}/data:/data
       - /etc/timezone:/etc/timezone:ro
@@ -22,10 +20,8 @@ services:
       timeout: 10s
       retries: 5
       start_period: 60s
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+    x-runtipi:
+      is_main: true
+      internal_port: 3000
+x-runtipi:
+  schema_version: 2

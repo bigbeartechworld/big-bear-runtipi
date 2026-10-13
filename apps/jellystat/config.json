@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "jellystat",
   "description": "Jellystat is a free and open source Statistics App for Jellyfin! (This project is still in development - expect some weirdness)",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "1.1.12",
   "categories": [
     "utilities"
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791868233000,
-  "updated_at": 1791868233000,
+  "created_at": 1791909568000,
+  "updated_at": 1791909568000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

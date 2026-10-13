@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "ardour",
   "description": "Ardour is an open source, collaborative effort of a worldwide team including musicians, programmers, and professional recording engineers.",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "0.0.0",
   "categories": [
     "automation"
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791868028000,
-  "updated_at": 1791868028000,
+  "created_at": 1791909304000,
+  "updated_at": 1791909304000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

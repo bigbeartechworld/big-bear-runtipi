@@ -26,8 +26,6 @@ services:
       OIDC_ENABLED: "false"
     extra_hosts:
       - host.docker.internal:host-gateway
-    ports:
-      - "${APP_PORT}:8080"
     depends_on:
       postgres:
         condition: service_healthy
@@ -35,10 +33,9 @@ services:
         condition: service_healthy
       indelible-silo-init:
         condition: service_completed_successfully
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
   postgres:
     image: pgvector/pgvector:pg18@sha256:2358fcba361ed2233a5ed81b5fe4ca779ccb304120ce531a3bf51c0ed7e2bc11
     container_name: indelible-postgres
@@ -54,10 +51,6 @@ services:
       interval: 5s
       timeout: 5s
       retries: 10
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
   silo:
     image: docker.io/pgsty/silo:RELEASE.2026-08-06T00-00-00Z@sha256:29a498b24669cae1fed11c1a2fb2b3d73c68829a0a9c0b14e71b386671d38fac
     container_name: indelible-silo
@@ -73,10 +66,6 @@ services:
       interval: 5s
       timeout: 5s
       retries: 10
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
   indelible-silo-init:
     image: docker.io/pgsty/silo:RELEASE.2026-08-06T00-00-00Z@sha256:29a498b24669cae1fed11c1a2fb2b3d73c68829a0a9c0b14e71b386671d38fac
     container_name: indelible-silo-init
@@ -92,10 +81,6 @@ services:
       - -c
       - |
         mcli alias set silo http://silo:9000 "$$MINIO_ROOT_USER" "$$MINIO_ROOT_PASSWORD" && mcli mb --ignore-existing silo/indelible
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
   renderer:
     image: ghcr.io/useindelible/ind-renderer:0.1.1@sha256:f43488ff9bc9c413b248a620ba9eed29e583699752305ed4cfbb63383e1af5cf
     container_name: indelible-renderer
@@ -121,10 +106,6 @@ services:
         condition: service_healthy
       silo:
         condition: service_healthy
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
   worker:
     image: ghcr.io/useindelible/ind-worker:0.1.1@sha256:4338ce6da40d7856fc8ad4eef567cfa8b5ec5b13f63a0a7e3bcd24efc394fa28
     container_name: indelible-worker
@@ -152,10 +133,5 @@ services:
         condition: service_started
       indelible-silo-init:
         condition: service_completed_successfully
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+x-runtipi:
+  schema_version: 2

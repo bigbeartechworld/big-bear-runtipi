@@ -36,7 +36,7 @@ services:
       # Note: This setting is not recommended for production environments due to security concerns
       - POSTGRES_HOST_AUTH_METHOD=trust
     networks:
-      - tipi_main_network
+      - big-bear-planka-network
     # Healthcheck configuration to ensure the database service is running properly
     # Runs a command inside the container at specified intervals to check the health of the service
     healthcheck:
@@ -51,8 +51,6 @@ services:
       timeout: 5s
       # Number of consecutive failures needed to consider the service as unhealthy
       retries: 5
-    labels:
-      runtipi.managed: "true"
   planka:
     # Name of the container
     container_name: planka
@@ -65,10 +63,6 @@ services:
       - ${APP_DATA_DIR}/user-avatars:/app/public/user-avatars
       - ${APP_DATA_DIR}/project-background-images:/app/public/project-background-images
       - ${APP_DATA_DIR}/attachments:/app/private/attachments
-    # Ports mapping between host and container for network access
-    ports:
-      # Mapping port 3000 of the host to port 1337 of the container
-      - "${APP_PORT}:1337"
     # Environment variables to be set in the container for application configuration
     environment:
       - BASE_URL=http://[YOUR_CASAOS_LAN_IP]:3000
@@ -102,13 +96,16 @@ services:
       # - OIDC_IGNORE_ROLES=true
       # - OIDC_ENFORCED=true
     networks:
-      - tipi_main_network
+      - big-bear-planka-network
     # Dependency on another service, ensuring it is healthy before starting
     depends_on:
       big-bear-planka-postgres:
         condition: service_healthy
-    labels:
-      runtipi.managed: "true"
+    x-runtipi:
+      is_main: true
+      internal_port: 1337
 networks:
-  tipi_main_network:
-    external: true
+  big-bear-planka-network:
+    driver: bridge
+x-runtipi:
+  schema_version: 2

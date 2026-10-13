@@ -12,9 +12,6 @@ services:
     # Mount the database files to persist data
     volumes:
       - "${APP_DATA_DIR}/db:/var/lib/mysql"
-    # Expose MariaDB port to host
-    ports:
-      - "3306:3306"
     # Database environment configuration
     environment:
       # Root user password
@@ -35,9 +32,7 @@ services:
       retries: 3
     # Connect to the FarmOS network
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - big-bear-farmos-network
   farmos:
     # Name of the container
     container_name: farmos
@@ -49,14 +44,14 @@ services:
     volumes:
       # Mounting the local homarr/configs directory to /app/data/configs inside the container
       - ${APP_DATA_DIR}/sites:/opt/drupal/web/sites
-    # Ports mapping between host and container
-    ports:
-      # Mapping port 8080 of the host to port 80 of the container
-      - "${APP_PORT}:80"
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - big-bear-farmos-network
+    x-runtipi:
+      is_main: true
+      internal_port: 80
 networks:
-  tipi_main_network:
-    external: true
+  big-bear-farmos-network:
+    name: big-bear-farmos-network
+    driver: bridge
+x-runtipi:
+  schema_version: 2

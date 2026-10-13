@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "airsonic-advanced",
   "description": "Airsonic-advanced is a free, web-based media streamer, providing ubiquitious access to your music. Use it to share your music with friends, or to listen to your own music while at work. You can stream to multiple players simultaneously, for instance to one player in your kitchen and another in your living room.",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "11.1.4",
   "categories": [
     "automation"
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791868021000,
-  "updated_at": 1791868021000,
+  "created_at": 1791909293000,
+  "updated_at": 1791909293000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

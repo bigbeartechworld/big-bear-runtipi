@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "gamevault",
   "description": "GameVault 17.0.1 is a self-hosted library for DRM-free games, with a web UI and PostgreSQL.",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "17.0.1",
   "categories": [
     "utilities"
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791868186000,
-  "updated_at": 1791868186000,
+  "created_at": 1791909506000,
+  "updated_at": 1791909506000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

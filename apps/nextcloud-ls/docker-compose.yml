@@ -10,9 +10,6 @@ services:
     image: linuxserver/nextcloud:35.0.1@sha256:da439b3e182df81c65aac2e187e14d8ac4fb4f74902206c32d031ebe8fd10628
     # Restart the container unless stopped
     restart: unless-stopped
-    # Map port 7580 on the host to port 80 on the container
-    ports:
-      - ${APP_PORT}:443
     # Mount the nextcloud-ls_data directory on the host to /var/www/html in the container
     volumes:
       - ${APP_DATA_DIR}/config:/config
@@ -22,10 +19,8 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=Etc/UTC
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+    x-runtipi:
+      is_main: true
+      internal_port: 443
+x-runtipi:
+  schema_version: 2

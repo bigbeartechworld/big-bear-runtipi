@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "websync",
   "description": "Websync is intended to be an rsync task manager, where rsync tasks can be added, scheduled and maintained in a sane manner.",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "latest",
   "categories": [
     "utilities"
@@ -18,8 +18,8 @@
   "supported_architectures": [
     "amd64"
   ],
-  "created_at": 1791868570000,
-  "updated_at": 1791868570000,
+  "created_at": 1791909958000,
+  "updated_at": 1791909958000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

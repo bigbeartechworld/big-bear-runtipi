@@ -10,21 +10,14 @@ services:
     image: 2fauth/2fauth:8.0.2@sha256:50421b873c7e5060e2560290bee39e0ff32ffed76949cdb8c12cd76a2d85fde7
     # Restart policy for the service
     restart: unless-stopped
-    # Port mappings for the service
-    ports:
-      - "${APP_PORT}:8000"
-    # Network mode for the service
-    network_mode: bridge
     # Volumes for the service HOST -> CONTAINER
     volumes:
       - ${APP_DATA_DIR}/data:/2fauth
     # Environment variables for the service
     environment:
       - APP_URL=http://[CHANGE_TO_LAN_IP]:8000
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+    x-runtipi:
+      is_main: true
+      internal_port: 8000
+x-runtipi:
+  schema_version: 2

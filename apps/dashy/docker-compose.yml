@@ -11,9 +11,6 @@ services:
     # Uncomment below if you want to mount volumes
     volumes:
       - ${APP_DATA_DIR}/public:/app/public
-    # Ports mapping
-    ports:
-      - ${APP_PORT}:8080
     # Set any environmental variables
     environment:
       - NODE_ENV=production
@@ -26,10 +23,8 @@ services:
       timeout: 10s
       retries: 3
       start_period: 40s
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+x-runtipi:
+  schema_version: 2

@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "trackie",
   "description": "Trackie is a New Zealand Actual Budget server image. Sign-in is OpenID Connect, and optional per-user Akahu bank tokens are encrypted at rest.",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "26.9.0",
   "categories": [
     "utilities"
@@ -18,8 +18,8 @@
   "supported_architectures": [
     "amd64"
   ],
-  "created_at": 1791868505000,
-  "updated_at": 1791868505000,
+  "created_at": 1791909908000,
+  "updated_at": 1791909908000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

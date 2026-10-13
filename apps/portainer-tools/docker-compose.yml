@@ -9,19 +9,13 @@ services:
       PORTAINER_PASSWORD: ''
       PORTAINER_URL: 0.0.0.0:9000
       SERVER_URL: http://0.0.0.0:9999
-    ports:
-      - target: 9999
-        published: ${APP_PORT}
-        protocol: tcp
     volumes:
       - type: bind
         source: /DATA/AppData/portainer-tools/config
         target: /config
     container_name: portainer-tools
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+    x-runtipi:
+      is_main: true
+      internal_port: 9999
+x-runtipi:
+  schema_version: 2

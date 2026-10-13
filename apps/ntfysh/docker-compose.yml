@@ -10,11 +10,6 @@ services:
     # Environment variables for the service
     environment:
       - TZ=UTC
-    # Port configurations for the service
-    ports:
-      - target: 80 # Container port
-        published: "${APP_PORT}" # Host port
-        protocol: tcp # Protocol type
     # Restart policy for the service
     restart: unless-stopped
     # Volumes to be mounted inside the container
@@ -26,10 +21,8 @@ services:
         source: ${APP_DATA_DIR}/config
         target: /etc/ntfy
     container_name: ntfysh
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+    x-runtipi:
+      is_main: true
+      internal_port: 80
+x-runtipi:
+  schema_version: 2

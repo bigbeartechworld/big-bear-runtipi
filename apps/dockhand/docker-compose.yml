@@ -14,13 +14,8 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock # Docker socket access
       - ${APP_DATA_DIR}/data:/app/data # Application data
-    # Ports mapping between host and container
-    ports:
-      - "${APP_PORT}:3000"
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+    x-runtipi:
+      is_main: true
+      internal_port: 3000
+x-runtipi:
+  schema_version: 2

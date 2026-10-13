@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "rsnapshot",
   "description": "Rsnapshot is a filesystem snapshot utility based on rsync. rsnapshot makes it easy to make periodic snapshots of local machines, and remote machines over ssh. The code makes extensive use of hard links whenever possible, to greatly reduce the disk space required.",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "1.4.5",
   "categories": [
     "automation"
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791868435000,
-  "updated_at": 1791868435000,
+  "created_at": 1791909844000,
+  "updated_at": 1791909844000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

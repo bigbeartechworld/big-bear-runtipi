@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "shotcut",
   "description": "Shotcut is a free, open source, cross-platform video editor.",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "26.8.1",
   "categories": [
     "automation"
@@ -18,8 +18,8 @@
   "supported_architectures": [
     "amd64"
   ],
-  "created_at": 1791868452000,
-  "updated_at": 1791868452000,
+  "created_at": 1791909863000,
+  "updated_at": 1791909863000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

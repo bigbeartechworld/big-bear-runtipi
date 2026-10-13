@@ -30,5 +30,8 @@ services:
     cap_add:
       - net_admin
       - sys_module
-    labels:
-      runtipi.managed: "true"
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+x-runtipi:
+  schema_version: 2

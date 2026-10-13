@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "socket-proxy",
   "description": "This container needs special attention. Please check https://hub.docker.com/r/linuxserver/socket-proxy for details.",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "3.4.6",
   "categories": [
     "automation"
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791868469000,
-  "updated_at": 1791868469000,
+  "created_at": 1791909872000,
+  "updated_at": 1791909872000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

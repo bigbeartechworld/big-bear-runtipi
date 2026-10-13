@@ -21,9 +21,7 @@ services:
     volumes: # Persistent volume mapping for database data
       - ${APP_DATA_DIR}/data/db:/var/lib/postgresql/data
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - big_bear_ghostfolio_network # Connects the service to the defined network
   # Redis service for Ghostfolio, used for caching and session storage
   big-bear-ghostfolio-redis:
     container_name: big-bear-ghostfolio-redis
@@ -41,9 +39,7 @@ services:
     volumes: # Persistent volume mapping for Redis data
       - ${APP_DATA_DIR}/data/redis:/data
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - big_bear_ghostfolio_network # Connects the service to the defined network
   ghostfolio:
     container_name: ghostfolio # Unique name for the container instance
     image: ghostfolio/ghostfolio:3.82.0@sha256:3b87436abfe7daae20a8bd5862bda230d327a5af49a837f888c007863ecb94fb # Docker image to use
@@ -62,17 +58,19 @@ services:
       REDIS_HOST: big-bear-ghostfolio-redis
       REDIS_PASSWORD: casaosredispassword
       REDIS_PORT: "6379"
-    ports:
-      - "${APP_PORT}:3333" # Maps port 3333 on the host to port 3333 on the container
     depends_on: # Dependency definitions ensuring database and Redis are ready
       big-bear-ghostfolio-db:
         condition: service_healthy
       big-bear-ghostfolio-redis:
         condition: service_healthy
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - big_bear_ghostfolio_network # Connects the service to the defined network
+    x-runtipi:
+      is_main: true
+      internal_port: 3333
+# Network definition for inter-service communication
 networks:
-  tipi_main_network:
-    external: true
+  big_bear_ghostfolio_network:
+    driver: bridge # Uses a bridge network for container communication
+x-runtipi:
+  schema_version: 2

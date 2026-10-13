@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "sftpgo",
   "description": "Full-featured and highly configurable SFTP, HTTP/S, FTP/S and WebDAV server - S3, Google Cloud Storage, Azure Blob",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "v2.7",
   "categories": [
     "utilities"
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791868450000,
-  "updated_at": 1791868450000,
+  "created_at": 1791909861000,
+  "updated_at": 1791909861000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

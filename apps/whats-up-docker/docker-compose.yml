@@ -8,12 +8,8 @@ services:
     container_name: whats-up-docker
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-    ports:
-      - ${APP_PORT}:3000
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+    x-runtipi:
+      is_main: true
+      internal_port: 3000
+x-runtipi:
+  schema_version: 2

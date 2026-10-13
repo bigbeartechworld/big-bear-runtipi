@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "msedge",
   "description": "Microsoft Edge is a cross-platform web browser developed by Microsoft and based on Chromium.",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "155.0.4283",
   "categories": [
     "automation"
@@ -18,8 +18,8 @@
   "supported_architectures": [
     "amd64"
   ],
-  "created_at": 1791868291000,
-  "updated_at": 1791868291000,
+  "created_at": 1791909670000,
+  "updated_at": 1791909670000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

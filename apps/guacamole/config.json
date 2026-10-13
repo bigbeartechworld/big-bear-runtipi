@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "guacamole",
   "description": "Apache Guacamole is a free and open-source, cross-platform, clientless remote desktop gateway maintained by the Apache Software Foundation.",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "1.6.0",
   "categories": [
     "utilities"
@@ -18,8 +18,8 @@
   "supported_architectures": [
     "amd64"
   ],
-  "created_at": 1791868201000,
-  "updated_at": 1791868201000,
+  "created_at": 1791909526000,
+  "updated_at": 1791909526000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

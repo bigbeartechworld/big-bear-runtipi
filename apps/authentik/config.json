@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "authentik",
   "description": "Authentik is a self-hosted identity and access management platform that provides a secure and scalable solution for managing user accounts, authentication, and authorization. It offers a range of features, including user management, role-based access control, and multi-factor authentication. Authentik is designed to be easy to use and integrate with your existing systems, making it a great choice for organizations looking to improve their security and compliance.",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "2026.2.2",
   "categories": [
     "utilities"
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791868035000,
-  "updated_at": 1791868035000,
+  "created_at": 1791909313000,
+  "updated_at": 1791909313000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

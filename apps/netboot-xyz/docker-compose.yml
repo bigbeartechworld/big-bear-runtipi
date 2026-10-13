@@ -2,10 +2,7 @@ services:
   netboot-xyz:
     image: ghcr.io/netbootxyz/netbootxyz:0.7.6-nbxyz24@sha256:7bd0964fd3648cd3323772ad6ad8b0a507afe797385e4c0f587a8c23972ee4e3
     container_name: netboot-xyz
-    ports:
-      - "${APP_PORT}:3000"
-      - "69:69/udp"
-      - "8080:80"
+    ports: ["69:69/udp"]
     volumes:
       - ${APP_DATA_DIR}/config:/config
       - ${APP_DATA_DIR}/assets:/assets
@@ -14,10 +11,8 @@ services:
       - WEB_APP_PORT=3000
       - TZ=UTC
     restart: unless-stopped
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+    x-runtipi:
+      is_main: true
+      internal_port: 3000
+x-runtipi:
+  schema_version: 2

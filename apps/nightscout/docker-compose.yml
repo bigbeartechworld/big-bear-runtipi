@@ -10,12 +10,10 @@ services:
     image: mongo:4.4@sha256:4be76f674fc4b27859816811b8baa3c51830eb1dbf4ca81a51e26b79edd662ef
     # Networks for the MongoDB container
     networks:
-      - tipi_main_network
+      - big-bear-nightscout-network
     # Volume mappings for the MongoDB container
     volumes:
       - ${APP_DATA_DIR}/mongo-data:/data/db:cached
-    labels:
-      runtipi.managed: "true"
   nightscout:
     # Name of the container
     container_name: nightscout
@@ -23,9 +21,6 @@ services:
     image: nightscout/cgm-remote-monitor:15.0.8@sha256:462266b2dac62f7fddc4656051039e53449f649d2a38851d6decd3a8b42e7301
     # Container restart policy
     restart: unless-stopped
-    # Port mappings for the container
-    ports:
-      - "${APP_PORT}:1337"
     # Environment variables for the container
     environment:
       ### Variables for the container
@@ -61,9 +56,13 @@ services:
       - big-bear-nightscout-mongo
     # Networks for the container
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - big-bear-nightscout-network
+    x-runtipi:
+      is_main: true
+      internal_port: 1337
+# Network definitions
 networks:
-  tipi_main_network:
-    external: true
+  big-bear-nightscout-network:
+    driver: bridge
+x-runtipi:
+  schema_version: 2

@@ -10,17 +10,11 @@ services:
     image: ghcr.io/dgtlmoon/changedetection.io:0.55.3@sha256:2d0030e12494be9ebf6a6ebbbad46afe5763f498bbfefe9ebb7f0bf6be3ca5dc
     # Container restart policy
     restart: unless-stopped
-    # Ports mapping between host and container
-    ports:
-      # Mapping port 5000 of the host to port 5000 of the container
-      - "${APP_PORT}:5000"
     # Volumes to be mounted to the container
     volumes:
       - ${APP_DATA_DIR}/datastore:/datastore
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+    x-runtipi:
+      is_main: true
+      internal_port: 5000
+x-runtipi:
+  schema_version: 2

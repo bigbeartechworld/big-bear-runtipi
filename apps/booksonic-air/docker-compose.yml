@@ -7,10 +7,6 @@ services:
       PGID: $PGID
       TZ: $TZ
       CONTEXT_PATH: ''
-    ports:
-      - target: 4040
-        published: ${APP_PORT}
-        protocol: tcp
     volumes:
       - type: bind
         source: /DATA/AppData/booksonic-air/config
@@ -25,10 +21,8 @@ services:
         source: /DATA/AppData/booksonic-air/othermedia
         target: /othermedia
     container_name: booksonic-air
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+    x-runtipi:
+      is_main: true
+      internal_port: 4040
+x-runtipi:
+  schema_version: 2

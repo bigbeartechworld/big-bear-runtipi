@@ -11,10 +11,6 @@ services:
       MAXCLIENTS: ''
       LOGFILE: ''
       BINDFAMILY: ''
-    ports:
-      - target: 22
-        published: ${APP_PORT}
-        protocol: tcp
     volumes:
       - type: bind
         source: /DATA/AppData/endlessh/config
@@ -23,10 +19,8 @@ services:
         source: /DATA/AppData/endlessh/config
         target: /config
     container_name: endlessh
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+    x-runtipi:
+      is_main: true
+      internal_port: 22
+x-runtipi:
+  schema_version: 2

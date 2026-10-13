@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "retroarch",
   "description": "RetroArch is a frontend for emulators, game engines and media players. It enables you to run classic games on a wide range of computers and consoles through its slick graphical interface.",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "1.22.2",
   "categories": [
     "automation"
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791868425000,
-  "updated_at": 1791868425000,
+  "created_at": 1791909835000,
+  "updated_at": 1791909835000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

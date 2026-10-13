@@ -32,12 +32,13 @@ services:
     volumes:
       - ${APP_DATA_DIR}/data:/home/filebrowser/data
       - ${APP_DATA_DIR}/srv:/srv
-    ports:
-      - "${APP_PORT}:80"
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - big-bear-filebrowser-quantum-v2-network
+    x-runtipi:
+      is_main: true
+      internal_port: 80
 networks:
-  tipi_main_network:
-    external: true
+  big-bear-filebrowser-quantum-v2-network:
+    driver: bridge
+x-runtipi:
+  schema_version: 2

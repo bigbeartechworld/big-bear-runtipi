@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "kicad",
   "description": "KiCad - A Cross Platform and Open Source Electronics Design Automation Suite.",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "10.0.3",
   "categories": [
     "automation"
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791868245000,
-  "updated_at": 1791868245000,
+  "created_at": 1791909583000,
+  "updated_at": 1791909583000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

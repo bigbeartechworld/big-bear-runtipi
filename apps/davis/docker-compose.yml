@@ -12,13 +12,8 @@ services:
       - ${APP_DATA_DIR}/mailpit/data:/data
     environment: # Environment variables for the app service
       - TZ=UTC
-    ports: # Ports to expose for the app service
-      - "8025:8025"
-      - "1025:1025"
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - big-bear-davis-network
   # Service name: big-bear-mysql
   big-bear-davis-mysql:
     container_name: big-bear-davis-mysql
@@ -31,14 +26,12 @@ services:
     volumes:
       - ${APP_DATA_DIR}/mysql:/var/lib/mysql
     networks:
-      - tipi_main_network
+      - big-bear-davis-network
     healthcheck:
       test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
       interval: 10s
       retries: 5
       timeout: 5s
-    labels:
-      runtipi.managed: "true"
   davis:
     # Name of the container
     container_name: davis
@@ -64,16 +57,16 @@ services:
       - WEBDAV_HOMES_DIR=
       - INVITE_FROM_ADDRESS=
       - APP_TIMEZONE=UTC
-    # Ports to be exposed from the container
-    ports:
-      - ${APP_PORT}:9000
     networks:
-      - tipi_main_network
+      - big-bear-davis-network
     depends_on:
       - big-bear-davis-mysql
       - big-bear-davis-mailpit
-    labels:
-      runtipi.managed: "true"
+    x-runtipi:
+      is_main: true
+      internal_port: 9000
 networks:
-  tipi_main_network:
-    external: true
+  big-bear-davis-network:
+    driver: bridge
+x-runtipi:
+  schema_version: 2

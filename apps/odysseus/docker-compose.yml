@@ -20,9 +20,7 @@ services:
       # ChromaDB persistence
       - ${APP_DATA_DIR}/chromadb:/chroma/chroma
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - big_bear_odysseus_network
   # Service name: searxng
   # Web search backend; settings seeded into the named volume on first run
   searxng:
@@ -78,9 +76,7 @@ services:
       retries: 20
       start_period: 10s
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - big_bear_odysseus_network
   # Service name: ntfy
   # Optional notification service
   ntfy:
@@ -103,9 +99,7 @@ services:
       # ntfy cache
       - ${APP_DATA_DIR}/ntfy:/var/cache/ntfy
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - big_bear_odysseus_network
   odysseus:
     # Name of the container
     container_name: odysseus
@@ -113,10 +107,6 @@ services:
     image: bigbeartechworld/big-bear-odysseus:2026.10.05@sha256:9229314941f0f6ba9608232f57408f5a835e133abb6c770567f50abd1c1cb41e
     # Container restart policy
     restart: unless-stopped
-    # Ports mapping between host and container
-    ports:
-      # Mapping port 7000 of the host to port 7000 of the container
-      - "${APP_PORT}:7000"
     environment:
       # Process user ID
       - PUID=1000
@@ -152,9 +142,13 @@ services:
       retries: 3
       start_period: 40s
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - big_bear_odysseus_network
+    x-runtipi:
+      is_main: true
+      internal_port: 7000
+# Network configuration
 networks:
-  tipi_main_network:
-    external: true
+  big_bear_odysseus_network:
+    driver: bridge
+x-runtipi:
+  schema_version: 2

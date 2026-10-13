@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "your-spotify",
   "description": "Your_spotify is a self-hosted application that tracks what you listen and offers you a dashboard to explore statistics about it! It's composed of a web server which polls the Spotify API every now and then and a web application on which you can explore your statistics.",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "1.20.0",
   "categories": [
     "automation"
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791868587000,
-  "updated_at": 1791868587000,
+  "created_at": 1791909987000,
+  "updated_at": 1791909987000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

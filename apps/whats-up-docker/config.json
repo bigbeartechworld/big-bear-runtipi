@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "whats-up-docker",
   "description": "Gets you notified when new versions of your Docker containers are available and lets you react the way you want.",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "6.6.1",
   "categories": [
     "utilities"
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791868575000,
-  "updated_at": 1791868575000,
+  "created_at": 1791909965000,
+  "updated_at": 1791909965000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

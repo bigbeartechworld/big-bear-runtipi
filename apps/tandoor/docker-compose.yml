@@ -15,15 +15,13 @@ services:
       - POSTGRES_DB=tandoordb
     restart: unless-stopped
     networks:
-      - tipi_main_network
+      - big_bear_tandoor_network
     healthcheck:
       test: ["CMD-SHELL", "pg_isready", "-d", "tandoor"]
       interval: 10s
       timeout: 5s
       retries: 5
       start_period: 30s
-    labels:
-      runtipi.managed: "true"
   tandoor:
     # Name of the container
     container_name: tandoor
@@ -35,10 +33,6 @@ services:
     volumes:
       - ${APP_DATA_DIR}/staticfiles:/opt/recipes/staticfiles
       - ${APP_DATA_DIR}/mediafiles:/opt/recipes/mediafiles
-    # Ports mapping between host and container
-    ports:
-      # Mapping port 8080 of the host to port 8080 of the container
-      - "${APP_PORT}:8080"
     # Environment variables to be passed to the container
     environment:
       - SECRET_KEY=6496f725-e4a4-4fa5-9f7b-db0114bc1568
@@ -50,13 +44,17 @@ services:
       - POSTGRES_DB=tandoordb
     # Network to be used by the container
     networks:
-      - tipi_main_network
+      - big_bear_tandoor_network
     # Healthcheck configuration for the container
     depends_on:
       big-bear-tandoor-db:
         condition: service_healthy
-    labels:
-      runtipi.managed: "true"
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+# Network definitions for the big-bear-tandoor application
 networks:
-  tipi_main_network:
-    external: true
+  big_bear_tandoor_network:
+    driver: bridge
+x-runtipi:
+  schema_version: 2

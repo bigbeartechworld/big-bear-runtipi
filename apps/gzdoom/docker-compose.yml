@@ -1,27 +1,18 @@
 services:
   gzdoom:
-    image: linuxserver/gzdoom:4.14.2@sha256:8478fecca91fbb34a975b4822fb5d391a354873e118a9cb6d99ed0a85ea82023
+    image: linuxserver/gzdoom:4.14.2@sha256:1af282b7d2cf2bfe27a030c4f2ba6142109a3a93db4bdd466fbbbddc3e8ef7fe
     restart: unless-stopped
     environment:
       PUID: $PUID
       PGID: $PGID
       TZ: $TZ
-    ports:
-      - target: 3000
-        published: ${APP_PORT}
-        protocol: tcp
-      - target: 3001
-        published: 3001
-        protocol: tcp
     volumes:
       - type: bind
         source: /DATA/AppData/gzdoom/config
         target: /config
     container_name: gzdoom
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+    x-runtipi:
+      is_main: true
+      internal_port: 3000
+x-runtipi:
+  schema_version: 2

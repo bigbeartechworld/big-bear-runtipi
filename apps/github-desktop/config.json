@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "github-desktop",
   "description": "Github Desktop is an open source Electron-based GitHub app. It is written in TypeScript and uses React.",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "3.4.13",
   "categories": [
     "automation"
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791868193000,
-  "updated_at": 1791868193000,
+  "created_at": 1791909516000,
+  "updated_at": 1791909516000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

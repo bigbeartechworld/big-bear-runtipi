@@ -2,17 +2,13 @@ services:
   jlesage-firefox:
     container_name: jlesage-firefox # Name of the Docker container
     image: jlesage/firefox:v26.09.1@sha256:302aa068dcfa46a2d248771c998f67377383554df8940252caef42b99c13eb65 # Docker image for the Firefox browser
-    ports:
-      - "${APP_PORT}:5800" # Expose port 5800 for VNC access
     environment:
       - VNC_PASSWORD=casaos # Set the VNC password to 'casaos'
       - FF_OPEN_URL=https://community.bigbeartechworld.com/ # Set the default URL to Big Bear Tech World
     volumes:
       - ${APP_DATA_DIR}/config:/config:rw # Mount the host directory to the container's Downloads directory
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+    x-runtipi:
+      is_main: true
+      internal_port: 5800
+x-runtipi:
+  schema_version: 2

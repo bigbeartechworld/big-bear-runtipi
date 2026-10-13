@@ -14,9 +14,7 @@ services:
       - POSTGRES_USER=bigbear
       - POSTGRES_DB=bigbear_calcom
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - big_bear_calcom_network
   calcom:
     # Name of the container
     container_name: calcom
@@ -51,14 +49,13 @@ services:
     # Volumes to be mounted to the container
     volumes:
       - ${APP_DATA_DIR}/config:/config
-    # Ports mapping between host and container
-    ports:
-      - ${APP_PORT}:3000
-      - 3001:3001
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - big_bear_calcom_network
+    x-runtipi:
+      is_main: true
+      internal_port: 3000
 networks:
-  tipi_main_network:
-    external: true
+  big_bear_calcom_network:
+    driver: bridge
+x-runtipi:
+  schema_version: 2

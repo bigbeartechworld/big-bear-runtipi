@@ -1,16 +1,12 @@
 services:
   dashdot:
     image: mauricenino/dashdot:6.3.4@sha256:434a54d2937411a06b09c50e55709cc7d3b092c0fe173a9e5c986f9b5a33c7c6
-    ports:
-      - "${APP_PORT}:3001"
     volumes:
       - ${APP_DATA_DIR}/data:/mnt/host
     privileged: true
     container_name: dashdot
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+    x-runtipi:
+      is_main: true
+      internal_port: 3001
+x-runtipi:
+  schema_version: 2

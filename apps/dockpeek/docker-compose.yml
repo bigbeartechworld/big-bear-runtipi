@@ -23,13 +23,8 @@ services:
     # Volumes to be mounted to the container
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-    # Ports mapping between host and container
-    ports:
-      - ${APP_PORT}:8000
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+    x-runtipi:
+      is_main: true
+      internal_port: 8000
+x-runtipi:
+  schema_version: 2

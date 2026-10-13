@@ -6,9 +6,6 @@ services:
     container_name: glances
     # Docker image to use
     image: nicolargo/glances:4.5.3.2-full@sha256:2d16ab0fdba4b9f61b327f78dbb8a7e7931f4967be8e1db4d37326e4680e8433
-    # Port mapping between host and container
-    ports:
-      - ${APP_PORT}:61208
     # Environment variables
     environment:
       - TZ=UTC # Timezone
@@ -20,10 +17,8 @@ services:
     # Volumes to mount into the container
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro # Docker socket for monitoring
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+    x-runtipi:
+      is_main: true
+      internal_port: 61208
+x-runtipi:
+  schema_version: 2

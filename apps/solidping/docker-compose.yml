@@ -9,8 +9,6 @@ services:
     # Needed for ICMP ping checks.
     cap_add:
       - NET_RAW
-    ports:
-      - "${APP_PORT}:4000"
     volumes:
       - ${APP_DATA_DIR}/data:/data
     healthcheck:
@@ -19,10 +17,8 @@ services:
       timeout: 5s
       retries: 3
       start_period: 15s
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+    x-runtipi:
+      is_main: true
+      internal_port: 4000
+x-runtipi:
+  schema_version: 2

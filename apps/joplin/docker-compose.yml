@@ -15,9 +15,7 @@ services:
       - POSTGRES_USER=bigbear # Username for the database, intended for CasaOS usage.
       - POSTGRES_DB=joplin # Specifies the database used for storing Joplin data.
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - big_bear_joplin_network # Ensures database container is on the same network as the Joplin server.
   joplin:
     container_name: joplin # The name of the Docker container for easy reference.
     image: joplin/server:3.7.2@sha256:3f7b852959aac38da10e3a451823bf149cbae6e74d8258db5b6e6e7f0db50c26 # Docker image to use, specifying version.
@@ -33,15 +31,16 @@ services:
       - POSTGRES_PORT=5432 # Port for connecting to the PostgreSQL database.
       - POSTGRES_HOST=big-bear-joplin-db # Hostname of the PostgreSQL database container.
       - MAX_TIME_DRIFT=0 # Maximum allowed time drift for synchronization.
-    # Ports mapping from host to container, for network access to the Joplin server.
-    ports:
-      - "${APP_PORT}:22300" # Maps port 22300 on the host to port 22300 on the container.
     networks:
-      - tipi_main_network
+      - big_bear_joplin_network # Connects the container to a defined network for inter-container communication.
     depends_on:
       - big-bear-joplin-db # Specifies the database service as a dependency for the Joplin server.
-    labels:
-      runtipi.managed: "true"
+    x-runtipi:
+      is_main: true
+      internal_port: 22300
+# Network configuration for the services to communicate internally.
 networks:
-  tipi_main_network:
-    external: true
+  big_bear_joplin_network:
+    driver: bridge # Uses a bridge network for inter-container communication.
+x-runtipi:
+  schema_version: 2

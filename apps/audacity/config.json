@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "audacity",
   "description": "Audacity is an easy-to-use, multi-track audio editor and recorder. Developed by a group of volunteers as open source.",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "4.0.1",
   "categories": [
     "automation"
@@ -18,8 +18,8 @@
   "supported_architectures": [
     "amd64"
   ],
-  "created_at": 1791868031000,
-  "updated_at": 1791868031000,
+  "created_at": 1791909308000,
+  "updated_at": 1791909308000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

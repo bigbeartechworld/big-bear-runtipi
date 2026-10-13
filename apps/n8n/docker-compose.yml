@@ -20,16 +20,10 @@ services:
       interval: 5s
       timeout: 5s
       retries: 10
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
   n8n:
     container_name: n8n # Name of the n8n container
     image: n8nio/n8n:2.43.3@sha256:d4eca183959b30fb1ba5ecda7e58363c5be49a7bcf8c0227a6384a47ce2f7a65 # Docker image and version to use for n8n
     restart: unless-stopped # Restart policy: Restart unless manually stopped
-    ports:
-      - ${APP_PORT}:5678 # Port mapping between host and container
     links:
       - db-n8n # Link to the database container
     volumes:
@@ -45,10 +39,8 @@ services:
     depends_on:
       db-n8n:
         condition: service_healthy # Ensure DB is healthy before starting app
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+    x-runtipi:
+      is_main: true
+      internal_port: 5678
+x-runtipi:
+  schema_version: 2

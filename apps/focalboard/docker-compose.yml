@@ -10,18 +10,11 @@ services:
     image: mattermost/focalboard:7.11.4@sha256:c935a2879dc7bcb8243a562afea21a30edbb6dbe029b53a9c0ae7ab4b3255c54
     # Restart policy for the service
     restart: unless-stopped
-    # Port mappings for the service
-    ports:
-      - "${APP_PORT}:8000"
-    # Network mode for the service
-    network_mode: bridge
     # Volumes for the service HOST -> CONTAINER
     volumes:
       - ${APP_DATA_DIR}/data:/opt/focalboard/data
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+    x-runtipi:
+      is_main: true
+      internal_port: 8000
+x-runtipi:
+  schema_version: 2

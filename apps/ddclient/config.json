@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "ddclient",
   "description": "Ddclient is a Perl client used to update dynamic DNS entries for accounts on Dynamic DNS Network Service Provider. It was originally written by Paul Burry and is now mostly by wimpunk. It has the capability to update more than just dyndns and it can fetch your WAN-ipaddress in a few different ways.",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "4.0.0",
   "categories": [
     "automation"
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791868117000,
-  "updated_at": 1791868117000,
+  "created_at": 1791909433000,
+  "updated_at": 1791909433000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

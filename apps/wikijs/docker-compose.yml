@@ -12,10 +12,6 @@ services:
       DB_NAME: $DB_NAME
       DB_USER: $DB_USER
       DB_PASS: $DB_PASS
-    ports:
-      - target: 3000
-        published: ${APP_PORT}
-        protocol: tcp
     volumes:
       - type: bind
         source: /DATA/AppData/wikijs/config
@@ -24,10 +20,8 @@ services:
         source: /DATA/AppData/wikijs/data
         target: /data
     container_name: wikijs
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+    x-runtipi:
+      is_main: true
+      internal_port: 3000
+x-runtipi:
+  schema_version: 2

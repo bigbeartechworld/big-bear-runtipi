@@ -17,15 +17,15 @@ services:
     volumes:
       # Mounting the local /config directory to /config inside the container
       - ${APP_DATA_DIR}/data:/data
-    # Ports mapping between host and container
-    ports:
-      # Mapping port 8000 of the host to port 8000 of the container
-      - "${APP_PORT}:8000"
     # Networks to be attached to the container
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - big_bear_note_mark_aio_network
+    x-runtipi:
+      is_main: true
+      internal_port: 8000
+# Network definitions for the big-bear-note-mark-aio application
 networks:
-  tipi_main_network:
-    external: true
+  big_bear_note_mark_aio_network:
+    driver: bridge
+x-runtipi:
+  schema_version: 2

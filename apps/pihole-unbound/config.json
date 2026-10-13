@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "pihole-unbound",
   "description": "This is a custom pihole and unbound setup.",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "7db29f755beeda43d9e1565399c0b77916533c51ea9e6c05c48e7b0f5675c57f",
   "categories": [
     "utilities"
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791868370000,
-  "updated_at": 1791868370000,
+  "created_at": 1791909779000,
+  "updated_at": 1791909779000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

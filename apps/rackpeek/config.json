@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "rackpeek",
   "description": "A webui and CLI tool to discover, manage, and document your home lab and small-scale IT infrastructure. Track hardware, services, networks, and their relationships using open, non-proprietary YAML.",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "v2.1.0",
   "categories": [
     "utilities"
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791868413000,
-  "updated_at": 1791868413000,
+  "created_at": 1791909822000,
+  "updated_at": 1791909822000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

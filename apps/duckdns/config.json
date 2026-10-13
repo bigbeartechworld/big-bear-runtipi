@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "duckdns",
   "description": "Duckdns is a free service which will point a DNS (sub domains of duckdns.org) to an IP of your choice. The service is completely free, and doesn't require reactivation or forum posts to maintain its existence.",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "0.0.0",
   "categories": [
     "automation"
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791868146000,
-  "updated_at": 1791868146000,
+  "created_at": 1791909460000,
+  "updated_at": 1791909460000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

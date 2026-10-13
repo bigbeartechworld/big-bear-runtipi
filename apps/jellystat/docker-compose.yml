@@ -13,9 +13,7 @@ services:
     volumes:
       - ${APP_DATA_DIR}/postgres-data:/var/lib/postgresql/data # Mounting the volume
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - big-bear-jellystat-network
   jellystat:
     # Name of the container
     container_name: jellystat
@@ -32,14 +30,14 @@ services:
     # Volumes to be mounted to the container
     volumes:
       - ${APP_DATA_DIR}/backup-data:/app/backend/backup-data
-    # Ports mapping between host and container
-    ports:
-      # Mapping port 3000 of the host to port 3000 of the container
-      - "${APP_PORT}:3000"
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - big-bear-jellystat-network
+    x-runtipi:
+      is_main: true
+      internal_port: 3000
 networks:
-  tipi_main_network:
-    external: true
+  big-bear-jellystat-network:
+    name: big-bear-jellystat-network
+    driver: bridge
+x-runtipi:
+  schema_version: 2

@@ -38,12 +38,8 @@ services:
       # stay put. Set DB_DIALECT to postgresql and DB_URL to that database to migrate one.
       - DB_DIALECT=sqlite
       - DB_URL=/appdata/db/db.sqlite
-    ports:
-      - "${APP_PORT}:7575"
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+    x-runtipi:
+      is_main: true
+      internal_port: 7575
+x-runtipi:
+  schema_version: 2

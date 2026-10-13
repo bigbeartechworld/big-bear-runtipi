@@ -1,8 +1,6 @@
 services:
   spoolman:
     image: ghcr.io/donkie/spoolman:0.23.1@sha256:c798bcc19194949962044459e4b43c09d667d084ae9c2c2e0187a42c36d43d9e # Image to use for the spoolman service
-    ports:
-      - "${APP_PORT}:8000" # Maps port 7912 on the host to port 8000 on the container
     volumes:
       - ${APP_DATA_DIR}/data:/home/app/.local/share/spoolman # Binds a volume from host to container for data storage
     environment:
@@ -11,12 +9,9 @@ services:
       - SPOOLMAN_LOGGING_LEVEL=INFO # Logging level (DEBUG, INFO, WARNING, ERROR, CRITICAL)
       - SPOOLMAN_AUTOMATIC_BACKUP=TRUE # Enable automatic nightly backups for SQLite
     restart: unless-stopped # Service will restart unless it is explicitly stopped
-    network_mode: bridge # Uses bridge network mode
     container_name: spoolman
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+    x-runtipi:
+      is_main: true
+      internal_port: 8000
+x-runtipi:
+  schema_version: 2

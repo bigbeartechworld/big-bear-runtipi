@@ -8,8 +8,6 @@ services:
         condition: service_completed_successfully
       api:
         condition: service_started
-    ports:
-      - "${APP_PORT}:80"
     environment:
       NGINX_PORT: "80"
       BACKEND: api
@@ -21,10 +19,9 @@ services:
     volumes:
       - ${APP_DATA_DIR}/data/media/img:/usr/share/nginx/html/img:ro
       - ${APP_DATA_DIR}/data/media/gif:/usr/share/nginx/html/gif:ro
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 80
   api:
     image: registry.gitlab.com/duartesantos8/opengym/api:1.3.9@sha256:88b192dd743ed3746ddeeb973952bdf380c810d6b69337b8205d96d053d7962f
     container_name: opengym-api
@@ -39,10 +36,6 @@ services:
     volumes:
       - ${APP_DATA_DIR}/data:/data
       - ${APP_DATA_DIR}/data/coach-auth:/coach-auth
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
   media:
     image: alpine/git:2.54.0@sha256:ce84fd6a057b4dc5cf5009da2dd832f1c6d096c1984bf50496cf3c256402264d
     container_name: opengym-media
@@ -60,10 +53,5 @@ services:
     volumes:
       - ${APP_DATA_DIR}/data/media/img:/out/img
       - ${APP_DATA_DIR}/data/media/gif:/out/gif
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+x-runtipi:
+  schema_version: 2

@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "darktable",
   "description": "darktable is an open source photography workflow application and raw developer. A virtual lighttable and darkroom for photographers. It manages your digital negatives in a database, lets you view them through a zoomable lighttable and enables you to develop raw images and enhance them.",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "25.6.2",
   "categories": [
     "automation"
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791868110000,
-  "updated_at": 1791868110000,
+  "created_at": 1791909425000,
+  "updated_at": 1791909425000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

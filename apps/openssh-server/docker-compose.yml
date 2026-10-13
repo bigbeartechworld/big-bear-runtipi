@@ -16,19 +16,13 @@ services:
       USER_PASSWORD_FILE: ''
       USER_NAME: ''
       LOG_STDOUT: ''
-    ports:
-      - target: 2222
-        published: ${APP_PORT}
-        protocol: tcp
     volumes:
       - type: bind
         source: /DATA/AppData/openssh-server/config
         target: /config
     container_name: openssh-server
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+    x-runtipi:
+      is_main: true
+      internal_port: 2222
+x-runtipi:
+  schema_version: 2

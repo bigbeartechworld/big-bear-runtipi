@@ -10,14 +10,8 @@ services:
     image: ghcr.io/deiucanta/chatpad:f45cd53bc410412610c1ba1cbd84cd137d8e167d@sha256:b0b2364a3ad97812bd88c1f33541ba4281e0bbff1878b509cef354ae7ec3278d
     # Container restart policy
     restart: unless-stopped
-    # Ports mapping between host and container
-    ports:
-      # Mapping port 8080 of the host to port 80 of the container
-      - "${APP_PORT}:80"
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+    x-runtipi:
+      is_main: true
+      internal_port: 80
+x-runtipi:
+  schema_version: 2

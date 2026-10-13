@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "pycharm",
   "description": "PyCharm offers out-of-the-box support for Python, databases, Jupyter, Git, Conda, PyTorch, TensorFlow, Hugging Face, Django, Flask, FastAPI, and more.",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "2026.2.20260811",
   "categories": [
     "automation"
@@ -18,8 +18,8 @@
   "supported_architectures": [
     "amd64"
   ],
-  "created_at": 1791868406000,
-  "updated_at": 1791868406000,
+  "created_at": 1791909814000,
+  "updated_at": 1791909814000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

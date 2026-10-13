@@ -2,16 +2,11 @@ services:
   nova-dso-tracker:
     image: mrantonsg/nova-dso-tracker:6.8.0@sha256:86b2a5d93a2e3519e2a8184a108acc70067ce9f2b477cd99ed827216ea427acf
     container_name: nova-dso-tracker
-    ports:
-      - "${APP_PORT}:5001"
     volumes:
       - ${APP_DATA_DIR}/instance:/app/instance
     restart: unless-stopped
-    network_mode: bridge
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+    x-runtipi:
+      is_main: true
+      internal_port: 5001
+x-runtipi:
+  schema_version: 2

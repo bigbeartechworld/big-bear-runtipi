@@ -23,9 +23,7 @@ services:
       MARIADB_ROOT_PASSWORD: "casaos"
     # Network configurations for the database
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - photoprism-network
   photoprism:
     # Name of the container
     container_name: photoprism
@@ -64,17 +62,20 @@ services:
       # Mount points for originals and storage
       - "${APP_DATA_DIR}/originals:/photoprism/originals"
       - "${APP_DATA_DIR}/storage:/photoprism/storage"
-    # Network ports mapping between the host and the container
-    ports:
-      - "${APP_PORT}:2342" # Map host port 2342 to container port 2342
     # Networks to be attached to the container
     networks:
-      - tipi_main_network
+      - photoprism-network
     # Other services that this service depends on
     depends_on:
       - photoprism-db
-    labels:
-      runtipi.managed: "true"
+    x-runtipi:
+      is_main: true
+      internal_port: 2342
+# Define the networks section
 networks:
-  tipi_main_network:
-    external: true
+  # Define the photoprism-network
+  photoprism-network:
+    # Set the driver to bridge
+    driver: bridge
+x-runtipi:
+  schema_version: 2

@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "scrutiny",
   "description": "If you run a server with more than a couple of hard drives, you're probably already familiar with S.M.A.R.T and the smartd daemon.",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "master-omnibus",
   "categories": [
     "utilities"
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791868440000,
-  "updated_at": 1791868440000,
+  "created_at": 1791909849000,
+  "updated_at": 1791909849000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

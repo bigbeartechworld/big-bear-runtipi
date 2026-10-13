@@ -3,8 +3,6 @@ services:
     image: ghcr.io/coder/coder:v2.36.7@sha256:e8b2743529aea6a1e77bba764c8ec4a04dec65d27ca9caa0ec0b2dbcd3db0565
     container_name: coder
     restart: unless-stopped
-    ports:
-      - "${APP_PORT}:7080"
     environment:
       CODER_PG_CONNECTION_URL: postgresql://coder:918063d1-fb62-438f-8cbf-49e01f7364ff@database/coder?sslmode=disable
       CODER_HTTP_ADDRESS: 0.0.0.0:7080
@@ -15,10 +13,9 @@ services:
     depends_on:
       database:
         condition: service_healthy
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
+    x-runtipi:
+      is_main: true
+      internal_port: 7080
   database:
     image: postgres:17@sha256:d74eeac9a635390a49bc21bd49fccd973de707e2a53a76ac49b552b8712ec46f
     container_name: coder-postgres
@@ -34,10 +31,5 @@ services:
       interval: 5s
       timeout: 5s
       retries: 5
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+x-runtipi:
+  schema_version: 2

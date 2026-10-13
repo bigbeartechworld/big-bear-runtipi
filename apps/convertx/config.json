@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "convertx",
   "description": "A self-hosted online file converter. Supports over a thousand different formats. Written with TypeScript, Bun and Elysia.",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "v0.17.0",
   "categories": [
     "utilities"
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791868099000,
-  "updated_at": 1791868099000,
+  "created_at": 1791909413000,
+  "updated_at": 1791909413000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

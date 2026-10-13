@@ -12,9 +12,6 @@ services:
     image: bigbeartechworld/big-bear-nextcloud-with-smbclient:35.0.1@sha256:ddaca2031622188e1cf789ea785a5f9ee7caedb9cdc01518d554089a498d2a12
     # Restart the container unless stopped
     restart: unless-stopped
-    # Map port 7580 on the host to port 80 on the container
-    ports:
-      - ${APP_PORT}:80
     # Mount the nextcloud_html directory on the host to /var/www/html in the container
     volumes:
       - ${APP_DATA_DIR}/html:/var/www/html
@@ -39,9 +36,10 @@ services:
         condition: service_healthy
     # Define the network
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - nextcloud_network
+    x-runtipi:
+      is_main: true
+      internal_port: 80
   # Define the database container for Nextcloud
   db-nextcloud:
     container_name: db-nextcloud
@@ -54,15 +52,13 @@ services:
       - POSTGRES_USER=casaos # Set the PostgreSQL username
       - POSTGRES_DB=nextcloud # Set the name of the Nextcloud database
     networks:
-      - tipi_main_network
+      - nextcloud_network # Connect to the Nextcloud network
     # Healthcheck configuration for the database service
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U casaos -d nextcloud"]
       interval: 10s
       timeout: 5s
       retries: 5
-    labels:
-      runtipi.managed: "true"
   # Redis configuration for Nextcloud
   redis-nextcloud:
     container_name: redis-nextcloud
@@ -72,15 +68,13 @@ services:
     volumes:
       - "${APP_DATA_DIR}/redis:/data" # Mount the Redis data directory
     networks:
-      - tipi_main_network
+      - nextcloud_network # Connect to the Nextcloud network
     # Healthcheck configuration for the Redis service
     healthcheck:
       test: ["CMD-SHELL", "redis-cli ping || exit 1"]
       interval: 10s
       timeout: 5s
       retries: 5
-    labels:
-      runtipi.managed: "true"
   cron:
     image: bigbeartechworld/big-bear-nextcloud-with-smbclient:35.0.1@sha256:ddaca2031622188e1cf789ea785a5f9ee7caedb9cdc01518d554089a498d2a12
     restart: unless-stopped
@@ -94,9 +88,10 @@ services:
       redis-nextcloud:
         condition: service_healthy
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - nextcloud_network # Connect to the Nextcloud network
+# Network definition for the big-bear-nextcloud application
 networks:
-  tipi_main_network:
-    external: true
+  nextcloud_network:
+    driver: bridge
+x-runtipi:
+  schema_version: 2

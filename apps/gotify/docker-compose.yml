@@ -3,19 +3,14 @@
 services:
   gotify:
     image: gotify/server:3.1.1@sha256:44fc5bbd1c0618878e33073d38c2c13126b48f245c3fe12236b1da48eb203b86 # Docker image for the service
-    ports:
-      - ${APP_PORT}:80 # Port mapping (host:container)
     environment: # Environment variables for the service
       - GOTIFY_DEFAULTUSER_NAME=admin
       - GOTIFY_DEFAULTUSER_PASS=custom
     volumes: # Volume mapping (host:container)
       - "${APP_DATA_DIR}/data:/app/data"
-    network_mode: bridge # Network mode
     container_name: gotify
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+    x-runtipi:
+      is_main: true
+      internal_port: 80
+x-runtipi:
+  schema_version: 2

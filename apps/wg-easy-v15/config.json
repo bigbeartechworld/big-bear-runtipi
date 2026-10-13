@@ -6,7 +6,7 @@
   "dynamic_config": true,
   "id": "wg-easy-v15",
   "description": "WireGuard Easy v15 - Complete rewrite with new features and improved UI. Access your homeserver from anywhere with this modern VPN solution. NOTE: This is v15 which has breaking changes from v14. If you're currently using v14, please backup your configuration before migrating.",
-  "tipi_version": 1,
+  "tipi_version": 2,
   "version": "15",
   "categories": [
     "utilities"
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791868574000,
-  "updated_at": 1791868574000,
+  "created_at": 1791909964000,
+  "updated_at": 1791909964000,
   "$schema": "../app-info-schema.json",
-  "min_tipi_version": "4.5.0"
+  "min_tipi_version": "4.7.0"
 }

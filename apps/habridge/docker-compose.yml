@@ -7,22 +7,14 @@ services:
       PGID: $PGID
       TZ: $TZ
       SEC_KEY: ''
-    ports:
-      - target: 8080
-        published: ${APP_PORT}
-        protocol: tcp
-      - target: 50000
-        published: 50000
-        protocol: tcp
+    ports: [{"target": 50000, "published": 50000, "protocol": "tcp"}]
     volumes:
       - type: bind
         source: /DATA/AppData/habridge/config
         target: /config
     container_name: habridge
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+x-runtipi:
+  schema_version: 2

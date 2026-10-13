@@ -29,9 +29,6 @@ services:
     container_name: dashy-v4
     volumes:
       - ${APP_DATA_DIR}/user-data:/app/user-data
-    # Ports mapping
-    ports:
-      - ${APP_PORT}:8080
     # Set any environmental variables
     environment:
       - NODE_ENV=production
@@ -44,10 +41,8 @@ services:
       timeout: 10s
       retries: 3
       start_period: 40s
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+    x-runtipi:
+      is_main: true
+      internal_port: 8080
+x-runtipi:
+  schema_version: 2

@@ -9,9 +9,7 @@ services:
     container_name: big-bear-libredesk-db
     restart: unless-stopped
     networks:
-      - tipi_main_network
-    ports:
-      - "5432:5432"
+      - big-bear-libredesk-network
     environment:
       # Set these environment variables to configure the database, defaults to libredesk.
       POSTGRES_USER: libredesk
@@ -24,21 +22,15 @@ services:
       retries: 6
     volumes:
       - ${APP_DATA_DIR}/data/postgres:/var/lib/postgresql/data
-    labels:
-      runtipi.managed: "true"
   # Redis
   big-bear-libredesk-redis:
     image: redis:7.4.6-alpine@sha256:7a7c6b5c49a6896d0a58ee0c6dc0dcabe14f30f0a2f7d2d1362d276fa2d43166
     container_name: big-bear-libredesk-redis
     restart: unless-stopped
-    ports:
-      - "6379:6379"
     networks:
-      - tipi_main_network
+      - big-bear-libredesk-network
     volumes:
       - ${APP_DATA_DIR}/data/redis:/data
-    labels:
-      runtipi.managed: "true"
   libredesk:
     # Name of the container
     container_name: libredesk
@@ -55,10 +47,6 @@ services:
       - ${APP_DATA_DIR}/uploads:/libredesk/uploads:rw
       # Mounting the local libredesk/config.toml directory to /libredesk/config.toml inside the container
       - ${APP_DATA_DIR}/config:/libredesk/config:rw
-    # Ports mapping between host and container
-    ports:
-      # Mapping port 9000 of the host to port 9000 of the container
-      - "${APP_PORT}:9000"
     command: [sh, -c, "./libredesk --install --idempotent-install --yes --config /libredesk/config/config.toml && ./libredesk --upgrade --yes --config /libredesk/config/config.toml && ./libredesk --config /libredesk/config/config.toml"]
     # Dependencies
     depends_on:
@@ -66,9 +54,12 @@ services:
       - big-bear-libredesk-redis
     # Networks
     networks:
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - big-bear-libredesk-network
+    x-runtipi:
+      is_main: true
+      internal_port: 9000
 networks:
-  tipi_main_network:
-    external: true
+  big-bear-libredesk-network:
+    driver: bridge
+x-runtipi:
+  schema_version: 2

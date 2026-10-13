@@ -25,20 +25,14 @@ services:
     volumes:
       # Volume mapping for persistent data storage
       - ${APP_DATA_DIR}/data:/readeck
-    # Ports mapping between host and container
-    ports:
-      # Mapping port 8000 of the host to port 8000 of the container
-      - "${APP_PORT}:8000"
     # Health check configuration
     healthcheck:
       test: ["CMD", "/bin/readeck", "healthcheck", "-config", "config.toml"]
       interval: 30s
       timeout: 2s
       retries: 3
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+    x-runtipi:
+      is_main: true
+      internal_port: 8000
+x-runtipi:
+  schema_version: 2

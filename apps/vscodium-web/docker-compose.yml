@@ -11,19 +11,13 @@ services:
       SUDO_PASSWORD: ''
       SUDO_PASSWORD_HASH: ''
       CODE_ARGS: ''
-    ports:
-      - target: 8000
-        published: ${APP_PORT}
-        protocol: tcp
     volumes:
       - type: bind
         source: /DATA/AppData/vscodium-web/config
         target: /config
     container_name: vscodium-web
-    labels:
-      runtipi.managed: "true"
-    networks:
-      - tipi_main_network
-networks:
-  tipi_main_network:
-    external: true
+    x-runtipi:
+      is_main: true
+      internal_port: 8000
+x-runtipi:
+  schema_version: 2

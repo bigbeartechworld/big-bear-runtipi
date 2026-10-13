@@ -15,9 +15,7 @@ services:
     volumes: # Mount point for database persistence
       - ${APP_DATA_DIR}/postgres/data:/var/lib/postgresql/data
     networks: # Connect to the network
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - big_bear_ondedev_network
   onedev:
     # Name of the container
     container_name: onedev
@@ -42,17 +40,17 @@ services:
       - initial_email=admin@example.com # Initial admin email for OneDev
       - initial_server_url=http://localhost:6610 # URL where OneDev will be accessible
     # Ports mapping between host and container
-    ports:
-      # Mapping port 6610 of the host to port 6610 of the container
-      - "${APP_PORT}:6610"
-      # Mapping port 6611 of the host to port 6611 of the container
-      - "6611:6611"
+    ports: ["6611:6611"]
     depends_on: # Ensure the database service starts before this service
       - big-bear-onedev-db
     networks: # Connect to the network
-      - tipi_main_network
-    labels:
-      runtipi.managed: "true"
+      - big_bear_ondedev_network
+    x-runtipi:
+      is_main: true
+      internal_port: 6610
+# Define the network for the big-bear-onedev application
 networks:
-  tipi_main_network:
-    external: true
+  big_bear_ondedev_network: # Network name
+    driver: bridge # Network driver
+x-runtipi:
+  schema_version: 2
