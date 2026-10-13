@@ -7,7 +7,7 @@
   "id": "yq",
   "description": "This container needs special attention. Please check https://hub.docker.com/r/linuxserver/yq for details.",
   "tipi_version": 2,
-  "version": "4.4.0",
+  "version": "4.4.2",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1791909988000,
-  "updated_at": 1791909988000,
+  "created_at": 1791926604000,
+  "updated_at": 1791926604000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.7.0"
 }
