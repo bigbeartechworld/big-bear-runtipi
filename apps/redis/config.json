@@ -21,8 +21,8 @@
     "armv7",
     "i386"
   ],
-  "created_at": 1792033284000,
-  "updated_at": 1792033284000,
+  "created_at": 1792085341000,
+  "updated_at": 1792085341000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.7.0"
 }
