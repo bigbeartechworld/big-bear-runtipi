@@ -7,7 +7,7 @@
   "id": "scummvm",
   "description": "ScummVM is a program which allows you to run certain classic graphical adventure and role-playing games, provided you already have their data files. The clever part about this: ScummVM just replaces the executables shipped with the games, allowing you to play them on systems for which they were never designed! ScummVM is a complete rewrite of these games' executables and is not an emulator.",
   "tipi_version": 2,
-  "version": "2026.3.0",
+  "version": "2026.4.0",
   "categories": [
     "automation"
   ],
@@ -18,8 +18,8 @@
   "supported_architectures": [
     "amd64"
   ],
-  "created_at": 1792291832000,
-  "updated_at": 1792291832000,
+  "created_at": 1792379067000,
+  "updated_at": 1792379067000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.7.0"
 }
