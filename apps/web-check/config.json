@@ -7,7 +7,7 @@
   "id": "web-check",
   "description": "Web-Check is an on-demand OSINT tool for analysing any website: server, security headers, technologies, DNS, and related public signals.",
   "tipi_version": 2,
-  "version": "2.3.5",
+  "version": "2.3.6",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1792291925000,
-  "updated_at": 1792291925000,
+  "created_at": 1792379173000,
+  "updated_at": 1792379173000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.7.0"
 }
