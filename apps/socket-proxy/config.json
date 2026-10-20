@@ -7,7 +7,7 @@
   "id": "socket-proxy",
   "description": "This container needs special attention. Please check https://hub.docker.com/r/linuxserver/socket-proxy for details.",
   "tipi_version": 2,
-  "version": "3.4.6",
+  "version": "3.4.7",
   "categories": [
     "automation"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1792379098000,
-  "updated_at": 1792379098000,
+  "created_at": 1792466033000,
+  "updated_at": 1792466033000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.7.0"
 }
