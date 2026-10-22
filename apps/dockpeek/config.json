@@ -7,7 +7,7 @@
   "id": "dockpeek",
   "description": "A lightweight, self-hosted Docker dashboard that provides quick access to all running containers and their exposed ports with one-click access to web apps.",
   "tipi_version": 2,
-  "version": "v1.7.2",
+  "version": "v1.7.3",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1792638090000,
-  "updated_at": 1792638090000,
+  "created_at": 1792656391000,
+  "updated_at": 1792656391000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.7.0"
 }
