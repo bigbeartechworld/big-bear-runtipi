@@ -7,7 +7,7 @@
   "id": "docuseal",
   "description": "DocuSeal 3.3.1 is an open-source platform to create, fill, and sign PDF documents.",
   "tipi_version": 2,
-  "version": "3.3.2",
+  "version": "3.3.3",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1792638095000,
-  "updated_at": 1792638095000,
+  "created_at": 1792656396000,
+  "updated_at": 1792656396000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.7.0"
 }
