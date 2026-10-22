@@ -7,7 +7,7 @@
   "id": "budibase",
   "description": "Low code platform for creating internal tools, workflows, and admin panels in minutes. Supports PostgreSQL, MySQL, MSSQL, MongoDB, Rest API, Docker, K8s, and more 🚀. Budibase, the low code platform you'll enjoy using ⚡",
   "tipi_version": 2,
-  "version": "v3.49.0",
+  "version": "v3.50.0",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1792656319000,
-  "updated_at": 1792656319000,
+  "created_at": 1792682929000,
+  "updated_at": 1792682929000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.7.0"
 }
