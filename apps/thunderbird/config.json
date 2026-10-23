@@ -7,7 +7,7 @@
   "id": "thunderbird",
   "description": "Thunderbird is a free and open-source personal information manager primarily used as an e-mail client with a calendar and contactbook, as well as an RSS feed reader, chat client, and news client.",
   "tipi_version": 2,
-  "version": "1140.16.0",
+  "version": "1140.17.0",
   "categories": [
     "automation"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1792683507000,
-  "updated_at": 1792683507000,
+  "created_at": 1792725130000,
+  "updated_at": 1792725130000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.7.0"
 }
