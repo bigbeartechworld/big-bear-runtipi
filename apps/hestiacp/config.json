@@ -20,8 +20,8 @@
     "armv7",
     "arm64"
   ],
-  "created_at": 1792810952000,
-  "updated_at": 1792810952000,
+  "created_at": 1792823748000,
+  "updated_at": 1792823748000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.7.0"
 }
