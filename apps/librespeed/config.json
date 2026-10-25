@@ -7,7 +7,7 @@
   "id": "librespeed",
   "description": "Librespeed is a very lightweight Speedtest implemented in Javascript, using XMLHttpRequest and Web Workers. No Flash, No Java, No Websocket, No Bullshit.",
   "tipi_version": 2,
-  "version": "6.3.0",
+  "version": "6.3.1",
   "categories": [
     "automation"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1792823806000,
-  "updated_at": 1792823806000,
+  "created_at": 1792897043000,
+  "updated_at": 1792897043000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.7.0"
 }

@@ -7,7 +7,7 @@
   "id": "python",
   "description": "This container needs special attention. Please check https://hub.docker.com/r/linuxserver/python for details.",
   "tipi_version": 2,
-  "version": "3.15.0",
+  "version": "3.15.1",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "arm64",
     "amd64"
   ],
-  "created_at": 1792823950000,
-  "updated_at": 1792823950000,
+  "created_at": 1792897238000,
+  "updated_at": 1792897238000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.7.0"
 }
