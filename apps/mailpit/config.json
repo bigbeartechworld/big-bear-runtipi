@@ -7,7 +7,7 @@
   "id": "mailpit",
   "description": "Mailpit is a multi-platform email testing tool & API for developers.",
   "tipi_version": 2,
-  "version": "v1.31",
+  "version": "v1.32",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1792897060000,
-  "updated_at": 1792897060000,
+  "created_at": 1792983521000,
+  "updated_at": 1792983521000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.7.0"
 }
