@@ -7,7 +7,7 @@
   "id": "penpot",
   "description": "Designers and developers can finally work in unison to build beautifully designed software experiences that truly scale up.",
   "tipi_version": 2,
-  "version": "2.18.3",
+  "version": "2.18.4",
   "categories": [
     "utilities"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1792983628000,
-  "updated_at": 1792983628000,
+  "created_at": 1793071762000,
+  "updated_at": 1793071762000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.7.0"
 }

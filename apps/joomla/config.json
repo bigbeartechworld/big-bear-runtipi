@@ -7,7 +7,7 @@
   "id": "joomla",
   "description": "Another free and open-source CMS",
   "tipi_version": 2,
-  "version": "6.1.4-apache",
+  "version": "6.2.0-apache",
   "categories": [
     "utilities"
   ],
@@ -20,8 +20,8 @@
     "armv7",
     "arm64"
   ],
-  "created_at": 1792983480000,
-  "updated_at": 1792983480000,
+  "created_at": 1793071648000,
+  "updated_at": 1793071648000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.7.0"
 }
