@@ -1,5 +1,5 @@
 {
-  "name": "Portainer Agent",
+  "name": "Portainer Agent (Legacy)",
   "available": true,
   "port": 8124,
   "exposable": true,
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1793243406000,
-  "updated_at": 1793243406000,
+  "created_at": 1793246873000,
+  "updated_at": 1793246873000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.7.0"
 }
