@@ -1,5 +1,5 @@
 {
-  "name": "n8n",
+  "name": "n8n (Legacy)",
   "available": true,
   "port": 5678,
   "exposable": true,
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1793243275000,
-  "updated_at": 1793243275000,
+  "created_at": 1793246723000,
+  "updated_at": 1793246723000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.7.0"
 }

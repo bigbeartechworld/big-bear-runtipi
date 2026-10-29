@@ -1,5 +1,5 @@
 {
-  "name": "Stalwart Mail",
+  "name": "Stalwart Mail (Legacy)",
   "available": true,
   "port": 8131,
   "exposable": true,
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1793243516000,
-  "updated_at": 1793243516000,
+  "created_at": 1793246988000,
+  "updated_at": 1793246988000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.7.0"
 }
