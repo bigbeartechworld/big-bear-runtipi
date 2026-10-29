@@ -14,13 +14,13 @@
   "short_desc": "phpMyAdmin",
   "author": "BigBearTechWorld",
   "source": "",
-  "website": "https://hub.docker.com/r/phpmyadmin/phpmyadmin",
+  "website": "https://hub.docker.com/_/phpmyadmin",
   "supported_architectures": [
     "amd64",
     "arm64"
   ],
-  "created_at": 1793247799000,
-  "updated_at": 1793247799000,
+  "created_at": 1793293887000,
+  "updated_at": 1793293887000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.7.0"
 }
