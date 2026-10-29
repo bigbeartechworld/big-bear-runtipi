@@ -7,7 +7,7 @@
   "id": "vscodium",
   "description": "VSCodium is a community-driven, freely-licensed binary distribution of Microsoft’s editor VS Code.",
   "tipi_version": 2,
-  "version": "1.140.06880",
+  "version": "1.143.17183",
   "categories": [
     "automation"
   ],
@@ -19,8 +19,8 @@
     "amd64",
     "arm64"
   ],
-  "created_at": 1793248011000,
-  "updated_at": 1793248011000,
+  "created_at": 1793294101000,
+  "updated_at": 1793294101000,
   "$schema": "../app-info-schema.json",
   "min_tipi_version": "4.7.0"
 }
